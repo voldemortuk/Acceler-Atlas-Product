@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acceler | Discovery Checklist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:#f8fafc;--bg2:#f1f5f9;--card:#fff;--dark:#0f172a;
+    --text:#0f172a;--text2:#475569;--muted:#94a3b8;
+    --blue:#2563eb;--blue-l:#eff6ff;
+    --gold:#D4A24C;--gold-l:#fdf6e8;
+    --green:#16a34a;--green-l:#f0fdf4;
+    --orange:#ea580c;--orange-l:#fff7ed;
+    --red:#dc2626;--red-l:#fef2f2;
+    --purple:#7c3aed;--teal:#0B5C5C;
+    --border:#e2e8f0;
+    --fd:'DM Serif Display',Georgia,serif;
+    --fb:'DM Sans',-apple-system,sans-serif;
+  }
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-font-smoothing:antialiased}
+  body{background:var(--bg);color:var(--text);font-family:var(--fb);min-height:100vh}
+  .page{display:none}.page.on{display:block}
+
+  /* START */
+  .start{display:flex;align-items:center;justify-content:center;min-height:100vh;background:var(--dark)}
+  .start-in{text-align:center;max-width:580px;padding:40px 24px}
+  .badge{display:inline-block;background:rgba(37,99,235,.15);border:1px solid rgba(37,99,235,.3);color:#60a5fa;padding:8px 20px;border-radius:100px;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:24px}
+  .start h1{font-family:var(--fd);font-size:clamp(36px,5vw,52px);color:#fff;line-height:1.1;margin-bottom:14px}
+  .start p{font-size:18px;color:rgba(255,255,255,.5);line-height:1.6;margin-bottom:28px}
+  .start-grid{display:flex;gap:20px;justify-content:center;margin-bottom:28px}
+  .start-n{text-align:center}
+  .start-n b{font-family:var(--fd);font-size:32px;color:#60a5fa;display:block}
+  .start-n span{font-size:11px;color:rgba(255,255,255,.4);font-weight:600;text-transform:uppercase;letter-spacing:.05em}
+  .form{display:flex;flex-direction:column;gap:10px;max-width:360px;margin:0 auto 24px}
+  .inp{padding:11px 16px;border-radius:8px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);color:#fff;font-size:15px;font-family:var(--fb);outline:none}
+  .inp::placeholder{color:rgba(255,255,255,.3)}
+  .inp:focus{border-color:rgba(37,99,235,.5)}
+  .btn{padding:13px 40px;background:var(--blue);color:#fff;border:none;border-radius:8px;font-size:16px;font-weight:700;cursor:pointer;font-family:var(--fb)}
+  .btn:hover{background:#1d4ed8}
+
+  /* CHECKLIST */
+  .cl{max-width:800px;margin:0 auto;padding:32px 20px 80px}
+  .cl-head{text-align:center;margin-bottom:24px}
+  .cl-head h1{font-family:var(--fd);font-size:28px;margin-bottom:4px}
+  .cl-head p{font-size:15px;color:var(--text2)}
+  .cl-for{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:4px}
+
+  .bar-wrap{display:flex;align-items:center;gap:12px;margin-bottom:24px;padding:12px 16px;background:var(--card);border:1px solid var(--border);border-radius:10px}
+  .bar-track{flex:1;height:8px;background:var(--bg2);border-radius:4px;overflow:hidden}
+  .bar-fill{height:100%;background:var(--blue);border-radius:4px;transition:width .3s}
+  .bar-pct{font-size:14px;font-weight:700;color:var(--blue);min-width:40px;text-align:right}
+
+  .sec{margin-bottom:20px}
+  .sec-head{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:8px 8px 0 0;cursor:pointer;user-select:none}
+  .sec-head h2{font-size:14px;font-weight:700;color:#fff;margin:0}
+  .sec-head .cnt{font-size:12px;color:rgba(255,255,255,.6);margin-left:auto}
+  .sec.shut .sec-body{display:none}
+
+  .sec-body{border:1px solid var(--border);border-top:none;border-radius:0 0 8px 8px;overflow:hidden}
+  .row{display:grid;grid-template-columns:38px 1fr auto;align-items:center;border-bottom:1px solid var(--border);transition:background .1s}
+  .row:last-child{border-bottom:none}
+  .row:nth-child(even){background:var(--bg2)}
+  .row:hover{background:#eef2f7}
+  .row.done{opacity:.45}
+  .row.done .rtxt{text-decoration:line-through}
+  .rchk{display:flex;align-items:center;justify-content:center;padding:8px 0 8px 10px;cursor:pointer}
+  .rchk input{width:16px;height:16px;accent-color:var(--blue);cursor:pointer}
+  .rtxt{padding:8px 12px;font-size:14px;line-height:1.45;cursor:pointer;color:var(--text)}
+  .rtxt small{display:block;font-size:12px;color:var(--muted);margin-top:2px;font-style:italic}
+  .rpri{padding:8px 10px}
+  .dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+  .dot-r{background:var(--red)}.dot-g{background:var(--gold)}.dot-m{background:var(--muted)}
+
+  .submit{text-align:center;margin-top:28px}
+  .submit .btn{padding:13px 52px}
+  .pri-legend{display:flex;gap:16px;justify-content:center;margin-bottom:20px;font-size:13px;color:var(--text2)}
+  .pri-legend span{display:flex;align-items:center;gap:5px}
+
+  .prog-bar{position:fixed;top:0;left:0;right:0;height:3px;background:var(--bg2);z-index:100;display:none}
+  .prog-bar .bar-fill{height:100%}
+
+  /* RESULTS */
+  .res{max-width:800px;margin:0 auto;padding:32px 20px 80px}
+  .res-head{text-align:center;margin-bottom:28px}
+  .res-head h1{font-family:var(--fd);font-size:28px;margin-bottom:4px}
+  .res-head p{font-size:15px;color:var(--text2)}
+
+  .ring{width:140px;height:140px;margin:0 auto 20px;position:relative}
+  .ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+  .ring-bg{fill:none;stroke:var(--bg2);stroke-width:10}
+  .ring-f{fill:none;stroke-width:10;stroke-linecap:round;transition:stroke-dashoffset .8s ease}
+  .ring-t{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center}
+  .ring-n{font-family:var(--fd);font-size:32px}
+  .ring-l{font-size:11px;color:var(--muted);font-weight:600}
+
+  .verdict{text-align:center;margin-bottom:28px;padding:18px 20px;border-radius:12px}
+  .verdict h2{font-family:var(--fd);font-size:22px;margin-bottom:4px}
+  .verdict p{font-size:14px;line-height:1.6}
+
+  .alerts{display:flex;flex-direction:column;gap:10px;margin-bottom:28px}
+  .al{padding:14px 18px;border-radius:10px;display:flex;gap:10px;align-items:flex-start}
+  .al-i{font-size:18px;flex-shrink:0}
+  .al h3{font-size:14px;font-weight:700;margin-bottom:2px}
+  .al p{font-size:13px;line-height:1.5}
+  .al-r{background:var(--red-l);border:1px solid #fecaca}.al-r h3{color:var(--red)}
+  .al-g{background:var(--gold-l);border:1px solid #fde68a}.al-g h3{color:var(--gold)}
+  .al-k{background:var(--green-l);border:1px solid #bbf7d0}.al-k h3{color:var(--green)}
+  .al-b{background:var(--blue-l);border:1px solid #bfdbfe}.al-b h3{color:var(--blue)}
+
+  .rb{margin-bottom:28px}
+  .rb-title{font-family:var(--fd);font-size:20px;margin-bottom:12px}
+  .rs{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin-bottom:10px}
+  .rs-top{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+  .rs-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+  .rs-name{font-size:14px;font-weight:700;flex:1}
+  .rs-score{font-size:13px;font-weight:700}
+  .rs-bar{height:5px;background:var(--bg2);border-radius:3px;overflow:hidden;margin-bottom:8px}
+  .rs-bar-f{height:100%;border-radius:3px;transition:width .6s}
+  .rs-miss{font-size:12px;color:var(--red);line-height:1.4;padding-left:16px;position:relative}
+  .rs-miss::before{content:'';position:absolute;left:4px;top:5px;width:6px;height:6px;border-radius:50%;background:var(--red)}
+  .rs-ok{font-size:12px;color:var(--green);font-weight:600}
+
+  .restart{text-align:center;margin-top:24px}
+  .restart .btn{background:var(--bg2);color:var(--text);border:1px solid var(--border)}
+  .restart .btn:hover{background:var(--border)}
+</style>
+</head>
+<body>
+
+<div class="prog-bar" id="pb"><div class="bar-fill" id="pbf"></div></div>
+
+<!-- ====== START ====== -->
+<div class="page on" id="P1">
+<div class="start">
+<div class="start-in">
+  <div class="badge">Acceler &middot; Sales Playbook</div>
+  <h1>Client Discovery</h1>
+  <p>Run through this before you write a proposal. It takes 15 minutes on a call and saves weeks of back-and-forth.</p>
+  <div class="start-grid">
+    <div class="start-n"><b>33</b><span>Questions</span></div>
+    <div class="start-n"><b style="color:#f87171">14</b><span>Critical</span></div>
+    <div class="start-n"><b>6</b><span>Sections</span></div>
+    <div class="start-n"><b>~15</b><span>Minutes</span></div>
+  </div>
+  <div class="form">
+    <input class="inp" id="f1" placeholder="Client name">
+    <input class="inp" id="f2" placeholder="Your name">
+    <input class="inp" id="f3" type="date">
+  </div>
+  <button class="btn" onclick="go()">Start</button>
+</div>
+</div>
+</div>
+
+<!-- ====== CHECKLIST ====== -->
+<div class="page" id="P2">
+<div class="cl">
+  <div class="cl-head">
+    <div class="cl-for">Discovery for: <span id="cName" style="color:var(--text)"></span></div>
+    <h1>Client Discovery Checklist</h1>
+    <p>Check off as you go. Red dots = must ask. Gold = should ask. Grey = bonus.</p>
+  </div>
+
+  <div class="pri-legend">
+    <span><span class="dot dot-r"></span> Must ask</span>
+    <span><span class="dot dot-g"></span> Should ask</span>
+    <span><span class="dot dot-m"></span> Bonus</span>
+  </div>
+
+  <div class="bar-wrap">
+    <div class="bar-track"><div class="bar-fill" id="bf" style="width:0%"></div></div>
+    <div class="bar-pct" id="bp">0%</div>
+  </div>
+
+  <!-- S1 -->
+  <div class="sec" data-s data-n="Why They're Here" data-c="#2563eb">
+    <div class="sec-head" style="background:var(--blue)" onclick="tog(this)"><h2>Why They're Here</h2><span class="cnt"></span></div>
+    <div class="sec-body">
+      <div class="row" data-p="must"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">What's the actual problem they're trying to solve?<small>Not "we need AI training" — what pain triggered this conversation?</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
+      <div class="row" data-p="must"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">What would "success" look like 3 months from now?<small>Get a number: hours saved, adoption %, people certified, something measurable</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
+      <div class="row" data-p="must"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Who decides — and who pays?<small>Buyer, champion, end-users. Are they the same person or different?</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
+      <div class="row" data-p="should"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Have they tried AI training before?<small>If yes — what worked, what flopped? Don't repeat someone else's mistake.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
+      <div class="row" data-p="nice"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Is this a pilot or the full thing?<small>Pilot = smaller scope, prove-it-first energy. Full rollout = bigger deal, longer timeline.</small></div><div class="rpri"><span class="dot dot-m"></span></div></div>
+      <div class="row" data-p="should"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Who's our internal champion? Someone who'll push this forward when we're not in the room.<small>Without a champion, deals stall. Know who this person is by name.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
+    </div>
+  </div>
+
+  <!-- S2 -->
+  <div class="sec" data-s data-n="Who's in the Room" data-c="#D4A24C">
+    <div class="sec-head" style="background:var(--gold)" onclick="tog(this)"><h2>Who's in the Room</h2><span class="cnt"></span></div>
+    <div class="sec-body">
+      <div class="row" data-p="must"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">What do the participants actually do day-to-day?<small>Job titles are useless. "They close monthly books" or "they manage a sales pipeline" — that's what we need.</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
+      <div class="row" data-p="must"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">How many people, how many batches?<small>20 people in 1 cohort is very different from 500 across 10 cohorts.</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
+      <div class="row" data-p="should"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Are they technical or non-technical?<small>Determines whether we pitch AI Enabler (non-tech) or AI Builder (hands-on). Biggest fork in the road.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
+      <div class="row" data-p="should"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Have they used AI at all? Even casually?<small>"Never touched it" vs "dabbling with ChatGPT" vs "already using Copilot daily" — changes Day 1 completely.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
+      <div class="row" data-p="nice"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Is it one function or mixed? (e.g., HR + Finance + Sales in same room)<small>Mixed cohorts need broader examples. Single-function cohorts go deeper.</small></div><div class="rpri"><span class="dot dot-m"></span></div></div>
+    </div>
+  </div>
+
+  <!-- S3 -->
+  <div class="sec" data-s data-n="When & How" data-c="#16a34a">
+    <div class="sec-head" style="background:var(--green)" onclick="tog(this)"><h2>When & How</h2><span class="cnt"></span></div>
+    <div class="sec-body">
+      <div class="row" data-p="must"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Virtual or in-person? Where are the people?<small>Time zones matter. "7am PST with people in India" is a very different session than "everyone in one room."</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
+      <div class="row" data-p="must"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">How much time do they have? Half-day, 1 day, 2 days, or more?<small>Don't propose a 3-day programme if they can only spare an afternoon.</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
+      <div class="row" data-p="should"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">When do they want to start? Any hard deadline?<small>Fiscal year end, board commitment, upcoming conference — drives urgency.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
+      <div class="row" data-p="nice"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Language? English only, or do they need anything else?</div><div class="rpri"><span class="dot dot-m"></span></div></div>
+      <div class="row" data-p="nice"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Is there an event or moment we can tie this to?<small>A conference, a leadership offsite, a quarterly kickoff — creates natural urgency and visibility.</small></div><div class="rpri"><span class="dot dot-m"></span></div></div>
+    </div>
+  </div>
+
+  <!-- S4 -->
+  <div class="sec" data-s data-n="Tools & Access" data-c="#ea580c">
+    <div class="sec-head" style="background:var(--orange)" onclick="tog(this)"><h2>Tools & Access</h2><span class="cnt"></span></div>
+    <div class="sec-body">
+      <div class="row" data-p="must"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">What AI tools do their people have access to today?<small>ChatGPT? Copilot? Claude? Free tier or enterprise? If they have nothing, we need to plan for that.</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
+      <div class="row" data-p="must"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Is IT going to block anything? Any security restrictions on AI?<small>Some companies block ChatGPT entirely. Some only allow Copilot. Find out BEFORE you design the curriculum.</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
+      <div class="row" data-p="should"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Do we teach on their tools or ours? Who provides licences?<small>If they have Copilot, we teach on Copilot. If they have nothing, we bring ChatGPT.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
+      <div class="row" data-p="should"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Do they need hands-on labs or sandboxes?<small>Builder programmes need labs. Enabler programmes just need a browser + AI tool.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
+      <div class="row" data-p="nice"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Do they have an LMS? (Cornerstone, Docebo, SAP, etc.)<small>Affects content hosting, completion tracking, and whether we use their platform or ours.</small></div><div class="rpri"><span class="dot dot-m"></span></div></div>
+      <div class="row" data-p="nice"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">What chat tool for the cohort? (Slack, Teams, WhatsApp)</div><div class="rpri"><span class="dot dot-m"></span></div></div>
+    </div>
+  </div>
+
+  <!-- S5 -->
+  <div class="sec" data-s data-n="What They Want Built" data-c="#7c3aed">
+    <div class="sec-head" style="background:var(--purple)" onclick="tog(this)"><h2>What They Want Built</h2><span class="cnt"></span></div>
+    <div class="sec-body">
+      <div class="row" data-p="must"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">What should participants be able to DO after the programme?<small>Not "understand AI" — what specific task? "Draft a variance report with Copilot" or "Build a no-code agent."</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
+      <div class="row" data-p="should"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Should examples and exercises be from their industry?<small>Generic AI examples are fine for awareness. Industry-specific exercises land 10x harder.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
+      <div class="row" data-p="should"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Do they want a final project or capstone?<small>Real business problem (harder to set up, bigger impact) or simulated scenario (faster, still effective)?</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
+      <div class="row" data-p="should"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">How do they want to measure it worked?<small>Pre/post quiz scores? Manager feedback? Adoption metrics at 30/60/90 days? Agree now, not after.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
+      <div class="row" data-p="nice"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Any data or content they CAN'T use in exercises?<small>Regulated industries have rules. No client PII, no real financials, no patient data in exercises.</small></div><div class="rpri"><span class="dot dot-m"></span></div></div>
+    </div>
+  </div>
+
+  <!-- S6 -->
+  <div class="sec" data-s data-n="Money & Timeline" data-c="#dc2626">
+    <div class="sec-head" style="background:var(--red)" onclick="tog(this)"><h2>Money & Timeline</h2><span class="cnt"></span></div>
+    <div class="sec-body">
+      <div class="row" data-p="must"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">What's the budget range?<small>Don't propose a Ferrari if they're shopping for a Honda. Saves everyone's time.</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
+      <div class="row" data-p="must"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">When do they need to decide? Who approves?<small>If the decision is next week, don't take 3 weeks to send a proposal.</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
+      <div class="row" data-p="should"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Are they talking to other vendors?<small>If yes, ask what they're comparing. Helps you position.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
+      <div class="row" data-p="nice"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Does procurement / legal need to review? How long does that take?<small>Some companies close in a week. Some take 3 months through procurement. Plan accordingly.</small></div><div class="rpri"><span class="dot dot-m"></span></div></div>
+      <div class="row" data-p="nice"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Do they want certificates? Standard Acceler or co-branded with their logo?<small>Small detail but clients love it. Ask early so design team isn't scrambling at the end.</small></div><div class="rpri"><span class="dot dot-m"></span></div></div>
+    </div>
+  </div>
+
+  <div class="submit"><button class="btn" onclick="done()">Submit Discovery</button></div>
+</div>
+</div>
+
+<!-- ====== RESULTS ====== -->
+<div class="page" id="P3">
+<div class="res">
+  <!-- Header with ring -->
+  <div style="background:var(--dark);border-radius:16px;padding:32px 24px;text-align:center;margin-bottom:24px;color:#fff">
+    <div style="font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#60a5fa;margin-bottom:6px">Discovery Complete</div>
+    <div style="font-family:var(--fd);font-size:28px;margin-bottom:4px" id="rClient"></div>
+    <div style="font-size:14px;color:rgba(255,255,255,.5)">By <span id="rRep"></span> &middot; <span id="rDate"></span></div>
+    <div class="ring" style="margin:20px auto 0">
+      <svg viewBox="0 0 120 120"><circle class="ring-bg" cx="60" cy="60" r="50" style="stroke:rgba(255,255,255,.1)"/><circle class="ring-f" id="rf" cx="60" cy="60" r="50" stroke-dasharray="314" stroke-dashoffset="314"/></svg>
+      <div class="ring-t"><div class="ring-n" id="rn" style="color:#fff">0%</div><div class="ring-l" style="color:rgba(255,255,255,.5)">Complete</div></div>
+    </div>
+  </div>
+
+  <!-- Verdict -->
+  <div class="verdict" id="vb"></div>
+
+  <!-- Recommended Programme -->
+  <div style="margin-bottom:24px" id="recBox"></div>
+
+  <!-- Alerts -->
+  <div style="font-family:var(--fd);font-size:20px;margin-bottom:12px">Observations</div>
+  <div class="alerts" id="ab"></div>
+
+  <!-- Section Breakdown -->
+  <div style="font-family:var(--fd);font-size:20px;margin-bottom:12px">Section Breakdown</div>
+  <div id="rsb" style="margin-bottom:24px"></div>
+
+  <!-- Next Steps -->
+  <div style="font-family:var(--fd);font-size:20px;margin-bottom:12px">Suggested Next Steps</div>
+  <div id="nsBox" style="margin-bottom:28px"></div>
+
+  <!-- Actions -->
+  <div style="display:flex;gap:12px;justify-content:center">
+    <button class="btn" onclick="window.print()" style="background:var(--dark)">Print Report</button>
+    <button class="btn" onclick="reset()" style="background:var(--bg2);color:var(--text);border:1px solid var(--border)">New Discovery</button>
+  </div>
+</div>
+</div>
+
+<script>
+let CN='',REP='';
+
+function show(id){document.querySelectorAll('.page').forEach(p=>p.classList.remove('on'));document.getElementById(id).classList.add('on');document.getElementById('pb').style.display=id==='P2'?'block':'none';window.scrollTo(0,0)}
+
+function go(){
+  const c=document.getElementById('f1').value.trim();
+  const r=document.getElementById('f2').value.trim();
+  const d=document.getElementById('f3').value;
+  if(!c){document.getElementById('f1').style.borderColor='#f87171';document.getElementById('f1').focus();return}
+  if(!r){document.getElementById('f2').style.borderColor='#f87171';document.getElementById('f2').focus();return}
+  if(!d){document.getElementById('f3').style.borderColor='#f87171';document.getElementById('f3').focus();return}
+  document.getElementById('f1').style.borderColor='';document.getElementById('f2').style.borderColor='';document.getElementById('f3').style.borderColor='';
+  CN=c;REP=r;document.getElementById('cName').textContent=CN;show('P2');upd()
+}
+
+function tog(h){h.parentElement.classList.toggle('shut')}
+function ck(el){el.parentElement.querySelector('input').click()}
+
+function upd(){
+  const all=document.querySelectorAll('.row input');
+  const chk=document.querySelectorAll('.row input:checked');
+  const pct=all.length?Math.round(chk.length/all.length*100):0;
+  all.forEach(cb=>{const r=cb.closest('.row');r.classList.toggle('done',cb.checked)});
+  document.getElementById('bf').style.width=pct+'%';
+  document.getElementById('bp').textContent=pct+'%';
+  document.getElementById('pbf').style.width=pct+'%';
+  document.querySelectorAll('.sec').forEach(s=>{
+    const t=s.querySelectorAll('input').length,d=s.querySelectorAll('input:checked').length;
+    const c=s.querySelector('.cnt');if(c)c.textContent=d+'/'+t;
+  });
+}
+
+function done(){
+  const secs=document.querySelectorAll('.sec[data-s]');
+  const all=document.querySelectorAll('.row');
+  const chk=document.querySelectorAll('.row input:checked');
+  const pct=Math.round(chk.length/all.length*100);
+  const today=new Date().toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});
+
+  document.getElementById('rClient').textContent=CN;
+  document.getElementById('rRep').textContent=REP;
+  document.getElementById('rDate').textContent=today;
+
+  // Ring
+  const off=314-(314*pct/100);
+  const rc=pct>=80?'var(--green)':pct>=50?'var(--gold)':'var(--red)';
+  const rf=document.getElementById('rf');
+  rf.style.stroke=rc;
+  document.getElementById('rn').textContent=pct+'%';
+
+  // Verdict
+  const vb=document.getElementById('vb');
+  if(pct>=80){vb.style.background='var(--green-l)';vb.style.border='1px solid #bbf7d0';vb.innerHTML='<h2 style="color:var(--green)">Ready to Propose</h2><p style="color:var(--text2)">You have what you need. Build a strong, tailored proposal.</p>'}
+  else if(pct>=50){vb.style.background='var(--gold-l)';vb.style.border='1px solid #fde68a';vb.innerHTML='<h2 style="color:var(--gold)">Gaps Remain — Follow Up</h2><p style="color:var(--text2)">You can start drafting, but book a follow-up call to close the gaps below.</p>'}
+  else{vb.style.background='var(--red-l)';vb.style.border='1px solid #fecaca';vb.innerHTML='<h2 style="color:var(--red)">Not Enough — Don\'t Propose Yet</h2><p style="color:var(--text2)">Too many unknowns. A proposal now will be generic and miss. Do a proper discovery call first.</p>'}
+
+  // Alerts
+  const ab=document.getElementById('ab');ab.innerHTML='';
+  const mustMiss=[];
+  document.querySelectorAll('.row[data-p="must"]').forEach(r=>{if(!r.querySelector('input').checked)mustMiss.push(r.querySelector('.rtxt').childNodes[0].textContent.trim())});
+
+  if(mustMiss.length>0) ab.innerHTML+='<div class="al al-r"><div class="al-i">&#9888;</div><div><h3>'+mustMiss.length+' critical question'+(mustMiss.length>1?'s':'')+' missed</h3><p>'+mustMiss.join(' &middot; ')+'</p></div></div>';
+  else ab.innerHTML+='<div class="al al-k"><div class="al-i">&#9989;</div><div><h3>All critical questions covered</h3><p>The proposal will be well-scoped. Nice work.</p></div></div>';
+
+  // Section-specific alerts
+  const sd=[];
+  secs.forEach(s=>{const n=s.dataset.n,c=s.dataset.c,t=s.querySelectorAll('input').length,d=s.querySelectorAll('input:checked').length,miss=[];
+    s.querySelectorAll('.row').forEach(r=>{if(!r.querySelector('input').checked)miss.push({t:r.querySelector('.rtxt').childNodes[0].textContent.trim(),p:r.dataset.p})});
+    sd.push({n,c,t,d,miss})});
+
+  const tools=sd.find(s=>s.n==='Tools & Access');
+  if(tools&&tools.d<tools.t*.5) ab.innerHTML+='<div class="al al-g"><div class="al-i">&#128295;</div><div><h3>Tools section is thin</h3><p>Without knowing their tool stack, the curriculum will be a guess. Nail this before proposing.</p></div></div>';
+
+  const money=sd.find(s=>s.n==='Money & Timeline');
+  if(money&&money.d<2) ab.innerHTML+='<div class="al al-g"><div class="al-i">&#128176;</div><div><h3>Budget & timeline unclear</h3><p>You might propose something they can\'t afford or approve. At minimum, get budget range and decision date.</p></div></div>';
+
+  const who=sd.find(s=>s.n==="Who's in the Room");
+  if(who&&who.d===who.t) ab.innerHTML+='<div class="al al-k"><div class="al-i">&#127919;</div><div><h3>Audience fully mapped</h3><p>You can build learner personas and tailor every exercise to their roles.</p></div></div>';
+
+  if(pct>=90) ab.innerHTML+='<div class="al al-b"><div class="al-i">&#128640;</div><div><h3>Exceptional discovery ('+pct+'%)</h3><p>This means a highly customised proposal, faster curriculum dev, and smoother delivery.</p></div></div>';
+
+  // Sections
+  const rsb=document.getElementById('rsb');rsb.innerHTML='';
+  sd.forEach(s=>{
+    const p=Math.round(s.d/s.t*100);
+    const bc=p===100?'var(--green)':p>=50?s.c:'var(--red)';
+    let mi='';
+    if(s.miss.length===0) mi='<div class="rs-ok">All covered</div>';
+    else s.miss.forEach(m=>{mi+='<div class="rs-miss">'+(m.p==='must'?'<b>[CRITICAL]</b> ':'')+m.t+'</div>'});
+    rsb.innerHTML+='<div class="rs"><div class="rs-top"><div class="rs-dot" style="background:'+s.c+'"></div><div class="rs-name">'+s.n+'</div><div class="rs-score" style="color:'+bc+'">'+s.d+'/'+s.t+'</div></div><div class="rs-bar"><div class="rs-bar-f" style="width:'+p+'%;background:'+bc+'"></div></div>'+mi+'</div>';
+  });
+
+  // Recommended Programme
+  const recBox=document.getElementById('recBox');
+  const whoSec=sd.find(s=>s.n==="Who's in the Room");
+  let recs=[];
+  if(whoSec&&whoSec.d>=2){
+    recs.push({prog:'AI Enabler',fit:'Non-technical teams',desc:'Copilot / ChatGPT for HR, Finance, Sales, Ops. 1-2 days.',color:'var(--blue)'});
+    recs.push({prog:'AI Builder',fit:'Hands-on builders',desc:'No-code or pro-code agent building. 2-3 days.',color:'var(--gold)'});
+    recs.push({prog:'AI for Leaders',fit:'C-Suite & VPs',desc:'Strategy, governance, ROI. Half-day to 1 day.',color:'var(--green)'});
+    recs.push({prog:'Masterclass',fit:'Deep technical',desc:'RAG, LLMs, ML. FAANG instructors. 3-4 hrs.',color:'var(--orange)'});
+  }
+  if(recs.length>0){
+    let rc='<div style="font-family:var(--fd);font-size:20px;margin-bottom:12px">Likely Programme Fit</div>';
+    rc+='<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px">';
+    recs.forEach(r=>{rc+='<div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 16px;border-top:3px solid '+r.color+'"><div style="font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:'+r.color+';margin-bottom:4px">'+r.prog+'</div><div style="font-size:13px;font-weight:700;margin-bottom:3px">'+r.fit+'</div><div style="font-size:12px;color:var(--text2);line-height:1.4">'+r.desc+'</div></div>'});
+    rc+='</div>';
+    recBox.innerHTML=rc;
+  } else {
+    recBox.innerHTML='<div style="padding:14px 18px;background:var(--gold-l);border:1px solid #fde68a;border-radius:10px;font-size:14px;color:var(--gold)"><b>Need more info to recommend a programme.</b> Complete the Audience section first.</div>';
+  }
+
+  // Next Steps
+  const nsBox=document.getElementById('nsBox');
+  let ns='<div style="display:flex;flex-direction:column;gap:8px">';
+  if(pct<50){
+    ns+='<div style="padding:12px 16px;background:var(--card);border:1px solid var(--border);border-radius:10px;border-left:4px solid var(--red);font-size:14px"><b style="color:var(--red)">1. Book a proper discovery call.</b> 30 minutes with the right person to fill the gaps.</div>';
+    ns+='<div style="padding:12px 16px;background:var(--card);border:1px solid var(--border);border-radius:10px;border-left:4px solid var(--gold);font-size:14px"><b>2. Send the discovery questions ahead.</b> Let them prep for better answers.</div>';
+    ns+='<div style="padding:12px 16px;background:var(--card);border:1px solid var(--border);border-radius:10px;border-left:4px solid var(--muted);font-size:14px"><b>3. Hold the proposal.</b> A generic proposal loses more deals than no proposal.</div>';
+  } else if(pct<80){
+    ns+='<div style="padding:12px 16px;background:var(--card);border:1px solid var(--border);border-radius:10px;border-left:4px solid var(--gold);font-size:14px"><b style="color:var(--gold)">1. Start drafting.</b> You have enough to scope it. Flag the gaps as assumptions.</div>';
+    ns+='<div style="padding:12px 16px;background:var(--card);border:1px solid var(--border);border-radius:10px;border-left:4px solid var(--blue);font-size:14px"><b>2. Book a 15-min follow-up</b> to close the missing items before sending.</div>';
+    ns+='<div style="padding:12px 16px;background:var(--card);border:1px solid var(--border);border-radius:10px;border-left:4px solid var(--muted);font-size:14px"><b>3. Share this with the curriculum team</b> so they can start thinking about content.</div>';
+  } else {
+    ns+='<div style="padding:12px 16px;background:var(--card);border:1px solid var(--border);border-radius:10px;border-left:4px solid var(--green);font-size:14px"><b style="color:var(--green)">1. Build the proposal now.</b> You have everything. Make it tailored.</div>';
+    ns+='<div style="padding:12px 16px;background:var(--card);border:1px solid var(--border);border-radius:10px;border-left:4px solid var(--blue);font-size:14px"><b>2. Send to curriculum team today.</b> They can design while you handle commercial.</div>';
+    ns+='<div style="padding:12px 16px;background:var(--card);border:1px solid var(--border);border-radius:10px;border-left:4px solid var(--gold);font-size:14px"><b>3. Proposal out within 48 hours.</b> Speed wins — especially against other vendors.</div>';
+  }
+  ns+='</div>';
+  nsBox.innerHTML=ns;
+
+  show('P3');
+  setTimeout(()=>{rf.style.strokeDashoffset=off},100);
+}
+
+function reset(){
+  document.querySelectorAll('.row input').forEach(cb=>{cb.checked=false});
+  document.querySelectorAll('.row').forEach(r=>r.classList.remove('done'));
+  document.getElementById('f1').value='';document.getElementById('f2').value='';
+  show('P1');
+}
+
+upd();
+</script>
+</body>
+</html>

@@ -1,0 +1,529 @@
+[12/12/24, 5:16:55 PM] Ryan Valles: ‎Messages and calls are end-to-end encrypted. Only people in this chat can read, listen to, or share them.
+[12/12/24, 5:16:55 PM] Utkarsh: Hey Ryan,
+Hope you are doing well.
+Utkarsh Raj here from the NP Team
+Soham mentioned to reachout to you for Live Projects demos needed for B2B Clients in India you are planning to talk to tom.
+He mentioned you had some questions regarding the same, do let me know when can we connect.
+Thanks ‎<This message was edited>
+[12/12/24, 6:25:44 PM] Ryan Valles: HI Utkarsh
+[12/12/24, 6:25:47 PM] Ryan Valles: Thanks for reaching out
+[12/12/24, 6:26:00 PM] Ryan Valles: Can you do a call with me at 8:10pm IST pls
+[12/12/24, 6:26:40 PM] Ryan Valles: Pls share an invute with me at ryan@interviewkickstart.com
+[12/12/24, 6:26:42 PM] Ryan Valles: Thanks
+[12/12/24, 6:27:23 PM] Utkarsh: Sure Ryan 8:10 PM works, will share an invite.
+Thanks
+[13/12/24, 3:04:02 AM] Utkarsh: Hey Ryan,
+I have completed the Deck.
+- https://docs.google.com/presentation/d/1FSbdX51AA8E4kU4tFqgdPBpOOsSgpSXYyEQ0w9AWlB8/edit#slide=id.g323dbcb3a44_0_1121
+Also additionally have created a detailed view for the Project as well: 
+- ⁠Detailed Project Structure - https://docs.google.com/document/d/1NO9A6fL7eF7MK64U7RU6xsgIdoUgRq290vO1U2nPr58/edit?tab=t.0#heading=h.b8ahhus187tv
+Let me know if there are any more changes required.
+
+Also have added the video around Zepto and gigaml which Mahima was mentioning in the Deck. I picked up the Hospitality Project itself so that it can help make an impactful pitch.
+Thanks ‎<This message was edited>
+[13/12/24, 10:00:05 AM] Ryan Valles: Thanks a ton Utkarsh. I appreciate this a lot
+[13/12/24, 10:01:53 AM] Utkarsh: Absolutely Ryan, happy to help 🙌🏻
+[20/03/25, 11:06:31 AM] Utkarsh: Hey Ryan 
+- https://docs.google.com/presentation/d/1S_-M9PGMrNiUCNj_BS6NDR4rJZIG5-nzfjIDa5oo_IU/edit?usp=sharing
+Thanks
+[20/03/25, 3:25:38 PM] Utkarsh: Hey Ryan I have completed the changes from my end, do let me know if any further changes are required.
+Thanks
+[20/03/25, 10:13:43 PM] Ryan Valles: Thanks Utkarsh. All good for now. This was very helpful
+[20/03/25, 10:22:15 PM] Utkarsh: Thanks Ryan 🙌🏻
+Looking forward to our call next week.
+[27/03/25, 8:58:57 AM] Utkarsh: Hey Ryan,
+Good morning, I wanted to reachout for our call today.
+Can we possibly shift the same to next week sometime.
+Last few days were a little hectic due to B2B and some other engagements, and I didn’t get enough time to prep for the same.
+
+Also I am working on a workflow with n8n for AI-Generated Content, Optimisation & Publishing ( a Lead has requested for a Live Demo, and it will also help us in the long race ) which will be completed by this weekend.
+Thanks
+[27/03/25, 9:00:34 AM] Utkarsh: Referring to this workflow.
+- https://n8n.io/workflows/3018-automated-content-generation-and-publishing-wordpress/
+Thanks
+[27/03/25, 1:45:43 PM] Ryan Valles: Hi Utkarsh - I need another 15 min pls
+[27/03/25, 1:47:06 PM] Utkarsh: Hey Ryan can we reschedule our call to next week if possible?
+I actually didn’t enough time to prep for our call due to B2B and some other engagement.
+[27/03/25, 1:47:16 PM] Utkarsh: I’ll have this workflow also ready by then.
+[27/03/25, 2:00:20 PM] Ryan Valles: Sure
+[27/03/25, 2:00:24 PM] Ryan Valles: No problem at all
+[27/03/25, 2:01:27 PM] Utkarsh: Thanks a lot Ryan.
+Also some interesting things I have been observing, will discuss more on our call, but I was having a conversation with some of my friends at other orgs, and many of them have started training Non-Tech Team on n8n and similar tools. ‎<This message was edited>
+[27/03/25, 2:01:37 PM] Utkarsh: So we can also explore the same.
+[27/03/25, 2:01:58 PM] Ryan Valles: We are also planning to. Are they doing this in b2b or b2c?
+[27/03/25, 2:02:34 PM] Utkarsh: They are doing this internally, like first their Curriculum/ Tech Teams are getting equipped and then helping other internal Teams.
+[27/03/25, 2:02:54 PM] Ryan Valles: Excellent. Let's do this. Can you start by training me?
+[27/03/25, 2:03:20 PM] Utkarsh: Absolutely Ryan, let’s discus this on our call next week, I’ll definitely have a plan ready by then, and we can get started.
+[27/03/25, 2:03:27 PM] Utkarsh: Really looking forward this 🙌🏻
+[27/03/25, 2:03:52 PM] Ryan Valles: So am i. Let's start my training in our call next week itself
+[27/03/25, 2:04:01 PM] Ryan Valles: I think if I learn then I can push the org
+[27/03/25, 2:04:35 PM] Ryan Valles: We and build use cases for each team and train them. This will give us B2B training use cases as well that we have done ourselves
+[27/03/25, 2:04:51 PM] Utkarsh: Sure Ryan absolutely.
+[27/03/25, 2:05:27 PM] Utkarsh: Makes sense the more usecases we try out, more quickly we will be able to engage with E& and similar companies out there.
+[03/04/25, 11:03:42 PM] Utkarsh: Hey Ryan,
+Good Evening, Hope you are doing well.
+I wanted to reachout regarding our call, do let me know when can we set it up. The WorkFlow on n8n is completed, and the results are quite good.
+Automated Content Generation & Publishing with Airtable - WordPress
+I have shared them here in the B2B Group.
+- https://discord.com/channels/1040146341856292914/1289443377468669984/1357360939967582218 ‎<This message was edited>
+‎[03/04/25, 11:03:55 PM] Utkarsh: ‎<attached: 00000036-PHOTO-2025-04-03-23-03-55.jpg>
+[03/04/25, 11:03:56 PM] Utkarsh: ‎You deleted this message.
+[03/04/25, 11:04:09 PM] Utkarsh: ‎You deleted this message.
+‎[03/04/25, 11:08:23 PM] Utkarsh: Live Link - https://staging-e036-learninterviewkickstartcom.wpcomstaging.com/build-vertical-ai-agents-live-masterclass
+Thanks ‎<attached: 00000039-PHOTO-2025-04-03-23-08-23.jpg>
+[15/04/25, 10:12:46 AM] Ryan Valles: ‎Voice call, ‎Answered on other device
+‎[15/04/25, 9:36:57 PM] Utkarsh: AI for Everyone _ E& _ Proposal.pdf • ‎19 pages ‎<attached: 00000041-AI for Everyone _ E& _ Proposal.pdf>
+[15/04/25, 9:36:58 PM] Utkarsh: ‎You deleted this message.
+[15/04/25, 9:37:32 PM] Utkarsh: Hey Ryan here is the final proposal, do review it once from your end.
+Attaching the doc as well.
+- https://docs.google.com/document/d/17wHimnelMiykHmCyUwJqu4-g3eJ7fkL54A1eDyDFA-g/edit?tab=t.xpybze4hll67#heading=h.zcz88pea0w8f
+Thanks
+[15/04/25, 9:44:20 PM] Ryan Valles: looks solid
+[15/04/25, 10:06:48 PM] Utkarsh: Thanks Ryan 🙌🏻
+‎[15/04/25, 11:28:10 PM] Utkarsh: AI for Everyone _ E& _ Proposal.pdf • ‎19 pages ‎<attached: 00000046-AI for Everyone _ E& _ Proposal.pdf>
+[13/05/25, 10:38:19 AM] Ryan Valles: https://youtu.be/Q55FNEdQst8?si=sHoNIERqO2UD5yYq
+[13/05/25, 10:38:19 AM] Ryan Valles: Genspark AI slides is amazing
+[13/05/25, 11:22:34 AM] Utkarsh: Looks really good thanks for sharing Ryan.
+[16/05/25, 12:11:35 PM] Ryan Valles: Possible courses / course components that we can also include in our packages 
+[16/05/25, 12:11:36 PM] Ryan Valles: https://www.sectionai.com/ai-academy
+
+This was a recommendation from a few funds where they offered three types of support : 
+
+Annual package org wide, Cohort based designed with the org, Personal 1:1 for select set of teams/employees.
+[16/05/25, 12:25:46 PM] Utkarsh: Hey Ryan, good morning. So yes, I have actually explored this particular program. They are quite good and interestingly we have a new instructor who has recently joined us Devinder, so he has taught with them.
+I’ll explore more on this and comeback with a detailed report around them and their offerings.
+Thanks
+[02/06/25, 11:06:13 PM] Ryan Valles: https://www.linkedin.com/posts/kpmg_leverage-the-full-potential-of-copilot-with-activity-7330627973919715330-gA4u?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAABjcQt0BjKt9N6z8u_pWlB-wn3WtXAIQsjE&utm_campaign=whatsapp
+[02/06/25, 11:06:13 PM] Ryan Valles: Should review this and learn
+[02/06/25, 11:09:03 PM] Utkarsh: Sure Ryan thanks for sharing let me go through this tom morning.
+I actually have couple of friends at KPMG, will reachout to some of them to understand how they are leveraging this.
+[02/06/25, 11:10:18 PM] Utkarsh: Btw in the Curr I shared, have added couple of ref, do check them out there is some real potential with O365 and given companies are already accustomed with the same, many big org especially be aligned to the same as you were also mentioning.
+- https://docs.google.com/document/d/1w6hJ5RYPMgHFo7T900dUZR3OUL5xX3MkkhrSCRnUZ5s/edit?tab=t.vibhz2ru1lsm
+Thanks
+[04/07/25, 12:35:14 PM] Ryan Valles: Hi Utkarsh
+[04/07/25, 12:35:15 PM] Ryan Valles: How are you
+[04/07/25, 12:35:41 PM] Ryan Valles: Soham mentioned that you have created a GPT for B2B. Can you tell me more about this and what it does
+[04/07/25, 12:35:53 PM] Ryan Valles: Also can you please share it with me
+[04/07/25, 12:38:45 PM] Utkarsh: Hey Ryan I am good.
+[04/07/25, 12:40:52 PM] Utkarsh: Yes, so basically I had used a Knowledge base to add it and built out the Custom GPT.
+Knowledge base reference - https://docs.google.com/spreadsheets/d/1MC6KHOlwtYRYyZoqaz3ZMFylRcUdidO6xoOXuoPELps/edit?gid=1799851152#gid=1799851152
+
+Key things are:
+- Adding Knowledge base.
+- ⁠Adding Proper prompts.
+
+Link - https://chatgpt.com/g/g-683e978f6db88191813f1ead07823bdf-b2b-overall-costing-template
+
+Thanks
+‎[04/07/25, 12:41:32 PM] Utkarsh: ‎<attached: 00000063-PHOTO-2025-07-04-12-41-32.jpg>
+‎[04/07/25, 12:42:20 PM] Utkarsh: ‎<attached: 00000064-PHOTO-2025-07-04-12-42-20.jpg>
+[04/07/25, 12:42:23 PM] Utkarsh: Thanks
+[04/07/25, 1:34:09 PM] Ryan Valles: Very cool idea
+[04/07/25, 5:12:52 PM] Utkarsh: Thanks Ryan 🙌🏻
+[29/07/25, 6:18:13 PM] Utkarsh: Hey Ryan,
+Good evening
+[29/07/25, 6:18:50 PM] Utkarsh: Hope you are doing well.
+I am sharing across the impact analysis report for e& here.
+- AI Builder Program for e& | Impact & Way Forward - https://docs.google.com/presentation/d/1SI4Qcux7g1ix0MpwKU4UGMCT0Xm-dOhglg5hKlDHE-k/edit?slide=id.g36f6aed608e_1_64#slide=id.g36f6aed608e_1_64
+Thanks ‎<This message was edited>
+[29/07/25, 7:29:35 PM] Ryan Valles: Utkarsh - This looks very solid. I would only drop the pricing slide for this chat
+[29/07/25, 7:29:43 PM] Ryan Valles: Let them just soak in the impact
+[29/07/25, 8:48:13 PM] Utkarsh: Thanks Ryan it was team effort everyone pitched in 🙌🏻
+‎[17/08/25, 4:57:51 PM] Ryan Valles: Short session that someone posted for leadership ‎<attached: 00000073-PHOTO-2025-08-17-16-57-51.jpg>
+[18/08/25, 12:44:56 PM] Utkarsh: Thanks for sharing Ryan will check. ‎<This message was edited>
+[16/09/25, 4:55:16 PM] Ryan Valles: Hi Utkarsh
+[16/09/25, 4:55:20 PM] Ryan Valles: Running 10 min late
+[16/09/25, 5:02:18 PM] Utkarsh: Sure Ryan.
+[16/09/25, 5:14:29 PM] Ryan Valles: Hi Utkarsh
+[16/09/25, 5:14:32 PM] Ryan Valles: Jiat added a link
+[16/09/25, 5:14:35 PM] Ryan Valles: Pls join
+[16/09/25, 5:14:38 PM] Ryan Valles: Am on the link
+[16/09/25, 5:17:19 PM] Ryan Valles: https://chatgpt.com/share/e/68c41295-0cb4-800c-8a14-c48482e0be67
+[16/09/25, 5:17:39 PM] Utkarsh: https://www.lennysnewsletter.com/
+[16/09/25, 5:51:37 PM] Utkarsh: - Content Generator - https://chatgpt.com/share/68c95631-d308-800c-b073-7b3e8bc766b8
+[21/09/25, 8:52:51 PM] Ryan Valles: Hi Utkarsh -  flying tomorrow so won't be able to make our session Tom. Catch u week after
+[22/09/25, 1:04:49 PM] Utkarsh: Sure Ryan, thanks for the heads-up, and safe travels!
+Let’s catch-up next week, I got caught up with Everest/ Cornerstone will send out the curriculum for you before Wed.
+Thanks
+[28/09/25, 3:14:40 PM] Ryan Valles: Utkarsh - flying Tom..Can we pls  reschedule for later in the week?
+[28/09/25, 6:12:02 PM] Utkarsh: Sure Ryan can we connect on Wed at the same time?
+[28/09/25, 6:12:06 PM] Utkarsh: Please let me know.
+Thanks
+[30/09/25, 10:25:46 PM] Ryan Valles: Hi Utkarsh
+[30/09/25, 10:26:33 PM] Ryan Valles: Can we do Thursday 3:30pm four a couple of hours. Let's also discuss the leadership Masterclasses
+[30/09/25, 10:26:41 PM] Ryan Valles: If OK pls share invite
+[30/09/25, 10:31:41 PM] Ryan Valles: Just realized Thu is Oct 2nd and it's an off. Let me know if you are available. Else let's do Wed 8pm IST. If either work, send an invite pls
+[30/09/25, 10:44:45 PM] Utkarsh: Sure Ryan Thu should work.
+Will add a call for 3:30-5:30 PM.
+[30/09/25, 10:44:49 PM] Utkarsh: Thanks
+[02/10/25, 11:54:55 AM] Utkarsh: Hey Ryan I am really sorry for this, something has come up a sudden plan due to which it will be difficult to make for today’s call.
+Would you have anytime tom to connect?
+Please let me know, again apologies for this.
+Thanks
+[02/10/25, 11:56:09 AM] Utkarsh: I am actually working today since there are couple of P0s but some sudden plan came 3 PM onwards.
+[02/10/25, 12:30:57 PM] Ryan Valles: Sure sure. No problem
+[02/10/25, 12:31:27 PM] Ryan Valles: Tom 11am?
+[02/10/25, 12:43:04 PM] Utkarsh: Yes Ryan tom 11 AM should work. We generally have the B2B calls at 11:30 AM but I think most of the Team is on leave apart from Soham, so will give him an update async.
+Thanks
+[03/10/25, 10:31:35 AM] Ryan Valles: Hi Utkarsh -lets do 11:30-12:30pm pls
+[03/10/25, 10:39:56 AM] Utkarsh: Sure Ryan that works.
+[03/10/25, 10:39:58 AM] Utkarsh: Thanks
+[05/10/25, 11:58:18 AM] Ryan Valles: Good morning Utkarsh
+[05/10/25, 11:58:27 AM] Ryan Valles: Hope you are having a good Sunday
+[05/10/25, 11:59:21 AM] Ryan Valles: Can we do our AI session from 10:30am IST to 11:30am tomorrow pls. Unfortunately I have an important meeting with the business leaders at our planned time
+[05/10/25, 9:34:39 PM] Utkarsh: Hey Ryan Yes I am good.
+[05/10/25, 9:34:47 PM] Utkarsh: Hope you had an amazing Sunday as well. ‎<This message was edited>
+[05/10/25, 9:35:12 PM] Utkarsh: I was actually caught up with Cornerstone Dry Run Planning and Content, sorry for the late reply.
+[05/10/25, 9:35:46 PM] Utkarsh: Could we do 10-11 AM?
+[05/10/25, 9:35:59 PM] Ryan Valles: All good dude . Thanks for helping on cornerstone
+[05/10/25, 9:36:31 PM] Ryan Valles: Won't be able. Let's do later in the week then. I'll share a.few slots
+[05/10/25, 9:36:35 PM] Ryan Valles: No worries
+[05/10/25, 9:36:58 PM] Utkarsh: We have our first Session for the Dry Run tom, the Content is coming out quite well, SME are quite excited.
+
+Their comment was most folks out there are thinking of a Program like this as it would have an amazing response, but none is out there. ‎<This message was edited>
+[05/10/25, 9:37:10 PM] Utkarsh: So once we do deliver here we should definitely explore B2C as well ‎<This message was edited>
+[05/10/25, 9:37:17 PM] Utkarsh: Sure Ryan.
+[05/10/25, 9:37:31 PM] Utkarsh: I will work on the Curriculum we discussed tom, and share it across by EOD.
+[05/10/25, 9:42:58 PM] Ryan Valles: Awesome
+[05/10/25, 9:43:27 PM] Ryan Valles: Yes. There's lots of opportunities in b2b n b2c
+[05/10/25, 9:43:39 PM] Ryan Valles: Pls invite me to the Dry run
+[05/10/25, 11:34:46 PM] Utkarsh: Sure Ryan will get you added.
+Thanks
+[07/10/25, 10:54:17 AM] Utkarsh: Hey Ryan this just got launched today 
+- https://openai.com/index/introducing-agentkit/
+Agent Builder From OpenAI, which can replace things like Make, n8n, will explore this properly over the week.
+Thanks
+[07/10/25, 10:54:29 AM] Utkarsh: We can definitely include this within the Curriculum for you.
+[07/10/25, 10:57:31 AM] Ryan Valles: This looks awesome
+[07/10/25, 10:57:49 AM] Utkarsh: This will actually help us accelerate many conversation.
+[07/10/25, 10:58:03 AM] Utkarsh: One of the biggest hassles we face is need of multiple Tools.
+[07/10/25, 10:58:08 AM] Utkarsh: For Non-Tech Teams.
+[07/10/25, 10:58:19 AM] Ryan Valles: Can we do 3:30-5pm on Thursday this week?
+[07/10/25, 10:58:21 AM] Utkarsh: If we are going most of things in the same Tool it’s gonna be so much easier.
+[07/10/25, 10:58:23 AM] Ryan Valles: Agreed
+[07/10/25, 10:58:44 AM] Ryan Valles: We should start doing all this internally
+[07/10/25, 10:59:16 AM] Utkarsh: Sure Ryan, we can, I will just confirm this in next hour.
+
+We have Session 2 for AI for PMs on Thu evening which might happen between 12:30 - 3:30 PM.
+[07/10/25, 10:59:29 AM] Utkarsh: Let me get back shortly after my discussion with the SME.
+[07/10/25, 10:59:37 AM] Ryan Valles: Cool
+[07/10/25, 10:59:57 AM] Utkarsh: Yes I will pass this along to Karthika, we will definitely try to do this in the Agentic AI Fest Sessions we are planning.
+[07/10/25, 10:58:27 PM] Utkarsh: Hey Ryan we can do this, let’s connect at 3:30 PM on Thu, will move our call.
+[07/10/25, 10:58:31 PM] Utkarsh: Thanks
+[09/10/25, 3:03:51 PM] Utkarsh: Hey Ryan the Dry Run for Session 2 is running a bit late for Cornerstone, might not be over the atleast 15-20 min more.
+
+Could we do our call a little later in the evening, have been on call for this since 11:30 will have my Lunch now. ‎<This message was edited>
+[09/10/25, 3:03:58 PM] Utkarsh: Btw good news the Session 2 went really well.
+[09/10/25, 3:04:53 PM] Utkarsh: We have received a really good rating for S2 - 4.85/5.
+[09/10/25, 3:05:17 PM] Utkarsh: Let me know if you have some time after 5 PM or a maybe before the All Hands.
+[09/10/25, 3:05:19 PM] Utkarsh: Thanks
+[09/10/25, 3:23:46 PM] Ryan Valles: Sure. Should we do 7pm IST up till All hands ?
+[09/10/25, 3:24:06 PM] Ryan Valles: AMAZING
+[09/10/25, 3:29:24 PM] Utkarsh: I will have Suvansh share a few snippets on how interactivity and break out rooms we tried worked really well.
+[09/10/25, 3:33:03 PM] Utkarsh: Sure Ryan let’s start from 7:30 - 8:30 PM currently we have a call from 7-7:30 PM onwards, which might be rescheduled, ( I would know by 6 PM, I’ll ping you incase it does and we can start earlier.) 
+
+Thanks
+[09/10/25, 7:07:48 PM] Utkarsh: Hey Ryan the CSOD call got reschedule again from 7:30 PM just saw. ‎<This message was edited>
+[09/10/25, 7:07:55 PM] Utkarsh: Do you have some time to meet now?
+[09/10/25, 7:10:10 PM] Ryan Valles: Let's do another day. Don't worry
+[09/10/25, 7:11:07 PM] Utkarsh: Sure Ryan.
+I think we have a call scheduled for Mon morning.
+We could directly meet then. I’ll still like to have a quick chat if possible today around the ANSR thing ( Soham mentioned today )
+[09/10/25, 7:11:18 PM] Utkarsh: So that I can keep it in mind while finalising your curriculum.
+[09/10/25, 10:43:34 PM] Utkarsh: Hey Ryan,
+
+Today’s All Hands was super amazing— the growth we’ve seen this quarter is incredible.
+Just wanted to say I’ve learnt a lot from you over the past few months — especially in how you think about business strategy, storytelling, and building focus across teams. The clarity and conviction you bring really push all of us to think bigger and execute sharper.
+Really grateful to be learning and building alongside you.
+
+To many more such quarters 🙌🏻
+[09/10/25, 10:52:28 PM] Ryan Valles: Thanks a lot for the kind words Utkarsh. We achieve these things because of people like you. Young and energetic. It’s fun leading a team filled with people like that cause the best ideas then come from people like you
+[09/10/25, 10:53:46 PM] Ryan Valles: What is important to note is that all quarters won’t be as good and that is ok. We will also have bad quarters. And that is ok. Success is not linear. What is key is that the bad quarters don\t get us too down and the good ones don’t get us too excited 😉
+[09/10/25, 11:39:58 PM] Utkarsh: Absolutely, couldn’t agree more! It’s all part of the journey — as you said, the key is to stay grounded, keep learning, and keep showing up consistently no matter how the graph moves 🙌🏻
+[13/10/25, 11:06:27 AM] Ryan Valles: Hi Utkarsh
+[13/10/25, 11:06:35 AM] Ryan Valles: Are we on for this morning?
+[13/10/25, 11:06:51 AM] Ryan Valles: If so can we pls start at 11:45am pls
+[13/10/25, 11:07:06 AM] Utkarsh: Hey Ryan
+[13/10/25, 11:07:12 AM] Utkarsh: Yes let’s meet at 11:45 PM.
+[13/10/25, 11:07:27 AM] Utkarsh: I wanted to go over the Curriculum and start active Classes from our next call.
+[13/10/25, 11:07:28 AM] Utkarsh: Thanks
+[13/10/25, 12:00:53 PM] Ryan Valles: https://podcasts.apple.com/in/podcast/the-ai-daily-brief-artificial-intelligence-news/id1680633614?i=1000731432363
+[13/10/25, 12:01:12 PM] Ryan Valles: https://podcasts.apple.com/in/podcast/all-in-with-chamath-jason-sacks-friedberg/id1502871393?i=1000731223681
+[13/10/25, 12:02:04 PM] Ryan Valles: https://podcasts.apple.com/in/podcast/bg2pod-with-brad-gerstner-and-bill-gurley/id1727278168?i=1000728499451
+[13/10/25, 12:21:42 PM] Ryan Valles: Needed tp drop
+[13/10/25, 12:21:47 PM] Ryan Valles: Soham needed somehting urgent
+[13/10/25, 12:23:15 PM] Utkarsh: Sure Ryan no worries.
+[13/10/25, 12:23:24 PM] Utkarsh: Let me share you the Curriculum to review async.
+Thanks
+[14/10/25, 10:39:14 AM] Utkarsh: Hey Ryan
+[14/10/25, 10:39:23 AM] Utkarsh: Here is the Curriculum
+[14/10/25, 10:39:24 AM] Utkarsh: - https://docs.google.com/document/d/16nlsgPFzIvoga-SLrU0cLdPQV3HBqJRv17BvIJ7ug9s/edit?tab=t.ienke3swp4ab#heading=h.4phwya2qcaof
+[14/10/25, 10:39:36 AM] Utkarsh: Please do review this and we can plan accordingly for next steps.
+Thanks
+[18/10/25, 3:22:48 PM] Ryan Valles: Hi Utkarsh. Happy Diwali to you and your family dude. Hope it's the best one yet. I'm delighted to have you as one of our brightest Stars at IK. Here's to a super bright future ahead for you 💥💥
+
+Ryan
+[18/10/25, 10:07:39 PM] Utkarsh: Thank you soo much Ryan ❤️
+[18/10/25, 10:11:04 PM] Utkarsh: A very Happy Diwali to you and you family as well, and our whole IK Fam.
+To an amazing future, filled with wonderful things 🙌🏻🚀🎉
+[03/11/25, 12:33:49 PM] Ryan Valles: 5 min Utkarsh
+[03/11/25, 12:34:07 PM] Utkarsh: Sure Ryan.
+[05/11/25, 6:35:01 PM] Utkarsh: Hey Ryan
+[05/11/25, 6:35:10 PM] Utkarsh: Can we start 30 min earlier
+[05/11/25, 6:35:13 PM] Utkarsh: For toms call?
+[05/11/25, 6:35:57 PM] Utkarsh: We have a call with Soham starting 10:30 AM onwards updated now for the e& Program.
+Let me know.
+Thanks
+[05/11/25, 11:31:50 PM] Ryan Valles: Don't worry. Lwts do Monday then. I'll use that time to do some.self study on AI
+[05/11/25, 11:34:33 PM] Utkarsh: Sure Ryan, but we do have a call booked for Friday.
+[05/11/25, 11:34:40 PM] Utkarsh: We can do then if that works.
+Thanks
+[05/11/25, 11:37:11 PM] Ryan Valles: Awesome. Forgot about that. Fri it is. Looking forward
+[05/11/25, 11:37:52 PM] Utkarsh: Sure Ryan.
+[05/11/25, 11:38:11 PM] Utkarsh: See you on Friday, Good night.
+[06/11/25, 9:21:08 PM] Utkarsh:
+‎[06/11/25, 9:21:09 PM] Utkarsh: ‎<attached: 00000190-PHOTO-2025-11-06-21-21-09.jpg>
+‎[06/11/25, 9:21:09 PM] Utkarsh: ‎<attached: 00000191-PHOTO-2025-11-06-21-21-09.jpg>
+[06/11/25, 9:21:10 PM] Utkarsh: Hey Ryan btw we can now build poster & designs with connecting GPT with Canva and then go edit that there itself.
+We will go through this as well in our Session tom.
+[06/11/25, 9:21:38 PM] Ryan Valles: That's epic
+[06/11/25, 9:21:56 PM] Ryan Valles: I was thinking. A great way to do this is for me to tell u a few use cases and we build those 💥💥
+[06/11/25, 9:22:08 PM] Utkarsh: Yes absolutely Ryan 🙌🏻
+[06/11/25, 9:22:13 PM] Utkarsh: Let’s discuss this more tom.
+[07/11/25, 9:52:45 AM] Ryan Valles: Hey Utkarsh - let’s start 15 min late pls
+[07/11/25, 9:54:46 AM] Utkarsh: Sure Ryan.
+[07/11/25, 10:59:35 AM] Utkarsh: - Email - sme1@uplevel.academy
+- Pass - Sme588@academy
+- 8235801382.
+[08/11/25, 10:22:12 PM] Ryan Valles: Hi Utkarsh!
+
+How are you? Hope you are having a good weekend. I'm sorry to bother you on a weekend, but next week I have an important meeting with a consulting firm that wants to see if they can work with us. I've already had one meeting with them.
+
+I need to build a very good understanding of a genetic AI, how it works, and more importantly around our offering. Can you send me all the key curriculum documents that we have?
+
+So what I need is:
+
+ • Curriculum for the AI Builders Programme (tech)
+ • Curriculum for the AI Navigators Programme (product)
+ • Curriculum for the AI Leaders Programme
+ • Curriculum for the AI for Marketing and AI for Sales.
+
+That we have built. I am going to take all of those documents, work with GPT to understand all the terms in those documents, build a good understanding of what we are teaching and how we are teaching. And then on Monday, I might have some questions for you.
+
+Hopefully, by doing this, I will be able to pitch our offering in great detail.
+
+Okay, thank you very much!
+[09/11/25, 2:49:34 PM] Utkarsh: Sure Ryan.
+[09/11/25, 2:49:50 PM] Utkarsh: Let me send this out in the shortly. ‎<This message was edited>
+[09/11/25, 2:51:16 PM] Utkarsh: I’m doing well, I was actually doing some Sunday cooking , 😁 Chicken curry and rice, sorry for the late reply. ‎<This message was edited>
+[09/11/25, 2:51:37 PM] Utkarsh: I’ll send them out in the next 2-3 hours Ryan.
+Thanks
+[09/11/25, 5:51:11 PM] Utkarsh: Hey Ryan
+[09/11/25, 5:51:13 PM] Utkarsh: Good Evening
+[09/11/25, 5:51:24 PM] Utkarsh: I have started collating the Curriculums here.
+[09/11/25, 5:51:25 PM] Utkarsh: - https://docs.google.com/document/d/1ekhmcnetY5L3nzeVNyqwIzZuRf64OM_LJXv4RS1XODo/edit?tab=t.0
+[09/11/25, 5:51:50 PM] Utkarsh: I might add a few more in next hour, but most of them are added there need to take another look at the same. ‎<This message was edited>
+[09/11/25, 5:51:51 PM] Utkarsh: Thanks
+[09/11/25, 7:38:19 PM] Ryan Valles: Wowww. Send photos. Are you a good cook ?
+[09/11/25, 7:41:33 PM] Utkarsh: I didn’t take any pics will send next I do, yes I do love cooking, mostlly don’t do that much during the week, but weekends I do. 😊
+[10/11/25, 11:30:29 AM] Ryan Valles: Hey Utkarsh, good morning. I'm going to join in about 3-4 minutes. I'm just getting myself some breakfast, okay? Thank you
+[11/11/25, 9:42:21 PM] Utkarsh: Hey Ryan for the API Key thing we found an alternative solution.
+- https://trevorfox.com/api-key-tester/openai
+[11/11/25, 9:43:32 PM] Utkarsh: This is easy to understand.
+I’ll work more on the documentation as per the suggestions, but also for Actual learner’s all the sign-in’s would be done before hand on the VMs and we will further simplify things by sharing a walkthrough video as well.
+Thanks
+[13/11/25, 8:51:46 AM] Utkarsh: Hey Ryan
+[13/11/25, 8:51:49 AM] Utkarsh: Good morning
+[13/11/25, 8:52:01 AM] Utkarsh: Based on our discussion sharing across the ANSR Masterclass proposal.
+[13/11/25, 8:52:03 AM] Utkarsh: - https://docs.google.com/document/d/1wBDCbhnITkfpbPQP6a0_-PiI5JVlRMqVQvhL0Eh2wjg/edit?tab=t.vt2d0f62w6t
+[13/11/25, 8:52:28 AM] Utkarsh: Soham has already and shared a few suggestions, please do review the same as well and let me know your thoughts.
+Thanks
+[13/11/25, 12:30:15 PM] Ryan Valles: Cool. I'll check
+[17/11/25, 10:11:15 AM] Ryan Valles: Hi Utkarsh
+[17/11/25, 10:11:30 AM] Ryan Valles: Good morning. Am traveling today so won't be able to do our session
+[17/11/25, 10:31:50 AM] Utkarsh: Sure Ryan.
+[17/11/25, 10:32:04 AM] Utkarsh: Safe travels
+[19/11/25, 6:21:48 PM] Utkarsh: Hey Ryan
+[19/11/25, 6:22:01 PM] Utkarsh: Glad inform that Day 1 for Pro Code today went really well.
+[19/11/25, 6:22:12 PM] Utkarsh: An amazing way to kickstart this whole engagement with e&.
+[19/11/25, 6:23:12 PM] Utkarsh: 4.74/5
+Feedback from some learners on Zoom Chat
+- Madni - It was a great session, hope we will learn more from you, right now i have joined another meeting so will connect back tomorrow.
+- Farheen Anwari Badubhai- Thank you for your time Anshaj, was a great session. It was a great way to introduce the concepts to beginners and also refreshed my memory on the same.
+- Maryam - Thanks for your great effort today .. a lot information I got from you
+- Sowndarya - Thank you for your efforts, we learnt a lot from today’s session:)
+
+Thanks
+[19/11/25, 6:24:09 PM] Ryan Valles: Super
+[19/11/25, 6:25:01 PM] Utkarsh: I think now if we are able to crack the Leadership Cohort we’ll have a much larger engagement here.
+[19/11/25, 6:27:16 PM] Ryan Valles: Yup. But I think we need a lot more work for leadership
+[19/11/25, 6:29:27 PM] Utkarsh: Yes Ryan I agree.
+[19/11/25, 6:30:00 PM] Utkarsh: Let’s discuss that sometime more next week, especially Session 1.
+[19/11/25, 6:30:16 PM] Utkarsh: The fireside chat n all how you could start the S1.
+[19/11/25, 6:30:17 PM] Ryan Valles: Who's driving the leadership curriculum from the team?
+[19/11/25, 6:30:30 PM] Utkarsh: Myself and Karthika.
+[19/11/25, 6:30:36 PM] Ryan Valles: ‎Missed voice call, ‎Click to call back
+[20/11/25, 11:39:24 AM] Utkarsh: https://docs.google.com/document/d/1ipin-uu0vEwKgobpaLpgkqWGVeWG8S6y_qXY1-f6qcE/edit?tab=t.qsjhnxhrb4uy
+[03/12/25, 12:19:10 PM] Utkarsh: Hey Ryan
+[03/12/25, 12:19:17 PM] Utkarsh: Just a quick find cool AI Tool.
+[03/12/25, 12:19:21 PM] Utkarsh: https://happenstance.ai/research
+[03/12/25, 12:19:55 PM] Utkarsh: It is an an AI-powered search engine that transforms a user's professional and personal networks into a searchable database to find relevant people for opportunities like hiring, fundraising, or sales.
+[03/12/25, 12:21:16 PM] Utkarsh: You can also research professionals experience, which could help in many ways like go better prepared for Meetings, in Sales, I am thinking of using it for Learners’ Analysis for our B2B Cohorts.
+Thanks
+[23/12/25, 3:49:30 PM] Utkarsh: Hey Ryan
+[23/12/25, 3:49:34 PM] Utkarsh: Hope you are doing well
+[23/12/25, 3:49:42 PM] Utkarsh: - PowerUp | Deloitte AI Leadership Proposal - https://docs.google.com/document/d/1lEo0BEUFY3-YzQYjUc1AxYqOHGX_EQSnY0ih5kK8bwo/edit?tab=t.h5gnik4yopxh
+[23/12/25, 3:50:05 PM] Utkarsh: Please do review the same and let me know your thoughts.
+We will send it out to the Deloitte Leaders post the same;
+[23/12/25, 3:50:15 PM] Utkarsh: Soham did review, it is good from his end.
+Thanks
+[27/12/25, 6:53:46 PM] Utkarsh: Hey Ryan,
+Sorry for the late message. Wishing you a Merry Christmas and a very Happy New Year 🎄
+
+It’s been really great working with you this year — lots of learnings, and some amazing wins for us.
+
+Super excited for next year and taking our B2B journey to the next level. Looking forward to building, learning, and winning together again. ‎<This message was edited>
+[27/12/25, 7:11:04 PM] Ryan Valles: Likewise dude. I've learnt a lot from u a d next year is gonna be epic
+[27/12/25, 7:11:07 PM] Ryan Valles: 💥💥
+[27/12/25, 7:15:20 PM] Utkarsh: Absolutely Ryan many exciting milestones next year, it’s gonna be a blast soo looking forward to it 🚀
+[28/12/25, 1:07:00 AM] Ryan Valles: Let's dosucss this post Jan 7
+[28/12/25, 10:12:49 AM] Utkarsh: Sure Ryan.
+‎[01/01/26, 3:39:36 PM] Ryan Valles: ‎<attached: 00000256-VIDEO-2026-01-01-15-39-36.mp4>
+[01/01/26, 9:18:07 PM] Utkarsh: Happy new year to you too Ryan ❤️
+[01/01/26, 9:18:18 PM] Utkarsh: Thank you soo much for the kind words really appreciate it 🙏
+[01/01/26, 9:18:54 PM] Utkarsh: It has been wonderful working with you as well, and I learned so much with your guidance and support.
+[01/01/26, 9:19:11 PM] Utkarsh: I am really looking forward to a wonderful year in 2026.
+[01/01/26, 9:19:23 PM] Utkarsh: Upward and Onward 🚀🚀🚀
+[05/01/26, 12:39:41 PM] Utkarsh: Hey Ryan good morning
+Hope you are doing well.
+[05/01/26, 12:40:02 PM] Utkarsh: Can we in the meantime also send this out to the Deloitte Leaders for their feedback on the same?
+[05/01/26, 12:40:21 PM] Utkarsh: So that we can collate it and start working towards it, as the session is on 23rd Jan.
+Let me know.
+Thanks
+[14/01/26, 2:58:38 PM] Ryan Valles: Pls remove the fireflies note takes from the Deloitte call
+[14/01/26, 2:58:56 PM] Ryan Valles: Don't have this for any external meeting without asking for permission
+[14/01/26, 2:59:13 PM] Ryan Valles: People are sensitive to this
+[14/01/26, 2:59:16 PM] Ryan Valles: ‎Voice call, ‎Answered on other device
+[15/01/26, 4:03:30 PM] Utkarsh: Hey Ryan
+[15/01/26, 4:03:31 PM] Utkarsh: Good afternoon
+[15/01/26, 4:05:01 PM] Utkarsh: I wanted to check in regarding two important things for the e& Leadership Cohort.
+- We wanted to meet this week sometime to go over the Session 1 and 4 Content to get your input.
+- ⁠Also wanted to get your slots for the Dry Run we want to do with Faiza for both e& and Deloitte ( Dates shared in the Leadership WA group ).
+
+Please do let me know on the same.
+Thanks ‎<This message was edited>
+[16/01/26, 6:12:15 PM] Utkarsh: ‎Group call, ‎2 invited
+[16/01/26, 6:22:33 PM] Utkarsh: Hey Ryan, for the Dry on Mon booking a 4 hr slot.
+6:30 - 10:30 PM IST, we can do the complete run of both the sessions we will do for e& with Faiza.
+I’ll get the invites shared shortly.
+Thanks
+[20/01/26, 10:23:10 AM] Ryan Valles: ‎Missed voice call, ‎Click to call back
+[20/01/26, 10:46:50 AM] Utkarsh: Hey Ryan
+[20/01/26, 10:47:02 AM] Utkarsh: The slide is updated from our end.
+Thanks
+[20/01/26, 12:23:23 PM] Utkarsh: Continuous usage of public tools sometimes increase the expectation while technology, security and people not yet ready on ground how to set expectation rightly?
+[20/01/26, 12:23:41 PM] Utkarsh: Hazeem has shared this on the group Ryan, I believe this is a question.
+[20/01/26, 12:53:50 PM] Utkarsh: The end users expectation always higher than the output of AI UC when it comes to Teleco lets say, what is the measure of ensuring results are met.
+[20/01/26, 12:54:12 PM] Utkarsh: From Chadi Sami El Hajj
+[20/01/26, 1:14:05 PM] Utkarsh: Also Leaders intros.
+•⁠  ⁠https://docs.google.com/document/d/1vYNf5l_tyJAKprBwGxJxCoEcUP7yrq781H6oSMySR-s/edit?usp=sharing
+Thanks
+[20/01/26, 1:25:39 PM] Ryan Valles: Great. Pls share with Faiza as well
+[20/01/26, 1:26:14 PM] Utkarsh: Yes Ryan have shared it across as well.
+Thanks
+[21/01/26, 1:03:36 PM] Utkarsh: Hey Ryan, regarding Tanishi’s mail.
+We discussed yesterday with Soham, to give an overall experience to Deloitte including VMs, Orientation etc. and I have already initiated the request for VMs, it will be ready by tom 1 PM.
+[21/01/26, 1:04:01 PM] Utkarsh: So we can send a sample VM to Tanishi rn to check if it is working for her and then use the same on Friday.
+Thanks
+[21/01/26, 1:04:14 PM] Ryan Valles: We need to stress test the VM experience internally and with them
+[21/01/26, 1:05:46 PM] Utkarsh: Sure internally we have tested it, in general VMs are working quite well.
+With e& the Tools are a problem, and some of their access, n8n & Expert Ex has lot of login issues.
+
+Zapier won’t have them issues.
+[21/01/26, 1:05:52 PM] Utkarsh: Also we will bookmark everything.
+[21/01/26, 1:06:06 PM] Utkarsh: But yes we will have to do a proper test with Tanishi.
+[21/01/26, 1:06:16 PM] Ryan Valles: I want to test everything. I've not been happy with how the VM experience has been so far
+[21/01/26, 1:07:10 PM] Utkarsh: Sure we can test it out amongst ourselves as well.
+[21/01/26, 1:07:34 PM] Utkarsh: We could do that sometime tom afternoon, I have raised the request and they will be ready by then.
+[21/01/26, 1:23:10 PM] Ryan Valles: The user experience needs to be seamless. So pls test every part of the user flow thoroughly
+[21/01/26, 1:24:54 PM] Utkarsh: Sure Ryan will do. In general VMs are a little flaky, so sometimes they are a little unpredictable even though proper testing is done, but I’ll test everything again on my end.
+
+For Deloitte will send a sample VM to you shortly right after this call, setting it up right now.
+Thanks
+[21/01/26, 1:36:26 PM] Ryan Valles: I think we need to do the following thing
+[21/01/26, 1:37:07 PM] Utkarsh: ‎You deleted this message.
+[21/01/26, 1:37:11 PM] Utkarsh: ‎You deleted this message.
+[21/01/26, 1:37:33 PM] Ryan Valles: 1. Keep scheduled time during the session for setting up the VMs and checking that everyone has access. Say 15 min
+[21/01/26, 1:37:55 PM] Ryan Valles: 2. We test this internally from a UX and useability perspective
+[21/01/26, 1:38:24 PM] Ryan Valles: 3. We run a test with people in Deloitte so we test in their environment
+[21/01/26, 1:39:18 PM] Ryan Valles: 4. We make it super easy in the VMs. Ideally it should be such that once they log in they are already logged into all the necessary tools including say GMAIL if we have to see if an email has arrived
+[21/01/26, 1:40:54 PM] Utkarsh: This is actually something we are following Ryan even for e& and now we will do bookmark.
+Problem is n8n doesn’t keep logged in, it refreshes, so it took a minute for folks to sign in but the details were saved for them st e&.
+[21/01/26, 1:42:21 PM] Utkarsh: For UX, we will test everything properly.
+In the future cohorts we can explore something to build a UI internally with the Engg Team that does that the start n all the other things in the Backend.
+Once someone logins they directly get directed to the VM desktop.
+[21/01/26, 1:42:44 PM] Utkarsh: This would make the experience seamless, but we can build this out for next cohorts.
+[21/01/26, 2:24:19 PM] Ryan Valles: We need to make this great and easy for Deloitte
+[21/01/26, 4:53:36 PM] Utkarsh: Sure Ryan on it, sending the credentials shortly with you.
+[21/01/26, 4:54:13 PM] Utkarsh: Also we’d like to connect with Faiza once before the Deloitte Session as well, can we do that sometime tom evening IST?
+Please let us know your available slots, I have already pinged Faiza for the same.
+Thanks
+[22/01/26, 9:33:53 AM] Utkarsh: Hey Ryan
+[22/01/26, 9:33:55 AM] Utkarsh: Good morning
+[22/01/26, 9:34:13 AM] Utkarsh: You can test out the Virtual Labs for Deloitte with these credentials.
+[22/01/26, 9:34:18 AM] Utkarsh: - https://cloudlabs.nuvepro.com/company/UpwardandOnward/home
+- ⁠User name - unoagenticaijanuser21	
+- Password - ⁠Ailabs321$ ‎<This message was edited>
+[22/01/26, 9:35:39 AM] Utkarsh: I have also update the Virtual Labs Documentation.
+- https://docs.google.com/document/d/1mJqfev96SJv-QUCJKhWgHGllPcZ_ywGD9pYYF-vibqA/edit?tab=t.0
+
+Please do review these and let me know your suggestions.
+I am slightly unavailable between 11 AM - 2 PM, will make the necessary changes before our Deloitte call as required.
+Thanks
+[23/01/26, 12:55:41 AM] Ryan Valles: I am getting Invalid Credentials when I use this user name and password/ Can you pls make sure that all the usernames and passwords work. Thanks
+[23/01/26, 1:01:32 AM] Ryan Valles: This looks good. Only one minor edit 
+In the first line, pls add a space between Acceler and Virtual
+‎[23/01/26, 1:03:07 AM] Ryan Valles: Screenshot 2026-01-22 at 11.30.54 PM.png ‎<attached: 00000315-Screenshot 2026-01-22 at 11.30.54 PM.png>
+[23/01/26, 7:06:42 AM] Utkarsh: Sure Ryan I rechecked this rn, it is working for me.
+[23/01/26, 7:07:11 AM] Utkarsh: Generally when we copy paste WhatsApp, it adds an additional space at the beginning sometimes.
+[23/01/26, 7:07:50 AM] Utkarsh: That’s why it might be happening, you can try from this sheet directly and just make sure there are no spaces before or after the username/ pass.
+Thanks
+[23/01/26, 7:07:55 AM] Utkarsh: https://docs.google.com/spreadsheets/d/1JhB1Lw4Y_4VwYg8hM98HgTL3btWWiUM_/edit?gid=769949272#gid=769949272
+[23/01/26, 7:23:28 AM] Utkarsh: I have also logged in, into all the Accounts, the credentials are working fine for all of them Ryan.
+Thanks
+[23/01/26, 10:06:01 AM] Ryan Valles: Ok I’ll recheck
+[23/01/26, 11:19:34 AM] Utkarsh: Sure Ryan.
+[23/01/26, 12:53:36 PM] Ryan Valles: Utkarsh send me the activity guide book
+[23/01/26, 12:54:35 PM] Utkarsh: Session Activity Guidebook - https://docs.google.com/document/d/1FBbOuAjQg_8otqpfAWLzfXuob3fz7C9-z-JIjSdcKhc/edit?usp=sharing ‎<This message was edited>
+[23/01/26, 12:54:37 PM] Utkarsh: •⁠  ⁠⁠Sample_Proposal_Template - https://docs.google.com/document/d/1rWn4CotZzlNX41Ka6dy1aoJwwagTQtxL/edit
+•⁠  ⁠⁠Request for Proposal (RFP) Document - https://docs.google.com/document/d/1Dn-ixtOWP_O3rGukzLvoad3Y1ReLo_Oq/edit
+[03/02/26, 10:31:53 AM] Utkarsh: Hey Ryan
+[03/02/26, 10:31:56 AM] Utkarsh: Good morning
+[03/02/26, 10:32:09 AM] Utkarsh: Did you catch this latest podcast on Moltbook it is pretty cool.
+[03/02/26, 10:32:15 AM] Utkarsh: - Moltbook Explained - https://podcasts.apple.com/in/podcast/the-ai-daily-brief-artificial-intelligence-news/id1680633614?i=1000747770293
+Thanks ‎<This message was edited>
+[23/02/26, 4:01:15 PM] Utkarsh: https://www.linkedin.com/in/predictiveanalytics/details/experience/
+‎[25/02/26, 12:08:38 PM] Ryan Valles: ‎<attached: 00000331-PHOTO-2026-02-25-12-08-38.jpg>
+[25/02/26, 12:08:39 PM] Ryan Valles: Someone doing a 4 hour workshop for founders at EO. This is their outline. It's well framed from a use case perspective 
+[25/02/26, 12:50:31 PM] Utkarsh: Thanks for sharing Ryan, let me go through this.
+[25/02/26, 1:02:12 PM] Utkarsh: The Tools here are quite good.
+[25/02/26, 1:02:49 PM] Utkarsh: Primarily we could use them in Day 2 of building but e& and most of the other engagement there is a lot of Tool limitation.
+[26/02/26, 1:08:24 AM] Ryan Valles: Use this for inspiration. The interesting thing here is they have linked the tools to solid use cases. That adds a lot of value and the sense of ROI
+[26/02/26, 1:25:35 PM] Utkarsh: Sure Ryan makes sense.
+[26/02/26, 1:25:51 PM] Utkarsh: We are Woking on the Modules set had a discussion with Aashish today.
+[26/02/26, 11:53:55 PM] Ryan Valles: https://www.linkedin.com/posts/benerez_your-companys-ai-training-is-probably-a-activity-7432158304123985922-dWib?utm_source=share&utm_medium=member_ios&rcm=ACoAAAAo57cB5HOEagPDfU1Xsb_Y96Hzp5UQGn0
+[27/02/26, 4:24:27 PM] Utkarsh: Thanks for sharing this Ryan, this is really amazing post 🙌🏻
+[27/02/26, 4:26:55 PM] Utkarsh: I think taking some learning from this, incorporating into the Leadership Program, would definitely be a game changer. I’ll try to bring in flavour of this to the modules we are creating, the post is really on-point.
+[27/02/26, 5:44:16 PM] Ryan Valles: Excellent
+[16/04/26, 5:53:54 PM] Utkarsh: Hey Ryan do check this out.
+- https://podcasts.apple.com/in/podcast/the-ai-daily-brief-artificial-intelligence-news/id1680633614?i=1000759035541
+It is really good, we are planning to create similar Skills.md/ context to automate pre-sales for B2B, things like proposal creation, pricing and other things that happen in pre-sales.
+[16/04/26, 5:54:04 PM] Utkarsh: Thanks ‎<This message was edited>
+[16/04/26, 5:59:28 PM] Ryan Valles: Will do. Thanks a ton
+[16/04/26, 9:47:47 PM] Utkarsh: Sure Ryan.
+This is something we will be building on the Pre-Sales side, currently I have shared it for review with everyone.
+Please do check it out if you get a chance and share suggestions if any.
+https://docs.google.com/document/d/1Y9bl3pjGT9CH3igFYpyj6-3NvUhJYVHhhPIxupaptrY/edit?tab=t.4iqt3ym04hkx#heading=h.62w3b8ib39yz
+[16/04/26, 9:53:41 PM] Utkarsh: Also just something from today’s All-Hands.
+It truly is a privilege to work at IK, and with co-founders and amazing colleagues we have at IK. It is truly amazing how much I personally get to learn every single day. 🙌🏻 
+Honored to be here 🙏

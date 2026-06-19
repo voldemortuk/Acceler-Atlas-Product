@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI For Leaders Build Lab — e& PPF Hungary (CETIN × Yettel)</title>
+<style>
+  :root{
+    --bg:#FAF7F1; --bg2:#EEF0FB; --card:#fff; --navy:#2C3F8E; --navy-deep:#0F1632;
+    --cyan:#5BC4D2; --cyan-dk:#2C3F8E; --cyan-soft:#E8F7FA; --ink:#1A2240; --text2:#4B5563;
+    --muted:#6B7280; --border:#E5E7EB; --green:#10B981; --green-l:#ECFDF5; --amber:#B45309;
+    --amber-l:#FFF8ED; --red:#DC2626; --red-l:#FEF2F2;
+    --font:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+  }
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+  html{-webkit-font-smoothing:antialiased;}
+  body{background:var(--bg);color:var(--ink);font-family:var(--font);overflow:hidden;height:100vh;width:100vw;}
+  .deck{width:100vw;height:100vh;position:relative;}
+  .slide{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:46px 66px;opacity:0;pointer-events:none;transition:opacity .4s ease;background:var(--bg);overflow:hidden;}
+  .slide.active{opacity:1;pointer-events:auto;}
+  .inner{max-width:1180px;width:100%;}
+
+  .eyebrow{font-size:13.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan-dk);margin-bottom:12px;}
+  .h{font-size:clamp(24px,2.9vw,35px);font-weight:800;letter-spacing:-.015em;line-height:1.18;color:var(--ink);display:flex;align-items:center;gap:13px;flex-wrap:wrap;}
+  .h .accent{color:var(--cyan-dk);}
+  .lead{font-size:18px;line-height:1.6;color:var(--text2);} .lead b{color:var(--ink);}
+  .shead{margin-bottom:22px;} .shead .h{margin-top:4px;}
+
+  .progress{position:fixed;top:0;left:0;height:3px;background:var(--cyan);z-index:200;transition:width .4s ease;}
+  .counter{position:fixed;top:20px;right:28px;font-size:13px;font-weight:600;color:var(--muted);z-index:100;opacity:0;transition:opacity .4s;}
+  .counter.on{opacity:1;}
+  .zone{position:fixed;top:0;width:11%;height:100%;z-index:50;cursor:pointer;} .zone--prev{left:0;} .zone--next{right:0;}
+  .brand{position:fixed;bottom:16px;right:20px;z-index:100;} .brand img{height:20px;background:#fff;padding:6px 11px;border-radius:8px;box-shadow:0 4px 14px rgba(0,0,0,.14);display:block;}
+  .fs{position:fixed;bottom:16px;left:20px;z-index:100;width:33px;height:33px;border-radius:8px;border:1px solid var(--border);background:rgba(255,255,255,.92);color:var(--navy);font-size:15px;cursor:pointer;}
+  .fs:hover{border-color:var(--cyan);}
+
+  .dark{background:linear-gradient(135deg,#0F1632 0%,#2D3666 100%);}
+  .dark .eyebrow{color:var(--cyan);} .dark .h{color:#fff;} .dark .accent{color:var(--cyan);} .dark .lead{color:rgba(255,255,255,.7);}
+  .deep{background:radial-gradient(ellipse at 30% 30%,#2D3666 0%,#0A0A1A 100%);}
+  .cover{background:radial-gradient(ellipse at 30% 25%,#2D3666 0%,#0A0A1A 100%);text-align:center;}
+  .cover__logo{margin-bottom:26px;} .cover__logo img{height:56px;background:#fff;padding:13px 22px;border-radius:14px;box-shadow:0 12px 34px rgba(0,0,0,.28);}
+  .badge{display:inline-flex;gap:8px;align-items:center;background:rgba(91,196,210,.14);border:1px solid rgba(91,196,210,.35);color:var(--cyan);padding:9px 22px;border-radius:100px;font-size:14px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:20px;}
+  .cover h1{font-size:clamp(38px,4.6vw,60px);color:#fff;line-height:1.06;max-width:900px;margin:0 auto 16px;font-weight:800;letter-spacing:-.02em;}
+  .cover h1 .accent{color:var(--cyan);}
+  .cover p{max-width:760px;margin:0 auto 28px;font-size:19px;color:rgba(255,255,255,.6);line-height:1.6;} .cover p b{color:#fff;}
+  .chips{display:flex;gap:13px;justify-content:center;flex-wrap:wrap;}
+  .chip{display:inline-flex;gap:9px;align-items:center;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:100px;padding:11px 21px;font-size:15px;color:rgba(255,255,255,.82);} .chip b{color:#fff;}
+  .foot{margin-top:30px;font-size:13.5px;color:rgba(255,255,255,.4);letter-spacing:.03em;}
+
+  .section{background:linear-gradient(135deg,#0F1632 0%,#2D3666 100%);text-align:center;}
+  .section .num{font-size:15px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan);margin-bottom:18px;}
+  .section h2{font-size:clamp(34px,4.4vw,56px);color:#fff;font-weight:800;letter-spacing:-.02em;line-height:1.1;max-width:780px;margin:0 auto;}
+  .section .sub{margin-top:18px;font-size:20px;color:rgba(255,255,255,.55);max-width:640px;margin-left:auto;margin-right:auto;}
+
+  .stmt{text-align:center;}
+  .stmt .kick{font-size:14px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan);margin-bottom:18px;}
+  .stmt .big{font-size:clamp(36px,4.8vw,64px);font-weight:800;letter-spacing:-.025em;line-height:1.08;color:#fff;max-width:1000px;margin:0 auto;}
+  .stmt .big .accent{color:var(--cyan);}
+  .stmt .sub{margin-top:22px;font-size:21px;color:rgba(255,255,255,.62);max-width:720px;margin-left:auto;margin-right:auto;line-height:1.55;}
+  .clock{font-size:clamp(64px,11vw,150px);font-weight:800;color:var(--cyan);letter-spacing:-.02em;line-height:.95;margin-bottom:12px;font-variant-numeric:tabular-nums;}
+  .cta{display:inline-flex;align-items:center;gap:10px;background:var(--cyan);color:var(--navy-deep);font-weight:800;font-size:18px;text-decoration:none;border-radius:12px;padding:15px 30px;}
+  .cta:hover{background:#7ad3df;}
+
+  .card{background:var(--card);border:1px solid var(--border);border-radius:15px;padding:22px 22px;}
+  .c3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .card .tag{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cyan-dk);margin-bottom:8px;}
+  .card .t{font-size:20px;font-weight:800;color:var(--ink);letter-spacing:-.01em;margin-bottom:8px;}
+  .card .d{font-size:15px;line-height:1.55;color:var(--text2);} .card .d b{color:var(--ink);}
+
+  .banner{margin-top:18px;background:var(--navy);color:#fff;border-radius:14px;padding:15px 22px;display:flex;gap:14px;align-items:center;font-size:15px;line-height:1.5;} .banner b{color:var(--cyan);} .banner .ic{font-size:20px;}
+
+  .stg{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:#fff;padding:5px 13px;border-radius:100px;}
+  .stg--basic{background:#3B5BA9;} .stg--intermediate{background:var(--amber);} .stg--advanced{background:var(--cyan-dk);}
+
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+  .ba__lab{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:11px;}
+  .ba__lab--bad{color:var(--red);} .ba__lab--good{color:var(--green);}
+  .ba__c{border-radius:16px;padding:24px 26px;height:100%;}
+  .ba__c--bad{background:var(--red-l);border:2px solid #fecaca;} .ba__c--good{background:var(--green-l);border:2px solid #bbf7d0;}
+  .ba__h{font-size:22px;font-weight:800;color:var(--ink);margin-bottom:14px;}
+  .ba__l{list-style:none;display:flex;flex-direction:column;gap:10px;}
+  .ba__l li{font-size:15.5px;color:var(--ink);line-height:1.45;padding-left:26px;position:relative;}
+  .ba__c--bad .ba__l li::before{content:'✕';position:absolute;left:0;color:var(--red);font-weight:700;}
+  .ba__c--good .ba__l li::before{content:'✓';position:absolute;left:0;color:var(--green);font-weight:700;}
+
+  .pipe{display:flex;gap:10px;align-items:stretch;}
+  .pstep{flex:1;background:var(--card);border:1px solid var(--border);border-radius:13px;padding:16px 14px;text-align:center;}
+  .pstep .pi{font-size:24px;margin-bottom:8px;} .pstep .pt{font-size:14px;font-weight:700;color:var(--ink);line-height:1.25;}
+  .parrow{align-self:center;color:var(--cyan);font-weight:800;font-size:18px;}
+
+  .uc{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;}
+  .ucard{background:var(--card);border:1px solid var(--border);border-top:4px solid var(--cyan);border-radius:14px;padding:17px 16px;}
+  .ucard .fn{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan-dk);}
+  .ucard .ag{font-size:17px;font-weight:800;color:var(--ink);line-height:1.15;margin:4px 0 6px;min-height:38px;}
+  .ucard .st{font-size:11.5px;font-weight:700;margin-bottom:11px;color:var(--green);}
+  .ucard ul{list-style:none;display:flex;flex-direction:column;gap:6px;}
+  .ucard li{font-size:12px;color:var(--ink);line-height:1.2;} .ucard li span{display:block;font-size:10.5px;color:var(--muted);font-weight:600;}
+
+  .mini5{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;}
+  .mcard{background:var(--card);border:1px solid var(--border);border-radius:13px;padding:15px 14px;}
+  .mcard .mt{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--cyan-dk);}
+  .mcard .mn{font-size:16px;font-weight:800;color:var(--ink);line-height:1.15;margin:4px 0 8px;}
+  .mcard .mb{font-size:11.5px;font-weight:700;}
+
+  .notes{position:fixed;bottom:0;left:0;right:0;background:rgba(14,22,64,.96);backdrop-filter:blur(12px);color:rgba(255,255,255,.86);padding:16px 36px;font-size:15px;line-height:1.6;z-index:300;transform:translateY(100%);transition:transform .3s;max-height:32vh;overflow-y:auto;border-top:2px solid var(--cyan);}
+  .notes.on{transform:translateY(0);} .notes .nl{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);margin-bottom:6px;}
+
+  @media print{ @page{size:1280px 720px;margin:0;} .slide{page-break-after:always;opacity:1!important;pointer-events:auto!important;position:relative!important;} .progress,.brand,.fs,.counter,.zone,.notes{display:none!important;} }
+</style>
+</head>
+<body>
+<div class="deck">
+
+  <!-- 0 COVER -->
+  <div class="slide cover active" data-notes="Welcome. AI For Leaders Build Lab — CETIN + Yettel leadership. Madan opens by demoing a real agent and explaining the use cases, then hands over to the build lab where teams pick a use case and build it live.">
+    <div class="inner">
+      <div class="cover__logo"><img src="acceler_logo.png" alt="acceler"></div>
+      <div class="badge">AI For Leaders Build Lab · e& PPF Hungary</div>
+      <h1>Build your own <span class="accent">AI agent</span><br>in one session</h1>
+      <p><b>CETIN × Yettel leadership.</b> See a real one in action, then build your own in Microsoft Copilot Studio — pick a use case, ship it live.</p>
+      <div class="chips">
+        <span class="chip"><span>🛠️</span><b>Copilot Studio</b> · Virtual Labs</span>
+        <span class="chip"><span>👥</span><b>4 teams</b> · 4 use cases</span>
+        <span class="chip"><span>⏱️</span><b>2.5 hours</b></span>
+      </div>
+      <div class="foot">← → navigate · F fullscreen · “.” speaker notes</div>
+    </div>
+  </div>
+
+  <!-- 1 HOOK -->
+  <div class="slide deep stmt" data-notes="Madan opens with a story. A market CEO at 08:47 — first meeting in 13 minutes, six functions on the agenda, four items red, inbox unopened. Let the tension sit.">
+    <div class="inner"><div class="kick">Part 1 · The demo</div><div class="clock">08:47</div><div class="big">Your first meeting starts in <span class="accent">13 minutes.</span></div><div class="sub">Six functions on today's agenda. Four items flagged red. You haven't even opened your inbox.</div></div>
+  </div>
+
+  <!-- 2 TWO PATHS -->
+  <div class="slide" data-notes="Two ways into that meeting — without an agent you scramble; with one you get a 2-minute brief that holds up.">
+    <div class="inner">
+      <div class="shead"><div class="eyebrow">Two ways into that meeting</div><div class="h">Same morning. <span class="accent">Two very different walk-ins.</span></div></div>
+      <div class="ba">
+        <div><div class="ba__lab ba__lab--bad">▼ Without an agent</div><div class="ba__c ba__c--bad"><div class="ba__h">You wing it</div><ul class="ba__l"><li>Skim three email threads on the way in</li><li>Half-remember where the deal / issue stands</li><li>Get caught out by something decided last week</li><li>Walk out having reacted, not led</li></ul></div></div>
+        <div><div class="ba__lab ba__lab--good">▲ With your agent</div><div class="ba__c ba__c--good"><div class="ba__h">You walk in ready</div><ul class="ba__l"><li>A two-minute brief: who, what's open, what to say</li><li>Grounded in your real email + calendar</li><li>Nothing from last week slips past you</li><li>You walk in and drive the room</li></ul></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 MEETING PREP — WHAT IT DOES -->
+  <div class="slide" data-notes="The reveal. The Executive Meeting Prep agent. You tell it the meeting; it reads calendar, searches email, cross-references knowledge, and returns a structured brief.">
+    <div class="inner">
+      <div class="shead"><div class="eyebrow">The demo · Executive Meeting Prep</div><div class="h">So we gave the CEO <span class="accent">an agent</span></div></div>
+      <p class="lead" style="margin-bottom:18px;">You tell it the meeting you're about to walk into. It does the rest — in seconds.</p>
+      <div class="pipe">
+        <div class="pstep"><div class="pi">🗓️</div><div class="pt">Reads your calendar to find the meeting</div></div><div class="parrow">→</div>
+        <div class="pstep"><div class="pi">📧</div><div class="pt">Searches your email for relevant threads</div></div><div class="parrow">→</div>
+        <div class="pstep"><div class="pi">📚</div><div class="pt">Cross-references the knowledge sources</div></div><div class="parrow">→</div>
+        <div class="pstep"><div class="pi">📄</div><div class="pt">Returns a structured brief</div></div>
+      </div>
+      <div class="banner"><span class="ic">🎯</span><div>The brief: <b>who you're meeting · what's open · what to know · how to open</b>.</div></div>
+    </div>
+  </div>
+
+  <!-- 4 MEETING PREP — OUTCOME -->
+  <div class="slide dark stmt" data-notes="Land the outcome as a single hero line. Then transition: this is the destination — now everyone builds toward it.">
+    <div class="inner"><div class="kick">The outcome</div><div class="big">Walk into any meeting knowing exactly what you need to know — <span class="accent">without preparing.</span></div><div class="sub">Calendar, email and context, pulled together automatically.</div></div>
+  </div>
+
+  <!-- 5 THE PATTERN -->
+  <div class="slide" data-notes="The teaching frame — every agent builds in three named stages. Basic answers from knowledge; Intermediate acts; Advanced uses live context. Meeting Prep is the Advanced version.">
+    <div class="inner">
+      <div class="shead"><div class="eyebrow">How every agent is built</div><div class="h">Basic → Intermediate → <span class="accent">Advanced</span></div></div>
+      <div class="c3">
+        <div class="card"><span class="stg stg--basic">Basic</span><div class="t" style="margin-top:12px;">Answers from knowledge</div><div class="d">Answers from its knowledge sources. You ask, it answers. No connectors yet.</div></div>
+        <div class="card"><span class="stg stg--intermediate">Intermediate</span><div class="t" style="margin-top:12px;">Acts — delivers a brief</div><div class="d">It doesn't just answer — it <b>does</b> something. Emails a formatted brief to your inbox.</div></div>
+        <div class="card"><span class="stg stg--advanced">Advanced</span><div class="t" style="margin-top:12px;">Live context (Work IQ)</div><div class="d">Reads your <b>real email + calendar</b> to ground the output in what's happening.</div></div>
+      </div>
+      <div class="banner"><span class="ic">🧭</span><div>The further you build, the more powerful the output. <b>Same three stages for every team.</b></div></div>
+    </div>
+  </div>
+
+  <!-- 6 SECTION: THE USE CASES -->
+  <div class="slide section" data-notes="Part 2 — Madan explains the four use cases the teams will build.">
+    <div class="inner"><div class="num">Part 2 · The use cases</div><h2>What you could build</h2><div class="sub">Madan walks each use case before you head into the build lab.</div></div>
+  </div>
+
+  <!-- 7 USE CASES OVERVIEW -->
+  <div class="slide" data-notes="All four use cases are ready today. Sales, HR, Finance, IT — every one follows Basic → Intermediate → Advanced.">
+    <div class="inner">
+      <div class="shead"><div class="eyebrow">The four use cases · 16 leaders · 4 teams</div><div class="h">Four teams, <span class="accent">four use cases</span></div></div>
+      <div class="uc">
+        <div class="ucard"><div class="fn">Sales</div><div class="ag">CCO Account Intelligence</div><div class="st">● Ready today</div><ul><li>Tamás Bóday <span>Commercial Dir · CETIN</span></li><li>Balázs Dr. Tóth <span>Legal &amp; Compliance · CETIN</span></li></ul></div>
+        <div class="ucard"><div class="fn">HR</div><div class="ag">Benefits Q&amp;A</div><div class="st">● Ready today</div><ul><li>Emőke Erdélyi <span>HR Director · CETIN</span></li><li>Enikő Szalai <span>Chief People Officer · Yettel</span></li></ul></div>
+        <div class="ucard"><div class="fn">Finance &amp; Legal</div><div class="ag">Finance &amp; Legal Intelligence</div><div class="st">● Ready today</div><ul><li>József Takács <span>CFO · Yettel</span></li><li>Kata Urbancsok <span>Finance Dir · CETIN</span></li><li>Balázs Kővári <span>Operations Dir · CETIN</span></li></ul></div>
+        <div class="ucard"><div class="fn">IT &amp; Tech</div><div class="ag">IT Service Desk</div><div class="st">● Ready today</div><ul><li>Tamás Ötvös <span>Group CTO</span></li><li>Peter Jantosovic <span>CTO · Yettel</span></li><li>Nagy · Gaszmann · Seprényi <span>Network · Digital · Security</span></li></ul></div>
+      </div>
+      <div class="banner"><span class="ic">🧩</span><div>All four are <b>ready to build</b> today. Every team follows the same pattern — <b>Basic → Intermediate → Advanced</b>.</div></div>
+    </div>
+  </div>
+
+  <!-- 8 SALES EXPLAINED -->
+  <div class="slide" data-notes="Madan explains the Sales use case. The CCO juggles five enterprise accounts, each in a different state, with a board expecting Q2 and competitors circling.">
+    <div class="inner">
+      <div class="shead"><div class="eyebrow">Use case · Sales</div><div class="h">The CCO's problem: <span class="accent">five accounts, one quarter</span></div></div>
+      <p class="lead" style="margin-bottom:16px;">Persona: <b>Chief Commercial Officer</b> of a top-3 CEE telecom. Five enterprise accounts, each with its own pressure — and a board expecting Q2 revenue. You need commercial intelligence fast, before every meeting.</p>
+      <div class="mini5">
+        <div class="mcard"><div class="mt">Banking</div><div class="mn">Fortis Bank</div><div class="mb" style="color:var(--amber);">⚠️ Renewal at risk</div></div>
+        <div class="mcard"><div class="mt">Logistics</div><div class="mn">Balkan Logistics</div><div class="mb" style="color:var(--green);">✅ Upsell open</div></div>
+        <div class="mcard"><div class="mt">Healthcare</div><div class="mn">CentroMed</div><div class="mb" style="color:var(--red);">🔴 Escalation</div></div>
+        <div class="mcard"><div class="mt">Manufacturing</div><div class="mn">Adriatek</div><div class="mb" style="color:var(--cyan-dk);">🆕 New prospect</div></div>
+        <div class="mcard"><div class="mt">Retail</div><div class="mn">EuroRetail</div><div class="mb" style="color:var(--amber);">🟡 Competitive alert</div></div>
+      </div>
+      <div class="banner"><span class="ic">⚔️</span><div>Competitors in play: <b>Magyar Telekom · Vodafone · 4iG · DIGI</b>. The agent briefs the CCO on each account on demand.</div></div>
+    </div>
+  </div>
+
+  <!-- 9 HR EXPLAINED -->
+  <div class="slide" data-notes="Madan explains the HR use case. Employees ask the same benefit questions constantly; the agent answers from two public pages and can reply on its own.">
+    <div class="inner">
+      <div class="shead"><div class="eyebrow">Use case · HR</div><div class="h">Everyone asks HR <span class="accent">the same questions</span></div></div>
+      <p class="lead" style="margin-bottom:16px;">Persona: <b>HR Director / People lead</b>. Employees ask about leave, health benefits, cafeteria perks and parental leave — every week, in two languages. The agent answers, grounded in <b>two public pages</b>.</p>
+      <div class="mini5">
+        <div class="mcard"><div class="mt">Leave</div><div class="mn">Annual leave</div><div class="mb" style="color:var(--green);">✅ Covered</div></div>
+        <div class="mcard"><div class="mt">Benefits</div><div class="mn">Health &amp; wellbeing</div><div class="mb" style="color:var(--green);">✅ Covered</div></div>
+        <div class="mcard"><div class="mt">Perks</div><div class="mn">Cafeteria</div><div class="mb" style="color:var(--green);">✅ Covered</div></div>
+        <div class="mcard"><div class="mt">Leave</div><div class="mn">Parental leave</div><div class="mb" style="color:var(--amber);">⚖️ Company + legal</div></div>
+        <div class="mcard"><div class="mt">Compare</div><div class="mn">vs. legal min.</div><div class="mb" style="color:var(--cyan-dk);">✨ The wow</div></div>
+      </div>
+      <div class="banner"><span class="ic">📚</span><div>Two public sources only. The wow: a table of <b>company perks vs. the legal minimum</b>. Finance and IT have their own scenarios too.</div></div>
+    </div>
+  </div>
+
+  <!-- FINANCE & LEGAL EXPLAINED -->
+  <div class="slide" data-notes="Madan explains the Finance & Legal use case. The CFLO must recommend in six weeks whether to launch a mobile wallet across three CEE markets — assessing revenue, regulation and go-to-market per market.">
+    <div class="inner">
+      <div class="shead"><div class="eyebrow">Use case · Finance &amp; Legal</div><div class="h">Should we launch a <span class="accent">mobile wallet</span>?</div></div>
+      <p class="lead" style="margin-bottom:16px;">Persona: <b>Chief Financial &amp; Legal Officer</b>. The Group CEO wants a board recommendation in six weeks on an <b>embedded-finance / mobile-wallet</b> launch across three markets — revenue, licensing and go-to-market for each.</p>
+      <div class="c3">
+        <div class="mcard" style="padding:18px 18px;"><div class="mt">Hungary · largest</div><div class="mn">Defend share, monetise base</div><div class="mb" style="color:var(--amber);font-size:12.5px;">Mature &amp; competitive · MNB e-money licence</div></div>
+        <div class="mcard" style="padding:18px 18px;"><div class="mt">Bulgaria · growth</div><div class="mn">Greenfield, fast mover</div><div class="mb" style="color:var(--green);font-size:12.5px;">Diaspora remittance corridor · BNB authorisation</div></div>
+        <div class="mcard" style="padding:18px 18px;"><div class="mt">Serbia · high upside</div><div class="mn">High reward, high friction</div><div class="mb" style="color:var(--red);font-size:12.5px;">Non-EU complexity · NBS licence, data localisation</div></div>
+      </div>
+      <div class="banner"><span class="ic">⚖️</span><div>Regulators in play: <b>MNB · BNB · NBS</b> (e-money), plus telecom, competition and EU oversight. The agent returns market context, a revenue estimate, regulatory flags and a recommendation.</div></div>
+    </div>
+  </div>
+
+  <!-- HANDOFF / CTA -->
+  <div class="slide dark stmt" data-nozone data-notes="Hand over to the build lab. The learners now open the separate Pick-Your-Use-Case deck, name their team, pick a use case, and build it step by step. Open pick-your-use-case/index.html.">
+    <div class="inner">
+      <div class="kick">Part 3 · Your turn</div>
+      <div class="big">Now <span class="accent">you</span> build one.</div>
+      <div class="sub">Open the build lab, name your team, pick your use case, and build it step by step — Basic → Intermediate → Advanced.</div>
+      <div style="margin-top:32px;"><a class="cta" href="pick-your-use-case/index.html">Open the build lab → Pick your use case</a></div>
+      <div style="margin-top:18px;font-size:13px;color:rgba(255,255,255,.4);letter-spacing:.04em;">…/pick-your-use-case</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="progress" id="progress"></div>
+<div class="counter" id="counter"></div>
+<div class="zone zone--prev" id="zprev"></div>
+<div class="zone zone--next" id="znext"></div>
+<button class="fs" id="fs" title="Fullscreen (F)">⛶</button>
+<div class="brand"><img src="acceler_logo.png" alt="acceler"></div>
+<div class="notes" id="notes"><div class="nl">Speaker notes · press “.” to toggle</div><div id="notesC"></div></div>
+
+<script>
+  const slides=[...document.querySelectorAll('.slide')], total=slides.length;
+  let cur=0; const $=id=>document.getElementById(id);
+  const speaker=slides.map(s=>s.dataset.notes||''); let notesOn=false, ctO;
+  function updNotes(){ $('notesC').textContent=speaker[cur]||''; }
+  function progress(){ $('progress').style.width=((cur+1)/total*100)+'%'; const c=$('counter'); c.textContent=(cur+1)+' / '+total; c.classList.add('on'); clearTimeout(ctO); ctO=setTimeout(()=>c.classList.remove('on'),2000); updNotes(); }
+  function goTo(n){ if(n<0||n>=total) return; slides[cur].classList.remove('active'); cur=n; slides[cur].classList.add('active');
+    const nz=slides[cur].hasAttribute('data-nozone'); $('zprev').style.pointerEvents=nz?'none':'auto'; $('znext').style.pointerEvents=nz?'none':'auto';
+    progress(); }
+  document.addEventListener('keydown',e=>{
+    if(e.key==='ArrowRight'||e.key==='ArrowDown'||e.key===' '){e.preventDefault();goTo(cur+1);}
+    else if(e.key==='ArrowLeft'||e.key==='ArrowUp'){e.preventDefault();goTo(cur-1);}
+    else if(e.key==='Home')goTo(0); else if(e.key==='End')goTo(total-1);
+    else if(e.key==='.'){ notesOn=!notesOn; $('notes').classList.toggle('on',notesOn); }
+    else if(e.key==='f'||e.key==='F'){ if(!document.fullscreenElement)document.documentElement.requestFullscreen().catch(()=>{}); else document.exitFullscreen(); }
+  });
+  $('zprev').addEventListener('click',()=>goTo(cur-1));
+  $('znext').addEventListener('click',()=>goTo(cur+1));
+  $('fs').addEventListener('click',()=>{ if(!document.fullscreenElement)document.documentElement.requestFullscreen().catch(()=>{}); else document.exitFullscreen(); });
+  let tx=0; document.addEventListener('touchstart',e=>tx=e.touches[0].clientX);
+  document.addEventListener('touchend',e=>{ const dx=tx-e.changedTouches[0].clientX; if(Math.abs(dx)>50) goTo(cur+(dx>0?1:-1)); });
+  const s0=new URLSearchParams(location.search).get('s'); if(s0!==null) goTo(parseInt(s0)); else progress();
+</script>
+</body>
+</html>

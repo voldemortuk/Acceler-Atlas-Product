@@ -1,0 +1,1553 @@
+[28/01/26, 1:34:57 PM] PowerUp Virtual Labs: ‎Messages and calls are end-to-end encrypted. Only people in this chat can read, listen to, or share them.
+[28/01/26, 1:34:57 PM] PowerUp Virtual Labs: ‎You created group “PowerUp Virtual Labs”
+[28/01/26, 1:45:57 PM] Utkarsh: Is it working better now @⁨Suvansh Verma⁩ ?
+[28/01/26, 1:46:04 PM] Suvansh Verma: Yes
+[28/01/26, 1:46:08 PM] Utkarsh: @⁨Tanvinder IK⁩ let’s also look into the other partners please.
+[28/01/26, 1:46:12 PM] Suvansh Verma: We just started the hands on
+[28/01/26, 1:46:33 PM] Suvansh Verma: Waiting for people to share their responses.
+[28/01/26, 1:46:46 PM] Utkarsh: Let’s have the credentials so we can test with other vendors while we do with Nuvepro.
+[28/01/26, 1:52:45 PM] Tanvinder IK: Sure
+[28/01/26, 1:55:36 PM] Utkarsh: Let’s accelerate it Tanvinder.
+[28/01/26, 1:55:55 PM] Utkarsh: Let’s make sure we have some test this out with 1-2 vendors this week itself.
+[28/01/26, 1:57:12 PM] Suvansh Verma: Lunch break started
+[28/01/26, 1:57:35 PM] Utkarsh: @⁨Tanvinder IK⁩ you can ask the Nuvepro Team to check once please.
+[28/01/26, 1:57:52 PM] Utkarsh: But inform them that this is a 30 min break so not to make any big changes.
+[28/01/26, 1:57:59 PM] Utkarsh: Akshay ko bta Dena.
+[28/01/26, 2:02:03 PM] Tanvinder IK: ‎Voice call, ‎Answered on other device
+[28/01/26, 2:22:57 PM] Utkarsh: Hey @⁨Tanvinder IK⁩ any updates from Akshay? Did they get a change to look into it?
+[28/01/26, 2:23:27 PM] Tanvinder IK: He is on it
+[28/01/26, 2:23:37 PM] Utkarsh: Okay.
+[28/01/26, 2:23:46 PM] Utkarsh: Usko new Tenant wala bhi puch lena.
+[28/01/26, 2:23:53 PM] Utkarsh: I have a feeling it must be coz of that.
+[28/01/26, 2:24:10 PM] Utkarsh: But I tested everything myself on a few VMs today morning and everything was working fine.
+[28/01/26, 2:24:28 PM] Utkarsh: Also @⁨Tanvinder IK⁩ what the 2-3 prospects we have on this?
+[28/01/26, 2:24:37 PM] Utkarsh: You were mentioning apki bt hui thi?
+[28/01/26, 2:25:23 PM] Tanvinder IK: I prepared a doc with the list of vendors and shared witg you and shashi
+[28/01/26, 2:25:35 PM] Tanvinder IK: Few month back
+[28/01/26, 2:25:38 PM] Utkarsh: Ha ha I remember.
+[28/01/26, 2:25:48 PM] Tanvinder IK: I will revisit and schedule call with them
+[28/01/26, 2:25:55 PM] Utkarsh: But aap bol rhe the 1-2 ke sth call setup hui thi or something?
+[28/01/26, 2:25:58 PM] Tanvinder IK: Ask them to share test vm
+[28/01/26, 2:26:02 PM] Utkarsh: Cool bro.
+[28/01/26, 2:26:06 PM] Tanvinder IK: Yes
+[28/01/26, 2:26:10 PM] Utkarsh: Ask them if they can share 4-5 VMs.
+[28/01/26, 2:26:17 PM] Utkarsh: So that we can stress test.
+[28/01/26, 2:26:29 PM] Tanvinder IK: Ok will connct with them
+[28/01/26, 2:26:34 PM] Utkarsh: Can you share this doc again here on WhatsApp?
+[28/01/26, 2:26:47 PM] Utkarsh: Ha let me know if you need any help on this.
+Thanks
+‎[28/01/26, 2:28:31 PM] Tanvinder IK: Windows VM Vendors.xlsx ‎<attached: 00000038-Windows VM Vendors.xlsx>
+[28/01/26, 2:29:42 PM] Utkarsh: Thanks
+[28/01/26, 2:31:13 PM] Utkarsh: Looks good.
+[28/01/26, 2:31:30 PM] Utkarsh: Let’s schedule the call and get test IDs from all of them this week itself or as much possible.
+[28/01/26, 2:34:34 PM] Utkarsh: I think @⁨Tanvinder IK⁩ what we can do is given Nuvepro is doing good in most cases we can still work with them for the next couple of months, and parallel transition as needed.
+[28/01/26, 2:35:04 PM] Utkarsh: We could maybe also think of using them for low priority Programs, if these other vendors will be costlier in respect to them.
+‎[28/01/26, 2:52:27 PM] Suvansh Verma: ‎<attached: 00000044-PHOTO-2026-01-28-14-52-27.jpg>
+‎[28/01/26, 2:52:31 PM] Suvansh Verma: ‎<attached: 00000045-PHOTO-2026-01-28-14-52-31.jpg>
+[28/01/26, 2:52:35 PM] Suvansh Verma: error on VM
+[28/01/26, 2:53:05 PM] Utkarsh: ‎Voice call, ‎‎3 min • ‎3 joined
+[28/01/26, 2:54:43 PM] Utkarsh: @⁨Suvansh Verma⁩ share the IDs.
+[28/01/26, 2:54:59 PM] Utkarsh: @⁨Tanvinder IK⁩ can you ask Nuvepro to share 4-5 additional credentials rightaway.
+[28/01/26, 2:55:06 PM] Suvansh Verma: Upgenaijanuser20
+[28/01/26, 2:58:16 PM] Suvansh Verma: Its working now
+[28/01/26, 2:58:24 PM] Utkarsh: Okay.
+[28/01/26, 2:58:27 PM] Suvansh Verma: Multiple logout and relogin attempts
+[28/01/26, 2:58:36 PM] Utkarsh: Still @⁨Suvansh Verma⁩ we have asked for new IDs.
+[28/01/26, 2:58:39 PM] Utkarsh: 5 more of them
+[28/01/26, 2:58:44 PM] Utkarsh: You can allocate them.
+[28/01/26, 2:59:09 PM] Utkarsh: @⁨Tanvinder IK⁩ let's have a call with Akshay after 5 PM.
+[28/01/26, 2:59:15 PM] Utkarsh: Today we experience multiple issues.
+[28/01/26, 3:00:39 PM] Tanvinder IK: Sure
+[28/01/26, 3:00:48 PM] Suvansh Verma: Yes, we should.
+[28/01/26, 3:42:18 PM] Tanvinder IK: 5 new id's
+upgenaijanuser21	Cloudlab123$	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+upgenaijanuser22	Cloudlab123$	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+upgenaijanuser23	Cloudlab123$	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+upgenaijanuser24	Cloudlab123$	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+upgenaijanuser25	Cloudlab123$	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+[28/01/26, 4:36:35 PM] Suvansh Verma: Issue with the new id as well
+‎[28/01/26, 4:37:17 PM] Suvansh Verma: ‎<attached: 00000063-VIDEO-2026-01-28-16-37-17.mp4>
+[28/01/26, 6:57:34 PM] Tanvinder IK: @⁨Suvansh Verma⁩ could you share the list of ID which experienced the issue today
+[28/01/26, 6:57:42 PM] Tanvinder IK: Will raise it with the nuvepro team
+[28/01/26, 7:19:43 PM] Suvansh Verma: Upgenaijanuser03, Upgenaijanuser17, Upgenaijanuser21 [Major issue was with these ids]
+[28/01/26, 7:19:55 PM] Tanvinder IK: Ok got it
+[28/01/26, 7:23:23 PM] Shashi Bhushan  Kumar: ‎You added Shashi Bhushan  Kumar
+‎[28/01/26, 7:24:09 PM] Utkarsh: ‎<attached: 00000069-PHOTO-2026-01-28-19-24-09.jpg>
+[28/01/26, 7:24:31 PM] Utkarsh: @⁨Tanvinder IK⁩ if you check in this during System is IDLE, there is automatic STOP happening.
+[28/01/26, 7:24:44 PM] Utkarsh: Can we do something about this as well during the latest changes we are doing with Nuvepro?
+[28/01/26, 7:24:54 PM] Utkarsh: Check this once as well with them, it
+[28/01/26, 7:25:33 PM] Utkarsh: It’s alright if it runs out a daily spend of 10 hours per Account for every user, coz anyways we pay currently on a daily model and not number of hours.
+[28/01/26, 7:26:18 PM] Utkarsh: Also there are certain scenarios where this is happening.
+
+“Action 'Start' failed on Deployment with id d074c311-adf6-45ce-b760-8cacf06acf05. [Details: An error occurred (IncorrectInstanceState) when calling the StartInstances operation: The instance 'i-034e65703d82f552c' is not in a state from which it can be started.]	”
+[28/01/26, 7:26:21 PM] Tanvinder IK: I will ask them to remove the auto stop automation for now and also will ask them to share the rca for this issue
+[28/01/26, 7:26:32 PM] Utkarsh: Yes please.
+[28/01/26, 7:26:50 PM] Utkarsh: We need to get to the bottom of this today itself and make as many changes possible for tom.
+[28/01/26, 7:27:53 PM] Utkarsh: Apart from that just adding for Shashi reference as well.
+Let’s get the new vendors credentials for internal testing within this week, and if they are performing better than Nuvepro, we will do a complete transition.
+[28/01/26, 7:27:57 PM] Utkarsh: Thanks
+[28/01/26, 7:45:29 PM] Tanvinder IK: I am already in call with new vendors
+[28/01/26, 9:05:31 PM] Utkarsh: Hey @⁨Tanvinder IK⁩
+[28/01/26, 9:05:45 PM] Utkarsh: Let’s start it from 10:00 AM IST.
+[28/01/26, 9:05:49 PM] Utkarsh: The labs.
+[28/01/26, 9:06:05 PM] Utkarsh: Will Arun and Team need stop time as well!
+[28/01/26, 9:06:06 PM] Utkarsh: ?
+[28/01/26, 9:07:29 PM] Utkarsh: If yes let’s just keep it active between 10:00 AM - 10 PM IST on everyday.
+Apart from this the learner’s can start again if they use beyond these times. ‎<This message was edited>
+[28/01/26, 9:08:27 PM] Utkarsh: @⁨Suvansh Verma⁩ / @⁨Shashi Bhushan  Kumar⁩ this timing should be fine right?
+Basically the VMs will be in auto-start, so the issue of reconnecting n all that will be avoided.
+[28/01/26, 9:08:28 PM] Utkarsh: Thanks
+[28/01/26, 9:08:59 PM] Shashi Bhushan  Kumar: Yes, looks good 👍
+‎[28/01/26, 9:09:14 PM] Utkarsh: ‎<attached: 00000090-PHOTO-2026-01-28-21-09-14.jpg>
+[28/01/26, 9:10:09 PM] Suvansh Verma: Works
+‎[28/01/26, 9:10:09 PM] Utkarsh: ‎<attached: 00000092-PHOTO-2026-01-28-21-10-09.jpg>
+[28/01/26, 9:10:22 PM] Utkarsh: Adding this for reference.
+Thanks
+[28/01/26, 9:22:11 PM] Tanvinder IK: Sure
+[28/01/26, 9:23:13 PM] Tanvinder IK: So i am keeping the labs active from 10:00 am to 10:00 pm active
+[28/01/26, 9:23:21 PM] Tanvinder IK: @⁨Suvansh Verma⁩ @⁨Utkarsh⁩
+‎[28/01/26, 9:46:01 PM] Tanvinder IK: ‎<attached: 00000097-PHOTO-2026-01-28-21-46-01.jpg>
+[28/01/26, 9:46:12 PM] Tanvinder IK: @⁨Utkarsh⁩ they asking for a 6 hr window
+[28/01/26, 9:46:38 PM] Utkarsh: Can you check the additional cost that would come for even 10 hr or 12 hr?
+[28/01/26, 9:46:52 PM] Utkarsh: I remember Akshay daily number or 8-10 hours.
+[28/01/26, 10:46:14 PM] Utkarsh: @⁨Tanvinder IK⁩ for tom regardless of commercials, let's keep it for 12 hrs.
+[28/01/26, 10:46:32 PM] Utkarsh: Let’s have a quick call with Akshay tom morning for what the additional commercial would look like.
+[28/01/26, 10:46:34 PM] Utkarsh: Thanks
+[28/01/26, 10:52:48 PM] Tanvinder IK: Sure will call him in morning
+‎[29/01/26, 9:32:01 AM] Suvansh Verma: ‎<attached: 00000105-PHOTO-2026-01-29-09-32-01.jpg>
+[29/01/26, 9:32:27 AM] Utkarsh: User detail?
+[29/01/26, 9:32:35 AM] Suvansh Verma: Upgenaijanuser15
+[29/01/26, 9:32:43 AM] Utkarsh: Okay.
+[29/01/26, 9:33:02 AM] Utkarsh: They might be fixing a few things in the Backend.
+[29/01/26, 9:33:38 AM] Utkarsh: @⁨Tanvinder IK⁩ this will start from 10 AM I am guessing?
+[29/01/26, 9:33:54 AM] Tanvinder IK: The labs were created till 28th jan
+[29/01/26, 9:34:24 AM] Tanvinder IK: The duration was for 3 days 26th till 28th jan
+[29/01/26, 9:34:44 AM] Suvansh Verma: Why? The session is scheduled till 3th Feb.
+[29/01/26, 9:34:57 AM] Suvansh Verma: 28th, 29th, 2nd & 3rd
+[29/01/26, 9:38:51 AM] Utkarsh: As we discussed it should be active until next Wed, 4th Feb.
+[29/01/26, 9:41:42 AM] Utkarsh: Also @⁨Tanvinder IK⁩ the auto start thing will be sorted today right?
+Please check on that as well once.
+Thanks
+[29/01/26, 9:41:51 AM] Tanvinder IK: Yes yes
+[29/01/26, 9:42:03 AM] Utkarsh: Cool.
+Thanks
+[29/01/26, 9:43:08 AM] Utkarsh: @⁨Suvansh Verma⁩ you inform the learner that lab will be active 30 min before the class starts.
+[29/01/26, 9:44:18 AM] Utkarsh: Also on non class days we can keep it active for 6-7 hrs only wdyt or should we do 10-10 days we don’t have class as well?
+[29/01/26, 10:11:15 AM] Tanvinder IK: @⁨Suvansh Verma⁩ can you check now
+[29/01/26, 10:18:17 AM] Suvansh Verma: Labs are working now?
+[29/01/26, 10:18:17 AM] Suvansh Verma: I’ll check with extra id after 7-8mjns
+‎[29/01/26, 10:20:16 AM] Utkarsh: ‎<attached: 00000124-PHOTO-2026-01-29-10-20-16.jpg>
+‎[29/01/26, 10:20:18 AM] Utkarsh: ‎<attached: 00000125-PHOTO-2026-01-29-10-20-18.jpg>
+[29/01/26, 10:20:22 AM] Utkarsh: It is on start @⁨Suvansh Verma⁩
+[29/01/26, 10:20:26 AM] Utkarsh: It’s working.
+[29/01/26, 10:36:31 AM] Tanvinder IK: @⁨Suvansh Verma⁩ you have received an otp for gmail login
+[29/01/26, 10:36:35 AM] Tanvinder IK: Could you share?
+[29/01/26, 10:36:40 AM] Tanvinder IK: It starts with G
+[29/01/26, 10:36:43 AM] Suvansh Verma: 881338
+[29/01/26, 10:36:56 AM] Tanvinder IK: Kuch aur otp bhi aayenge
+[29/01/26, 10:42:54 AM] Tanvinder IK: @⁨Suvansh Verma⁩ otp?
+[29/01/26, 10:43:05 AM] Suvansh Verma: G-581776 is your Google verification code. Don't share your code with anyone.
+[29/01/26, 10:48:53 AM] Tanvinder IK: @⁨Shashi Bhushan  Kumar⁩ you may have received an OTP starting with G
+[29/01/26, 10:48:58 AM] Tanvinder IK: could you share here please
+[29/01/26, 10:49:55 AM] Suvansh Verma: issue with user20
+‎[29/01/26, 10:50:06 AM] Suvansh Verma: ‎<attached: 00000138-PHOTO-2026-01-29-10-50-06.jpg>
+[29/01/26, 10:50:21 AM] Utkarsh: I will check it shortly.
+[29/01/26, 10:50:26 AM] Suvansh Verma: He has been trying since 20mins, facing this issue.
+[29/01/26, 10:51:01 AM] Suvansh Verma: This is guy is on the class link only. Getting it tested there.
+[29/01/26, 10:51:23 AM] Suvansh Verma: Upgenaijanuser20
+[29/01/26, 10:51:26 AM] Utkarsh: Acha wait 2 min.
+[29/01/26, 10:51:29 AM] Utkarsh: I’ll join as well.
+‎[29/01/26, 10:51:50 AM] Suvansh Verma: ‎<attached: 00000145-PHOTO-2026-01-29-10-51-50.jpg>
+‎[29/01/26, 10:56:57 AM] Utkarsh: ‎<attached: 00000146-PHOTO-2026-01-29-10-56-57.jpg>
+‎[29/01/26, 10:58:30 AM] Suvansh Verma: ‎<attached: 00000147-PHOTO-2026-01-29-10-58-30.jpg>
+‎[29/01/26, 10:58:48 AM] Suvansh Verma: ‎<attached: 00000148-PHOTO-2026-01-29-10-58-48.jpg>
+[29/01/26, 10:59:09 AM] Utkarsh: Speed is fine then
+[29/01/26, 10:59:13 AM] Utkarsh: Are you in the call with him?
+[29/01/26, 10:59:18 AM] Suvansh Verma: Yes
+[29/01/26, 10:59:20 AM] Utkarsh: Zoom pe?
+[29/01/26, 10:59:23 AM] Suvansh Verma: Yes
+[29/01/26, 10:59:35 AM] Utkarsh: Let me join.
+‎[29/01/26, 10:59:53 AM] Suvansh Verma: ‎<attached: 00000155-PHOTO-2026-01-29-10-59-53.jpg>
+[29/01/26, 11:00:57 AM] Suvansh Verma: It’s working now
+[29/01/26, 11:01:05 AM] Utkarsh: Cool.
+[29/01/26, 11:01:43 AM] Utkarsh: Usko ping krde once it will reconnect for the next 2 min, as we are setting few this up for him.
+[29/01/26, 11:14:08 AM] Tanvinder IK: Upgenaijanuser05 kindly use this VM after 5- 10 mins I have restarted this lab
+[29/01/26, 11:41:45 AM] Dheeraj Tandon: ‎You added Dheeraj Tandon
+[29/01/26, 11:43:21 AM] Utkarsh: Hey @⁨Tanvinder IK⁩ added Dheeraj as well here.
+[29/01/26, 11:44:26 AM] Utkarsh: For the Phone Number/ OTP thing Dheeraj can help us.
+We can disable that OTP thing for 10 min as per Google policy.
+
+You can get 4-5 Accounts disabled with this at a time during when you login, and so on, while setting up the Virtual Labs.
+[29/01/26, 11:44:52 AM] Tanvinder IK: sure
+[29/01/26, 11:44:55 AM] Utkarsh: Let’s give this a try, for few labs, maybe in the 5 additional labs we had taken, and let’s see.
+We can do this moving forward.
+Thanks
+[29/01/26, 1:25:38 PM] Suvansh Verma: Today the experience is wayy better
+[29/01/26, 1:25:51 PM] Utkarsh: Awesome 🙌🏻
+[29/01/26, 1:26:05 PM] Suvansh Verma: It took learners around 1 minute to access everything
+[29/01/26, 1:26:27 PM] Utkarsh: I think primarily yesterday Tool expert ex and also the auto start thing.
+[29/01/26, 1:27:03 PM] Utkarsh: I’ll try to keep that auto on all days if possible, but on class days it will definitely be there moving forward.
+[29/01/26, 1:28:00 PM] Utkarsh: @⁨Tanvinder IK⁩ let’s making a checklist actually of all things that should be there in the VM.
+Similar to what we did sometime back and share it with Nuvepro Team and also follow on our end as well.
+[29/01/26, 1:33:26 PM] Tanvinder IK: The changes were made due to that the exp is elevated
+[29/01/26, 1:37:14 PM] Suvansh Verma: Got disconnected again for Navzar
+[29/01/26, 1:38:09 PM] Suvansh Verma: User20
+[29/01/26, 1:38:24 PM] Tanvinder IK: Is this user under any vpn?
+[29/01/26, 1:38:40 PM] Tanvinder IK: This seems to be network related issue only
+[29/01/26, 1:42:23 PM] Suvansh Verma: Checking
+‎[29/01/26, 3:40:10 PM] Suvansh Verma: ‎<attached: 00000177-PHOTO-2026-01-29-15-40-10.jpg>
+[29/01/26, 3:40:17 PM] Suvansh Verma: Mid session it went off
+[29/01/26, 3:40:31 PM] Utkarsh: Is there a break now @⁨Suvansh Verma⁩ ?
+[29/01/26, 3:40:38 PM] Utkarsh: For fix the Sam thing.
+[29/01/26, 3:40:41 PM] Suvansh Verma: reconnected after 30 seconds
+[29/01/26, 3:40:42 PM] Tanvinder IK: Seems network issue
+[29/01/26, 3:40:54 PM] Suvansh Verma: Not right now.
+[29/01/26, 3:41:39 PM] Tanvinder IK: I have added a ping pool to these VM's in order to check the connectivity and i havenot seen any package drop for 30 mins
+[29/01/26, 3:41:56 PM] Tanvinder IK: So either there is a vpn or there network is lagging in between
+[30/01/26, 3:47:45 PM] Shashi Bhushan  Kumar: Guys, regarding the other vendors -  we should go with the best quality VMs, extra high cost should be fine, but we need robust VMs. @⁨Tanvinder IK⁩, so explore better vendors only.
+[30/01/26, 3:52:31 PM] Tanvinder IK: Yes yes I am looking for best class exp
+[30/01/26, 3:52:48 PM] Tanvinder IK: I am going to start a poc by tom
+[30/01/26, 6:50:16 PM] Suvansh Verma: @⁨Tanvinder IK⁩ we need to keep the Assignment submission VMs active till 14th Feb
+[30/01/26, 6:50:32 PM] Suvansh Verma: I’ll share the file
+[30/01/26, 6:51:05 PM] Tanvinder IK: The current 25 Vm's right?
+[30/01/26, 6:51:17 PM] Tanvinder IK: Just share the VM id's
+[30/01/26, 6:52:39 PM] Utkarsh: These
+[30/01/26, 6:52:41 PM] Utkarsh: https://docs.google.com/spreadsheets/d/1JhB1Lw4Y_4VwYg8hM98HgTL3btWWiUM_/edit?usp=drivesdk&ouid=110399251014430003553&rtpof=true&sd=true
+[30/01/26, 6:53:30 PM] Tanvinder IK: We need to enable only those vm's which are present in sheet right?
+[30/01/26, 6:53:43 PM] Utkarsh: Requirement 2 
+•⁠  ⁠⁠17 VMs 
+•⁠  From this Friday to next Sat
+•⁠  ⁠⁠Login into Gmail, Firebase Studio, Google Colab.
+
+Can you raise this as well.
+
+
+This req.
+[30/01/26, 6:53:51 PM] Utkarsh: Yes Assignment one.
+[30/01/26, 6:54:10 PM] Tanvinder IK: Ok
+[30/01/26, 6:54:18 PM] Utkarsh: jan26agenticailabuser01
+jan26agenticailabuser02
+jan26agenticailabuser03
+jan26agenticailabuser04
+jan26agenticailabuser05
+jan26agenticailabuser06
+jan26agenticailabuser07
+jan26agenticailabuser08
+jan26agenticailabuser09
+jan26agenticailabuser10
+jan26agenticailabuser11
+jan26agenticailabuser12
+jan26agenticailabuser13
+jan26agenticailabuser14
+jan26agenticailabuser15
+jan26agenticailabuser16
+jan26agenticailabuser17
+[30/01/26, 6:54:39 PM] Tanvinder IK: Today is friday. So you want it to start it from today
+[30/01/26, 6:55:02 PM] Utkarsh: No no this was just the prev requirement.
+[30/01/26, 6:55:11 PM] Utkarsh: Let’s extend it 14th Feb.
+[30/01/26, 6:55:15 PM] Tanvinder IK: Ok
+[30/01/26, 6:55:17 PM] Tanvinder IK: Cool
+[30/01/26, 6:56:02 PM] Utkarsh: Also there is some things we need to do for Mon Session I’ll give you a call on that.
+Thanks
+[30/01/26, 7:23:51 PM] Suvansh Verma: https://docs.google.com/spreadsheets/d/1R5UMqC15vwMhP_QJX7AbY_nFkc7erikQAHN3N_cKsYg/edit?gid=1793426767#gid=1793426767
+[30/01/26, 7:24:12 PM] Utkarsh: Talked to Tanvinder this is sorted Suvansh.
+[30/01/26, 7:24:13 PM] Suvansh Verma: These are the VMs we need to extend. Sharing it to avoid any confusion.
+[30/01/26, 7:24:18 PM] Utkarsh: He is shared the mail
+[30/01/26, 7:24:27 PM] Utkarsh: It should be extended until 14th Feb
+[30/01/26, 9:42:47 PM] Tanvinder IK: Expiry date of these labs is extended till 14th feb
+[30/01/26, 9:42:57 PM] Utkarsh: Perfect.
+[30/01/26, 9:43:03 PM] Utkarsh: CC: @⁨Suvansh Verma⁩
+‎[01/02/26, 12:30:46 PM] Tanvinder IK: aiexplorer_09@uplevel.academy
+aiexplorer_08@uplevel.academy ‎<attached: 00000214-PHOTO-2026-02-01-12-30-46.jpg>
+[01/02/26, 12:31:08 PM] Tanvinder IK: Dheeraj got this error for both the gmail accounts
+[01/02/26, 12:31:11 PM] Utkarsh: CC: @⁨Dheeraj Tandon⁩
+‎[02/02/26, 10:57:04 AM] Suvansh Verma: ‎<attached: 00000217-PHOTO-2026-02-02-10-57-04.jpg>
+[02/02/26, 10:57:14 AM] Suvansh Verma: @⁨Utkarsh⁩ Pinecone not working for 1 guy
+[02/02/26, 10:57:39 AM] Suvansh Verma: aiexplorer_21@uplevel.academy
+[02/02/26, 10:57:52 AM] Utkarsh: We can ask them to use this cred.
+[02/02/26, 10:58:09 AM] Dheeraj Tandon: This is not blocked through google. something at pinecode side only.
+[02/02/26, 10:58:22 AM] Utkarsh: - Name - v1 or v2
+- ⁠⁠Dimension - 1024
+- ⁠API Key - pcsk_5fPpDy_ND9hzwDBCi1KR6jSMnLekvWczgCTM899QENcWykxoSUPRohytpofQMXfS3B8ZP5
+[02/02/26, 11:02:54 AM] Utkarsh: Also FYI it is already added on their n8n Account.
+[02/02/26, 11:03:03 AM] Utkarsh: Please communicate this to all the learners @⁨Suvansh Verma⁩
+[02/02/26, 12:36:13 PM] Suvansh Verma: aiexplorer_11@uplevel.academy, aiexplorer_07@uplevel.academy: is n8n trial over on this account?
+[02/02/26, 12:36:22 PM] Suvansh Verma: Learner is facing this issue
+[02/02/26, 12:39:34 PM] Utkarsh: 2 min.
+[02/02/26, 12:39:57 PM] Utkarsh: This learner had paused the program but glad he came back 😅
+[02/02/26, 12:48:07 PM] Utkarsh: It is done @⁨Suvansh Verma⁩
+[02/02/26, 12:48:16 PM] Utkarsh: - Upgenaijanuser19	
+- ⁠Cloudlab123$	
+- ⁠https://cloudlabs.nuvepro.com/company/upwardndonward/home
+[02/02/26, 12:48:26 PM] Utkarsh: You can forward him this.
+[02/02/26, 12:49:25 PM] Suvansh Verma: Okay
+[02/02/26, 12:59:14 PM] Suvansh Verma: can you please let us know the namespaces available in the pinecone?
+[02/02/26, 1:01:27 PM] Utkarsh: It’s here bro.
+[02/02/26, 1:01:32 PM] Utkarsh: v1 or v2
+[02/02/26, 1:02:03 PM] Utkarsh: They can choose either.
+[02/02/26, 1:04:10 PM] Suvansh Verma: Yes now I am using them
+‎[02/02/26, 1:04:11 PM] Suvansh Verma: ‎<attached: 00000238-PHOTO-2026-02-02-13-04-11.jpg>
+[02/02/26, 1:04:11 PM] Suvansh Verma: Same error
+[02/02/26, 1:04:18 PM] Suvansh Verma: @⁨Utkarsh⁩ issue with Omar
+[02/02/26, 1:04:35 PM] Suvansh Verma: Still facing that Trial Over issue.
+[02/02/26, 1:04:44 PM] Utkarsh: Checking.
+[02/02/26, 1:07:01 PM] Utkarsh: Ask him to close the VM for a min.
+[02/02/26, 1:09:23 PM] Utkarsh: https://aiexplorer23.app.n8n.cloud./home/workflows
+[03/02/26, 1:18:40 PM] Suvansh Verma: Problem in node ‘PartialExecutionToolExecutor‘
+
+Your trial has ended. Upgrade now to keep automating
+[03/02/26, 1:19:21 PM] Suvansh Verma: aiexplorer_17@uplevel.academy
+[03/02/26, 1:19:55 PM] Utkarsh: Name?
+[03/02/26, 1:20:01 PM] Utkarsh: He must be clicking something wrong.
+[03/02/26, 1:20:03 PM] Suvansh Verma: Talha
+[03/02/26, 1:20:06 PM] Utkarsh: Let me check.
+[03/02/26, 2:38:06 PM] Suvansh Verma: Upgenaijanuser20 | issue with VM. disconnected.
+‎[03/02/26, 2:38:49 PM] Suvansh Verma: ‎<attached: 00000252-PHOTO-2026-02-03-14-38-49.jpg>
+[03/02/26, 2:39:20 PM] Suvansh Verma: He tried logging out and tried relogin. It's throwing this error.
+[03/02/26, 2:41:02 PM] Suvansh Verma: @⁨Tanvinder IK⁩ @⁨Utkarsh⁩ request you to please check
+[03/02/26, 2:41:21 PM] Suvansh Verma: Ignore, it's working now.
+[03/02/26, 4:59:02 PM] Suvansh Verma: @⁨Tanvinder IK⁩ we will need to extend the VM access for Low Code folks by 2 weeks as we will give them a post program assignment.
+[03/02/26, 4:59:52 PM] Utkarsh: @⁨Suvansh Verma⁩ send the credentials sheet itelf.
+[03/02/26, 5:00:24 PM] Suvansh Verma: Sharing
+[03/02/26, 5:00:48 PM] Suvansh Verma: Sheet Link: https://docs.google.com/spreadsheets/d/1f5sHyLwjU7qexwhediJT7d9oa-JShKMf8w713X9WKKU/edit?gid=2101066045#gid=2101066045
+[03/02/26, 5:05:49 PM] Tanvinder IK: @⁨Suvansh Verma⁩ shall I extend these 20 labs till 18th feb?
+[03/02/26, 5:06:07 PM] Suvansh Verma: Works
+[03/02/26, 6:12:29 PM] Tanvinder IK: As per your request, we have extended the lab access until 18th February for the mentioned users.
+[03/02/26, 10:00:14 PM] Utkarsh: Hey @⁨Tanvinder IK⁩
+[03/02/26, 10:00:38 PM] Utkarsh: Any updates on these.
+- Windows VMs
+- ⁠n8n on local VMs
+- ⁠New Vendors credentials
+[03/02/26, 10:00:43 PM] Utkarsh: First two are very critical
+[03/02/26, 10:01:06 PM] Utkarsh: Also can you check with Akshay/ Team if they can install Edge on the current Ubuntu VMs, or can you give it a try?
+[03/02/26, 10:01:39 PM] Utkarsh: I need a VM with MS Logged in creds by tom before 11 AM, it is fine if they don’t have Windows VMs for now.
+[03/02/26, 10:02:10 PM] Tanvinder IK: Windows VM's can be available once we raise request with support team
+For n8n we need to take demo first and then we can take the sample vm's
+[03/02/26, 10:02:35 PM] Tanvinder IK: For demo Priyadarshan can setup a call tomm specifically for our use case
+[03/02/26, 10:03:04 PM] Utkarsh: Let’s do this tom then.
+[03/02/26, 10:03:06 PM] Tanvinder IK: You can give me your availability and I can ask them to schedule demo
+[03/02/26, 10:03:24 PM] Utkarsh: Let’s raise the request to them rightaway to send 2 VMs.
+[03/02/26, 10:03:31 PM] Utkarsh: So let’s do this.
+[03/02/26, 10:03:49 PM] Tanvinder IK: What tools are required in the these 2 vm
+[03/02/26, 10:04:19 PM] Utkarsh: - 2 VMs with Windows installed ( This should be completely windows, Microsoft edge etc, and outlook ) 
+- ⁠2 VMs with Ubuntu but Edge installed.
+[03/02/26, 10:04:41 PM] Utkarsh: Let’s raise this rightaway, and get them by tom before 11 AM if possible.
+[03/02/26, 10:05:04 PM] Tanvinder IK: What should be duration for these 2 vm's
+[03/02/26, 10:05:18 PM] Utkarsh: For now 2 Days.
+[03/02/26, 10:05:28 PM] Tanvinder IK: Ok
+[03/02/26, 10:05:39 PM] Utkarsh: We will test them out properly tom, and then accordingly raise for Ubuntu or Windows.
+[03/02/26, 10:05:52 PM] Utkarsh: If Windows is working fine that would be the preference.
+[03/02/26, 10:05:55 PM] Tanvinder IK: So 4 VM's in total for 2 days
+[03/02/26, 10:06:00 PM] Utkarsh: Yes.
+[03/02/26, 10:06:15 PM] Tanvinder IK: Ok let me raise the request
+[03/02/26, 10:06:25 PM] Utkarsh: Anytime between 11:30 AM to 2:30 PM, let’s do this on Thu if PD can.
+[03/02/26, 10:06:51 PM] Tanvinder IK: Sure
+[03/02/26, 10:07:30 PM] Utkarsh: Yes we need to send a recording, documentation to the Client for these VMs, and they will be sending it internally.
+
+For Documentation, I have it ready, for the video, I need to send it across to the SME before 11 AM so that he can record and send it across by 2 PM.
+[03/02/26, 10:07:45 PM] Utkarsh: So check with them in same mail if they can provide all by tom 11 AM.
+[03/02/26, 10:08:06 PM] Utkarsh: If the Windows thing will get delayed, let’s focus on getting Edge on Ubuntu.
+[03/02/26, 10:08:49 PM] Utkarsh: Also @⁨Tanvinder IK⁩ the single login thing, is there an ETA they have given for that?
+[03/02/26, 10:09:49 PM] Utkarsh: Apart from this please look into these tom, and share an update.
+- New Vendors credentials
+- Virtual Labs Checklist ( Sample - https://docs.google.com/spreadsheets/d/1f5sHyLwjU7qexwhediJT7d9oa-JShKMf8w713X9WKKU/edit?gid=575192863#gid=575192863 ) 
+
+Thanks
+[03/02/26, 10:10:20 PM] Tanvinder IK: So they said that they will auto start the VM before the start time and when learner will login he will see web desktop button only amd they donot need to start the lab saving 3-4 mins of time
+[03/02/26, 10:15:22 PM] Utkarsh: So basically I add the creds and it directly takes me to the Desktop correct?
+[03/02/26, 10:16:15 PM] Utkarsh: What happens when the auto-start is not done and they login?
+[03/02/26, 10:16:22 PM] Utkarsh: Then they would have to start correct?
+[03/02/26, 10:17:18 PM] Tanvinder IK: They add creds then the dashibard opens and then they have to click on web desktop button
+[03/02/26, 10:17:38 PM] Tanvinder IK: Then they have to start the lab
+[03/02/26, 10:17:44 PM] Utkarsh: I think this needs to be simplified further Tanvinder.
+[03/02/26, 10:18:06 PM] Utkarsh: We need them to be directed to Web Desktop directly.
+[03/02/26, 10:18:26 PM] Tanvinder IK: They said that is not doable
+[03/02/26, 10:18:42 PM] Utkarsh: 😅
+[03/02/26, 10:18:45 PM] Utkarsh: Acha okay.
+[03/02/26, 10:18:50 PM] Utkarsh: That is a problem then.
+[03/02/26, 10:18:58 PM] Utkarsh: Atleast for Leaders.
+[03/02/26, 10:18:59 PM] Tanvinder IK: exactly
+[03/02/26, 10:19:05 PM] Utkarsh: Builders n all ke liye phr bhi chlega.
+[03/02/26, 10:19:11 PM] Tanvinder IK: Haanji
+[03/02/26, 10:19:12 PM] Utkarsh: Can you ask them to check again.
+[03/02/26, 10:19:19 PM] Utkarsh: This will not work on Leaders.
+[03/02/26, 10:19:26 PM] Tanvinder IK: woh vm lab wala tile dikega hi
+[03/02/26, 10:19:38 PM] Utkarsh: Wo tk h.
+[03/02/26, 10:19:55 PM] Utkarsh: But After that they reach that page auto redirect ho skta haina ky?
+[03/02/26, 10:19:55 PM] Tanvinder IK: for leaders we can keep the labs in start state for 8 or 10 hrs ‎<This message was edited>
+[03/02/26, 10:20:06 PM] Utkarsh: Auto start is not a problem.
+[03/02/26, 10:20:15 PM] Utkarsh: Once they sign in. ‎<This message was edited>
+[03/02/26, 10:20:33 PM] Utkarsh: They should redirect directly.
+Just talk to them once.
+[03/02/26, 10:20:33 PM] Tanvinder IK: once they sign in web desktop pe click karna hi padega
+[03/02/26, 10:20:38 PM] Utkarsh: Acha.
+[03/02/26, 10:20:48 PM] Utkarsh: Yr phr toh problem h thda.
+[03/02/26, 10:21:01 PM] Utkarsh: Okay let’s see for Leaders we will have to go for other Vendors.
+[03/02/26, 10:21:16 PM] Utkarsh: Aap btana kl progress on this we need to move fast on that as well now.
+[03/02/26, 10:21:29 PM] Utkarsh: There are multiple Leaders Cohorts coming in Feb end/ March.
+[03/02/26, 10:21:47 PM] Utkarsh: And the VMs becoming a center of hindrance is not okay.
+‎[03/02/26, 10:21:53 PM] Tanvinder IK: this is what they came up with ‎<attached: 00000324-PHOTO-2026-02-03-22-21-53.jpg>
+[03/02/26, 10:21:59 PM] Utkarsh: That takes away people focus from the actual learning.
+[03/02/26, 10:22:59 PM] Utkarsh: See this is what I have been asking for in Point 4.
+[03/02/26, 10:23:10 PM] Utkarsh: They mentioned in the call they will send a demo Windows VM.
+[03/02/26, 10:23:13 PM] Utkarsh: But we never got it.
+[03/02/26, 10:23:26 PM] Utkarsh: That’s really the problem here Tanvinder again and again with them.
+[03/02/26, 10:23:42 PM] Utkarsh: There is no proper Project Management on their side, and they expect us to do this.
+[03/02/26, 10:23:55 PM] Utkarsh: I was hoping hume ye aaj hi mil jta, but tk h we can try it tom.
+[03/02/26, 10:24:03 PM] Tanvinder IK: Yes they are not proactive and wait for us to come up
+[03/02/26, 10:24:28 PM] Utkarsh: Yup and they are charging more than enough, anyways it’s okay.
+[03/02/26, 10:24:36 PM] Utkarsh: Let’s get the new vendors faster please.
+[03/02/26, 10:24:46 PM] Utkarsh: The new Leaders Program will happen post 20th Feb.
+[03/02/26, 10:24:56 PM] Utkarsh: So we don’t have more than 2 Weeks.
+[03/02/26, 10:25:15 PM] Utkarsh: We need to get the creds this week itself, so that we can test them out properly, and plan accordingly.
+[03/02/26, 11:33:54 PM] Tanvinder IK: Sure
+[03/02/26, 11:34:07 PM] Tanvinder IK: For now I have raised the request for Vm's to nuvepro team ‎<This message was edited>
+[04/02/26, 11:08:26 AM] Utkarsh: - aiexplorer_54@teamupwardandonward.com	
+- ⁠8!2%dO9}em3{9V1/
+[04/02/26, 11:08:31 AM] Utkarsh: MS Account.
+[04/02/26, 11:08:36 AM] Utkarsh: Ailabs321$
+[04/02/26, 11:09:10 AM] Utkarsh: https://aiexplorer54.app.n8n.cloud/workflow
+[04/02/26, 11:18:42 AM] Utkarsh: Actions Items @⁨Tanvinder IK⁩
+- Review Ubuntu/ Windows based VM to see overall performance.
+- ⁠Setup the above Mail on Outlook, bookmark it, bookmark n8n, Sheets, ChatGPT and Content Drive.
+- ⁠Send across one setup VM by 12/12:30 for recording the video and Documentation.
+- ⁠Do a more thorough review over the day, get the changes done with Nuvepro, test everything properly, I will also run a n8n workflow and check.
+- ⁠Once the VM is good raise 22 VMs request today, and get them by tom 11 AM.
+- ⁠Throughout tom, work on setting up all the 22 VMs
+- ⁠I will update the pre-requsities and documentation.
+- ⁠Let's have the VMs Ready by Friday 2 PM.
+- ⁠Here we also need to add API Keys and other things on n8n, will discuss with you later in the evening.
+
+
+@⁨Suvansh Verma⁩ can you send a One-Drive Link for Content of any Program we have created, need it fo recording the video.
+
+Also please create the One-Drive link for the upcoming Low Code.
+Thanks 
+CC: @⁨Shashi Bhushan  Kumar⁩
+[04/02/26, 11:20:12 AM] Suvansh Verma: Low Code Cohort 1 | OneDrive Link: https://interviewkickstarts-my.sharepoint.com/:f:/g/personal/operations_teamupwardandonward_com/IgD5nIkAUROlRro7Cs3yjrjcAeDgFUa2KIfo5CDlrstzA00?e=ejUIuU
+[04/02/26, 11:20:28 AM] Utkarsh: Thanks
+[04/02/26, 11:20:45 AM] Utkarsh: FYI we will have all the Account ready Friday 2-3 PM.
+[04/02/26, 11:20:49 AM] Utkarsh: So you can plan accordingly.
+[04/02/26, 11:20:50 AM] Suvansh Verma: For Cohort 2, Drive link is ready.
+[04/02/26, 11:20:58 AM] Utkarsh: Cool.
+[04/02/26, 11:21:17 AM] Utkarsh: We can send the Credentials out by Friday itself evening.
+[04/02/26, 11:21:28 AM] Utkarsh: So that folks can try, and get comfortable.
+[04/02/26, 11:21:29 AM] Utkarsh: Thanks
+[04/02/26, 11:45:41 AM] Tanvinder IK: @⁨Utkarsh⁩ do we need to bookmark this under Content Drive?
+[04/02/26, 11:45:58 AM] Utkarsh: Yes.
+[04/02/26, 12:43:37 PM] Utkarsh: @⁨Tanvinder IK⁩ can you ask them to remove the Ubuntu thing.
+‎[04/02/26, 12:43:38 PM] Utkarsh: ‎<attached: 00000357-PHOTO-2026-02-04-12-43-38.jpg>
+[04/02/26, 12:43:44 PM] Utkarsh: Need it for recording the video.
+[04/02/26, 12:44:10 PM] Utkarsh: Or else leave it for now.
+screen change krlenge.
+[04/02/26, 12:44:15 PM] Utkarsh: Give we have to record both.
+[04/02/26, 12:45:27 PM] Tanvinder IK: Sure
+‎[04/02/26, 11:40:33 PM] Tanvinder IK: @⁨Utkarsh⁩ ‎<attached: 00000362-PHOTO-2026-02-04-23-40-33.jpg>
+[05/02/26, 10:14:24 AM] Tanvinder IK: Hi @⁨Utkarsh⁩ shall I provisin 2 Vm's with windows base image?
+[05/02/26, 1:32:21 PM] Utkarsh: Yes let’s do that @⁨Tanvinder IK⁩
+[05/02/26, 1:47:39 PM] Tanvinder IK: Sure
+[05/02/26, 1:47:48 PM] Tanvinder IK: What should be the end date?
+[05/02/26, 2:08:08 PM] Utkarsh: We can keep it until next week Wed.
+[05/02/26, 2:08:13 PM] Utkarsh: Can you resend the credentials here
+[05/02/26, 6:07:38 PM] Utkarsh: Hey @⁨Tanvinder IK⁩ 
+Let's cancel the subscription plans on Expertex AI platform which we had taken sometime back for Leaders and other program.
+[05/02/26, 6:08:02 PM] Utkarsh: I think it will still be active until 20th Feb, but remove krdete h as we are not going to use it moving forward.
+[05/02/26, 6:08:27 PM] Utkarsh: These are Emails IDs/ Pass - https://docs.google.com/spreadsheets/d/1JhB1Lw4Y_4VwYg8hM98HgTL3btWWiUM_/edit?gid=1578257168#gid=1578257168
+[05/02/26, 6:08:37 PM] Utkarsh: Let’s cancel the subscription and remove the card.
+[05/02/26, 6:08:58 PM] Utkarsh: Thanks
+[05/02/26, 6:09:38 PM] Utkarsh: https://www.app.expertex.ai/account/login
+[05/02/26, 6:16:03 PM] Utkarsh: Also regarding this as you know the Cohort is pushed by 1 Week, so we will more time, but let’s get prepared beforehand.
+
+Let’s go into n8n, ChatGPT, and signup, I think anyways we will have to give the learners’ paid accounts coz they will need access for 2 Weeks post program.
+[05/02/26, 6:16:08 PM] Utkarsh: So we can signup and be ready.
+[05/02/26, 6:16:11 PM] Utkarsh: Payment n all we can do later.
+[05/02/26, 6:16:41 PM] Utkarsh: Let’s complete this activity by Sat/Sun as per your bandwidth.
+Thanks
+[05/02/26, 6:29:47 PM] Tanvinder IK: This saturday I am not avaipable dur to family commitments
+[05/02/26, 6:29:56 PM] Tanvinder IK: Will be avaipable on sunday
+[05/02/26, 6:29:59 PM] Tanvinder IK: @⁨Utkarsh⁩
+[05/02/26, 6:41:32 PM] Tanvinder IK: Please find creds below
+Login ID	Password	URL
+upwwindowsuser1	MTc3MDI5MjI5Nw==	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+upwwindowsuser2	MTc3MDI5MjI5OQ==	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+[05/02/26, 6:46:04 PM] Utkarsh: That’s alright let’s close MS Signup activities by Mon and the cleanup by Tuesday should be fine.
+[05/02/26, 6:46:05 PM] Utkarsh: Thanks
+[05/02/26, 8:27:55 PM] Tanvinder IK: The lab has been provisioned for 10 hours, and the expiry date is 11-02-2026.
+[06/02/26, 8:20:05 PM] Utkarsh: @⁨Tanvinder IK⁩
+[07/02/26, 12:55:13 PM] Dheeraj Tandon: ‎This message was deleted.
+[09/02/26, 11:40:09 AM] Utkarsh: Hey @⁨Tanvinder IK⁩
+[09/02/26, 11:40:12 AM] Utkarsh: This is urgent.
+[09/02/26, 11:40:20 AM] Utkarsh: Can you configure the AI Explore 54 account on this please.
+[09/02/26, 11:40:25 AM] Utkarsh: We need it for the recording.
+[09/02/26, 11:42:01 AM] Utkarsh: - aiexplorer_54@teamupwardandonward.com	
+- ⁠⁠8!2%dO9}em3{9V1/
+- ⁠MS Account.
+
+n8n Pass - Ailabs321$
+https://aiexplorer54.app.n8n.cloud/workflow
+
+
+Bookmark n8n, ChatGPT, Outlook, and Content Drive.
+
+- Content Folder | Low Code Cohort: https://interviewkickstarts-my.sharepoint.com/:f:/g/personal/operations_teamupwardandonward_com/IgD5nIkAUROlRro7Cs3yjrjcAeDgFUa2KIfo5CDlrstzA00?e=ejUIuU
+[09/02/26, 11:42:16 AM] Utkarsh: Let me know once this is done.
+Thanks
+[09/02/26, 11:43:19 AM] Tanvinder IK: Sure
+[09/02/26, 11:43:34 AM] Tanvinder IK: In both the VM's
+[09/02/26, 11:44:21 AM] Utkarsh: Second wale me ye krdo aap.
+
+- Aiexplorer 55
+- ⁠aiexplorer_55@teamupwardandonward.com	
+- ⁠d!8BD7H4=f6$#5p~
+[09/02/26, 11:44:32 AM] Utkarsh: You will have to create n8n and ChatGPT Account signup.
+[09/02/26, 11:44:43 AM] Utkarsh: For now you can send me First account configure with 54.
+[09/02/26, 11:44:48 AM] Utkarsh: 55 wala thde der bd chlega.
+[09/02/26, 11:44:49 AM] Tanvinder IK: Ok
+[09/02/26, 11:44:51 AM] Tanvinder IK: Cool
+[09/02/26, 11:47:47 AM] Tanvinder IK: For  upwwindowsuser1 lab the required setup is done please check and confirm ‎<This message was edited>
+[09/02/26, 11:47:49 AM] Tanvinder IK: @⁨Utkarsh⁩
+[09/02/26, 11:48:00 AM] Utkarsh: Sure.
+[09/02/26, 11:50:21 AM] Utkarsh: Please add ChatGPT as well.
+[09/02/26, 11:50:45 AM] Tanvinder IK: ok
+‎[09/02/26, 11:50:49 AM] Utkarsh: Also let’s add AI Explorer 54 Profile here on the screen. ‎<attached: 00000407-PHOTO-2026-02-09-11-50-49.jpg>
+[09/02/26, 11:50:54 AM] Utkarsh: As we did last time.
+[09/02/26, 11:51:13 AM] Utkarsh: Remove Chrome, VS Code and SQL Server thing from Desktop.
+[09/02/26, 11:51:20 AM] Utkarsh: These are not required here.
+[09/02/26, 11:51:46 AM] Utkarsh: Make sure in the other VMs we receive we remove it from the Desktop.
+Thanks
+[09/02/26, 12:01:46 PM] Tanvinder IK: Ok
+[09/02/26, 12:02:01 PM] Tanvinder IK: I am not able to login to chatgpt with microsoft
+[09/02/26, 12:02:06 PM] Tanvinder IK: Credentials
+[09/02/26, 12:27:26 PM] Utkarsh: No no just use since email sigin.
+[09/02/26, 12:27:29 PM] Utkarsh: It will work.
+[09/02/26, 12:27:32 PM] Utkarsh: Some MS issue.
+[09/02/26, 12:51:11 PM] Utkarsh: Also @⁨Tanvinder IK⁩ pick this up as well tom/ day after just reminding on this.
+Thanks
+[09/02/26, 1:16:48 PM] Tanvinder IK: share details please jinka remove karna hai access
+[09/02/26, 1:17:15 PM] Utkarsh: These.
+[09/02/26, 1:17:39 PM] Utkarsh: This is done?
+[09/02/26, 1:20:13 PM] Tanvinder IK: Yes this is done
+[09/02/26, 1:20:37 PM] Tanvinder IK: n8n, outlook login chstgpr login and all bookmarks added
+[09/02/26, 1:20:52 PM] Tanvinder IK: removed chrome and vs studio icons from the dashboard as well
+[09/02/26, 1:37:58 PM] Utkarsh: Cool let me check.
+Thanks
+[09/02/26, 6:48:10 PM] Tanvinder IK: @⁨Suvansh Verma⁩ could you send the low code link
+‎[09/02/26, 7:58:59 PM] Tanvinder IK: @⁨Utkarsh⁩ ‎<attached: 00000427-PHOTO-2026-02-09-19-58-59.jpg>
+[09/02/26, 10:22:56 PM] Suvansh Verma: https://interviewkickstarts-my.sharepoint.com/:f:/g/personal/operations_teamupwardandonward_com/IgCkexaXgtjAR65ux4Zj05WcAQ227QhoT1OQiRRl8FR8Efc?e=h7vNLi
+[09/02/26, 10:23:03 PM] Suvansh Verma: OneDrive Link
+[09/02/26, 10:38:22 PM] Tanvinder IK: thnx
+[10/02/26, 12:53:31 PM] Utkarsh: From all the participants?
+[10/02/26, 12:53:33 PM] Utkarsh: @⁨Tanvinder IK⁩ ?
+[10/02/26, 12:54:27 PM] Tanvinder IK: Yes all 20 labs
+[10/02/26, 12:54:46 PM] Utkarsh: Umm okay that’s slightly weird.
+[10/02/26, 12:55:10 PM] Utkarsh: Let’s add additional hours then.
+[10/02/26, 12:55:19 PM] Tanvinder IK: Shall I get the report from them
+[10/02/26, 12:55:27 PM] Utkarsh: Let’s report.
+[10/02/26, 12:55:36 PM] Utkarsh: Let’s not keep it active 10-10 right now.
+[10/02/26, 12:55:47 PM] Utkarsh: Let’s allocate 5-6 hours like the previous model of 300 Rs.
+[10/02/26, 12:56:00 PM] Utkarsh: Days when we don’t have class it should cost us 300 Rs.
+[10/02/26, 12:56:10 PM] Utkarsh: And when we have classes it will be active 10 AM - 10 PM.
+[10/02/26, 12:56:12 PM] Utkarsh: So 500
+[10/02/26, 12:56:16 PM] Tanvinder IK: Ok
+[10/02/26, 12:56:21 PM] Utkarsh: And Windows ke case me 750 I guess.
+[10/02/26, 12:56:43 PM] Utkarsh: But Windows ka bhi not start ka le lo aap, for days when it is not classes.
+[10/02/26, 12:58:26 PM] Tanvinder IK: Sure
+‎[12/02/26, 2:15:15 PM] Suvansh Verma: ‎<attached: 00000447-PHOTO-2026-02-12-14-15-15.jpg>
+[12/02/26, 2:15:31 PM] Suvansh Verma: - upwwindowsuser1	
+- ⁠Pass - MTc3MDI5MjI5Nw==	
+- ⁠https://cloudlabs.nuvepro.com/company/upwardndonward/home
+[12/02/26, 2:15:53 PM] Utkarsh: @⁨Tanvinder IK⁩ can you look into this?
+[12/02/26, 2:16:04 PM] Tanvinder IK: please share the sheet?
+[12/02/26, 2:16:05 PM] Suvansh Verma: No lab assigned
+[12/02/26, 2:17:07 PM] Utkarsh: - upwwindowsuser01	
+- ⁠Cloudlab123$	
+- ⁠https://cloudlabs.nuvepro.com/company/upwardndonward/home
+[12/02/26, 2:17:12 PM] Utkarsh: @⁨Suvansh Verma⁩ try this one.
+[12/02/26, 2:17:23 PM] Utkarsh: This is the creds @⁨Tanvinder IK⁩
+[12/02/26, 2:17:42 PM] Tanvinder IK: These labs are deleted
+[12/02/26, 2:17:50 PM] Tanvinder IK: We have created new set of labs
+[12/02/26, 2:17:57 PM] Tanvinder IK: That I have added in teh sheet
+[12/02/26, 2:18:10 PM] Utkarsh: Cool.
+[12/02/26, 2:18:11 PM] Tanvinder IK: the validity was till 11th feb
+[12/02/26, 2:19:31 PM] Utkarsh: @⁨Suvansh Verma⁩ this is working fine you can use this one.
+[12/02/26, 2:24:15 PM] Suvansh Verma: Working well.
+‎[12/02/26, 3:32:36 PM] Suvansh Verma: ‎<attached: 00000462-PHOTO-2026-02-12-15-32-36.jpg>
+[12/02/26, 3:33:05 PM] Suvansh Verma: It's been a minute since they are stuck on this page.
+[12/02/26, 3:34:21 PM] Suvansh Verma: Tried it twice, still stuck. @⁨Tanvinder IK⁩
+[12/02/26, 3:35:23 PM] Tanvinder IK: Which id?
+[12/02/26, 3:35:56 PM] Tanvinder IK: Make sure 2 people are not logging in same vm
+[12/02/26, 3:37:52 PM] Suvansh Verma: - upwwindowsuser01	
+- ⁠Cloudlab123$	
+- ⁠https://cloudlabs.nuvepro.com/company/upwardndonward/home
+[12/02/26, 3:37:54 PM] Suvansh Verma: This one
+[12/02/26, 3:37:59 PM] Suvansh Verma: Tried it that way as well
+[12/02/26, 3:38:27 PM] Suvansh Verma: They are facing this issue. When I try the process is very smooth
+[12/02/26, 3:39:02 PM] Suvansh Verma: When they try, it shows the connecting tab.
+[12/02/26, 3:39:47 PM] Tanvinder IK: Issue is at learners end?
+[12/02/26, 3:39:55 PM] Tanvinder IK: From where they are accessing the vm
+[12/02/26, 3:40:01 PM] Utkarsh: Is the VPN off?
+[12/02/26, 3:40:03 PM] Tanvinder IK: Might be some network issue then
+[12/02/26, 3:40:05 PM] Suvansh Verma: VPN is off
+[12/02/26, 3:41:26 PM] Suvansh Verma: For John it went through. When Samira is doing it she is facing an issue. Seems like an issue at the Learners end. Trying to sort this out.
+‎[12/02/26, 3:43:34 PM] Suvansh Verma: ‎<attached: 00000478-PHOTO-2026-02-12-15-43-34.jpg>
+[12/02/26, 3:43:36 PM] Suvansh Verma: Speed test also done
+[12/02/26, 3:45:33 PM] Tanvinder IK: Something is hindering their network that is why it is reconnecting
+[12/02/26, 3:46:16 PM] Suvansh Verma: It worked
+[13/02/26, 1:27:50 AM] Tanvinder IK: @⁨Utkarsh⁩ kindly provide me with the email id's whose expert ai subscriprion needs to be deleted
+[13/02/26, 8:42:59 AM] Utkarsh: These are the email IDs @⁨Tanvinder IK⁩
+[13/02/26, 8:43:18 AM] Utkarsh: Let’s positively do this today.
+[13/02/26, 10:58:49 AM] Suvansh Verma: Sharing these credentials with John and Samira for them to give a demo to learners at e&. Hope that is fine.
+‎[13/02/26, 8:48:09 PM] Tanvinder IK: @⁨Utkarsh⁩ I am not able to login to these gmail accounts ‎<attached: 00000486-PHOTO-2026-02-13-20-48-09.jpg>
+[13/02/26, 10:55:09 PM] Utkarsh: This is Phone number issue right?
+[13/02/26, 10:55:26 PM] Utkarsh: Dheeraj can help with this
+[13/02/26, 10:55:52 PM] Utkarsh: @⁨Tanvinder IK⁩ you can add a message tom morning, Dheeraj can disable the login via number thing for sometime.
+[13/02/26, 10:55:58 PM] Utkarsh: But please isko Monday se pehle krte h.
+[13/02/26, 10:56:32 PM] Utkarsh: Also will call you for e& Cohort tom for few things, we need to add API and all that by Monday EOD.
+Thanks
+[16/02/26, 11:45:30 AM] Suvansh Verma: @⁨Tanvinder IK⁩ we will have to extend the VMs that are active till 18th Feb by 1 week.
+[16/02/26, 11:45:56 AM] Utkarsh: We did that already @⁨Suvansh Verma⁩
+[16/02/26, 11:46:02 AM] Utkarsh: It is active until 25th.
+[16/02/26, 11:46:06 AM] Tanvinder IK: Yes
+[16/02/26, 11:46:11 AM] Tanvinder IK: 20 vms
+[16/02/26, 11:48:39 AM] Suvansh Verma: Okay
+[16/02/26, 8:11:20 PM] Tanvinder IK: Hi @⁨Dheeraj Tandon⁩
+[16/02/26, 8:11:38 PM] Tanvinder IK: could you please disable the security auth for below mentioned email id's
+https://docs.google.com/spreadsheets/d/1JhB1Lw4Y_4VwYg8hM98HgTL3btWWiUM_/edit?gid=1578257168#gid=1578257168
+[16/02/26, 8:53:38 PM] Dheeraj Tandon: Security auth is already disabled for all these users.
+[16/02/26, 8:54:06 PM] Tanvinder IK: It is asking for phone otp?
+[16/02/26, 8:54:42 PM] Dheeraj Tandon: yes, if google find anything unusual then it ask for phone otp.
+[16/02/26, 8:55:01 PM] Dheeraj Tandon: @⁨Utkarsh⁩ lets connect tomorrow for an alternate solution to avoid such security questions.
+[16/02/26, 8:57:27 PM] Tanvinder IK: @⁨Utkarsh⁩ for now I will be needing phone no.s for otps
+[16/02/26, 8:58:26 PM] Utkarsh: Hey @⁨Dheeraj Tandon⁩
+[16/02/26, 8:58:33 PM] Utkarsh: The 10 min thing which you had mentioned.
+[16/02/26, 8:58:37 PM] Utkarsh: That will help with this.
+[16/02/26, 8:58:40 PM] Dheeraj Tandon: Wait let me disable the security questions for 10 minutes
+[16/02/26, 8:58:45 PM] Utkarsh: Yes please.
+[16/02/26, 8:58:47 PM] Utkarsh: That helps/
+[16/02/26, 8:58:49 PM] Dheeraj Tandon: Yes, doing that
+[16/02/26, 8:58:51 PM] Utkarsh: Last time it did.
+Thanks
+[16/02/26, 8:58:55 PM] Utkarsh: Thanks
+[16/02/26, 9:02:55 PM] Dheeraj Tandon: Done
+[16/02/26, 9:03:01 PM] Dheeraj Tandon: you can ask them to login
+[16/02/26, 9:03:08 PM] Tanvinder IK: Ok
+[16/02/26, 9:25:16 PM] Tanvinder IK: @⁨Utkarsh⁩ All subscriptions are revoked for expertx.ai
+[16/02/26, 9:25:26 PM] Utkarsh: Thanks
+[16/02/26, 9:25:30 PM] Utkarsh: Card is removed as well right?
+[16/02/26, 9:25:30 PM] Tanvinder IK: Is there any other subscription pending?
+[16/02/26, 9:26:07 PM] Utkarsh: None at the moment.
+[16/02/26, 9:26:17 PM] Utkarsh: I’ll check again if anything else if there.
+[16/02/26, 9:26:18 PM] Utkarsh: Thanks
+‎[16/02/26, 9:26:30 PM] Tanvinder IK: ‎<attached: 00000524-PHOTO-2026-02-16-21-26-30.jpg>
+[17/02/26, 8:02:46 AM] Utkarsh: Okay cool, but plan cancel hogya h toh it’s fine.
+[17/02/26, 8:09:18 AM] Utkarsh: Hey @⁨Tanvinder IK⁩ on Non-Class days the Ubuntu VMs are still 300 Rs right and on Class Days 500?
+[17/02/26, 8:09:52 AM] Utkarsh: Wbu Windows for non-class Days, for class Days it is 750 I believe, can you check and let me know.
+[17/02/26, 8:09:54 AM] Utkarsh: Thanks
+‎[17/02/26, 11:01:26 AM] Suvansh Verma: ‎<attached: 00000529-PHOTO-2026-02-17-11-01-26.jpg>
+[17/02/26, 11:01:44 AM] Suvansh Verma: Low Code learner (Navzar) is facing this issue while completing the assignment.
+[17/02/26, 11:02:48 AM] Suvansh Verma: Upgenaijanuser20
+‎[17/02/26, 6:01:26 PM] Suvansh Verma: This id is also assigned to a learner for tomorrow. ‎<attached: 00000532-PHOTO-2026-02-17-18-01-26.jpg>
+[17/02/26, 6:01:52 PM] Suvansh Verma: Request you to please enable everything for this as well.
+[18/02/26, 12:01:34 PM] Suvansh Verma: VMs are smooth till now for everyone.
+[18/02/26, 12:02:01 PM] Suvansh Verma: @⁨Tanvinder IK⁩ please check this.
+[18/02/26, 12:02:19 PM] Utkarsh: Cool.
+[18/02/26, 12:02:58 PM] Utkarsh: This is mostly likely credits expired due to overuse.
+Tanvinder is outside right now, we will get this sorted in the next 1-2 hrs by adding addn credits.
+Thanks
+[18/02/26, 12:13:56 PM] Tanvinder IK: Please share userid
+[18/02/26, 12:14:20 PM] Utkarsh: This one Tanvinder.
+[18/02/26, 12:14:24 PM] Utkarsh: .
+[18/02/26, 3:07:22 PM] Suvansh Verma: upwwindowsuser10
+‎[18/02/26, 3:07:56 PM] Suvansh Verma: ‎<attached: 00000542-PHOTO-2026-02-18-15-07-56.jpg>
+[18/02/26, 3:08:07 PM] Suvansh Verma: user 10 facing this issue
+[18/02/26, 3:08:41 PM] Tanvinder IK: 2 uswrs using same vm
+[18/02/26, 3:09:47 PM] Suvansh Verma: Issue sorted
+[18/02/26, 7:34:44 PM] Tanvinder IK: Yes lab has been resumed
+[18/02/26, 7:34:54 PM] Tanvinder IK: This is sorted
+[19/02/26, 10:36:35 AM] Suvansh Verma: @⁨Utkarsh⁩ @⁨Tanvinder IK⁩ 
+For Low Code Cohort 1 many learners are raising the issue where the lab is not opening as the total duration is over
+[19/02/26, 10:36:40 AM] Suvansh Verma: We will have to increase that
+[19/02/26, 10:37:10 AM] Utkarsh: Sure. ‎<This message was edited>
+[19/02/26, 10:37:16 AM] Utkarsh: @⁨Tanvinder IK⁩ ek brr please check what's the issue.
+[19/02/26, 10:37:20 AM] Utkarsh: We had until 25 Feb.
+[19/02/26, 10:37:26 AM] Utkarsh: So why is it giving issues?
+[19/02/26, 10:37:34 AM] Utkarsh: Daily ka 6-7 hours at min hona chaiye right?
+[19/02/26, 10:38:30 AM] Utkarsh: Like for 6-7 hours per Day, we are paying 300 Rs correct?
+So why is this running out?
+[19/02/26, 10:38:52 AM] Utkarsh: @⁨Suvansh Verma⁩ VM IDs send krde here for Tanvinder's reference.
+[19/02/26, 10:38:54 AM] Utkarsh: Thanks
+[19/02/26, 10:39:45 AM] Suvansh Verma: Sure
+[19/02/26, 10:40:28 AM] Suvansh Verma: https://docs.google.com/spreadsheets/d/1f5sHyLwjU7qexwhediJT7d9oa-JShKMf8w713X9WKKU/edit?gid=2101066045#gid=2101066045
+[19/02/26, 10:40:39 AM] Suvansh Verma: Let's increase the duration for all learners.
+[19/02/26, 10:41:00 AM] Utkarsh: Actually ideally isme kch increase krne ki need ni honi chaiye.
+[19/02/26, 10:41:12 AM] Utkarsh: We are already paying 300 per day for 6-7 Hrs
+[19/02/26, 10:41:32 AM] Utkarsh: So either the learners’ are keeping running after using, or some other issue.
+[19/02/26, 10:42:03 AM] Utkarsh: But @⁨Tanvinder IK⁩ if the VM is in idle state more than 1 hr so anyways stop krdena chaiye apart from the Live Class Days.
+[19/02/26, 10:42:10 AM] Utkarsh: So ye bt krlo aap with the Nuvepro folks
+[19/02/26, 10:42:12 AM] Utkarsh: Thanks
+[19/02/26, 1:54:46 PM] Tanvinder IK: Total 6 hrs add kiya tha duration
+[19/02/26, 1:55:11 PM] Tanvinder IK: Daily 6 hrs kardu kya?
+[19/02/26, 1:55:22 PM] Utkarsh: Yes
+[19/02/26, 1:55:29 PM] Utkarsh: What’s the cost for this?
+[19/02/26, 1:55:39 PM] Tanvinder IK: Let me confirm
+[19/02/26, 1:56:28 PM] Utkarsh: This I know is 300.
+[19/02/26, 1:56:39 PM] Utkarsh: So this should ideally be much lower.
+[19/02/26, 2:00:20 PM] Tanvinder IK: If the idle timeout stop is enabled then ₹300 for ubuntu VM
+[19/02/26, 2:00:32 PM] Tanvinder IK: 6-8 hrs of duration will be allocated each day
+[19/02/26, 2:00:42 PM] Tanvinder IK: And if lab is idle for 1 hr it will be atopped
+[19/02/26, 2:00:43 PM] Utkarsh: Let’s do this.
+[19/02/26, 2:00:51 PM] Utkarsh: 👍🏻
+[19/02/26, 2:00:57 PM] Tanvinder IK: For 20 ubuntu Vm's right
+[19/02/26, 2:01:04 PM] Utkarsh: What’s the cost for this?
+[19/02/26, 2:01:09 PM] Utkarsh: Yeah.
+[19/02/26, 2:01:10 PM] Tanvinder IK: Which we extended till 25
+[19/02/26, 2:01:17 PM] Utkarsh: Yes.
+[19/02/26, 2:01:28 PM] Tanvinder IK: That I have aksed Kashay to share
+[19/02/26, 2:01:33 PM] Tanvinder IK: It depend on compute xost
+[19/02/26, 2:01:57 PM] Utkarsh: It can’t be 300 per day buts let’s see.
+[19/02/26, 2:02:19 PM] Utkarsh: Let me know accordingly.
+Thanks
+[19/02/26, 2:02:32 PM] Tanvinder IK: I have asked him to share the details
+[19/02/26, 2:02:35 PM] Tanvinder IK: Over email
+[19/02/26, 2:02:43 PM] Tanvinder IK: For both ubuntu and windows VM
+[20/02/26, 12:59:55 PM] Suvansh Verma: @⁨Tanvinder IK⁩ Upgenaijanuser08 Same issue with this user.
+‎[20/02/26, 1:00:07 PM] Suvansh Verma: ‎<attached: 00000592-PHOTO-2026-02-20-13-00-07.jpg>
+[20/02/26, 1:43:40 PM] Tanvinder IK: Give me a min
+‎[20/02/26, 3:03:59 PM] Suvansh Verma: ‎<attached: 00000594-PHOTO-2026-02-20-15-03-59.jpg>
+[20/02/26, 3:04:13 PM] Suvansh Verma: Still the same issue with the old learner as well.
+[21/02/26, 10:04:05 AM] Suvansh Verma: @⁨Tanvinder IK⁩ any update on the issue? We need to resolve this on priority.
+[21/02/26, 10:18:01 AM] Tanvinder IK: We have extended the duration to 20 hrs per lab @⁨Suvansh Verma⁩ ‎<This message was edited>
+[21/02/26, 10:27:06 AM] Suvansh Verma: They are still facing the same issue.
+[21/02/26, 10:33:51 AM] Tanvinder IK: Let me check
+[21/02/26, 4:22:09 PM] Tanvinder IK: Could you please check now
+[21/02/26, 4:22:12 PM] Tanvinder IK: @⁨Suvansh Verma⁩
+[21/02/26, 4:31:37 PM] Suvansh Verma: Will check by EOD
+[21/02/26, 4:31:48 PM] Suvansh Verma: Don’t have access to my laptop
+[23/02/26, 10:40:39 AM] Utkarsh: Hey @⁨Suvansh Verma⁩ isko bhi check krlena aap.
+[23/02/26, 10:40:56 AM] Utkarsh: @⁨Tanvinder IK⁩ Hope the VMs will be on auto-start today as well, we have the Day 3 today.
+Thanks
+[23/02/26, 10:41:00 AM] Suvansh Verma: Dropped a mail to the learners
+[23/02/26, 10:41:12 AM] Tanvinder IK: Yes
+[23/02/26, 10:41:26 AM] Suvansh Verma: Trying to get on a call with a learners asap to check
+[23/02/26, 10:41:34 AM] Suvansh Verma: Will keep you posted
+[23/02/26, 10:41:40 AM] Utkarsh: Cool.
+[23/02/26, 10:42:03 AM] Utkarsh: Just cross check 1-2 VMs and make sure everything is in place.
+Thanks
+[23/02/26, 11:22:03 AM] Suvansh Verma: Working now. Thanks for the help @⁨Tanvinder IK⁩
+[23/02/26, 11:19:09 PM] Suvansh Verma: @⁨Tanvinder IK⁩ can the users not access their VM after a specific time? 
+Just checking as a learner is trying to work on the assignment and the VM is not accessible.
+[23/02/26, 11:19:57 PM] Tanvinder IK: Vm's are available from 9:55 am till 9:55 pm
+[23/02/26, 11:20:08 PM] Suvansh Verma: Ahh, understood.
+[23/02/26, 11:20:45 PM] Suvansh Verma: Any specific reason? Due to Ramzan, few learners work after office as well.
+[23/02/26, 11:22:08 PM] Tanvinder IK: This is raised by Utkarsh ‎<This message was edited>
+[23/02/26, 11:22:32 PM] Tanvinder IK: Also because of costing
+[23/02/26, 11:22:41 PM] Suvansh Verma: Understood
+[23/02/26, 11:23:10 PM] Utkarsh: Tanvinder this is only for Live Days correct? ‎<This message was edited>
+[23/02/26, 11:23:32 PM] Tanvinder IK: Yea corrwct
+[23/02/26, 11:25:13 PM] Suvansh Verma: Do you mean Live Class days or in general?
+[23/02/26, 11:25:35 PM] Utkarsh: This is only for Live Class Days.
+[23/02/26, 11:25:51 PM] Utkarsh: Other days they have to start themselves and is accessible throughout.
+[23/02/26, 11:26:08 PM] Tanvinder IK: Yes
+[23/02/26, 11:26:43 PM] Suvansh Verma: Upgenaijanuser12
+
+This user is trying to complete the assignment but cannot access the VM.
+[23/02/26, 11:26:57 PM] Suvansh Verma: I also tried and Start Desktop option is not showing
+[23/02/26, 11:27:28 PM] Tanvinder IK: This is because today was class day and it is now stopped
+[23/02/26, 11:27:41 PM] Tanvinder IK: It will be atarted tomm morning 9:55 am
+[23/02/26, 11:27:52 PM] Suvansh Verma: But this is the old batch
+[23/02/26, 11:28:23 PM] Utkarsh: @⁨Tanvinder IK⁩ for Assignment ones this shouldn’t be the case.
+[23/02/26, 11:28:26 PM] Utkarsh: Please check.
+[23/02/26, 11:28:36 PM] Tanvinder IK: The duration might be wxhausted
+[23/02/26, 11:28:40 PM] Tanvinder IK: Let me check
+‎[23/02/26, 11:29:02 PM] Utkarsh: ‎<attached: 00000635-AUDIO-2026-02-23-23-29-02.opus>
+[23/02/26, 11:29:05 PM] Utkarsh: Cool.
+[23/02/26, 11:29:42 PM] Suvansh Verma: No no, I checked. Still has around 33 hours left.
+[23/02/26, 11:30:23 PM] Tanvinder IK: I get it checked
+‎[23/02/26, 11:30:35 PM] Utkarsh: ‎<attached: 00000639-AUDIO-2026-02-23-23-30-35.opus>
+[23/02/26, 11:31:16 PM] Tanvinder IK: Will call Akshay tomorrow regarding this
+[23/02/26, 11:32:01 PM] Utkarsh: Also send us the rates for both the scenarios in Ubuntu and Windows.
+[23/02/26, 11:32:37 PM] Utkarsh: Windows me bhi avi non class days it doesn’t need to be 10-10 for non-class days we need to apply the idle state thing.
+[24/02/26, 9:44:49 AM] Suvansh Verma: @⁨Tanvinder IK⁩ @⁨Utkarsh⁩ 
+Seems like we will have to enable the lab for 24 hours for the Assignment submission. Most of the learners are trying to complete the assignment at an odd time. 
+Received 2 tickets: 1:20am and 5:45am.
+Due to Ramzan, they seem to work at odd hours.
+Also, we will have to extend the VM access by 2-3 days.
+[24/02/26, 9:45:31 AM] Utkarsh: That’s fine.
+[24/02/26, 9:45:40 AM] Utkarsh: We will add 6 hours to each VM.
+[24/02/26, 9:45:48 AM] Utkarsh: And they can start when they want to use it.
+[24/02/26, 9:46:08 AM] Utkarsh: It will stop if it is idle for more than 1 hr.
+[24/02/26, 9:46:22 AM] Utkarsh: Also @⁨Suvansh Verma⁩ please ask the learners' that after they use it, they should stop the labs as well.
+[24/02/26, 9:46:36 AM] Utkarsh: This is already mentioned in Document.
+[24/02/26, 9:47:12 AM] Utkarsh: @⁨Tanvinder IK⁩ please get this done after talking to Akshay.
+[24/02/26, 9:47:20 AM] Utkarsh: Let me know on this as well.
+‎[24/02/26, 11:26:05 AM] Suvansh Verma: ‎<attached: 00000652-PHOTO-2026-02-24-11-26-05.jpg>
+[24/02/26, 11:26:38 AM] Suvansh Verma: They are still not able to access the VM.
+[24/02/26, 11:33:44 AM] Utkarsh: @⁨Tanvinder IK⁩ as discussed please discuss this with Akshay and let me know.
+[24/02/26, 11:33:51 AM] Utkarsh: If required, take me on the call as well.
+Thanks
+[24/02/26, 11:34:28 AM] Tanvinder IK: They Re checking
+[24/02/26, 12:22:15 PM] Tanvinder IK: You can go ahead and start the lab now and access it using the credentials for Upgenaijanuser12.
+Please check once after logging in and let us know if you face any issues while accessing or running the lab.
+[24/02/26, 12:22:53 PM] Suvansh Verma: Sure, will check for all the 3 learners who were facing this issue.
+[24/02/26, 12:55:36 PM] Suvansh Verma: @⁨Tanvinder IK⁩ Can I inform the learners that the labs will be available whenever they want to access it?
+[24/02/26, 1:03:37 PM] Tanvinder IK: Yes
+[24/02/26, 1:03:48 PM] Suvansh Verma: Okay, informing them.
+[25/02/26, 9:22:16 AM] Suvansh Verma: @⁨Tanvinder IK⁩ let’s extend the VMs till Friday.
+[25/02/26, 9:22:54 AM] Tanvinder IK: Which ones?
+[25/02/26, 9:23:00 AM] Suvansh Verma: seems like they won’t be able to complete the assignment by EOD today.
+[25/02/26, 9:23:15 AM] Tanvinder IK: Ubuntu VM?
+[25/02/26, 9:23:37 AM] Suvansh Verma: Assignment ones, which were active till 25th
+[25/02/26, 9:23:58 AM] Suvansh Verma: https://docs.google.com/spreadsheets/d/1f5sHyLwjU7qexwhediJT7d9oa-JShKMf8w713X9WKKU/edit?gid=2101066045#gid=2101066045
+[25/02/26, 9:24:13 AM] Utkarsh: @⁨Tanvinder IK⁩ ispe kch clarity diya ky Akshay ne.
+- Timings they are live for and pricing?
+
+For Both Ubuntu/ Windows?
+[25/02/26, 9:25:26 AM] Utkarsh: Let me actually talk from my end as well with Akshay.
+[25/02/26, 9:25:27 AM] Utkarsh: Thanks
+[25/02/26, 9:32:06 AM] Tanvinder IK: Haven't received any email yet
+[25/02/26, 9:32:21 AM] Tanvinder IK: I asked him yesterday to share but didn't see anythimg
+[25/02/26, 9:32:29 AM] Tanvinder IK: I have raised the request
+[25/02/26, 9:37:10 AM] Tanvinder IK: We have extended the lab access for the participants till 27th February
+[25/02/26, 9:37:26 AM] Tanvinder IK: Upgenaijanuser01
+Upgenaijanuser02
+Upgenaijanuser03
+Upgenaijanuser04
+Upgenaijanuser05
+Upgenaijanuser06
+Upgenaijanuser07
+Upgenaijanuser08
+Upgenaijanuser09
+Upgenaijanuser10
+Upgenaijanuser11
+Upgenaijanuser12
+Upgenaijanuser13
+Upgenaijanuser14
+Upgenaijanuser15
+Upgenaijanuser16
+Upgenaijanuser20
+Upgenaijanuser18
+Upgenaijanuser19
+Upgenaijanuser17
+[25/02/26, 9:47:45 AM] Tanvinder IK: @⁨Utkarsh⁩ Akshay is saying he is saying he is waiting for his ops team to donfirm on some margin portions
+[25/02/26, 9:47:53 AM] Tanvinder IK: And then will share the price breakup
+[25/02/26, 9:48:02 AM] Utkarsh: Okay d
+[25/02/26, 9:48:15 AM] Utkarsh: But see this was aligned much much before today.
+[25/02/26, 9:48:30 AM] Utkarsh: 300 Rs per VM with 6-7 hours per Day.
+[25/02/26, 9:48:56 AM] Utkarsh: Right now anyways we are taking regular VMs every month.
+[25/02/26, 9:49:16 AM] Utkarsh: So please ask him to keep it within the amount and ensure it’s not too much.
+[25/02/26, 9:49:54 AM] Utkarsh: The VM still has some issues especially the initial login which can’t be changed so we can’t go beyond 300.
+[25/02/26, 9:53:05 AM] Tanvinder IK: Lets wait for his pricing details. Then will talk to him
+[25/02/26, 9:53:31 AM] Tanvinder IK: If you can also once talk to him will be better
+[25/02/26, 9:53:41 AM] Utkarsh: Cool.
+[25/02/26, 9:53:48 AM] Utkarsh: I talk to him once.
+‎[25/02/26, 12:33:46 PM] Tanvinder IK: @⁨Utkarsh⁩ ‎<attached: 00000688-PHOTO-2026-02-25-12-33-46.jpg>
+‎[26/02/26, 6:09:40 PM] Tanvinder IK: ‎<attached: 00000689-PHOTO-2026-02-26-18-09-40.jpg>
+[26/02/26, 6:09:50 PM] Tanvinder IK: The labs will be recreated
+[01/03/26, 4:32:17 PM] Tanvinder IK: @⁨Utkarsh⁩ i have setup the VM labs as before
+[01/03/26, 4:33:25 PM] Tanvinder IK: @⁨Suvansh Verma⁩ kindly inform 1 day advance if there is any session scheduled I will get the auto stop policy removed for the class days
+[01/03/26, 4:34:06 PM] Suvansh Verma: Noted. I have informed e& that the VMs will go live in 2nd
+[02/03/26, 10:48:23 AM] Suvansh Verma: Informed the e& team that the VMs are active. Will let you know if they face any issues. @⁨Tanvinder IK⁩
+[02/03/26, 10:48:52 AM] Tanvinder IK: Sure
+[05/03/26, 1:44:39 PM] Suvansh Verma: Hi @⁨Tanvinder IK⁩
+[05/03/26, 1:45:30 PM] Suvansh Verma: https://docs.google.com/spreadsheets/d/1f5sHyLwjU7qexwhediJT7d9oa-JShKMf8w713X9WKKU/edit?gid=2101066045#gid=2101066045
+
+Need to enable VM for Arun for 7 days (Upgenaijanuser01) | Low Code Cohort 1
+[05/03/26, 1:47:40 PM] Suvansh Verma: Need to enable VM for Madni for 7 days (Agenticaiusernov17) | Pro Code Cohort 1
+[05/03/26, 1:48:40 PM] Tanvinder IK: Please share start and end date
+[05/03/26, 1:49:20 PM] Suvansh Verma: Start Date: 5th March
+End Date: 13th March
+[05/03/26, 3:12:35 PM] Tanvinder IK: @⁨Suvansh Verma⁩ 
+We have enabled labs for the above-mentioned login ids
+
+Lab end date: 13th March 2026
+Duration: 72 hours.
+[05/03/26, 4:25:05 PM] Suvansh Verma: Thanks, will inform both the learners.
+[05/03/26, 4:30:16 PM] Suvansh Verma: Need to enable VM for Ahmed ElSaman Amin Ahmed for 7 days | Low Code Cohort 1 | User: Upgenaijanuser08 
+Start Date: 5th March
+End Date: 13th March
+[05/03/26, 4:30:19 PM] Suvansh Verma: @⁨Tanvinder IK⁩
+[05/03/26, 4:47:20 PM] Suvansh Verma: @⁨Tanvinder IK⁩ This learner was assigned another VM (jan26agenticailabuser10) for the assignment. Instead of Agenticaiusernov17, please enable *jan26agenticailabuser10*. Apologies for the confusion.
+[05/03/26, 4:48:34 PM] Tanvinder IK: Could you kindly let me know which user lab to remove and which to add
+[05/03/26, 4:52:03 PM] Suvansh Verma: Learner 1: Madni | We need to remove Agenticaiusernov17 and enable *jan26agenticailabuser10*.
+Learner 2: Arun | Upgenaijanuser01 | Already enabled by you | Good to go.
+Learner 3 (New Request): Ahmed ElSaman Amin Ahmed | Upgenaijanuser08 | Please enable this as well till 13th March.
+[05/03/26, 4:52:45 PM] Tanvinder IK: Ok
+[05/03/26, 6:13:13 PM] Tanvinder IK: We have enabled the lab for the jan26agenticailabuser10 and disabled the lab for the user
+Agenticaiusernov17​.
+[05/03/26, 6:13:41 PM] Tanvinder IK: We have enabled labs for the below mentioned login ids
+Upgenaijanuser08
+Start Date: 5th March
+End Date: 13th March
+Lab end date: 13th March 2026
+Duration: 72 hours.
+[06/03/26, 7:46:55 AM] Utkarsh: Yes saw this, it
+[06/03/26, 7:46:59 AM] Utkarsh: This is fine.
+[06/03/26, 7:47:01 AM] Utkarsh: CC: @⁨Shashi Bhushan  Kumar⁩
+[10/03/26, 10:30:56 AM] Suvansh Verma: @⁨Tanvinder IK⁩ good morning!
+We will have to extend the VM access for Low Code cohort 2 till 17th March.
+[10/03/26, 10:31:46 AM] Utkarsh: @⁨Suvansh Verma⁩ we also need to start tracking this properly, the cost that comes in
+[10/03/26, 10:31:58 AM] Utkarsh: I have been doing that, I’ll collate it in a doc.
+[10/03/26, 10:32:43 AM] Utkarsh: I might need your help to account for it for these additional requests, will talk to you soon.
+[10/03/26, 12:39:20 PM] Tanvinder IK: Could you share the list of VM's
+[10/03/26, 2:25:43 PM] Tanvinder IK: @⁨Suvansh Verma⁩
+[10/03/26, 2:28:31 PM] Suvansh Verma: https://docs.google.com/spreadsheets/d/1-F--sADeQ7Fxsjdc_9_Fkqt3X9A68Y0aHy05B0a9io4/edit?gid=2101066045#gid=2101066045
+[10/03/26, 2:29:06 PM] Tanvinder IK: Ok so all 22 accnts
+[10/03/26, 2:29:51 PM] Suvansh Verma: Only the ones assigned to learners
+[10/03/26, 2:29:57 PM] Suvansh Verma: Not the extra ones
+[10/03/26, 3:28:25 PM] Tanvinder IK: I can see 16 accounts assigned to learners ‎<This message was edited>
+[10/03/26, 3:28:30 PM] Tanvinder IK: Could you confirm please
+[10/03/26, 3:29:23 PM] Suvansh Verma: Yes, extend only those 16.
+[10/03/26, 3:31:26 PM] Tanvinder IK: Ok
+[16/03/26, 4:06:33 PM] Suvansh Verma: Hi @⁨Tanvinder IK⁩
+‎[16/03/26, 4:12:00 PM] Suvansh Verma: VM Login Id: upwwindowsuser12
+VM Password: Cloudlab123$
+For the Cohort 2, the microsoft set up was not done when we extended the cohorts? ‎<attached: 00000729-PHOTO-2026-03-16-16-12-00.jpg>
+[16/03/26, 4:28:24 PM] Tanvinder IK: I got it extended
+[16/03/26, 4:28:42 PM] Tanvinder IK: But if the labs were deleted before that then relogin was not done
+[16/03/26, 4:29:08 PM] Mahima IK: ‎Shashi Bhushan  Kumar added Mahima IK
+[16/03/26, 4:29:24 PM] Suvansh Verma: Yes, the VMs are working but Microsoft edge and bookmarks are not there.
+[16/03/26, 4:30:16 PM] Tanvinder IK: Then when we raised the extension request lab were already deleted
+[16/03/26, 4:30:24 PM] Tanvinder IK: So we need to relogin to these labs
+[16/03/26, 4:30:31 PM] Suvansh Verma: Understood
+[16/03/26, 4:30:33 PM] Tanvinder IK: Last time also same issue happened
+[16/03/26, 4:42:36 PM] Suvansh Verma: Hmm
+[16/03/26, 4:43:00 PM] Suvansh Verma: I am trying to Download Edge but it is not happening
+[16/03/26, 4:43:17 PM] Suvansh Verma: Any specific reason? @⁨Tanvinder IK⁩
+[16/03/26, 4:43:47 PM] Tanvinder IK: In ubuntu lab I think edge is not present
+[16/03/26, 4:43:55 PM] Tanvinder IK: It is there in windows vm I guess
+[16/03/26, 4:44:44 PM] Suvansh Verma: We did the 2nd Cohort with Windows.
+[16/03/26, 4:45:00 PM] Tanvinder IK: Please share lab id's
+‎[16/03/26, 4:47:12 PM] Tanvinder IK: ‎<attached: 00000745-PHOTO-2026-03-16-16-47-12.jpg>
+[16/03/26, 4:51:21 PM] Suvansh Verma: VM URL: https://cloudlabs.nuvepro.com/company/upwardndonward/home
+VM Login Id: upwwindowsuser12
+VM Password: Cloudlab123$
+[16/03/26, 4:52:02 PM] Suvansh Verma: This one @⁨Tanvinder IK⁩. I tested the VM but cannot download or access Microsoft Edge.
+[16/03/26, 4:52:22 PM] Suvansh Verma: Microsoft Id assigned: aiexplorer_72@teamupwardandonward.com
+[16/03/26, 4:52:22 PM] Tanvinder IK: Sure
+[16/03/26, 4:53:03 PM] Suvansh Verma: Let's enable everything for the learner (n8n, onedrive etc bookmarks).
+[16/03/26, 4:53:19 PM] Suvansh Verma: Let me know if any assistance is required from my end.
+[16/03/26, 4:56:45 PM] Tanvinder IK: I am not available today and tomm
+[16/03/26, 4:56:54 PM] Tanvinder IK: I am travelling remotely
+[16/03/26, 5:03:31 PM] Tanvinder IK: @⁨Suvansh Verma⁩ edge has been installed. Kindly verify
+[16/03/26, 5:47:38 PM] Suvansh Verma: Installed
+[16/03/26, 5:47:55 PM] Suvansh Verma: Facing some issues with n8n. Utkarsh is checking that.
+[17/03/26, 2:56:49 PM] Suvansh Verma: Hey @⁨Tanvinder IK⁩ 
+Please extend the VM access by another day
+[17/03/26, 2:58:20 PM] Tanvinder IK: Till 18th right?
+[17/03/26, 2:59:04 PM] Suvansh Verma: Yes
+[17/03/26, 8:49:14 PM] Tanvinder IK: As requested, we have extended the lab end date until 18th March.
+[26/03/26, 6:24:42 PM] Suvansh Verma: Hi @⁨Tanvinder IK⁩ 
+We will need total of 10 VMs for 7-8 working days for learners to complete the assignment. 
+
+We have received a request from about 18-19 learners who want to complete the assignment. Instead of activating 19 VMs, we will enable 8-10 VMs and allow all the interested learners to complete the assignment in batches of 6-7 each.
+[26/03/26, 6:29:17 PM] Suvansh Verma: We have divided the learners into 3 batches
+Batch 1: Monday & Tuesday (30th & 31st March)
+Batch 2: Wed & Thurs (1st & 2nd April)
+Batch 3: Friday & Sat (2nd & 3rd April)
+
+Each batch will be given 2 days to complete the assignment.
+[26/03/26, 6:29:32 PM] Tanvinder IK: Could you please share below details:
+1. Lab duration
+2. ⁠Lab userid
+3. ⁠Do we need to login to the tools like outlook, n8n etc
+[26/03/26, 6:31:18 PM] Suvansh Verma: 1. Monday till Sunday (full day)
+2. ⁠We can enable any 10 windows accounts for now as we will reshare the credentials with the learners. 
+3. ⁠Yes, we need to enable all the tools for Low Code. 
+ 
+
+Cc: @⁨Utkarsh⁩
+[26/03/26, 6:33:36 PM] Tanvinder IK: So I am raising below request:
+1.Lab duration: 30th march till 4th April
+2. Will enable top 10 ID's
+[26/03/26, 6:33:49 PM] Tanvinder IK: @⁨Suvansh Verma⁩ ⁠please share the sheet here so that I can update the creds and login to tools
+[26/03/26, 6:34:46 PM] Suvansh Verma: 5th April
+[26/03/26, 6:36:25 PM] Suvansh Verma: https://docs.google.com/spreadsheets/d/1aZZT8NTVO1-ip3EEPh29DfZ1tEfaGrTx/edit?gid=1630398844#gid=1630398844
+[26/03/26, 6:36:32 PM] Suvansh Verma: Refer to the VM Creds Tab
+[26/03/26, 6:36:50 PM] Tanvinder IK: Perfect will raise the request amd confirm here
+[26/03/26, 6:37:32 PM] Tanvinder IK: I will raise one day earlier because I need to login into the tools as well inside the vm's
+[26/03/26, 6:37:38 PM] Utkarsh: @⁨Tanvinder IK⁩ will call you for the n8n thing.
+[26/03/26, 6:37:44 PM] Tanvinder IK: Ok
+[29/03/26, 10:02:26 AM] Suvansh Verma: Hi @⁨Tanvinder IK⁩ 
+Are the creds ready?
+[29/03/26, 10:04:06 AM] Tanvinder IK: No not yey
+[29/03/26, 10:04:14 AM] Tanvinder IK: Sorry I missed it
+[29/03/26, 10:04:19 AM] Tanvinder IK: Let me raise this
+[29/03/26, 10:04:22 AM] Tanvinder IK: Rn
+[29/03/26, 10:18:40 AM] Suvansh Verma: How much time will it take?
+We rolled out an email on friday that for the first batch the creds will be shared by Sunday.
+[29/03/26, 10:19:33 AM] Tanvinder IK: I try to provide it by today eod
+[29/03/26, 10:19:39 AM] Tanvinder IK: Because I have to login as well
+[29/03/26, 10:19:54 AM] Suvansh Verma: Okay, let me know if you need any help.
+[29/03/26, 10:19:56 AM] Tanvinder IK: I will be needing email creds which have n8n subwcription
+[29/03/26, 10:20:55 AM] Suvansh Verma: @⁨Utkarsh⁩ can we get this asap?
+John followed up sometime back.
+[29/03/26, 10:31:05 AM] Tanvinder IK: I have raised the rwquest. Creds will be available in next 2 hrs.
+I need 10 outlook accounts and list of tools that need to be signed in
+‎[29/03/26, 10:55:04 AM] Tanvinder IK: Login of March AI Tools _ VM Access.xlsx • ‎1 sheet ‎<attached: 00000786-Login of March AI Tools _ VM Access.xlsx>
+[29/03/26, 2:47:02 PM] Suvansh Verma: The tools are pending, right?
+[29/03/26, 2:47:09 PM] Suvansh Verma: @⁨Tanvinder IK⁩
+[29/03/26, 7:07:20 PM] Tanvinder IK: Yes yes
+[29/03/26, 7:07:25 PM] Tanvinder IK: Will be needing email id
+[29/03/26, 7:07:29 PM] Tanvinder IK: To login
+[29/03/26, 9:10:25 PM] Suvansh Verma: @⁨Utkarsh⁩will share it. I think he is working on it
+[30/03/26, 9:01:44 AM] Utkarsh: Hey @⁨Suvansh Verma⁩ discussed this with Tanvinder, n8n Accounts are ready, and I think all the API Keys everything is there.
+[30/03/26, 9:02:09 AM] Utkarsh: Tanvinder will quickly add them on the VMs and we can send out the creds.
+[30/03/26, 9:02:14 AM] Utkarsh: https://docs.google.com/spreadsheets/d/1-F--sADeQ7Fxsjdc_9_Fkqt3X9A68Y0aHy05B0a9io4/edit?gid=1667206856#gid=1667206856
+[30/03/26, 9:02:55 AM] Utkarsh: You can inform we will send it across in the next 2-3 hours.
+Thanks
+[30/03/26, 9:03:36 AM] Suvansh Verma: Perfect
+[30/03/26, 9:03:38 AM] Suvansh Verma: Thanks!
+[30/03/26, 9:03:44 AM] Tanvinder IK: @⁨Suvansh Verma⁩ I have asked the nuvepro team to enable the labs from 9am to 9pm daily with no auto stop policy
+[30/03/26, 10:27:24 AM] Tanvinder IK: @⁨Suvansh Verma⁩ I have logged in to 10 VM's with outlook and n8n. I have marked them green
+https://docs.google.com/spreadsheets/d/1-F--sADeQ7Fxsjdc_9_Fkqt3X9A68Y0aHy05B0a9io4/edit?gid=1818710840#gid=1818710840
+[30/03/26, 10:27:43 AM] Suvansh Verma: Okay
+[02/04/26, 4:13:32 PM] Suvansh Verma: https://docs.google.com/spreadsheets/d/1GjM_IDzjAFBrC4El78XIF-ORJ4orhTEY3h4Ex5MxqHM/edit?gid=0#gid=0
+
+@⁨Tanvinder IK⁩ We are doing a masterclass on 7th April Tuesday for which we need 22 VMs (17 learners and 5 additional). It is 5 hour long masterclass. @⁨Utkarsh⁩ will share details regarding the tools.
+[02/04/26, 4:13:56 PM] Suvansh Verma: I have made the sheet with all the names, please feel free to add the details.
+[02/04/26, 4:34:05 PM] Tanvinder IK: Which OS is required in these VM's
+[02/04/26, 4:34:35 PM] Tanvinder IK: Windows or ubuntu
+And do we need edge and chrome
+[02/04/26, 4:35:09 PM] Utkarsh: @⁨Suvansh Verma⁩ Windows and chrome should be fine right?
+[02/04/26, 4:35:21 PM] Utkarsh: They use Colab.
+[02/04/26, 4:36:31 PM] Suvansh Verma: Is their stack is similar to e&? If yes, we can replicate the same.
+[02/04/26, 4:37:11 PM] Suvansh Verma: If we can activate one VM by tomorrow, I can set up a call with Sandeep and test it.
+[02/04/26, 4:39:01 PM] Utkarsh: Let’s do Ubuntu for now.
+‎[02/04/26, 4:39:28 PM] Utkarsh: ‎<attached: 00000811-AUDIO-2026-04-02-16-39-28.opus>
+[02/04/26, 4:39:32 PM] Utkarsh: @⁨Tanvinder IK⁩
+[02/04/26, 7:16:23 PM] Tanvinder IK: So for now we need 2 VM
+1.Ubuntu with vs code and google chrome installed
+2. Windows VM with jupyter notebook and edge installed
+[02/04/26, 7:16:36 PM] Tanvinder IK: @⁨Utkarsh⁩ please confirm the duration as well
+[02/04/26, 7:16:40 PM] Tanvinder IK: Will raise the request
+[02/04/26, 7:20:05 PM] Suvansh Verma: For these 2, keep it active till Wednesday (8th April)
+[03/04/26, 12:00:34 PM] Suvansh Verma: @⁨Tanvinder IK⁩ by when can we expect the credentials?
+[03/04/26, 12:09:55 PM] Tanvinder IK: ‎This message was deleted.
+[03/04/26, 12:10:38 PM] Tanvinder IK: We have activated the labs with the following details:
+Lab 1: Windows Server Lab
+
+Lab Name: Windows Server Lab
+Access Valid Till: 08-Apr-2026
+Login Credentials (Windows VM):
+URL: https://cloudlabs.nuvepro.com/company/upwardndonward/home
+Login ID: genaivmlabuserwin
+Password: Cloudlabs123$
+Lab 2: Ubuntu Lab
+
+Lab Name: Ubuntu Lab
+Access Valid Till: 08-Apr-2026
+Login Credentials (Ubuntu VM):
+URL: https://cloudlabs.nuvepro.com/company/upwardndonward/home
+Login ID: genaivmlabuserubu
+Password: Cloudlabs123$
+Please use the above credentials to access the respective labs.
+[03/04/26, 12:10:53 PM] Tanvinder IK: @⁨Suvansh Verma⁩
+[03/04/26, 2:36:15 PM] Suvansh Verma: @⁨Tanvinder IK⁩ It seems like the lab is not active. We will have to enable it from 10am till 10pm.
+Also, we will have to activate the tools that Utkarsh mentioned in the VN.
+[03/04/26, 2:37:47 PM] Utkarsh: @⁨Tanvinder IK⁩ please give me a call when you're free.
+[03/04/26, 2:37:53 PM] Utkarsh: This is urgent, even the audio is not working.
+[05/04/26, 7:26:35 PM] Suvansh Verma: @⁨Utkarsh⁩ @⁨Tanvinder IK⁩ 
+We will have to share the creds with Nucleus students tomorrow around 1:30 with the tools, api keys etc.
+
+The 2 VMs that we shared on Friday were working fine.
+[05/04/26, 7:56:10 PM] Utkarsh: How many Accounts do we need?
+[05/04/26, 7:56:11 PM] Utkarsh: 22 right?
+[05/04/26, 7:56:45 PM] Utkarsh: @⁨Tanvinder IK⁩ raise 22 Accounts - https://cloudlabs.nuvepro.com/company/UpwardandOnward/home
+[05/04/26, 8:02:06 PM] Utkarsh: VM Credentials - https://docs.google.com/spreadsheets/d/1r4NndBio1K-N3w33FvOjys0zCDoAIycoY4IVUNv-y8Q/edit?gid=2101066045#gid=2101066045
+[05/04/26, 8:02:49 PM] Utkarsh: For tom let’s login n keep everything ready @⁨Tanvinder IK⁩ once we receive the creds.
+[05/04/26, 8:02:56 PM] Utkarsh: Kl Bookmark n all krdenge.
+[05/04/26, 8:02:58 PM] Utkarsh: Thanks
+[05/04/26, 8:16:30 PM] Suvansh Verma: 22
+[05/04/26, 8:17:09 PM] Tanvinder IK: @⁨Suvansh Verma⁩ what is teh cohort name?
+[05/04/26, 8:24:01 PM] Suvansh Verma: AI Builder Masterclass for Nucleus Software
+[05/04/26, 8:49:37 PM] Tanvinder IK: Requeat raised with nuvepro team
+[06/04/26, 12:17:41 AM] Tanvinder IK: I donot have edit access
+[06/04/26, 12:20:25 AM] Suvansh Verma: Shared the access
+‎[06/04/26, 12:22:53 AM] Tanvinder IK: Still view now ‎<attached: 00000838-PHOTO-2026-04-06-00-22-53.jpg>
+[06/04/26, 12:23:54 AM] Suvansh Verma: Seems like the request has gone to utkarsh
+[06/04/26, 12:24:25 AM] Tanvinder IK: Chalo no issues
+[06/04/26, 12:24:35 AM] Tanvinder IK: Let me share vm creds hete
+[06/04/26, 12:24:57 AM] Suvansh Verma: For now, you can make a copy of the sheet and add the creds.
+[06/04/26, 12:25:02 AM] Tanvinder IK: https://docs.google.com/spreadsheets/d/1wCGgIKoObCKZCpQ8NJECVUYQtHcyRC_D/edit?gid=1755992483#gid=1755992483
+[06/04/26, 12:25:41 AM] Tanvinder IK: no worries I have started loging in to gmail accounts for now
+[06/04/26, 12:26:05 AM] Tanvinder IK: i will confirm once done
+[06/04/26, 10:30:21 AM] Tanvinder IK: ‎This message was deleted.
+[06/04/26, 10:31:08 AM] Tanvinder IK:
+‎[06/04/26, 10:31:09 AM] Tanvinder IK: ‎<attached: 00000848-PHOTO-2026-04-06-10-31-09.jpg>
+‎[06/04/26, 10:31:09 AM] Tanvinder IK: ‎<attached: 00000849-PHOTO-2026-04-06-10-31-09.jpg>
+[06/04/26, 10:31:14 AM] Tanvinder IK: @⁨Utkarsh⁩
+[06/04/26, 10:35:22 AM] Tanvinder IK: Not able to login with 17 and 18 gmail account
+[06/04/26, 10:38:29 AM] Tanvinder IK: aiexplorer_10@uplevel.academy
+Same issue in this one as well
+[06/04/26, 10:57:26 AM] Tanvinder IK: aiexplorer_22@uplevel.academy
+Issue in this email as well
+[06/04/26, 11:31:17 AM] Utkarsh: @⁨Dheeraj Tandon⁩ please check this.
+[06/04/26, 11:31:29 AM] Utkarsh: @⁨Tanvinder IK⁩ send the mails and pass as well
+[06/04/26, 11:31:44 AM] Utkarsh: I have given the access Tanvinder.
+[06/04/26, 11:32:47 AM] Dheeraj Tandon: try login now in _18 account
+[06/04/26, 11:33:07 AM] Tanvinder IK: Ok
+[06/04/26, 11:35:14 AM] Tanvinder IK: added the vm creds
+[06/04/26, 11:56:36 AM] Dheeraj Tandon: Logged in?
+[06/04/26, 11:56:48 AM] Utkarsh: Thanks, let me know once all the logins are done.
+[06/04/26, 12:02:05 PM] Tanvinder IK: yes able to login
+[06/04/26, 12:04:38 PM] Dheeraj Tandon: try in other accounts also
+[06/04/26, 12:48:39 PM] Tanvinder IK: @⁨Suvansh Verma⁩ @⁨Utkarsh⁩ I have logged in to all gmail accounts in respective vm's
+[06/04/26, 12:49:56 PM] Tanvinder IK: I have also removed auto stop policy and idle timeout policy from all the vm's
+[06/04/26, 12:56:44 PM] Tanvinder IK: Kindly verify the same in fee vm's
+[06/04/26, 1:05:17 PM] Utkarsh: Sure thanks @⁨Tanvinder IK⁩
+[06/04/26, 1:05:26 PM] Utkarsh: I will cross verify once and let me know if any changes needed.
+[06/04/26, 1:10:55 PM] Tanvinder IK: @⁨Utkarsh⁩ we need to keep the labs in active mode from 9am till 10pm right?
+[06/04/26, 1:11:03 PM] Utkarsh: Yes.
+[06/04/26, 1:19:35 PM] Utkarsh: Cool so we shouldn’t need to start again right?
+[06/04/26, 1:19:42 PM] Utkarsh: It is still showing START.
+[06/04/26, 1:20:22 PM] Tanvinder IK: I aksed them to remove auto stop and idle timeout policy
+[06/04/26, 1:20:32 PM] Utkarsh: Okay I guess wo kr rhe honge avi.
+[06/04/26, 1:20:45 PM] Tanvinder IK: Once they confirm will let u know
+[06/04/26, 1:20:53 PM] Utkarsh: Cool.
+‎[06/04/26, 1:29:44 PM] Tanvinder IK: ‎<attached: 00000877-PHOTO-2026-04-06-13-29-44.jpg>
+[13/04/26, 2:32:25 PM] Mahima IK: @⁨Tanvinder IK⁩ - hey, do you have any context on whether Nuvepro is a Microsoft Cloud Partner or not?
+[13/04/26, 2:32:49 PM] Mahima IK: This is for Microsoft Azure Training
+[13/04/26, 2:46:50 PM] Tanvinder IK: Let me get back on this
+[13/04/26, 2:48:49 PM] Tanvinder IK: Hi @⁨Mahima IK⁩ Yes they are partnered with Microsoft azure
+[13/04/26, 3:20:32 PM] Mahima IK: Ok thanks for confirming!
+[21/04/26, 12:15:51 PM] Kalindi: ‎Shashi Bhushan  Kumar added Kalindi
+[21/04/26, 12:19:01 PM] Shashi Bhushan  Kumar: https://docs.google.com/document/d/1ba3CH2fcv0S8UqqwqCNYO7jWlRfFERxBoZTUaW0O5I0/edit?tab=t.0 - @⁨Tanvinder IK⁩ - here is the context. We want to start MS Azure certification courses at IK- AI-901 
+ and A1 103 - these 2 courses for now. We might need an Azure lab partner for this.
+[21/04/26, 12:21:21 PM] Shashi Bhushan  Kumar: You have already said that Nuvepro are partnered with Microsoft azure, but check if they are certified Microsoft Azure Training (it could be the same thing, but just cross check). Also, check if they already provide labs for these 2 certification courses.
+[21/04/26, 2:46:08 PM] Tanvinder IK: Sure @⁨Shashi Bhushan  Kumar⁩
+[21/04/26, 2:46:15 PM] Tanvinder IK: I will get back on this
+[25/04/26, 9:30:04 PM] Shashi Bhushan  Kumar: @⁨Tanvinder IK⁩ - check kiya kya ye?
+[25/04/26, 11:33:52 PM] Tanvinder IK: He confirmed that they have the above certifications available and have already provided training for the same to some other clients using their own MCT-certified trainer.
+[25/04/26, 11:34:28 PM] Tanvinder IK: Akshay said they can also arrange a trainer who can provide training related to these certifications
+[25/04/26, 11:39:56 PM] Shashi Bhushan  Kumar: Trainers we will hire, we will use just their labs - if needed
+[25/04/26, 11:40:27 PM] Tanvinder IK: Sure that they can provide
+[25/04/26, 11:40:56 PM] Tanvinder IK: But I have asked him to share the full details over email with cost estimation
+[01/05/26, 5:36:31 PM] Suvansh Verma: @⁨Tanvinder IK⁩ we will need 1 VM on Monday to test everything with e&. Keep it active for 3-4 days. @⁨Utkarsh⁩let’s activate 1 VM with all the tools that we will using across Pro, Low and No code cohorts to test everything before we restart the cohorts with e&
+[01/05/26, 6:44:57 PM] Tanvinder IK: Kindly provide me details like VM OS and tools that needs to be installed and logged in
+[01/05/26, 6:45:05 PM] Tanvinder IK: Also start and stop date of VM
+[04/05/26, 10:41:23 AM] Suvansh Verma: Hi @⁨Tanvinder IK⁩
+1. Microsoft
+2. ⁠Tools @⁨Utkarsh⁩please share the details for all 3 cohorts.   Pro Low & No
+[04/05/26, 10:42:07 AM] Shashi Bhushan  Kumar: looks like he didn't share the email? @⁨Tanvinder IK⁩
+[04/05/26, 10:42:52 AM] Tanvinder IK: Yes he didn't shared yet. Let me take a followup
+[05/05/26, 10:04:55 AM] Suvansh Verma: @⁨Tanvinder IK⁩ request you to please share the creds for VM. For now, you can activate n8n in the VM.
+[05/05/26, 10:08:25 AM] Tanvinder IK: @⁨Suvansh Verma⁩ how many VM's are required and for how many days
+[05/05/26, 10:08:34 AM] Tanvinder IK: I will share accordingly
+[05/05/26, 10:11:05 AM] Suvansh Verma: 1 VM only
+[05/05/26, 10:11:29 AM] Suvansh Verma: For 2-3 days. Need it for testing with e&. ‎<This message was edited>
+[05/05/26, 10:11:21 AM] Tanvinder IK: Ok
+[05/05/26, 10:10:20 PM] Tanvinder IK: Login Details:
+URL: https://cloudlabs.nuvepro.com/company/upwardndonward/home
+Login ID: upwwindowsusermay
+Password: Cloudlabs123$
+[05/05/26, 10:14:35 PM] Suvansh Verma: Thanks!
+[06/05/26, 10:16:37 AM] Suvansh Verma: @⁨Tanvinder IK⁩ till when is the VM active?
+[06/05/26, 10:16:56 AM] Suvansh Verma: Hope we have it for 2-3 days
+[06/05/26, 10:17:06 AM] Tanvinder IK: Till 7th may
+[06/05/26, 10:17:21 AM] Tanvinder IK: If you want I can make it till 8th
+[06/05/26, 10:17:36 AM] Suvansh Verma: Yes, let’s keep it active till 8th.
+[06/05/26, 10:17:44 AM] Tanvinder IK: Ok
+[06/05/26, 10:17:48 AM] Suvansh Verma: Thanks
+[11/05/26, 12:15:35 PM] Suvansh Verma: Hi @⁨Tanvinder IK⁩ & @⁨Utkarsh⁩ We have to enable the VMs for the learners to complete their assignment.
+[11/05/26, 12:32:00 PM] Suvansh Verma: https://docs.google.com/spreadsheets/d/1aZZT8NTVO1-ip3EEPh29DfZ1tEfaGrTx/edit?gid=879116877#gid=879116877
+[11/05/26, 12:32:53 PM] Suvansh Verma: These VMs were enabled earlier for learners to complete the assignment. Like last time, we will activate the VMs in batches so that everyone can complete the assigment within a week.
+[12/05/26, 9:02:22 AM] Suvansh Verma: Hi @⁨Tanvinder IK⁩ 
+By when can we expect the VMs to be activated?
+[12/05/26, 9:54:07 AM] Tanvinder IK: By eod
+[12/05/26, 9:56:50 AM] Tanvinder IK: Could you tell me the start and end date dor these VM's
+[12/05/26, 10:30:27 AM] Suvansh Verma: Mostly it will be from Monday to Saturday.
+[12/05/26, 10:30:35 AM] Suvansh Verma: 18th May
+[12/05/26, 10:30:46 AM] Suvansh Verma: Client will confirm in sometime
+[12/05/26, 10:31:55 AM] Tanvinder IK: Sure just confiem once start and end date
+[12/05/26, 11:04:31 AM] Utkarsh: @⁨Suvansh Verma⁩ this is for Low Code or Pro Code as well?
+[12/05/26, 11:04:50 AM] Suvansh Verma: Both
+[12/05/26, 11:05:09 AM] Suvansh Verma: Same one where we divided the learners into 3 batches
+[12/05/26, 11:06:11 AM] Utkarsh: Here I see only person Pro Code.
+[12/05/26, 11:06:17 AM] Utkarsh: Baaki Low Code hi h.
+[12/05/26, 11:09:58 AM] Utkarsh: So for Low Code.
+- n8n will be needed.
+- ⁠We will have to bookmark it, and the Assignment etc.
+- ⁠MS Accounts.
+
+
+Pro Code 
+- Google Accounts
+- ⁠Colab & Firebase Studio Bookmarked.
+[12/05/26, 11:10:19 AM] Utkarsh: @⁨Suvansh Verma⁩ I think 2-3 days will be required to setup everything to prolly we can commit to share Friday or next week Monday.
+[12/05/26, 11:10:37 AM] Utkarsh: @⁨Tanvinder IK⁩ from your end, to setup all this would you be able to close it by tom/ Thu?
+[12/05/26, 12:14:05 PM] Tanvinder IK: Thursday
+[12/05/26, 12:14:22 PM] Suvansh Verma: Thursday works
+[12/05/26, 4:54:00 PM] Suvansh Verma: Batch 1: 15th & 16th May (Fri & Sat)
+Batch 2: 18th & 19th May (Mon & Tues)
+Batch 3: 20th & 21st May (Wed &  Thurs)
+[12/05/26, 4:55:08 PM] Suvansh Verma: @⁨Utkarsh⁩batches for assignment completion. 
+We will need 10 7-8 VMs.
+[12/05/26, 4:55:54 PM] Suvansh Verma: From 22nd till 27th e& will be on leave due to Eid. We have to complete the assignment before that.
+[13/05/26, 10:21:32 AM] Suvansh Verma: Yes, only 1 person is from Pro Code. Remaining folks are from Low Code.
+[14/05/26, 9:43:00 AM] Suvansh Verma: Hi @⁨Tanvinder IK⁩ You can update the VM credentials on this sheet itself. Link: https://docs.google.com/spreadsheets/d/1aZZT8NTVO1-ip3EEPh29DfZ1tEfaGrTx/edit?gid=1630398844#gid=1630398844
+I have divided all the students into 3 batches along with dates.
+[14/05/26, 9:43:42 AM] Suvansh Verma: For the first batch starting tomorrow, we need 4 VMs (3 for Low code & 1 Pro Code).
+[14/05/26, 10:33:15 AM] Tanvinder IK: We will need windows OS right?
+[14/05/26, 10:33:19 AM] Tanvinder IK: @⁨Suvansh Verma⁩
+[14/05/26, 10:38:22 AM] Suvansh Verma: Yes
+[14/05/26, 3:41:18 PM] Suvansh Verma: @⁨Tanvinder IK⁩ let me know once the creds are ready for batch 1. Need to share it today. 
+For today, we can only give creds for batch 1 i.e. 4 learners. 
+3 low code
+1 pro code
+[14/05/26, 3:48:27 PM] Tanvinder IK: Whixh logo we need for labs
+[14/05/26, 3:48:33 PM] Tanvinder IK: Just confirm
+[14/05/26, 3:48:41 PM] Tanvinder IK: Acceler or other one
+[14/05/26, 3:48:50 PM] Suvansh Verma: PowerUp will work
+[14/05/26, 3:49:35 PM] Suvansh Verma: If getting PowerUp is tough/difficult, acceler will also work.
+[14/05/26, 3:52:35 PM] Utkarsh: @⁨Tanvinder IK⁩ let's have a call once you're free for all this.
+[14/05/26, 3:52:46 PM] Utkarsh: We will accounts to be bought for n8n.
+[14/05/26, 4:46:17 PM] Utkarsh: https://docs.google.com/spreadsheets/d/1aZZT8NTVO1-ip3EEPh29DfZ1tEfaGrTx/edit?gid=849255172#gid=849255172
+‎[14/05/26, 4:46:58 PM] Utkarsh: ‎<attached: 00000953-AUDIO-2026-05-14-16-46-58.opus>
+[14/05/26, 4:47:07 PM] Utkarsh: @⁨Suvansh Verma⁩ @⁨Tanvinder IK⁩
+[14/05/26, 4:48:00 PM] Suvansh Verma: We can send it whenever it is ready
+[14/05/26, 4:48:30 PM] Utkarsh: Do we have the list for what we shared for Pro Code Assignment last time?
+[14/05/26, 4:48:42 PM] Utkarsh: Do you remember please do share that it will help.
+[14/05/26, 4:49:43 PM] Suvansh Verma: Let’s do one thibg
+[14/05/26, 4:50:07 PM] Suvansh Verma: For Pro Code, we can share it on Monday also
+[14/05/26, 4:50:18 PM] Suvansh Verma: Let’s get the Low code for 3 learners today
+[14/05/26, 4:50:24 PM] Utkarsh: That’s alright.
+[14/05/26, 4:50:34 PM] Utkarsh: We can send it either today or Mon.
+[14/05/26, 4:50:41 PM] Utkarsh: I just need the list if you have it handy.
+[14/05/26, 4:50:50 PM] Utkarsh: Else have to go through the Assignment to verify it.
+[14/05/26, 4:50:52 PM] Suvansh Verma: Will check and send
+[14/05/26, 4:51:04 PM] Utkarsh: Cool.
+[14/05/26, 4:51:15 PM] Utkarsh: You can check Sameira ko ky send kra tha.
+[14/05/26, 4:51:18 PM] Utkarsh: That will help
+[14/05/26, 5:01:50 PM] Suvansh Verma: Sharing
+[14/05/26, 5:02:14 PM] Utkarsh: @⁨Tanvinder IK⁩ @⁨Suvansh Verma⁩also just a headsup we will need 15-20 VMs for another Training Program as well for Yettel Leaders.
+[14/05/26, 5:02:39 PM] Utkarsh: The Session will happen on Copilot toh we have to configure it properly.
+[14/05/26, 5:03:37 PM] Utkarsh: Let’s close this one first and phr we can pick this up, this Session is on Tuesday evening.
+[14/05/26, 5:03:38 PM] Utkarsh: Thanks ‎<This message was edited>
+‎[14/05/26, 5:06:19 PM] Suvansh Verma: PowerUp _ Post Program Assignment _ AI For Builders (Pro Code) (2).pdf ‎<attached: 00000974-PowerUp _ Post Program Assignment _ AI For Builders (Pro Code) (2).pdf>
+[14/05/26, 5:06:28 PM] Suvansh Verma: Here is the pro code assignment. will this help?
+[14/05/26, 5:18:32 PM] Tanvinder IK: @⁨Suvansh Verma⁩ I have added the VM credentials in teh sheet
+[14/05/26, 5:18:40 PM] Tanvinder IK: https://docs.google.com/spreadsheets/d/1aZZT8NTVO1-ip3EEPh29DfZ1tEfaGrTx/edit?gid=849255172#gid=849255172
+[14/05/26, 5:19:52 PM] Suvansh Verma: Thanks!
+[14/05/26, 8:40:47 PM] Tanvinder IK: @⁨Suvansh Verma⁩ we need to keep the VM's active from 10 am till 10 pm?
+[14/05/26, 8:41:03 PM] Tanvinder IK: for now we have allocated 15 hrs time window?
+[14/05/26, 8:50:59 PM] Tanvinder IK: And do we need to remove auto stop policy?
+[14/05/26, 8:51:04 PM] Tanvinder IK: Currently it is enabled
+[14/05/26, 8:59:18 PM] Suvansh Verma: Works
+[14/05/26, 8:59:22 PM] Suvansh Verma: 10am to 10pm
+[14/05/26, 10:33:36 PM] Tanvinder IK: @⁨Utkarsh⁩ I have logged in outlook in all 4 vm's and make a shortcut as well
+[14/05/26, 10:33:44 PM] Tanvinder IK: Any other tool that needs to be loggedin
+[14/05/26, 10:33:49 PM] Tanvinder IK: Do let menknow
+[14/05/26, 10:34:08 PM] Utkarsh: n8n is done?
+[14/05/26, 10:34:39 PM] Tanvinder IK: Nope
+[14/05/26, 10:34:43 PM] Tanvinder IK: Not able to login
+[14/05/26, 10:34:47 PM] Tanvinder IK: I tried calling you
+[14/05/26, 10:34:55 PM] Tanvinder IK: But your phone was not reachable
+[14/05/26, 10:35:01 PM] Utkarsh: I’ll call you give me a min.
+[14/05/26, 10:35:05 PM] Tanvinder IK: Sure
+[15/05/26, 1:26:26 PM] Suvansh Verma: Hi @⁨Tanvinder IK⁩ 
+As discussed, please raise a request for 1 Accler microsoft VM. Email id: Number 55.
+
+Expecting it within the next 2 hours as we have to share with the client.
+[15/05/26, 1:27:09 PM] Tanvinder IK: So we need it for 2 days
+[15/05/26, 1:27:13 PM] Suvansh Verma: Yes
+‎[15/05/26, 1:41:55 PM] Suvansh Verma: Id Number 61 assigned to Beer. Seems like n8n has expired. asking for a plan upgrade. ‎<attached: 00000998-PHOTO-2026-05-15-13-41-55.jpg>
+[15/05/26, 2:09:33 PM] Utkarsh: Send the creds once.
+[15/05/26, 2:09:36 PM] Utkarsh: VM creds.
+[15/05/26, 2:11:44 PM] Utkarsh: @⁨Suvansh Verma⁩ it should work now, please ask him to check.
+‎[15/05/26, 2:12:00 PM] Utkarsh: ‎<attached: 00001002-PHOTO-2026-05-15-14-12-00.jpg>
+[15/05/26, 2:12:04 PM] Utkarsh: https://aiexplorer54.app.n8n.cloud/home/workflows
+[15/05/26, 2:12:10 PM] Utkarsh: This is correct n8n link to open.
+[15/05/26, 2:12:22 PM] Utkarsh: I have now already open it on VM, and also bookmarked.
+[15/05/26, 2:12:23 PM] Utkarsh: Thanks
+[15/05/26, 2:21:55 PM] Suvansh Verma: Working now
+[15/05/26, 2:21:59 PM] Utkarsh: @⁨Suvansh Verma⁩ should we remove all the agents created so far?
+[15/05/26, 2:22:08 PM] Utkarsh: For these accounts as this is an assignment.
+[15/05/26, 2:22:13 PM] Utkarsh: Ki rehne dete h?
+[15/05/26, 2:22:31 PM] Suvansh Verma: Don’t delete it for now.
+[15/05/26, 2:22:36 PM] Utkarsh: Cool.
+[15/05/26, 2:23:16 PM] Utkarsh: We have shared with these 4 only right?
+[15/05/26, 2:23:17 PM] Utkarsh: BEER MOHAMED
+Shahzad Ul Hassan
+Hessa Ali Nasser 
+Mohammed Rameez Khan
+[15/05/26, 2:23:34 PM] Suvansh Verma: First 3 only
+[15/05/26, 2:23:42 PM] Suvansh Verma: Rameez khan is the Pro Code learner
+[15/05/26, 2:24:13 PM] Utkarsh: Cool.
+[15/05/26, 2:24:17 PM] Utkarsh: Toh n8n is sorted for them.
+[15/05/26, 2:24:27 PM] Utkarsh: Let’s work towards the Copilot thing.
+[15/05/26, 2:24:33 PM] Utkarsh: For Yettel.
+[15/05/26, 2:25:03 PM] Utkarsh: Creds we need to login and to share for the client to test.
+[15/05/26, 2:25:04 PM] Utkarsh: aiexplorer_55@teamupwardandonward.com	d!8BD7H4=f6$#5p~
+[15/05/26, 2:25:06 PM] Utkarsh: Thanks
+[15/05/26, 2:25:36 PM] Suvansh Verma: Sure, @⁨Tanvinder IK⁩ has raised the request. We should have it by 3:30 or 4pm. Once we have the VM, will test and share with the client
+[15/05/26, 2:25:51 PM] Utkarsh: Cool.
+[15/05/26, 2:25:59 PM] Utkarsh: Let’s send it across before 5 PM.
+[15/05/26, 2:26:07 PM] Utkarsh: So that we hearback.
+[15/05/26, 2:26:24 PM] Utkarsh: You could also send the link and the above creds in the meantime, if there is any delay from Nuvepro.
+[15/05/26, 2:26:49 PM] Suvansh Verma: For CSOD, I have dropped an email to the client for a call to do the testing.
+[15/05/26, 2:26:56 PM] Utkarsh: Cool.
+[15/05/26, 2:27:02 PM] Suvansh Verma: Sure
+[15/05/26, 3:12:23 PM] Tanvinder IK: @⁨Suvansh Verma⁩ You have received the Creds right
+[15/05/26, 3:19:05 PM] Suvansh Verma: Yes
+[15/05/26, 4:11:39 PM] Suvansh Verma: @⁨Tanvinder IK⁩ We need 20 VMs (Microsoft) for a cohort scheduled on Tuesday.
+[15/05/26, 4:11:54 PM] Suvansh Verma: This is for the client for which you got 1 VM enabled today.
+[15/05/26, 4:12:21 PM] Suvansh Verma: We can have these by tomorrow 5:30pm
+[15/05/26, 4:25:43 PM] Tanvinder IK: Under acceler tenant?
+[15/05/26, 4:25:48 PM] Suvansh Verma: Yes
+[15/05/26, 4:25:53 PM] Tanvinder IK: Also for how much duration?
+[15/05/26, 4:25:57 PM] Tanvinder IK: I mean start and end date
+[15/05/26, 4:27:36 PM] Suvansh Verma: @⁨Utkarsh⁩ if it’s a 1 day session, we should activate it on Monday and end it on Wednesday. 
+Session timing is 7pm on Tuesday.
+[15/05/26, 4:27:42 PM] Suvansh Verma: Please suggest
+[15/05/26, 4:28:05 PM] Utkarsh: From Sun
+[15/05/26, 4:28:20 PM] Utkarsh: We will need to set it up test everything.
+[15/05/26, 4:47:02 PM] Tanvinder IK: Please share start and end date. I will raise request accordingly
+[15/05/26, 4:56:54 PM] Suvansh Verma: Start Date: 17th May
+End Date: 20th May
+The session is from 7pm IST to 11:45 pm IST. Keep the active timeline accordingly
+[15/05/26, 4:57:22 PM] Tanvinder IK: Sure thing
+[15/05/26, 4:57:34 PM] Tanvinder IK: I get the credentials created
+‎[17/05/26, 6:56:28 AM] Tanvinder IK: Agentic AI Leadership Training Program.xlsx • ‎1 sheet ‎<attached: 00001049-Agentic AI Leadership Training Program.xlsx>
+[17/05/26, 1:19:52 PM] Tanvinder IK: @⁨Utkarsh⁩ nuvepro team said they wont be able to install MS ecosystem locally on VM. I have got the creds for 20 VMs
+[17/05/26, 1:19:55 PM] Tanvinder IK: For acceler
+[17/05/26, 8:08:20 PM] Utkarsh: Let me block some time tom @⁨Tanvinder IK⁩
+[17/05/26, 8:08:26 PM] Utkarsh: What time are you free?
+[17/05/26, 8:08:43 PM] Tanmaya Kharyal: ‎You added Tanmaya Kharyal
+[17/05/26, 8:09:12 PM] Utkarsh: I’ll have @⁨Tanmaya Kharyal⁩ login into one of the VMs for the Yettel Session and then you can replicate it on others.
+[17/05/26, 8:09:25 PM] Utkarsh: Let me know what time works for you @⁨Tanvinder IK⁩ 
+Thanks
+[17/05/26, 8:09:43 PM] Tanvinder IK: Second half tomorrow
+[17/05/26, 8:09:52 PM] Tanvinder IK: Post 3
+[17/05/26, 8:10:00 PM] Utkarsh: We have to get it ready before 5 PM.
+[17/05/26, 8:10:06 PM] Utkarsh: Anytime in the morning?
+[17/05/26, 8:10:12 PM] Tanvinder IK: Ok
+[17/05/26, 8:10:17 PM] Tanvinder IK: 11am then ‎<This message was edited>
+[17/05/26, 8:10:20 PM] Utkarsh: Cool.
+[18/05/26, 8:59:23 AM] Suvansh Verma: @⁨Tanvinder IK⁩ seems like the VMs have expired. Can you check once?
+[18/05/26, 10:12:07 AM] Suvansh Verma: @⁨Tanvinder IK⁩ just checked the creds for batch 1 (e&) and they have expired. 
+Also, for batch 2, we will have to set up n8n and microsoft as we need to roll out the creds today.
+[18/05/26, 10:13:16 AM] Tanvinder IK: @⁨Suvansh Verma⁩ batch 1 creds were enabled for 15th and 16th ‎<This message was edited>
+[18/05/26, 10:13:25 AM] Tanvinder IK: Batch2 tools are already configured
+[18/05/26, 10:16:07 AM] Suvansh Verma: Okay!
+[18/05/26, 10:16:25 AM] Suvansh Verma: Keep 1 day additional in all
+[18/05/26, 10:19:22 AM] Tanvinder IK: I will do for batch2 and batch3
+[18/05/26, 10:20:58 AM] Suvansh Verma: For batch 2, I hope n8n is also logged in.
+[18/05/26, 10:21:07 AM] Suvansh Verma: I’m sharing the creds with them
+[18/05/26, 10:21:16 AM] Tanvinder IK: Yes
+[18/05/26, 10:21:29 AM] Tanvinder IK: Outlook and n8n logged in
+[18/05/26, 10:21:40 AM] Tanvinder IK: For batch2
+[18/05/26, 12:58:46 PM] Tanvinder IK: @⁨Suvansh Verma⁩ aitoolsb1userlab03
+This lab has been reprovisioned
+[18/05/26, 12:59:09 PM] Suvansh Verma: n8n is enabled, right?
+[18/05/26, 1:24:04 PM] Tanvinder IK: No they need to login
+[18/05/26, 1:24:17 PM] Tanvinder IK: Do uou want me to login?
+[18/05/26, 1:24:51 PM] Suvansh Verma: Yes, please do. Also, let me know the process as well. For smaller requests, will do it by myself.
+[18/05/26, 4:47:02 PM] Suvansh Verma: @⁨Tanvinder IK⁩ in the Yettel VMs, is the location getting updated?
+VM 01 is working fine but for the others it’s showing blocked.
+[18/05/26, 5:08:07 PM] Suvansh Verma: @⁨Tanvinder IK⁩ seems like all VMs are down. Just got an update from e&, they are also facing an issue. Seems like some issue at NuvePro’s end
+[18/05/26, 5:13:56 PM] Suvansh Verma: Can we check this asap
+[18/05/26, 5:20:42 PM] Tanvinder IK: Yes yes
+[18/05/26, 5:20:53 PM] Tanvinder IK: They will be available in next 15 mins
+[18/05/26, 5:20:59 PM] Tanvinder IK: I got the mesaage drom team
+[18/05/26, 5:29:19 PM] Suvansh Verma: Okay
+[18/05/26, 6:03:11 PM] Tanvinder IK: @⁨Suvansh Verma⁩ all 20 labs are recreated
+[18/05/26, 6:03:14 PM] Tanvinder IK: windowsmayaiuser01	Ailabs321$	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+windowsmayaiuser02	Ailabs321$	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+windowsmayaiuser03	Ailabs321$	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+windowsmayaiuser04	Ailabs321$	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+windowsmayaiuser05	Ailabs321$	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+windowsmayaiuser06	Ailabs321$	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+windowsmayaiuser07	Ailabs321$	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+windowsmayaiuser08	Ailabs321$	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+windowsmayaiuser09	Ailabs321$	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+windowsmayaiuser10	Ailabs321$	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+windowsmayaiuser11	Ailabs321$	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+windowsmayaiuser12	Ailabs321$	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+windowsmayaiuser13	Ailabs321$	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+windowsmayaiuser14	Ailabs321$	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+windowsmayaiuser15	Ailabs321$	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+windowsmayaiuser16	Ailabs321$	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+windowsmayaiuser17	Ailabs321$	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+windowsmayaiuser18	Ailabs321$	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+windowsmayaiuser19	Ailabs321$	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+windowsmayaiuser20	Ailabs321$	https://cloudlabs.nuvepro.com/company/upwardndonward/home
+[18/05/26, 6:03:28 PM] Tanvinder IK: These labs are recreated in ireland region
+[18/05/26, 6:03:33 PM] Suvansh Verma: Okay
+[18/05/26, 6:03:36 PM] Tanvinder IK: We will have less latency now
+[18/05/26, 6:03:54 PM] Tanvinder IK: Please configure lab1 and do let me know I will replicate in other 15 labs
+[18/05/26, 6:04:07 PM] Suvansh Verma: Let’s connect for a quick call. Will explain the bookmark thing that needs to be done.
+[18/05/26, 6:04:17 PM] Suvansh Verma: Lab1 already configured
+[18/05/26, 6:04:41 PM] Tanvinder IK: That lab is recreated now
+[18/05/26, 6:04:49 PM] Suvansh Verma: Oh okay!
+[18/05/26, 6:04:52 PM] Suvansh Verma: Understood
+[18/05/26, 6:04:59 PM] Suvansh Verma: Will do that right away
+[18/05/26, 6:05:05 PM] Tanvinder IK: Earlier it was in uae data centre
+[18/05/26, 6:05:05 PM] Suvansh Verma: Also, VMs are working now.
+[18/05/26, 6:05:11 PM] Tanvinder IK: Yes
+[18/05/26, 6:05:19 PM] Tanvinder IK: I am available
+‎[18/05/26, 6:22:58 PM] Suvansh Verma: ‎<attached: 00001104-PHOTO-2026-05-18-18-22-58.jpg>
+[18/05/26, 6:23:20 PM] Suvansh Verma: @⁨Tanvinder IK⁩ set up done
+[18/05/26, 6:23:54 PM] Tanvinder IK: Sure
+[18/05/26, 6:24:11 PM] Tanvinder IK: Can we connect once to go through it?
+[18/05/26, 6:24:18 PM] Suvansh Verma: Sure
+[18/05/26, 6:25:15 PM] Tanvinder IK: Could you share a gmeet link
+[18/05/26, 6:25:51 PM] Suvansh Verma: Siure, will share it in 15mins
+[18/05/26, 6:25:57 PM] Suvansh Verma: wrapping up some work
+[18/05/26, 6:27:14 PM] Tanvinder IK: Sure sure
+[18/05/26, 6:37:15 PM] Suvansh Verma: https://meet.google.com/are-nijk-zep?authuser=0&ijlm=1779110066690&hs=187&adhoc=1
+[18/05/26, 6:37:42 PM] Suvansh Verma: @⁨Tanvinder IK⁩ feel free to join
+‎[18/05/26, 6:50:41 PM] Suvansh Verma: @⁨Tanvinder IK⁩ e& learners are still facing this issue. ‎<attached: 00001115-PHOTO-2026-05-18-18-50-41.jpg>
+[18/05/26, 6:51:03 PM] Suvansh Verma: I checked the VM at my end as well and it's showing blocked.
+[18/05/26, 6:59:00 PM] Tanvinder IK: Let me see
+[18/05/26, 6:59:27 PM] Tanvinder IK: I am joinh gmeet
+[18/05/26, 6:59:30 PM] Tanvinder IK: @⁨Suvansh Verma⁩
+[18/05/26, 7:02:23 PM] Suvansh Verma: Okay
+[18/05/26, 7:55:43 PM] Suvansh Verma: @⁨Tanvinder IK⁩ for all new clients going, we will use Acceler logo VM only.
+Only for e&, we will use PowerUp VM.
+[18/05/26, 8:06:11 PM] Suvansh Verma: @⁨Tanvinder IK⁩ is there a way we can remove the Indian ads that are coming on Microsoft edge browser in the VM?
+[18/05/26, 8:06:39 PM] Tanvinder IK: Not sure let me check
+[18/05/26, 8:07:45 PM] Suvansh Verma: Okay, also Tanmaya and the team are working on the 1st VM
+[18/05/26, 8:08:32 PM] Suvansh Verma: Id: windowsmayaiuser01, Please make sure this VM always active as they will be testing a lot of things tonight ‎<This message was edited>
+[18/05/26, 8:08:51 PM] Tanvinder IK: There is no such id
+[18/05/26, 8:09:56 PM] Suvansh Verma: 01, missed writing 1.
+‎[18/05/26, 8:44:51 PM] Tanvinder IK: ‎<attached: 00001128-PHOTO-2026-05-18-20-44-51.jpg>
+[18/05/26, 8:45:00 PM] Tanvinder IK: newwindowsmayaiuser04
+[18/05/26, 8:45:08 PM] Tanvinder IK: Getting this error
+[18/05/26, 8:48:44 PM] Suvansh Verma: @⁨Dheeraj Tandon⁩ can you check this? ‎<This message was edited>
+[18/05/26, 8:52:45 PM] Tanvinder IK: newwindowsmayaiuser05 sane un this one
+[18/05/26, 8:53:15 PM] Dheeraj Tandon: Share email id
+[18/05/26, 8:55:00 PM] Suvansh Verma: ai_explorer_04@Acceler688.onmicrosoft.com
+ai_explorer_05@Acceler688.onmicrosoft.com
+[18/05/26, 8:55:50 PM] Suvansh Verma: @⁨Tanvinder IK⁩ these are emails right?
+[18/05/26, 8:57:05 PM] Tanvinder IK: Yes
+‎[18/05/26, 9:01:26 PM] Dheeraj Tandon: I am able to access one drive in 04 account ‎<attached: 00001137-PHOTO-2026-05-18-21-01-26.jpg>
+[18/05/26, 9:03:29 PM] Suvansh Verma: @⁨Tanvinder IK⁩ instead of the MyFiles link, please bookmark *Shared* link.
+‎[18/05/26, 9:03:42 PM] Suvansh Verma: ‎<attached: 00001139-PHOTO-2026-05-18-21-03-42.jpg>
+[18/05/26, 9:03:49 PM] Suvansh Verma: Marked it in pink
+[18/05/26, 9:09:32 PM] Dheeraj Tandon: marked in pink is not opening?
+[18/05/26, 9:13:53 PM] Suvansh Verma: Not for you @⁨Dheeraj Tandon⁩ 
+Wanted to inform @⁨Tanvinder IK⁩ to bookmark the shared folder ‎<This message was edited>
+[18/05/26, 9:14:53 PM] Dheeraj Tandon: onedrive is working?
+[18/05/26, 9:15:37 PM] Suvansh Verma: @⁨Tanvinder IK⁩ will be able to confirm.
+[18/05/26, 9:38:19 PM] Tanvinder IK: checking
+‎[18/05/26, 9:44:28 PM] Tanvinder IK: @⁨Suvansh Verma⁩ do I need to open teh bookmark of this ‎<attached: 00001146-PHOTO-2026-05-18-21-44-28.jpg>
+‎[18/05/26, 9:45:06 PM] Tanvinder IK: or this? ‎<attached: 00001147-PHOTO-2026-05-18-21-45-06.jpg>
+[18/05/26, 9:51:05 PM] Suvansh Verma: This. We need to bookmark this link.
+[18/05/26, 9:51:32 PM] Suvansh Verma: ‎This message was deleted.
+[18/05/26, 9:57:20 PM] Tanvinder IK: @⁨Suvansh Verma⁩ e& labs are active now
+[18/05/26, 9:57:28 PM] Suvansh Verma: Okay
+[18/05/26, 9:57:30 PM] Suvansh Verma: Will check
+[18/05/26, 9:57:43 PM] Tanvinder IK: I mean they will be available from 9:55 am till 9:55 pm
+[18/05/26, 10:20:51 PM] Tanvinder IK: Onedrive is working now
+[18/05/26, 10:20:56 PM] Tanvinder IK: Some issue from my end
+[18/05/26, 11:15:22 PM] Utkarsh: @⁨Tanvinder IK⁩ can I test any one VMs which is ready?
+[18/05/26, 11:16:11 PM] Tanvinder IK: You can test rhis one
+newwindowsmayaiuser02
+[18/05/26, 11:16:19 PM] Tanvinder IK: Almost all are done
+[18/05/26, 11:16:24 PM] Utkarsh: Cool.
+[18/05/26, 11:17:50 PM] Suvansh Verma: I have added the participant names as well.
+[18/05/26, 11:22:50 PM] Utkarsh: @⁨Tanmaya Kharyal⁩ do we not need to bookmark the MS365?
+[18/05/26, 11:22:54 PM] Utkarsh: Check it once please.
+[18/05/26, 11:39:45 PM] Tanmaya Kharyal: Yes yes @⁨Utkarsh⁩, that’s where we will be building agents ‎<This message was edited>
+[18/05/26, 11:40:43 PM] Utkarsh: Can you send that link please.
+[18/05/26, 11:40:50 PM] Utkarsh: @⁨Tanvinder IK⁩ let’s bookmark that as well.
+[18/05/26, 11:40:59 PM] Utkarsh: Apart from that it looks good.
+[18/05/26, 11:41:44 PM] Tanmaya Kharyal: Suvansh had bookmarked it in the vm1. Wait let me login and share
+[18/05/26, 11:42:46 PM] Utkarsh: Sure.
+‎[18/05/26, 11:43:55 PM] Suvansh Verma: ‎<attached: 00001169-PHOTO-2026-05-18-23-43-55.jpg>
+[18/05/26, 11:44:17 PM] Suvansh Verma: 1st bookmark is MS365 only
+[18/05/26, 11:44:26 PM] Tanmaya Kharyal: Yes
+‎[18/05/26, 11:44:26 PM] Tanvinder IK: ‎<attached: 00001172-PHOTO-2026-05-18-23-44-26.jpg>
+[18/05/26, 11:44:27 PM] Tanvinder IK: This is what bookmarked in vm1 i replicated same
+[18/05/26, 11:45:14 PM] Tanmaya Kharyal: https://m365.cloud.microsoft/chat?auth=2&origindomain=Office&client-request-id=faadeba9-3bda-47c0-951d-35b3b553a526
+[18/05/26, 11:46:31 PM] Utkarsh: So my apps is fine?
+[18/05/26, 11:46:33 PM] Utkarsh: @⁨Tanmaya Kharyal⁩
+[18/05/26, 11:47:33 PM] Tanmaya Kharyal: Yeah it’s additional only as we have bookmarked outlook , calender etc.
+[18/05/26, 11:47:43 PM] Tanmaya Kharyal: Just in case if needed on a whim
+[18/05/26, 11:48:08 PM] Utkarsh: @⁨Tanvinder IK⁩ isme 365 add krlete h.
+[18/05/26, 11:48:19 PM] Utkarsh: Check this ss 1st bookmark/
+[18/05/26, 11:48:27 PM] Utkarsh: Keep the order same only like this.
+[18/05/26, 11:48:30 PM] Utkarsh: Baaki looks good.
+[18/05/26, 11:51:47 PM] Tanmaya Kharyal: I have added in the vm2 ms 365
+[18/05/26, 11:51:53 PM] Tanmaya Kharyal: Rest looks fine
+[18/05/26, 11:52:13 PM] Tanmaya Kharyal: Please continue from vm 3
+[18/05/26, 11:52:46 PM] Utkarsh: Cool.
+[19/05/26, 9:15:56 AM] Suvansh Verma: @⁨Tanvinder IK⁩ let’s keep all the VMs (yettel) active from 10am today till tomorrow 10am.
+[19/05/26, 9:30:31 AM] Tanvinder IK: Sure
+[19/05/26, 9:37:45 AM] Tanvinder IK: I have raised the request. Once vm are active i will start bookmarking ms 365 as well
+[19/05/26, 9:52:51 AM] Karthika IK: ‎Shashi Bhushan  Kumar added Karthika IK
+[19/05/26, 11:25:31 AM] Suvansh Verma: @⁨Tanvinder IK⁩ spoke to Utkarsh and he mentioned that there is an option to disable the Ads showing in the browser.
+[19/05/26, 11:26:03 AM] Tanvinder IK: Let me ask nuvepro team
+[19/05/26, 11:26:20 AM] Suvansh Verma: I am also checking from my end
+[19/05/26, 11:26:28 AM] Tanvinder IK: Are you talking about feeds?
+[19/05/26, 11:26:35 AM] Suvansh Verma: Yes
+[19/05/26, 11:26:58 AM] Tanvinder IK: That i am disabling
+[19/05/26, 11:27:19 AM] Tanvinder IK: I will disable in all labs
+‎[19/05/26, 11:27:20 AM] Suvansh Verma: ‎<attached: 00001198-PHOTO-2026-05-19-11-27-20.jpg>
+[19/05/26, 11:27:50 AM] Suvansh Verma: @⁨Tanmaya Kharyal⁩ no india focused news now 😅
+[19/05/26, 11:30:57 AM] Tanvinder IK: Which lab is this?
+[19/05/26, 11:31:15 AM] Suvansh Verma: This is lab 02
+[19/05/26, 11:31:36 AM] Tanvinder IK: I will remove it
+[19/05/26, 11:34:15 AM] Tanvinder IK: @⁨Suvansh Verma⁩ could you check lab3 and see if it has no ads ‎<This message was edited>
+[19/05/26, 11:53:26 AM] Suvansh Verma: Checking
+[19/05/26, 11:53:44 AM] Suvansh Verma: newwindowsmayaiuser17: Microsoft Creds added for this. Request you to please set this VM as well.
+[19/05/26, 11:53:49 AM] Suvansh Verma: @⁨Tanvinder IK⁩
+[19/05/26, 11:54:17 AM] Tanmaya Kharyal: Let’s disable only all :) ‎<This message was edited>
+[19/05/26, 11:56:46 AM] Suvansh Verma: @⁨Tanvinder IK⁩ Feed is not showing in lab3 now.
+‎[19/05/26, 11:57:08 AM] Suvansh Verma: ‎<attached: 00001209-PHOTO-2026-05-19-11-57-08.jpg>
+[19/05/26, 12:44:34 PM] Tanvinder IK: Feed is disabled for all
+[19/05/26, 12:44:45 PM] Tanvinder IK: Copilot shortcut also added in all labs
+[19/05/26, 12:45:11 PM] Tanmaya Kharyal: Thanks @⁨Tanvinder IK⁩
+[19/05/26, 12:45:43 PM] Tanvinder IK: @⁨Suvansh Verma⁩ i am not able to login to vm17 i think someone else is using it ‎<This message was edited>
+[19/05/26, 1:46:21 PM] Suvansh Verma: Can you check now
+[19/05/26, 1:46:26 PM] Suvansh Verma: No one was using it.
+‎[19/05/26, 1:57:29 PM] Suvansh Verma: @⁨Tanvinder IK⁩ please look into this. This from e&x ‎<attached: 00001216-PHOTO-2026-05-19-13-57-29.jpg>
+[19/05/26, 5:20:58 PM] Suvansh Verma: @⁨Tanvinder IK⁩ Need VMs for batch 3. Need to roll them out today.
+‎[19/05/26, 5:21:40 PM] Tanvinder IK: Sherif Mahmoud El Shealawy
+aiexplorer_82@teamupwardandonward.com ‎<attached: 00001218-PHOTO-2026-05-19-17-21-40.jpg>
+‎[19/05/26, 5:21:40 PM] Tanvinder IK: ‎<attached: 00001219-PHOTO-2026-05-19-17-21-40.jpg>
+‎[19/05/26, 5:21:40 PM] Tanvinder IK: ‎<attached: 00001220-PHOTO-2026-05-19-17-21-40.jpg>
+[19/05/26, 5:22:02 PM] Tanvinder IK: I have logged in to the vms which have ms accounts ‎<This message was edited>
+[19/05/26, 5:24:53 PM] Suvansh Verma: For e& batch 3, right?
+[19/05/26, 5:42:26 PM] Tanvinder IK: Yes
+[19/05/26, 5:43:13 PM] Tanvinder IK: Just verify e& vm's befire handing over
+[19/05/26, 5:43:24 PM] Tanvinder IK: I have extended them til friday
+[19/05/26, 9:16:51 PM] Suvansh Verma: @⁨Tanvinder IK⁩ Please keep this VM for next 2 days: newwindowsmayaiuser18 cc: @⁨Utkarsh⁩ ‎<This message was edited>
+[19/05/26, 9:17:41 PM] Tanvinder IK: This is for yettel?
+[19/05/26, 9:17:42 PM] Suvansh Verma: Will check this in a while and confirm.
+[19/05/26, 9:18:09 PM] Suvansh Verma: Yes but we have given this to an instructor for testing.
+[19/05/26, 9:18:16 PM] Tanvinder IK: Ok
+[19/05/26, 9:18:41 PM] Tanvinder IK: So we need to keep this vm active for 48 hrs?
+[20/05/26, 12:23:42 AM] Suvansh Verma: Yes
+[20/05/26, 10:56:41 AM] Shashi Bhushan  Kumar: @⁨Tanvinder IK⁩ - which other vendors did you try/test for VMs? We can explore VMs from these big companies too - https://www.digitalocean.com/solutions/virtual-machines     cc: @⁨Utkarsh⁩
+[20/05/26, 11:03:20 AM] Tanvinder IK: I tested cloud spektra
+[20/05/26, 11:03:26 AM] Tanvinder IK: I am doing poc with them
+[20/05/26, 11:03:45 AM] Tanvinder IK: They seems good because their support is also good and VM creation process is also seamless
+[20/05/26, 11:03:53 AM] Tanvinder IK: I will share more details soon on this
+[20/05/26, 11:04:33 AM] Tanvinder IK: There is 1 more vendor named hotspotz i am also looking into their product
+[20/05/26, 11:47:00 AM] Utkarsh: @⁨Tanvinder IK⁩ if these VMs are better than Nuvepro and provides more control to us.
+Let's try to get them this week only 2 sample credentials.
+[20/05/26, 11:47:32 AM] Utkarsh: Also in Nuvepro there are multiple steps to open the VMs, talk to them to reduce it to single step, login and the VMs directly open.
+[20/05/26, 11:47:54 AM] Utkarsh: Apart from this is there are way we can wrap the VM under our domain name, as all this is client facing.
+[20/05/26, 11:48:04 AM] Tanvinder IK: I spoke with them about this but they said they cant eliminate these steps
+[20/05/26, 11:48:29 AM] Tanvinder IK: I am working on this
+[20/05/26, 11:48:49 AM] Utkarsh: No no not talknig about Nuvepro.
+[20/05/26, 11:48:55 AM] Utkarsh: I am saying when you talk to other vendors.
+[20/05/26, 11:48:58 AM] Tanvinder IK: I will share some details by next week since I am travelling mostly this week
+[20/05/26, 11:49:00 AM] Utkarsh: Unko ye bolna aap.
+[20/05/26, 11:49:11 AM] Tanvinder IK: Haan haan
+[20/05/26, 11:49:18 AM] Utkarsh: Can we get them credentials by next week Tuesday?
+[20/05/26, 11:49:28 AM] Tanvinder IK: Vendor wali vm mai sirf login karna hai and then they can use
+[20/05/26, 11:49:36 AM] Tanvinder IK: No dashboard and stuff will be there
+[20/05/26, 11:49:44 AM] Tanvinder IK: I am testing their setup rn
+[20/05/26, 11:49:54 AM] Tanvinder IK: I have a call scheduled with them
+[20/05/26, 11:49:58 AM] Utkarsh: Okay.
+[20/05/26, 11:50:00 AM] Tanvinder IK: To understand few things
+[20/05/26, 11:50:03 AM] Utkarsh: Aap check krlo properly.
+[20/05/26, 11:50:05 AM] Tanvinder IK: Then i will pull you in
+[20/05/26, 11:50:16 AM] Utkarsh: Let’s close this by next week Tue.
+[20/05/26, 11:50:32 AM] Utkarsh: You can send the credentials by next week Tuesday and we can book a call.
+[20/05/26, 11:50:39 AM] Tanvinder IK: Sure
+[20/05/26, 2:31:58 PM] Suvansh Verma: Hi @⁨Tanvinder IK⁩ Need 10 VMs for a new session scheduled on 28th May from10:00pm IST till 29th May 2am IST. The set up is exactly the same as Yettel (CoPilot, 365 etc) as yesterday. Acceler VMs required. Start date: 27th May & end date 29th May EOD.
+[20/05/26, 2:32:15 PM] Suvansh Verma: Sheet Link: https://docs.google.com/spreadsheets/d/1FAihmiGYarUQ6TzkHUFzZlT83o4tTpwxqZGfXEl1lWk/edit?gid=0#gid=0
+[20/05/26, 2:32:41 PM] Tanvinder IK: Sure

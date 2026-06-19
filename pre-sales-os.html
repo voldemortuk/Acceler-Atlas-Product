@@ -1,0 +1,828 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Acceler · Pre-Sales OS</title>
+<style>
+:root {
+  --navy:#1a1d35; --navyLight:#252848; --navyMid:#1e2140;
+  --orange:#f07050; --purple:#7b5ea7;
+  --text:#e8eaf6; --textMuted:#8892b0; --textDim:#4a5280;
+  --border:#2e3260; --green:#4ade80; --yellow:#fbbf24; --red:#f87171; --blue:#60a5fa;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin:0; padding:0; background:var(--navy); color:var(--text); height:100vh; overflow:hidden;
+  font-family:-apple-system,BlinkMacSystemFont,"Inter","Segoe UI",Roboto,sans-serif; -webkit-font-smoothing:antialiased; }
+body { display:flex; }
+
+/* Sidebar */
+.sidebar { width:220px; background:var(--navy); border-right:1px solid var(--border); display:flex; flex-direction:column; padding:24px 0; flex-shrink:0; }
+.brand { padding:0 20px 22px; border-bottom:1px solid var(--border); }
+.brand-row { display:flex; align-items:center; gap:8px; }
+.logo { width:30px; height:30px; background:linear-gradient(135deg,var(--orange),var(--purple)); border-radius:7px; display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:900; color:#fff; }
+.brand-name { font-weight:700; font-size:16px; letter-spacing:-0.02em; }
+.brand-sub { margin-top:6px; font-size:10px; color:var(--textDim); letter-spacing:0.08em; text-transform:uppercase; font-weight:600; }
+.nav { padding:16px 10px; flex:1; }
+.nav-item { display:flex; align-items:center; gap:10px; padding:9px 12px; border-radius:8px; margin-bottom:2px; color:var(--textMuted); cursor:pointer; font-size:13px; transition:all 0.15s; border:1px solid transparent; }
+.nav-item:hover { background:rgba(123,94,167,0.08); color:var(--text); }
+.nav-item.active { background:rgba(123,94,167,0.16); border-color:rgba(123,94,167,0.32); color:var(--text); font-weight:600; }
+.nav-item .icon { font-size:15px; width:18px; text-align:center; }
+.nav-badge { margin-left:auto; background:var(--orange); color:#fff; border-radius:999px; min-width:18px; height:18px; padding:0 5px; font-size:9px; display:flex; align-items:center; justify-content:center; font-weight:700; }
+.user { padding:14px; border-top:1px solid var(--border); display:flex; align-items:center; gap:10px; }
+.user .avatar { width:32px; height:32px; border-radius:999px; background:linear-gradient(135deg,var(--orange),var(--purple)); display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; color:#fff; }
+.user .name { font-size:12.5px; font-weight:600; }
+.user .role { color:var(--textDim); font-size:10.5px; }
+
+/* Main */
+.main { flex:1; display:flex; flex-direction:column; overflow:hidden; min-width:0; }
+.page { flex:1; overflow-y:auto; padding:32px; }
+.page-header h1 { font-size:22px; font-weight:700; margin:0; letter-spacing:-0.01em; }
+.page-header p { color:var(--textMuted); font-size:13px; margin:5px 0 24px; }
+
+/* Card */
+.card { background:var(--navyLight); border:1px solid var(--border); border-radius:12px; padding:18px; transition:all 0.18s; }
+.card.hover:hover { border-color:rgba(123,94,167,0.45); transform:translateY(-1px); box-shadow:0 6px 24px rgba(123,94,167,0.12); }
+
+/* Atoms */
+.grad-text { background:linear-gradient(90deg,var(--orange),var(--purple)); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; color:transparent; }
+.grad-bar { background:var(--border); border-radius:999px; height:6px; overflow:hidden; }
+.grad-bar > .fill { height:100%; background:linear-gradient(90deg,var(--orange),var(--purple)); border-radius:999px; transition:width 0.6s ease; }
+.badge { display:inline-block; padding:2px 8px; font-size:10.5px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; border-radius:4px; border:1px solid; }
+
+.btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; border:none; border-radius:8px; padding:10px 18px; font-size:13px; font-weight:700; cursor:pointer; transition:all 0.15s; font-family:inherit; }
+.btn-primary { background:linear-gradient(90deg,var(--orange),var(--purple)); color:#fff; }
+.btn-primary:hover:not(:disabled) { transform:translateY(-1px); box-shadow:0 5px 18px rgba(123,94,167,0.4); }
+.btn-primary:disabled { opacity:0.55; cursor:not-allowed; }
+.btn-ghost { background:transparent; border:1px solid var(--border); color:var(--textMuted); }
+.btn-ghost:hover { background:var(--navyMid); color:var(--text); }
+.btn-sm { padding:6px 12px; font-size:12px; }
+
+textarea, input { background:var(--navyLight); border:1px solid var(--border); color:var(--text); font-family:inherit; outline:none; border-radius:10px; transition:border-color 0.15s, box-shadow 0.15s; }
+textarea:focus, input:focus { border-color:rgba(123,94,167,0.55); box-shadow:0 0 0 3px rgba(123,94,167,0.12); }
+textarea { width:100%; min-height:260px; font-size:13px; padding:14px 16px; resize:vertical; line-height:1.55; }
+
+/* Dashboard */
+.stat-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:22px; }
+.stat-label { color:var(--textDim); font-size:10.5px; text-transform:uppercase; letter-spacing:0.07em; font-weight:600; margin-bottom:8px; }
+.stat-value { font-size:30px; font-weight:800; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; line-height:1; }
+.stat-sub { color:var(--textDim); font-size:11px; margin-top:6px; }
+.pipeline-row { display:flex; align-items:center; gap:12px; padding:10px 12px; background:var(--navyMid); border-radius:8px; border:1px solid var(--border); cursor:pointer; transition:all 0.15s; }
+.pipeline-row:hover { border-color:rgba(123,94,167,0.45); transform:translateX(2px); }
+.pipeline-avatar { width:34px; height:34px; border-radius:8px; background:rgba(123,94,167,0.16); border:1px solid rgba(123,94,167,0.32); display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:800; color:var(--purple); flex-shrink:0; }
+
+/* RFP */
+.rfp-grid { display:grid; gap:16px; transition:grid-template-columns 0.3s; }
+.rfp-grid.single { grid-template-columns:1fr; }
+.rfp-grid.split { grid-template-columns:1fr 1fr; }
+.parsed-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+.parsed-cell { background:var(--navyMid); border-radius:6px; padding:9px 11px; }
+.parsed-cell .k { color:var(--textDim); font-size:10px; text-transform:uppercase; letter-spacing:0.05em; font-weight:600; }
+.parsed-cell .v { font-size:13px; margin-top:3px; font-weight:600; line-height:1.4; }
+.q-bubble { background:rgba(251,191,36,0.07); border:1px solid rgba(251,191,36,0.3); border-radius:6px; padding:8px 11px; margin-bottom:6px; font-size:12.5px; line-height:1.5; }
+
+/* Mini-UT */
+.mu-shell { flex:1; display:flex; flex-direction:column; overflow:hidden; }
+.mu-header { padding:20px 32px 16px; border-bottom:1px solid var(--border); display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+.mu-avatar { width:40px; height:40px; border-radius:10px; background:linear-gradient(135deg,var(--orange),var(--purple)); display:flex; align-items:center; justify-content:center; font-size:19px; }
+.mu-status { color:var(--green); font-size:11px; display:flex; align-items:center; gap:5px; margin-top:2px; }
+.mu-status .dot { width:6px; height:6px; border-radius:999px; background:var(--green); box-shadow:0 0 6px var(--green); }
+.mu-msgs { flex:1; overflow-y:auto; padding:24px 32px; display:flex; flex-direction:column; gap:14px; }
+.mu-msg { display:flex; gap:10px; max-width:78%; }
+.mu-msg.user { align-self:flex-end; flex-direction:row-reverse; max-width:70%; }
+.mu-bubble { padding:11px 15px; border-radius:12px; font-size:13px; line-height:1.6; white-space:pre-wrap; word-wrap:break-word; }
+.mu-msg.user .mu-bubble { background:rgba(123,94,167,0.22); border:1px solid rgba(123,94,167,0.4); }
+.mu-msg.assistant .mu-bubble { background:var(--navyLight); border:1px solid var(--border); }
+.mu-avatar-sm { width:30px; height:30px; border-radius:8px; background:linear-gradient(135deg,var(--orange),var(--purple)); display:flex; align-items:center; justify-content:center; font-size:13px; flex-shrink:0; }
+.mu-suggest { padding:0 32px 10px; display:flex; gap:8px; flex-wrap:wrap; }
+.mu-chip { background:rgba(123,94,167,0.13); border:1px solid rgba(123,94,167,0.3); color:var(--purple); padding:5px 12px; border-radius:999px; font-size:11px; font-weight:600; cursor:pointer; transition:all 0.15s; font-family:inherit; }
+.mu-chip:hover { background:rgba(123,94,167,0.22); }
+.mu-input-row { padding:0 32px 24px; display:flex; gap:10px; }
+.mu-input-row input { flex:1; padding:12px 18px; font-size:13px; border-radius:10px; }
+.typing { display:inline-flex; gap:4px; align-items:center; }
+.typing span { width:6px; height:6px; border-radius:999px; background:var(--textMuted); animation:blink 1.2s infinite; }
+.typing span:nth-child(2) { animation-delay:0.2s; }
+.typing span:nth-child(3) { animation-delay:0.4s; }
+@keyframes blink { 0%,80%,100%{opacity:0.3} 40%{opacity:1} }
+
+/* Pricing */
+.pricing-tabs { display:flex; gap:8px; }
+.pricing-tab { background:transparent; border:1px solid var(--border); color:var(--textMuted); padding:6px 14px; border-radius:6px; font-size:12px; cursor:pointer; text-transform:capitalize; font-family:inherit; }
+.pricing-tab.active { background:rgba(123,94,167,0.18); border-color:var(--purple); color:var(--text); }
+.scenario-card { padding:18px; border-radius:12px; border:1px solid; transition:all 0.2s; cursor:pointer; }
+.scenario-card:hover { transform:translateY(-3px); }
+.scenario-card .price { font-size:30px; font-weight:800; font-family:ui-monospace,monospace; margin-top:14px; line-height:1; }
+.scenario-card .per { color:var(--textDim); font-size:12px; margin-top:2px; }
+.scenario-card .total { color:var(--textMuted); font-size:13px; margin-top:10px; }
+.tip-row { background:var(--navyMid); border-radius:8px; padding:10px 12px; margin-bottom:8px; border:1px solid var(--border); }
+
+/* Knowledge */
+.kb-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:16px; }
+.kb-stat { text-align:center; padding:16px 14px; }
+.kb-stat .ico { font-size:22px; margin-bottom:6px; }
+.kb-stat .num { font-size:24px; font-weight:800; font-family:ui-monospace,monospace; }
+.kb-stat .lbl { color:var(--textDim); font-size:11px; margin-top:2px; }
+.kb-row { padding:10px 14px; display:flex; align-items:center; gap:12px; cursor:pointer; }
+
+/* Misc */
+.spinner { width:20px; height:20px; border-radius:999px; border:2.5px solid rgba(123,94,167,0.2); border-top-color:var(--purple); animation:spin 0.8s linear infinite; }
+@keyframes spin { to{ transform:rotate(360deg) } }
+.loading-row { display:flex; align-items:center; gap:10px; color:var(--textMuted); font-size:13px; padding:14px; }
+.error-box { background:rgba(248,113,113,0.08); border:1px solid rgba(248,113,113,0.3); border-radius:8px; padding:10px 14px; color:var(--red); font-size:12.5px; line-height:1.5; }
+.fade-in { animation:fadeIn 0.28s ease; }
+@keyframes fadeIn { from{ opacity:0; transform:translateY(4px) } to{ opacity:1; transform:translateY(0) } }
+::-webkit-scrollbar { width:9px; height:9px; }
+::-webkit-scrollbar-track { background:transparent; }
+::-webkit-scrollbar-thumb { background:var(--border); border-radius:5px; }
+::-webkit-scrollbar-thumb:hover { background:var(--textDim); }
+</style>
+</head>
+<body>
+
+<aside class="sidebar">
+  <div class="brand">
+    <div class="brand-row">
+      <div class="logo">A</div>
+      <div class="brand-name">cceler</div>
+    </div>
+    <div class="brand-sub">Pre-Sales OS</div>
+  </div>
+  <nav class="nav" id="nav"></nav>
+  <div class="user">
+    <div class="avatar">UT</div>
+    <div>
+      <div class="name">Utkarsh</div>
+      <div class="role">PM · Acceler</div>
+    </div>
+  </div>
+</aside>
+
+<main class="main" id="main"></main>
+
+<script>
+// ============================================================================
+// CONFIG
+// ============================================================================
+const COLORS = {
+  orange:'#f07050', purple:'#7b5ea7', green:'#4ade80', yellow:'#fbbf24',
+  red:'#f87171', blue:'#60a5fa', textDim:'#4a5280', textMuted:'#8892b0'
+};
+const POWERUP_FOLDER_ID = '1Qq3LeJdapqmQNVUhf7_tyHQKmQJ6DKqw';
+const DRIVE_SEARCH_TOOL = 'mcp__ab14e56f-24f1-4324-b184-7e064dcb6fe5__search_files';
+
+const NAV = [
+  { id:'dashboard', icon:'⬡', label:'Dashboard' },
+  { id:'rfp', icon:'📥', label:'New RFP' },
+  { id:'miniut', icon:'🧠', label:'Mini-UT' },
+  { id:'proposals', icon:'📋', label:'Proposals' },
+  { id:'pricing', icon:'₹', label:'Pricing' },
+  { id:'knowledge', icon:'🗃️', label:'Knowledge Base' }
+];
+
+const PROPOSALS = [
+  { client:'LatentView', type:'AI Leaders', status:'In Review', days:1, owner:'Soham' },
+  { client:'Nucleus Software', type:'AI Builders', status:'Draft', days:2, owner:'Utkarsh' },
+  { client:'e& Digital', type:'Custom', status:'Sent', days:0, owner:'Amit' },
+  { client:'Capgemini', type:'AI Enablers', status:'RFP Parsing', days:0, owner:'Mini-UT' },
+  { client:'Bosch India', type:'AI Builders', status:'Pricing', days:1, owner:'Mini-UT' }
+];
+const STATUS_COLOR = { 'In Review':COLORS.yellow,'Draft':COLORS.purple,'Sent':COLORS.green,'RFP Parsing':COLORS.orange,'Pricing':COLORS.blue };
+
+// ============================================================================
+// STATE
+// ============================================================================
+const state = {
+  active:'dashboard',
+  notifs:{ rfp:2 },
+  rfp:{ text:'', parsing:false, parsed:null, error:null },
+  miniut:{
+    sending:false,
+    messages:[
+      { role:'assistant', text:"Hi Utkarsh — I have the APR doc loaded, plus your past proposal patterns from Drive.\n\nDrop an RFP, ask about a client, or kick off a pricing scenario. I know about LatentView, Booking, Gryphon, Ooredoo, Capgemini, Bosch, and ~50 other accounts in your pipeline." }
+    ]
+  },
+  pricing:{ tab:'scenarios' },
+  knowledge:{ loading:false, files:[], error:null, loaded:false, search:'' }
+};
+
+// ============================================================================
+// HELPERS
+// ============================================================================
+const $ = (id) => document.getElementById(id);
+function escHtml(s) { return String(s==null?'':s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function badge(text, color) { return `<span class="badge" style="color:${color};background:${color}1f;border-color:${color}55">${escHtml(text)}</span>`; }
+
+function unwrapClaude(r) {
+  if (r == null) return '';
+  if (typeof r === 'string') return r;
+  if (typeof r === 'object') {
+    if (typeof r.text === 'string') return r.text;
+    if (typeof r.response === 'string') return r.response;
+    if (typeof r.message === 'string') return r.message;
+    if (typeof r.completion === 'string') return r.completion;
+    if (typeof r.content === 'string') return r.content;
+    if (Array.isArray(r.content)) {
+      const parts = r.content.map(c => c && typeof c.text === 'string' ? c.text : '').filter(Boolean);
+      if (parts.length) return parts.join('\n');
+    }
+    if (r.data) return unwrapClaude(r.data);
+  }
+  return '';
+}
+
+// ============================================================================
+// NAV
+// ============================================================================
+function renderNav() {
+  $('nav').innerHTML = NAV.map(it => `
+    <div class="nav-item ${state.active===it.id?'active':''}" data-page="${it.id}">
+      <span class="icon">${it.icon}</span>
+      <span>${it.label}</span>
+      ${it.id==='rfp' && state.notifs.rfp ? `<span class="nav-badge">${state.notifs.rfp}</span>` : ''}
+    </div>`).join('');
+  document.querySelectorAll('.nav-item').forEach(el =>
+    el.addEventListener('click', () => navigate(el.dataset.page))
+  );
+}
+
+function navigate(p) {
+  state.active = p;
+  render();
+  if (p === 'knowledge' && !state.knowledge.loaded && !state.knowledge.loading) loadKnowledge();
+}
+
+// ============================================================================
+// PAGES
+// ============================================================================
+function dashboardPage() {
+  const stats = [
+    { l:'Proposals This Week', v:'3', s:'↑ from 1-2', c:COLORS.green },
+    { l:'Avg Turnaround', v:'18h', s:'↓ from 3 days', c:COLORS.orange },
+    { l:'Soham Pass Rate', v:'87%', s:'target: 90%', c:COLORS.purple },
+    { l:'India Pricing Cycles', v:'1.8', s:'↓ from 3-5', c:COLORS.blue }
+  ];
+  const today = new Date().toLocaleDateString('en-US', { weekday:'long', month:'long', day:'numeric' });
+  return `
+  <div class="page fade-in">
+    <div class="page-header">
+      <h1>Good morning — <span class="grad-text">${state.notifs.rfp} RFPs waiting</span></h1>
+      <p>${today} · Mini-UT is ready</p>
+    </div>
+    <div class="stat-grid">
+      ${stats.map(s => `
+        <div class="card">
+          <div class="stat-label">${s.l}</div>
+          <div class="stat-value" style="color:${s.c}">${s.v}</div>
+          <div class="stat-sub">${s.s}</div>
+        </div>`).join('')}
+    </div>
+    <div style="display:grid;grid-template-columns:1.5fr 1fr;gap:16px">
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+          <div style="font-weight:700;font-size:14px">Active Pipeline</div>
+          <button class="btn btn-primary btn-sm" data-nav="rfp">+ New RFP</button>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          ${PROPOSALS.map(p => `
+            <div class="pipeline-row" data-nav="proposals">
+              <div class="pipeline-avatar">${escHtml(p.client.slice(0,2).toUpperCase())}</div>
+              <div style="flex:1;min-width:0">
+                <div style="font-size:13px;font-weight:600">${escHtml(p.client)}</div>
+                <div style="color:var(--textDim);font-size:11px">${escHtml(p.type)} · ${escHtml(p.owner)}</div>
+              </div>
+              ${badge(p.status, STATUS_COLOR[p.status])}
+              <div style="color:var(--textDim);font-size:11px;width:44px;text-align:right">${p.days===0?'Today':p.days+'d'}</div>
+            </div>`).join('')}
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div class="card">
+          <div style="font-weight:700;font-size:14px;margin-bottom:12px">🧠 Mini-UT Status</div>
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
+            <span style="width:8px;height:8px;border-radius:999px;background:${COLORS.green};box-shadow:0 0 6px ${COLORS.green}"></span>
+            <span style="color:var(--textMuted);font-size:12px">Active · Processing Capgemini RFP</span>
+          </div>
+          <div class="grad-bar"><div class="fill" style="width:62%"></div></div>
+          <div style="color:var(--textDim);font-size:11px;margin-top:6px">Step 3/5 · NPT Routing</div>
+          <div style="margin-top:14px;display:flex;flex-direction:column;gap:6px;font-size:11.5px">
+            <div style="color:${COLORS.green}">✓ Parsed RFP</div>
+            <div style="color:${COLORS.green}">✓ Identified gaps (2)</div>
+            <div style="color:${COLORS.orange}">⚡ Routing to Animesh</div>
+            <div style="color:var(--textDim)">○ Pricing calc</div>
+            <div style="color:var(--textDim)">○ Deck generation</div>
+          </div>
+        </div>
+        <div class="card">
+          <div style="font-weight:700;font-size:14px;margin-bottom:10px">Quick Actions</div>
+          ${[
+            { label:'Paste RFP → Auto-parse', icon:'📥', nav:'rfp' },
+            { label:'Chat with Mini-UT', icon:'🧠', nav:'miniut' },
+            { label:'Run pricing scenarios', icon:'₹', nav:'pricing' },
+            { label:'Browse Drive knowledge', icon:'🗃️', nav:'knowledge' }
+          ].map(a => `
+            <div class="pipeline-row" style="margin-bottom:5px;padding:9px 11px" data-nav="${a.nav}">
+              <span style="font-size:14px">${a.icon}</span>
+              <span style="flex:1;font-size:12.5px;color:var(--textMuted)">${a.label}</span>
+              <span style="color:var(--textDim)">→</span>
+            </div>`).join('')}
+        </div>
+      </div>
+    </div>
+  </div>`;
+}
+
+function rfpPage() {
+  const p = state.rfp.parsed;
+  return `
+  <div class="page fade-in">
+    <div class="page-header">
+      <h1>Requirement Analyzer</h1>
+      <p>Paste a client RFP, email, or call notes. Mini-UT extracts structure, flags gaps, suggests routing.</p>
+    </div>
+    <div class="rfp-grid ${p?'split':'single'}">
+      <div>
+        <textarea id="rfp-text" placeholder="Paste RFP here…&#10;&#10;Example:&#10;&quot;We need a 2-day AI training program for 80 sales professionals at Capgemini India. Focus on using AI tools to improve client research, proposal writing, and pitch deck creation. Must be hands-on and practical.&quot;">${escHtml(state.rfp.text)}</textarea>
+        <div style="display:flex;gap:10px;margin-top:12px;flex-wrap:wrap">
+          <button class="btn btn-primary" id="rfp-go" ${state.rfp.parsing?'disabled':''}>
+            ${state.rfp.parsing?'<span class="spinner" style="width:14px;height:14px;border-width:2px"></span> Analyzing…':'⚡ Analyze with Mini-UT'}
+          </button>
+          <button class="btn btn-ghost" id="rfp-clear">Clear</button>
+        </div>
+        ${state.rfp.error ? `<div class="error-box" style="margin-top:12px">${escHtml(state.rfp.error)}</div>` : ''}
+        <div style="margin-top:18px;color:var(--textDim);font-size:11.5px">
+          Or load from GDrive: <span style="color:${COLORS.orange};cursor:pointer;font-weight:600" data-nav="knowledge">Browse 1. PowerUp →</span>
+        </div>
+      </div>
+      ${p ? renderParsed(p) : ''}
+    </div>
+  </div>`;
+}
+
+function renderParsed(p) {
+  const fields = [
+    ['Client', p.client], ['Audience', p.audience], ['Cohort Size', p.cohort_size],
+    ['Duration', p.duration], ['Geography', p.geography], ['Delivery', p.delivery],
+    ['Objective', p.objective], ['Curriculum', p.curriculum_status]
+  ].filter(([_, v]) => v);
+  return `
+  <div style="display:flex;flex-direction:column;gap:12px" class="fade-in">
+    <div class="card" style="padding:16px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;flex-wrap:wrap;gap:6px">
+        <div style="font-weight:700;font-size:13px;color:${COLORS.green}">✓ Parsed Successfully</div>
+        ${p.complexity ? badge('Complexity ' + p.complexity + '/10', COLORS.orange) : ''}
+      </div>
+      <div class="parsed-grid">
+        ${fields.map(([k, v]) => `
+          <div class="parsed-cell"><div class="k">${k}</div><div class="v">${escHtml(v)}</div></div>
+        `).join('')}
+      </div>
+    </div>
+    ${p.questions && p.questions.length ? `
+    <div class="card" style="padding:16px">
+      <div style="color:${COLORS.yellow};font-weight:700;font-size:13px;margin-bottom:10px">⚠ Gaps Detected — Questions to Ask</div>
+      ${p.questions.map((q,i) => `<div class="q-bubble">Q${i+1}: ${escHtml(q)}</div>`).join('')}
+      <button class="btn btn-ghost btn-sm" style="margin-top:6px;border-color:${COLORS.yellow}55;color:${COLORS.yellow}">📤 Send to Sales Team</button>
+    </div>` : ''}
+    ${p.routing ? `
+    <div class="card" style="padding:16px">
+      <div style="color:${COLORS.purple};font-weight:700;font-size:13px;margin-bottom:10px">🧠 Mini-UT Routing</div>
+      ${Object.entries(p.routing).map(([k,v]) => `
+        <div style="display:flex;justify-content:space-between;gap:8px;margin-bottom:6px;font-size:12px">
+          <span style="color:var(--textDim);text-transform:capitalize;flex-shrink:0">${escHtml(k.replace(/_/g,' '))}</span>
+          <span style="font-weight:600;text-align:right">${escHtml(v)}</span>
+        </div>`).join('')}
+      ${p.similar && p.similar.length ? `
+        <div style="border-top:1px solid var(--border);margin-top:10px;padding-top:10px">
+          <div style="color:var(--textDim);font-size:11px;margin-bottom:6px">Similar past proposals</div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap">${p.similar.map(s => badge(s, COLORS.purple)).join('')}</div>
+        </div>` : ''}
+      <button class="btn btn-primary" style="width:100%;margin-top:14px" data-nav="miniut">→ Hand off to Mini-UT</button>
+    </div>` : ''}
+  </div>`;
+}
+
+function miniutPage() {
+  const m = state.miniut;
+  const suggested = [
+    'Which template for LatentView?',
+    'Optimize India pricing for Bosch',
+    'Who should I loop in for SRE?',
+    'Is the Capgemini draft ready for Soham?'
+  ];
+  return `
+  <div class="mu-shell">
+    <div class="mu-header">
+      <div class="mu-avatar">🧠</div>
+      <div>
+        <div style="font-weight:700;font-size:15px">Mini-UT</div>
+        <div class="mu-status"><span class="dot"></span> Powered by Claude · APR + Drive context loaded</div>
+      </div>
+      <div style="margin-left:auto;display:flex;gap:8px;flex-wrap:wrap">
+        <button class="btn btn-ghost btn-sm">🗃️ Load Proposal</button>
+        <button class="btn btn-ghost btn-sm">₹ Pricing Mode</button>
+        <button class="btn btn-ghost btn-sm">📊 Compare Past</button>
+      </div>
+    </div>
+    <div class="mu-msgs" id="mu-msgs">
+      ${m.messages.map(msg => `
+        <div class="mu-msg ${msg.role}">
+          ${msg.role === 'assistant' ? `<div class="mu-avatar-sm">🧠</div>` : ''}
+          <div class="mu-bubble">${escHtml(msg.text)}</div>
+        </div>`).join('')}
+      ${m.sending ? `
+        <div class="mu-msg assistant">
+          <div class="mu-avatar-sm">🧠</div>
+          <div class="mu-bubble"><span class="typing"><span></span><span></span><span></span></span></div>
+        </div>` : ''}
+    </div>
+    <div class="mu-suggest">
+      ${suggested.map(s => `<button class="mu-chip" data-suggest="${escHtml(s)}">${escHtml(s)}</button>`).join('')}
+    </div>
+    <div class="mu-input-row">
+      <input id="mu-input" placeholder="Ask Mini-UT anything about a proposal, client, pricing, or team…" ${m.sending?'disabled':''} />
+      <button class="btn btn-primary" id="mu-send" ${m.sending?'disabled':''}>Send →</button>
+    </div>
+  </div>`;
+}
+
+function pricingPage() {
+  const scenarios = [
+    { label:'First Delivery', learner:'₹9,444', total:'₹5,66,640', badgeText:'BRAND NEW', color:COLORS.orange },
+    { label:'2nd Delivery (Same SME)', learner:'₹6,500', total:'₹3,90,000', badgeText:'RECOMMENDED', color:COLORS.green },
+    { label:'Commit 2 Cohorts Upfront', learner:'₹7,200', total:'₹4,32,000', badgeText:'BEST FOR SCALE', color:COLORS.purple }
+  ];
+  const breakdown = [
+    { item:'Curriculum Development', cost:'₹3,20,000', pct:57 },
+    { item:'Live Delivery (India SME × 3 days)', cost:'₹1,98,000', pct:35 },
+    { item:'TA Support', cost:'₹32,000', pct:6 },
+    { item:'Review & QA', cost:'₹16,640', pct:3 }
+  ];
+  const tips = [
+    { tip:'Exclude Nuvepro', save:'Save ₹2,823', desc:'Bosch likely has own VMs' },
+    { tip:'Tier-1 India SME', save:'Save ~30%', desc:'If FAANG+ budget unavailable' },
+    { tip:'Commit 2nd cohort', save:'Save 31%', desc:'Recurring curriculum amort.' }
+  ];
+  return `
+  <div class="page fade-in">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;flex-wrap:wrap;gap:12px">
+      <div>
+        <h1 style="margin:0;font-size:22px;font-weight:700">Pricing Optimizer</h1>
+        <p style="color:var(--textMuted);font-size:13px;margin:4px 0 0">Bosch India · 60 Engineers · 3 days · India SME</p>
+      </div>
+      <div class="pricing-tabs">
+        ${['scenarios','breakdown','customize'].map(t => `
+          <button class="pricing-tab ${state.pricing.tab===t?'active':''}" data-ptab="${t}">${t}</button>
+        `).join('')}
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:18px">
+      ${scenarios.map(s => `
+        <div class="scenario-card" style="border-color:${s.color}55;background:${s.color}0a">
+          ${badge(s.badgeText, s.color)}
+          <div style="font-weight:700;font-size:15px;margin-top:12px">${s.label}</div>
+          <div class="price" style="color:${s.color}">${s.learner}</div>
+          <div class="per">per learner</div>
+          <div class="total">Total: <strong>${s.total}</strong></div>
+        </div>`).join('')}
+    </div>
+    <div style="display:grid;grid-template-columns:1.5fr 1fr;gap:16px">
+      <div class="card">
+        <div style="font-weight:700;font-size:14px;margin-bottom:14px">Cost Breakdown — Scenario A</div>
+        ${breakdown.map(r => `
+          <div style="margin-bottom:14px">
+            <div style="display:flex;justify-content:space-between;margin-bottom:5px;font-size:12px">
+              <span style="color:var(--textMuted)">${r.item}</span>
+              <span style="font-weight:600">${r.cost}</span>
+            </div>
+            <div class="grad-bar" style="height:5px"><div class="fill" style="width:${r.pct}%"></div></div>
+          </div>`).join('')}
+      </div>
+      <div class="card">
+        <div style="font-weight:700;font-size:14px;margin-bottom:14px">India Optimization Tips</div>
+        ${tips.map(t => `
+          <div class="tip-row">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:8px">
+              <span style="font-size:12.5px;font-weight:600">${t.tip}</span>
+              ${badge(t.save, COLORS.green)}
+            </div>
+            <div style="color:var(--textDim);font-size:11px;margin-top:3px">${t.desc}</div>
+          </div>`).join('')}
+        <a href="https://chatgpt.com/g/g-683e978f6db88191813f1ead07823bdf-b2b-overall-costing-template" target="_blank" rel="noopener" style="display:block;text-align:center;margin-top:12px;background:${COLORS.orange}22;border:1px solid ${COLORS.orange}55;color:${COLORS.orange};padding:8px;border-radius:8px;font-size:11px;font-weight:700;text-decoration:none">↗ Open Custom GPT for Advanced Modeling</a>
+      </div>
+    </div>
+  </div>`;
+}
+
+function knowledgePage() {
+  const k = state.knowledge;
+  return `
+  <div class="page fade-in">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;flex-wrap:wrap;gap:12px">
+      <div>
+        <h1 style="margin:0;font-size:22px;font-weight:700">Knowledge Base</h1>
+        <p style="color:var(--textMuted);font-size:13px;margin:4px 0 0">Live from Google Drive · "1. PowerUp" shared folder</p>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="width:6px;height:6px;border-radius:999px;background:${k.loading?COLORS.yellow:COLORS.green};box-shadow:0 0 6px ${k.loading?COLORS.yellow:COLORS.green}"></span>
+        <span style="color:var(--textDim);font-size:11px">${k.loading?'Syncing…':(k.loaded ? k.files.length+' items synced' : 'Ready to sync')}</span>
+        <button class="btn btn-ghost btn-sm" id="kb-refresh">↻ Refresh</button>
+      </div>
+    </div>
+    <div class="kb-grid">
+      ${[
+        { label:'Client Folders', count: k.loaded ? k.files.filter(f => (f.mimeType||'').endsWith('folder')).length : '—', icon:'📁' },
+        { label:'Decks (Slides)', count: k.loaded ? k.files.filter(f => (f.mimeType||'').includes('presentation')).length : '—', icon:'🎞️' },
+        { label:'Documents', count: k.loaded ? k.files.filter(f => (f.mimeType||'').includes('document') || (f.mimeType||'').includes('wordprocessing')).length : '—', icon:'📄' },
+        { label:'Sheets', count: k.loaded ? k.files.filter(f => (f.mimeType||'').includes('spreadsheet')).length : '—', icon:'📊' }
+      ].map(s => `
+        <div class="card kb-stat">
+          <div class="ico">${s.icon}</div>
+          <div class="num">${s.count}</div>
+          <div class="lbl">${s.label}</div>
+        </div>`).join('')}
+    </div>
+    <input id="kb-search" placeholder="Search proposals, clients, SMEs…" value="${escHtml(k.search)}" style="width:100%;padding:11px 16px;font-size:13px;margin-bottom:14px"/>
+    <div id="kb-list">${renderKbList()}</div>
+    <div style="margin-top:22px;padding:16px;background:rgba(123,94,167,0.08);border:1px solid rgba(123,94,167,0.25);border-radius:12px">
+      <div style="font-weight:700;font-size:14px;margin-bottom:12px">🚀 Take this further</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px">
+        ${[
+          { label:'🎙️ Export to NotebookLM', desc:'Audio overview of proposals' },
+          { label:'📊 Open in Sheets', desc:'Full pricing database' },
+          { label:'🤖 Sync from Slack', desc:'Add team conversation context' },
+          { label:'📧 Weekly digest to team', desc:'Mon morning summary' }
+        ].map(a => `
+          <div class="card hover" style="padding:11px 14px">
+            <div style="font-size:12.5px;font-weight:600">${a.label}</div>
+            <div style="color:var(--textDim);font-size:11px;margin-top:2px">${a.desc}</div>
+          </div>`).join('')}
+      </div>
+    </div>
+  </div>`;
+}
+
+function renderKbList() {
+  const k = state.knowledge;
+  if (k.loading) return `<div class="loading-row"><div class="spinner"></div><span>Pulling latest from Drive…</span></div>`;
+  if (k.error) return `<div class="error-box"><strong>Drive sync failed:</strong> ${escHtml(k.error)}<br/><span style="color:var(--textMuted);font-size:11px">Check the Drive connector is active in Cowork settings.</span></div>`;
+  if (!k.loaded || !k.files.length) return `<div class="loading-row"><span>Click <strong>↻ Refresh</strong> to sync from Drive.</span></div>`;
+  const s = (k.search || '').toLowerCase().trim();
+  const filtered = !s ? k.files : k.files.filter(f => (f.title||'').toLowerCase().includes(s));
+  if (!filtered.length) return `<div style="color:var(--textMuted);font-size:13px;text-align:center;padding:24px">No matches for "${escHtml(s)}".</div>`;
+  return `
+  <div style="display:flex;flex-direction:column;gap:6px;max-height:520px;overflow-y:auto;padding-right:4px">
+    ${filtered.slice(0, 80).map(f => {
+      const mt = f.mimeType || '';
+      const isFolder = mt.endsWith('folder');
+      const isSlides = mt.includes('presentation');
+      const isSheet = mt.includes('spreadsheet');
+      const isDoc = mt.includes('document') || mt.includes('wordprocessing');
+      const icon = isFolder ? '📁' : isSlides ? '🎞️' : isSheet ? '📊' : isDoc ? '📄' : '📎';
+      const typeColor = isFolder ? COLORS.purple : isSlides ? COLORS.orange : isSheet ? COLORS.green : COLORS.blue;
+      const typeLabel = isFolder ? 'Folder' : isSlides ? 'Deck' : isSheet ? 'Sheet' : isDoc ? 'Doc' : 'File';
+      const date = f.modifiedTime ? new Date(f.modifiedTime).toLocaleDateString('en-US', { month:'short', day:'numeric', year:'2-digit' }) : '';
+      const owner = f.owner ? f.owner.split('@')[0] : '';
+      const url = escHtml(f.viewUrl || '#');
+      return `
+        <div class="card hover kb-row" onclick="window.open('${url}','_blank')">
+          <span style="font-size:17px">${icon}</span>
+          ${badge(typeLabel, typeColor)}
+          <div style="flex:1;font-size:12.5px;font-weight:600;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${escHtml(f.title || 'Untitled')}</div>
+          <div style="color:var(--textDim);font-size:11px;min-width:65px;text-align:right">${date}</div>
+          ${owner ? `<div style="color:var(--textDim);font-size:11px;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${escHtml(owner)}</div>` : ''}
+        </div>`;
+    }).join('')}
+  </div>`;
+}
+
+// ============================================================================
+// RFP PARSING (askClaude)
+// ============================================================================
+async function runRFPParse() {
+  const text = $('rfp-text').value.trim();
+  if (!text) return;
+  state.rfp.text = text;
+  state.rfp.parsing = true;
+  state.rfp.error = null;
+  render();
+
+  if (!window.cowork || typeof window.cowork.askClaude !== 'function') {
+    state.rfp.parsing = false;
+    state.rfp.error = 'Cowork bridge unavailable — open this from the Cowork sidebar.';
+    render();
+    return;
+  }
+
+  const prompt = `You are Mini-UT, the pre-sales orchestrator for Acceler (Interview Kickstart's B2B division). Parse the RFP/notes below into a structured object.
+
+Return ONLY valid JSON (no prose, no code fences) with these keys:
+- client: string (company name)
+- audience: string (role + seniority)
+- cohort_size: string (e.g. "60 learners")
+- duration: string (e.g. "3 days", "15 hours self-paced")
+- geography: string ("India" | "US" | "Global" | etc.)
+- delivery: string ("Self-Paced" | "Fully Live" | "Blended" | "Multi-Day Live")
+- objective: string (one sentence)
+- curriculum_status: string ("Existing — AI Leaders template" | "Partial reuse — needs custom Day 2" | "100% new — full curriculum dev")
+- complexity: number 1-10
+- questions: array of strings (gaps to ask client; only what's truly missing)
+- routing: object with keys like template, npt, soham, sme_tier (string values)
+- similar: array of 2-3 strings (past Acceler proposals this resembles)
+
+RFP/notes:
+---
+${text}
+---
+
+Return only the JSON.`;
+
+  try {
+    const resp = await window.cowork.askClaude(prompt, []);
+    let raw = unwrapClaude(resp).trim();
+    raw = raw.replace(/^```(?:json)?\s*/i, '').replace(/```\s*$/, '');
+    const m = raw.match(/\{[\s\S]*\}/);
+    state.rfp.parsed = JSON.parse(m ? m[0] : raw);
+  } catch (e) {
+    console.error('RFP parse error:', e);
+    state.rfp.error = 'Couldn\'t parse the response — try again or rephrase the RFP. (' + (e && e.message ? e.message : e) + ')';
+  } finally {
+    state.rfp.parsing = false;
+    render();
+  }
+}
+
+// ============================================================================
+// MINI-UT CHAT
+// ============================================================================
+const MINIUT_SYSTEM = `You are Mini-UT — pre-sales orchestrator agent for Acceler (Interview Kickstart's B2B division). You replicate Utkarsh's judgment, routing, and decision-making.
+
+You know:
+• Acceler offers standard programmes: AI Leaders (execs), AI Builders (engineers), AI Enablers (mixed audiences). Also fully custom (e.g., Cornerstone multi-persona).
+• Past clients (~50 accounts): LatentView, Nucleus Software, e&, Bosch India, Capgemini, Cornerstone, Booking Holdings, Gryphon, Deloitte/Ooredoo, Maruti, Schneider, Voya, Iopex, Diebold Nixdorf, MCB, Mubadala, Marriott, Akamai, Societe Generale, BNP, PwC, Carrier, Lowe's, Walmart, Honeywell, Airbus, Sony India, Cipla, IGT, and many more.
+• People & routing:
+  - Soham (CPTO) — technical review gate, curriculum accuracy
+  - Aashish — positioning, framing, founders' office
+  - Amit — India B2B commercial gate
+  - Anshuman — global commercial gate
+  - Shashi — NPT lead, software eng/legacy
+  - Animesh — SRE / DevOps / Cloud SME network
+  - Karthika — ML/AI depth, content quality benchmark
+  - Tanvinder — infra, VMs, Nuvepro, troubleshooting
+  - Navdeep — Pro Code / SME coordination
+  - Vineet — interview prep SMEs
+• Pricing: India SME ~$55/hr base, US SME ~$100/hr, Tier-1 India ~$30–40/hr equivalent (budget tier), FAANG+ premium. Nuvepro infra = ~$2,823 (often excludable if client has own VMs).
+• 3 pricing scenarios per proposal: First Delivery (full curriculum dev), Second Delivery (same SME, lower dev cost), Same SME Repeat. India needs 40–70% optimisation typically.
+• Curriculum match rules: if Acceler already has the standard curriculum (AI Leaders/Builders/Enablers), pricing reduces; 100% new = full curriculum-dev cost.
+• Escalation: deep Soham review when audience = non-tech, scope = new content, or concept outside standard stack. Otherwise quick Soham review focused on pricing.
+
+Be direct, action-oriented, and specific. Give a structured recommendation with reasoning and concrete next steps. Use markdown sparingly (bold for emphasis, • bullets for short lists). Don't over-format. If you don't know something specific to this proposal, say so and ask for the missing input.`;
+
+async function runMiniUT(text) {
+  text = (text || '').trim();
+  if (!text || state.miniut.sending) return;
+  state.miniut.messages.push({ role:'user', text });
+  state.miniut.sending = true;
+  render();
+
+  if (!window.cowork || typeof window.cowork.askClaude !== 'function') {
+    state.miniut.messages.push({ role:'assistant', text:'⚠ Cowork bridge unavailable — open this from the Cowork sidebar (window.cowork.askClaude is missing).' });
+    state.miniut.sending = false;
+    render();
+    return;
+  }
+
+  const history = state.miniut.messages.map(m => `${m.role === 'user' ? 'Utkarsh' : 'Mini-UT'}: ${m.text}`).join('\n\n');
+  const prompt = `${MINIUT_SYSTEM}\n\n--- CONVERSATION ---\n${history}\n\nMini-UT:`;
+
+  try {
+    const resp = await window.cowork.askClaude(prompt, []);
+    const reply = unwrapClaude(resp).trim().replace(/^Mini-UT:\s*/i, '');
+    state.miniut.messages.push({ role:'assistant', text: reply || '(no response — try again)' });
+  } catch (e) {
+    console.error(e);
+    state.miniut.messages.push({ role:'assistant', text: '⚠ Lost connection to Claude. ' + (e && e.message ? e.message : '') });
+  } finally {
+    state.miniut.sending = false;
+    render();
+  }
+}
+
+function scrollMessagesToBottom() {
+  const el = $('mu-msgs');
+  if (el) el.scrollTop = el.scrollHeight;
+}
+
+// ============================================================================
+// KNOWLEDGE BASE (Drive MCP)
+// ============================================================================
+async function loadKnowledge() {
+  state.knowledge.loading = true;
+  state.knowledge.error = null;
+  render();
+
+  if (!window.cowork || typeof window.cowork.callMcpTool !== 'function') {
+    state.knowledge.loading = false;
+    state.knowledge.error = 'Cowork bridge unavailable — Drive can only be queried from inside Cowork.';
+    render();
+    return;
+  }
+
+  try {
+    const resp = await window.cowork.callMcpTool(DRIVE_SEARCH_TOOL, {
+      query: `parentId = '${POWERUP_FOLDER_ID}'`,
+      pageSize: 80,
+      excludeContentSnippets: true
+    });
+    // Normalize many possible response shapes
+    let data = resp;
+    if (typeof data === 'string') { try { data = JSON.parse(data); } catch (_) {} }
+    if (data && Array.isArray(data.content)) {
+      const txt = data.content.map(c => c && c.text || '').join('');
+      try { data = JSON.parse(txt); } catch (_) {}
+    }
+    const files = (data && data.files) || (data && data.result && data.result.files) || [];
+    state.knowledge.files = files;
+    state.knowledge.loaded = true;
+  } catch (e) {
+    console.error('Drive load error:', e);
+    state.knowledge.error = (e && e.message) ? e.message : String(e);
+  } finally {
+    state.knowledge.loading = false;
+    render();
+  }
+}
+
+// ============================================================================
+// RENDER + EVENTS
+// ============================================================================
+function render() {
+  renderNav();
+  const main = $('main');
+  let body;
+  switch (state.active) {
+    case 'rfp': body = rfpPage(); break;
+    case 'miniut': body = miniutPage(); break;
+    case 'proposals': body = dashboardPage(); break;
+    case 'pricing': body = pricingPage(); break;
+    case 'knowledge': body = knowledgePage(); break;
+    default: body = dashboardPage();
+  }
+  main.innerHTML = body;
+  attachHandlers();
+  if (state.active === 'miniut') setTimeout(scrollMessagesToBottom, 0);
+}
+
+function attachHandlers() {
+  document.querySelectorAll('[data-nav]').forEach(el =>
+    el.addEventListener('click', e => { e.stopPropagation(); navigate(el.dataset.nav); })
+  );
+
+  // RFP
+  const rfpGo = $('rfp-go'); if (rfpGo) rfpGo.addEventListener('click', runRFPParse);
+  const rfpClear = $('rfp-clear'); if (rfpClear) rfpClear.addEventListener('click', () => {
+    state.rfp = { text:'', parsing:false, parsed:null, error:null };
+    render();
+  });
+  const rfpText = $('rfp-text');
+  if (rfpText) rfpText.addEventListener('input', () => { state.rfp.text = rfpText.value; });
+
+  // Mini-UT
+  const mInput = $('mu-input');
+  if (mInput) {
+    mInput.addEventListener('keydown', e => {
+      if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); const v = mInput.value; mInput.value=''; runMiniUT(v); }
+    });
+    mInput.focus();
+  }
+  const mSend = $('mu-send');
+  if (mSend) mSend.addEventListener('click', () => { const v = $('mu-input').value; $('mu-input').value=''; runMiniUT(v); });
+  document.querySelectorAll('[data-suggest]').forEach(el =>
+    el.addEventListener('click', () => runMiniUT(el.dataset.suggest))
+  );
+
+  // Pricing tabs
+  document.querySelectorAll('[data-ptab]').forEach(el =>
+    el.addEventListener('click', () => { state.pricing.tab = el.dataset.ptab; render(); })
+  );
+
+  // Knowledge base
+  const kbR = $('kb-refresh'); if (kbR) kbR.addEventListener('click', loadKnowledge);
+  const kbSearch = $('kb-search');
+  if (kbSearch) {
+    kbSearch.addEventListener('input', () => {
+      state.knowledge.search = kbSearch.value;
+      // partial re-render: only the list
+      const listEl = $('kb-list');
+      if (listEl) listEl.innerHTML = renderKbList();
+    });
+  }
+}
+
+// ============================================================================
+// BOOT
+// ============================================================================
+if (document.readyState !== 'loading') render();
+else document.addEventListener('DOMContentLoaded', render);
+</script>
+</body>
+</html>

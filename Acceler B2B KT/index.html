@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acceler B2B · Pre-Sales → Delivery · Interactive KT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --deep:#20243A; --deep2:#6167FA; --navy:#1A2240; --navy2:#6167FA;
+    --cyan:#F86B3C; --cyan-d:#D9531C; --cyan-soft:#FCEBE2;
+    --indigo:#6167FA; --indigo-soft:#ECEAFE;
+    --ink:#1A2240; --text2:#475569; --muted:#7A8499;
+    --paper:#ECEEF3; --card:#fff; --line:#DCE2EE;
+    --green:#10B981; --green-l:#E9FBF3; --amber:#E08A00; --amber-l:#FFF6E8; --red:#E23D44; --red-l:#FDEEEE;
+    --font:"DM Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Inter","Helvetica Neue",Arial,sans-serif;
+    --serif:"Poppins",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    --mono:"SF Mono",Monaco,"Cascadia Code",monospace;
+    --shadow:0 18px 50px -16px rgba(15,24,56,.28);
+  }
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+  html{-webkit-font-smoothing:antialiased;}
+  body{background:var(--deep);color:var(--ink);font-family:var(--font);overflow:hidden;height:100vh;width:100vw;}
+  .deck{width:100vw;height:100vh;position:relative;}
+  .slide{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;
+    padding:50px 64px 76px;opacity:0;pointer-events:none;transition:opacity .45s ease;background:var(--paper);overflow:hidden;}
+  .slide.active{opacity:1;pointer-events:auto;}
+  .inner{max-width:1200px;width:100%;position:relative;z-index:2;}
+  /* full-bleed official-slide images */
+  .imgslide{padding:0;background:var(--paper);}
+  .imgslide img{width:100%;height:100%;object-fit:contain;display:block;}
+  /* numbered link chips (link index) */
+  .lk{display:inline-flex;align-items:center;justify-content:center;width:25px;height:25px;border-radius:7px;background:var(--cyan-soft);color:var(--cyan-d);font-weight:800;font-size:12px;text-decoration:none;margin:2px;border:1px solid #F6D2C2;transition:.15s;}
+  .lk:hover{background:var(--cyan);color:#fff;border-color:var(--cyan);transform:translateY(-1px);}
+  /* interactive agenda */
+  .agrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+  .agtile{cursor:pointer;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;transition:.25s;box-shadow:0 6px 18px -12px rgba(15,24,56,.3);display:flex;flex-direction:column;gap:4px;font-family:var(--font);}
+  .agtile:hover{transform:translateY(-4px);border-color:var(--cyan);box-shadow:0 14px 30px -16px var(--cyan-d);}
+  .agtile .agn{font-family:var(--serif);font-weight:800;font-size:22px;color:var(--cyan-d);line-height:1;}
+  .agtile .agt{font-weight:800;font-size:15px;color:var(--ink);}
+  .agtile .agd{font-size:11.5px;color:var(--text2);line-height:1.35;}
+  /* image lightbox */
+  .imgslide img{cursor:zoom-in;}
+  #lightbox{position:fixed;inset:0;background:rgba(20,24,46,.93);z-index:400;display:none;align-items:center;justify-content:center;cursor:zoom-out;padding:28px;}
+  #lightbox.on{display:flex;}
+  #lightbox img{max-width:96%;max-height:96%;border-radius:8px;box-shadow:0 30px 80px rgba(0,0,0,.5);}
+
+  /* ---------- entrance animation ---------- */
+  .reveal{opacity:0;transform:translateY(20px);transition:opacity .6s cubic-bezier(.2,.7,.2,1),transform .6s cubic-bezier(.2,.7,.2,1);}
+  .slide.active .reveal{opacity:1;transform:none;transition-delay:calc(var(--i,0)*75ms);}
+  .pop{opacity:0;transform:scale(.9);transition:opacity .5s ease,transform .5s cubic-bezier(.2,.9,.3,1.2);}
+  .slide.active .pop{opacity:1;transform:none;transition-delay:calc(var(--i,0)*60ms);}
+
+  /* ---------- typography ---------- */
+  .eyebrow{font-size:12.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan-d);margin-bottom:14px;display:flex;align-items:center;gap:9px;}
+  .eyebrow::before{content:"";width:26px;height:2px;background:var(--cyan);border-radius:2px;}
+  .h{font-size:clamp(26px,3.1vw,40px);font-weight:850;letter-spacing:-.02em;line-height:1.12;color:var(--ink);}
+  .h .ac{color:var(--cyan-d);}
+  .lead{font-size:17px;line-height:1.6;color:var(--text2);max-width:880px;margin-top:12px;}
+  .shead{margin-bottom:26px;}
+  /* house typography · DM Serif Display headlines (KASE system) */
+  .cover h1,.section h2,.h,.result .rt,.fdetail h4,.scen .st{font-family:var(--serif);font-weight:700;letter-spacing:-.02em;}
+
+  /* ---------- chrome ---------- */
+  .progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--indigo));z-index:200;transition:width .45s ease;box-shadow:0 0 12px var(--cyan);}
+  .zone{position:fixed;top:0;width:9%;height:100%;z-index:40;cursor:pointer;}.zone--prev{left:0;}.zone--next{right:0;}
+  .fs{position:fixed;bottom:16px;left:18px;z-index:130;width:34px;height:34px;border-radius:9px;border:1px solid var(--line);background:#fff;color:var(--navy);font-size:15px;cursor:pointer;box-shadow:0 4px 14px -6px rgba(15,24,56,.3);}
+  .fs:hover{border-color:var(--cyan);color:var(--cyan-d);}
+  .brand{position:fixed;bottom:14px;right:18px;z-index:130;background:#fff;padding:6px 12px;border-radius:9px;box-shadow:0 6px 20px rgba(0,0,0,.18);}
+  .brand img{height:18px;display:block;}
+  .nav{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:9px;align-items:center;
+    background:rgba(10,14,34,.62);padding:8px 14px;border-radius:999px;backdrop-filter:blur(12px);z-index:120;border:1px solid rgba(255,255,255,.08);}
+  .nav button{background:rgba(255,255,255,.14);border:0;color:#fff;width:30px;height:30px;border-radius:999px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;transition:.2s;}
+  .nav button:hover{background:var(--cyan);color:var(--deep);}
+  .nav .count{color:#fff;font-size:12px;padding:0 10px;font-variant-numeric:tabular-nums;font-weight:700;letter-spacing:.04em;}
+  .nav .dots{display:flex;gap:5px;max-width:42vw;overflow-x:auto;}
+  .nav .dots::-webkit-scrollbar{display:none;}
+  .nav .dot{width:7px;height:7px;border-radius:999px;background:rgba(255,255,255,.28);transition:.3s;cursor:pointer;flex-shrink:0;}
+  .nav .dot.active{background:var(--cyan);width:22px;box-shadow:0 0 8px var(--cyan);}
+  .hint{position:fixed;bottom:58px;left:50%;transform:translateX(-50%);z-index:120;font-size:11.5px;color:var(--muted);letter-spacing:.05em;}
+  .notes{position:fixed;bottom:0;left:0;right:0;background:rgba(8,11,31,.97);backdrop-filter:blur(12px);color:rgba(255,255,255,.88);padding:18px 40px;font-size:14.5px;line-height:1.6;z-index:300;transform:translateY(100%);transition:transform .3s;max-height:34vh;overflow-y:auto;border-top:2px solid var(--cyan);}
+  .notes.on{transform:translateY(0);}
+  .notes .nl{font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan);margin-bottom:6px;}
+
+  /* ---------- dark / cover / section ---------- */
+  .dark{background:
+    radial-gradient(1100px 620px at 82% -5%, rgba(248,107,60,.16) 0%, transparent 55%),
+    radial-gradient(900px 640px at -5% 105%, rgba(97,103,250,.15) 0%, transparent 55%),
+    linear-gradient(155deg,#EEF0F5 0%,#ECEEF3 55%,#F1EEF1 100%);}
+  .dark .h,.dark h1,.dark h2{color:var(--ink);} .dark .lead{color:var(--text2);} .dark .ac{color:var(--cyan-d);} .dark .eyebrow{color:var(--cyan-d);}
+  .mesh{position:absolute;inset:0;z-index:1;overflow:hidden;}
+  .mesh::before,.mesh::after{content:"";position:absolute;border-radius:50%;filter:blur(80px);opacity:.16;}
+  .mesh::before{width:520px;height:520px;background:radial-gradient(circle,#F86B3C,transparent 70%);top:-160px;right:-120px;animation:float1 14s ease-in-out infinite;}
+  .mesh::after{width:460px;height:460px;background:radial-gradient(circle,#6167FA,transparent 70%);bottom:-180px;left:-100px;animation:float2 17s ease-in-out infinite;}
+  @keyframes float1{50%{transform:translate(-40px,50px) scale(1.1);}}
+  @keyframes float2{50%{transform:translate(50px,-30px) scale(1.08);}}
+
+  .cover{justify-content:center;text-align:center;}
+  .cover .plate{display:flex;justify-content:center;width:100%;background:transparent;box-shadow:none;padding:0;margin-bottom:20px;}
+  .cover .plate img{height:42px;display:block;mix-blend-mode:multiply;}
+  .badge{display:inline-flex;gap:8px;align-items:center;background:var(--cyan-soft);border:1px solid #BFE7EE;color:var(--cyan-d);padding:9px 22px;border-radius:100px;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:22px;}
+  .cover h1{font-size:clamp(44px,6vw,82px);color:var(--navy);line-height:.98;font-weight:850;letter-spacing:-.03em;margin-bottom:18px;}
+  .cover h1 .ac{background:linear-gradient(120deg,#F86B3C,#FF9A6B);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+  .cover p{max-width:760px;margin:0 auto 30px;font-size:19px;color:var(--text2);line-height:1.55;}
+  .cover p b{color:var(--ink);}
+  .chips{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+  .chip{display:inline-flex;gap:9px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:100px;padding:11px 20px;font-size:14.5px;color:var(--ink);transition:.25s;box-shadow:0 6px 18px -12px rgba(15,24,56,.3);}
+  .chip:hover{border-color:var(--cyan);transform:translateY(-2px);box-shadow:0 12px 24px -14px var(--cyan-d);}
+  .chip b{color:var(--navy);}
+
+  .section{text-align:center;}
+  .section .num{font-size:90px;font-weight:850;line-height:1;background:linear-gradient(120deg,#F86B3C,#6167FA);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.04em;margin-bottom:6px;}
+  .section .pl{font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan-d);margin-bottom:14px;}
+  .section h2{font-size:clamp(34px,4.6vw,60px);color:var(--navy);font-weight:850;letter-spacing:-.025em;line-height:1.05;}
+  .section .sub{margin-top:16px;font-size:18px;color:var(--text2);max-width:680px;margin-left:auto;margin-right:auto;}
+
+  /* ---------- generic cards / grids ---------- */
+  .g2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+  .g3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  .g4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:var(--shadow);transition:transform .25s,box-shadow .25s,border-color .25s;}
+  .card.top{border-top:4px solid var(--cyan);}
+  .card.hover:hover{transform:translateY(-4px);border-color:var(--cyan);}
+  .card .t{font-size:18px;font-weight:800;color:var(--ink);margin-bottom:8px;display:flex;align-items:center;gap:9px;letter-spacing:-.01em;}
+  .card .d{font-size:13.5px;line-height:1.55;color:var(--text2);} .card .d b{color:var(--ink);}
+  .card ul{list-style:none;margin-top:8px;display:flex;flex-direction:column;gap:6px;}
+  .card li{font-size:13px;color:var(--ink);padding-left:18px;position:relative;line-height:1.45;}
+  .card li::before{content:'▸';position:absolute;left:0;color:var(--cyan-d);font-weight:800;}
+  .banner{margin-top:20px;background:linear-gradient(100deg,var(--navy),var(--navy2));color:#fff;border-radius:14px;padding:15px 22px;display:flex;gap:14px;align-items:center;font-size:14.5px;line-height:1.5;box-shadow:var(--shadow);}
+  .banner b{color:var(--cyan);} .banner .ic{font-size:22px;flex-shrink:0;}
+
+  /* ---------- stat counters ---------- */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 16px;text-align:center;box-shadow:var(--shadow);}
+  .stat .n{font-size:40px;font-weight:850;letter-spacing:-.03em;background:linear-gradient(120deg,var(--navy),var(--cyan));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1;}
+  .stat .l{font-size:11.5px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-top:8px;}
+
+  /* ---------- pipeline / workflow ---------- */
+  .flow{display:flex;align-items:stretch;gap:0;width:100%;}
+  .fstep{flex:1;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 14px;text-align:center;position:relative;box-shadow:var(--shadow);transition:.25s;}
+  .fstep:hover{transform:translateY(-3px);border-color:var(--cyan);}
+  .fstep .fi{font-size:25px;margin-bottom:7px;}
+  .fstep .ft{font-size:14px;font-weight:800;color:var(--ink);line-height:1.15;}
+  .fstep .fd{font-size:11.5px;color:var(--text2);line-height:1.35;margin-top:4px;}
+  .fstep .day{position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:var(--navy);color:#fff;font-size:9.5px;font-weight:800;letter-spacing:.05em;padding:2px 9px;border-radius:100px;white-space:nowrap;}
+  .farr{align-self:center;width:30px;flex-shrink:0;display:flex;align-items:center;justify-content:center;color:var(--cyan);position:relative;}
+  .farr svg{width:26px;height:14px;}
+  .farr .dash{stroke:var(--cyan);stroke-width:2.4;fill:none;stroke-dasharray:5 5;animation:dash 1s linear infinite;}
+  @keyframes dash{to{stroke-dashoffset:-20;}}
+  .fstep.hl{border-color:var(--cyan);box-shadow:0 0 0 2px var(--cyan-soft),var(--shadow);}
+  .fstep.gn{border-top:4px solid var(--green);} .fstep.cy{border-top:4px solid var(--cyan);} .fstep.am{border-top:4px solid var(--amber);}
+
+  /* ---------- interactive funnel ---------- */
+  .funnel{display:flex;gap:8px;width:100%;margin-bottom:18px;}
+  .fnode{flex:1;cursor:pointer;border:1.5px solid var(--line);background:var(--card);border-radius:13px;padding:16px 12px;text-align:center;transition:.25s;box-shadow:0 6px 18px -10px rgba(15,24,56,.3);}
+  .fnode:hover{transform:translateY(-3px);}
+  .fnode.on{border-color:var(--cyan);background:linear-gradient(180deg,#fff,var(--cyan-soft));box-shadow:0 0 0 3px var(--cyan-soft);}
+  .fnode .num{width:26px;height:26px;border-radius:8px;background:var(--navy);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;margin-bottom:8px;}
+  .fnode.on .num{background:var(--cyan);}
+  .fnode .ico{font-size:23px;}
+  .fnode .nm{font-size:13.5px;font-weight:800;color:var(--ink);margin-top:5px;line-height:1.15;}
+  .fdetail{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--cyan);border-radius:14px;padding:20px 24px;min-height:120px;box-shadow:var(--shadow);}
+  .fdetail h4{font-size:19px;font-weight:850;color:var(--ink);margin-bottom:7px;letter-spacing:-.01em;}
+  .fdetail p{font-size:14.5px;color:var(--text2);line-height:1.55;} .fdetail p b{color:var(--ink);}
+  .fdetail .who{display:inline-block;margin-top:10px;font-size:11.5px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--cyan-d);background:var(--cyan-soft);padding:5px 12px;border-radius:100px;}
+
+  /* ---------- tabs (track explorer) ---------- */
+  .tabs{display:flex;gap:8px;margin-bottom:18px;flex-wrap:wrap;}
+  .tab{cursor:pointer;border:1.5px solid var(--line);background:var(--card);border-radius:100px;padding:10px 18px;font-size:13.5px;font-weight:800;color:var(--text2);transition:.2s;display:flex;align-items:center;gap:7px;}
+  .tab:hover{border-color:var(--cyan);color:var(--ink);}
+  .tab.on{background:var(--navy);color:#fff;border-color:var(--navy);}
+  .tpanel{display:none;}
+  .tpanel.on{display:block;animation:fadeIn .4s ease;}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:none;}}
+  .tgrid{display:grid;grid-template-columns:1.15fr 1fr;gap:18px;}
+  .arc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:6px;}
+  .arc span{background:var(--cyan-soft);color:var(--navy);border:1px solid #c7e9f4;border-radius:8px;padding:5px 10px;font-size:12px;font-weight:700;}
+  .arc i{color:var(--cyan);font-style:normal;font-weight:800;}
+  .btnlink{display:inline-flex;align-items:center;gap:7px;background:var(--cyan);color:var(--deep);font-weight:800;font-size:13px;text-decoration:none;border-radius:9px;padding:9px 16px;margin-top:12px;transition:.2s;}
+  .btnlink:hover{background:#5fcdf0;transform:translateY(-2px);}
+  .pillrow{display:flex;gap:7px;flex-wrap:wrap;margin-top:6px;}
+  .pill{font-size:11.5px;font-weight:700;color:var(--text2);background:var(--paper);border:1px solid var(--line);border-radius:100px;padding:5px 11px;}
+
+  /* ---------- AIQ ladder ---------- */
+  .ladder{display:flex;flex-direction:column-reverse;gap:6px;}
+  .rung{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:11px;padding:11px 16px;cursor:default;transition:.2s;box-shadow:0 4px 14px -10px rgba(15,24,56,.3);}
+  .rung:hover{transform:translateX(6px);border-color:var(--cyan);}
+  .rung .lv{width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;flex-shrink:0;}
+  .rung .nm{font-weight:800;font-size:14.5px;color:var(--ink);}
+  .rung .ds{font-size:12px;color:var(--text2);}
+  .band{font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:6px;margin-left:auto;white-space:nowrap;}
+  .band.aug{background:var(--cyan-soft);color:var(--cyan-d);} .band.tr{background:var(--indigo-soft);color:var(--indigo);}
+
+  /* ---------- pricing toggle ---------- */
+  .seg{display:inline-flex;background:var(--paper);border:1px solid var(--line);border-radius:100px;padding:4px;margin-bottom:16px;}
+  .seg button{border:0;background:transparent;padding:9px 22px;border-radius:100px;font-size:13.5px;font-weight:800;color:var(--text2);cursor:pointer;transition:.2s;}
+  .seg button.on{background:var(--navy);color:#fff;box-shadow:0 4px 12px -4px var(--navy);}
+  .stack{display:flex;flex-direction:column;gap:8px;}
+  .bar{display:grid;grid-template-columns:160px 1fr 118px;align-items:center;gap:12px;}
+  .bar .bl{font-size:13px;font-weight:700;color:var(--ink);text-align:right;}
+  .bar .track{height:30px;background:var(--paper);border-radius:8px;overflow:hidden;border:1px solid var(--line);}
+  .bar .fill{height:100%;border-radius:8px 0 0 8px;width:0;transition:width .8s cubic-bezier(.2,.8,.2,1);background:linear-gradient(90deg,var(--navy),var(--cyan));}
+  .bar .bv{font-size:13px;font-weight:800;color:var(--navy);font-variant-numeric:tabular-nums;}
+  .bar.tot .bl,.bar.tot .bv{color:var(--cyan-d);font-size:14px;}
+  .bar.tot .fill{background:linear-gradient(90deg,var(--cyan-d),#5fcdf0);}
+
+  /* ---------- discovery gauge ---------- */
+  .discwrap{display:grid;grid-template-columns:230px 1fr;gap:26px;align-items:center;}
+  .gauge{position:relative;width:200px;height:200px;margin:0 auto;border-radius:50%;
+    background:conic-gradient(var(--cyan) 0deg, var(--cyan) var(--deg,0deg), #E7EBF5 var(--deg,0deg));transition:--deg .5s;}
+  .gauge::after{content:"";position:absolute;inset:18px;border-radius:50%;background:var(--paper);}
+  .gauge .gv{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:2;}
+  .gauge .gv .pct{font-size:46px;font-weight:850;color:var(--ink);line-height:1;}
+  .gauge .gv .gl{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-top:4px;}
+  .gauge.go .pct{color:var(--green);} .gauge.go{background:conic-gradient(var(--green) 0deg,var(--green) var(--deg,0deg),#E7EBF5 var(--deg,0deg));}
+  .checks{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+  .chk{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 13px;cursor:pointer;transition:.18s;font-size:13px;color:var(--ink);}
+  .chk:hover{border-color:var(--cyan);}
+  .chk .box{width:18px;height:18px;border-radius:5px;border:2px solid var(--line);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:12px;color:#fff;transition:.18s;}
+  .chk.on{background:var(--cyan-soft);border-color:var(--cyan);} .chk.on .box{background:var(--cyan);border-color:var(--cyan);}
+
+  /* ---------- scenarios (expandable) ---------- */
+  .scens{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;}
+  .scen{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--cyan);border-radius:13px;padding:16px 18px;cursor:pointer;transition:.25s;box-shadow:0 6px 18px -12px rgba(15,24,56,.3);}
+  .scen:hover{border-color:var(--cyan);}
+  .scen .sh{display:flex;align-items:center;justify-content:space-between;gap:10px;}
+  .scen .st{font-size:15.5px;font-weight:800;color:var(--ink);}
+  .scen .tog{color:var(--cyan-d);font-weight:800;font-size:18px;transition:transform .3s;}
+  .scen.open .tog{transform:rotate(45deg);}
+  .scen .body{max-height:0;overflow:hidden;transition:max-height .35s ease;}
+  .scen.open .body{max-height:300px;}
+  .scen .qa{display:grid;grid-template-columns:62px 1fr;gap:6px 12px;font-size:12.5px;margin-top:12px;}
+  .scen .qa .k{font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding-top:2px;}
+  .scen .qa .k.r{color:var(--navy);} .scen .qa .k.m{color:var(--green);} .scen .qa .k.a{color:var(--red);}
+  .scen .qa .v{color:var(--text2);line-height:1.5;}
+
+  /* ---------- accounts filter ---------- */
+  .filt{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap;}
+  .filt button{cursor:pointer;border:1.5px solid var(--line);background:var(--card);border-radius:100px;padding:8px 16px;font-size:12.5px;font-weight:800;color:var(--text2);transition:.2s;}
+  .filt button.on{background:var(--navy);color:#fff;border-color:var(--navy);}
+  .acct{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;}
+  .acard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 15px;transition:.3s;box-shadow:0 5px 16px -12px rgba(15,24,56,.3);}
+  .acard.hide{display:none;}
+  .acard .an{font-size:13.5px;font-weight:800;color:var(--ink);display:flex;justify-content:space-between;gap:6px;align-items:flex-start;}
+  .acard .ad{font-size:11px;color:var(--text2);margin-top:5px;line-height:1.4;}
+  .tagp{font-size:8.5px;letter-spacing:.05em;text-transform:uppercase;font-weight:800;padding:3px 7px;border-radius:4px;white-space:nowrap;}
+  .tagp.hot{background:var(--red-l);color:var(--red);} .tagp.ref{background:var(--green-l);color:var(--green);}
+  .tagp.warm{background:var(--amber-l);color:var(--amber);} .tagp.del{background:#E0F2FE;color:#0369A1;}
+
+  /* ---------- link tiles ---------- */
+  .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;}
+  .tile{display:flex;flex-direction:column;gap:6px;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:17px 16px;transition:.25s;box-shadow:0 6px 18px -12px rgba(15,24,56,.3);}
+  .tile:hover{transform:translateY(-4px);border-color:var(--cyan);box-shadow:0 14px 30px -16px var(--cyan-d);}
+  .tile .ti{font-size:24px;} .tile .tn{font-size:14.5px;font-weight:800;color:var(--ink);} .tile .tx{font-size:11.5px;color:var(--text2);line-height:1.4;}
+  .tile .go{margin-top:auto;font-size:11px;font-weight:800;color:var(--cyan-d);letter-spacing:.04em;}
+
+  /* ---------- folder ---------- */
+  .folder{background:#0B1130;color:#fff;border-radius:14px;padding:18px 22px;font-family:var(--mono);font-size:12.5px;line-height:1.85;box-shadow:var(--shadow);}
+  .folder .c{color:rgba(255,255,255,.45);} .folder b{color:var(--cyan);}
+
+  /* ---------- decision picker ---------- */
+  .picker{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start;}
+  .qcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .qcard .ql{font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;}
+  .opt{display:flex;gap:8px;flex-wrap:wrap;}
+  .opt button{cursor:pointer;border:1.5px solid var(--line);background:var(--paper);border-radius:10px;padding:11px 15px;font-size:13.5px;font-weight:700;color:var(--ink);transition:.2s;}
+  .opt button:hover{border-color:var(--cyan);}
+  .opt button.on{background:var(--navy);color:#fff;border-color:var(--navy);}
+  .result{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;border-radius:16px;padding:24px;min-height:200px;display:flex;flex-direction:column;justify-content:center;box-shadow:var(--shadow);}
+  .result .rl{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan);margin-bottom:8px;}
+  .result .rt{font-size:30px;font-weight:850;letter-spacing:-.02em;line-height:1.1;}
+  .result .rd{font-size:14px;color:rgba(255,255,255,.78);line-height:1.55;margin-top:10px;}
+  .result .esc{margin-top:14px;font-size:12.5px;background:rgba(255,255,255,.1);border-radius:10px;padding:10px 14px;color:#fff;}
+
+  /* ---------- timeline ---------- */
+  .tline{position:relative;padding-left:26px;}
+  .tline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--cyan),var(--navy));}
+  .trow{position:relative;margin-bottom:11px;background:var(--card);border:1px solid var(--line);border-radius:11px;padding:11px 16px;box-shadow:0 5px 16px -12px rgba(15,24,56,.3);}
+  .trow::before{content:"";position:absolute;left:-23px;top:15px;width:12px;height:12px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 4px var(--cyan-soft);}
+  .trow .wh{font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--cyan-d);font-weight:800;}
+  .trow .wt{font-size:13px;color:var(--ink);line-height:1.5;margin-top:2px;} .trow .wt b{color:var(--navy);}
+
+  table.tbl{width:100%;border-collapse:collapse;font-size:12.5px;background:#fff;border-radius:12px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);}
+  .tbl th{background:#EEF2FB;color:var(--ink);padding:10px 13px;text-align:left;font-weight:800;font-size:11.5px;}
+  .tbl td{padding:10px 13px;border-top:1px solid var(--line);vertical-align:top;line-height:1.45;}
+  .tbl td b{color:var(--ink);} .tbl a{color:var(--cyan-d);font-weight:700;text-decoration:none;} .tbl a:hover{text-decoration:underline;}
+
+  /* ---------- KT v2 · larger type + wider fit (content slides) ---------- */
+  .inner{max-width:1340px;}
+  .slide{padding:42px 54px 72px;}
+  .lead{font-size:18.5px;}
+  .card .t{font-size:19px;} .card .d{font-size:14.5px;} .card li{font-size:14px;}
+  .fdetail h4{font-size:21px;} .fdetail p{font-size:16px;} .fdetail .who{font-size:12.5px;}
+  .fstep .ft{font-size:15px;} .fstep .fd{font-size:12.5px;} .fstep .fi{font-size:27px;}
+  .fnode .nm{font-size:14.5px;} .fnode .ico{font-size:25px;}
+  table.tbl{font-size:13.5px;} .tbl th{font-size:12.5px;}
+  .tile .tn{font-size:15.5px;} .tile .tx{font-size:12.5px;} .tile .ti{font-size:26px;}
+  .agtile .agt{font-size:16px;} .agtile .agd{font-size:12.5px;} .agtile .agn{font-size:24px;}
+  .acard .an{font-size:14.5px;} .acard .ad{font-size:12px;}
+  .banner{font-size:15px;} .banner .ic{font-size:24px;}
+  .rung .nm{font-size:15.5px;} .rung .ds{font-size:12.5px;}
+  .stat .n{font-size:42px;} .stat .l{font-size:12px;}
+  .trow .wt{font-size:14px;} .trow .wh{font-size:11px;}
+  .scen .st{font-size:16.5px;} .scen .qa{font-size:13.5px;}
+  .eyebrow{font-size:13px;} .section .sub{font-size:19px;}
+  /* keep the hint clear of the nav pill (was overlapping at 100–110% zoom) */
+  .hint{bottom:66px;font-size:11px;background:rgba(255,255,255,.74);padding:4px 12px;border-radius:100px;backdrop-filter:blur(6px);box-shadow:0 4px 14px -8px rgba(15,24,56,.28);}
+  /* slimmer nav / slide bar · scales better across zoom levels */
+  .nav{gap:6px;padding:5px 9px;bottom:12px;max-width:min(820px,92vw);flex-wrap:nowrap;}
+  .nav button{width:26px;height:26px;font-size:14px;flex-shrink:0;}
+  .nav .count{font-size:11px;padding:0 8px;white-space:nowrap;flex-shrink:0;}
+  .nav .dots{gap:4px;max-width:min(44vw,470px);}
+  .nav .dot{width:6px;height:6px;}
+  .nav .dot.active{width:18px;}
+  .fs{width:30px;height:30px;font-size:14px;bottom:14px;left:14px;}
+  .brand{padding:5px 10px;bottom:12px;right:14px;} .brand img{height:16px;}
+  /* single-line section headings + trademark mark */
+  .section h2{white-space:nowrap;}
+  .section h2 br{display:none;}
+  /* standardized section dividers · heading is the hero, number a quiet badge */
+  .section .num{font-size:clamp(34px,3.4vw,46px);line-height:1;margin-bottom:10px;
+    -webkit-text-fill-color:initial;color:var(--cyan-d);background:none;
+    display:inline-flex;align-items:center;justify-content:center;min-width:64px;height:46px;
+    padding:0 14px;border-radius:14px;background:var(--cyan-soft);border:1px solid #F6D2C2;}
+  .section .pl{font-size:13px;letter-spacing:.24em;margin-bottom:16px;}
+  .section h2{font-size:clamp(40px,5.4vw,70px);}
+  .section .sub{margin-top:18px;}
+  .tm{font-size:.4em;vertical-align:super;font-weight:800;color:var(--cyan-d);margin-left:.04em;letter-spacing:0;}
+  @media (max-width:900px){ .section h2{white-space:normal;} }
+  @media (min-width:1700px){ .inner{max-width:1480px;} body{font-size:17px;} }
+
+  /* ============ RESPONSIVE · tablet ============ */
+  @media (max-width:1100px){
+    .inner{max-width:100%;}
+    .slide{padding:36px 38px 72px;}
+    .g4{grid-template-columns:repeat(2,1fr);}
+    .acct{grid-template-columns:repeat(3,1fr);}
+    .tiles{grid-template-columns:repeat(3,1fr);}
+    .agrid{grid-template-columns:repeat(2,1fr);}
+  }
+  /* ============ RESPONSIVE · phone ============ */
+  @media (max-width:820px){
+    body{overflow:hidden;}
+    /* let each slide scroll vertically, anchored to the top */
+    .slide{padding:28px 20px 104px;justify-content:flex-start;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;}
+    .slide.cover,.slide.section{justify-content:center;}
+    .inner{max-width:100%;}
+    .shead{margin-bottom:18px;}
+    /* collapse every multi-column grid */
+    .g2,.g3,.g4,.tgrid,.picker,.discwrap,.scens,.stats{grid-template-columns:1fr;}
+    .acct,.tiles,.agrid{grid-template-columns:repeat(2,1fr);}
+    /* horizontal pipelines → vertical stacks */
+    .flow{flex-direction:column;gap:10px;}
+    .flow .fstep{width:100%;}
+    .farr{transform:rotate(90deg);width:100%;height:16px;margin:-2px 0;}
+    .funnel{flex-wrap:wrap;}
+    .funnel .fnode{flex:1 1 42%;}
+    /* pricing bars + ladders read fine stacked */
+    .bar{grid-template-columns:84px 1fr 70px;gap:8px;}
+    .bar .bl{font-size:11.5px;} .bar .bv{font-size:11.5px;}
+    .ladder .rung{padding:10px 12px;}
+    /* readable type on small screens */
+    .h{font-size:clamp(24px,6.4vw,32px);}
+    .lead{font-size:16px;}
+    .section h2{white-space:normal;font-size:clamp(30px,8.6vw,46px);}
+    .cover h1{font-size:clamp(36px,10vw,52px);}
+    .card .t{font-size:17px;} .card .d{font-size:14px;} .card li{font-size:13.5px;}
+    .fdetail h4{font-size:19px;} .fdetail p{font-size:15px;}
+    table.tbl{font-size:12px;}
+    .banner{font-size:14px;flex-direction:column;align-items:flex-start;gap:8px;}
+    .stat .n{font-size:34px;}
+    /* embedded tools get more height on a phone */
+    iframe{height:62vh!important;}
+    /* declutter chrome · the floating fs button + brand pill collided with the nav */
+    .hint{display:none;}
+    .fs,.brand{display:none;}
+    .nav{max-width:94vw;}
+    .nav .dots{max-width:50vw;}
+    .zone{width:7%;}
+  }
+  @media (max-width:480px){
+    .tiles,.agrid,.acct{grid-template-columns:1fr;}
+    .funnel .fnode{flex:1 1 100%;}
+    .slide{padding:24px 15px 100px;}
+  }
+
+  /* leadership worked-example · 3-up tile grid (9 tiles → clean 3×3) */
+  .tiles3{grid-template-columns:repeat(3,1fr);}
+  @media (max-width:820px){ .tiles3{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:480px){ .tiles3{grid-template-columns:1fr;} }
+
+  @media print{.slide{opacity:1!important;position:relative!important;page-break-after:always;}.nav,.fs,.zone,.notes,.hint,.progress{display:none!important;}}
+</style>
+</head>
+<body>
+<div class="deck">
+
+<!-- 0 BRAND COVER (official · first slide) -->
+<div class="slide imgslide active" data-notes="The B2B Playbook. Accelerate with Acceler. The official Acceler opener. Use the arrow keys to navigate, click anything, and press '.' for speaker notes · the next slide frames the handover, then a clickable roadmap.">
+  <img src="brand-cover.png" alt="Acceler · The B2B Playbook">
+</div>
+
+<!-- 00 KT TITLE -->
+<div class="slide cover dark" data-notes="Welcome. This is the internal Knowledge Transfer for B2B pre-sales through delivery, handed to the new B2B POCs. It is built to be clicked through, not read. Use the arrow keys, click anything, and press '.' for these speaker notes. The next slide is a clickable roadmap.">
+  <div class="mesh"></div>
+  <div class="inner">
+    <div class="plate reveal" style="--i:0"><img src="acceler_logo.png" alt="Acceler"></div>
+    <div class="badge reveal" style="--i:1">Internal Knowledge Transfer</div>
+    <h1 class="reveal" style="--i:2">Pre-Sales <span class="ac">→ Delivery.</span></h1>
+    <p class="reveal" style="--i:3">The complete B2B handover playbook · the people, the matching engine, the proposals, the pricing, and post-sales. <b>Built to click through, not read.</b></p>
+    <div class="chips reveal" style="--i:4">
+      <span class="chip">👥 <b>From the B2B team</b></span>
+      <span class="chip">🗓️ <b>June 2026</b></span>
+      <span class="chip">🖱️ <b>Click everything</b></span>
+    </div>
+  </div>
+</div>
+
+<!-- 0i INTERACTIVE AGENDA -->
+<div class="slide" data-notes="The roadmap. Click any tile to jump straight to that part. Treat this as your table of contents · you'll come back here.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">What's inside · click any tile to jump</div><div class="h">The <span class="ac">roadmap.</span></div></div>
+    <div class="agrid reveal" style="--i:1" id="agenda">
+      <button class="agtile" data-jump="The people"><span class="agn">01</span><span class="agt">The people</span><span class="agd">Who to lean on · sign-off routing</span></button>
+      <button class="agtile" data-jump="From brief to program"><span class="agn">02</span><span class="agt">Workflows</span><span class="agd">Match funnel · KG · delivery cycle</span></button>
+      <button class="agtile" data-jump="What we sell"><span class="agn">03</span><span class="agt">What we sell</span><span class="agd">AIQ · four personas · accelerators</span></button>
+      <button class="agtile" data-jump="Pricing"><span class="agn">04</span><span class="agt">Pricing</span><span class="agd">Bottom-up · 1st vs 2nd batch · tools</span></button>
+      <button class="agtile" data-jump="Discovery"><span class="agn">05</span><span class="agt">Discovery</span><span class="agd">14 reds · the 80% gauge</span></button>
+      <button class="agtile" data-jump="Patterns"><span class="agn">06</span><span class="agt">Patterns</span><span class="agd">Scenarios you'll hit often</span></button>
+      <button class="agtile" data-jump="Post-sales &amp; content"><span class="agn">07</span><span class="agt">Post-sales</span><span class="agd">Handoff · where content lives</span></button>
+      <button class="agtile" data-jump="The assets"><span class="agn">08</span><span class="agt">Assets &amp; links</span><span class="agd">Every proposal + the link hub</span></button>
+    </div>
+  </div>
+</div>
+
+<!-- 0a ABOUT ACCELER · company profile -->
+<div class="slide imgslide" data-notes="Company profile. 11+ years in tech upskilling, 100,000+ hours of content, 650+ cohorts, 28,000+ live hours delivered annually, 700+ FAANG and top-AI practitioners, 400+ employees, 25,000+ learners transformed, 5,000+ active live learners weekly. Delivery across India, USA, Europe, Middle East, Africa. Time Top 100 and GSV Top 150 Global EdTech 2025.">
+  <img src="co-1-profile.png" alt="Acceler company profile">
+</div>
+<!-- 0b practitioners -->
+<div class="slide imgslide" data-notes="700+ top practitioners from the world's best AI companies are at the heart of the acceleration engine · engineers from OpenAI, Meta, Google, Microsoft, Amazon, Nvidia and more.">
+  <img src="co-2-practitioners.png" alt="Powered by the world's best AI practitioners">
+</div>
+
+<!-- 1 WHAT THIS IS + STATS -->
+<div class="slide" data-notes="Quick orientation, then the credibility numbers you'll quote in every proposal. These count up live. 25,000+ alumni, 700+ FAANG/top-AI practitioners, 650+ cohorts, 4.8 average instructor rating. Time Top 100 and GSV Top 150 EdTech 2025.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">Start here</div><div class="h">The role in <span class="ac">one screen.</span></div></div>
+    <div class="g2 reveal" style="--i:1;margin-bottom:20px;">
+      <div class="card top hover"><div class="t">✅ What this KT is</div><div class="d"><ul><li>The <b>people</b> you route to, and why</li><li>The <b>match funnel</b>: brief → program</li><li>The <b>proposals</b> to model from, by track</li><li><b>Pricing</b> you can defend in the sheet</li><li>What happens <b>after</b> the deal closes</li></ul></div></div>
+      <div class="card top hover"><div class="t">🎯 How to use it</div><div class="d"><ul><li><b>Click everything</b> · funnel, tabs, toggles</li><li>Surface is light; <b>depth is behind clicks</b></li><li>Pair it with the live KT calls</li><li>Edit it inline as the role evolves</li><li>The link index (Part 10) is your hub</li></ul></div></div>
+    </div>
+    <div class="stats">
+      <div class="stat pop" style="--i:0"><div class="n"><span class="ctr" data-to="25000" data-suffix="+">0</span></div><div class="l">Learners transformed</div></div>
+      <div class="stat pop" style="--i:1"><div class="n"><span class="ctr" data-to="700" data-suffix="+">0</span></div><div class="l">FAANG+ practitioners</div></div>
+      <div class="stat pop" style="--i:2"><div class="n"><span class="ctr" data-to="650" data-suffix="+">0</span></div><div class="l">Cohorts delivered</div></div>
+      <div class="stat pop" style="--i:3"><div class="n"><span class="ctr" data-to="100000" data-suffix="+">0</span></div><div class="l">Hours of content</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- 2 SECTION 01 -->
+<div class="slide section dark" data-notes="Part 1 · the people. The role is really cognitive orchestration: treat each person as a function you call, not a colleague you CC. Click each brain.">
+  <div class="mesh"></div>
+  <div class="inner"><div class="num reveal">01</div><div class="pl reveal" style="--i:1">The people</div><h2 class="reveal" style="--i:2">Six brains, one judgment.</h2><div class="sub reveal" style="--i:3">Don't CC everyone. Ask "whose brain do I need right now?" · then click.</div></div>
+</div>
+
+<!-- 3 BRAINS (interactive) -->
+<div class="slide" data-notes="Click each person to see what they're for. Aashish: strategic framing, ask when stuck on narrative. Soham (CPTO): technical reality check, ask before any client send. Amit: commercial pressure + India sign-off. Suvansh: ops/delivery reality. Tanvinder: infra, VMs, Nuvepro. Shashi: NP Team Lead and the NP Team confirmation in the match funnel.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">Cognitive orchestration · click a brain</div><div class="h">Who to lean on, <span class="ac">for what.</span></div></div>
+    <div class="g3 reveal" style="--i:1;margin-bottom:16px;" id="brainGrid">
+      <div class="card hover brain on" data-k="aashish"><div class="t">🧭 Aashish</div><div class="d"><b>Strategic framing</b></div></div>
+      <div class="card hover brain" data-k="soham"><div class="t">🔬 Soham</div><div class="d"><b>Co-founder · CPTO</b></div></div>
+      <div class="card hover brain" data-k="amit"><div class="t">⚡ Amit</div><div class="d"><b>India Sales</b></div></div>
+      <div class="card hover brain" data-k="suvansh"><div class="t">⚙️ Suvansh</div><div class="d"><b>Ops reality</b></div></div>
+      <div class="card hover brain" data-k="tanvinder"><div class="t">🖥️ Tanvinder</div><div class="d"><b>Infra &amp; labs</b></div></div>
+      <div class="card hover brain" data-k="shashi"><div class="t">🤝 Shashi</div><div class="d"><b>NP Team Lead</b></div></div>
+      <div class="card hover brain" data-k="anshuman"><div class="t">🎯 Anshuman</div><div class="d"><b>Heads B2B</b></div></div>
+      <div class="card hover brain" data-k="ryan"><div class="t">🚀 Ryan</div><div class="d"><b>Co-founder · Sales</b></div></div>
+      <div class="card hover brain" data-k="madan"><div class="t">📣 Madan</div><div class="d"><b>Growth marketing</b></div></div>
+    </div>
+    <div class="fdetail reveal" style="--i:2" id="brainDetail"></div>
+  </div>
+</div>
+
+<!-- 4 SIGN-OFF (interactive selector) -->
+<div class="slide" data-notes="Sign-off is a sales call. India is always Amit. Every other region is Ryan or Anshuman on the sales side, with Aashish on positioning. Soham, the CPTO, technically guides every pre-sales deal, and the technical folks executing are us, the B2B team. Click each region to see the sales owner.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">Sign-off routing · click the geography</div><div class="h">Who approves <span class="ac">what.</span></div></div>
+    <div class="tabs reveal" style="--i:1" id="geoTabs">
+      <button class="tab on" data-g="india">🇮🇳 India</button>
+      <button class="tab" data-g="us">🌎 US / NA</button>
+      <button class="tab" data-g="me">🕌 Middle East</button>
+      <button class="tab" data-g="eu">🌍 Europe / APAC</button>
+      <button class="tab" data-g="africa">🌍 Africa</button>
+      <button class="tab" data-g="global">🌐 Global</button>
+    </div>
+    <div class="result reveal" style="--i:2" id="geoResult"></div>
+    <div class="banner reveal" style="--i:3"><span class="ic">💡</span><div>Sign-off is <b>sales</b>: <b>Amit</b> for India, <b>Ryan / Anshuman</b> everywhere else, with <b>Aashish</b> on positioning. <b>Soham (CPTO)</b> technically guides every pre-sales deal; the <b>technical folks are us, the B2B team</b>.</div></div>
+  </div>
+</div>
+
+<!-- 5 SECTION 02 -->
+<div class="slide section dark" data-notes="Part 2 · from brief to program. Two workflows: the match funnel that turns a brief into a matched program, and the end-to-end delivery cycle. Both are interactive/animated.">
+  <div class="mesh"></div>
+  <div class="inner"><div class="num reveal">02</div><div class="pl reveal" style="--i:1">From brief to program</div><h2 class="reveal" style="--i:2">The workflows.</h2><div class="sub reveal" style="--i:3">A matching engine and a delivery cycle. Click the funnel; watch the flow.</div></div>
+</div>
+
+<!-- 6 MATCH FUNNEL (interactive) -->
+<div class="slide" data-notes="The core of the role, and the part that changed most. Click each stage. 1 brief arrives. 2 match it to the discovery checklist. 3 match precedent and instructor fit · historically a manual dig through vignette docs and B2B-channel chats. 4 now the Knowledge Graph indexes all 1,072 pre-sales files, so you query it directly. 5 confirm the human-gated calls with Shashi and the NP team. Only then draft.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">The match funnel · click a stage</div><div class="h">Five moves <span class="ac">before you draft.</span></div></div>
+    <div class="funnel reveal" style="--i:1" id="funnel">
+      <div class="fnode on" data-k="f1"><div class="num">1</div><div class="ico">📥</div><div class="nm">Brief lands</div></div>
+      <div class="fnode" data-k="f2"><div class="num">2</div><div class="ico">✅</div><div class="nm">Discovery match</div></div>
+      <div class="fnode" data-k="f3"><div class="num">3</div><div class="ico">🗂️</div><div class="nm">Precedent + SME</div></div>
+      <div class="fnode" data-k="f4"><div class="num">4</div><div class="ico">🕸️</div><div class="nm">Knowledge Graph</div></div>
+      <div class="fnode" data-k="f5"><div class="num">5</div><div class="ico">🤝</div><div class="nm">NP Team confirm</div></div>
+    </div>
+    <div class="fdetail reveal" style="--i:2" id="funnelDetail"></div>
+  </div>
+</div>
+
+<!-- 6b LIVE KNOWLEDGE GRAPH (embedded) -->
+<div class="slide" data-notes="This is the live Knowledge Graph · the engine behind step 4 of the match funnel. Nodes are Programs, Accounts, Instructors, Tools, and Topics; edges are the relationships across ~1,072 pre-sales files. Click a node for detail, search with the magnifier, drag to explore, scroll to zoom. Query it to find who taught what, what we priced something at, and the closest past proposal. It is embedded live; open it full-screen with the button.">
+  <div class="inner" style="max-width:1260px;">
+    <div class="shead reveal" style="margin-bottom:12px;"><div class="eyebrow">Match funnel · step 4, live</div><div class="h">The Knowledge Graph, <span class="ac">live.</span></div></div>
+    <div class="reveal" style="--i:1;position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:#0F1632;">
+      <iframe src="https://acceler-knowledge-graph.vercel.app/" title="Acceler Knowledge Graph" style="width:100%;height:58vh;border:0;display:block;" loading="lazy"></iframe>
+    </div>
+    <div class="reveal" style="--i:2;display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:12px;flex-wrap:wrap;">
+      <div style="font-size:13px;color:var(--text2);">Nodes: <b>Programs · Accounts · Instructors · Tools · Topics</b> &nbsp;·&nbsp; drag · scroll to zoom · click a node · ⌕ search</div>
+      <div style="display:flex;gap:10px;">
+        <a target="_blank" rel="noopener" class="btnlink" href="https://acceler-knowledge-graph.vercel.app/" style="margin-top:0;">Open full-screen →</a>
+        <a target="_blank" rel="noopener" class="btnlink" href="https://acceler-knowledge-graph.vercel.app/curriculum-graph" style="margin-top:0;background:var(--indigo);">Delivered Curriculum view →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 6c CURRICULUM GRAPH (embedded · second view) -->
+<div class="slide" data-notes="The second Knowledge Graph view: the delivered-programs curriculum graph. The pre-sales KG on the previous slide stays as is; this layer maps everything we've actually delivered · clients to programs to modules to topics and tools. Built from the B2B AI Programs drive: 16 programs across e&, Cornerstone, Bosch, Deloitte, ETS, Lowe's, Nucleus and Yettel. Drag, zoom, search, and open full-screen.">
+  <div class="inner" style="max-width:1260px;">
+    <div class="shead reveal" style="margin-bottom:12px;"><div class="eyebrow">Knowledge Graph · second view · delivered curriculum</div><div class="h">What we've <span class="ac">delivered.</span></div></div>
+    <div class="reveal" style="--i:1;position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:#0E1330;">
+      <iframe src="https://acceler-knowledge-graph.vercel.app/curriculum-graph" title="Delivered Programs Curriculum Graph" style="width:100%;height:58vh;border:0;display:block;" loading="lazy"></iframe>
+    </div>
+    <div class="reveal" style="--i:2;display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:12px;flex-wrap:wrap;">
+      <div style="font-size:13px;color:var(--text2);">Clients → <b>Programs → Modules → Topics</b> + Tools · 16 delivered programs.</div>
+      <a target="_blank" rel="noopener" class="btnlink" href="https://acceler-knowledge-graph.vercel.app/curriculum-graph" style="margin-top:0;">Open full-screen →</a>
+    </div>
+  </div>
+</div>
+
+<!-- 7 END-TO-END WORKFLOW (animated) -->
+<div class="slide" data-notes="The delivery cycle, mapped to days. Day 0 brief. Day 0-1 clarifying questions if thin. Day 1 the 15-minute alignment call with Soham plus sales · the single highest-leverage move, it cuts revisions from 2 to 1. Day 1-2 draft. Day 2 reviews. Deck creation is the bottleneck, 2 days. Day 4-5 client send, follow up within 48 hours.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">End-to-end · RFP to client send</div><div class="h">Seven steps, <span class="ac">mapped to days.</span></div></div>
+    <div class="flow reveal" style="--i:1">
+      <div class="fstep"><span class="day">Day 0</span><div class="fi">📥</div><div class="ft">Requirement</div><div class="fd">RFP / sales handoff</div></div>
+      <div class="farr"><svg viewBox="0 0 26 14"><path class="dash" d="M1 7 H22 M17 2 L23 7 L17 12"/></svg></div>
+      <div class="fstep"><span class="day">Day 0–1</span><div class="fi">❓</div><div class="ft">Clarify</div><div class="fd">Fire the 6 musts</div></div>
+      <div class="farr"><svg viewBox="0 0 26 14"><path class="dash" d="M1 7 H22 M17 2 L23 7 L17 12"/></svg></div>
+      <div class="fstep cy"><span class="day">Day 1</span><div class="fi">🤝</div><div class="ft">Align</div><div class="fd">15 min · Soham + sales</div></div>
+      <div class="farr"><svg viewBox="0 0 26 14"><path class="dash" d="M1 7 H22 M17 2 L23 7 L17 12"/></svg></div>
+      <div class="fstep"><span class="day">Day 1–2</span><div class="fi">📝</div><div class="ft">Draft</div><div class="fd">Curriculum + pricing</div></div>
+      <div class="farr"><svg viewBox="0 0 26 14"><path class="dash" d="M1 7 H22 M17 2 L23 7 L17 12"/></svg></div>
+      <div class="fstep"><span class="day">Day 2</span><div class="fi">🔍</div><div class="ft">Review</div><div class="fd">Soham·Aashish·Amit</div></div>
+      <div class="farr"><svg viewBox="0 0 26 14"><path class="dash" d="M1 7 H22 M17 2 L23 7 L17 12"/></svg></div>
+      <div class="fstep am"><span class="day">2 days</span><div class="fi">🎞️</div><div class="ft">Deck</div><div class="fd">Bottleneck</div></div>
+      <div class="farr"><svg viewBox="0 0 26 14"><path class="dash" d="M1 7 H22 M17 2 L23 7 L17 12"/></svg></div>
+      <div class="fstep gn"><span class="day">Day 4–5</span><div class="fi">📤</div><div class="ft">Send</div><div class="fd">Follow up &lt;48h</div></div>
+    </div>
+    <div class="banner reveal" style="--i:2"><span class="ic">🎯</span><div>Highest-leverage move of the year: the <b>Day-1 15-min alignment call</b> with Soham + sales before drafting cuts internal revisions from <b>2 → 1</b>.</div></div>
+  </div>
+</div>
+
+<!-- 8 SECTION 03 -->
+<div class="slide section dark" data-notes="Part 3 · what we sell. Everything is positioned on the AIQ framework, then shaped into four personas. Both are interactive.">
+  <div class="mesh"></div>
+  <div class="inner"><div class="num reveal">03</div><div class="pl reveal" style="--i:1">What we sell</div><h2 class="reveal" style="--i:2">AIQ<span class="tm">™</span> → four personas.</h2><div class="sub reveal" style="--i:3">Diagnose maturity, then pitch the shape. Explore both.</div></div>
+</div>
+
+<!-- 8a build ethos (moved here) -->
+<div class="slide imgslide" data-notes="Why the programs are build-first. Versus light, passive, academic learning, Acceler runs active building with top practitioners as guides, function-specific ROI-driven use cases, and programs that evolve with AI. Build more, train less · that ethos shapes everything we sell.">
+  <img src="co-4-ethos.png" alt="Build more, train less">
+</div>
+
+<!-- 8b AIQ official image -->
+<div class="slide imgslide" data-notes="The proprietary AIQ framework · the positioning anchor in almost every proposal. Operational capability is the foundation: process maturity and data readiness. Enterprise AI readiness climbs Aware, Strategising, Organising, Executing. Evaluated at enterprise and functional levels. The next slide lets you explore the capability ladder interactively.">
+  <img src="co-3-aiq.png" alt="AIQ framework">
+</div>
+
+<!-- 9 AIQ LADDER (interactive hover) -->
+<div class="slide" data-notes="AIQ · AI Quotient · is the positioning anchor in almost every deck. Two ways it appears. The capability ladder, shown here, sequences skilling from LLMs up to Deep ML, split into an Augmentation band (productivity, ROI on existing spend) and a Transformation band (building new GenAI and ML). The v2 maturity model on the right is a 2-axis grid: operational capability · process maturity and data readiness · versus enterprise readiness · aware, strategising, organising, executing. You score the client and find the bottleneck.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">AIQ™ · the positioning anchor</div><div class="h">Diagnose first, <span class="ac">then prescribe.</span></div></div>
+    <div class="tgrid">
+      <div class="reveal" style="--i:1">
+        <div class="ladder">
+          <div class="rung"><div class="lv" style="background:#F86B3C;">1</div><div><div class="nm">LLMs</div><div class="ds">Working with LLMs</div></div><span class="band aug">Augment</span></div>
+          <div class="rung"><div class="lv" style="background:#F86B3C;">2</div><div><div class="nm">Copilots</div><div class="ds">Productivity with AI copilots</div></div><span class="band aug">Augment</span></div>
+          <div class="rung"><div class="lv" style="background:#F86B3C;">3</div><div><div class="nm">Best-in-class AI tools</div><div class="ds">Solutions with top AI tools</div></div><span class="band aug">Augment</span></div>
+          <div class="rung"><div class="lv" style="background:#6167FA;">4</div><div><div class="nm">Agents / GenAI apps</div><div class="ds">Build complex agents</div></div><span class="band tr">Transform</span></div>
+          <div class="rung"><div class="lv" style="background:#6167FA;">5</div><div><div class="nm">Modern ML</div><div class="ds">Build on advanced models</div></div><span class="band tr">Transform</span></div>
+          <div class="rung"><div class="lv" style="background:#6167FA;">6</div><div><div class="nm">Deep ML</div><div class="ds">Build complex ML models</div></div><span class="band tr">Transform</span></div>
+        </div>
+      </div>
+      <div class="reveal" style="--i:2">
+        <div class="card top" style="margin-bottom:12px;"><div class="t" style="font-size:15px;">📐 Maturity model (v2)</div><div class="d" style="font-size:12.5px;"><b>Operational capability →</b> Process Maturity · Data Readiness<br/><b>Enterprise readiness →</b> Aware → Strategising → Organising → Executing<br/><span style="color:var(--muted)">Score 1–4 each → grid position → the real bottleneck.</span></div></div>
+        <div class="card"><div class="t" style="font-size:15px;">🧭 How tracks map</div><div class="d" style="font-size:12.5px;"><b>Enablers</b> live in Augmentation · <b>Builders / Navigators</b> climb into Transformation · <b>Leaders</b> learn to read the whole grid.</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 9c custom offerings official image -->
+<div class="slide imgslide" data-notes="Offerings tailored by function. Technical functions: AI Builders (engineers) and AI Navigators (product). Business functions: AI Enablers across Sales, Marketing, Finance, Ops, Call Center, Supply Chain, HR/TA, Payroll, Legal. Business leaders: AI Leaders for VPs and CXOs.">
+  <img src="co-5-offerings.png" alt="Custom offerings by function">
+</div>
+<!-- 9d AI accelerators 2-day official image -->
+<div class="slide imgslide" data-notes="The intensive 2-day AI Accelerators per persona with learning objectives. Builders ship code with LLMs, build MCP servers and Pro-Code agents. Navigators design AI-native product. Enablers automate workflows and build no-code agents. Leaders build strategy and ROI. Customisable by stack and function; choose Google or M365 Copilots. The next slide lets you explore each track interactively.">
+  <img src="co-6-accelerators.png" alt="AI Accelerators · 2-day workshops">
+</div>
+
+<!-- 10 TRACK EXPLORER (tabs) -->
+<div class="slide" data-notes="The four personas plus security, behind tabs so you see one at a time. Builders: engineers, Pro-Code, the RAG to agent to multi-agent to deploy spine; references Everest, Edelweiss, LVT, Sony, StoneX, Gryphon. Navigators: PMs, Low/No-Code, artifact-compounding; Cornerstone. Enablers: business teams, No-Code, the literacy-researcher-builder spine; Fiserv, IGT, Voya HR, MCB, Diebold. Leaders: CXO, strategy and APR; Akamai, Constance, LatentView. Security: Honeywell embedded/cyber, Fujitsu 12-week academy. Click each tab and open the sample.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">Track explorer · click a persona</div><div class="h">One spine, <span class="ac">five depths.</span></div></div>
+    <div class="tabs reveal" style="--i:1" id="trackTabs">
+      <button class="tab on" data-t="builders">⚙️ Builders</button>
+      <button class="tab" data-t="navigators">🧭 Navigators</button>
+      <button class="tab" data-t="enablers">🔧 Enablers</button>
+      <button class="tab" data-t="leaders">🎯 Leaders</button>
+      <button class="tab" data-t="security">🛡️ Security</button>
+    </div>
+    <div class="reveal" style="--i:2" id="trackBody"></div>
+  </div>
+</div>
+
+<!-- 10b blueprint official image -->
+<div class="slide imgslide" data-notes="How a program is built from AIQ levels. Every program starts with the Mirror · a function-level AIQ diagnostic · and ends with the Commit, where everyone fills the AI Acceleration Roadmap for their top use cases. In between, modules are picked from Amplify, Agentic, and Accelerate.">
+  <img src="co-7-blueprint.png" alt="AIQ-based custom blueprint">
+</div>
+
+<!-- 11 DECISION PICKER (interactive) -->
+<div class="slide" data-notes="The template decision, made interactive. Pick the audience and the scope, and the recommended template appears with the escalation rule. Engineers plus standard scope is Builders. Leaders plus strategy is Leaders. Multi-persona is Custom on the Cornerstone pattern. Anything new, gated, or non-tech-audience-for-technical-content escalates to Soham.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">Template picker · choose, get a recommendation</div><div class="h">Which shape <span class="ac">do I pitch?</span></div></div>
+    <div class="picker">
+      <div class="reveal" style="--i:1">
+        <div class="qcard" style="margin-bottom:14px;"><div class="ql">1 · Who is the audience?</div><div class="opt" id="pAud">
+          <button data-v="eng" class="on">Engineers</button><button data-v="pm">PMs / Product</button><button data-v="biz">Business teams</button><button data-v="lead">Leaders / CXO</button><button data-v="multi">Multi-persona</button>
+        </div></div>
+        <div class="qcard"><div class="ql">2 · How standard is the scope?</div><div class="opt" id="pScope">
+          <button data-v="std" class="on">Standard offering</button><button data-v="new">New / non-standard</button>
+        </div></div>
+      </div>
+      <div class="result reveal" style="--i:2" id="pickResult"></div>
+    </div>
+  </div>
+</div>
+
+<!-- 11c AI FOR LEADERS · NEW BUILD-FIRST FORMAT -->
+<div class="slide" data-notes="The AI for Leaders program now runs a build-first format that lifted ratings from 3.5 to 4.5. Day 1 is in-person strategy with Ryan and Anshuman. Day 2 is hands-on, run by Madan: first 30 minutes he introduces himself, walks through the platform and a sample use case; then everyone splits into groups, each group has a dedicated TA present in Microsoft Teams, and they build using the Build Session Guide plus TA help until everyone completes. Kartika and Tanmaya were part of running this. Two live assets back it: the Build Lab and the Build Session Guide.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">What we sell · the new Leaders format</div><div class="h">AI for Leaders, <span class="ac">build-first.</span></div></div>
+    <div class="g2" style="gap:18px;align-items:start;">
+      <div class="reveal" style="--i:1">
+        <div class="card top" style="margin-bottom:12px;"><div class="t" style="font-size:16px;">📅 Day 1 · Strategy (in person)</div><div class="d">Led by <b>Ryan &amp; Anshuman</b> · the strategy and framing day, as before.</div></div>
+        <div class="card top"><div class="t" style="font-size:16px;">🛠️ Day 2 · Hands-on build (Madan)</div><div class="d"><ul>
+          <li><b>First 30 min:</b> Madan intro + platform walkthrough + a sample use case</li>
+          <li><b>Split into groups</b> · a dedicated <b>TA per group</b>, live in MS Teams</li>
+          <li>Build with the <b>Build Session Guide</b> + TA help until <b>everyone completes</b></li>
+        </ul></div></div>
+      </div>
+      <div class="reveal" style="--i:2">
+        <div class="stat" style="margin-bottom:14px;"><div class="n">3.5 → 4.5★</div><div class="l">Rating after the new format</div></div>
+        <div class="card" style="margin-bottom:12px;"><div class="t" style="font-size:15px;">🔗 Live assets</div><div class="d" style="margin-bottom:10px;">The build lab + the step-by-step guide groups follow.</div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;">
+            <a class="btnlink" target="_blank" rel="noopener" href="https://ai-for-leaders-build-lab.vercel.app/" style="margin-top:0;">Build Lab →</a>
+            <a class="btnlink" target="_blank" rel="noopener" href="https://copilot-leadership-lab.vercel.app/pick-your-use-case" style="margin-top:0;background:var(--indigo);">Build Session Guide →</a>
+          </div>
+        </div>
+        <div class="banner" style="margin-top:0;"><span class="ic">📈</span><div>Build-first + a <b>TA per group</b> lifted completion and ratings from <b>3.5 → 4.5</b>. Kartika &amp; Tanmaya ran this.</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 11d LEADERSHIP MODULE ARCHITECTURE -->
+<div class="slide" data-notes="Our standing approach to every leadership program · the question of how we visualise AI for leaders, answered. Two fixed bookends plus a menu of six choosable modules. The Mirror always opens · an AIQ diagnostic across six axes that baselines the whole room on one honest picture. The Commit always closes · a Leadership Canvas where each leader commits to an action, and that commitment is our reason to reconnect for more business. In between we pick two to four of the six · Map, Lens, X-Ray, Build, Rewire, Toolkit · chosen by where they are in their AI journey from the discovery call, internal surveys, and AIQ. We mix, match and price by the modules chosen. SMEs (the expensive, logistics-heavy bit) come in only when a module needs them; Ryan and Aashish deliver the rest.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">What we sell · the leadership operating model</div><div class="h">Two fixed bookends, <span class="ac">six you choose.</span></div></div>
+    <div class="g2 reveal" style="--i:1;margin-bottom:14px;">
+      <div class="card" style="border-top:4px solid var(--cyan);"><div class="t">🪞 The Mirror · always opens</div><div class="d"><b>AIQ diagnostic across six axes</b> · spider chart + gap view. Baselines the whole room so everyone starts from the same honest picture.</div></div>
+      <div class="card" style="border-top:4px solid var(--indigo);"><div class="t">🤝 The Commit · always closes</div><div class="d"><b>Leadership Canvas</b> workshop · public commitments + scheduled accountability follow-ups. <b>The commitment is our reconnect / renewal hook.</b></div></div>
+    </div>
+    <div class="reveal" style="--i:2">
+    <div style="font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:4px 0 8px;">Pick 2–4 of the six · by AI-journey stage (discovery · surveys · AIQ)</div>
+    <div class="g3" style="gap:12px;">
+      <div class="card hover"><div class="t" style="font-size:15.5px;">🗺️ The Map</div><div class="d" style="font-size:12.5px;"><span class="pill">Understand</span> &nbsp;Architecture literacy · LLMs, RAG, agents, build-vs-buy.</div></div>
+      <div class="card hover"><div class="t" style="font-size:15.5px;">🔍 The Lens</div><div class="d" style="font-size:12.5px;"><span class="pill">Understand</span> &nbsp;Dual-mode demos + case studies of what AI can do now.</div></div>
+      <div class="card hover"><div class="t" style="font-size:15.5px;">🩻 The X-Ray</div><div class="d" style="font-size:12.5px;"><span class="pill">Apply</span> &nbsp;Process redesign · decisions, data moves, actions.</div></div>
+      <div class="card hover"><div class="t" style="font-size:15.5px;">🛠️ The Build</div><div class="d" style="font-size:12.5px;"><span class="pill">Apply</span> &nbsp;Hands-on AI tools for real tasks · four tracks.</div></div>
+      <div class="card hover"><div class="t" style="font-size:15.5px;">🔄 The Rewire</div><div class="d" style="font-size:12.5px;"><span class="pill">Change</span> &nbsp;Operating-model shift · the structural barriers.</div></div>
+      <div class="card hover"><div class="t" style="font-size:15.5px;">🧰 The Toolkit</div><div class="d" style="font-size:12.5px;"><span class="pill">Change</span> &nbsp;Build-vs-buy, vendor &amp; governance frameworks.</div></div>
+    </div>
+    </div>
+    <div class="banner reveal" style="--i:3"><span class="ic">🧩</span><div>Mix, match &amp; <b>price by the modules chosen</b>. <b>SMEs come in only when a module needs them</b> (that's the expense + logistics); <b>Ryan &amp; Aashish deliver the rest.</b> &nbsp;<a target="_blank" rel="noopener" href="https://acceler-ruby.vercel.app/modules" style="color:var(--cyan);font-weight:800;">Live module menu →</a></div></div>
+  </div>
+</div>
+
+<!-- 11e LEADERSHIP · WORKED EXAMPLE + LIVE ASSETS -->
+<div class="slide" data-notes="A full leadership program made real · Constance. Four live assets show the spine end to end. The module menu is where you assemble the program. The Constance session deck is the actual built deck. The AIQ report is the Mirror output · the six-axis diagnostic written up for the client. The aiROI page turns it into a money story. Below, the AIQ intake form is how the Mirror gets run before a program · two live CETIN cohorts, Prague 29 to 30 June and Serbia 2 to 3 July.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">Leadership · a worked example · click to open</div><div class="h">Constance, <span class="ac">end to end.</span></div></div>
+    <div class="tiles tiles3 reveal" style="--i:1;margin-bottom:14px;">
+      <a class="tile" target="_blank" rel="noopener" href="https://acceler-ruby.vercel.app/modules"><div class="ti">🧩</div><div class="tn">The Module Menu</div><div class="tx">Assemble any leadership program · 2 fixed + 6 choosable.</div><div class="go">OPEN →</div></a>
+      <a class="tile" target="_blank" rel="noopener" href="https://acceler-ruby.vercel.app/deck/constance"><div class="ti">🎤</div><div class="tn">Constance · Session Deck</div><div class="tx">The actual built leadership session deck.</div><div class="go">OPEN →</div></a>
+      <a class="tile" target="_blank" rel="noopener" href="https://constance-aiq-report.vercel.app/"><div class="ti">🪞</div><div class="tn">Constance · AIQ Report</div><div class="tx">The Mirror output · six-axis diagnostic, written up.</div><div class="go">OPEN →</div></a>
+      <a class="tile" target="_blank" rel="noopener" href="https://magenta-florentine-520379.netlify.app/airoi.html"><div class="ti">💰</div><div class="tn">Constance · aiROI</div><div class="tx">The diagnostic turned into a money story.</div><div class="go">OPEN →</div></a>
+      <a class="tile" target="_blank" rel="noopener" href="https://docs.google.com/presentation/d/1LmU7TL9uvo8J_EwBLRLfRiaANLk_fafG63qajmApuIU/edit"><div class="ti">🎬</div><div class="tn">Common Session Deck</div><div class="tx">Madan's common deck · run at the e&amp; PPF · Yettel / CETIN leadership sessions.</div><div class="go">OPEN →</div></a>
+      <a class="tile" target="_blank" rel="noopener" href="https://ai-for-leaders-build-lab.vercel.app/"><div class="ti">🧪</div><div class="tn">Build Lab</div><div class="tx">The grouped hands-on build environment.</div><div class="go">OPEN →</div></a>
+      <a class="tile" target="_blank" rel="noopener" href="https://copilot-leadership-lab.vercel.app/pick-your-use-case"><div class="ti">📋</div><div class="tn">Build Session Guide</div><div class="tx">The step-by-step guide each group follows.</div><div class="go">OPEN →</div></a>
+      <a class="tile" target="_blank" rel="noopener" href="https://docs.google.com/spreadsheets/d/1LjdshQHNqCzRZagyh0FTIlEwP0uCzVHcWzqsD1CzpjY/edit?gid=22036183#gid=22036183"><div class="ti">📥</div><div class="tn">AIQ Form · filled (real)</div><div class="tx">An actual completed intake-form response · ANSR sample.</div><div class="go">OPEN →</div></a>
+      <a class="tile" target="_blank" rel="noopener" href="https://ansr-aiq-report.vercel.app/"><div class="ti">🪞</div><div class="tn">AIQ Report · real</div><div class="tx">The report that filled form produced · ANSR sample.</div><div class="go">OPEN →</div></a>
+    </div>
+    <div class="banner reveal" style="--i:2;margin-top:8px;background:var(--cyan-soft);color:var(--ink);border:1px solid #F6D2C2;box-shadow:none;"><span class="ic">📣</span><div><b style="color:var(--cyan-d);">e&amp; PPF · the common-session pattern.</b> Shared Common Session Deck across <b style="color:var(--cyan-d);">3–4 locations</b> (Prague &amp; Serbia / CETIN), then a <b style="color:var(--cyan-d);">grouped build session</b> (groups + a TA each) via the Build Lab + Build Session Guide. &nbsp;Live AIQ intake forms: <a target="_blank" rel="noopener" href="https://forms.gle/Py5WqeZq35k4BinV8" style="color:var(--cyan-d);font-weight:800;">Prague 29–30 Jun →</a> · <a target="_blank" rel="noopener" href="https://forms.gle/reQJET3NCe35ie8s6" style="color:var(--cyan-d);font-weight:800;">Serbia 2–3 Jul →</a></div></div>
+  </div>
+</div>
+
+<!-- 12 SECTION 04 -->
+<div class="slide section dark" data-notes="Part 4 · pricing. Bottom-up, three scenarios, never on the call, INR for India and USD for US, never mixed. The cost stack is interactive.">
+  <div class="mesh"></div>
+  <div class="inner"><div class="num reveal">04</div><div class="pl reveal" style="--i:1">Pricing</div><h2 class="reveal" style="--i:2">Built bottom-up.</h2><div class="sub reveal" style="--i:3">Curriculum free when internal · dry run only first time · ×2 overheads · 40% margin.</div></div>
+</div>
+
+<!-- 13a PRICING ENGINE -->
+<div class="slide" data-notes="The real bottom-up model. Add the cost components into a BASE. Overheads roughly double it to TOTAL COST. A 40% margin gives PRICING, rounded to a clean number. Two rules drive most of the variance: curriculum is zero when we build content internally (the default), and the SME dry run only happens the first time · delivered before means zero. Blended rate is ₹5,225/hr for accelerators, ₹5,500 for masterclasses. Prep and Review bills at the same rate as live delivery.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">The pricing engine · how a number is built</div><div class="h">Cost → overheads → <span class="ac">margin.</span></div></div>
+    <div class="flow reveal" style="--i:1;margin-bottom:18px;">
+      <div class="fstep"><div class="fi">🧱</div><div class="ft">BASE</div><div class="fd">Curriculum + Prep + Dry Run + Live + TA + Infra</div></div>
+      <div class="farr"><svg viewBox="0 0 26 14"><path class="dash" d="M1 7 H22 M17 2 L23 7 L17 12"/></svg></div>
+      <div class="fstep cy"><div class="fi">×2</div><div class="ft">+ Overheads</div><div class="fd">≈ 100% of base → TOTAL COST</div></div>
+      <div class="farr"><svg viewBox="0 0 26 14"><path class="dash" d="M1 7 H22 M17 2 L23 7 L17 12"/></svg></div>
+      <div class="fstep gn"><div class="fi">📈</div><div class="ft">+ Margin</div><div class="fd">≈ 40% → PRICING (round clean)</div></div>
+    </div>
+    <div class="g2 reveal" style="--i:2">
+      <div class="card top"><div class="t">🧩 Curriculum = ₹0 when internal</div><div class="d">Default: we build content internally, so curriculum is <b>free</b>. Billed only for genuinely new / external content (hours × ₹24,864 × % new).</div></div>
+      <div class="card top"><div class="t">🔁 Dry Run only the first time</div><div class="d">A full SME dry run runs on first-ever delivery. <b>Delivered before → dry run ₹0 and prep halves.</b> That's the 2nd-batch saving.</div></div>
+    </div>
+    <div class="banner reveal" style="--i:3"><span class="ic">📊</span><div>Blended rate <b>₹5,225/hr</b> (accelerator) · <b>₹5,500/hr</b> (masterclass). Prep &amp; Review bills at the <b>same rate as live delivery</b>. INR for India, USD for US · never mixed.</div></div>
+  </div>
+</div>
+
+<!-- 13b FIRST VS REPEAT (interactive, real Edelweiss numbers) -->
+<div class="slide" data-notes="The Edelweiss AI Builders Accelerator, 5 days, real numbers. Click the toggle. 1st batch: prep 60 hrs, dry run 30, live 37 → base ₹6.64L, doubled to ₹13.27L, plus 40% margin = ₹18.58L. 2nd batch: prep halves to 30 hrs, dry run zero because delivered before → base ₹3.5L, pricing ₹9.8L · about 53% of the first. Curriculum is ₹0 throughout because content is internal.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">Edelweiss Builders Accelerator (5d) · click the toggle</div><div class="h">1st batch vs <span class="ac">2nd batch.</span></div></div>
+    <div class="seg reveal" style="--i:1" id="priceSeg"><button class="on" data-m="first">1st batch (first-ever)</button><button data-m="repeat">2nd batch (delivered before)</button></div>
+    <div class="stack reveal" style="--i:2" id="costStack">
+      <div class="bar"><div class="bl">Curriculum</div><div class="track"><div class="fill" data-k="cur"></div></div><div class="bv" data-k="cur"></div></div>
+      <div class="bar"><div class="bl">Prep &amp; Review</div><div class="track"><div class="fill" data-k="prep"></div></div><div class="bv" data-k="prep"></div></div>
+      <div class="bar"><div class="bl">SME Dry Run</div><div class="track"><div class="fill" data-k="dry"></div></div><div class="bv" data-k="dry"></div></div>
+      <div class="bar"><div class="bl">Live Delivery</div><div class="track"><div class="fill" data-k="live"></div></div><div class="bv" data-k="live"></div></div>
+      <div class="bar"><div class="bl">BASE</div><div class="track"><div class="fill" data-k="base"></div></div><div class="bv" data-k="base"></div></div>
+      <div class="bar"><div class="bl">+ Overheads → TOTAL</div><div class="track"><div class="fill" data-k="total"></div></div><div class="bv" data-k="total"></div></div>
+      <div class="bar tot"><div class="bl">+ Margin → PRICING</div><div class="track"><div class="fill" data-k="price"></div></div><div class="bv" data-k="price"></div></div>
+    </div>
+    <div class="banner reveal" style="--i:3"><span class="ic">⚡</span><div>2nd batch ≈ <b>53%</b> of the first · prep halves, dry run zeroes, curriculum stays ₹0. <b>Never cut hours</b>; cut cost components.</div></div>
+  </div>
+</div>
+
+<!-- 14 TOOLS, VM & BENCHMARKS -->
+<div class="slide" data-notes="The reasoning behind infra cost. Paid tools per learner per month: GitHub Copilot $19, LLM API $3, Azure $60 · about ₹7,872 with Azure, ₹2,112 without (FX ≈ ₹96/$). Everything else in the stack is free and open source, $0. VMs are ₹500 per learner per day; ₹5,000 for a 5-program, ₹7,000 for 8-program. So all-in tools plus VM is ₹12,872 per learner for 5 days with Azure, ₹7,112 without; 8-day ₹22,744 or ₹11,224. Masterclass example ₹1.85L. Other quoted refs: BGSW Adv Builder ₹70k per pax at 35%, LVT $3,021 per learner at 40%.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">Tools, VM &amp; benchmarks · the infra per learner</div><div class="h">What infra <span class="ac">costs.</span></div></div>
+    <div class="g2" style="gap:18px;align-items:start;">
+      <div class="reveal" style="--i:1">
+        <table class="tbl" style="font-size:12px;">
+          <tr><th>Paid tools / learner / month</th><th>Cost</th></tr>
+          <tr><td>GitHub Copilot (Business)</td><td>$19</td></tr>
+          <tr><td>LLM API (OpenAI / Anthropic)</td><td>$3</td></tr>
+          <tr><td>Azure · SQL · Functions · Key Vault</td><td>$60</td></tr>
+          <tr><td><b>Total · with / without Azure</b></td><td><b>₹7,872 / ₹2,112</b></td></tr>
+        </table>
+        <div class="pillrow" style="margin-top:8px;"><span class="pill">Free / OSS = $0: Docker · LangChain · LangGraph · LangSmith · CrewAI · MCP/A2A · FAISS · Chroma · HF · LoRA/PEFT · FastAPI · VS Code</span></div>
+      </div>
+      <div class="reveal" style="--i:2">
+        <table class="tbl" style="font-size:12px;">
+          <tr><th>All-in (tools + VM / learner)</th><th>5-day</th><th>8-day</th></tr>
+          <tr><td>VM only (₹500 / day)</td><td>₹5,000</td><td>₹7,000</td></tr>
+          <tr><td><b>With Azure</b></td><td><b>₹12,872</b></td><td><b>₹22,744</b></td></tr>
+          <tr><td>Without Azure</td><td>₹7,112</td><td>₹11,224</td></tr>
+        </table>
+        <div class="g2" style="gap:10px;margin-top:10px;">
+          <div class="card"><div class="t" style="font-size:13px;">🎓 Masterclass</div><div class="d" style="font-size:11.5px;">3 hrs · ₹5,500/hr → base ₹66,000 → <b>₹1,84,800</b>.</div></div>
+          <div class="card"><div class="t" style="font-size:13px;">📉 Volume</div><div class="d" style="font-size:11.5px;">4→5% · 5→10% · 6→15% · 7→20%.</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="banner reveal" style="--i:3"><span class="ic">💡</span><div>Other quoted refs: <b>BGSW</b> Adv Builder ₹70,000/pax (35% markup) · <b>LVT</b> 5-day $3,021/learner (40%). Margin trend: 25% → 35% → <b>40%</b>.</div></div>
+  </div>
+</div>
+
+<!-- 15 SECTION 05 -->
+<div class="slide section dark" data-notes="Part 5 · discovery. 33 questions, 14 non-negotiable reds. Below 80% complete, hold the proposal. The gauge is live · tick the reds.">
+  <div class="mesh"></div>
+  <div class="inner"><div class="num reveal">05</div><div class="pl reveal" style="--i:1">Discovery</div><h2 class="reveal" style="--i:2">Hold below 80%.</h2><div class="sub reveal" style="--i:3">Tick the reds and watch the gauge. Generic proposals lose more deals than no proposals.</div></div>
+</div>
+
+<!-- 16 DISCOVERY GAUGE (interactive) -->
+<div class="slide" data-notes="The 14 must-asks, live. Tick each as you confirm it on the discovery call. The gauge fills; cross 80% and it turns green · that's your green light to draft. Below it, hold and book a 30-minute follow-up. In Acceler OS the full 33-question checklist auto-scores the brief.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">The 14 reds · tick what you've confirmed</div><div class="h">Are you <span class="ac">ready to draft?</span></div></div>
+    <div class="discwrap">
+      <div class="reveal" style="--i:1">
+        <div class="gauge" id="gauge" style="--deg:0deg;"><div class="gv"><div class="pct" id="gaugePct">0%</div><div class="gl" id="gaugeLbl">Hold</div></div></div>
+      </div>
+      <div class="reveal" style="--i:2">
+        <div class="checks" id="checks">
+          <div class="chk"><div class="box">✓</div>Actual problem (not "need AI")</div>
+          <div class="chk"><div class="box">✓</div>Success in 3 months · a number</div>
+          <div class="chk"><div class="box">✓</div>Who decides &amp; who pays</div>
+          <div class="chk"><div class="box">✓</div>What participants actually do</div>
+          <div class="chk"><div class="box">✓</div>How many · how many batches</div>
+          <div class="chk"><div class="box">✓</div>Virtual / in-person · time zones</div>
+          <div class="chk"><div class="box">✓</div>How much time (½d / 1d / 2d)</div>
+          <div class="chk"><div class="box">✓</div>AI tools they have today</div>
+          <div class="chk"><div class="box">✓</div>Will IT block anything?</div>
+          <div class="chk"><div class="box">✓</div>The task they should DO after</div>
+          <div class="chk"><div class="box">✓</div>Budget range</div>
+          <div class="chk"><div class="box">✓</div>Decision date</div>
+          <div class="chk"><div class="box">✓</div>Approver named</div>
+          <div class="chk"><div class="box">✓</div>Existing content / data access</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 16b LIVE DISCOVERY CHECKLIST (embedded) -->
+<div class="slide" data-notes="The full discovery checklist, live. This is the tool you actually run on every brief · it scores completeness across all 33 questions and flags the gaps. Below 80% complete, hold the proposal. It is embedded here; open it full-screen with the button.">
+  <div class="inner" style="max-width:1260px;">
+    <div class="shead reveal" style="margin-bottom:12px;"><div class="eyebrow">Discovery · the live checklist</div><div class="h">Run it on <span class="ac">every brief.</span></div></div>
+    <div class="reveal" style="--i:1;position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:#fff;">
+      <iframe src="https://acceler-pre-sales-discovery-checkli.vercel.app/" title="Acceler Discovery Checklist" style="width:100%;height:58vh;border:0;display:block;" loading="lazy"></iframe>
+    </div>
+    <div class="reveal" style="--i:2;display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:12px;flex-wrap:wrap;">
+      <div style="font-size:13px;color:var(--text2);"><b>Auto-scores the brief · flags gaps.</b> Below 80% complete, hold the proposal or book a 30-min follow-up.</div>
+      <a class="btnlink" target="_blank" rel="noopener" href="https://acceler-pre-sales-discovery-checkli.vercel.app/" style="margin-top:0;">Open full-screen →</a>
+    </div>
+  </div>
+</div>
+
+<!-- 17 SECTION 06 -->
+<div class="slide section dark" data-notes="Part 6 · patterns. Click a scenario to expand the play. Plus the mistakes that cost time.">
+  <div class="mesh"></div>
+  <div class="inner"><div class="num reveal">06</div><div class="pl reveal" style="--i:1">Patterns</div><h2 class="reveal" style="--i:2">What to do in the moment.</h2><div class="sub reveal" style="--i:3">Click a scenario to open the play: read, move, avoid.</div></div>
+</div>
+
+<!-- 18 SCENARIOS (expandable) -->
+<div class="slide" data-notes="Four scenarios you'll hit often. Click to expand. Thin brief: don't quote, send the 6 musts, book a call. India pricing pressure: cut cost components, never hours. SME gap: keep momentum while sourcing, send sample profiles. Rush mode: skip to the deck, call people don't email.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">Scenarios · click to open the play</div><div class="h">Worked <span class="ac">examples.</span></div></div>
+    <div class="scens reveal" style="--i:1" id="scens">
+      <div class="scen open"><div class="sh"><div class="st">🪶 "We need AI training" · no specifics</div><div class="tog">+</div></div><div class="body"><div class="qa">
+        <div class="k r">Read</div><div class="v">Discovery &lt; 50%. Generic proposals lose more deals than no proposals.</div>
+        <div class="k m">Move</div><div class="v">Send the 6 must-asks; book a 30-min call within 48h.</div>
+        <div class="k a">Avoid</div><div class="v">A generic "AI Builders for $X". It gets politely ignored.</div>
+      </div></div></div>
+      <div class="scen"><div class="sh"><div class="st">💰 India pricing exceeds budget</div><div class="tog">+</div></div><div class="body"><div class="qa">
+        <div class="k r">Read</div><div class="v">Aim 40–70% reduction. They can't afford ₹6K/hr instructors at scale.</div>
+        <div class="k m">Move</div><div class="v">Tier-1 India SME → exclude Nuvepro → bigger batch → blended. Combine 2–3.</div>
+        <div class="k a">Avoid</div><div class="v">Cutting hours. The hours are the program.</div>
+      </div></div></div>
+      <div class="scen"><div class="sh"><div class="st">🔎 No SME for that domain</div><div class="tog">+</div></div><div class="body"><div class="qa">
+        <div class="k r">Read</div><div class="v">10% edge case (Capgemini AI-for-Sales pattern).</div>
+        <div class="k m">Move</div><div class="v">Send sample LinkedIn + instructor profiles to stay warm; Shashi/NP source in parallel.</div>
+        <div class="k a">Avoid</div><div class="v">Silence. Clients read it as "they don't have it".</div>
+      </div></div></div>
+      <div class="scen"><div class="sh"><div class="st">⏱️ Proposal needed in 24 hours</div><div class="tog">+</div></div><div class="body"><div class="qa">
+        <div class="k r">Read</div><div class="v">You won't get the full cycle. Pick where to cut before drafting.</div>
+        <div class="k m">Move</div><div class="v">Skip to the deck; Aashish/Amit take commercials; you fill curriculum. Soham via 5-min call.</div>
+        <div class="k a">Avoid</div><div class="v">Doing it all solo. Rush mode is a team sport · call, don't email.</div>
+      </div></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- 19 SECTION 07 + ACCOUNTS (filter) -->
+<div class="slide" data-notes="The active book · filterable. Click a status. The Delivered set is the real list from the B2B AI Programs drive: e& (many cohorts), Cornerstone, Bosch, Deloitte, ETS, Lowe's, Nucleus, Yettel. Booking, Edelweiss, Gryphon, MCB are reference patterns; LatentView, Capgemini, Voya, ANSR, IGT are in-flight.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">Part 07 · Accounts · click to filter</div><div class="h">The book you're <span class="ac">inheriting.</span></div></div>
+    <div class="filt reveal" style="--i:1" id="acctFilt">
+      <button class="on" data-s="all">All 19</button><button data-s="hot">Priority</button><button data-s="del">Delivered</button><button data-s="warm">In-flight</button><button data-s="ref">Reference</button>
+    </div>
+    <div class="acct reveal" style="--i:2" id="acctGrid">
+      <div class="acard" data-s="hot"><div class="an">e& (Etisalat)<span class="tagp hot">Priority</span></div><div class="ad">UAE telco. Delivered: Builder Pro/Low/No-Code (Nov-Dec + Q1), AI for Leaders, Pilot. <b>PPF Leaders sessions</b> · Hungary · Prague · <b>Serbia</b> / CETIN · Yettel. Now: <b>GT graduate-training RFP</b> + sentiment-analysis impact build (John · Ruth).</div></div>
+      <div class="acard" data-s="hot"><div class="an">LVT<span class="tagp hot">Priority · P0</span></div><div class="ad">3-day Claude Code AI-Assisted Dev Bootcamp · US. Leads Kyle Cheng · Jeevendra Singh. <a target="_blank" rel="noopener" href="https://docs.google.com/document/d/17pSnxXz5yZKWB4UjuCj6oTS3Lg25MqD5f-Lj-LnPINo/edit" style="color:var(--cyan-d);font-weight:700;">Brief →</a></div></div>
+      <div class="acard" data-s="del"><div class="an">Cornerstone<span class="tagp del">Delivered</span></div><div class="ad">Sales Team · AI for PMs · 3-hr Masterclass (4.85/5). Reseller channel.</div></div>
+      <div class="acard" data-s="del"><div class="an">Bosch<span class="tagp del">Delivered</span></div><div class="ad">AI Builder Masterclass (MCP &amp; A2A). Elevate tiers proposal in-flight.</div></div>
+      <div class="acard" data-s="del"><div class="an">Deloitte<span class="tagp del">Delivered</span></div><div class="ad">AI for Leaders, incl. multi-agent.</div></div>
+      <div class="acard" data-s="del"><div class="an">ETS<span class="tagp del">Delivered</span></div><div class="ad">Leadership Program.</div></div>
+      <div class="acard" data-s="del"><div class="an">Lowe's<span class="tagp del">Delivered</span></div><div class="ad">AI Program · live class content.</div></div>
+      <div class="acard" data-s="del"><div class="an">Nucleus<span class="tagp del">Delivered</span></div><div class="ad">Masterclass. India AI-Builders reference pattern.</div></div>
+      <div class="acard" data-s="del"><div class="an">Yettel (Serbia)<span class="tagp del">Delivered</span></div><div class="ad">AI program · virtual labs.</div></div>
+      <div class="acard" data-s="warm"><div class="an">LatentView<span class="tagp warm">In-flight</span></div><div class="ad">Analytics AI program. India.</div></div>
+      <div class="acard" data-s="warm"><div class="an">Capgemini<span class="tagp warm">In-flight</span></div><div class="ad">AI for Sales. SME availability gated it.</div></div>
+      <div class="acard" data-s="warm"><div class="an">Voya<span class="tagp warm">In-flight</span></div><div class="ad">Finance + HR 2-day tracks + capstone. US.</div></div>
+      <div class="acard" data-s="warm"><div class="an">ANSR<span class="tagp warm">In-flight</span></div><div class="ad">GCC leaders demo · Claude Code + Cowork.</div></div>
+      <div class="acard" data-s="warm"><div class="an">IGT Solutions<span class="tagp warm">In-flight</span></div><div class="ad">M365 Copilot for CX teams.</div></div>
+      <div class="acard" data-s="warm"><div class="an">Diebold Nixdorf<span class="tagp warm">In-flight</span></div><div class="ad">AI for Sales. Capability-map showcase built for them.</div></div>
+      <div class="acard" data-s="ref"><div class="an">Booking Holdings<span class="tagp ref">Reference</span></div><div class="ad">14 proposals → 4d/24h GenAI Eng Accelerator.</div></div>
+      <div class="acard" data-s="ref"><div class="an">Edelweiss<span class="tagp ref">Reference</span></div><div class="ad">8d · 54 live hrs · blended. ₹18.2L.</div></div>
+      <div class="acard" data-s="ref"><div class="an">Gryphon<span class="tagp ref">Reference</span></div><div class="ad">PE firm. FDE programme + APR add-on.</div></div>
+      <div class="acard" data-s="ref"><div class="an">MCB Mauritius<span class="tagp ref">Reference</span></div><div class="ad">Via Ryan. LMS-heavy. Foundation + Champion.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- 19b testimonials official image -->
+<div class="slide imgslide" data-notes="Social proof for the accounts you're inheriting · what tech and business professionals say about the accelerators. Consistent praise for the hands-on, build-first experience.">
+  <img src="co-8-testimonials.png" alt="What professionals say about our accelerators">
+</div>
+
+<!-- 20 SECTION 08 -->
+<div class="slide section dark" data-notes="Part 8 · post-sales. The role doesn't end at signature. You hand off a clean package; delivery builds, delivers and grades the content. Animated handoff, then where everything lives.">
+  <div class="mesh"></div>
+  <div class="inner"><div class="num reveal">08</div><div class="pl reveal" style="--i:1">Post-sales &amp; content</div><h2 class="reveal" style="--i:2">After the deal closes.</h2><div class="sub reveal" style="--i:3">Hand off intent + commercials. Delivery builds the rest.</div></div>
+</div>
+
+<!-- 21 POST-SALES FLOW + CONTENT -->
+<div class="slide" data-notes="The handoff. You pass delivery a clean package from the client folder: signed deck, costing sheet, commercials, Topics and Coverage Plan, onboarding form. They build per-module Live Class decks and Colab notebooks, run the SME dry run, publish the learner-facing Uplevel Shared copy, grade assignments with Solution and MCQ keys, then capture a Feedback and Next-Steps doc · your renewal hook. All content lives in the Content Post-Sales folder; recordings and certificates usually sit on the LMS.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">The handoff · pre-sales → delivery</div><div class="h">Hand off intent. <span class="ac">Delivery builds the rest.</span></div></div>
+    <div class="flow reveal" style="--i:1;margin-bottom:16px;">
+      <div class="fstep"><div class="fi">📦</div><div class="ft">You hand off</div><div class="fd">Deck · costing · commercials · coverage plan · onboarding</div></div>
+      <div class="farr"><svg viewBox="0 0 26 14"><path class="dash" d="M1 7 H22 M17 2 L23 7 L17 12"/></svg></div>
+      <div class="fstep cy"><div class="fi">🏗️</div><div class="ft">Build</div><div class="fd">Live Class decks + Colab notebooks</div></div>
+      <div class="farr"><svg viewBox="0 0 26 14"><path class="dash" d="M1 7 H22 M17 2 L23 7 L17 12"/></svg></div>
+      <div class="fstep"><div class="fi">🎤</div><div class="ft">Dry run → deliver</div><div class="fd">Publish Uplevel Shared · live delivery</div></div>
+      <div class="farr"><svg viewBox="0 0 26 14"><path class="dash" d="M1 7 H22 M17 2 L23 7 L17 12"/></svg></div>
+      <div class="fstep gn"><div class="fi">📝</div><div class="ft">Grade + feedback</div><div class="fd">Solution/MCQ keys · Feedback &amp; Next-Steps</div></div>
+    </div>
+    <div class="g2 reveal" style="--i:2;align-items:stretch;">
+      <div class="folder" style="font-size:12px;">
+        <b>&lt;Program&gt;/ &lt;Module&gt;/</b><br/>
+        ├── <b>Instructor's Copy/</b> <span class="c">master</span><br/>
+        ├── <b>Uplevel Shared/</b> <span class="c">learner-facing</span><br/>
+        ├── <b>Live Class/</b> <span class="c">.pptx + .ipynb</span><br/>
+        └── <b>Assignment/</b> <span class="c">+ Solution + MCQ</span>
+      </div>
+      <div class="card top"><div class="t" style="font-size:15px;">🗂️ All content lives here</div><div class="d" style="font-size:13px;"><a target="_blank" rel="noopener" href="https://drive.google.com/drive/u/1/folders/1tUMBGWfAKPzKA4hndaDjBe9hOHzMhza2" style="color:var(--cyan-d);font-weight:800;">Content (Post Sales) →</a><br/><span style="color:var(--amber)">Likely a Shared Drive · confirm the new POCs have access. Recordings/certs usually on the LMS.</span></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- 21b PROGRAM LIFECYCLE (one program, end to end) -->
+<div class="slide" data-notes="One program, end to end · the full post-sales cycle we actually run, shown on the e& AI Builder Low Code 4-day cohort. It opens with Orientation and an onboarding form, then a pre-program assessment that baselines every learner. Ops stands up the virtual labs and credentials. Across the delivery days each session ships content plus a feedback form, and Day 4 adds the NPS. We close with a Closing Ceremony, a post-program assessment that pairs with the pre-test, and finally an Impact Report for the client · the renewal hook. Pre to post improvement on this cohort averaged about 88 percent.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">Post-sales · one program, end to end</div><div class="h">The full <span class="ac">program cycle.</span></div></div>
+    <div class="flow reveal" style="--i:1;margin-bottom:18px;">
+      <div class="fstep cy"><span class="day">Open</span><div class="fi">🎬</div><div class="ft">Orientation</div><div class="fd">Slides + onboarding form</div></div>
+      <div class="farr"><svg viewBox="0 0 26 14"><path class="dash" d="M1 7 H22 M17 2 L23 7 L17 12"/></svg></div>
+      <div class="fstep"><span class="day">Baseline</span><div class="fi">📋</div><div class="ft">Pre-Assess</div><div class="fd">Pre-test · every learner</div></div>
+      <div class="farr"><svg viewBox="0 0 26 14"><path class="dash" d="M1 7 H22 M17 2 L23 7 L17 12"/></svg></div>
+      <div class="fstep"><span class="day">Setup</span><div class="fi">🖥️</div><div class="ft">Labs + creds</div><div class="fd">Nuvepro VMs · API keys</div></div>
+      <div class="farr"><svg viewBox="0 0 26 14"><path class="dash" d="M1 7 H22 M17 2 L23 7 L17 12"/></svg></div>
+      <div class="fstep hl"><span class="day">Day 1–4</span><div class="fi">🎤</div><div class="ft">Deliver</div><div class="fd">Session + feedback daily</div></div>
+      <div class="farr"><svg viewBox="0 0 26 14"><path class="dash" d="M1 7 H22 M17 2 L23 7 L17 12"/></svg></div>
+      <div class="fstep"><span class="day">Close</span><div class="fi">🎓</div><div class="ft">Closing</div><div class="fd">Ceremony + NPS</div></div>
+      <div class="farr"><svg viewBox="0 0 26 14"><path class="dash" d="M1 7 H22 M17 2 L23 7 L17 12"/></svg></div>
+      <div class="fstep"><span class="day">Measure</span><div class="fi">📊</div><div class="ft">Post-Assess</div><div class="fd">Post-test vs pre</div></div>
+      <div class="farr"><svg viewBox="0 0 26 14"><path class="dash" d="M1 7 H22 M17 2 L23 7 L17 12"/></svg></div>
+      <div class="fstep gn"><span class="day">Renewal</span><div class="fi">📈</div><div class="ft">Impact Report</div><div class="fd">The reconnect hook</div></div>
+    </div>
+    <div class="stats reveal" style="--i:2">
+      <div class="stat"><div class="n">+88%</div><div class="l">Avg pre→post improvement</div></div>
+      <div class="stat"><div class="n">4</div><div class="l">Delivery days · feedback each</div></div>
+      <div class="stat"><div class="n">19</div><div class="l">Ops-sheet tabs per cohort</div></div>
+      <div class="stat"><div class="n">2</div><div class="l">Cohorts · shared OneDrive</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- 21c THE OPERATIONS SHEET -->
+<div class="slide" data-notes="The live operations sheet · the single source of truth Ops runs a cohort from. This is the real e& AI Builder Low Code Cohort 2 sheet, nineteen tabs. They group into four jobs: who is in the room · learner profiles, onboarding responses, final list. The infra · VM credentials, the per-SME VM list, remaining-assignment creds, and the AI-tools-and-Nuvepro cost tab. Running the days · schedule and instructors, content changes, the NP and Ops checklists, attendance, class ratings. And proving impact · pre-test, post-test, pre-vs-post, analysis, plus Agentic Fest planning. The cost tab works out roughly four-and-a-quarter lakh all-in for this cohort.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">Post-sales · the live ops sheet · one tab per job</div><div class="h">How Ops runs <span class="ac">a cohort.</span></div></div>
+    <div class="g4 reveal" style="--i:1;gap:13px;">
+      <div class="card top"><div class="t" style="font-size:15.5px;">👥 People</div><div class="d" style="font-size:12.5px;"><ul><li>Learner Profile Analysis</li><li>Onboarding Form Responses</li><li>Final List (Cohort)</li></ul></div></div>
+      <div class="card top"><div class="t" style="font-size:15.5px;">🖥️ Infra &amp; cost</div><div class="d" style="font-size:12.5px;"><ul><li>VM Credentials</li><li>VM List (per SME)</li><li>Remaining-Assign Creds</li><li>AI Tools &amp; Nuvepro Cost</li></ul></div></div>
+      <div class="card top"><div class="t" style="font-size:15.5px;">🎬 Run the days</div><div class="d" style="font-size:12.5px;"><ul><li>Schedule &amp; Instructor</li><li>Content Changes</li><li>NP + Ops Checklists</li><li>Attendance · Class Ratings</li></ul></div></div>
+      <div class="card top"><div class="t" style="font-size:15.5px;">📊 Prove impact</div><div class="d" style="font-size:12.5px;"><ul><li>Pre Test · Post Test</li><li>Pre vs Post · Analysis</li><li>Agentic Fest Planning</li></ul></div></div>
+    </div>
+    <div class="g2 reveal" style="--i:2;margin-top:14px;align-items:stretch;">
+      <div class="card"><div class="t" style="font-size:15.5px;">💸 What infra costs (this cohort)</div><div class="d" style="font-size:13px;"><b>Nuvepro VM labs ₹3,30,000</b> (₹500/learner/day) <b>+ AI tools ₹94,953</b> (n8n, ChatGPT, OpenAI &amp; SERP keys, MS) = <b>₹4,24,953 all-in</b>. The cost tab does this math live.</div></div>
+      <div class="card top"><div class="t" style="font-size:15.5px;">🔗 Open it</div><div class="d" style="font-size:13px;"><a target="_blank" rel="noopener" href="https://docs.google.com/spreadsheets/d/1-F--sADeQ7Fxsjdc_9_Fkqt3X9A68Y0aHy05B0a9io4/edit" style="color:var(--cyan-d);font-weight:800;">Live Operations Sheet · e&amp; Low Code Cohort 2 →</a><br/><span style="color:var(--amber)">Holds live VM passwords + API keys · internal only.</span></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- 21d EVERY DOC, BY STAGE -->
+<div class="slide" data-notes="Every operational document for a program, in the order you use it, straight from the e& Low Code sheet. Setup docs · brochure, comms, virtual-lab setup, pre-reqs. Intake · onboarding form and pre-program assessment. Deliver · orientation slides, then each day's PPT-and-demo folder paired with its feedback form, NPS on Day 4. Close · closing-ceremony slides and the post-program assessment. Everything is archived in the cohort OneDrive · two cohorts linked. Office-form and Drive links are live; the named docs live in the OneDrive.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">Post-sales · every doc, in order · click any link</div><div class="h">The program <span class="ac">document set.</span></div></div>
+    <div class="reveal" style="--i:1">
+    <table class="tbl" style="font-size:13px;">
+      <tr><th style="width:130px;">Stage</th><th>Documents</th></tr>
+      <tr><td><b>🧱 Setup</b></td><td>Program Brochure · Communication Docs · Virtual Lab Setup · Pre-Req Doc &nbsp;<span style="color:var(--muted);">(named docs · in OneDrive)</span></td></tr>
+      <tr><td><b>📝 Intake</b></td><td>
+        <a target="_blank" rel="noopener" href="https://forms.office.com/r/GP4j4xgdNk">Onboarding Form</a> &nbsp;·&nbsp;
+        <a target="_blank" rel="noopener" href="https://forms.office.com/r/GhFMGZRUvz">Pre-Program Assessment</a></td></tr>
+      <tr><td><b>🎬 Deliver</b></td><td>Orientation Slides &nbsp;·&nbsp;
+        Day 1 <a target="_blank" rel="noopener" href="https://drive.google.com/drive/u/0/folders/1J5oD05dJCjBGkgWsep7EWgf93p7HeUbE">PPT</a>/<a target="_blank" rel="noopener" href="https://forms.office.com/r/rGQBVq2H3v">fb</a> ·
+        Day 2 <a target="_blank" rel="noopener" href="https://drive.google.com/drive/u/0/folders/1XsRGZrSZ2RLWraw943fqsf6G_6i1pAoc">PPT</a>/<a target="_blank" rel="noopener" href="https://forms.office.com/r/CanRK6UTuq">fb</a> ·
+        Day 3 <a target="_blank" rel="noopener" href="https://drive.google.com/drive/u/0/folders/1XsRGZrSZ2RLWraw943fqsf6G_6i1pAoc">PPT</a>/<a target="_blank" rel="noopener" href="https://forms.office.com/r/uxf4u3rEwz">fb</a> ·
+        Day 4 <a target="_blank" rel="noopener" href="https://drive.google.com/drive/u/0/folders/1XsRGZrSZ2RLWraw943fqsf6G_6i1pAoc">PPT</a>/<a target="_blank" rel="noopener" href="https://forms.office.com/r/rzYNJghHDW">fb + NPS</a></td></tr>
+      <tr><td><b>🎓 Close</b></td><td>Closing Ceremony Slides &nbsp;·&nbsp;
+        <a target="_blank" rel="noopener" href="https://forms.office.com/r/HauLdMDfFq">Post-Program Assessment</a></td></tr>
+      <tr><td><b>🗂️ Archive</b></td><td>
+        <a target="_blank" rel="noopener" href="https://interviewkickstarts-my.sharepoint.com/:f:/g/personal/operations_teamupwardandonward_com/IgD5nIkAUROlRro7Cs3yjrjcAen6zWdQYA_WpeQGrw6v6rc?e=nf7s3h">OneDrive · Cohort 1</a> &nbsp;·&nbsp;
+        <a target="_blank" rel="noopener" href="https://interviewkickstarts-my.sharepoint.com/:f:/g/personal/operations_teamupwardandonward_com/IgCkexaXgtjAR65ux4Zj05WcAQ227QhoT1OQiRRl8FR8Efc?e=JaGtJt">OneDrive · Cohort 2</a></td></tr>
+    </table>
+    </div>
+    <div class="banner reveal" style="--i:2"><span class="ic">📦</span><div>This is the <b>e&amp; AI Builder (Low Code) 4-day</b> set · the template every delivered program follows. Named docs (brochure, comms, orientation, closing) live in the <b>cohort OneDrive</b>.</div></div>
+  </div>
+</div>
+
+<!-- 21e ASSIGNMENTS, GRADING & PROOF -->
+<div class="slide" data-notes="The grading and proof layer. For Pro-Code programs there is a rubric template and a filled sample gradesheet · open the rubric, copy it, grade against it. Suvansh can share session recordings from past Pro and Low Code programs. After the program the Impact Report packages the outcome for the client and seeds the next conversation. The hard proof is the pre-versus-post jump · about 88 percent average improvement on the e& Low Code cohort.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">Post-sales · grading &amp; proof · click to open</div><div class="h">Assignments, grading, <span class="ac">impact.</span></div></div>
+    <div class="tiles reveal" style="--i:1">
+      <a class="tile" target="_blank" rel="noopener" href="https://docs.google.com/spreadsheets/d/1S3bpfk_4Eswmx2gUmrIeLDZSXEMzqVJL0J9rzpI57oY/edit?gid=1880014838#gid=1880014838"><div class="ti">📐</div><div class="tn">Pro-Code Rubric</div><div class="tx">The grading rubric template · copy &amp; grade against it.</div><div class="go">OPEN →</div></a>
+      <div class="tile" style="cursor:default;"><div class="ti">✅</div><div class="tn">Sample Gradesheet</div><div class="tx">Maryam Ebrahim · a filled Post-Program gradesheet.</div><div class="go" style="color:var(--amber);">NAMED DOC</div></div>
+      <a class="tile" target="_blank" rel="noopener" href="https://docs.google.com/document/u/1/d/18LoSdgzxsxz2NilyWM3RvKuOUobLP-hRz6BMzumOnJ8/edit?tab=t.0"><div class="ti">📈</div><div class="tn">Impact Report</div><div class="tx">Post-program outcome write-up · the renewal seed.</div><div class="go">OPEN →</div></a>
+      <div class="tile" style="cursor:default;"><div class="ti">🎥</div><div class="tn">Session Recordings</div><div class="tx">Pro / Low-Code past sessions for reference.</div><div class="go" style="color:var(--amber);">ASK SUVANSH</div></div>
+    </div>
+    <div class="banner reveal" style="--i:2"><span class="ic">📊</span><div>Hard proof for the renewal conversation: the <b>pre → post jump averaged ≈ 88%</b> on the e&amp; Low Code cohort · the Impact Report is built on exactly this.</div></div>
+  </div>
+</div>
+
+<!-- 22 SECTION 09 -->
+<div class="slide section dark" data-notes="Part 9 · the assets. Everything you'll open repeatedly, as clickable tiles. The sample proposals to study, then the operational sources of truth.">
+  <div class="mesh"></div>
+  <div class="inner"><div class="num reveal">09</div><div class="pl reveal" style="--i:1">The assets</div><h2 class="reveal" style="--i:2">Everything, one click away.</h2><div class="sub reveal" style="--i:3">Sample proposals, then the operational hub.</div></div>
+</div>
+
+<!-- 23 SAMPLE PROPOSALS (tiles) -->
+<div class="slide" data-notes="Open one per track in week 1. Read each against the proposal anatomy and notice how the same skeleton flexes. One filing flag: the primary deck under Security is Honeywell, not Fujitsu.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">Sample proposals · open these week 1</div><div class="h">Model from <span class="ac">what's won.</span></div></div>
+    <div class="reveal" style="--i:1">
+    <table class="tbl" style="font-size:13px;">
+      <tr><th style="width:210px;">Track · requirement</th><th>Open · every number is a link</th></tr>
+      <tr><td><b>🎯 Leaders</b></td><td>
+        <a target="_blank" rel="noopener" class="lk" href="https://docs.google.com/presentation/d/1f_tYK6-MxnqAIiLYcegRTgvnZdCaX8V-RnuqSR-BK9M">1</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://drive.google.com/drive/u/1/folders/1tWMT1wER1sRHd-gqsApIATZhxtVYPIxZ">2</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://docs.google.com/document/d/1jpMJEGOy_SgF1n81IvA8XotggAopufcXULCwilNFAyA">3</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://docs.google.com/presentation/d/1KxvPb3LPOcZAUpcaGOkkK7litSifsYXaRaqknV8h3OE">4</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://drive.google.com/drive/u/1/folders/1YIYigKLuAt4KhTUD04iiidFbzLnQoPrA">5</a></td></tr>
+      <tr><td><b>📘 Basics of APR</b></td><td>
+        <a target="_blank" rel="noopener" class="lk" href="https://drive.google.com/drive/u/1/folders/1TwWYEywt1mhK3B_LoiBey6mgAxhtb-qL">1</a></td></tr>
+      <tr><td><b>⚙️ Engineers</b></td><td>
+        <a target="_blank" rel="noopener" class="lk" href="https://drive.google.com/drive/u/1/folders/1cBlywo7QCDYAfGlsPaT_UZJQeVenLCih">1</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://docs.google.com/document/d/1ILCxRIjtI7wpGMYoADbpkLUp8uyjlhKnY3EHJt3_Fjk">2</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://drive.google.com/drive/u/1/folders/1sPsZ6eU86Q6uSc5h4g-cKAd_nv79r9-8">3</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://drive.google.com/drive/u/1/folders/1MgRn52BHI2dmnoRM29LSDN5MnFycmirw">4</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://drive.google.com/drive/u/1/folders/16FmKY-HEEflNjr9TvRvcDCtzaiJh4RfG">5</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://docs.google.com/document/d/1FKXBZkCglTGQgUJQhRp5qnq-Dr2oID2ls2ZteW5Wklk">6</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://docs.google.com/presentation/d/1HjD47JlMFFgvTlS0vHkRRdACj4SuYseCgTxppVWuR3c">7</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://drive.google.com/drive/u/1/folders/1wCWfkMMUPvNYsXZaIrVxarWZxlSab8w3">8</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://drive.google.com/drive/u/1/folders/1zjYuAQ_QIObnR5WmvDLZmN9EmBSbUNCm">9</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://docs.google.com/document/d/1YjMmnE9VcabI5DatZM1yToVx5laZcnoV3ATUJGsDz0Y">10</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://drive.google.com/drive/u/1/folders/1rcL5PRR7iWJDquJWJHLBHKnq0FYQdEGR">11</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://drive.google.com/drive/u/1/folders/1LFcbU2o70mH33uWcafpsyj60AAA1QPWX">12</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://drive.google.com/drive/u/1/folders/19F4NxFyygd12AApc5BVMCFfXVqdtm7fE">13</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://drive.google.com/drive/u/1/folders/1ouXtzDXCgAiwXcByKptrkhqJXHX_epNH">14</a></td></tr>
+      <tr><td><b>🧭 AI for PMs</b></td><td>
+        <a target="_blank" rel="noopener" class="lk" href="https://docs.google.com/document/d/1-ky44a_FeoX0MYi5d2K4QIsHR5GNEQnsousQEYcOFcA">1</a></td></tr>
+      <tr><td><b>🔧 AI for Non-Tech</b></td><td>
+        <a target="_blank" rel="noopener" class="lk" href="https://drive.google.com/drive/u/1/folders/108vAZbHGX31-ZXmvgRLAI6aUcl7q5Cbv">1</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://docs.google.com/presentation/d/1O7OD4zyYMzAxnsVSm2UnvErCrytJ_aji">2</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://docs.google.com/presentation/d/1rjHxAIS4rbcN-TeZlK_alS67dfpyo43pZCoJ_Xah7IU">3</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://docs.google.com/presentation/d/1KSe7RdZhlvxdlk_rYuZXxOILla83SaV0QO6Y4_ta6Gw">4</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://drive.google.com/drive/u/1/folders/1TICYDPhMkl6NioFbUgkx3S7PM9BOdC1C">5</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://drive.google.com/drive/u/1/folders/1VrcUIzWiwgdXM8I3x1JgJOFEP8ccf8U_">6</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://drive.google.com/drive/u/1/folders/1emxbnN9svBr8ML-u2WhB0Scg2VEQAFQD">7</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://drive.google.com/drive/u/1/folders/1VN-LlpTniBR9IevWRhbJTf5wjvbVr5G-">8</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://drive.google.com/drive/u/1/folders/1DGHonJfbG1XtuIesLNMGzQlzfz0ml5hW">9</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://drive.google.com/drive/u/1/folders/1nw1upEwRAymovycotHvlEdgqMjMxb8c2">10</a></td></tr>
+      <tr><td><b>🛡️ AI for Security / Risk</b></td><td>
+        <a target="_blank" rel="noopener" class="lk" href="https://drive.google.com/drive/u/1/folders/1rRNRs8DxfeGGdSE9Ppwp1WjyX7Wm-yP9">1</a>
+        <a target="_blank" rel="noopener" class="lk" href="https://docs.google.com/presentation/d/1T1pYU63xIyosRhCXHwz2u4K51GjteYU4JPV3U4PAyq0">2</a>
+        <span style="font-size:11px;color:var(--muted);margin-left:6px;">2 = Honeywell, not Fujitsu</span></td></tr>
+      <tr><td><b>💼 AI for VCs</b></td><td>
+        <a target="_blank" rel="noopener" class="lk" href="https://drive.google.com/drive/u/1/folders/1DGHonJfbG1XtuIesLNMGzQlzfz0ml5hW">1</a></td></tr>
+    </table>
+    </div>
+    <div class="reveal" style="--i:2">
+      <div style="font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:16px 0 6px;">Clients behind these, by track</div>
+      <div class="pillrow">
+        <span class="pill"><a target="_blank" rel="noopener" href="https://docs.google.com/presentation/d/1f_tYK6-MxnqAIiLYcegRTgvnZdCaX8V-RnuqSR-BK9M" style="color:var(--cyan-d);font-weight:800;text-decoration:none;">🎯 Akamai · Leaders</a></span>
+        <span class="pill"><a target="_blank" rel="noopener" href="https://docs.google.com/document/d/1-ky44a_FeoX0MYi5d2K4QIsHR5GNEQnsousQEYcOFcA" style="color:var(--cyan-d);font-weight:800;text-decoration:none;">🧭 Cornerstone · PMs</a></span>
+        <span class="pill"><a target="_blank" rel="noopener" href="https://docs.google.com/presentation/d/1T1pYU63xIyosRhCXHwz2u4K51GjteYU4JPV3U4PAyq0" style="color:var(--cyan-d);font-weight:800;text-decoration:none;">🛡️ Honeywell · Security</a></span>
+        <span class="pill">⚙️ Engineers: Everest · Edelweiss · LVT · Sony · StoneX · Gryphon · BGSW</span>
+        <span class="pill">🔧 Non-Tech: Fiserv · IGT · Voya HR · MCB · Diebold · Schneider</span>
+        <span class="pill">🎯 Leaders also: Constance · LatentView · Voya</span>
+      </div>
+    </div>
+    <div class="banner reveal" style="--i:3"><span class="ic">📦</span><div>Every sample-proposal link, by track. <b>Open one per track in week 1</b> and read it against the proposal anatomy. Operational links (Tracker, Instructors, Agreements…) are on the next slide.</div></div>
+  </div>
+</div>
+
+<!-- 24 MASTER LINK INDEX (tiles) -->
+<div class="slide" data-notes="The hub. Bookmark this. Tracker is the live pipeline. Instructor Pool is where instructor matching starts. Mentor Profiles are client-ready bios. Agreements hold NDAs and POs · legal entity is Upward and Onward Inc. CSOD is a reseller channel. AIQ, Generic Decks, and Content Post-Sales round it out. If a link 403s, get access on day one.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">Master link index · bookmark this</div><div class="h">The operational <span class="ac">hub.</span></div></div>
+    <div class="tiles reveal" style="--i:1">
+      <a target="_blank" rel="noopener" class="tile" href="https://web-production-37b0b.up.railway.app/"><div class="ti">📊</div><div class="tn">Tracker (live)</div><div class="tx">The current B2B pipeline app · deals, stages, owners.</div><div class="go">OPEN →</div></a>
+      <a target="_blank" rel="noopener" class="tile" href="https://docs.google.com/spreadsheets/d/1wgSIZzSP8XDnkgw30K9qt-jYZ6277JaTSGU_aekzMdU/edit"><div class="ti">🗒️</div><div class="tn">Tracker (legacy sheet)</div><div class="tx">The older pipeline spreadsheet · reference only.</div><div class="go">OPEN →</div></a>
+      <a target="_blank" rel="noopener" class="tile" href="https://docs.google.com/document/d/16NvBlRFVb16E7iR6Nq2-oBbj9sZUUHUIR-quwNbp5HI/edit"><div class="ti">📇</div><div class="tn">Instructor Pool</div><div class="tx">700+ by domain. Start matching here.</div><div class="go">OPEN →</div></a>
+      <a target="_blank" rel="noopener" class="tile" href="https://drive.google.com/drive/u/1/folders/1YOpEqySuqlUhSEQMZw_rqImCmyvwLRV2"><div class="ti">🧑‍🏫</div><div class="tn">Mentor Profiles</div><div class="tx">Client-ready one-slide bios.</div><div class="go">OPEN →</div></a>
+      <a target="_blank" rel="noopener" class="tile" href="https://drive.google.com/drive/u/1/folders/1ks4DgxIDRVYYEFBRiM7MGfewjhcBV0Sr"><div class="ti">📜</div><div class="tn">Agreements</div><div class="tx">NDAs, POs, commercials. Entity: Upward and Onward Inc.</div><div class="go">OPEN →</div></a>
+      <a target="_blank" rel="noopener" class="tile" href="https://drive.google.com/drive/u/1/folders/1DxuM9D2HUFEwhZCyYeQ4knQn02KCOjQC"><div class="ti">🔄</div><div class="tn">Cornerstone Resale</div><div class="tx">CSOD reseller channel · different margin + paper.</div><div class="go">OPEN →</div></a>
+      <a target="_blank" rel="noopener" class="tile" href="https://drive.google.com/drive/u/1/folders/1zV2Z2wDd-OR3CyLzv2-_mTGoJmhzTHhK"><div class="ti">🧭</div><div class="tn">AIQ Framework</div><div class="tx">Diagnostic + scoring questions.</div><div class="go">OPEN →</div></a>
+      <a target="_blank" rel="noopener" class="tile" href="https://drive.google.com/drive/u/1/folders/1EZ1tcFVofwIq8KAd1NkBZ5ebAjqh9Euc"><div class="ti">🎞️</div><div class="tn">Generic Decks</div><div class="tx">Intro / who-we-are / four-persona.</div><div class="go">OPEN →</div></a>
+      <a target="_blank" rel="noopener" class="tile" href="https://acceler-pre-sales-discovery-checkli.vercel.app/"><div class="ti">✅</div><div class="tn">Discovery Checklist</div><div class="tx">The live tool · scores the brief, flags gaps.</div><div class="go">OPEN →</div></a>
+      <a target="_blank" rel="noopener" class="tile" href="https://drive.google.com/drive/u/1/folders/1tUMBGWfAKPzKA4hndaDjBe9hOHzMhza2"><div class="ti">🗂️</div><div class="tn">Content (Post Sales)</div><div class="tx">All delivered program content.</div><div class="go">OPEN →</div></a>
+    </div>
+    <div class="banner reveal" style="--i:2"><span class="ic">🔑</span><div>Customer-facing brand is <b>Acceler</b>; legal entity is <b>Upward and Onward, Inc.</b> If a link 403s, <b>flag access on day one.</b></div></div>
+  </div>
+</div>
+
+<!-- 24b SHOWCASES & LIVE ASSETS -->
+<div class="slide" data-notes="The live things we show clients · interactive decks, build labs, sample LMS, real-impact builds, and the latest e& GT RFP solutions. Plus the recording of KT session one. These are the proof-of-capability assets; open any in a new tab.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">Showcases &amp; live assets · what we can show a client</div><div class="h">Proof of <span class="ac">capability.</span></div></div>
+    <div class="tiles reveal" style="--i:1">
+      <a class="tile" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1flUHJQsYy96FfsZf5VNZjeYcb8LfiR4U/view"><div class="ti">🎥</div><div class="tn">KT Call · Session 1</div><div class="tx">Recording of the first KT session.</div><div class="go">OPEN →</div></a>
+      <a class="tile" target="_blank" rel="noopener" href="https://cornerstone-ondemand.vercel.app/"><div class="ti">🎤</div><div class="tn">Live Session Deck</div><div class="tx">A Cornerstone live-session deck (by Faiza).</div><div class="go">OPEN →</div></a>
+      <a class="tile" target="_blank" rel="noopener" href="https://ai-for-leaders-build-lab.vercel.app/"><div class="ti">🧭</div><div class="tn">AI for Leaders · Build Lab</div><div class="tx">The new build-first Leaders format.</div><div class="go">OPEN →</div></a>
+      <a class="tile" target="_blank" rel="noopener" href="https://copilot-leadership-lab.vercel.app/pick-your-use-case"><div class="ti">📋</div><div class="tn">Leaders Build Guide</div><div class="tx">The step-by-step guide groups follow.</div><div class="go">OPEN →</div></a>
+      <a class="tile" target="_blank" rel="noopener" href="https://ai-in-sdlc.vercel.app/#0"><div class="ti">🧑‍💻</div><div class="tn">AI in SDLC</div><div class="tx">Built for ANSR.</div><div class="go">OPEN →</div></a>
+      <a class="tile" target="_blank" rel="noopener" href="https://osb-deck-deploy.vercel.app/ansr-osb-v3.html"><div class="ti">🤝</div><div class="tn">ANSR OSB Partnership</div><div class="tx">End-to-end India partnership deck.</div><div class="go">OPEN →</div></a>
+      <a class="tile" target="_blank" rel="noopener" href="https://acceler-lms.vercel.app/profile"><div class="ti">🎓</div><div class="tn">Acceler LMS (sample)</div><div class="tx">End-to-end learning experience demo.</div><div class="go">OPEN →</div></a>
+      <a class="tile" target="_blank" rel="noopener" href="https://voiceflow-insights-05.lovable.app/login"><div class="ti">📊</div><div class="tn">e& Sentiment Analysis</div><div class="tx">Real-impact build (live app) with John (L&amp;D) &amp; Ruth (HR).</div><div class="go">OPEN →</div></a>
+      <a class="tile" target="_blank" rel="noopener" href="https://sentiment-analysis-plum-kappa.vercel.app/"><div class="ti">📈</div><div class="tn">Sentiment · v0 build</div><div class="tx">The v0 version of the e& sentiment project.</div><div class="go">OPEN →</div></a>
+      <a class="tile" target="_blank" rel="noopener" href="https://diebold-nixdorf.vercel.app/"><div class="ti">💼</div><div class="tn">Diebold Sales map</div><div class="tx">Capability mapping for a sales team.</div><div class="go">OPEN →</div></a>
+      <a class="tile" target="_blank" rel="noopener" href="https://eand-rfp-executives-june-2026-v1.vercel.app/eand-rfp-executives-june-2026-v1.html"><div class="ti">📑</div><div class="tn">e& GT RFP · Executives</div><div class="tx">Graduate-training RFP solution (Jun'26).</div><div class="go">OPEN →</div></a>
+      <a class="tile" target="_blank" rel="noopener" href="https://e-rfp-june-2026-v1.vercel.app/e-rfp-june-2026-v1.html"><div class="ti">📑</div><div class="tn">e& GT RFP · Technical</div><div class="tx">Graduate-training technical RFP solution.</div><div class="go">OPEN →</div></a>
+    </div>
+    <div class="banner reveal" style="--i:2"><span class="ic">✨</span><div>These are the <b>"show, don't tell"</b> assets · interactive decks, build labs, a sample LMS, a real client-impact build, and the latest e& GT graduate-training RFP solutions.</div></div>
+  </div>
+</div>
+
+<!-- 25 TRANSITION MILESTONES -->
+<div class="slide" data-notes="The transition is by milestone, not by week · we're already underway. Five milestones. M1 shadow and absorb: sit every call, read the deck and sample proposals, run every Acceler OS tab. M2 drive with a net: first proposals reviewed before Soham, then you own the reviews and pause to call when stuck. M3 pricing and custom fluency: India pricing scenarios and the multi-persona custom shapes. M4 own the engine: take over Mini-UT and the Knowledge Graph and keep feeding it. M5 solo: you run it, support becomes escalation-only.">
+  <div class="inner">
+    <div class="shead reveal"><div class="eyebrow">Part 10 · Transition · key milestones</div><div class="h">Then it's <span class="ac">yours.</span></div></div>
+    <div class="g2" style="align-items:start;gap:22px;">
+      <div class="tline reveal" style="--i:1">
+        <div class="trow"><div class="wh">Milestone 1 · Shadow &amp; absorb</div><div class="wt">Sit every call. Read this deck + the sample proposals. Run every Acceler OS tab.</div></div>
+        <div class="trow"><div class="wh">Milestone 2 · Drive with a net</div><div class="wt">First proposals reviewed before Soham, then <b>you own the reviews</b> · pause &amp; call when stuck.</div></div>
+        <div class="trow"><div class="wh">Milestone 3 · Pricing &amp; custom fluency</div><div class="wt">India pricing scenarios (the slowest muscle) + multi-persona custom: Cornerstone, e&amp;, Gryphon.</div></div>
+      </div>
+      <div class="tline reveal" style="--i:2">
+        <div class="trow"><div class="wh">Milestone 4 · Own the engine</div><div class="wt">Take over Mini-UT and the Knowledge Graph. <b>Keep feeding the graph</b> · it improves only if you do.</div></div>
+        <div class="trow"><div class="wh">Milestone 5 · Solo</div><div class="wt">You run the role end-to-end. <b>Support becomes escalation-only.</b></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 26 CLOSE -->
+<div class="slide cover dark" data-notes="The role is yours. You have the people, the funnel, the proposals, the money, the toolkit, and the plan. The team is an escalation away. Go build.">
+  <div class="mesh"></div>
+  <div class="inner">
+    <div class="badge reveal">Over to you</div>
+    <h1 class="reveal" style="--i:1">Go <span class="ac">build.</span></h1>
+    <p class="reveal" style="--i:2">You have the people, the match funnel, the proposals, the commercials, the toolkit, and the plan. <b>The team is an escalation away.</b></p>
+    <div class="chips reveal" style="--i:3">
+      <a target="_blank" rel="noopener" class="chip" href="https://web-production-37b0b.up.railway.app/" style="text-decoration:none;">📊 <b>Open the live Tracker</b></a>
+      <a target="_blank" rel="noopener" class="chip" href="https://docs.google.com/spreadsheets/d/1wgSIZzSP8XDnkgw30K9qt-jYZ6277JaTSGU_aekzMdU/edit" style="text-decoration:none;">🗒️ <b>Tracker (legacy sheet)</b></a>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="progress" id="progress"></div>
+<div class="zone zone--prev" id="zprev"></div>
+<div class="zone zone--next" id="znext"></div>
+<button class="fs" id="fs" title="Fullscreen (F)">⛶</button>
+<div class="brand"><img src="acceler_logo.png" alt="Acceler"></div>
+<div class="hint" id="hint">← → to navigate · click anything · F fullscreen · "." notes</div>
+<div class="nav" id="nav"><button id="navPrev">‹</button><div class="dots" id="dots"></div><button id="navNext">›</button><span class="count" id="navCount"></span></div>
+<div class="notes" id="notes"><div class="nl">Speaker notes · "." to toggle</div><div id="notesC"></div></div>
+
+<script>
+(function(){
+  const slides=[...document.querySelectorAll('.slide')], total=slides.length;
+  let cur=0; const $=id=>document.getElementById(id);
+  const notesArr=slides.map(s=>s.dataset.notes||''); let notesOn=false;
+
+  function show(n){
+    if(n<0||n>=total) return;
+    slides[cur].classList.remove('active'); cur=n; slides[cur].classList.add('active');
+    $('progress').style.width=((cur+1)/total*100)+'%';
+    $('notesC').textContent=notesArr[cur];
+    syncDots(); onEnter(slides[cur]);
+    if(cur>0){ const h=$('hint'); if(h) h.style.opacity=0; }
+  }
+  function onEnter(s){ animCounters(s); animStack(s); fitSlide(s); }
+
+  /* ---------- auto-fit: scale a slide's content down so it always fits the viewport
+       (independent of browser zoom / screen size). Mobile scrolls instead. ---------- */
+  function fitSlide(s){
+    const inner=s.querySelector('.inner'); if(!inner) return;
+    inner.style.transform='';
+    if(window.innerWidth<=820) return;           // phones scroll, don't shrink
+    const cs=getComputedStyle(s);
+    const avail=s.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
+    const need=inner.scrollHeight;
+    if(need > avail+2){
+      const sc=Math.max(0.62, avail/need);
+      inner.style.transformOrigin='center center';
+      inner.style.transform='scale('+sc.toFixed(4)+')';
+    }
+  }
+  // re-fit the active slide whenever the viewport (or zoom) changes
+  let rzT; window.addEventListener('resize',()=>{ clearTimeout(rzT); rzT=setTimeout(()=>{
+    requestAnimationFrame(()=>fitSlide(slides[cur]));
+  },120); });
+
+  // counters
+  function animCounters(s){
+    s.querySelectorAll('.ctr').forEach(el=>{
+      const to=parseFloat(el.dataset.to), dec=parseInt(el.dataset.dec||'0'), suf=el.dataset.suffix||'';
+      const dur=1100, t0=performance.now();
+      function step(t){ let p=Math.min(1,(t-t0)/dur); p=1-Math.pow(1-p,3);
+        let v=to*p; el.textContent=(dec?v.toFixed(dec):Math.round(v).toLocaleString('en-IN'))+suf;
+        if(p<1) requestAnimationFrame(step); }
+      requestAnimationFrame(step);
+    });
+  }
+  // pricing stack animate on enter
+  function animStack(s){ if(s.querySelector('#costStack')) renderStack(); }
+
+  // nav chrome
+  document.addEventListener('keydown',e=>{
+    if(['ArrowRight','ArrowDown',' '].includes(e.key)){e.preventDefault();show(cur+1);}
+    else if(['ArrowLeft','ArrowUp'].includes(e.key)){e.preventDefault();show(cur-1);}
+    else if(e.key==='Home')show(0); else if(e.key==='End')show(total-1);
+    else if(e.key==='.'){notesOn=!notesOn;$('notes').classList.toggle('on',notesOn);}
+    else if(e.key==='f'||e.key==='F'){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen().catch(()=>{});}
+  });
+  $('zprev').onclick=()=>show(cur-1); $('znext').onclick=()=>show(cur+1);
+  $('navPrev').onclick=()=>show(cur-1); $('navNext').onclick=()=>show(cur+1);
+  $('fs').onclick=()=>document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen().catch(()=>{});
+  let tx=0; document.addEventListener('touchstart',e=>tx=e.touches[0].clientX);
+  document.addEventListener('touchend',e=>{const dx=tx-e.changedTouches[0].clientX; if(Math.abs(dx)>50)show(cur+(dx>0?1:-1));});
+  const dotsEl=$('dots');
+  slides.forEach((s,i)=>{const d=document.createElement('div');d.className='dot';d.onclick=()=>show(i);dotsEl.appendChild(d);});
+  function syncDots(){[...dotsEl.children].forEach((d,i)=>d.classList.toggle('active',i===cur)); $('navCount').textContent=(cur+1)+' / '+total; if(dotsEl.children[cur])dotsEl.children[cur].scrollIntoView({inline:'center',block:'nearest'});}
+
+  /* ---------- BRAINS ---------- */
+  const brains={
+    aashish:{n:'Aashish · Strategic framing',d:'Surfaces risk before you see it; refines positioning. Asks <b>"why are we doing this?"</b> before <b>"what to build?"</b>',w:'Ask when stuck on narrative'},
+    soham:{n:'Soham · Co-founder &amp; CPTO',d:'Co-founder, runs the <b>technical side</b>. Edge cases, precision-forcing. <b>Always validate before final submission.</b> Push back in person · he wants it.',w:'Ask before client send'},
+    amit:{n:'Amit · India Sales',d:'The <b>India sales sign-off</b>. Brings commercial pressure · speed vs perfect, deal momentum. <b>Urgency is a forcing function</b> that sharpens the proposal.',w:'Ask for India sign-off'},
+    suvansh:{n:'Suvansh · Ops reality',d:'Execution complexity, client day-to-day. <b>Grounds proposals in delivery reality</b> · saves you from over-promising.',w:'Ask on feasibility'},
+    tanvinder:{n:'Tanvinder · Tech implementation',d:'Infra, VMs, Nuvepro, vendor mgmt. <b>Late-night problem-solving partner</b> when something breaks before delivery.',w:'Ask on infra / labs'},
+    shashi:{n:'Shashi · NP Team Lead',d:'Leads New Programs. The <b>final confirm on instructor availability, guarded topics &amp; feasibility</b> · the NP Team sign-off in the match funnel.',w:'Ask for NP Team confirmation'},
+    anshuman:{n:'Anshuman · Heads B2B',d:'Runs the B2B business. Also takes the <b>leadership strategy sessions</b> inside the AI Leaders program.',w:'Ask on B2B direction &amp; leadership strategy'},
+    ryan:{n:'Ryan · Co-founder (Sales &amp; Marketing)',d:'Co-founder, runs the <b>sales &amp; marketing</b> side. <b>Sales sign-off for non-India regions</b>, and runs <b>leadership strategy sessions</b> in the Leaders program.',w:'Ask on non-India sign-off &amp; strategy'},
+    madan:{n:'Madan · Growth marketing',d:'Leads growth marketing. Runs the <b>build sessions</b> in the AI Leaders program.',w:'Ask on growth &amp; the Leaders build sessions'}
+  };
+  function paintBrain(k){const b=brains[k]; $('brainDetail').innerHTML='<h4>'+b.n+'</h4><p>'+b.d+'</p><span class="who">'+b.w+'</span>';}
+  document.querySelectorAll('#brainGrid .brain').forEach(c=>c.onclick=()=>{document.querySelectorAll('#brainGrid .brain').forEach(x=>x.classList.remove('on'));c.classList.add('on');paintBrain(c.dataset.k);});
+  paintBrain('aashish');
+
+  /* ---------- GEO SIGN-OFF ---------- */
+  const geo={
+    india:{t:'Amit',d:'India sales sign-off.',e:'India is always Amit.'},
+    us:{t:'Ryan / Anshuman',d:'US / North America sales sign-off, with Aashish on positioning.',e:'Soham (CPTO) guides the technical side.'},
+    me:{t:'Ryan / Anshuman',d:'Middle East / GCC sales sign-off, with Aashish on positioning.',e:'Soham (CPTO) guides the technical side.'},
+    eu:{t:'Ryan / Anshuman',d:'Europe / APAC sales sign-off, with Aashish on positioning.',e:'Soham (CPTO) guides the technical side.'},
+    africa:{t:'Ryan / Anshuman',d:'Africa sales sign-off, with Aashish on positioning.',e:'Soham (CPTO) guides the technical side.'},
+    global:{t:'Ryan / Anshuman',d:'Global / multi-region sales sign-off, with Aashish on positioning.',e:'Soham (CPTO) guides the technical side.'}
+  };
+  function paintGeo(g){const o=geo[g]; $('geoResult').innerHTML='<div class="rl">Default sign-off</div><div class="rt">'+o.t+'</div><div class="rd">'+o.d+'</div><div class="esc">↳ '+o.e+'</div>';}
+  document.querySelectorAll('#geoTabs .tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('#geoTabs .tab').forEach(x=>x.classList.remove('on'));b.classList.add('on');paintGeo(b.dataset.g);});
+  paintGeo('india');
+
+  /* ---------- MATCH FUNNEL ---------- */
+  const fn={
+    f1:{t:'A brief lands',d:'An RFP or a sales handoff. <b>Don\'t draft yet.</b> The whole funnel runs before a single slide is written.',w:'Owner: you'},
+    f2:{t:'Discovery match',d:'Score the brief against the 33-Q checklist. <b>Below 80% → hold</b> and book a 30-min call. Generic proposals lose more deals than no proposals.',w:'Tool: Acceler OS · discovery'},
+    f3:{t:'Precedent + instructor fit',d:'Find the closest past program and the right SME. Historically a <b>manual dig</b> through the vignette context and B2B-channel chats.',w:'Source: Instructor Pool + chats'},
+    f4:{t:'Knowledge Graph',d:'<b>Now query it directly.</b> ~1,072 pre-sales files indexed · proposals, instructors, pricing, decisions. "Who taught RAG+agents for fintech?" in seconds.',w:'Replaces the manual dig'},
+    f5:{t:'NP Team confirmation',d:'Confirm the human-gated calls · <b>instructor availability, guarded topics, feasibility</b> · with Shashi and the NP team before a name goes to the client.',w:'Owner: Shashi · NP Team Lead'}
+  };
+  function paintFn(k){const o=fn[k]; $('funnelDetail').innerHTML='<h4>'+o.t+'</h4><p>'+o.d+'</p><span class="who">'+o.w+'</span>';}
+  document.querySelectorAll('#funnel .fnode').forEach(c=>c.onclick=()=>{document.querySelectorAll('#funnel .fnode').forEach(x=>x.classList.remove('on'));c.classList.add('on');paintFn(c.dataset.k);});
+  paintFn('f1');
+
+  /* ---------- TRACK EXPLORER ---------- */
+  const tracks={
+    builders:{title:'⚙️ AI Builders',aud:'Engineers · Pro-Code',fmt:'3–8 days · 6–9 hr',
+      arc:['Python / prompt','RAG + vectors','ReAct agent','Multi-agent (LangGraph)','MCP / A2A','Eval (LangSmith)','Deploy','Agentic Fest'],
+      good:'Every day ships an artifact. Honest realism wins · "300 focused min/day", seeded repos with planted vulns, AI output untrusted until it passes gates.',
+      clients:['Everest','Edelweiss','LVT','Sony','StoneX','Gryphon'],link:'https://docs.google.com/presentation/d/1bQ2Ed2ko_jab9v6ITbWPzLxwtsGYiihWVdWpO1Xc9Tc',linkLabel:'Open BGSW proposal'},
+    navigators:{title:'🧭 AI Navigators',aud:'PMs / Product · Low-Code',fmt:'5 × ~3 hr',
+      arc:['Discovery (RICE/ChatPRD)','AI-native UX','CustomGPTs + Lovable','Make + RAG','Capstone showcase'],
+      good:'Artifact compounding · each session\'s output feeds the next. A "PM Link" ties every choice to an adoption KPI.',
+      clients:['Cornerstone PMs'],link:'https://docs.google.com/document/d/1-ky44a_FeoX0MYi5d2K4QIsHR5GNEQnsousQEYcOFcA',linkLabel:'Open Cornerstone PM'},
+    enablers:{title:'🔧 AI Enablers',aud:'Business teams · No-Code',fmt:'1–3 days · 6 hr',
+      arc:['Literacy + R-C-F-T prompting','Responsible-AI "Three-Check"','Researcher / decision-maker','Build no-code agents (Make / Power Automate)'],
+      good:'A "From X → To Y" capability-shift slide ends each day, paired with a named "Artifacts Delivered" list. Proof: 4.7/5, 100% NPS.',
+      clients:['Fiserv','IGT','Voya HR','MCB','Diebold','Schneider'],link:'https://docs.google.com/presentation/d/1rkssulqnc3wyjjRK5FZfJugruQj5RTo2B1FYtykAh-0',linkLabel:'Open Voya HR (best template)'},
+    leaders:{title:'🎯 AI Leaders',aud:'CXO / non-tech leaders',fmt:'1–2 days (to 3 wk)',
+      arc:['Algorithms→Agents fluency','Operationalise via canvases','APR / GOAT','Responsible AI + Build-vs-Buy','First no-code agent','Exec Action Blueprint'],
+      good:'Every module names both the tool chain and a tangible artifact, bound to the client\'s real value pools. One worked case carried end-to-end.',
+      clients:['Akamai','Constance','LatentView','Voya'],link:'https://docs.google.com/presentation/d/1f_tYK6-MxnqAIiLYcegRTgvnZdCaX8V-RnuqSR-BK9M',linkLabel:'Open Akamai Leaders'},
+    security:{title:'🛡️ AI Security / Risk',aud:'Researchers / sec engineers',fmt:'2 days → 12 wk',
+      arc:['Crypto + embedded','SIEM / Incident Response','Secure coding','(Fujitsu) DL/LLM/PEFT + MLOps security'],
+      good:'Capstone is a build: a secure, fault-resilient embedded controller (Honeywell). Fujitsu runs a 12-week academy: 48 curriculum + 96 live hrs.',
+      clients:['Honeywell','Fujitsu Research'],link:'https://docs.google.com/presentation/d/1T1pYU63xIyosRhCXHwz2u4K51GjteYU4JPV3U4PAyq0',linkLabel:'Open Honeywell deck'}
+  };
+  function paintTrack(k){const t=tracks[k];
+    let arc=t.arc.map((a,i)=>'<span>'+a+'</span>'+(i<t.arc.length-1?'<i>→</i>':'')).join('');
+    let cls=t.clients.map(c=>'<span class="pill">'+c+'</span>').join('');
+    $('trackBody').innerHTML=
+      '<div class="tgrid"><div class="card top"><div class="t">'+t.title+'</div>'+
+      '<div class="d"><b>'+t.aud+'</b> &nbsp;·&nbsp; '+t.fmt+'</div>'+
+      '<div style="font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin:12px 0 2px;">Signature arc</div>'+
+      '<div class="arc">'+arc+'</div>'+
+      '<a target="_blank" rel="noopener" class="btnlink" href="'+t.link+'">'+t.linkLabel+' →</a></div>'+
+      '<div class="card"><div style="font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--cyan-d);margin-bottom:6px;">What good looks like</div>'+
+      '<div class="d" style="font-size:13px;">'+t.good+'</div>'+
+      '<div style="font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin:14px 0 2px;">References</div>'+
+      '<div class="pillrow">'+cls+'</div></div></div>';
+  }
+  document.querySelectorAll('#trackTabs .tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('#trackTabs .tab').forEach(x=>x.classList.remove('on'));b.classList.add('on');paintTrack(b.dataset.t);});
+  paintTrack('builders');
+
+  /* ---------- DECISION PICKER ---------- */
+  let pAud='eng',pScope='std';
+  function paintPick(){
+    let r;
+    if(pAud==='eng') r=pScope==='std'?{t:'AI Builders',d:'Standard engineering scope · RAG, agents, vector, deployment.',e:'Ship the Builders template.'}:{t:'Custom build',d:'New engineering scope.',e:'Loop Soham + the relevant first-call name early.'};
+    else if(pAud==='pm') r={t:'AI Navigators',d:'Low/No-Code product track · AI-native PRDs, prototypes.',e:pScope==='new'?'New scope → confirm depth with Soham.':'Standard Navigators shape.'};
+    else if(pAud==='biz') r={t:'AI Enablers',d:'No-Code productivity · Copilot, Power Automate, Make.',e:pScope==='new'?'New scope → sanity-check feasibility.':'Standard Enablers shape.'};
+    else if(pAud==='lead') r={t:'AI Leaders',d:'Strategy, ROI, governance, APR / GOAT.',e:'Avoid code-heavy content.'};
+    else r={t:'Custom multi-track',d:'Multi-persona cohort · Cornerstone pattern.',e:'Persona breakouts + cross-functional capstone. Loop Soham early.'};
+    $('pickResult').innerHTML='<div class="rl">Recommended template</div><div class="rt">'+r.t+'</div><div class="rd">'+r.d+'</div><div class="esc">↳ '+r.e+'</div>';
+  }
+  $('pAud').querySelectorAll('button').forEach(b=>b.onclick=()=>{$('pAud').querySelectorAll('button').forEach(x=>x.classList.remove('on'));b.classList.add('on');pAud=b.dataset.v;paintPick();});
+  $('pScope').querySelectorAll('button').forEach(b=>b.onclick=()=>{$('pScope').querySelectorAll('button').forEach(x=>x.classList.remove('on'));b.classList.add('on');pScope=b.dataset.v;paintPick();});
+  paintPick();
+
+  /* ---------- PRICING STACK ---------- */
+  let priceMode='first';
+  const stackData={
+    first:{cur:{p:0,v:'₹0'},prep:{p:17,v:'₹3,13,500'},dry:{p:8,v:'₹1,56,750'},live:{p:10,v:'₹1,93,325'},base:{p:36,v:'₹6,63,575'},total:{p:71,v:'₹13,27,150'},price:{p:100,v:'₹18,58,010'}},
+    repeat:{cur:{p:0,v:'₹0'},prep:{p:8,v:'₹1,56,750'},dry:{p:0,v:'₹0'},live:{p:10,v:'₹1,93,325'},base:{p:19,v:'₹3,50,075'},total:{p:38,v:'₹7,00,150'},price:{p:53,v:'₹9,80,210'}}
+  };
+  function renderStack(){
+    const d=stackData[priceMode];
+    document.querySelectorAll('#costStack .fill').forEach(f=>{const k=f.dataset.k;f.style.width=d[k].p+'%';});
+    document.querySelectorAll('#costStack .bv').forEach(v=>{const k=v.dataset.k;v.textContent=d[k].v;});
+  }
+  $('priceSeg').querySelectorAll('button').forEach(b=>b.onclick=()=>{$('priceSeg').querySelectorAll('button').forEach(x=>x.classList.remove('on'));b.classList.add('on');priceMode=b.dataset.m;renderStack();});
+
+  /* ---------- DISCOVERY GAUGE ---------- */
+  const checks=[...document.querySelectorAll('#checks .chk')]; const N=checks.length;
+  function updGauge(){
+    const done=checks.filter(c=>c.classList.contains('on')).length;
+    const pct=Math.round(done/N*100), g=$('gauge');
+    g.style.setProperty('--deg',(done/N*360)+'deg');
+    $('gaugePct').textContent=pct+'%';
+    const ready=pct>=80; g.classList.toggle('go',ready);
+    $('gaugeLbl').textContent=ready?'Ready to draft ✓':(pct>0?'Keep going':'Hold');
+  }
+  checks.forEach(c=>c.onclick=()=>{c.classList.toggle('on');const b=c.querySelector('.box');b.textContent=c.classList.contains('on')?'✓':'';updGauge();});
+  checks.forEach(c=>c.querySelector('.box').textContent='');
+  updGauge();
+
+  /* ---------- SCENARIOS ---------- */
+  document.querySelectorAll('#scens .scen').forEach(s=>s.querySelector('.sh').onclick=()=>s.classList.toggle('open'));
+
+  /* ---------- ACCOUNTS FILTER ---------- */
+  $('acctFilt').querySelectorAll('button').forEach(b=>b.onclick=()=>{
+    $('acctFilt').querySelectorAll('button').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+    const s=b.dataset.s;
+    document.querySelectorAll('#acctGrid .acard').forEach(c=>c.classList.toggle('hide',s!=='all'&&c.dataset.s!==s));
+  });
+
+  /* ---------- AGENDA JUMP ---------- */
+  document.querySelectorAll('#agenda .agtile').forEach(b=>b.onclick=()=>{
+    const label=b.dataset.jump;
+    const i=slides.findIndex(s=>{const p=s.querySelector('.section .pl');return p&&p.textContent.trim()===label;});
+    if(i>=0) show(i);
+  });
+
+  /* ---------- IMAGE LIGHTBOX ---------- */
+  const lb=document.createElement('div'); lb.id='lightbox'; lb.innerHTML='<img alt="">'; document.body.appendChild(lb);
+  lb.addEventListener('click',()=>lb.classList.remove('on'));
+  document.querySelectorAll('.imgslide img').forEach(im=>im.addEventListener('click',e=>{e.stopPropagation();lb.querySelector('img').src=im.getAttribute('src');lb.classList.add('on');}));
+
+  // init
+  const s0=new URLSearchParams(location.search).get('s');
+  if(s0!==null){cur=Math.max(0,Math.min(total-1,parseInt(s0)));}
+  slides.forEach((s,i)=>s.classList.toggle('active',i===cur));
+  $('progress').style.width=((cur+1)/total*100)+'%'; $('notesC').textContent=notesArr[cur]; syncDots(); onEnter(slides[cur]);
+  // re-measure once fonts/images settle so the auto-fit is accurate on first paint
+  if(document.fonts&&document.fonts.ready){document.fonts.ready.then(()=>fitSlide(slides[cur]));}
+  window.addEventListener('load',()=>fitSlide(slides[cur]));
+})();
+</script>
+</body>
+</html>

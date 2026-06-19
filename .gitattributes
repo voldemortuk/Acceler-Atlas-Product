@@ -1,0 +1,7 @@
+# Line endings
+* text=auto
+*.sh text eol=lf
+*.md text
+*.json text
+*.html text
+*.py text

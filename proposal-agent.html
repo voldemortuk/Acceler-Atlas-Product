@@ -1,0 +1,1369 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Acceler Pre-Sales Proposal Agent</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #F5F7FA; color: #1A1A2E; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+  body { padding: 20px 24px 40px; max-width: 1400px; margin: 0 auto; }
+
+  /* Header */
+  .hero { background: linear-gradient(135deg, #1A1F3A 0%, #2563EB 100%); color: #fff; border-radius: 16px; padding: 26px 28px; margin-bottom: 20px; box-shadow: 0 8px 30px rgba(26,31,58,0.18); }
+  .hero .eyebrow { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #FFD78A; font-weight: 600; }
+  .hero h1 { margin: 6px 0 4px; font-size: 28px; font-weight: 700; letter-spacing: -0.01em; }
+  .hero p { margin: 0; opacity: 0.86; font-size: 14px; max-width: 720px; line-height: 1.5; }
+
+  /* Layout */
+  .grid { display: grid; grid-template-columns: 420px 1fr; gap: 18px; align-items: start; }
+  @media (max-width: 1000px) { .grid { grid-template-columns: 1fr; } }
+
+  .card { background: #fff; border: 1px solid #E5E8EE; border-radius: 14px; padding: 18px 18px; box-shadow: 0 1px 2px rgba(0,0,0,0.03); }
+  .card h2 { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #1A1F3A; margin: 0 0 12px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+  .card h2 .dot { width: 8px; height: 8px; border-radius: 50%; background: #2563EB; display: inline-block; }
+  .card + .card { margin-top: 14px; }
+
+  label { display: block; font-size: 12px; font-weight: 600; color: #555566; margin: 12px 0 6px; letter-spacing: 0.02em; }
+  label:first-child { margin-top: 0; }
+  input[type=text], select, textarea { width: 100%; border: 1px solid #D7DCE5; border-radius: 8px; padding: 10px 12px; font-size: 14px; color: #1A1A2E; background: #fff; font-family: inherit; transition: border-color 0.15s, box-shadow 0.15s; }
+  input[type=text]:focus, select:focus, textarea:focus { outline: none; border-color: #2563EB; box-shadow: 0 0 0 3px rgba(37,99,235,0.12); }
+  textarea { min-height: 220px; resize: vertical; line-height: 1.5; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; }
+  .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 0; border-radius: 10px; padding: 11px 18px; font-size: 14px; font-weight: 600; cursor: pointer; transition: transform 0.05s, box-shadow 0.15s, background 0.15s; }
+  .btn-primary { background: #2563EB; color: #fff; box-shadow: 0 4px 14px rgba(37,99,235,0.28); }
+  .btn-primary:hover { background: #1D4ED8; }
+  .btn-primary:active { transform: translateY(1px); }
+  .btn-primary:disabled { background: #93A8D0; cursor: not-allowed; box-shadow: none; }
+  .btn-secondary { background: #EEF4FF; color: #1D4ED8; }
+  .btn-secondary:hover { background: #DCE6FF; }
+  .btn-ghost { background: transparent; color: #555566; border: 1px solid #D7DCE5; }
+  .btn-ghost:hover { background: #F5F7FA; }
+
+  .btn-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+
+  .knowledge { background: #FFF8DC; border: 1px solid #F2E4A8; border-radius: 10px; padding: 12px 14px; font-size: 12.5px; color: #5C4A12; line-height: 1.55; }
+  .knowledge strong { color: #1A1F3A; }
+  .kb-list { margin: 6px 0 0; padding-left: 18px; }
+  .kb-list li { margin: 3px 0; }
+
+  /* Output */
+  .output-empty { text-align: center; padding: 60px 24px; color: #888894; }
+  .output-empty .icon { font-size: 48px; margin-bottom: 12px; opacity: 0.8; }
+  .output-empty p { margin: 0; font-size: 14px; }
+
+  .output-loading { display: flex; align-items: center; gap: 14px; padding: 18px 4px; color: #1A1F3A; font-size: 14px; }
+  .spinner { width: 22px; height: 22px; border-radius: 50%; border: 3px solid #DCE6FF; border-top-color: #2563EB; animation: spin 0.8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ───── IK-Acceler proposal preview styling (matches the 4 reference samples) ───── */
+  .proposal { background: #fff; padding: 0; font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+
+  /* Full-bleed navy cover page */
+  .ik-cover, .ik-closing {
+    background: #0F1936;
+    color: #fff;
+    padding: 40px 36px;
+    margin: -2px -2px 0;
+    border-radius: 8px 8px 0 0;
+    min-height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+  .ik-closing { margin: 28px -2px -2px; border-radius: 0 0 8px 8px; min-height: 280px; }
+
+  .ik-eyebrow { font-family: "Nunito", sans-serif; font-size: 11px; letter-spacing: 0.18em; color: #fff; margin-bottom: 26px; font-weight: 600; }
+  .ik-eyebrow .accent { color: #3A96D2; }
+  .ik-partnering { font-size: 18px; color: #fff; margin: 0 auto 12px; max-width: 580px; line-height: 1.5; font-weight: 400; }
+  .ik-tagline { font-size: 16px; color: rgba(255,255,255,0.78); margin: 0 0 28px; font-weight: 400; }
+  .ik-proposal-for { font-size: 13px; letter-spacing: 0.18em; color: rgba(255,255,255,0.7); margin-bottom: 8px; text-transform: uppercase; font-weight: 600; }
+  .ik-client { font-size: 22px; color: #fff; font-weight: 700; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .ik-date { font-size: 14px; color: rgba(255,255,255,0.7); margin: 0 0 28px; font-weight: 400; }
+  .ik-title { font-size: 24px; font-weight: 700; color: #fff; line-height: 1.3; margin: 0 auto 8px; max-width: 700px; letter-spacing: -0.005em; }
+  .ik-subtitle { font-size: 14px; color: rgba(255,255,255,0.78); margin: 0 auto 0; max-width: 640px; line-height: 1.5; font-style: normal; }
+
+  .ik-closing-title { font-size: 36px; font-weight: 800; color: #fff; letter-spacing: 0.04em; }
+
+  /* Stats strip directly under cover */
+  .ik-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgba(255,255,255,0.12); margin: 0 -2px 24px; border-radius: 0 0 8px 8px; overflow: hidden; }
+  .ik-stat { background: #1A2342; padding: 14px 12px; text-align: center; color: #fff; }
+  .ik-stat .emoji { font-size: 20px; margin-bottom: 6px; line-height: 1; }
+  .ik-stat .label { font-size: 9.5px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.6); font-weight: 700; margin-bottom: 4px; }
+  .ik-stat .value { font-size: 11.5px; font-weight: 600; color: #fff; line-height: 1.3; }
+
+  /* Body palette per Doc_Proposal_Skills.md v2 */
+  .proposal-body { padding: 8px 14px 20px; }
+  .proposal-body h1 { font-size: 22px; font-weight: 700; color: #1C4587; margin: 28px 0 10px; padding-bottom: 6px; border-bottom: 2px solid #1C4587; letter-spacing: -0.005em; }
+  .proposal-body h2 { font-size: 17px; font-weight: 700; color: #1C4587; margin: 22px 0 8px; }
+  .proposal-body h3 { font-size: 14px; font-weight: 700; color: #1A1A2E; margin: 16px 0 6px; }
+  .proposal-body h3.day-header { color: #fff; background: #1A2B4A; padding: 8px 14px; border-radius: 6px; font-size: 13.5px; margin: 22px 0 12px; }
+  .proposal-body h3.day-header.alt { background: #0D1F3C; }
+  .proposal-body p { font-size: 13.5px; line-height: 1.65; color: #1A1A2E; margin: 8px 0; }
+  .proposal-body ul, .proposal-body ol { font-size: 13.5px; line-height: 1.6; color: #1A1A2E; padding-left: 22px; margin: 8px 0; }
+  .proposal-body li { margin: 4px 0; }
+  .proposal-body strong { color: #1A1A2E; font-weight: 700; }
+  .proposal-body em { color: #555566; }
+  .proposal-body table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 12.5px; }
+  .proposal-body th { background: #1C4587; color: #fff; padding: 9px 11px; text-align: left; font-weight: 600; font-size: 12px; letter-spacing: 0.02em; }
+  .proposal-body td { padding: 8px 11px; border-bottom: 1px solid #E5E8EE; vertical-align: top; line-height: 1.5; }
+  .proposal-body tr:nth-child(even) td { background: #F5F7FA; }
+  .proposal-body hr { border: none; border-top: 1px solid #E5E8EE; margin: 20px 0; }
+
+  .takeaway { background: #EEF4FF; border-left: 4px solid #1C4587; border-radius: 4px; padding: 12px 16px; margin: 14px 0; }
+  .takeaway .title { font-weight: 700; color: #1C4587; font-size: 13px; margin-bottom: 6px; }
+  .takeaway ul { margin: 4px 0; padding-left: 18px; }
+
+  .output-actions { display: flex; gap: 8px; margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px solid #E5E8EE; flex-wrap: wrap; }
+
+  .footer-note { font-size: 11px; color: #888894; text-align: center; margin-top: 20px; line-height: 1.5; }
+
+  /* Pill */
+  .pill { display: inline-block; padding: 2px 8px; border-radius: 999px; background: #EEF4FF; color: #1D4ED8; font-size: 11px; font-weight: 600; letter-spacing: 0.02em; }
+
+  .error { background: #FFF3F3; border: 1px solid #F4C8C8; border-radius: 8px; padding: 12px 14px; color: #B5000D; font-size: 13px; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="eyebrow">PowerUp by UnO · Pre-Sales Agent</div>
+  <h1>Acceler Proposal Builder</h1>
+  <p>Paste pre-sales meeting notes. The agent drafts a first-level training proposal in Acceler's house style — cover, programme architecture, session flow, deliverables — ready for a counselor to review and pass to the docx build script.</p>
+</div>
+
+<div class="grid">
+  <!-- LEFT: INPUT -->
+  <div>
+    <div class="card">
+      <h2><span class="dot"></span> Meeting Notes</h2>
+      <label for="notes">Paste your pre-sales call notes / transcript</label>
+      <textarea id="notes" placeholder="Paste meeting notes here. Include:&#10;• Client name & contact&#10;• Stated objectives / pain points&#10;• Target audience (role, seniority, count)&#10;• Preferred format & duration&#10;• Tools or constraints mentioned&#10;• Timeline / next steps&#10;&#10;Tip: raw bullet notes work fine — the agent will structure them."></textarea>
+      <div class="btn-row">
+        <button class="btn btn-primary" id="generate">✨ Generate Proposal</button>
+        <button class="btn btn-ghost" id="clear">Clear</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><span class="dot"></span> Proposal Setup</h2>
+      <label for="client">Client name</label>
+      <input type="text" id="client" placeholder="e.g. Nucleus Software, Booking Holdings, Bosch India" />
+
+      <div class="row2">
+        <div>
+          <label for="category">Programme</label>
+          <select id="category">
+            <option value="auto">Let the agent decide</option>
+            <option>AI Leaders</option>
+            <option>AI Builders</option>
+            <option>AI Enablers</option>
+            <option>Custom / Multi-Persona</option>
+          </select>
+        </div>
+        <div>
+          <label for="geography">Geography</label>
+          <select id="geography">
+            <option value="auto">Auto from notes</option>
+            <option>India</option>
+            <option>US / North America</option>
+            <option>Middle East / GCC</option>
+            <option>Europe / UK</option>
+            <option>APAC (ex-India)</option>
+            <option>Africa (Mauritius / Indian-Ocean)</option>
+            <option>Global / Multi-Region</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row2">
+        <div>
+          <label for="delivery">Delivery format</label>
+          <select id="delivery">
+            <option value="auto">Auto from notes</option>
+            <option>Fully Live — 2 days (18 hrs)</option>
+            <option>Fully Live — 3 days (18 hrs)</option>
+            <option>Fully Live — 4 days (24 hrs)</option>
+            <option>Self-Paced LMS</option>
+            <option>Self-Paced + Live (Hybrid)</option>
+            <option>Custom</option>
+          </select>
+        </div>
+        <div>
+          <label for="cohort">Cohort size</label>
+          <input type="text" id="cohort" placeholder="e.g. 25–60 engineers" />
+        </div>
+      </div>
+
+      <label for="audience">Target audience</label>
+      <input type="text" id="audience" placeholder="e.g. Trust & Safety Engineers, B2B Sales Leaders, Mixed L1/L2" />
+    </div>
+
+    <div class="card">
+      <h2><span class="dot"></span> Requirement Strength</h2>
+      <p style="font-size:12.5px; color:#555566; line-height:1.5; margin:0 0 10px;">
+        Score the brief against the <strong>Acceler Discovery Checklist</strong> (33 questions across 6 sections — Why They're Here, Audience, When &amp; How, Tools, What to Build, Money &amp; Timeline). Highlights gaps the agent will infer from UT context and past proposals.
+      </p>
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <button class="btn btn-secondary" id="strength-go">⚡ Analyze Strength</button>
+        <a href="Acceler-PreSales-Discovery-Checklist.html" target="_blank" rel="noopener" class="btn btn-ghost" style="text-decoration:none">↗ Open Discovery Checklist</a>
+      </div>
+      <div style="margin-top:10px; padding:8px 10px; background:#FFF8DC; border:1px solid #F2E4A8; border-radius:6px; font-size:11.5px; color:#5C4A12; line-height:1.5;">
+        <strong>Optional.</strong> Proposals can still be generated from notes alone — the agent leans on Utkarsh's context and past proposals to fill gaps when the brief is thin. Use the checklist for richer, faster proposals when you have time.
+      </div>
+      <div id="strength-out" style="margin-top:14px;"></div>
+    </div>
+
+  </div>
+
+  <!-- RIGHT: OUTPUT -->
+  <div class="card" style="min-height: 600px;">
+    <h2><span class="dot"></span> Generated Proposal Draft</h2>
+    <div id="output">
+      <div class="output-empty">
+        <div class="icon">📄</div>
+        <p>Paste meeting notes and click <strong>Generate Proposal</strong>.<br/>The first-level draft will appear here.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer-note">
+  First-level drafts only — the polished .docx is produced by the Acceler build script (per SKILL.md §11).
+  &nbsp;·&nbsp; Reviewer must validate cover metadata, learning objectives mapping, and deliverables table before sending to client.
+</div>
+
+<script>
+// ─────────────────────────────────────────────────────────────────────────────
+// System prompt — distilled from the uploaded Doc_Proposal_Skills.md
+// ─────────────────────────────────────────────────────────────────────────────
+const SYSTEM_PROMPT = `You are the Acceler Pre-Sales Proposal Agent for Interview Kickstart's B2B division (operating as Acceler / PowerUp by UnO). You convert pre-sales meeting notes into a first-level proposal draft that a proposal designer can hand off to the docx build script.
+
+You follow Doc_Proposal_Skills.md v2 — grounded in the four IK-Acceler reference proposals (Nucleus Software India · AI Builders 2-day, Booking Holdings India · GenAI Engineering 4-day, Gryphon Investors US · FDE 4-day, MCB Mauritius · Self-Paced LMS).
+
+DOCUMENT ARCHITECTURE
+• Full-bleed dark navy cover (#0F1936 bg, white text). Eyebrow "BY UnO UPWARD AND ONWARD" (Nunito 9pt, micro-accent flashes #3A96D2 inside "UnO" and "AND"). Partnering line in Manrope 18pt. Tagline. "Proposal For" + client + month-year. Title in Manrope 19pt bold: "Draft Proposal | [Programme Name] For [Client]". Positioning subtitle. 4-icon stats strip (Focus | Audience | Duration | Hours) directly under the title.
+• Closing page: same navy bg with "PLUG IN & ACCELERATE".
+
+SECTION ORDER (Live / Multi-Day)
+1) Objective (H2 in #1C4587)
+2) Curriculum Overview (Who / Delivery / Duration / Tools / Tentative Dates / Prerequisites)
+3) Program at a Glance — 5-col summary table (# | Day Title | Duration | Focus | Key Build)
+4) Day-by-Day Breakdown — per day: header (12pt bold #1A2B4A OR #0D1F3C) → Objective+Tools mini-table → Schedule table → 5–10 Part tables (each with Objective, Concepts, Hands-On) → "Day N — [Client] Use Cases Practised" 4-col table → 🎯 End-of-Day takeaway → page break
+5) Program Summary closing roll-up table
+6) Every [Audience] Walks Away With (🛠️ Systems Built | 🏆 Methodology / Projects Earned)
+7) Commercials (India only — INR table)
+8) Sign-Off Block (see below — MANDATORY)
+9) Closing page "PLUG IN & ACCELERATE"
+
+SECTION ORDER (Self-Paced LMS)
+1) Objective
+2) Curriculum Overview (Self-Paced LMS, hours per track, prerequisites, tools, post-programme support)
+3) Program Storyline (one bold-leading paragraph per module)
+4) Programme at a Glance — 9-col table (Level | Features | Total | Videos | Hands-On | Assignment | Quiz | Reading | Audience)
+5) What Participants Walk Away With (Foundation Track / AI Champion Track)
+6) Understanding [Client]'s Requirements (sub-headings in #2E6DB4)
+7) Curriculum Design & Learning Architecture
+8) Module-by-Module — per module: H1 #1C4587 → time + objective + tools → Video Lessons table → Lesson-by-Lesson breakdown (lesson title 12pt bold #222222; "Concepts:" and "Hands-On:" labels 10pt bold #1B3A6B) → Reading Material → Quiz & Assignment → End-of-Module Outcome (Recap / Reflection / Artifact / Post-Class Feedback)
+9) Optional Add-On — Industry Expert Masterclass (if applicable)
+10) Delivery Methodology & LMS Integration (SCORM 1.2 / xAPI · Localization)
+11) Indicative Project Timeline
+12) Next Steps — closing line "We look forward to building [Client]'s AI-ready workforce together."
+13) Sign-Off Block (MANDATORY)
+14) Footer "Acceler | Confidential" (9pt #999999) on content pages
+15) Closing page "PLUG IN & ACCELERATE"
+
+PALETTE (use these exact hex codes when describing styling in Designer Notes)
+• NAVY_DEEP #0F1936 (cover/closing bg)
+• NAVY_HEAD #1C4587 (primary section headings)
+• NAVY_DAY_A #1A2B4A (engineering / fintech day headers) OR NAVY_DAY_B #0D1F3C (strategic / FDE / Booking day headers) — pick ONE per proposal, never mix
+• NAVY_SUB #2E6DB4 (self-paced sub-headings)
+• NAVY_DETAIL #1B3A6B (lesson Concepts/Hands-On labels)
+• GOLD #C9960C (tagline emphasis — US/ME positioning lines)
+• TEXT_BODY #1A1A2E
+
+TYPOGRAPHY
+• Manrope for all headings/body/tables; Nunito only for cover & closing eyebrow (9pt white)
+• Heading 2: 17pt bold #1C4587 • Day header: 12pt bold • Lesson title (self-paced): 12pt bold #222222 • Concepts/Hands-On labels: 10pt bold #1B3A6B
+
+STANDARD OFFERINGS
+• AI Leaders — execs/leadership. AI strategy + ROI + governance + transformation roadmap. Avoid code-heavy content.
+• AI Builders — engineers. Hands-on technical (agents, RAG, LangChain/LangGraph, vector DBs, MCP, deployment). Include hands-on labs and production-readiness.
+• AI Enablers — mixed/business. Productivity + Copilot/Power Automate/low-code agents + workflow automation. Lead with Microsoft stack for MS-shop clients.
+• Custom / Multi-Persona — non-standard scope; persona-specific breakouts inside each day; Cross-Functional Capstone as final build.
+
+GEO × DELIVERY × SIGN-OFF MATRIX
+• India · Live (any duration): day header #1A2B4A, "Live Zoom" delivery. ALL pricing in INR (₹) — never USD, never mixed currency. Sign-off: Amit Joseph.
+• India · Self-Paced: module-based, SCORM/xAPI. ALL pricing in INR (₹). Sign-off: Amit Joseph.
+• US / North America · Live: add "What is [Role]?" + "Program Overview" sections BEFORE Objective. Gold tagline accent for positioning lines. Day header #0D1F3C. No INR in body. Sign-off: Ryan (sales-led) OR Soham (tech-led / new curriculum).
+• Middle East / GCC · Live: same as US. Sign-off: Ryan OR Soham.
+• Europe / UK / APAC ex-India · Live: same as US. Sign-off: Ryan OR Soham (tech-heavy).
+• Africa (Mauritius / Indian-Ocean): Amit Joseph (covers the corridor).
+• Global / Multi-Region: dual reviewer — Anshuman + Soham.
+
+SIGN-OFF BLOCK (MANDATORY — on the second-to-last page, before the closing cover)
+─────────────────────────────────────────
+Prepared by:    Utkarsh Raj  ·  AI Product Manager, Acceler
+Reviewed by:    [Per matrix above]
+For queries:    [reviewer]@interviewkickstart.com
+─────────────────────────────────────────
+                              Acceler | Confidential
+
+Tech-led vs Sales-led disambiguator (US/ME/Other):
+• Tech-led → Soham when: scope is new curriculum, technical credibility is the gating risk, audience is non-tech but content is technical.
+• Sales-led → Ryan when: standard offering, audience-fit dominates, pricing/commercial framing dominates, relationship is warm.
+• If complexity ≥ 7 OR curriculum is "100% new", upgrade to dual reviewer (list both: "Ryan (commercial) · Soham (technical)").
+
+WRITING STYLE
+• Objectives: one sentence, active verb at start (Equip / Enable / Build / Develop). Never "In this section we will…".
+• Activities/Hands-On bullets: start with a hands-on verb (Build / Hands-on / Each engineer / Teams / Regroup).
+• Key concepts: descriptive noun phrases explaining WHY the concept matters, not just naming it.
+• Outcome: "Participants leave with: [artifact]" — 3–6 concrete artifacts per day/module.
+• Tools: always named explicitly (Claude · ChatGPT · Copilot · LangChain · LangGraph · ChromaDB · etc.). Never "an AI tool".
+• Microsoft-stack clients (MCB-style, internal Copilot deployments): lead with Microsoft Copilot Chat · Copilot in M365 Apps · Power Automate · AI Builder. ChatGPT only appears in "Reference & Enrichment".
+• Use the client name literally and consistently. Never "the client" or "your company".
+• Reference real client context (industry, geography, regulator — e.g. Bank of Mauritius for MCB, PCI-DSS for fintech, FY26 priorities for Booking-style accounts).
+• Avoid: "In conclusion" / "To summarise" / "As mentioned above". Generic outputs ("improved skills", "better understanding"). Placeholder text ([CLIENT NAME], TBD, xxx).
+
+QUALITY CHECKLIST (apply silently before responding)
+✓ Cover has navy bg + "BY UnO UPWARD AND ONWARD" eyebrow + partnering line + tagline + "Proposal For" + client + month-year + bold title + subtitle + 4-icon stats strip
+✓ Primary section headings use #1C4587
+✓ Day-header colour consistent throughout (#1A2B4A OR #0D1F3C — never mixed)
+✓ Program at a Glance has the right column structure (5-col live / 9-col self-paced)
+✓ Every live day: Schedule table + Part tables + Use Cases table + 🎯 End-of-Day takeaway
+✓ Every self-paced module: Video Lessons table + Lesson breakdown + Reading Material + Quiz/Assignment + End-of-Module Outcome
+✓ Sign-Off Block present with correct region-specific reviewer
+✓ Footer "Acceler | Confidential" on self-paced content pages
+✓ Closing page "PLUG IN & ACCELERATE"
+✓ If meeting notes leave gaps, list under "⚠ Open Questions for the Client" — do NOT invent facts.
+
+OUTPUT FORMAT
+Return a single Markdown document. Start with a [COVER] frontmatter block (key:value lines), then the body, then a [CLOSING] marker at the end. No preamble.
+
+[COVER]
+client: [Client Name]
+programme: [Programme Name]
+title: Draft Proposal | [Programme Name] For [Client]
+subtitle: [Positioning subtitle — one line]
+partnering: Partnering with [Client] on its journey to [strategic intent]
+tagline: [Mission line — e.g. "AI enabling orgs for 100X productivity"]
+date: [Month Year]
+geography: [region]
+delivery: [delivery format]
+day_header: 1A2B4A
+stat_1: 🏦 | Focus | [Focus value — e.g. "Fintech Domain Focus"]
+stat_2: 👨‍💻 | Audience | [Audience value — e.g. "Pro Code Engineers"]
+stat_3: 📅 | Duration | [Duration value — e.g. "2 Days"]
+stat_4: ⏱️ | Hours | [Hours value — e.g. "18 Hrs Hands-On Labs"]
+[/COVER]
+
+## 1. Objective
+[Single-sentence objective with active verb]
+
+## 2. Curriculum Overview
+**Who is this For:** …
+**Delivery:** … (Live Zoom / Self-Paced LMS / etc.)
+**Duration:** …
+**Tools:** Tool · Tool · Tool
+**Prerequisites:**
+- …
+
+## 3. Program at a Glance
+[Live: 5-col table — # | Day Title | Duration | Focus | Key Build]
+[Self-Paced: 9-col table — Level | Features | Total | Videos | Hands-On | Assignment | Quiz | Reading | Audience]
+
+## 4. Day-by-Day Breakdown  (or  Module-by-Module for Self-Paced)
+
+### Day 1 · [Theme]  (X hrs)
+**Objective:** …
+**Tools:** Tool · Tool · Tool
+
+**Schedule:**
+| Section | Source | Time |
+|---|---|---|
+| … | … | X min |
+
+**Part 1 — [Title]  ·  X min**
+Objective: …
+Concepts: …
+Hands-On: …
+
+[Repeat parts 2…k]
+
+**Day 1 — [Client] Use Cases Practised**
+| Use Case | What [Audience] Build | Domain | Value |
+|---|---|---|---|
+| … | … | … | … |
+
+> **🎯  End of Day 1 — What [Audience] Build & Walk Away With**
+> Participants leave with:
+> - Artifact 1
+> - Artifact 2
+> - Artifact 3
+
+[Repeat for each day…]
+
+## 5. Program Summary
+[Closing roll-up table same structure as §3]
+
+**Every [Audience] Walks Away With**
+- 🛠️ Systems Built: …
+- 🏆 Methodology / Projects Earned: …
+
+[For India clients — ALWAYS in INR (₹), never USD. Always include this table.]
+
+| Particulars | Amount (INR) |
+|---|---|
+| … | ₹… |
+
+---
+
+## Sign-Off Block
+
+Prepared by: Utkarsh Raj · AI Product Manager, Acceler
+Reviewed by: [Per region matrix — Amit / Ryan / Soham / Anshuman]
+For queries: [reviewer]@interviewkickstart.com
+
+Acceler | Confidential
+
+---
+
+## ⚠ Open Questions for the Client
+[Only items the meeting notes left unclear — do not invent facts]
+
+[CLOSING]
+[/CLOSING]
+
+End of output.`;
+
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Discovery Checklist — 33 questions across 6 sections (mirrors Acceler-PreSales-Discovery-Checklist.html)
+// ─────────────────────────────────────────────────────────────────────────────
+const DISCOVERY = [
+  { name: "Why They're Here", color: "#2563eb", questions: [
+    { p: "must",   q: "What's the actual problem they're trying to solve? (not 'we need AI training' — what pain triggered this)" },
+    { p: "must",   q: "What would success look like 3 months from now? (a number: hours saved, adoption %, people certified)" },
+    { p: "must",   q: "Who decides — and who pays? (buyer / champion / end-users; same person or different)" },
+    { p: "should", q: "Have they tried AI training before? What worked, what flopped?" },
+    { p: "nice",   q: "Is this a pilot or the full thing?" },
+    { p: "should", q: "Who's our internal champion who'll push this forward when we're not in the room?" },
+  ]},
+  { name: "Who's in the Room", color: "#D4A24C", questions: [
+    { p: "must",   q: "What do the participants actually do day-to-day? (not job titles — what they actually do)" },
+    { p: "must",   q: "How many people, how many batches?" },
+    { p: "should", q: "Are they technical or non-technical?" },
+    { p: "should", q: "Have they used AI at all? (never / dabbling / already using Copilot daily)" },
+    { p: "nice",   q: "One function or mixed cohort?" },
+  ]},
+  { name: "When & How", color: "#16a34a", questions: [
+    { p: "must",   q: "Virtual or in-person? Where are the people? (time zones matter)" },
+    { p: "must",   q: "How much time do they have? Half-day, 1 day, 2 days, or more?" },
+    { p: "should", q: "When do they want to start? Any hard deadline?" },
+    { p: "nice",   q: "Language? English only, or do they need anything else?" },
+    { p: "nice",   q: "Is there an event or moment we can tie this to?" },
+  ]},
+  { name: "Tools & Access", color: "#ea580c", questions: [
+    { p: "must",   q: "What AI tools do their people have access to today? (ChatGPT / Copilot / Claude / free vs enterprise / nothing)" },
+    { p: "must",   q: "Is IT going to block anything? Any security restrictions on AI?" },
+    { p: "should", q: "Do we teach on their tools or ours? Who provides licences?" },
+    { p: "should", q: "Do they need hands-on labs or sandboxes?" },
+    { p: "nice",   q: "Do they have an LMS? (Cornerstone, Docebo, SAP, etc.)" },
+    { p: "nice",   q: "What chat tool for the cohort? (Slack, Teams, WhatsApp)" },
+  ]},
+  { name: "What They Want Built", color: "#7c3aed", questions: [
+    { p: "must",   q: "What should participants be able to DO after the programme? (specific task, not 'understand AI')" },
+    { p: "should", q: "Should examples and exercises be from their industry?" },
+    { p: "should", q: "Do they want a final project or capstone? Real or simulated?" },
+    { p: "should", q: "How do they want to measure it worked? (pre/post quiz / manager feedback / adoption metrics)" },
+    { p: "nice",   q: "Any data or content they CAN'T use in exercises? (regulated industries)" },
+  ]},
+  { name: "Money & Timeline", color: "#dc2626", questions: [
+    { p: "must",   q: "What's the budget range?" },
+    { p: "must",   q: "When do they need to decide? Who approves?" },
+    { p: "should", q: "Are they talking to other vendors? What are they comparing?" },
+    { p: "nice",   q: "Does procurement / legal need to review? How long?" },
+    { p: "nice",   q: "Do they want certificates? Standard Acceler or co-branded?" },
+  ]},
+];
+
+// ─────────────────────────────────────────────────────────────────────────────
+// State
+// ─────────────────────────────────────────────────────────────────────────────
+let lastMarkdown = "";
+let lastTitle = "";
+let lastStrength = null;          // populated after Analyze Strength runs
+let lastOverviewMarkdown = "";    // populated when an overview is generated
+
+const $ = (id) => document.getElementById(id);
+
+// Restore form values
+try {
+  const saved = JSON.parse(localStorage.getItem("acceler_form") || "{}");
+  for (const k of ["notes", "client", "category", "geography", "delivery", "cohort", "audience"]) {
+    if (saved[k] !== undefined && $(k)) $(k).value = saved[k];
+  }
+} catch (_) {}
+
+function saveForm() {
+  try {
+    const data = {};
+    for (const k of ["notes", "client", "category", "geography", "delivery", "cohort", "audience"]) {
+      data[k] = $(k).value;
+    }
+    localStorage.setItem("acceler_form", JSON.stringify(data));
+  } catch (_) {}
+}
+["notes", "client", "category", "geography", "delivery", "cohort", "audience"].forEach(id => {
+  $(id).addEventListener("input", saveForm);
+});
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Markdown → HTML (lightweight, focused on what we emit)
+// ─────────────────────────────────────────────────────────────────────────────
+function escapeHtml(s) {
+  return s.replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+}
+function inlineMd(s) {
+  // bold, italic, code
+  s = escapeHtml(s);
+  s = s.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+  s = s.replace(/(^|[^*])\*([^*\n]+)\*/g, "$1<em>$2</em>");
+  s = s.replace(/`([^`]+)`/g, "<code>$1</code>");
+  s = s.replace(/&amp;nbsp;/g, "&nbsp;");
+  s = s.replace(/&amp;([a-z]+);/g, "&$1;");
+  return s;
+}
+function renderMarkdown(md) {
+  const lines = md.replace(/\r/g, "").split("\n");
+  let html = "";
+  let i = 0;
+  let inList = false;
+  let inQuote = false;
+  const closeList = () => { if (inList) { html += "</ul>"; inList = false; } };
+  const closeQuote = () => { if (inQuote) { html += "</div>"; inQuote = false; } };
+
+  while (i < lines.length) {
+    const line = lines[i];
+
+    // Table block
+    if (/^\s*\|.+\|\s*$/.test(line) && i + 1 < lines.length && /^\s*\|[\s\-:|]+\|\s*$/.test(lines[i+1])) {
+      closeList(); closeQuote();
+      const headers = line.trim().slice(1, -1).split("|").map(s => s.trim());
+      i += 2;
+      const rows = [];
+      while (i < lines.length && /^\s*\|.+\|\s*$/.test(lines[i])) {
+        rows.push(lines[i].trim().slice(1, -1).split("|").map(s => s.trim()));
+        i++;
+      }
+      html += "<table><thead><tr>" + headers.map(h => `<th>${inlineMd(h)}</th>`).join("") + "</tr></thead><tbody>";
+      for (const r of rows) html += "<tr>" + r.map(c => `<td>${inlineMd(c)}</td>`).join("") + "</tr>";
+      html += "</tbody></table>";
+      continue;
+    }
+
+    // Headings
+    let m;
+    if ((m = line.match(/^###\s+(.*)$/))) { closeList(); closeQuote(); html += `<h3>${inlineMd(m[1])}</h3>`; i++; continue; }
+    if ((m = line.match(/^##\s+(.*)$/)))  { closeList(); closeQuote(); html += `<h2>${inlineMd(m[1])}</h2>`; i++; continue; }
+    if ((m = line.match(/^#\s+(.*)$/)))   { closeList(); closeQuote(); html += `<h1 class="section-title-major">${inlineMd(m[1])}</h1>`; i++; continue; }
+
+    // HR
+    if (/^---+\s*$/.test(line)) { closeList(); closeQuote(); html += "<hr/>"; i++; continue; }
+
+    // Blockquote (we render as takeaway / metadata box)
+    if (line.startsWith(">")) {
+      if (!inQuote) { closeList(); html += `<div class="takeaway">`; inQuote = true; }
+      const content = line.replace(/^>\s?/, "");
+      if (content.startsWith("**🎯")) html += `<div class="title">${inlineMd(content.replace(/^\*\*|\*\*$/g, ""))}</div>`;
+      else if (content.trim() === "") html += "<br/>";
+      else if (content.startsWith("-")) html += `<div>• ${inlineMd(content.replace(/^-\s*/, ""))}</div>`;
+      else html += `<div>${inlineMd(content)}</div>`;
+      i++; continue;
+    } else { closeQuote(); }
+
+    // List
+    if ((m = line.match(/^\s*-\s+(.*)$/))) {
+      if (!inList) { html += "<ul>"; inList = true; }
+      html += `<li>${inlineMd(m[1])}</li>`;
+      i++; continue;
+    } else { closeList(); }
+
+    // Empty
+    if (line.trim() === "") { i++; continue; }
+
+    // Paragraph
+    html += `<p>${inlineMd(line)}</p>`;
+    i++;
+  }
+  closeList(); closeQuote();
+  return html;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// IK-Acceler renderer — parses [COVER] frontmatter and draws the navy full-bleed
+// cover + body (with #1C4587 headings + day-header styling) + navy closing page.
+// ─────────────────────────────────────────────────────────────────────────────
+function parseCoverBlock(md) {
+  const m = md.match(/\[COVER\]([\s\S]*?)\[\/COVER\]/);
+  if (!m) return null;
+  const lines = m[1].split("\n").map(l => l.trim()).filter(Boolean);
+  const obj = { stats: [] };
+  for (const line of lines) {
+    const idx = line.indexOf(":");
+    if (idx === -1) continue;
+    const key = line.slice(0, idx).trim();
+    const val = line.slice(idx + 1).trim();
+    if (/^stat_\d+$/.test(key)) {
+      // value format: "🏦 | Focus | Fintech Domain Focus"
+      const parts = val.split("|").map(s => s.trim());
+      if (parts.length >= 3) obj.stats.push({ emoji: parts[0], label: parts[1], value: parts.slice(2).join(" | ") });
+    } else {
+      obj[key] = val;
+    }
+  }
+  return obj;
+}
+
+function renderIkEyebrow() {
+  // "BY UnO UPWARD AND ONWARD" — with #3A96D2 accent flashes on "n" inside "UnO" and "AND"
+  return `BY U<span class="accent">n</span>O UPWARD <span class="accent">AND</span> ONWARD`;
+}
+
+function renderCoverAndBody(md) {
+  const cover = parseCoverBlock(md);
+  // Strip cover/closing markers from the body markdown
+  let body = md
+    .replace(/\[COVER\][\s\S]*?\[\/COVER\]/, "")
+    .replace(/\[CLOSING\][\s\S]*?\[\/CLOSING\]/, "")
+    .replace(/^\s+/, "");
+
+  let coverHtml = "";
+  if (cover) {
+    lastTitle = cover.programme || cover.client || "Acceler_Proposal";
+    const stats = cover.stats.length ? cover.stats : [
+      { emoji: "🏦", label: "Focus",    value: cover.geography || "—" },
+      { emoji: "👨‍💻", label: "Audience", value: cover.delivery || "—" },
+      { emoji: "📅", label: "Duration", value: cover.delivery || "—" },
+      { emoji: "⏱️", label: "Hours",    value: "—" },
+    ];
+    coverHtml = `
+      <div class="ik-cover">
+        <div class="ik-eyebrow">${renderIkEyebrow()}</div>
+        ${cover.partnering ? `<div class="ik-partnering">${escapeHtml(cover.partnering)}</div>` : ""}
+        ${cover.tagline ? `<div class="ik-tagline">${escapeHtml(cover.tagline)}</div>` : ""}
+        <div class="ik-proposal-for">Proposal For</div>
+        <div class="ik-client">${escapeHtml(cover.client || "—")}</div>
+        <div class="ik-date">${escapeHtml(cover.date || "")}</div>
+        <div class="ik-title">${escapeHtml(cover.title || ("Draft Proposal | " + (cover.programme || "") + " For " + (cover.client || "")))}</div>
+        ${cover.subtitle ? `<div class="ik-subtitle">${escapeHtml(cover.subtitle)}</div>` : ""}
+      </div>
+      <div class="ik-stats">
+        ${stats.slice(0,4).map(s => `
+          <div class="ik-stat">
+            <div class="emoji">${escapeHtml(s.emoji || "")}</div>
+            <div class="label">${escapeHtml(s.label || "")}</div>
+            <div class="value">${escapeHtml(s.value || "")}</div>
+          </div>
+        `).join("")}
+      </div>
+    `;
+  }
+
+  // Render body markdown
+  let bodyHtml = renderMarkdown(body);
+
+  // Promote section h1 (lines like "## 1. Objective" → h1 in markdown if model used ##) to use the section style.
+  // Our markdown renderer emits h1.section-title-major for `# ` lines and h2 for `## `.
+  // For IK-Acceler we want all top-level numbered sections as h1 #1C4587.
+  bodyHtml = bodyHtml.replace(/<h1 class="section-title-major">/g, '<h1>');
+
+  // Mark day headers (h3 starting with "Day" or "Module N")
+  const dayHeaderClass = (cover && cover.day_header === "0D1F3C") ? "day-header alt" : "day-header";
+  bodyHtml = bodyHtml.replace(/<h3>(Day\s[^<]*|Module\s\d+[^<]*)<\/h3>/gi,
+    (_, t) => `<h3 class="${dayHeaderClass}">${t}</h3>`);
+
+  // Wrap body in its own container so styles only apply there
+  const bodyContainer = `<div class="proposal-body">${bodyHtml}</div>`;
+
+  // Closing page
+  const closingHtml = `
+    <div class="ik-closing">
+      <div class="ik-eyebrow" style="margin-bottom: 18px;">${renderIkEyebrow()}</div>
+      <div class="ik-closing-title">PLUG IN &amp; ACCELERATE</div>
+    </div>
+  `;
+
+  return `<div class="proposal">${coverHtml}${bodyContainer}${closingHtml}</div>`;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Downloads — three options:
+//   1) HTML  (most reliable; open in any browser, print to PDF for a fixed format)
+//   2) Word  (.doc — works in MS Word and Pages; same content as HTML)
+//   3) Markdown (.md — for editing)
+// All three use the same IK-Acceler styled HTML body, so the cover and closing
+// pages render correctly everywhere.
+// ─────────────────────────────────────────────────────────────────────────────
+function buildStyledDoc() {
+  const inner = renderCoverAndBody(lastMarkdown);
+  // Inline the IK-Acceler CSS so the downloaded file is fully self-contained.
+  const styles = `
+    body { font-family: "Manrope", "Calibri", Arial, sans-serif; color: #1A1A2E; margin: 0; padding: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .proposal { max-width: 850px; margin: 0 auto; background: #fff; }
+    .ik-cover, .ik-closing { background: #0F1936; color: #fff; padding: 60px 40px; text-align: center; page-break-after: always; }
+    .ik-closing { page-break-after: auto; page-break-before: always; min-height: 480px; display: flex; flex-direction: column; justify-content: center; }
+    .ik-eyebrow { font-family: "Nunito", sans-serif; font-size: 11px; letter-spacing: 0.2em; color: #fff; margin-bottom: 32px; font-weight: 600; }
+    .ik-eyebrow .accent { color: #3A96D2; }
+    .ik-partnering { font-size: 18px; color: #fff; margin: 0 auto 14px; max-width: 580px; line-height: 1.5; }
+    .ik-tagline { font-size: 16px; color: rgba(255,255,255,0.78); margin: 0 0 36px; }
+    .ik-proposal-for { font-size: 13px; letter-spacing: 0.2em; color: rgba(255,255,255,0.7); margin-bottom: 10px; text-transform: uppercase; font-weight: 600; }
+    .ik-client { font-size: 26px; color: #fff; font-weight: 700; margin: 0 0 6px; }
+    .ik-date { font-size: 14px; color: rgba(255,255,255,0.7); margin: 0 0 32px; }
+    .ik-title { font-size: 28px; font-weight: 700; color: #fff; line-height: 1.3; margin: 0 auto 10px; max-width: 700px; }
+    .ik-subtitle { font-size: 14px; color: rgba(255,255,255,0.78); margin: 0 auto; max-width: 640px; line-height: 1.5; }
+    .ik-closing-title { font-size: 44px; font-weight: 800; color: #fff; letter-spacing: 0.05em; }
+    .ik-stats { width: 100%; border-collapse: collapse; margin: 0 0 26px; }
+    .ik-stats { display: table; }
+    .ik-stat { display: table-cell; background: #1A2342; color: #fff; padding: 16px 14px; text-align: center; width: 25%; border-right: 1px solid rgba(255,255,255,0.08); }
+    .ik-stat:last-child { border-right: none; }
+    .ik-stat .emoji { font-size: 22px; margin-bottom: 6px; line-height: 1; }
+    .ik-stat .label { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.6); font-weight: 700; margin-bottom: 4px; }
+    .ik-stat .value { font-size: 12px; font-weight: 600; color: #fff; line-height: 1.3; }
+    .proposal-body { padding: 32px 48px; }
+    .proposal-body h1 { font-size: 22px; font-weight: 700; color: #1C4587; margin: 30px 0 12px; padding-bottom: 6px; border-bottom: 2px solid #1C4587; }
+    .proposal-body h2 { font-size: 17px; font-weight: 700; color: #1C4587; margin: 24px 0 10px; }
+    .proposal-body h3 { font-size: 14px; font-weight: 700; color: #1A1A2E; margin: 18px 0 8px; }
+    .proposal-body h3.day-header { color: #fff; background: #1A2B4A; padding: 9px 16px; font-size: 14px; margin: 24px 0 14px; border-radius: 0; }
+    .proposal-body h3.day-header.alt { background: #0D1F3C; }
+    .proposal-body p { font-size: 13.5px; line-height: 1.65; color: #1A1A2E; margin: 9px 0; }
+    .proposal-body ul, .proposal-body ol { font-size: 13.5px; line-height: 1.6; color: #1A1A2E; padding-left: 22px; margin: 10px 0; }
+    .proposal-body li { margin: 4px 0; }
+    .proposal-body strong { color: #1A1A2E; font-weight: 700; }
+    .proposal-body em { color: #555566; }
+    .proposal-body table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 12.5px; }
+    .proposal-body th { background: #1C4587; color: #fff; padding: 10px 12px; text-align: left; font-weight: 600; }
+    .proposal-body td { padding: 9px 12px; border-bottom: 1px solid #E5E8EE; vertical-align: top; line-height: 1.5; }
+    .proposal-body tr:nth-child(even) td { background: #F5F7FA; }
+    .takeaway { background: #EEF4FF; border-left: 4px solid #1C4587; padding: 14px 18px; margin: 16px 0; }
+    .takeaway .title { font-weight: 700; color: #1C4587; font-size: 13px; margin-bottom: 6px; }
+    @page { margin: 0.5in; }
+  `;
+  return `<!doctype html>
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta charset="utf-8" />
+<title>${escapeHtml(lastTitle || "Acceler Proposal Draft")}</title>
+<style>${styles}</style>
+</head>
+<body>${inner}</body>
+</html>`;
+}
+
+function saveBlob(content, mime, filename) {
+  const blob = new Blob([content], { type: mime });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(() => URL.revokeObjectURL(url), 1500);
+}
+
+function safeFileName() {
+  return (lastTitle || "Acceler_Proposal_Draft").replace(/[^a-zA-Z0-9]+/g, "_").replace(/^_+|_+$/g, "");
+}
+
+function downloadAsHtml() {
+  if (!lastMarkdown) return;
+  saveBlob(buildStyledDoc(), "text/html;charset=utf-8", `${safeFileName()}_v0.1.html`);
+}
+
+function downloadAsWord() {
+  if (!lastMarkdown) return;
+  // UTF-8 BOM + Word XML namespace tells MS Word to open it as a doc.
+  // On macOS Pages: opens by right-click → Open With → Pages (or Word).
+  saveBlob("﻿" + buildStyledDoc(), "application/msword", `${safeFileName()}_v0.1.doc`);
+}
+
+function downloadAsMarkdown() {
+  if (!lastMarkdown) return;
+  saveBlob(lastMarkdown, "text/markdown;charset=utf-8", `${safeFileName()}_v0.1.md`);
+}
+
+function copyMarkdown() {
+  if (!lastMarkdown) return;
+  navigator.clipboard.writeText(lastMarkdown).then(() => {
+    const btn = $("copy-btn");
+    if (!btn) return;
+    const old = btn.textContent;
+    btn.textContent = "Copied ✓";
+    setTimeout(() => btn.textContent = old, 1400);
+  });
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Requirement Strength Analyzer — scores meeting notes against the 33 checklist questions
+// ─────────────────────────────────────────────────────────────────────────────
+async function analyzeStrength() {
+  const notes = $("notes").value.trim();
+  const out = $("strength-out");
+  if (!notes) {
+    out.innerHTML = `<div style="background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.3);border-radius:6px;padding:10px 12px;color:#B5000D;font-size:12.5px;">Paste meeting notes first — there's nothing to score yet.</div>`;
+    return;
+  }
+  if (!window.cowork || typeof window.cowork.askClaude !== "function") {
+    out.innerHTML = `<div style="background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.3);border-radius:6px;padding:10px 12px;color:#B5000D;font-size:12.5px;">Cowork bridge unavailable — open this from the Cowork sidebar.</div>`;
+    return;
+  }
+
+  out.innerHTML = `<div style="display:flex;align-items:center;gap:10px;color:#555566;font-size:12.5px;padding:10px;"><div class="spinner" style="width:16px;height:16px;border:2px solid #D7DCE5;border-top-color:#2563EB;border-radius:50%;animation:spin 0.8s linear infinite;"></div> Analyzing brief against 33 discovery questions…</div>`;
+  $("strength-go").disabled = true;
+
+  // Build the prompt — ask Claude to score each question as "answered" / "partial" / "missing"
+  const questionsList = DISCOVERY.map((sec, si) =>
+    `## ${sec.name}\n` + sec.questions.map((q, qi) => `- s${si+1}q${qi+1} [${q.p}] ${q.q}`).join("\n")
+  ).join("\n\n");
+
+  const prompt = `You are scoring a pre-sales brief against the Acceler Discovery Checklist (33 questions across 6 sections).
+
+For each question, return one of:
+- "yes"     — the notes clearly answer it
+- "partial" — the notes touch on it but leave gaps
+- "no"      — the notes don't address it at all
+
+Return ONLY a valid JSON object (no prose, no code fence) with this exact shape:
+
+{
+  "sections": [
+    {
+      "name": "Why They're Here",
+      "answers": { "s1q1": "yes", "s1q2": "no", "s1q3": "partial", "s1q4": "no", "s1q5": "no", "s1q6": "no" }
+    },
+    ... (one entry per section, in the order below)
+  ],
+  "summary": "1-2 sentence summary of overall strength"
+}
+
+The 6 sections in order are: "Why They're Here", "Who's in the Room", "When & How", "Tools & Access", "What They Want Built", "Money & Timeline".
+
+CHECKLIST:
+${questionsList}
+
+MEETING NOTES:
+---
+${notes}
+---
+
+Return only the JSON.`;
+
+  try {
+    const resp = await window.cowork.askClaude(prompt, []);
+    let raw = unwrapResponse(resp).trim();
+    raw = raw.replace(/^```(?:json)?\s*/i, "").replace(/```\s*$/, "");
+    const m = raw.match(/\{[\s\S]*\}/);
+    const parsed = JSON.parse(m ? m[0] : raw);
+    lastStrength = parsed;
+    out.innerHTML = renderStrength(parsed);
+  } catch (e) {
+    console.error("Strength analysis error:", e);
+    out.innerHTML = `<div style="background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.3);border-radius:6px;padding:10px 12px;color:#B5000D;font-size:12.5px;">Couldn't parse the analysis — try again. (${escapeHtml(String(e && e.message || e))})</div>`;
+  } finally {
+    $("strength-go").disabled = false;
+  }
+}
+
+function unwrapResponse(r) {
+  if (r == null) return "";
+  if (typeof r === "string") return r;
+  if (typeof r === "object") {
+    if (typeof r.text === "string") return r.text;
+    if (typeof r.response === "string") return r.response;
+    if (typeof r.message === "string") return r.message;
+    if (typeof r.completion === "string") return r.completion;
+    if (typeof r.content === "string") return r.content;
+    if (Array.isArray(r.content)) {
+      const parts = r.content.map(c => c && typeof c.text === "string" ? c.text : "").filter(Boolean);
+      if (parts.length) return parts.join("\n");
+    }
+    if (r.data) return unwrapResponse(r.data);
+  }
+  return "";
+}
+
+function renderStrength(data) {
+  // Compute totals and per-section stats
+  const score = (a) => a === "yes" ? 1 : a === "partial" ? 0.5 : 0;
+  let totalScore = 0, totalQ = 0, mustMissing = [];
+
+  const sections = DISCOVERY.map((sec, si) => {
+    const ansSec = (data.sections || []).find(s => s.name === sec.name) || { answers: {} };
+    let sScore = 0;
+    const qs = sec.questions.map((q, qi) => {
+      const id = `s${si+1}q${qi+1}`;
+      const a = (ansSec.answers && ansSec.answers[id]) || "no";
+      sScore += score(a);
+      if (q.p === "must" && a === "no") mustMissing.push({ section: sec.name, q: q.q });
+      return { id, q: q.q, p: q.p, a };
+    });
+    totalScore += sScore;
+    totalQ += sec.questions.length;
+    const pct = Math.round((sScore / sec.questions.length) * 100);
+    return { name: sec.name, color: sec.color, pct, count: `${Math.round(sScore*10)/10}/${sec.questions.length}`, questions: qs };
+  });
+
+  const overallPct = Math.round((totalScore / totalQ) * 100);
+  let verdict, verdictColor, verdictBg;
+  if (overallPct >= 80) { verdict = "Ready to Propose"; verdictColor = "#16a34a"; verdictBg = "#f0fdf4"; }
+  else if (overallPct >= 50) { verdict = "Gaps Remain — Proceed With Care"; verdictColor = "#D4A24C"; verdictBg = "#fdf6e8"; }
+  else { verdict = "Thin Brief — Agent Will Lean Heavily on UT Context"; verdictColor = "#dc2626"; verdictBg = "#fef2f2"; }
+
+  return `
+    <div style="background:${verdictBg};border:1px solid ${verdictColor}55;border-radius:8px;padding:12px 14px;margin-bottom:12px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+        <div>
+          <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:${verdictColor};margin-bottom:2px;">Strength · ${overallPct}%</div>
+          <div style="font-weight:700;font-size:14px;color:#1A1A2E;">${verdict}</div>
+        </div>
+        <div style="font-size:26px;font-weight:800;font-family:ui-monospace,monospace;color:${verdictColor};">${overallPct}%</div>
+      </div>
+      ${data.summary ? `<div style="margin-top:8px;font-size:12.5px;color:#555566;line-height:1.5;">${escapeHtml(data.summary)}</div>` : ""}
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:12px;">
+      ${sections.map(s => `
+        <div style="display:flex;align-items:center;gap:10px;font-size:12px;">
+          <div style="width:8px;height:8px;border-radius:50%;background:${s.color};flex-shrink:0;"></div>
+          <div style="min-width:140px;color:#1A1A2E;">${escapeHtml(s.name)}</div>
+          <div style="flex:1;height:5px;background:#E5E8EE;border-radius:3px;overflow:hidden;">
+            <div style="height:100%;width:${s.pct}%;background:${s.color};border-radius:3px;transition:width 0.6s;"></div>
+          </div>
+          <div style="min-width:46px;text-align:right;color:#555566;font-weight:600;">${s.pct}%</div>
+        </div>
+      `).join("")}
+    </div>
+
+    ${mustMissing.length ? `
+      <div style="background:rgba(220,38,38,0.06);border:1px solid rgba(220,38,38,0.3);border-radius:6px;padding:10px 12px;font-size:12px;color:#7f1d1d;">
+        <div style="font-weight:700;margin-bottom:6px;">⚠ ${mustMissing.length} critical question${mustMissing.length > 1 ? "s" : ""} unanswered</div>
+        <ul style="margin:0;padding-left:18px;line-height:1.6;">
+          ${mustMissing.slice(0,6).map(m => `<li>${escapeHtml(m.q)}</li>`).join("")}
+          ${mustMissing.length > 6 ? `<li><em>… and ${mustMissing.length - 6} more</em></li>` : ""}
+        </ul>
+        <div style="margin-top:8px;font-size:11px;color:#555566;font-style:italic;">The agent will fill these from UT context and past proposals, and flag them under "Open Questions for the Client" in the final draft.</div>
+      </div>
+    ` : ""}
+  `;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Generate — branches based on requirement strength
+//   • Strength >= 80% → generate full proposal directly
+//   • Strength < 80% (or unknown) → generate an overview first, await user approval
+// ─────────────────────────────────────────────────────────────────────────────
+function computeStrengthPct(strength) {
+  if (!strength) return null;
+  const score = (a) => a === "yes" ? 1 : a === "partial" ? 0.5 : 0;
+  let total = 0, count = 0;
+  DISCOVERY.forEach((sec, si) => {
+    const ans = (strength.sections || []).find(s => s.name === sec.name);
+    sec.questions.forEach((_, qi) => {
+      const id = `s${si+1}q${qi+1}`;
+      const a = (ans && ans.answers && ans.answers[id]) || "no";
+      total += score(a); count++;
+    });
+  });
+  return count ? Math.round((total/count) * 100) : null;
+}
+
+function readSetup() {
+  return {
+    client: $("client").value.trim() || "(client not specified — flag in Open Questions)",
+    category: $("category").value,
+    geography: $("geography") ? $("geography").value : "auto",
+    delivery: $("delivery").value,
+    cohort: $("cohort").value.trim(),
+    audience: $("audience").value.trim(),
+  };
+}
+
+async function generate() {
+  const notes = $("notes").value.trim();
+  if (!notes) {
+    $("output").innerHTML = `<div class="error">Paste meeting notes first — the agent needs something to work from.</div>`;
+    return;
+  }
+  const pct = computeStrengthPct(lastStrength);
+  // Route: high-strength briefs go straight to full proposal; thin/unknown briefs get a preview-and-approve step first
+  if (pct !== null && pct >= 80) {
+    return generateFullProposal();
+  }
+  return generateOverview();
+}
+
+async function generateOverview() {
+  const notes = $("notes").value.trim();
+  if (!notes) return;
+  const setup = readSetup();
+  const out = $("output");
+
+  if (!window.cowork || typeof window.cowork.askClaude !== "function") {
+    out.innerHTML = `<div class="error"><strong>Cowork bridge unavailable.</strong> Open this from the Cowork sidebar.</div>`;
+    return;
+  }
+
+  const pct = computeStrengthPct(lastStrength);
+  out.innerHTML = `
+    <div class="output-loading">
+      <div class="spinner"></div>
+      <div>Drafting proposal overview ${pct !== null ? `(brief is ${pct}% complete — leaning on UT context to fill gaps)` : "(no strength check run — playing safe with an overview first)"}…</div>
+    </div>
+  `;
+  $("generate").disabled = true;
+
+  const overviewPrompt = `You are Mini-UT — the Acceler Pre-Sales orchestrator for Interview Kickstart's B2B division.
+
+Before writing the full proposal, produce a SHORT, EXECUTIVE OVERVIEW for Utkarsh to review and approve. The full draft will follow only after he approves this shape.
+
+The overview must include, as compact markdown:
+
+# Proposal Overview — [Client]
+
+**Recommended programme:** [AI Leaders / AI Builders / AI Enablers / Custom] — _one-line rationale_
+**Geography:** [region]   |   **Sign-off routing:** [Amit / Ryan / Soham / Anshuman, per region matrix]
+**Audience:** [one-line profile from notes + inferred seniority/depth]
+**Cohort size:** [number or band]
+
+## Delivery shape
+**Recommended:** [N days × M hrs = T hrs total]  (e.g. "2 days × 9 hrs = 18 hrs" or "Self-Paced LMS, ~20 hrs")
+**User selected:** [from form, or "auto"]   |   **Match:** ✓ matches / ⚠ mismatch — _one-line note_
+
+## Why this shape (anchor in past proposals)
+- _e.g. "Mirrors Nucleus fintech 2-day · 18 hr build sprint (similar engineering audience + agentic AI scope)"_
+- _e.g. "Booking-style 4-day spread didn't fit because cohort < 30 and budget likely tighter"_
+- _Reference the most relevant of: Nucleus / Booking / Gryphon / MCB — and say why_
+
+## Programme spine (3–5 bullets)
+- Day/Module 1 — [theme + 1-line outcome]
+- Day/Module 2 — [theme + 1-line outcome]
+- … (only as many as the recommended duration)
+
+## Commercials sketch (rough band)
+**Currency rule:** India clients ALWAYS in INR (₹). US / Middle East / Other in USD ($). Never mix.
+- Curriculum dev: ~[band]   |   Live delivery: ~[band]   |   TA + review: ~[band]
+- Per-learner cost: ~[range]   |   Total: ~[range]
+- Notes: _e.g. "India SME tier ₹55/hr base; exclude Nuvepro (₹2.3 lakh equivalent) if client has own VMs"_
+
+## Gaps the full draft will fill from UT context
+- _List the must-ask discovery items missing from the notes that the agent will have to infer_
+- _Be honest — these will appear as "Open Questions for the Client" in the final draft_
+
+## Assumptions Mini-UT is making
+- _e.g. "Live Zoom delivery assumed (notes don't specify)"_
+- _e.g. "Cohort 25–30 inferred from 'small team' phrasing"_
+
+---
+
+Use specific numbers and references. Lean on the four reference proposals (Nucleus India · 2-day AI Builders, Booking India · 4-day GenAI Engineering, Gryphon US · 4-day FDE, MCB Mauritius · Self-Paced LMS) and Utkarsh's operating context. Keep it under ~400 words. End right after Assumptions — no preamble, no closing line.
+
+────────────────────────────────────────
+SETUP
+────────────────────────────────────────
+Client: ${setup.client}
+Programme (user selected): ${setup.category}
+Geography (user selected): ${setup.geography}
+Delivery (user selected): ${setup.delivery}
+Cohort: ${setup.cohort || "(not specified)"}
+Audience: ${setup.audience || "(not specified)"}
+
+${lastStrength ? `────────────────────────────────────────
+REQUIREMENT STRENGTH: ${pct}% complete
+────────────────────────────────────────
+${lastStrength.summary || ""}
+
+Critical questions unanswered (Mini-UT will fill these from context):
+${(() => {
+  const gaps = [];
+  DISCOVERY.forEach((sec, si) => {
+    const ans = (lastStrength.sections || []).find(s => s.name === sec.name);
+    sec.questions.forEach((q, qi) => {
+      const id = `s${si+1}q${qi+1}`;
+      const a = (ans && ans.answers && ans.answers[id]) || "no";
+      if (a === "no" && q.p === "must") gaps.push(`  • [${sec.name}] ${q.q}`);
+    });
+  });
+  return gaps.length ? gaps.join("\n") : "  (none)";
+})()}` : "REQUIREMENT STRENGTH: not analyzed — proceed with care."}
+
+────────────────────────────────────────
+MEETING NOTES
+────────────────────────────────────────
+${notes}
+
+────────────────────────────────────────
+Produce the overview now. Start directly with the H1 line.`;
+
+  let resp;
+  try {
+    resp = await window.cowork.askClaude(overviewPrompt, []);
+  } catch (err) {
+    console.error("askClaude (overview) error:", err);
+    out.innerHTML = `<div class="error"><strong>askClaude call failed:</strong><br/>${escapeHtml(String(err && err.message || err))}</div>`;
+    $("generate").disabled = false;
+    return;
+  }
+
+  let raw = (function unwrap(r){
+    if (r == null) return "";
+    if (typeof r === "string") return r;
+    if (typeof r === "object") {
+      if (typeof r.text === "string") return r.text;
+      if (typeof r.response === "string") return r.response;
+      if (typeof r.message === "string") return r.message;
+      if (typeof r.completion === "string") return r.completion;
+      if (typeof r.content === "string") return r.content;
+      if (Array.isArray(r.content)) return r.content.map(c => c && c.text || "").filter(Boolean).join("\n");
+      if (r.data) return unwrap(r.data);
+    }
+    return "";
+  })(resp).trim();
+  raw = raw.replace(/^```(?:markdown|md)?\s*\n?/i, "").replace(/\n?```\s*$/, "");
+
+  const overviewHtml = renderMarkdown(raw);
+
+  out.innerHTML = `
+    <div style="background:#FFF8DC; border:1px solid #F2E4A8; border-radius:8px; padding:12px 14px; margin-bottom:14px; color:#5C4A12; font-size:13px; line-height:1.5;">
+      <strong>📋 Review the proposal shape below.</strong> ${pct !== null ? `The brief was <strong>${pct}%</strong> complete — Mini-UT has inferred the gaps from Utkarsh's context and past proposals. Approve to write the full draft, or regenerate to try a different shape.` : "Brief strength wasn't analyzed — Mini-UT has played it safe with reasonable defaults."}
+    </div>
+    <div id="overview-view" class="proposal-body" style="background:#fff; border:1px solid #E5E8EE; border-radius:10px; padding:18px 22px;">
+      ${overviewHtml}
+    </div>
+    <textarea id="overview-edit" style="display:none; width:100%; min-height:380px; padding:14px 16px; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:12.5px; line-height:1.55; border:1px solid #E5E8EE; border-radius:10px; background:#FBFCFD; color:#1A1A2E; outline:none; resize:vertical;"></textarea>
+    <div id="overview-actions" style="display:flex; gap:8px; margin-top:14px; flex-wrap:wrap;">
+      <button class="btn btn-primary" id="overview-approve">✓ Approve &amp; Generate Full Proposal</button>
+      <button class="btn btn-secondary" id="overview-edit-btn">✏️ Edit Overview</button>
+      <button class="btn btn-secondary" id="overview-regen">↻ Regenerate</button>
+      <button class="btn btn-ghost" onclick="copyOverviewMarkdown()">Copy</button>
+    </div>
+    <div id="overview-edit-actions" style="display:none; gap:8px; margin-top:14px; flex-wrap:wrap;">
+      <button class="btn btn-primary" id="overview-save-btn">✓ Done Editing</button>
+      <button class="btn btn-ghost" id="overview-cancel-btn">Cancel</button>
+      <div style="margin-left:auto; align-self:center; font-size:11.5px; color:#888894;">Edit markdown directly — changes will be passed into the full proposal generation.</div>
+    </div>
+  `;
+  lastOverviewMarkdown = raw;
+  $("generate").disabled = false;
+
+  const ap = $("overview-approve"); if (ap) ap.addEventListener("click", generateFullProposal);
+  const rg = $("overview-regen"); if (rg) rg.addEventListener("click", generateOverview);
+  const editBtn = $("overview-edit-btn"); if (editBtn) editBtn.addEventListener("click", enterOverviewEditMode);
+  const saveBtn = $("overview-save-btn"); if (saveBtn) saveBtn.addEventListener("click", saveOverviewEdits);
+  const cancelBtn = $("overview-cancel-btn"); if (cancelBtn) cancelBtn.addEventListener("click", cancelOverviewEdits);
+}
+
+function enterOverviewEditMode() {
+  const ta = $("overview-edit"); if (!ta) return;
+  ta.value = lastOverviewMarkdown;
+  ta.style.display = "block";
+  $("overview-view").style.display = "none";
+  $("overview-actions").style.display = "none";
+  $("overview-edit-actions").style.display = "flex";
+  ta.focus();
+}
+
+function saveOverviewEdits() {
+  const ta = $("overview-edit"); if (!ta) return;
+  const newMd = ta.value.trim();
+  if (newMd) lastOverviewMarkdown = newMd;
+  // Re-render the view with updated markdown
+  $("overview-view").innerHTML = renderMarkdown(lastOverviewMarkdown);
+  ta.style.display = "none";
+  $("overview-view").style.display = "block";
+  $("overview-edit-actions").style.display = "none";
+  $("overview-actions").style.display = "flex";
+}
+
+function cancelOverviewEdits() {
+  $("overview-edit").style.display = "none";
+  $("overview-view").style.display = "block";
+  $("overview-edit-actions").style.display = "none";
+  $("overview-actions").style.display = "flex";
+}
+
+function copyOverviewMarkdown() {
+  if (!lastOverviewMarkdown) return;
+  navigator.clipboard.writeText(lastOverviewMarkdown);
+}
+
+async function generateFullProposal() {
+  const notes = $("notes").value.trim();
+  if (!notes) return;
+  const setup = readSetup();
+
+  const out = $("output");
+  out.innerHTML = `
+    <div class="output-loading">
+      <div class="spinner"></div>
+      <div>Drafting full proposal in Acceler house style — this takes ~20–30 seconds.</div>
+    </div>
+  `;
+  $("generate").disabled = true;
+
+  const userPrompt = `${SYSTEM_PROMPT}
+
+────────────────────────────────────────
+PROPOSAL SETUP (from the form)
+────────────────────────────────────────
+Client: ${setup.client}
+Programme: ${setup.category}
+Geography: ${setup.geography}   ← drives the sign-off block routing (India → Amit; US/ME/Other → Ryan or Soham; Africa → Amit; Global → Anshuman + Soham)
+Delivery format: ${setup.delivery}
+Cohort size: ${setup.cohort || "(unspecified — infer from notes or flag)"}
+Target audience: ${setup.audience || "(unspecified — infer from notes or flag)"}
+
+${lastOverviewMarkdown ? `────────────────────────────────────────
+APPROVED OVERVIEW (user reviewed and may have edited this — treat as binding)
+────────────────────────────────────────
+${lastOverviewMarkdown}
+
+⚠ The user has reviewed and approved (and possibly edited) the overview above. The full proposal MUST honour the approved shape — recommended programme, delivery duration, audience profile, programme spine, commercials sketch, and assumptions. Do not silently deviate. If the user's edits introduced facts that contradict the meeting notes, the EDITS WIN — the user has corrected the brief manually.
+
+` : ""}
+
+${lastStrength ? `────────────────────────────────────────
+REQUIREMENT STRENGTH (from Acceler Discovery Checklist)
+────────────────────────────────────────
+${(() => {
+  const score = (a) => a === "yes" ? 1 : a === "partial" ? 0.5 : 0;
+  let total = 0, count = 0, gaps = [];
+  DISCOVERY.forEach((sec, si) => {
+    const ans = (lastStrength.sections || []).find(s => s.name === sec.name);
+    sec.questions.forEach((q, qi) => {
+      const id = `s${si+1}q${qi+1}`;
+      const a = (ans && ans.answers && ans.answers[id]) || "no";
+      total += score(a); count++;
+      if (a === "no" && q.p === "must") gaps.push(`  • [${sec.name}] ${q.q}`);
+    });
+  });
+  const pct = Math.round((total/count) * 100);
+  return `Overall: ${pct}% complete.\n${lastStrength.summary || ""}\n\nCritical questions unanswered:\n${gaps.length ? gaps.join("\n") : "  (none — brief is well-scoped)"}\n\nFor any "unanswered" item above, do NOT invent client-specific facts. Lean on Utkarsh's context and past IK-Acceler proposals (Nucleus / Booking / Gryphon / MCB) to write the section in the house style, and flag the specific missing facts under "⚠ Open Questions for the Client" at the end of the proposal.`;
+})()}` : "REQUIREMENT STRENGTH: not analyzed. The user skipped the strength check — proceed with whatever the meeting notes provide, lean on UT context and past proposals for gaps, and flag missing client-specific facts under \"⚠ Open Questions for the Client\"."}
+
+────────────────────────────────────────
+MEETING NOTES (raw input)
+────────────────────────────────────────
+${notes}
+
+────────────────────────────────────────
+Now generate the first-level proposal draft in the exact Markdown structure specified above. Start directly with the H1 cover line — no preamble, no "Here is your draft" intro.`;
+
+  // Verify the Cowork bridge exists
+  if (!window.cowork || typeof window.cowork.askClaude !== "function") {
+    out.innerHTML = `<div class="error"><strong>Cowork bridge unavailable.</strong><br/>This page calls <code>window.cowork.askClaude()</code> which only exists inside Cowork. If you're opening the HTML in a normal browser tab, the agent can't run here. Open it from the Cowork sidebar instead.</div>`;
+    $("generate").disabled = false;
+    return;
+  }
+
+  let resp;
+  try {
+    resp = await window.cowork.askClaude(userPrompt, []);
+  } catch (err) {
+    console.error("askClaude error:", err);
+    out.innerHTML = `<div class="error"><strong>askClaude call failed:</strong><br/>${escapeHtml(String(err && err.message || err))}<br/><br/><em>Check the dev console for the full stack.</em></div>`;
+    $("generate").disabled = false;
+    return;
+  }
+
+  // Log the raw response for debugging
+  console.log("askClaude raw response:", resp);
+
+  // Unwrap response — askClaude can return many shapes. Try them all.
+  function unwrap(r) {
+    if (r == null) return "";
+    if (typeof r === "string") return r;
+    if (typeof r === "object") {
+      // Common shapes
+      if (typeof r.text === "string") return r.text;
+      if (typeof r.response === "string") return r.response;
+      if (typeof r.message === "string") return r.message;
+      if (typeof r.completion === "string") return r.completion;
+      if (typeof r.output === "string") return r.output;
+      if (typeof r.result === "string") return r.result;
+      // Content as string
+      if (typeof r.content === "string") return r.content;
+      // Content as array of {type, text} (Anthropic-style)
+      if (Array.isArray(r.content)) {
+        const parts = r.content.map(c => (c && typeof c === "object" && typeof c.text === "string") ? c.text : (typeof c === "string" ? c : "")).filter(Boolean);
+        if (parts.length) return parts.join("\n");
+      }
+      // Messages array
+      if (Array.isArray(r.messages) && r.messages.length) {
+        const last = r.messages[r.messages.length - 1];
+        if (last && typeof last.content === "string") return last.content;
+        if (last && Array.isArray(last.content)) {
+          const parts = last.content.map(c => (c && typeof c.text === "string") ? c.text : "").filter(Boolean);
+          if (parts.length) return parts.join("\n");
+        }
+      }
+      // Nested data / data.text
+      if (r.data) {
+        const nested = unwrap(r.data);
+        if (nested) return nested;
+      }
+    }
+    return "";
+  }
+
+  let cleaned = unwrap(resp).trim();
+  // Strip a wrapping ```markdown ... ``` or ``` ... ``` fence if the model added one
+  cleaned = cleaned.replace(/^```(?:markdown|md)?\s*\n/i, "").replace(/\n```\s*$/, "");
+  lastMarkdown = cleaned;
+
+  if (!lastMarkdown) {
+    const debugDump = escapeHtml(JSON.stringify(resp, null, 2).slice(0, 2000));
+    out.innerHTML = `<div class="error"><strong>No content extracted from the response.</strong><br/>Raw response (for debugging):<pre style="white-space:pre-wrap;font-size:11px;margin-top:8px;background:#fff;padding:8px;border-radius:6px;">${debugDump}</pre></div>`;
+    $("generate").disabled = false;
+    return;
+  }
+
+  // Try the structured cover render; fall back to plain markdown if anything throws
+  let proposalHtml;
+  try {
+    proposalHtml = renderCoverAndBody(lastMarkdown);
+  } catch (err) {
+    console.error("render error:", err);
+    proposalHtml = `<div class="error" style="margin-bottom:14px;">Structured render failed (${escapeHtml(String(err && err.message || err))}). Showing raw markdown below.</div><pre style="white-space:pre-wrap;font-size:12.5px;background:#fff;padding:14px;border-radius:8px;border:1px solid #E5E8EE;">${escapeHtml(lastMarkdown)}</pre>`;
+  }
+
+  out.innerHTML = `
+    <div class="output-actions">
+      <button class="btn btn-primary" onclick="downloadAsHtml()">⬇ Download as HTML</button>
+      <button class="btn btn-secondary" onclick="downloadAsWord()">⬇ Word (.doc)</button>
+      <button class="btn btn-secondary" onclick="downloadAsMarkdown()">⬇ Markdown</button>
+      <button class="btn btn-ghost" id="copy-btn" onclick="copyMarkdown()">Copy MD</button>
+      <button class="btn btn-ghost" onclick="generate()">↻ Regenerate</button>
+    </div>
+    ${proposalHtml}
+  `;
+  $("generate").disabled = false;
+}
+
+$("generate").addEventListener("click", generate);
+$("clear").addEventListener("click", () => {
+  if (!confirm("Clear the meeting notes?")) return;
+  $("notes").value = "";
+  saveForm();
+  lastStrength = null;
+  const strengthOut = $("strength-out");
+  if (strengthOut) strengthOut.innerHTML = "";
+});
+const strengthBtn = $("strength-go");
+if (strengthBtn) strengthBtn.addEventListener("click", analyzeStrength);
+</script>
+</body>
+</html>

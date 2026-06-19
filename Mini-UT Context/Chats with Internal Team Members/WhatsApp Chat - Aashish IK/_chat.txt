@@ -1,0 +1,406 @@
+[19/05/25, 7:38:32 PM] Aashish IK: ‎Messages and calls are end-to-end encrypted. Only people in this chat can read, listen to, or share them.
+‎[19/05/25, 7:38:32 PM] Utkarsh: ‎<attached: 00000002-PHOTO-2025-05-19-19-38-32.jpg>
+‎[19/05/25, 7:38:42 PM] Utkarsh: ‎<attached: 00000003-PHOTO-2025-05-19-19-38-42.jpg>
+‎[28/08/25, 9:32:43 PM] Utkarsh: ‎<attached: 00000004-AUDIO-2025-08-28-21-32-43.opus>
+[28/08/25, 9:33:09 PM] Utkarsh: From 1:20.
+[04/09/25, 12:00:16 PM] Aashish IK: Give me 5 mins
+[05/09/25, 7:06:47 AM] Aashish IK: e& rfp dekh ke batana pls. Ryan is pushing to submit today
+[05/09/25, 8:32:35 AM] Utkarsh: Sure Aashish checking that in 10 min.
+[05/09/25, 8:32:36 AM] Utkarsh: Thanks
+[05/09/25, 8:53:10 AM] Aashish IK: Ok mostly checklist pe dekhna. Usko neeche kar diya hai
+[05/09/25, 8:56:46 AM] Utkarsh: Sure Aashish.
+[05/09/25, 1:39:44 PM] Utkarsh: ‎Voice call, ‎1 min
+[05/09/25, 4:35:16 PM] Aashish IK: ‎Missed voice call, ‎Click to call back
+[10/09/25, 7:10:56 PM] Aashish IK: Pricing gpt ka link doge ekbar pls
+[10/09/25, 7:11:00 PM] Aashish IK: B2b
+[11/09/25, 12:06:49 PM] Utkarsh: - https://chatgpt.com/g/g-683e978f6db88191813f1ead07823bdf-b2b-overall-costing-template
+[11/09/25, 1:47:05 PM] Aashish IK: ekbar call karna
+[16/09/25, 11:54:23 AM] Aashish IK: Awaz nahi aa rahi tumhari
+[16/09/25, 11:54:47 AM] Aashish IK: Firse join karlo
+[16/09/25, 11:57:13 AM] Utkarsh: https://docs.google.com/document/d/1dqchTBhk6hvO9ououShVw7lAPzxOy-UIryPwliRSHVU/edit?usp=drivesdk
+[19/09/25, 11:38:22 AM] Utkarsh: Hey Aashish joining?
+[01/10/25, 3:30:21 PM] Utkarsh: https://interviewkickstarts-my.sharepoint.com/personal/aashish_kumar_interviewkickstart_com/_layouts/15/AccessDenied.aspx?Source=https%3A%2F%2Finterviewkickstarts%2Dmy%2Esharepoint%2Ecom%2Fpersonal%2Faashish%5Fkumar%5Finterviewkickstart%5Fcom%2FDocuments%2FAI%20For%20PMs%20Program%20For%20Cornerstone%2024%5F09%5F2025%2Edocx%3Fga%3D1&correlation=3c16cba1%2D60c4%2D5000%2Ddbda%2D7de67383a3d8&Type=item&name=70d06b61%2D2492%2D466d%2D817e%2Da045d00138d8&listItemId=10&listItemUniqueId=8e661d53%2Dcd72%2D46eb%2Da7fd%2Df2ee6830418a
+[01/10/25, 3:45:26 PM] Aashish IK: https://interviewkickstarts-my.sharepoint.com/:w:/g/personal/aashish_kumar_interviewkickstart_com/EVMdZo5yzetGp_3y7mgwQYoBZy1cNp3ucjzzw-Wh9R461Q?e=h63ZYE
+[01/10/25, 4:25:25 PM] Utkarsh: Thanks Aashish working now.
+[01/10/25, 7:33:12 PM] Aashish IK: R u joining the call?
+[01/10/25, 7:34:51 PM] Utkarsh: Ha ha yes me and Soham were on a call actually.
+[01/10/25, 7:35:12 PM] Aashish IK: Acha. Cool
+‎[09/10/25, 9:34:31 AM] Aashish IK: John’s response to cohort dates ‎<attached: 00000028-PHOTO-2025-10-09-09-34-31.jpg>
+[09/10/25, 8:22:51 PM] Aashish IK: Cornerstone ka call ho gaya kya
+[10/10/25, 11:31:43 AM] Aashish IK: Who 
+ANSR wants to develop an AI Masterclass for it’s top leadership team as well as for their VP and director level. 
+
+Why
+The goal of the Masterclass is to get their leaders excited about AI so that they start leveraging it in their functions/ teams.
+
+What
+I suggest that we do a 2 hour Agentic AI workshop for leaders that covers the following 
+Quick overview of Agentic Ai and how it is different from Gen Ai 
+Showing the power of Agentic AI via Agentic AI use cases across functions 
+Highlighting the top Agentic tools 
+Demonstrating a few AI Agents. Ideally something that we have built and already use or something that I can build and show live
+[10/10/25, 11:31:43 AM] Aashish IK: Yeah, we've talked abotu this in the AM. Utkarsh has context. He will talk to you in your catchup
+[10/10/25, 11:31:43 AM] Aashish IK: My sense is that we also cover a bit about data security and possibility of keeping it all within the walls
+[11/10/25, 1:32:27 PM] Utkarsh: Hey Aashish was travelling yesterday.
+[11/10/25, 1:32:33 PM] Utkarsh: I will check this today.
+[11/10/25, 1:32:40 PM] Utkarsh: Aap bhi aa rhe ho for the Bosch event?
+[11/10/25, 2:06:20 PM] Aashish IK: Yes
+[15/10/25, 11:34:51 AM] Utkarsh: Airtel ka I will send today to Soham.
+[15/10/25, 11:34:58 AM] Utkarsh: I’m breaking.
+[15/10/25, 11:35:01 AM] Utkarsh: Network.
+[15/10/25, 11:35:18 AM] Utkarsh: I had a discussion with Suvansh on that.
+[15/10/25, 11:35:20 AM] Aashish IK: Okk
+[15/10/25, 2:14:45 PM] Utkarsh: https://docs.google.com/document/d/1wDgoWRSKQ38Y1WPqFt-F8HlhhKNMZFp6LS3YDbDsNao/edit?usp=drivesdk
+[20/10/25, 10:27:52 AM] Utkarsh: Hey Aashish,
+A very happy Diwali to you and your family 🪔🎇🧨
+[20/10/25, 11:24:12 AM] Aashish IK: Happy Diwali Utkarsh! 🎉🎉💥💥
+[22/10/25, 6:15:36 PM] Utkarsh: Hey
+[22/10/25, 6:15:42 PM] Utkarsh: Do add me to the CSOD Call today.
+[22/10/25, 6:15:43 PM] Utkarsh: Thanks
+[22/10/25, 6:16:26 PM] Utkarsh: We need to discuss 
+- the change in Timing for cohort 1 
+- ⁠Latest learners profile 
+- ⁠New onboarding form to roll out and changes if any for the Content basis the same.
+
+Thanks
+[22/10/25, 8:59:09 PM] Utkarsh: I dropped in between.
+[22/10/25, 8:59:20 PM] Utkarsh: So it is temporarily paused?
+[22/10/25, 8:59:28 PM] Utkarsh: No cohorts happening for now?
+[22/10/25, 8:59:43 PM] Aashish IK: Yes
+[22/10/25, 9:00:10 PM] Utkarsh: Okay sure.
+[22/10/25, 9:00:45 PM] Aashish IK: Lets see what happens. Good thing is PM accelerator is now ready for others
+[22/10/25, 9:00:58 PM] Utkarsh: Ha right.
+[22/10/25, 9:01:14 PM] Utkarsh: We can advocate for it more strongly with other Clients.
+[31/10/25, 11:10:58 AM] Aashish IK: @⁨Soham  Mehta⁩ Here is the quick brief for the ANSR materclass based on my best guess
+[31/10/25, 11:10:58 AM] Aashish IK: Who 
+ANSR wants to develop an AI Masterclass for it’s top leadership team as well as for their VP and director level. 
+
+Why
+The goal of the Masterclass is to get their leaders excited about AI so that they start leveraging it in their functions/ teams.
+
+What
+I suggest that we do a 2 hour Agentic AI workshop for leaders that covers the following 
+Quick overview of Agentic Ai and how it is different from Gen Ai 
+Showing the power of Agentic AI via Agentic AI use cases across functions 
+Highlighting the top Agentic tools 
+Demonstrating a few AI Agents. Ideally something that we have built and already use or something that I can build and show live
+[31/10/25, 11:10:58 AM] Aashish IK: Once we have an outline I will share it with Vikram to get his POV so that we can refine. he is also not sure what he wants
+[08/11/25, 1:26:18 PM] Utkarsh: Hey Aashish.
+[08/11/25, 1:26:47 PM] Utkarsh: I wanted to check if you have any connections at McKinsey.
+[08/11/25, 1:27:05 PM] Utkarsh: I wanted to refer a friend of mine, he is in Consulting itself, and is actively looking for a role.
+[08/11/25, 1:28:50 PM] Utkarsh: Apart form McKinsey as well if you have contacts in any other companies for roles like below do let me know it’d be really helpful.
+[08/11/25, 1:28:55 PM] Utkarsh: Product Consultant 
+Implementation Consultant 
+Implementation Manager 
+Business Analyst 
+Sr Business Analyst
+[08/11/25, 1:28:56 PM] Utkarsh: Thanks
+[08/11/25, 2:10:15 PM] Aashish IK: Ex Mck hai. Dekhna padega if he can refer
+[08/11/25, 2:34:45 PM] Utkarsh: Thanks Aashish.
+[08/11/25, 2:39:32 PM] Utkarsh: Any other company you may get to know on the above roles, do let me know Aashish.
+‎[08/11/25, 2:39:45 PM] Utkarsh: Devireddy Rohan_Resume.pdf • ‎1 page ‎<attached: 00000069-Devireddy Rohan_Resume.pdf>
+[08/11/25, 2:40:10 PM] Utkarsh: Jobs | Careers | McKinsey & Company https://share.google/ViUWRSZRUHwNegWpI
+[19/11/25, 3:43:46 PM] Utkarsh: Was dropped off due to network issue.
+[19/11/25, 3:43:51 PM] Utkarsh: Joining back again now.
+[19/11/25, 3:44:29 PM] Aashish IK: Ok. Bad network day for all today it seems
+[19/11/25, 3:45:01 PM] Utkarsh: 😅
+[19/11/25, 3:45:08 PM] Utkarsh: Anshaj ka sort hogya but.
+[19/11/25, 3:45:11 PM] Aashish IK: Somehow i was able to allow you in the meeting
+[19/11/25, 3:45:14 PM] Utkarsh: It’s going well now.
+[19/11/25, 3:45:15 PM] Aashish IK: I have powers
+[19/11/25, 3:45:22 PM] Utkarsh: Shi h 🙏
+[19/11/25, 3:45:41 PM] Utkarsh: Dhanyavad.
+[19/11/25, 3:45:45 PM] Aashish IK: Chalo acha hai
+[19/11/25, 3:46:26 PM] Utkarsh: Hanji.
+[25/11/25, 4:36:59 PM] Utkarsh: Hey
+[25/11/25, 4:37:04 PM] Utkarsh: John ki meeting start hogyi ky?
+[25/11/25, 4:37:15 PM] Aashish IK: Nhi
+[26/11/25, 12:46:26 PM] Aashish IK: ‎Missed voice call, ‎Click to call back
+[26/11/25, 1:34:51 PM] Aashish IK: tumhari awaz nahi aa rahi thi
+[26/11/25, 1:35:00 PM] Aashish IK: nothing urgent..ho gaya mera kaam
+[26/11/25, 1:35:17 PM] Aashish IK: John ki call was good - thoda politics khelna hai usko
+[26/11/25, 1:35:26 PM] Utkarsh: I’ll call you in 10-15 min.
+[03/12/25, 11:06:25 AM] Aashish IK: Will let them know to connect with you, @⁨Ryan Valles⁩.
+
+Preferred solution: masterclass + expert coaching hours
+
+Question: do you also have experts in your network who could do a workshop on influencing (as a skill). Influencing executives, teams, orchestrating decisions etc
+[03/12/25, 11:47:20 AM] Utkarsh: Thanks
+[03/12/25, 11:47:26 AM] Utkarsh: Happenstance works something like this.
+‎[03/12/25, 11:47:27 AM] Utkarsh: ‎<attached: 00000094-PHOTO-2025-12-03-11-47-27.jpg>
+[03/12/25, 11:47:37 AM] Utkarsh: https://happenstance.ai
+[03/12/25, 11:48:55 AM] Utkarsh: Pura detailed view comes.
+[03/12/25, 11:48:56 AM] Utkarsh: - https://happenstance.ai/u/1a3b7c38-3bad-4829-8190-b3e26bcf0468
+[09/12/25, 2:36:33 PM] Aashish IK: R u joining?
+[11/12/25, 2:05:56 PM] Aashish IK: Hey Utkarsh - Aaj bas ek cheez me help chaiye hogi. I have to send hte deck to John today basis Tue meeting. Just take a look at the tools in the deck. kuch galat na chale jay. I will send in 2 hrs
+[11/12/25, 2:06:31 PM] Utkarsh: Sure Aashish checking it in 30 min.
+Thanks
+[11/12/25, 2:06:45 PM] Aashish IK: nahi nahi
+[11/12/25, 2:06:49 PM] Aashish IK: i will send in 2 hrs
+[11/12/25, 2:06:53 PM] Aashish IK: wo deck WIP hai
+[11/12/25, 2:07:05 PM] Utkarsh: Oh okay got it.
+[11/12/25, 2:07:13 PM] Utkarsh: When you are done aap ping krlena.
+[11/12/25, 2:07:20 PM] Utkarsh: I’ll review it.
+Thanks
+[11/12/25, 2:07:24 PM] Aashish IK: cool thanks
+[11/12/25, 2:29:45 PM] Aashish IK: https://docs.google.com/document/d/19wDasLp64LyxrxdOA8m8HWghn9H4NY55yoWfJb9Fnc4/edit?tab=t.28zotaw9hbkp#heading=h.6yy2vzhco41b
+[11/12/25, 2:30:33 PM] Utkarsh: https://drive.google.com/drive/folders/1tUMBGWfAKPzKA4hndaDjBe9hOHzMhza2
+[11/12/25, 2:31:29 PM] Utkarsh: Pro Code - https://docs.google.com/presentation/d/1LjEFOb3y7r-rIr5Z8E16D0l7W0RKyej-vRCpvZ0OFaU/edit?usp=drivesdk
+[11/12/25, 5:22:48 PM] Aashish IK: https://docs.google.com/presentation/d/1JlgVitrPqbylP4a-5PvBBbQ7XcLkn5-jwOFOdznDoNA/edit?slide=id.g388478db689_1_307#slide=id.g388478db689_1_307
+[11/12/25, 5:23:05 PM] Aashish IK: ye deck me tools and curriculum ekbar review kardo
+[11/12/25, 5:31:02 PM] Utkarsh: Will review it in 10-15 min.
+[11/12/25, 5:31:08 PM] Utkarsh: Calling back.
+[16/12/25, 11:51:28 AM] Aashish IK: @⁨Aashish IK⁩ I looked at the slides. They read like AI masterclasses and coaching. But Lowes does not want AI.
+[16/12/25, 11:51:29 AM] Aashish IK: They have given us a list of topics and are asking how will we deliver those topics.
+[16/12/25, 11:51:29 AM] Aashish IK: So the first step is to sit with their technical team and our instructors, to figure out what within those broad topics they want covered.
+[16/12/25, 11:51:29 AM] Aashish IK: Then we prioritize and sequence it based on how many sessions they have paid for
+[16/12/25, 11:51:29 AM] Aashish IK: Then we hire instructors if needed and then deliver
+[16/12/25, 11:51:30 AM] Aashish IK: Ask Utkarsh about topics.
+[16/12/25, 11:51:30 AM] Aashish IK: There is zero AI in that list
+[16/12/25, 11:51:30 AM] Aashish IK: They want ALL of those topics covered. Which is of course a lot compared to what they are paying for.
+[16/12/25, 11:51:31 AM] Aashish IK: They are asking us to "double-click" (I have only ever heard this phrase from Indians) into each topic. We should tell them each topic will be hands-on and online, for 3 hrs. Content and prioritization of topics will be covered in the initial discovery phase.
+[16/12/25, 11:51:31 AM] Aashish IK: Discovery phase will be prominent
+[10/01/26, 7:07:24 PM] Aashish IK: Hey Utkarsh - sorry to ping on a weekend. Ryan wanted to connect for 30mins sometime tomorrow. He wants to discuss a version of Agentic Ai for leaders 45 min session he wants to do on Thursday (no hands on). We can modify the Deloitte session- Ryan wants to give some inputs. So let me know if we can do a call tomorrow
+‎[11/01/26, 8:03:36 AM] Utkarsh: ‎<attached: 00000126-AUDIO-2026-01-11-08-03-36.opus>
+[11/01/26, 8:37:34 AM] Aashish IK: Kaisi lagi movie
+[11/01/26, 8:38:02 AM] Aashish IK: Mai Ryan ko bol deta hu 12-2 or after 4pm so that lunch time clear rahega
+[11/01/26, 11:56:56 AM] Utkarsh: Sure 4 PM ke bd hi krte h aab.
+[11/01/26, 11:57:04 AM] Utkarsh: Kaafi badhiya.
+[11/01/26, 11:57:07 AM] Utkarsh: Apne dekha?
+[11/01/26, 12:15:03 PM] Aashish IK: Ha ok. Abhi tak to Ryan ne reply nahi kiya. When he does i will ask him to do post 4
+[11/01/26, 12:15:16 PM] Aashish IK: Ha sahi to hai but bahut lamba hai movie
+[11/01/26, 1:01:30 PM] Aashish IK: Let's do this immediately post the John meeting
+[11/01/26, 1:01:48 PM] Aashish IK: Kal hoga
+[12/01/26, 12:04:40 AM] Utkarsh: Sure done.
+‎[13/01/26, 4:26:50 PM] Utkarsh: ‎<attached: 00000137-PHOTO-2026-01-13-16-26-50.jpg>
+[13/01/26, 4:27:12 PM] Utkarsh: I saw this on e& website and unhone phr disable hi krdiya 😂
+[13/01/26, 4:28:04 PM] Aashish IK: Copilot ne unka koi important data chura liya hoga
+[13/01/26, 4:28:32 PM] Utkarsh: Ho skta ya phr ladai hogyi hogi.
+[13/01/26, 4:28:35 PM] Utkarsh: 😁
+[13/01/26, 4:29:18 PM] Aashish IK: Ya to Renato ne cancel karwa diya hoga
+[13/01/26, 4:29:31 PM] Utkarsh: Ha ye possible h.
+[13/01/26, 4:29:38 PM] Utkarsh: yehi hua hoga.
+[14/01/26, 11:48:35 AM] Utkarsh: ‎Voice call, ‎1 min
+[14/01/26, 1:32:05 PM] Aashish IK: ‎Missed voice call, ‎Click to call back
+[14/01/26, 1:37:32 PM] Aashish IK: ‎Voice call, ‎Answered on other device
+[14/01/26, 2:42:28 PM] Aashish IK: ‎Voice call, ‎2 min
+[16/01/26, 6:11:39 PM] Utkarsh: ‎Group call, ‎2 invited
+[18/01/26, 10:42:46 AM] Aashish IK: Can you pls add Madan and Anshuman to the e& dry run tomorrow
+[18/01/26, 10:42:46 AM] Aashish IK: bapnaa@gmail.com
+[18/01/26, 10:42:46 AM] Aashish IK: madan.rawtani@interviewkickstart.com
+[18/01/26, 10:42:51 AM] Aashish IK: From Ryan
+[18/01/26, 9:38:58 PM] Aashish IK: Ye bhi dekh lena
+[18/01/26, 9:42:29 PM] Utkarsh: Sure Aashish.
+[18/01/26, 10:12:33 PM] Utkarsh: Aashish
+[18/01/26, 10:12:54 PM] Utkarsh: Deloitte Session we will have to start from 9:30 AM itself incase we want to do the Orientation or something.
+[18/01/26, 10:13:23 PM] Utkarsh: I have blocked Faiza’s calendar 9:30 AM se 3 hrs ke liye Dubai Time.
+[18/01/26, 10:13:34 PM] Utkarsh: Let’s discuss this once tom morning.
+[18/01/26, 10:13:36 PM] Utkarsh: Thanks ‎<This message was edited>
+[19/01/26, 3:08:57 PM] Aashish IK: Joining??
+[20/01/26, 2:20:06 PM] Utkarsh: Hey
+[20/01/26, 2:20:11 PM] Utkarsh: Can you send the Hallway link?
+[20/01/26, 2:20:15 PM] Utkarsh: Soham ka jo h.
+[20/01/26, 2:20:29 PM] Aashish IK: Lemme see
+[20/01/26, 2:23:01 PM] Aashish IK: https://interviewkickstart.zoom.us/j/94330503972?pwd=aW0xZTcydldEZzN6N2RBT0ttNnk0Zz09#success
+[21/01/26, 5:25:51 PM] Utkarsh: ‎Voice call, ‎3 min
+[22/01/26, 1:52:41 PM] Aashish IK: ‎Missed voice call, ‎Click to call back
+[22/01/26, 4:51:08 PM] Utkarsh: ‎Voice call, ‎No answer
+[22/01/26, 4:51:27 PM] Utkarsh: Ryan mentioned to make everything Acceler right?
+[22/01/26, 4:51:34 PM] Utkarsh: I just realised the VMs has PowerUp logo.
+[22/01/26, 4:51:39 PM] Utkarsh: Will we have to change that as well?
+[22/01/26, 4:53:22 PM] Aashish IK: Preferably
+[22/01/26, 4:53:30 PM] Aashish IK: Will it take time?
+[22/01/26, 4:53:34 PM] Utkarsh: I have checked with them.
+[22/01/26, 4:53:38 PM] Utkarsh: 5 PM se pehle toh ni hoga.
+[22/01/26, 4:53:43 PM] Utkarsh: But I can check for tom.
+[22/01/26, 4:53:47 PM] Utkarsh: I have reached out.
+[22/01/26, 4:53:48 PM] Aashish IK: Thats fine
+[22/01/26, 4:54:20 PM] Utkarsh: Cool.
+[22/01/26, 4:54:20 PM] Aashish IK: I am on call with ryan. Might be late for 5pm
+[22/01/26, 4:54:38 PM] Utkarsh: Soham will join right?
+[22/01/26, 6:20:44 PM] Utkarsh: ‎Voice call, ‎2 min
+[22/01/26, 6:21:47 PM] Utkarsh: https://docs.google.com/document/d/1mJqfev96SJv-QUCJKhWgHGllPcZ_ywGD9pYYF-vibqA/edit?tab=t.0#heading=h.vu4prjcbvhqn
+[22/01/26, 6:50:23 PM] Aashish IK: i will skip the 7pm meeting - have lot of slide work
+[22/01/26, 6:50:51 PM] Utkarsh: Sure Aashish.
+[23/01/26, 11:39:10 AM] Utkarsh: Can you send the Orientation for Deloitte?
+[23/01/26, 11:40:08 AM] Aashish IK: https://docs.google.com/presentation/d/1srRZpggji2X4W7L5HY3lb8ayVli923ioWI0HKLPXudg/edit?slide=id.g3bb6388c410_0_0#slide=id.g3bb6388c410_0_0
+[23/01/26, 11:40:26 AM] Utkarsh: Thanks
+[23/01/26, 11:40:31 AM] Aashish IK: this is the same deck you guys have
+[23/01/26, 11:42:34 AM] Utkarsh: Acha ha now I realised.
+[23/01/26, 11:42:35 AM] Utkarsh: Got it.
+[23/01/26, 12:22:11 PM] Aashish IK: Fireside Chat on Agentic AI Use Cases: Ryan & Faiza - ye nahi hoga na?
+[23/01/26, 12:31:18 PM] Utkarsh: No.
+[23/01/26, 12:31:26 PM] Utkarsh: We have removed it.
+[23/01/26, 12:36:00 PM] Aashish IK: open lab click karna tha na - but she asked to click start stop
+[23/01/26, 12:37:06 PM] Utkarsh: Ni ni.
+[23/01/26, 12:37:10 PM] Utkarsh: Wo already hogya tha.
+[23/01/26, 12:37:14 PM] Utkarsh: uske bd Start/Stop tha.
+[23/01/26, 1:03:24 PM] Utkarsh: I think today’s Session is going much smoother.
+[23/01/26, 1:05:16 PM] Aashish IK: ha but that experience of new person loggin in vs Faiza’s screen is diff. uspe abhi bhi questions aa rahe. maybe we do that login with one of us - Karthika or you and then handover to Faiza. e..g copilot view, someone said VM looks squashed, Connecting to gmail for first time etc
+[23/01/26, 1:05:41 PM] Utkarsh: Ha.
+[23/01/26, 1:05:58 PM] Utkarsh: Maybe we can Faiza to use new Account everytime she does a Session.
+[23/01/26, 1:06:15 PM] Aashish IK: ya either of those
+[23/01/26, 1:06:48 PM] Aashish IK: there was also the Tour of Agent where people asked
+[23/01/26, 1:08:47 PM] Utkarsh: Ha, we may have to ask Faiza to use new Accounts.
+[23/01/26, 1:08:57 PM] Utkarsh: Vrna some or the other new thing will always come.
+[23/01/26, 1:09:11 PM] Utkarsh: Different onboarding experience rhta h.
+[23/01/26, 1:09:20 PM] Utkarsh: For different users.
+[23/01/26, 1:10:01 PM] Utkarsh: This is a platform thing wo krte hi h. At times even two different new users might see something sligthy different.
+[23/01/26, 1:10:23 PM] Aashish IK: Yes i remember first time i did - jab email add karna tha then we had to select all the access rights and then click ok. Maine nahi kiya tha to email hi nahi aa raha tha. Couple of us dis that. Small things like that happens with newbies
+[23/01/26, 1:10:45 PM] Utkarsh: Yup.
+[23/01/26, 1:11:06 PM] Utkarsh: Dkhte h, problem is too much simulation might also lead to them not learning enough.
+[23/01/26, 1:11:19 PM] Utkarsh: Hands-on Sessions me thda itna toh hota hi h.
+[23/01/26, 1:11:28 PM] Utkarsh: But for leaders we can simulate it further I guess.
+[23/01/26, 1:11:39 PM] Utkarsh: Coz they just wanna build something.
+[23/01/26, 1:11:59 PM] Aashish IK: Ha thoda is fine but since leaders wont actually ever build agents unke liye agar bilkul sanitized ho to better hai
+[23/01/26, 1:14:48 PM] Utkarsh: Yes.
+[23/01/26, 1:19:07 PM] Aashish IK: Isko bolo ppt ke liye gamma se hoga
+[23/01/26, 1:19:16 PM] Aashish IK: Take doc from here and go to gamma
+[23/01/26, 1:20:27 PM] Aashish IK: But ya slides ppt to nhi hoga
+[26/01/26, 1:56:30 PM] Aashish IK: Aaj to chutti hai so i am not sure ki John ki call hogi ya nahi but added you just in case
+[26/01/26, 2:04:50 PM] Aashish IK: Was i audible?
+[26/01/26, 2:05:09 PM] Utkarsh: Ha ha yes.
+[26/01/26, 2:05:36 PM] Aashish IK: Lol. Mai kisi alag laptop se join kiya hu isliye checking
+[29/01/26, 8:35:27 PM] Utkarsh: ‎Voice call, ‎19 min
+[30/01/26, 12:27:14 PM] Utkarsh: We can start Low Code with same Tools from 11th Feb.
+[30/01/26, 12:27:43 PM] Utkarsh: For Pro Code and No Code, post Tool access we would require atleast 4 weeks.
+[30/01/26, 12:27:59 PM] Utkarsh: We can discuss this once, but with new curr Dev instructor training it will take time.
+[30/01/26, 12:28:37 PM] Utkarsh: For doing next cohort right after this with same Tools, we can do it, I’ll have to check with the SME, we can tell John we will inform by Mon but that is feasible. ‎<This message was edited>
+[05/02/26, 1:34:17 PM] Utkarsh: Hey
+[05/02/26, 1:34:23 PM] Utkarsh: free for quick call?
+[05/02/26, 1:35:21 PM] Utkarsh: John end 18th Feb ka confirm h right for Low Code next Cohort? ‎<This message was edited>
+[05/02/26, 1:48:17 PM] Aashish IK: On call with Ryan
+[05/02/26, 1:51:09 PM] Aashish IK: Yes we can do 18 feb low code. No code ka date dena hai
+[05/02/26, 2:06:06 PM] Utkarsh: Sounds good will confirm with the SMEs.
+[17/02/26, 3:07:17 PM] Aashish IK: On a call with Ryan
+[17/02/26, 3:07:27 PM] Aashish IK: Can you cover any discussion items
+[17/02/26, 3:07:38 PM] Aashish IK: Nothing extra over yesterday i have
+[17/02/26, 3:07:51 PM] Utkarsh: Sure sure on it.
+[17/02/26, 3:30:32 PM] Aashish IK: Thanks
+[18/02/26, 2:58:15 PM] Utkarsh: Hey
+[18/02/26, 2:58:22 PM] Utkarsh: Running 5-10 min for the call.
+[18/02/26, 2:58:31 PM] Utkarsh: Aap start krlena I’ll join:
+[18/02/26, 2:58:33 PM] Utkarsh: Thanks
+[18/02/26, 2:59:11 PM] Aashish IK: I am a bit unwell. Told Soham i wont be able to join today
+[18/02/26, 2:59:57 PM] Utkarsh: Okay sure please take care.
+[19/02/26, 12:04:41 PM] Utkarsh: Hey Aashish
+[19/02/26, 12:04:46 PM] Utkarsh: How are you?
+[19/02/26, 12:04:50 PM] Utkarsh: Are you working today?
+[19/02/26, 12:05:11 PM] Utkarsh: We wanted to connect for a discussion on the Day 1 Content.
+[19/02/26, 12:05:18 PM] Utkarsh: Aap join kroge ky at 3 PM?
+[19/02/26, 12:05:24 PM] Aashish IK: yes
+[19/02/26, 12:05:26 PM] Utkarsh: Or else we can do later.
+[19/02/26, 12:05:29 PM] Aashish IK: i am working
+[19/02/26, 12:05:31 PM] Utkarsh: Cool.
+[19/02/26, 12:05:42 PM] Utkarsh: I wanted to have a joint discussion with Soham as well present.
+[19/02/26, 12:05:49 PM] Utkarsh: He was putting forward some suggestions yesterday.
+[19/02/26, 12:05:50 PM] Aashish IK: ok sure
+[19/02/26, 12:06:10 PM] Utkarsh: So want to close that loop, given we have an SME call tom with Eric, to discuss about the Dry Run.
+[19/02/26, 12:06:15 PM] Utkarsh: Cool
+[19/02/26, 12:06:54 PM] Aashish IK: wait let me call you …free now for couple of mins?
+[19/02/26, 12:07:40 PM] Utkarsh: Sure.
+[23/02/26, 2:35:10 PM] Aashish IK: U can join if you want
+[23/02/26, 2:35:16 PM] Aashish IK: John ka call
+[23/02/26, 2:40:31 PM] Utkarsh: Ha yes.
+[23/02/26, 2:40:40 PM] Utkarsh: I saw the 5 min late thing.
+[23/02/26, 2:40:42 PM] Utkarsh: Hence.
+[03/03/26, 12:08:03 PM] Utkarsh: Hey
+[03/03/26, 12:08:13 PM] Utkarsh: Working today?
+[03/03/26, 12:08:25 PM] Utkarsh: What’s the final decision we have for the Leaders Program for Nevena?
+[03/03/26, 12:08:30 PM] Aashish IK: Nahi. Off hu aaj aur kal
+[03/03/26, 12:08:36 PM] Utkarsh: Acha okay cool
+[03/03/26, 12:09:09 PM] Aashish IK: Anshuman bana raha hai. He needs the aiq framework. Wo mai usko de dunga. Courses nahi chaiye use for Wednesday
+[03/03/26, 12:09:44 PM] Utkarsh: Okay cool.
+[03/03/26, 12:10:35 PM] Utkarsh: Happy Holi 🎊
+‎[03/03/26, 12:11:14 PM] Utkarsh: ‎<attached: 00000277-GIF-2026-03-03-12-11-14.mp4>
+[03/03/26, 12:11:20 PM] Aashish IK: Happy Holi 🎉🎉🎉🥳🥳
+[03/03/26, 12:11:35 PM] Utkarsh: Thu bt krte h phr have a wonderful Holi 🙌🏻
+[03/03/26, 12:11:58 PM] Aashish IK: Cool. Have fun
+[03/03/26, 12:13:37 PM] Utkarsh: Hanji, maine toh weekend ka plan kra h Panchgani jane ka it’s a hillstation Pune ke pas me h.
+[03/03/26, 12:13:47 PM] Utkarsh: It’s been crazy Jan/Feb.
+[03/03/26, 12:14:04 PM] Aashish IK: Ah nice. I have heard of that place
+[03/03/26, 12:14:22 PM] Aashish IK: Yes go un-craze yourself
+[03/03/26, 12:36:16 PM] Utkarsh: Ha bilkul.
+[03/03/26, 12:41:27 PM] Utkarsh: Also one more thing did you see the MCB new req to add self paced and live module to the AI Champion Program.
+Shall I go ahead and create the final curriculum?
+Since we wanted to share it by Wed right!
+[03/03/26, 12:44:31 PM] Aashish IK: Structure aaj Soham se discuss kar lo pehle. They want the no code ka 2 cohorts. Usme recorded +live. Aaj 3 baje john ki call hai so standup nahi hoga. You can ask before or after
+[03/03/26, 12:45:13 PM] Aashish IK: Ai champion thu ko close karunga mai
+[03/03/26, 12:45:22 PM] Aashish IK: Dusra wala kar dunga pehle
+[03/03/26, 12:59:25 PM] Utkarsh: Cool.
+[03/03/26, 12:59:32 PM] Utkarsh: I’ll talk to Soham on this once.
+[03/03/26, 1:02:37 PM] Utkarsh: Sure dusra wala anyways done hi tha.
+[03/03/26, 1:02:57 PM] Utkarsh: Has Ryan told any changes to that?
+[12/03/26, 11:16:57 AM] Aashish IK: ‎Missed voice call, ‎Click to call back
+[12/03/26, 12:15:40 PM] Aashish IK: ‎Missed voice call, ‎Click to call back
+[12/03/26, 3:50:11 PM] Aashish IK: Sent invite
+[12/03/26, 5:12:37 PM] Utkarsh: ‎Voice call, ‎13 sec
+[23/03/26, 2:11:50 PM] Aashish IK: Pro code for e& me abhi kya blocker hai
+[23/03/26, 2:17:33 PM] Utkarsh: AmAiZ, DataRobot and data bricks and AI Expert access.
+[23/03/26, 2:18:18 PM] Utkarsh: Also some learner’s told Python use hota h, so that I guess part of Onboarding Form we will know.
+Thanks
+[23/03/26, 2:20:52 PM] Aashish IK: Ai expert mil gaya hai?
+[23/03/26, 2:21:10 PM] Utkarsh: Uska CustomGPT one not yet.
+[23/03/26, 2:28:08 PM] Aashish IK: Ye aaj subah mil gaya hoga. Dekho
+[27/03/26, 10:36:46 AM] Aashish IK: Joining
+[12/04/26, 9:15:00 PM] Aashish IK: Free for a quick call?
+[12/04/26, 10:38:48 PM] Utkarsh: Hey
+[12/04/26, 10:38:52 PM] Utkarsh: I was outside actually.
+[12/04/26, 10:38:55 PM] Utkarsh: Let’s speak tom?
+[12/04/26, 10:38:59 PM] Utkarsh: 9 AM?
+[12/04/26, 10:39:12 PM] Utkarsh: Oreedoo ka will send it across tom morning by 10 AM.
+[12/04/26, 10:39:17 PM] Utkarsh: That call is in second half right?
+[12/04/26, 10:39:29 PM] Utkarsh: I will have everything ready before that.
+[12/04/26, 10:39:28 PM] Aashish IK: Wip doc hai?
+[12/04/26, 10:40:02 PM] Utkarsh: Just started with it, will be able to send tom.
+[12/04/26, 10:40:11 PM] Utkarsh: I was a little under the weather yesterday.
+[12/04/26, 10:40:17 PM] Utkarsh: So couldn’t work on Sat.
+[12/04/26, 10:40:23 PM] Aashish IK: Chalo koi na
+[12/04/26, 10:40:26 PM] Aashish IK: Take care
+[12/04/26, 10:40:31 PM] Utkarsh: Ye new req ky h?
+[12/04/26, 10:40:37 PM] Utkarsh: Iska bhi sth me will create.
+[12/04/26, 10:40:41 PM] Utkarsh: Send krdo aap.
+[12/04/26, 10:40:52 PM] Utkarsh: I will keep all this ready before 10:30 AM call/
+[12/04/26, 10:42:15 PM] Aashish IK: Ye mudabala wala kuch aaya nahi hai dhang se requirement - mai kuch deck me daal ke bhej raha hu abhi to anshuman. Wo karega fir ispe kaam. Dont worry. Kal oredoo kar lena. Uska hi solution idhar daal denge
+[12/04/26, 10:45:03 PM] Utkarsh: Cool done.
+[15/04/26, 8:40:18 AM] Aashish IK: Morning Utkarsh. How are you feeling
+[28/04/26, 3:17:43 PM] Utkarsh: Hey
+[28/04/26, 3:17:56 PM] Utkarsh: Can I add Tanmaya as well to the evening discovery call?
+[28/04/26, 3:18:02 PM] Utkarsh: As she is also working closing on this?
+[28/04/26, 3:18:46 PM] Aashish IK: Karlo
+[28/04/26, 3:19:12 PM] Utkarsh: Cool.
+[28/04/26, 3:21:48 PM] Utkarsh: Also ye check krlo - https://sentiment-analysis-plum-kappa.vercel.app/
+[28/04/26, 3:21:53 PM] Utkarsh: Soham asked to create this.
+[28/04/26, 4:32:16 PM] Utkarsh: Hey
+[28/04/26, 4:32:27 PM] Utkarsh: Hey
+[28/04/26, 4:32:37 PM] Utkarsh: Let’s join Hallway in 5 min.
+[28/04/26, 4:32:45 PM] Utkarsh: Soham wanted to chat for the Deck.
+[28/04/26, 4:32:52 PM] Aashish IK: Ok
+[28/04/26, 4:33:09 PM] Utkarsh: •⁠  ⁠Hallway Link - https://interviewkickstart.zoom.us/j/94330503972?pwd=aW0xZTcydldEZzN6N2RBT0ttNnk0Zz09
+[30/04/26, 1:53:24 PM] Utkarsh: Can you send the data along.
+[30/04/26, 1:53:31 PM] Utkarsh: I haven’t got it.
+[30/04/26, 1:54:02 PM] Aashish IK: Sent
+[03/05/26, 1:09:55 PM] Utkarsh: https://voiceflow-insights-05.lovable.app/
+[04/05/26, 3:08:40 PM] Aashish IK: Good stuff. Next time just wear a nice shirt or t shirt 🙂
+[04/05/26, 3:09:29 PM] Utkarsh: Ha ha.
+[04/05/26, 3:09:53 PM] Utkarsh: Thda last minute changes hogya, Soham recommended some changes 30 min pehle. ‎<This message was edited>
+[04/05/26, 3:09:57 PM] Utkarsh: 😅
+[04/05/26, 3:10:18 PM] Aashish IK: Of course 😄😄
+[04/05/26, 3:10:28 PM] Utkarsh: Hanji.
+[06/05/26, 5:33:53 PM] Aashish IK: Madan ko call karlo pls
+[06/05/26, 5:33:58 PM] Aashish IK: I am in a call
+[06/05/26, 5:34:45 PM] Utkarsh: Sure.
+[08/05/26, 10:04:18 PM] Utkarsh: Hey
+[08/05/26, 10:04:24 PM] Utkarsh: Ek meet me  aa jaye ky?
+[08/05/26, 10:04:33 PM] Utkarsh: In 10 min once this Allen call is over?
+[08/05/26, 10:04:50 PM] Aashish IK: Ok
+[08/05/26, 10:06:26 PM] Utkarsh: Skills and Plugins are the major game changer in Claude Cowork.
+[08/05/26, 10:06:45 PM] Utkarsh: Allen avi tk join hi ni kiya 😅 waiting for him
+[08/05/26, 10:08:38 PM] Aashish IK: Haha. Ok mai tumhare invite ko join karke rakhta hu
+‎[08/05/26, 10:41:31 PM] Aashish IK: ‎<attached: 00000359-PHOTO-2026-05-08-22-41-31.jpg>
+[11/05/26, 11:31:04 AM] Utkarsh: https://zero-to-hero-mastering-scope-3.vercel.app
+‎[11/05/26, 11:32:00 AM] Utkarsh: ‎<attached: 00000361-AUDIO-2026-05-11-11-32-00.opus>
+[11/05/26, 11:34:55 AM] Aashish IK: Ok
+[13/05/26, 10:41:55 AM] Utkarsh: Email: aiexplorer_54@teamupwardandonward.com
+Password: 8!2%dO9}em3{9V1/
+[20/05/26, 12:55:51 PM] Aashish IK: ‎Voice call, ‎Answered on other device

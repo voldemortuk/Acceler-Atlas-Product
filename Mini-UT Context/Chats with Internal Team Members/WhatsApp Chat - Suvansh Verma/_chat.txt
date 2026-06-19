@@ -1,0 +1,2265 @@
+[02/05/25, 3:41:30 PM] Suvansh Verma: ‎Messages and calls are end-to-end encrypted. Only people in this chat can read, listen to, or share them.
+[02/05/25, 3:41:30 PM] Suvansh Verma: Hey Utkarsh
+[02/05/25, 3:41:48 PM] Suvansh Verma: How are you?
+[06/05/25, 12:24:23 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[12/05/25, 11:42:54 AM] Suvansh Verma: Hey Utkarsh
+[12/05/25, 11:43:27 AM] Suvansh Verma: Free from 6-7 today. We have a call with StackDigital. They’ll be sharing the requirement around GenAI training
+[12/05/25, 11:54:10 AM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[12/05/25, 1:04:42 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[13/05/25, 4:01:08 PM] Suvansh Verma: Hey
+Waiting for you to join the call
+[13/05/25, 4:01:20 PM] Suvansh Verma: It’s a teams call
+[13/05/25, 4:01:22 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[28/05/25, 1:43:16 PM] Utkarsh: Bro Lunch krke call krna will discuss.
+[28/05/25, 1:43:26 PM] Utkarsh: Have another call at 2:30 PM.
+[28/05/25, 1:51:56 PM] Suvansh Verma: No stress
+[28/05/25, 1:52:06 PM] Suvansh Verma: Let’s connect in the evening
+[28/05/25, 2:01:06 PM] Utkarsh: Sure man.
+Fidelity is GTG.
+[28/05/25, 2:01:13 PM] Utkarsh: Adil se QE/QA ka krlo.
+[28/05/25, 2:01:26 PM] Utkarsh: For Stack Digital let’s connect in the evening, feel free to directly call.
+Thanks
+[31/05/25, 7:33:08 PM] Utkarsh: Hey bro
+[31/05/25, 7:33:11 PM] Utkarsh: Free for a call?
+[31/05/25, 7:33:34 PM] Suvansh Verma: Hey bro
+[31/05/25, 7:34:25 PM] Suvansh Verma: Stepped out for a game, will be back post dinner.
+Can we connect tomorrow?
+[31/05/25, 7:34:45 PM] Utkarsh: No worries, but ek brr do call once today itself
+[31/05/25, 7:34:47 PM] Suvansh Verma: Made something for Fidelity and Stack today. Will get it reviewed tomorrow
+[31/05/25, 7:34:59 PM] Utkarsh: Ha wo Mon Session ka krna tha discuss.
+[11/07/25, 1:28:35 PM] Suvansh Verma: Hey
+‎[15/07/25, 3:29:34 PM] Suvansh Verma: Do we have firebase details key that we can use ? ‎<attached: 00000027-PHOTO-2025-07-15-15-29-34.jpg>
+[15/07/25, 3:29:47 PM] Suvansh Verma: Group pe message aaya hai
+[15/07/25, 3:37:22 PM] Utkarsh: Ahi dkha sorted h. ‎<This message was edited>
+[15/07/25, 3:37:34 PM] Suvansh Verma: Ho gaya sort
+[15/07/25, 3:37:37 PM] Utkarsh: But it is out of scope.
+[15/07/25, 3:37:43 PM] Suvansh Verma: Cool
+[15/07/25, 3:37:43 PM] Utkarsh: Unko ye krna ni h btw.
+[15/07/25, 3:37:49 PM] Utkarsh: Ye extra kr rhe h.
+[15/07/25, 3:37:53 PM] Utkarsh: Shi h.
+[15/07/25, 3:37:57 PM] Suvansh Verma: 😂
+[15/07/25, 3:38:00 PM] Suvansh Verma: Karne de
+[15/07/25, 3:38:10 PM] Utkarsh: Ha ha shi h.
+[15/07/25, 3:38:21 PM] Utkarsh: We will take credit extra ka bhi 😅
+[15/07/25, 3:38:32 PM] Suvansh Verma: 😂😂
+[15/07/25, 3:38:34 PM] Suvansh Verma: Exactly
+[15/07/25, 3:38:44 PM] Suvansh Verma: John bhi group pe hai
+[15/07/25, 3:38:51 PM] Suvansh Verma: Woh bhi dekhta rahega
+[15/07/25, 6:12:11 PM] Suvansh Verma: Dear Learners, 
+
+Get ready for an exciting Day 2 of the AI Builder Program for e&!🔥
+
+Tomorrow, we'll be diving into some crucial and cutting-edge AI topics. 
+Here's what's on the agenda for Day 2:
+
+1. RAG Fundamentals: Understand the power of Retrieval Augmented Generation and how it enhances AI models.
+2. Agent-Based AI Workflows: Explore how AI agents can automate and streamline complex tasks.
+3. Get hands-on with the principles and techniques for building your own AI agents.
+[15/07/25, 6:12:33 PM] Suvansh Verma: This works? Let me know if any changes are required.
+[15/07/25, 6:27:02 PM] Utkarsh: Ye kl bhejoge na morning me?
+[15/07/25, 6:28:31 PM] Suvansh Verma: Abhi bhejne ka soch raha hu
+[15/07/25, 6:28:41 PM] Suvansh Verma: Just to keep the WhatsApp group active
+[15/07/25, 6:29:00 PM] Utkarsh: Kr skte h.
+[15/07/25, 6:29:03 PM] Utkarsh: Let’s do it.
+[15/07/25, 6:29:07 PM] Utkarsh: Kl apan resources bhj denge.
+[15/07/25, 6:29:14 PM] Suvansh Verma: Yess
+[15/07/25, 6:29:16 PM] Suvansh Verma: Morning mein
+[15/07/25, 6:29:53 PM] Utkarsh: When we send resources ye mention krdenge ki while running the Demo please make a copy and do so.
+[15/07/25, 6:29:58 PM] Utkarsh: We can do that tom
+[15/07/25, 6:29:59 PM] Utkarsh: Thanks
+[15/07/25, 6:30:38 PM] Utkarsh: Day 2 ka MCQ, n all bhjta hu 9-10 bje tk usko kl morning me bana lena aap.
+[15/07/25, 6:30:41 PM] Utkarsh: - For Day 2, submission form - 5 MCQs, and submit their notebooks copies.
+[15/07/25, 6:30:42 PM] Utkarsh: Thanks
+[15/07/25, 6:31:03 PM] Suvansh Verma: Cool
+[16/07/25, 4:14:31 PM] Utkarsh: ✅ What You’ll Submit
+At the end of the session, we will share a form.
+You will need to submit links to the Colab notebooks added below(your copies only).
+
+● Build_Your_First_Ai_Agent.ipynb
+● Building_RAG_Application.ipynb
+[16/07/25, 4:14:49 PM] Utkarsh: For VM failing when it fails the progress in the execution is still present.
+[16/07/25, 4:15:16 PM] Utkarsh: So it shouldn’t be a problem you can add the link once you have run the whole Colab.
+Thanks
+[16/07/25, 4:20:48 PM] Utkarsh: ye bhi boldo.
+[16/07/25, 4:20:55 PM] Suvansh Verma: Sending
+[16/07/25, 4:21:05 PM] Utkarsh: Sure.
+[16/07/25, 4:25:59 PM] Utkarsh: Bhai jinka zyda issue aa rha h new creds share krde.
+[16/07/25, 4:29:11 PM] Suvansh Verma: Kissi ka itna issue nai hai
+[16/07/25, 4:29:29 PM] Suvansh Verma: Kuch time tak use nai karte toh ruk jaata hai
+[16/07/25, 4:29:59 PM] Utkarsh: Acha.
+[16/07/25, 4:30:00 PM] Utkarsh: Got it.
+[16/07/25, 4:30:13 PM] Utkarsh: Yr group me bolde ek brr 🥹
+[16/07/25, 4:30:17 PM] Utkarsh: Soham is on fire.
+[16/07/25, 4:30:24 PM] Suvansh Verma: Sure
+[16/07/25, 4:30:25 PM] Utkarsh: Ye toh Nuvepro ne bola tha.
+[16/07/25, 4:30:35 PM] Utkarsh: Ki idle hoga toh it will just restart.
+[16/07/25, 4:30:56 PM] Utkarsh: Also tell this in the Learners’ Group as well/ Zoom if needed.
+[16/07/25, 4:30:57 PM] Utkarsh: Thanks ‎<This message was edited>
+[16/07/25, 4:31:07 PM] Utkarsh: I am working on something for Soham rn.
+[16/07/25, 4:33:25 PM] Suvansh Verma: Cool
+[16/07/25, 4:33:47 PM] Suvansh Verma: Maine poll launch kar diya ha
+[16/07/25, 4:34:07 PM] Utkarsh: Cool bro.
+[16/07/25, 4:38:40 PM] Utkarsh: Ye bolde avi.
+[16/07/25, 4:38:48 PM] Utkarsh: Poll ka time h 😂
+[16/07/25, 4:39:13 PM] Suvansh Verma: Decent aaya hai result. 4 people are pending
+[16/07/25, 4:39:30 PM] Utkarsh: Cool.
+[16/07/25, 4:39:36 PM] Utkarsh: Avg krliya ki krna h?
+[16/07/25, 4:45:42 PM] Suvansh Verma: Abhi on karke rakha hua hai
+[16/07/25, 4:51:57 PM] Utkarsh: Cool.
+[16/07/25, 5:26:05 PM] Utkarsh: Quiz krle?
+[16/07/25, 5:26:09 PM] Utkarsh: Ahmed ko bolte h.
+[16/07/25, 5:26:14 PM] Utkarsh: 4-5 min krke we can close.
+[16/07/25, 5:26:26 PM] Suvansh Verma: Ys
+[16/07/25, 5:28:29 PM] Suvansh Verma: share kar diya hai
+[16/07/25, 5:28:40 PM] Suvansh Verma: Ahmed ko message kar diya hai
+[16/07/25, 5:28:44 PM] Suvansh Verma: Let's see
+[16/07/25, 5:28:56 PM] Utkarsh: Okay.
+[24/07/25, 12:23:02 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[24/07/25, 12:23:46 PM] Utkarsh: Hey bro
+[24/07/25, 12:23:54 PM] Utkarsh: On a call will call you soon.
+[24/07/25, 12:23:55 PM] Utkarsh: Thanks
+[24/07/25, 12:24:06 PM] Suvansh Verma: Cool
+[29/07/25, 3:16:45 PM] Utkarsh: Soham Mehta is inviting you to a scheduled Zoom meeting.
+
+Topic: Soham Mehta's Personal Meeting Room
+Join Zoom Meeting
+https://interviewkickstart.zoom.us/j/6341260710?pwd=5ae7Q4lUUG8lszDAzh5xRehaxsDm1z.1
+
+Meeting ID: 634 126 0710
+Passcode: 717627
+[30/07/25, 9:24:39 PM] Utkarsh: Hey
+[30/07/25, 9:24:41 PM] Utkarsh: calling in 5 min.
+[01/08/25, 10:26:00 PM] Suvansh Verma: https://forms.office.com/r/NjjxwHpHar
+[01/08/25, 10:26:08 PM] Suvansh Verma: Lowes waala form dekh lio
+[01/08/25, 10:26:27 PM] Suvansh Verma: Kuch changes chaiye toh bata dio
+[02/08/25, 8:52:04 AM] Utkarsh: Linkedin Profile ko bhi mandatory krdo.
+[02/08/25, 8:52:07 AM] Utkarsh: Baaki looks good.
+[02/08/25, 8:56:35 AM] Suvansh Verma: Okay
+[04/08/25, 11:47:36 AM] Suvansh Verma: Hey
+[04/08/25, 11:48:21 AM] Suvansh Verma: At the hospital for some tests, let me call you back once I get free.
+[04/08/25, 3:09:44 PM] Utkarsh: Cool bro.
+[12/08/25, 4:51:17 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[12/08/25, 4:59:56 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[12/08/25, 5:52:07 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[12/08/25, 9:14:55 PM] Suvansh Verma: Bro, Soham ko 9:30 join karne ko boldu?
+[18/08/25, 2:20:50 PM] Suvansh Verma: On a call with John
+[18/08/25, 2:21:00 PM] Suvansh Verma: Let me call you back
+[18/08/25, 4:43:01 PM] Utkarsh: Sure.
+[18/08/25, 4:43:09 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[20/08/25, 11:45:49 AM] Suvansh Verma: Hey bro ‎<This message was edited>
+[20/08/25, 11:46:06 AM] Suvansh Verma: Don’t mention about the guy I mentioned Yesterday
+[20/08/25, 11:46:18 AM] Suvansh Verma: Will call you and explain
+[20/08/25, 11:55:18 AM] Utkarsh: Sure bro.
+[25/08/25, 6:02:50 PM] Utkarsh: ‎Voice call, ‎No answer
+[25/08/25, 6:05:35 PM] Suvansh Verma: ‎Voice call, ‎5 min
+[29/08/25, 3:00:45 PM] Suvansh Verma: Hey Utkarsh
+[29/08/25, 3:01:28 PM] Suvansh Verma: Let me know if anything is urgent
+[29/08/25, 3:01:47 PM] Suvansh Verma: My grandmom passed away. Busy there.
+[29/08/25, 3:02:33 PM] Utkarsh: Nothing urgent bro just the call, no worries please take care.
+[29/08/25, 3:03:05 PM] Suvansh Verma: Call is not happening today
+[29/08/25, 3:03:06 PM] Utkarsh: Extremely sorry for your loss, please take care and may she rest in peace 🙏
+Take care man. ‎<This message was edited>
+[29/08/25, 3:03:32 PM] Suvansh Verma: It got rescheduled to Tuesday. I have shared the invite.
+[29/08/25, 3:04:03 PM] Utkarsh: Ha ha sure bhai, please take care and be with your family sorry for calling, take care please.
+[29/08/25, 3:04:16 PM] Suvansh Verma: Thanks!
+[05/09/25, 2:54:25 PM] Suvansh Verma: Hey UT
+[05/09/25, 2:54:52 PM] Suvansh Verma: I saw the Project competion E& comment RFP doc mein.
+[05/09/25, 2:55:03 PM] Suvansh Verma: Which project are we talking about?
+[05/09/25, 3:09:40 PM] Utkarsh: Hey bro
+[05/09/25, 3:09:49 PM] Utkarsh: The Project in the program.
+[05/09/25, 3:12:28 PM] Suvansh Verma: Project wasn’t there. After the first day, we gave an optional project. Only 1 guy completed it
+[09/09/25, 10:27:24 AM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[11/09/25, 5:44:59 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[12/09/25, 2:26:18 PM] Suvansh Verma: Hey
+[12/09/25, 2:26:23 PM] Suvansh Verma: Let me call you around 3 ‎<This message was edited>
+[12/09/25, 2:26:30 PM] Suvansh Verma: On a call
+[12/09/25, 2:37:59 PM] Utkarsh: Bro 4:30 pe krte h taking a flight now.
+[12/09/25, 2:55:36 PM] Suvansh Verma: Cool
+[19/09/25, 2:30:37 PM] Suvansh Verma: Hey bro
+[19/09/25, 2:31:09 PM] Suvansh Verma: Do you have a client call on Monday at 4:30?
+[19/09/25, 2:31:53 PM] Suvansh Verma: Was planning to share 2:30-4:30 timeslot with Airtel. 45mins ke call hogi
+[19/09/25, 2:55:18 PM] Utkarsh: This works bro no call as of now/
+[30/09/25, 12:42:54 PM] Suvansh Verma: Hey Bro
+[30/09/25, 12:42:58 PM] Suvansh Verma: Call urgently
+[30/09/25, 12:43:04 PM] Suvansh Verma: Need Bosch tools list
+[30/09/25, 12:43:11 PM] Suvansh Verma: Need to share it asap
+‎[30/09/25, 1:45:11 PM] Utkarsh: ‎<attached: 00000159-PHOTO-2025-09-30-13-45-11.jpg>
+[02/10/25, 12:45:37 PM] Utkarsh: Bro
+[02/10/25, 12:45:51 PM] Utkarsh: wo Calendar send krdiyo tom first thing in the morning.
+[02/10/25, 12:45:52 PM] Utkarsh: Thanks
+[02/10/25, 1:17:07 PM] Suvansh Verma: Sure, have prepared it.
+[02/10/25, 1:17:10 PM] Suvansh Verma: Will send it across.
+[03/10/25, 10:48:20 AM] Utkarsh: Bro calling in 2 min
+[03/10/25, 10:48:24 AM] Utkarsh: Wrapping a call.
+[03/10/25, 10:48:25 AM] Suvansh Verma: Okay
+[03/10/25, 10:48:36 AM] Suvansh Verma: Join kar lio, warna normal call also works
+[03/10/25, 5:57:00 PM] Suvansh Verma: Hey
+[03/10/25, 5:57:14 PM] Suvansh Verma: Shared the calendar with you
+[05/10/25, 8:15:49 PM] Suvansh Verma: Calling you back ‎<This message was edited>
+[05/10/25, 9:10:44 PM] Utkarsh: https://docs.google.com/document/d/1_46r84W9lbDeb0girYqlNxrJcYoahKIkV5-NJ4xBKhY/edit?tab=t.0#heading=h.c28btcrf6jde
+[05/10/25, 11:36:37 PM] Utkarsh: Bro
+[05/10/25, 11:36:47 PM] Utkarsh: Kl morning please add Ryan as well to Session 1 for PM.
+[05/10/25, 11:37:00 PM] Suvansh Verma: Will do
+[05/10/25, 11:37:13 PM] Utkarsh: Thanks bro.
+[06/10/25, 9:01:49 AM] Suvansh Verma: This is done
+[06/10/25, 9:02:09 AM] Suvansh Verma: emails rolled out with credentials and guide
+[06/10/25, 10:28:01 AM] Utkarsh: - https://drive.google.com/drive/folders/1WW0xaesVWfPXmE2-rPgYt0winUwk-wTA
+[06/10/25, 10:28:04 AM] Utkarsh: CSOD Drive link.
+[06/10/25, 10:28:11 AM] Utkarsh: Keep everything here itself.
+[06/10/25, 10:28:14 AM] Utkarsh: Thanks
+[06/10/25, 11:33:40 AM] Suvansh Verma: Call kario
+[06/10/25, 11:33:46 AM] Suvansh Verma: Spoke to amit
+[06/10/25, 12:07:24 PM] Suvansh Verma: Cohort Schedule:
+1. Pro Code: 1 week diff between dry run and Actual cohort
+2. Low Code: 10 days diff between dry run and actual cohort
+
+Prep Time before dry run:
+1. Pro Code: 7 days
+2. Low Code: 20 days
+[06/10/25, 12:07:34 PM] Suvansh Verma: Considering these timelines
+[06/10/25, 4:29:36 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[06/10/25, 7:22:07 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[06/10/25, 7:25:36 PM] Utkarsh: Ask her again to check.
+[06/10/25, 8:24:31 PM] Suvansh Verma: Session stretch hota hua lagg raha hai mujhe
+[06/10/25, 8:24:56 PM] Suvansh Verma: Poll 8:30-8:40 ke beech mein kar doonga.
+[06/10/25, 8:42:20 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[07/10/25, 4:16:02 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[07/10/25, 6:39:06 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[07/10/25, 6:40:09 PM] Utkarsh: Calling in 2 min.
+[07/10/25, 6:40:12 PM] Suvansh Verma: Broo call kario
+[07/10/25, 6:40:17 PM] Suvansh Verma: Bosch ka kuch kaam hai
+[08/10/25, 10:48:47 AM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[08/10/25, 10:59:15 AM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[08/10/25, 3:40:43 PM] Suvansh Verma: Hey bro
+[08/10/25, 3:40:51 PM] Suvansh Verma: When can we connect for airtel?
+[08/10/25, 3:46:19 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[08/10/25, 4:06:05 PM] Suvansh Verma: Airtel Requirement:
+1. AI for HR Masterclass document (should be HR focused, multi agent). Prepare a doc considering their HR team knows basics of agent building. 1 or 2 usecases can be included.
+2. ⁠AI enabler program for HR teams (1.5 days to 2 days). Extension of the Masterclass but more detailed. Focus should be on Multiagent.
+
+Instead of ChatGPT, recommend something with Perplexity.
+[09/10/25, 8:40:49 AM] Suvansh Verma: Hey
+[09/10/25, 8:41:05 AM] Suvansh Verma: Please share the instruction link. Will schedule it.
+[09/10/25, 11:33:36 AM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[09/10/25, 2:25:11 PM] Suvansh Verma: Need to know what is the starter code requirement mentioned in the mail
+[09/10/25, 2:25:19 PM] Suvansh Verma: Message from Amit on Bosch email
+[09/10/25, 2:28:54 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+‎[09/10/25, 2:31:07 PM] Utkarsh: MCP & A2A session for Bosch.pdf ‎<attached: 00000210-MCP & A2A session for Bosch.pdf>
+[09/10/25, 3:13:55 PM] Utkarsh: Bhai
+[09/10/25, 3:14:02 PM] Suvansh Verma: Yes
+[09/10/25, 3:14:05 PM] Utkarsh: Once video is generated share kr skte h Soham ke sth.
+[09/10/25, 3:14:15 PM] Suvansh Verma: Theek hai
+[09/10/25, 3:14:19 PM] Suvansh Verma: Will share the Zoom link
+[09/10/25, 3:17:16 PM] Utkarsh: Cool bro.
+[09/10/25, 3:17:21 PM] Utkarsh: Timing bta Dena.
+[09/10/25, 3:17:25 PM] Utkarsh: When to check.
+[10/10/25, 5:40:28 PM] Suvansh Verma: Bro
+[10/10/25, 5:40:34 PM] Suvansh Verma: Anshaj ka number bhejde
+[10/10/25, 5:40:46 PM] Suvansh Verma: I’ll connect with him for laptop details.
+[10/10/25, 5:40:55 PM] Suvansh Verma: Need to send it urgently
+[10/10/25, 9:43:14 PM] Utkarsh: Hey bro
+[10/10/25, 9:43:16 PM] Utkarsh: Call me now.
+[10/10/25, 9:43:22 PM] Utkarsh: I just got free.
+[10/10/25, 9:53:48 PM] Suvansh Verma: Calling you back in 15-20
+[11/10/25, 12:13:56 AM] Utkarsh: https://docs.google.com/document/d/1nFc5UThdFw-w1N8JUA82OHZffsp5DFZWWAWy54g24Cw/edit?usp=drivesdk
+[11/10/25, 9:19:49 AM] Utkarsh: Bro
+[11/10/25, 9:19:51 AM] Utkarsh: My PC
+[11/10/25, 9:20:01 AM] Utkarsh: Serial Number - FVFJCQYA1WFV
+[11/10/25, 9:21:50 AM] Utkarsh: MAC Address - 52:f6:a1:a6:9c:18
+‎[11/10/25, 9:21:58 AM] Utkarsh: ‎<attached: 00000232-PHOTO-2025-10-11-09-21-58.jpg>
+[11/10/25, 9:22:05 AM] Utkarsh: Let me know if anything else is needed.
+[11/10/25, 9:22:11 AM] Utkarsh: Isko please send krde.
+‎[11/10/25, 9:24:10 AM] Utkarsh: ‎<attached: 00000235-PHOTO-2025-10-11-09-24-10.jpg>
+[11/10/25, 9:24:25 AM] Suvansh Verma: Cool
+[11/10/25, 12:23:14 PM] Utkarsh: https://docs.google.com/document/d/18zK6N9jM3jyiEGzKcyHFzKaVJnMQIMv7WMvVFlPLQQQ/edit?tab=t.0
+[11/10/25, 12:29:21 PM] Suvansh Verma: This looks fine
+[11/10/25, 12:29:56 PM] Utkarsh: Can we call Amit and talk about the Mac Address thing?
+[11/10/25, 12:31:29 PM] Suvansh Verma: Checking with him
+[11/10/25, 1:15:56 PM] Utkarsh: ‎Voice call, ‎No answer
+[11/10/25, 7:11:54 PM] Suvansh Verma: The AI Director’s name is Atul Anil Gohad
+[12/10/25, 2:03:40 PM] Utkarsh: Can we get the learners’ profile any of them today?
+[12/10/25, 2:03:46 PM] Utkarsh: Please check with Amit once.
+[12/10/25, 2:03:55 PM] Utkarsh: Slightly critical for the Session.
+‎[12/10/25, 2:06:24 PM] Suvansh Verma: ‎<attached: 00000246-PHOTO-2025-10-12-14-06-24.jpg>
+[12/10/25, 2:07:24 PM] Utkarsh: These are not learners’ right?
+[12/10/25, 2:07:34 PM] Utkarsh: These are probably observers/ SPOCs.
+[12/10/25, 2:09:22 PM] Utkarsh: https://www.linkedin.com/search/results/people/?origin=FACETED_SEARCH&geoUrn=%5B%22105214831%22%5D&currentCompany=%5B%22586240%22%5D
+[12/10/25, 2:35:22 PM] Suvansh Verma: Yes
+[12/10/25, 2:35:55 PM] Suvansh Verma: Amit is trying to get the details but it will be difficult
+[12/10/25, 2:39:36 PM] Utkarsh: Calling in 5 min.
+[12/10/25, 2:39:44 PM] Utkarsh: https://docs.google.com/spreadsheets/d/1g5bHkAiNRfU-qqOlRY-cEgA4bZtVwMyQg-4duCHR5GY/edit?gid=47511023#gid=47511023
+[12/10/25, 3:21:51 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[12/10/25, 3:26:51 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[12/10/25, 3:27:48 PM] Utkarsh: Calling in 5 min.
+[12/10/25, 3:28:00 PM] Suvansh Verma: Cool
+[12/10/25, 11:26:42 PM] Utkarsh: Hey bro
+[12/10/25, 11:27:12 PM] Utkarsh: Please make sure to send out the invite for CSOD Dry Run Session tom first thing morning.
+Thanks
+[12/10/25, 11:27:19 PM] Utkarsh: 7:30 - 10:30 PM IST
+[12/10/25, 11:32:07 PM] Suvansh Verma: It’s confirmed?
+[13/10/25, 5:55:46 AM] Utkarsh: Yes bro
+[13/10/25, 7:53:30 AM] Utkarsh: Bro isko urgently send krde.
+[13/10/25, 7:53:33 AM] Utkarsh: Asap.
+[13/10/25, 8:15:55 AM] Suvansh Verma: Done
+[13/10/25, 8:16:04 AM] Suvansh Verma: Sent
+[13/10/25, 11:43:08 AM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[13/10/25, 12:22:18 PM] Suvansh Verma: Bro mentee metre ka paid version kiske pass hai?
+[13/10/25, 12:23:45 PM] Utkarsh: We had Kahoot I guess.
+[13/10/25, 12:23:55 PM] Utkarsh: Menteemetre hoga toh must be with Adil.
+[13/10/25, 12:24:09 PM] Suvansh Verma: Okay
+[13/10/25, 4:15:35 PM] Utkarsh: We are procuring GitHub from our end.
+[13/10/25, 4:15:41 PM] Utkarsh: For any learner who is facing issues
+[13/10/25, 4:15:47 PM] Utkarsh: So it’s taken care on our end.
+[13/10/25, 4:15:48 PM] Suvansh Verma: Okay!
+[13/10/25, 4:16:55 PM] Utkarsh: Were they calling me?
+[13/10/25, 4:17:01 PM] Utkarsh: I can speak now.
+[13/10/25, 4:17:06 PM] Utkarsh: I didn’t hear.
+[13/10/25, 4:17:26 PM] Suvansh Verma: Wanted to check if there are any other things you wanted to check.
+[13/10/25, 4:22:54 PM] Utkarsh: Cool.
+[13/10/25, 4:38:30 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[13/10/25, 4:39:14 PM] Suvansh Verma: Amit will get all 5 laptops by eod today.
+‎[13/10/25, 5:07:20 PM] Suvansh Verma: ‎<attached: 00000283-Ricardo IK.vcf>
+[13/10/25, 5:07:30 PM] Suvansh Verma: He will be there for you tomorrw ‎<This message was edited>
+[13/10/25, 5:07:40 PM] Suvansh Verma: SSA team ‎<This message was edited>
+[13/10/25, 5:30:41 PM] Suvansh Verma: Hey
+[13/10/25, 5:30:45 PM] Suvansh Verma: On a call
+[13/10/25, 5:30:49 PM] Suvansh Verma: IGT call
+[13/10/25, 5:30:55 PM] Suvansh Verma: Free hoke call karta hu
+[13/10/25, 5:33:31 PM] Utkarsh: Sure.
+[13/10/25, 5:52:29 PM] Utkarsh: https://drive.google.com/file/d/1UTwbSr4hWp2NK2JjdYNQd4L_FpJNOjGl/view?usp=drivesdk
+[13/10/25, 5:52:41 PM] Utkarsh: Session 3 Slides.
+[13/10/25, 5:53:04 PM] Utkarsh: Can you create an instruction and schedule it.
+Thanks
+[13/10/25, 5:54:07 PM] Suvansh Verma: Sure
+‎[14/10/25, 12:51:48 PM] Utkarsh: ‎<attached: 00000295-PHOTO-2025-10-14-12-51-48.jpg>
+[14/10/25, 1:59:13 PM] Utkarsh: https://docs.google.com/spreadsheets/d/1g5bHkAiNRfU-qqOlRY-cEgA4bZtVwMyQg-4duCHR5GY/edit?gid=755272087#gid=755272087
+[14/10/25, 2:27:20 PM] Utkarsh: https://docs.google.com/presentation/d/19NUxi24Et0Bzc3Ym1djertKUGA9wDyVhzeCvBv7shh8/edit?slide=id.g36e99b709b0_1_333#slide=id.g36e99b709b0_1_333
+[14/10/25, 2:27:25 PM] Utkarsh: isko screen share krle.
+[14/10/25, 2:27:42 PM] Suvansh Verma: Cannot share my screen
+[14/10/25, 2:27:44 PM] Suvansh Verma: Disabled
+[14/10/25, 2:33:04 PM] Suvansh Verma: Bro
+[14/10/25, 2:33:11 PM] Suvansh Verma: Credentials share kardu na?
+[15/10/25, 9:34:13 AM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[15/10/25, 5:53:06 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[15/10/25, 5:53:31 PM] Suvansh Verma: Do we need to share any slides?
+[15/10/25, 5:53:48 PM] Suvansh Verma: Reza was asking in the group
+[15/10/25, 5:54:01 PM] Utkarsh: Wo uske sth shared h bro.
+[15/10/25, 5:54:02 PM] Utkarsh: - https://docs.google.com/presentation/d/1wzcIE1R_7hB-7MBwqot7jUyi3LMwKnBcXrGlCU81xR0/edit?slide=id.g38d324a35c9_2_1446#slide=id.g38d324a35c9_2_1446
+[15/10/25, 5:54:07 PM] Suvansh Verma: Okay
+[15/10/25, 5:54:11 PM] Utkarsh: iska PDF krke add krdega Uplevel pe.
+[15/10/25, 5:54:18 PM] Suvansh Verma: Sure
+[15/10/25, 5:54:20 PM] Suvansh Verma: Will do it
+[15/10/25, 5:54:23 PM] Utkarsh: Uplevel shared folder I mean.
+[15/10/25, 5:54:25 PM] Utkarsh: Thanks
+[15/10/25, 6:04:04 PM] Suvansh Verma: Access dedo boss
+[15/10/25, 6:04:22 PM] Utkarsh: Done bro.
+[15/10/25, 6:28:10 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[15/10/25, 6:34:49 PM] Suvansh Verma: I am combining the NPS and class feedback form
+[15/10/25, 6:38:28 PM] Utkarsh: how can I go back to the main floor of zoom, out of all rooms?
+[15/10/25, 6:41:58 PM] Utkarsh: Mujhe bhi cohost bana de.
+[15/10/25, 6:44:11 PM] Suvansh Verma: Sure
+[16/10/25, 10:46:48 AM] Suvansh Verma: Airtel Requirement:
+1. AI for HR Masterclass document (should be HR focused, multi agent). Prepare a doc considering their HR team knows basics of agent building. 1 or 2 usecases can be included.
+2. ⁠AI enabler program for HR teams (1.5 days to 2 days). Extension of the Masterclass but more detailed. Focus should be on Multiagent.
+
+Instead of ChatGPT, recommend something with Perplexity.
+[16/10/25, 10:46:56 AM] Suvansh Verma: Resharing this
+[16/10/25, 10:47:19 AM] Utkarsh: Ha bro I know.
+[16/10/25, 10:47:29 AM] Utkarsh: But CustomGPT is not possible in Perplexity.
+[16/10/25, 10:47:37 AM] Utkarsh: There are two parts in Perplexity.
+[16/10/25, 10:47:50 AM] Utkarsh: Do we want to removed GPT altogether?
+[16/10/25, 10:49:26 AM] Suvansh Verma: Let’s keep perplexity. For multi agent, we can give options of different tools.
+[16/10/25, 10:50:07 AM] Utkarsh: But we don’t have CustomGPT in Perplexity
+[16/10/25, 10:50:20 AM] Utkarsh: Let’s discuss 11 bje.
+[16/10/25, 10:50:26 AM] Suvansh Verma: Cool
+[16/10/25, 10:50:40 AM] Suvansh Verma: Amit won’t be joining. He is attending some session
+[16/10/25, 10:50:47 AM] Suvansh Verma: Waha karte hai discuss
+[16/10/25, 11:36:24 AM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[16/10/25, 11:53:05 AM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[16/10/25, 8:30:53 PM] Utkarsh: e& ka single day 11 AM - 5 PM tha na?
+[17/10/25, 11:34:30 AM] Utkarsh: Bro
+[17/10/25, 11:34:54 AM] Utkarsh: 4.5 rating did we include the one from the hardcopy?
+[17/10/25, 11:35:53 AM] Suvansh Verma: Yess
+[17/10/25, 11:35:58 AM] Suvansh Verma: Sab include kar liye
+[17/10/25, 11:59:29 AM] Utkarsh: Cool.
+[18/10/25, 11:19:42 PM] Suvansh Verma: Hey bro
+[18/10/25, 11:20:01 PM] Suvansh Verma: Quick check: Internal dry run 11am to 5pm hai ya 5pm to 10pm? ‎<This message was edited>
+[19/10/25, 12:10:52 AM] Utkarsh: Internal bhi same time bro.
+[19/10/25, 12:17:36 AM] Utkarsh: Bro awake?
+[19/10/25, 12:26:41 AM] Utkarsh: I think 5-10 PM hi h.
+[19/10/25, 12:26:49 AM] Utkarsh: Cool I will communicate to SMEs accordingly.
+[20/10/25, 10:27:28 AM] Utkarsh: A very happy Diwali to you and your family Suvansh 🪔🎇🧨
+[20/10/25, 11:28:10 AM] Suvansh Verma: Happy Diwali Utkarsh 🪔
+[21/10/25, 11:10:20 AM] Utkarsh: Please send the invites to Anshaj and Hardik for 23rd and 25th unko add krdena.
+[21/10/25, 11:10:26 AM] Utkarsh: Ahmed ka I will confirm by EOD.
+[21/10/25, 11:13:26 AM] Suvansh Verma: Done
+[21/10/25, 11:13:37 AM] Utkarsh: Thanks bro.
+[21/10/25, 11:19:22 AM] Utkarsh: Day 3 ko 26th ko move krdo.
+[21/10/25, 11:21:32 AM] Suvansh Verma: Done, invites shared with Anshaj and Hardik.
+[22/10/25, 8:26:15 AM] Suvansh Verma: Hey bro
+[22/10/25, 8:26:29 AM] Suvansh Verma: Have a family emergency. Won’t be available from 11 to 1
+[22/10/25, 8:26:49 AM] Suvansh Verma: If there is anything urgent, let me know.
+[22/10/25, 5:37:28 PM] Suvansh Verma: Hey bro
+[22/10/25, 5:37:32 PM] Suvansh Verma: Call me once free
+[22/10/25, 5:37:40 PM] Suvansh Verma: Need to check something regarding airtel
+[22/10/25, 7:45:08 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[23/10/25, 10:34:57 AM] Utkarsh: Bro
+[23/10/25, 10:35:04 AM] Utkarsh: The Impact report which we shared with Bosch.
+[23/10/25, 10:35:06 AM] Utkarsh: Can you send it.
+[23/10/25, 10:36:37 AM] Suvansh Verma: Shared it
+[23/10/25, 10:37:37 AM] Suvansh Verma: Also, renaming Airtel Day 2 Topic 4 to Applied Systems Showcase & Guest Expert Evaluation.
+[23/10/25, 10:37:43 AM] Suvansh Verma: Guest being the highlight
+[23/10/25, 10:38:04 AM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[23/10/25, 10:48:08 AM] Utkarsh: Sure.
+[23/10/25, 10:48:11 AM] Utkarsh: Let me call you in sometime.
+[23/10/25, 10:50:55 AM] Suvansh Verma: Cool
+[23/10/25, 10:51:10 AM] Suvansh Verma: Also, I am assuming we will be teaching only 1 tool for agent building
+[23/10/25, 10:51:13 AM] Suvansh Verma: Not all 3
+‎[23/10/25, 10:51:47 AM] Suvansh Verma: ‎<attached: 00000375-PHOTO-2025-10-23-10-51-47.jpg>
+[23/10/25, 10:52:02 AM] Utkarsh: Yup.
+[23/10/25, 10:52:04 AM] Utkarsh: Make
+[23/10/25, 10:52:10 AM] Suvansh Verma: Okay
+[23/10/25, 10:52:12 AM] Utkarsh: ‎Voice call, ‎2 min
+[23/10/25, 11:04:52 AM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[23/10/25, 11:05:10 AM] Suvansh Verma: Call me
+[26/10/25, 2:19:42 PM] Utkarsh: Bro let me know at the earliest how many VMs we need for tom.
+[26/10/25, 2:19:53 PM] Utkarsh: The VM has expired and will have to raise another req.
+[26/10/25, 3:09:17 PM] Suvansh Verma: Hey
+[26/10/25, 3:09:20 PM] Suvansh Verma: Will need 6
+[26/10/25, 3:09:26 PM] Suvansh Verma: As 6 learner join
+[26/10/25, 3:40:43 PM] Utkarsh: Cool.
+[26/10/25, 7:30:25 PM] Utkarsh: Bro
+[26/10/25, 7:30:39 PM] Utkarsh: For Day 3 & 4 need to initiate a mail to the learners'.
+[26/10/25, 7:30:45 PM] Utkarsh: Let me call you in sometime.
+[26/10/25, 7:30:51 PM] Utkarsh: If you’re free.
+[26/10/25, 7:31:04 PM] Suvansh Verma: Hey
+[26/10/25, 7:31:28 PM] Suvansh Verma: Sure, kar lio call. I’m at home only.
+[26/10/25, 9:11:32 PM] Utkarsh: ‎Voice call, ‎1 min
+[26/10/25, 9:12:28 PM] Utkarsh: https://docs.google.com/document/d/1xW1kQd3GblAm8PmZxuiwYUITthXq0uHv4PyEAZ4d0cg/edit?tab=t.0
+[26/10/25, 10:12:26 PM] Utkarsh: ‎Voice call, ‎2 min
+[26/10/25, 10:14:32 PM] Utkarsh: AI Builder Program For Tech Teams (Pro Code) | Day 3 & 4 | Pre-Requisities Setup
+[26/10/25, 10:21:18 PM] Utkarsh: Made minor changes to the doc it is good to go now.
+Thanks
+[26/10/25, 10:40:58 PM] Suvansh Verma: Credentials shared with everyone
+[27/10/25, 6:40:11 AM] Utkarsh: Thanks bro.
+[28/10/25, 11:15:13 AM] Suvansh Verma: ‎Voice call, ‎2 min
+[28/10/25, 4:24:55 PM] Suvansh Verma: ‎Voice call, ‎4 min
+[28/10/25, 4:31:37 PM] Suvansh Verma: ‎Voice call, ‎2 min
+[28/10/25, 4:39:27 PM] Utkarsh: https://docs.google.com/document/d/1Oi2YYyYLSJWDHZkZRRxITw6Yx-epmHHgO3kGMLCrPfA/edit?tab=t.ymdvi8ym9b6r
+[28/10/25, 4:39:31 PM] Utkarsh: Bro ye send krdete.
+[28/10/25, 4:39:35 PM] Utkarsh: Tool wala tab.
+[28/10/25, 5:09:47 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[28/10/25, 5:35:11 PM] Suvansh Verma: ‎Voice call, ‎2 min
+[29/10/25, 10:24:43 AM] Suvansh Verma: Calling you back
+[29/10/25, 10:24:45 AM] Suvansh Verma: Give me 5
+[29/10/25, 10:24:53 AM] Utkarsh: Ha.
+[29/10/25, 11:02:27 AM] Utkarsh: ‎Voice call, ‎24 sec
+[29/10/25, 11:06:48 AM] Utkarsh: Bro I think you have send the PDF only.
+[29/10/25, 11:06:51 AM] Utkarsh: Link send krde.
+[29/10/25, 11:06:58 AM] Utkarsh: And update the Password there.
+[29/10/25, 11:07:04 AM] Utkarsh: Coz other learners’ would also need to login.
+[29/10/25, 11:10:05 AM] Suvansh Verma: Shared the link now. It has the same details as the PDF.
+[29/10/25, 11:10:51 AM] Utkarsh: Cool.
+‎[29/10/25, 11:15:10 AM] Utkarsh: Iska new pass kisi new kra h ky? ‎<attached: 00000419-PHOTO-2025-10-29-11-15-10.jpg>
+[29/10/25, 11:15:25 AM] Suvansh Verma: Sharing
+[29/10/25, 11:15:27 AM] Suvansh Verma: On slack ‎<This message was edited>
+[29/10/25, 11:15:59 AM] Suvansh Verma: Shared
+[29/10/25, 11:16:06 AM] Utkarsh: Thanks
+[29/10/25, 11:16:11 AM] Utkarsh: That’s why asked on Sheet.
+[29/10/25, 11:16:20 AM] Utkarsh: Taaki hum update kr ske for learners’ also bro.
+[29/10/25, 11:16:30 AM] Suvansh Verma: Understood
+[29/10/25, 11:17:13 AM] Utkarsh: Ha bro.
+[29/10/25, 11:39:09 AM] Utkarsh: Bro dropping off for now.
+[29/10/25, 11:39:15 AM] Utkarsh: Let me know if anything is required.
+[29/10/25, 11:39:19 AM] Suvansh Verma: Cool
+[29/10/25, 11:39:21 AM] Utkarsh: Thda SME ko nudge krte rehna.
+[29/10/25, 11:39:28 AM] Utkarsh: Incase you see any issues on the screen.
+[29/10/25, 11:41:06 AM] Suvansh Verma: Cool
+[29/10/25, 2:10:40 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[30/10/25, 3:34:36 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[31/10/25, 9:02:58 AM] Suvansh Verma: Hey Utkarsh,
+Had to rush to the hospital around 4:30 yesterday. My bua is on a ventilator and is very critical. I’ll be available on and off today. ‎<This message was edited>
+[31/10/25, 9:03:45 AM] Suvansh Verma: Need to roll out an email for the low code program. Please share the program brochure, will do that today. ‎<This message was edited>
+[31/10/25, 12:30:24 PM] Utkarsh: Sure bro.
+[31/10/25, 12:30:26 PM] Utkarsh: Please take care.
+[31/10/25, 12:30:40 PM] Utkarsh: Low Code - https://docs.google.com/document/d/1Oi2YYyYLSJWDHZkZRRxITw6Yx-epmHHgO3kGMLCrPfA/edit?tab=t.ienke3swp4ab#heading=h.jagzeruvnqun
+[31/10/25, 1:20:11 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[31/10/25, 1:21:09 PM] Suvansh Verma: Low code dry run dates: 21st, 22nd, 28th & 29th right?
+[31/10/25, 2:34:39 PM] Utkarsh: Will need time until next week to finalise the dates bro.
+[01/11/25, 1:34:22 PM] Utkarsh: Hey bro
+[01/11/25, 1:34:30 PM] Utkarsh: Whenever you get sometime today please call me.
+[01/11/25, 1:34:31 PM] Utkarsh: Thanks
+[01/11/25, 1:35:03 PM] Suvansh Verma: Sure, will call around 5:30 or 6. I am at the hospital.
+[01/11/25, 1:35:33 PM] Utkarsh: Acha no worries man phr Monday krlete h, please take care.
+[01/11/25, 1:35:39 PM] Utkarsh: Adding a morning call for Mon.
+[03/11/25, 10:13:07 AM] Utkarsh: Hey bro
+[03/11/25, 10:13:17 AM] Utkarsh: For the date and SMEs can we connect right now?
+[03/11/25, 10:13:19 AM] Utkarsh: in 2 min?
+[03/11/25, 10:13:20 AM] Suvansh Verma: Hey bro
+[03/11/25, 10:13:38 AM] Suvansh Verma: Give me 5-7mins, about to reach office
+[03/11/25, 10:13:50 AM] Utkarsh: Done 10:20 pe krte h.
+[03/11/25, 10:13:54 AM] Suvansh Verma: Cool
+[03/11/25, 10:13:59 AM] Utkarsh: BLR me h?
+[03/11/25, 10:14:00 AM] Suvansh Verma: I’ll join that link
+[03/11/25, 10:14:03 AM] Utkarsh: Sure.
+[03/11/25, 10:14:03 AM] Suvansh Verma: Na na
+[03/11/25, 10:14:09 AM] Utkarsh: Acha Awfis?
+[03/11/25, 10:14:09 AM] Suvansh Verma: Working out of a co working in Delhi
+[03/11/25, 10:14:14 AM] Utkarsh: Got it.
+[03/11/25, 10:14:16 AM] Suvansh Verma: Have people over at home
+[03/11/25, 10:16:15 AM] Utkarsh: Acha got it bro.
+[04/11/25, 12:22:03 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[04/11/25, 8:51:22 PM] Utkarsh: Hey bro
+[04/11/25, 8:51:26 PM] Utkarsh: Is Reza Session over?
+[04/11/25, 8:51:30 PM] Utkarsh: How was the rating?
+[04/11/25, 9:00:41 PM] Suvansh Verma: Hey
+[04/11/25, 9:01:15 PM] Suvansh Verma: Yes, the session got over. Yet to receive the ratings. Abhi sirf 2 logo ne diya hai out of 5.
+[04/11/25, 9:01:24 PM] Suvansh Verma: 2 ke rating toh 5 he hai
+[04/11/25, 9:01:41 PM] Utkarsh: Acha cool bro.
+[04/11/25, 9:01:47 PM] Utkarsh: Let me know once you get the full rating.
+[04/11/25, 9:01:50 PM] Utkarsh: Thanks
+[04/11/25, 9:01:55 PM] Suvansh Verma: Done
+[04/11/25, 9:02:00 PM] Suvansh Verma: But the session was very good
+[04/11/25, 9:02:23 PM] Suvansh Verma: Interaction was at best
+[04/11/25, 9:02:36 PM] Utkarsh: Perfect.
+[04/11/25, 9:02:44 PM] Suvansh Verma: Make usne bohot sahi tarah karwaaya
+[04/11/25, 9:02:51 PM] Utkarsh: Reza is really good.
+[04/11/25, 9:03:05 PM] Utkarsh: Also I think this was 3rd time he was taking Session on Make.
+[04/11/25, 9:03:09 PM] Suvansh Verma: It was very goood
+[04/11/25, 9:03:22 PM] Utkarsh: So I think for a best delivery 2-3 Dry Run so or other way we will have to make it happen
+[04/11/25, 9:03:24 PM] Utkarsh: OR
+[04/11/25, 9:03:32 PM] Utkarsh: We will have to give them enough time to prep.
+[04/11/25, 9:03:39 PM] Utkarsh: Rush ni kr skte isko.
+[04/11/25, 9:03:48 PM] Suvansh Verma: Haaan
+[04/11/25, 9:04:03 PM] Utkarsh: Yes bro.
+[05/11/25, 6:51:34 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[06/11/25, 11:32:42 AM] Utkarsh: Bro
+[06/11/25, 11:32:52 AM] Utkarsh: Small help need to send a few more Tools to Mohammed.
+[06/11/25, 11:33:01 AM] Utkarsh: I will send it to you soon, mail krdete h usko aaj.
+[06/11/25, 11:34:40 AM] Suvansh Verma: Hey bro,
+I’m at the hospital.
+[06/11/25, 11:48:12 AM] Suvansh Verma: I have aligned Kunal to send out the invites
+[06/11/25, 11:57:38 AM] Suvansh Verma: Ek baar usko help kar dio basic details dene mein
+[06/11/25, 7:00:15 PM] Utkarsh: Sure bro.
+[06/11/25, 7:00:18 PM] Utkarsh: Please take care.
+‎[10/11/25, 4:18:41 PM] Utkarsh: ‎<attached: 00000499-PHOTO-2025-11-10-16-18-41.jpg>
+[10/11/25, 4:18:45 PM] Utkarsh: Bro ye 23rd hoga.
+[10/11/25, 4:18:54 PM] Utkarsh: 24th ko Day 4 with Shivam h.
+‎[10/11/25, 4:19:54 PM] Suvansh Verma: ‎<attached: 00000502-PHOTO-2025-11-10-16-19-54.jpg>
+[10/11/25, 4:20:09 PM] Utkarsh: Ha I saw that.
+[10/11/25, 4:20:11 PM] Suvansh Verma: Cool, will change it.
+[10/11/25, 4:20:13 PM] Utkarsh: I’m fixing it.
+[10/11/25, 4:20:15 PM] Suvansh Verma: No stress
+[10/11/25, 4:20:16 PM] Utkarsh: Cool bro.
+[10/11/25, 4:20:29 PM] Utkarsh: Avi ke liye common calendar check krle.
+[10/11/25, 4:20:42 PM] Utkarsh: I’ll check this sheet out and update you.
+[10/11/25, 4:21:05 PM] Utkarsh: Isme notes me mention krde this is a Dry Run, for that SMEs reference.
+[10/11/25, 4:22:44 PM] Suvansh Verma: Done
+[10/11/25, 4:33:42 PM] Suvansh Verma: Rizwan is for Low Code?
+[10/11/25, 4:36:02 PM] Utkarsh: I’ll call you thdi der me.
+[10/11/25, 4:44:56 PM] Suvansh Verma: Cool
+[10/11/25, 6:13:57 PM] Utkarsh: Hey bro
+[10/11/25, 6:14:08 PM] Utkarsh: Can you add the Final Leaders list here
+[10/11/25, 6:14:09 PM] Utkarsh: - https://docs.google.com/spreadsheets/d/1JhB1Lw4Y_4VwYg8hM98HgTL3btWWiUM_/edit?gid=1269143794#gid=1269143794
+[10/11/25, 8:13:48 PM] Utkarsh: Bro
+[10/11/25, 8:13:53 PM] Utkarsh: Free hoke ping krna.
+[10/11/25, 8:19:17 PM] Suvansh Verma: Yo
+[10/11/25, 8:19:18 PM] Suvansh Verma: Tell me
+[11/11/25, 4:00:13 PM] Suvansh Verma: ‎Voice call, ‎3 min
+[11/11/25, 8:53:17 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[11/11/25, 8:53:26 PM] Suvansh Verma: Bro
+[11/11/25, 8:53:31 PM] Suvansh Verma: Yeh last section hai kya?
+[11/11/25, 8:53:42 PM] Suvansh Verma: If yes, I’ll launch the poll.
+[12/11/25, 7:08:24 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[14/11/25, 10:23:09 AM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[14/11/25, 2:47:25 PM] Suvansh Verma: You are sharing your screen
+[14/11/25, 2:47:57 PM] Utkarsh: Ha bro
+[14/11/25, 5:16:33 PM] Suvansh Verma: Calendar invite shared with all the instructors till 18th Dec (Pro, Low and No)
+Only pending for Leaders. (Will share once the instructors are confirmed)
+[14/11/25, 9:15:34 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[14/11/25, 9:15:55 PM] Utkarsh: On a call with Anand.
+[14/11/25, 9:15:58 PM] Utkarsh: ky issue aa rhe the bro?
+[14/11/25, 9:16:11 PM] Suvansh Verma: Karthika wasn’t aware that we had shared AI Explorer Ids.
+[14/11/25, 9:21:39 PM] Utkarsh: Yr 🥺
+[14/11/25, 9:21:52 PM] Utkarsh: I literally sent the Documentation bro.
+[14/11/25, 9:22:02 PM] Utkarsh: It is clearly written there, and multiple other places.
+[14/11/25, 9:22:26 PM] Utkarsh: But tk h anyways in the actual Program we will have different accounts.
+[14/11/25, 9:22:30 PM] Utkarsh: So should be fine.
+[14/11/25, 9:22:41 PM] Suvansh Verma: Cool
+[14/11/25, 9:48:54 PM] Utkarsh: Yr seriously I had shared last time with Karthika as well.
+[14/11/25, 9:48:59 PM] Utkarsh: It is coz of too short timeline.
+[14/11/25, 9:49:03 PM] Utkarsh: I feel.
+[14/11/25, 9:49:32 PM] Utkarsh: Anyways you can keep everyone in mails so that folks are aware or atleast send a copy to everyone.
+[17/11/25, 12:05:18 PM] Utkarsh: Bro call krna once free urgent.
+[17/11/25, 12:09:00 PM] Suvansh Verma: Calling you back
+[17/11/25, 12:09:37 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[17/11/25, 1:26:17 PM] Utkarsh: https://docs.google.com/spreadsheets/d/1WZZQR-f56Fghwj_PAC4IJBqwkelfl0Q-/edit?gid=716192967#gid=716192967
+[17/11/25, 1:26:19 PM] Utkarsh: This is the sheet.
+[17/11/25, 2:21:11 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[17/11/25, 3:03:26 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[17/11/25, 5:37:28 PM] Utkarsh: ‎Voice call, ‎3 min
+[18/11/25, 9:26:02 AM] Suvansh Verma: Hey bro ‎<This message was edited>
+[18/11/25, 9:26:12 AM] Suvansh Verma: Check your spam
+[18/11/25, 9:26:46 AM] Suvansh Verma: Shared the credentials email with you for review. Shayad se spam mein aayegi.
+[18/11/25, 9:27:36 AM] Utkarsh: Ha bro.
+[18/11/25, 9:28:06 AM] Utkarsh: Avi sbko send kr diya humne?
+[18/11/25, 9:28:10 AM] Utkarsh: Creds?
+[18/11/25, 9:31:15 AM] Utkarsh: Ki post review you will shared?
+[18/11/25, 9:33:39 AM] Suvansh Verma: Post review will share it
+[18/11/25, 9:34:27 AM] Suvansh Verma: Everything is ready, just need to send it. Also, for the video thing IK will come as UnO microsoft account is a sister account and falls under IK
+[18/11/25, 9:34:31 AM] Utkarsh: Cool give me sometime just having breakfast.
+[18/11/25, 9:34:41 AM] Suvansh Verma: Sorted!
+[18/11/25, 11:07:36 AM] Utkarsh: Bro can you join the call?
+[18/11/25, 11:07:40 AM] Utkarsh: Soham wala?
+[18/11/25, 11:08:06 AM] Suvansh Verma: Give me 2-3mins
+[18/11/25, 11:08:23 AM] Suvansh Verma: Ensure kar raha hu sab start ho jaaye
+[18/11/25, 11:09:59 AM] Utkarsh: Sure.
+[18/11/25, 12:29:26 PM] Utkarsh: Ye wala we still having right ?
+[18/11/25, 12:29:27 PM] Utkarsh: - e& x PowerUp | Tool Testing for AI Builder Program
+[18/11/25, 12:29:45 PM] Suvansh Verma: Yes
+[18/11/25, 12:33:41 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[18/11/25, 2:17:34 PM] Suvansh Verma: Bro
+[18/11/25, 2:17:40 PM] Suvansh Verma: Stepping out for 30mins
+[18/11/25, 2:17:47 PM] Suvansh Verma: Let me know if anything urgent is required
+[18/11/25, 2:20:42 PM] Utkarsh: Sure bro.
+[19/11/25, 10:16:27 AM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[19/11/25, 10:41:55 AM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[19/11/25, 12:30:34 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[19/11/25, 1:33:32 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[19/11/25, 4:16:29 PM] Utkarsh: How’s the Session going far bro?
+[19/11/25, 4:34:09 PM] Suvansh Verma: Going very well
+[19/11/25, 4:34:18 PM] Utkarsh: Amazing.
+[19/11/25, 4:34:20 PM] Suvansh Verma: People are interactive in chat
+[19/11/25, 4:34:59 PM] Suvansh Verma: One thing that I feel: I hope this is not basic for them. I have that doubt only.
+[19/11/25, 5:37:01 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[19/11/25, 5:37:14 PM] Utkarsh: Yes bro?
+[19/11/25, 5:37:55 PM] Suvansh Verma: Wanted to check something
+[19/11/25, 5:37:58 PM] Suvansh Verma: We are good
+[19/11/25, 5:59:29 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[20/11/25, 9:56:21 AM] Utkarsh: ‎Voice call, ‎11 min
+‎[20/11/25, 9:56:43 AM] Utkarsh: ‎<attached: 00000593-PHOTO-2025-11-20-09-56-43.jpg>
+[20/11/25, 9:59:42 AM] Utkarsh: https://docs.google.com/presentation/d/1ItgamveLEKqCbRFA86s0owhSKVw3tmkQ/edit?slide=id.g348b16596eb_0_0#slide=id.g348b16596eb_0_0
+‎[20/11/25, 10:06:52 AM] Utkarsh: ‎<attached: 00000595-PHOTO-2025-11-20-10-06-52.jpg>
+[20/11/25, 10:33:07 AM] Utkarsh: ‎Voice call, ‎5 min
+[20/11/25, 10:57:25 AM] Utkarsh: Bro incase I am not there or something in between, please keep informing Hardik about breaks n all.
+[20/11/25, 10:59:06 AM] Suvansh Verma: Cool
+[20/11/25, 10:59:10 AM] Suvansh Verma: Spoke to him right now
+[20/11/25, 10:59:27 AM] Utkarsh: Cool.
+[20/11/25, 10:59:31 AM] Suvansh Verma: Also, one learner is saying that if we can take the Prayer and lunch break together
+[20/11/25, 10:59:44 AM] Suvansh Verma: 12:15 to 1:15 Dubai time.
+[20/11/25, 11:00:09 AM] Utkarsh: Yr we can look into this tom I guess.
+[20/11/25, 11:00:17 AM] Utkarsh: It might become too much.
+[20/11/25, 11:00:27 AM] Utkarsh: To go 3-3:30 straight.
+[20/11/25, 11:00:33 AM] Suvansh Verma: Cool
+[20/11/25, 11:00:49 AM] Utkarsh: Aap inform krdo before the Lunch break we wana keep a small break so that everyone can just recharge.
+[20/11/25, 12:47:16 PM] Utkarsh: was this answered>
+[20/11/25, 12:47:16 PM] Utkarsh: you talked about the context and what about the instruction to push to the Prompt?
+[20/11/25, 12:48:48 PM] Suvansh Verma: Shared with Hardik on DM as well
+[20/11/25, 12:50:02 PM] Utkarsh: Cool.
+[20/11/25, 12:50:06 PM] Utkarsh: Navdeep call pe ni h ky aaj?
+[20/11/25, 12:50:16 PM] Utkarsh: Are we sharing the Demo Files n all?
+[20/11/25, 12:50:20 PM] Suvansh Verma: Nope
+[20/11/25, 12:50:30 PM] Suvansh Verma: Abhi toh Demo kuch hai he nai
+[20/11/25, 12:50:36 PM] Suvansh Verma: Only theory
+[20/11/25, 12:50:37 PM] Utkarsh: He didn’t join at all or ky?
+[20/11/25, 12:51:08 PM] Suvansh Verma: I think he joined initially
+[20/11/25, 12:51:12 PM] Suvansh Verma: Uske baad nai
+[20/11/25, 12:51:19 PM] Utkarsh: Okay .
+[20/11/25, 12:52:31 PM] Utkarsh: Ping kra h maine usse.
+[20/11/25, 12:53:02 PM] Suvansh Verma: Cool
+[20/11/25, 12:55:10 PM] Utkarsh: can you send the link
+[20/11/25, 12:55:17 PM] Suvansh Verma: Kiska?
+[20/11/25, 12:55:25 PM] Utkarsh: Demo File.
+[20/11/25, 12:56:03 PM] Utkarsh: https://drive.google.com/drive/folders/1AbOk1sa0qhwmfeMylQIL6hf_MzthbXb9
+[20/11/25, 12:56:15 PM] Utkarsh: Having Lunch bs 2 min me aya.
+[20/11/25, 12:56:46 PM] Suvansh Verma: Okay okay
+[20/11/25, 12:57:43 PM] Suvansh Verma: Sent
+‎[20/11/25, 1:16:16 PM] Utkarsh: ‎<attached: 00000630-PHOTO-2025-11-20-13-16-16.jpg>
+[20/11/25, 1:16:46 PM] Utkarsh: Uplevel ka link bhjna the one we have to share with learners .
+[20/11/25, 1:16:47 PM] Suvansh Verma: Bro
+[20/11/25, 1:17:16 PM] Suvansh Verma: Recordings nai deni hai, Ryan ke kal raat ko share kiya yeh.
+[20/11/25, 1:17:29 PM] Utkarsh: Acha.
+[20/11/25, 1:17:30 PM] Suvansh Verma: Tabhi maine group pe John ke uper daal diya woh
+[20/11/25, 1:17:42 PM] Utkarsh: Toh avi what shall we do in this case?
+[20/11/25, 1:17:46 PM] Suvansh Verma: Kisne bheja hai woh?
+[20/11/25, 1:17:55 PM] Suvansh Verma: I will drop a message to the guy
+[20/11/25, 1:17:58 PM] Utkarsh: Madni.
+[20/11/25, 1:18:12 PM] Utkarsh: We could share on case basis na?
+[20/11/25, 1:18:16 PM] Utkarsh: Like check once with Ryan.
+[20/11/25, 1:18:17 PM] Suvansh Verma: Cool, I will drop a message.
+[20/11/25, 1:18:27 PM] Utkarsh: I don’t want the rating to fluctuate coz of him.
+[20/11/25, 1:18:28 PM] Suvansh Verma: Worst case wohi karenge
+[20/11/25, 1:18:50 PM] Suvansh Verma: I am making a note of such cases.
+‎[20/11/25, 1:19:09 PM] Utkarsh: Ha ‎<attached: 00000646-PHOTO-2025-11-20-13-19-09.jpg>
+[20/11/25, 1:19:12 PM] Utkarsh: REplying this.
+[20/11/25, 1:19:17 PM] Utkarsh: Cool.
+[20/11/25, 1:48:29 PM] Utkarsh: We will start at 2:30 PM right?
+[20/11/25, 1:48:35 PM] Utkarsh: Will join back.
+[20/11/25, 1:53:49 PM] Suvansh Verma: Yes
+[20/11/25, 3:47:39 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[20/11/25, 4:03:47 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[20/11/25, 4:07:06 PM] Utkarsh: Tu ek brr apne end se message krdena Shashi ko.
+[20/11/25, 4:07:18 PM] Utkarsh: Bhai desingated rhna tha Navdeep ko yr.
+[20/11/25, 4:07:22 PM] Utkarsh: Anyways I am joining,
+[20/11/25, 4:07:26 PM] Suvansh Verma: Okay
+[20/11/25, 4:08:26 PM] Utkarsh: Apne Hardik ko bola ky?
+[20/11/25, 4:08:30 PM] Utkarsh: Toh have learners try?
+[20/11/25, 4:09:56 PM] Suvansh Verma: Yes
+[20/11/25, 4:10:00 PM] Suvansh Verma: Multiple messages
+[20/11/25, 4:10:05 PM] Utkarsh: Mahima avi aaye ky?
+[20/11/25, 4:10:06 PM] Suvansh Verma: Discord and Zoom
+[20/11/25, 4:10:25 PM] Suvansh Verma: Mahima has been there since the last 20mins I think.
+[20/11/25, 4:13:00 PM] Suvansh Verma: Iske baad kitne content hai?
+[20/11/25, 4:13:07 PM] Suvansh Verma: Poll launch karne ka soch raha hu
+[20/11/25, 4:13:15 PM] Utkarsh: Wait.
+[20/11/25, 4:13:20 PM] Utkarsh: After people have tried.
+[20/11/25, 4:13:24 PM] Utkarsh: Then launch.
+[20/11/25, 4:13:26 PM] Suvansh Verma: Cool
+[20/11/25, 4:13:53 PM] Utkarsh: Bhai flow me aa gye tha 😅
+[20/11/25, 4:14:07 PM] Utkarsh: Nbk reshare krde.
+[20/11/25, 4:16:34 PM] Suvansh Verma: Done
+[20/11/25, 4:19:04 PM] Utkarsh: UnMute krke you can say to people their VMs.
+[20/11/25, 4:24:44 PM] Utkarsh: We could launch the poll after next 5 min or something I guess.
+[20/11/25, 4:24:55 PM] Suvansh Verma: Okay
+[20/11/25, 4:31:50 PM] Suvansh Verma: Launching the poll
+[20/11/25, 4:31:54 PM] Utkarsh: Ha krde.
+[20/11/25, 4:32:08 PM] Utkarsh: Reply krde.
+[20/11/25, 4:32:08 PM] Utkarsh: When is the next break, please?
+[20/11/25, 4:32:17 PM] Utkarsh: I think we can wrap up in the next 10 min I guess.
+[20/11/25, 4:36:01 PM] Suvansh Verma: Done done
+[20/11/25, 4:40:26 PM] Utkarsh: Shall we wrap up for today?
+[20/11/25, 4:41:27 PM] Utkarsh: Lokesh ko ping krde.
+[20/11/25, 4:41:32 PM] Utkarsh: He can stay back at the end.
+[20/11/25, 4:41:41 PM] Utkarsh: And we will try helping resolve it for him.
+[20/11/25, 4:43:18 PM] Utkarsh: Message daal de.
+[20/11/25, 4:43:24 PM] Utkarsh: Sessin end krke.
+[20/11/25, 4:43:36 PM] Utkarsh: And anyone who is having additional queries, they can stay back.
+[20/11/25, 4:43:43 PM] Utkarsh: We will help resolve queries 1 by 1.
+[20/11/25, 4:43:45 PM] Utkarsh: Thanks
+[20/11/25, 4:47:33 PM] Suvansh Verma: Done
+[20/11/25, 5:05:56 PM] Suvansh Verma: calling u back
+[21/11/25, 2:54:17 PM] Utkarsh: How’s it going so far?
+[21/11/25, 2:54:26 PM] Utkarsh: Is Jigyashu good from your POV?
+[21/11/25, 2:54:31 PM] Suvansh Verma: Going good
+[21/11/25, 2:55:00 PM] Suvansh Verma: One sided lagg raha tha thoda tabhi message daala maine
+[21/11/25, 2:55:51 PM] Utkarsh: Acha.
+[21/11/25, 2:55:58 PM] Utkarsh: Cool.
+[21/11/25, 2:56:03 PM] Utkarsh: Let’s see how the ratings go.
+[21/11/25, 2:56:10 PM] Suvansh Verma: Yes
+[21/11/25, 2:56:24 PM] Suvansh Verma: But good that we have 10 folks from the Alumni community
+[21/11/25, 3:00:44 PM] Utkarsh: Yes bro.
+[21/11/25, 3:00:55 PM] Utkarsh: Alums bulate h moving forward.
+[21/11/25, 3:07:29 PM] Suvansh Verma: Kar sakte hai but B2C business waale kuch na bole 😅
+[21/11/25, 3:11:01 PM] Utkarsh: Ni bolenge 10X business ho jana h if this goes well.
+‎[21/11/25, 3:11:14 PM] Utkarsh: ‎<attached: 00000707-GIF-2025-11-21-15-11-14.mp4>
+[21/11/25, 3:11:40 PM] Suvansh Verma: Cool
+[21/11/25, 5:07:50 PM] Utkarsh: Bro how did the Session go?
+[21/11/25, 5:07:52 PM] Utkarsh: Ratings?
+[21/11/25, 5:10:42 PM] Suvansh Verma: 4.4 aayi hai rating
+[21/11/25, 5:10:53 PM] Suvansh Verma: Call pe btata hu in detail
+[21/11/25, 5:11:26 PM] Utkarsh: Acha tk h I will call you in sometime.
+[21/11/25, 5:11:32 PM] Utkarsh: Might have to bring in another SME.
+[21/11/25, 5:12:04 PM] Suvansh Verma: He is good, teaching skills mein issue hai thoda. Can be trained without much effort
+[21/11/25, 5:12:21 PM] Utkarsh: Acha cool I will call you.
+[21/11/25, 5:12:31 PM] Utkarsh: But iss brr ke liye can’t risk it right?
+[21/11/25, 5:12:42 PM] Suvansh Verma: Thoda close ho jayega
+[21/11/25, 5:12:53 PM] Utkarsh: I am having a call with another SME today only.
+[21/11/25, 5:12:55 PM] Suvansh Verma: Usko aata hai sab sirf engagement increase karni hai
+[21/11/25, 5:12:56 PM] Utkarsh: He is interested.
+[21/11/25, 5:13:10 PM] Utkarsh: Acha let’s see dkh lete h.
+[21/11/25, 5:13:18 PM] Utkarsh: Let’s plan another Dry Run then.
+[21/11/25, 5:13:23 PM] Suvansh Verma: Engagement waala aspect missing tha and end mein jab screen share karwaayi things went up.
+[21/11/25, 5:13:32 PM] Utkarsh: Acha okay.
+[21/11/25, 5:13:44 PM] Utkarsh: When did we share the rating thing end me or earlier?
+[21/11/25, 5:13:52 PM] Utkarsh: Call krta hu thdi der me.
+[21/11/25, 5:14:07 PM] Suvansh Verma: 20mins before the end
+[23/11/25, 11:52:07 AM] Utkarsh: Bro how’s the Session going so far?
+[23/11/25, 11:52:29 AM] Utkarsh: Also we have to do Closing Ceremony/ Post Test Quiz as well?
+[23/11/25, 11:53:03 AM] Suvansh Verma: Going good
+[23/11/25, 11:53:19 AM] Suvansh Verma: Kuldeep pe trust hai 😅
+[23/11/25, 11:53:24 AM] Suvansh Verma: Kal hoga
+[23/11/25, 11:53:39 AM] Utkarsh: Acha ha right.
+[23/11/25, 11:53:44 AM] Suvansh Verma: Aaj day 3 hai
+[23/11/25, 11:53:59 AM] Utkarsh: Kl ke SME ke sth bt krleta hu he is also really good only.
+[23/11/25, 11:54:15 AM] Suvansh Verma: Sorted scene
+[23/11/25, 8:07:34 PM] Utkarsh: Hey bro
+[23/11/25, 8:07:48 PM] Utkarsh: What’s the rating today for Kuldeep’s Session?
+[23/11/25, 8:08:16 PM] Utkarsh: Also how’s the Reza Session going on?
+[23/11/25, 8:08:39 PM] Suvansh Verma: Will share the rating in sometime
+[23/11/25, 8:08:45 PM] Suvansh Verma: Stepped out after the session
+[23/11/25, 8:08:52 PM] Suvansh Verma: It ended 15mins back
+[23/11/25, 8:08:56 PM] Suvansh Verma: Only 1 learner
+[23/11/25, 8:09:04 PM] Suvansh Verma: But it was good
+[23/11/25, 8:09:17 PM] Utkarsh: Cool dono ka share krdena.
+[23/11/25, 8:09:18 PM] Suvansh Verma: Very hands on. One person attended the entire session
+[23/11/25, 8:09:35 PM] Utkarsh: Perfect?
+[23/11/25, 8:09:41 PM] Utkarsh: Name bhi send krdena of the person.
+[25/11/25, 12:23:30 PM] Utkarsh: Bro
+[25/11/25, 12:23:40 PM] Utkarsh: you must have received a code.
+[25/11/25, 12:23:48 PM] Suvansh Verma: 131646
+[25/11/25, 12:23:49 PM] Utkarsh: Doing a login thing for AI Explorer account.
+[25/11/25, 12:59:26 PM] Suvansh Verma: Okay
+[25/11/25, 1:04:51 PM] Utkarsh: Closing Ceremony sent to Anshaj.
+[25/11/25, 1:05:02 PM] Utkarsh: Send it for 4 PM bro.
+[25/11/25, 1:05:10 PM] Utkarsh: 4-4:45PM.
+[25/11/25, 1:05:21 PM] Utkarsh: It is possible that we might finish earlier.
+[25/11/25, 1:05:24 PM] Utkarsh: Update krde usko bs.
+[25/11/25, 1:05:53 PM] Suvansh Verma: Okay
+[25/11/25, 1:06:17 PM] Suvansh Verma: Done
+[25/11/25, 1:06:22 PM] Utkarsh: Thanks
+[25/11/25, 4:33:47 PM] Utkarsh: Meeting started?
+[25/11/25, 4:33:51 PM] Utkarsh: Can you let me in?
+[25/11/25, 4:35:12 PM] Suvansh Verma: John karega
+[25/11/25, 4:35:18 PM] Utkarsh: Meeting started?
+[25/11/25, 4:35:19 PM] Suvansh Verma: Mein bhi lobby mein hu
+[25/11/25, 4:35:22 PM] Suvansh Verma: 😆
+[25/11/25, 4:35:26 PM] Utkarsh: Acha okay.
+[25/11/25, 4:36:53 PM] Utkarsh: When you are in mujhe me in krne bol dena 😅
+[25/11/25, 4:37:22 PM] Suvansh Verma: Drop off kardo sab
+[25/11/25, 4:37:28 PM] Suvansh Verma: He wants to speak to Soham only
+[25/11/25, 4:37:34 PM] Utkarsh: Acha cool.
+[26/11/25, 10:23:38 AM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[27/11/25, 12:23:30 PM] Suvansh Verma: Hey
+[27/11/25, 12:23:40 PM] Utkarsh: Ha bro.
+[27/11/25, 12:23:54 PM] Suvansh Verma: Abhi update aayega e& pe
+[27/11/25, 12:24:06 PM] Utkarsh: Update?
+[27/11/25, 12:24:08 PM] Suvansh Verma: We are on a call with John
+[27/11/25, 12:24:24 PM] Utkarsh: Can I join?
+Is it related to the Tools? ‎<This message was edited>
+‎[27/11/25, 12:24:31 PM] Suvansh Verma: ‎<attached: 00000781-PHOTO-2025-11-27-12-24-31.jpg>
+[27/11/25, 12:24:41 PM] Suvansh Verma: I’m on a call with him
+[27/11/25, 12:24:52 PM] Suvansh Verma: Don’t share these details with anyone for now
+[27/11/25, 12:25:04 PM] Utkarsh: Okay aap call krna after this.
+[27/11/25, 12:25:14 PM] Suvansh Verma: Soham will inform everyone
+[27/11/25, 12:25:49 PM] Utkarsh: Sure, but just give me a call after your call is over with him.
+[27/11/25, 12:26:03 PM] Suvansh Verma: Done
+[28/11/25, 9:36:10 AM] Suvansh Verma: Hey Utkarsh
+[28/11/25, 9:36:17 AM] Suvansh Verma: I’m on off today
+[28/11/25, 9:36:30 AM] Suvansh Verma: Call me if anything urgent
+[28/11/25, 9:36:54 AM] Suvansh Verma: One pending task my at my end: OneDrive link to e&
+[28/11/25, 12:17:20 PM] Utkarsh: Sure bro.
+[04/12/25, 5:46:50 PM] Utkarsh: ‎Voice call, ‎2 min
+[04/12/25, 5:48:17 PM] Utkarsh: 7-8
+[05/12/25, 10:43:19 AM] Utkarsh: Bro Rakshit mere Team ka h.
+[05/12/25, 10:43:29 AM] Utkarsh: Also Ryan will join right?
+[05/12/25, 10:46:43 AM] Suvansh Verma: Acha, my bad.
+[05/12/25, 10:47:00 AM] Suvansh Verma: Ryan and Aashish have a call
+[05/12/25, 10:47:08 AM] Utkarsh: Btw has all 12 of them confirmed?
+[05/12/25, 10:47:13 AM] Suvansh Verma: I’ll add Ryan
+[05/12/25, 10:47:19 AM] Utkarsh: Acha Ryan will be not joining?
+[05/12/25, 10:47:55 AM] Suvansh Verma: He has accepted the invite. Not sure whether he will be there for the entire session.
+[05/12/25, 10:48:09 AM] Utkarsh: Okay.
+[05/12/25, 10:48:12 AM] Utkarsh: ‎Voice call, ‎3 min
+[05/12/25, 10:48:13 AM] Suvansh Verma: Distribution sahi hai list mein
+[05/12/25, 10:53:39 AM] Suvansh Verma: ‎Voice call, ‎1 min
+[05/12/25, 11:42:11 AM] Utkarsh: ‎Voice call, ‎3 min
+[05/12/25, 11:57:14 AM] Utkarsh: Bro OTP batana.
+[05/12/25, 11:57:27 AM] Suvansh Verma: 486993
+[05/12/25, 1:08:06 PM] Utkarsh: ‎Voice call, ‎3 min
+[05/12/25, 1:49:36 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[08/12/25, 8:23:08 PM] Suvansh Verma: Hey bro
+[08/12/25, 8:23:14 PM] Suvansh Verma: Any update on the videos
+[08/12/25, 8:23:19 PM] Suvansh Verma: Aashish is following up
+[09/12/25, 2:40:23 PM] Suvansh Verma: Hey bro ‎<This message was edited>
+[09/12/25, 2:40:32 PM] Suvansh Verma: Any update on e&?
+[09/12/25, 2:40:38 PM] Suvansh Verma: How did the call go?
+[09/12/25, 8:28:39 PM] Suvansh Verma: Hey bro
+[09/12/25, 8:28:54 PM] Suvansh Verma: I am dropping off. Making you the host
+[09/12/25, 8:31:35 PM] Utkarsh: Cool bro.
+[19/12/25, 1:05:23 PM] Utkarsh: Bro
+[19/12/25, 1:05:29 PM] Utkarsh: Free hoga toh call krna ek brr.
+[19/12/25, 1:05:36 PM] Suvansh Verma: Hey
+[19/12/25, 1:05:36 PM] Utkarsh: Regarding the Assignment.
+[19/12/25, 1:06:17 PM] Suvansh Verma: Sure, I am out at the moment. Will have access to my laptop in the next 1.5 hours
+[19/12/25, 1:06:24 PM] Utkarsh: Cool bro.
+[19/12/25, 1:06:31 PM] Utkarsh: Bs 3 PM se pehle need to have it ready.
+[19/12/25, 1:06:39 PM] Utkarsh: Review krwa ke send krdenge aaj.
+[19/12/25, 1:06:41 PM] Suvansh Verma: Okay
+[19/12/25, 1:06:44 PM] Utkarsh: Yes.
+[19/12/25, 2:44:29 PM] Utkarsh: Bro did you get a chance to check the Comms/ Assignment?
+[19/12/25, 3:07:45 PM] Suvansh Verma: Will check it in 10mins
+[19/12/25, 3:07:50 PM] Suvansh Verma: About to reach home
+[23/12/25, 9:03:27 AM] Suvansh Verma: Hey bro
+[23/12/25, 9:03:39 AM] Suvansh Verma: Did you check the final draft?
+[23/12/25, 9:03:51 AM] Suvansh Verma: Bhejdu na learners ko?
+[23/12/25, 10:41:25 AM] Suvansh Verma: Bhej diya
+[23/12/25, 10:59:18 AM] Utkarsh: Amazing.
+[23/12/25, 7:49:45 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[02/01/26, 12:35:10 PM] Utkarsh: Hi Suvansh,
+Happy New Year! 🎉
+It’s been great working so closely with you this year — I’ve really enjoyed the collaboration, discussions, and the way we’ve worked through things together. Thanks for all the support and teamwork. Looking forward to building more impactful work and learning together in the year ahead 😊✨
+Wishing you a happy, healthy, and successful year ahead! 🌟
+[02/01/26, 12:35:36 PM] Suvansh Verma: Hey buddy
+[02/01/26, 12:36:25 PM] Suvansh Verma: Happy New Year! It has been a pleasure working with you as well. Let’s start the year with a bang ⚡️
+[02/01/26, 12:38:26 PM] Utkarsh: Absolutely bro.
+[05/01/26, 3:20:34 PM] Suvansh Verma: Hey bro
+[05/01/26, 3:20:41 PM] Suvansh Verma: Lowe’s ke dates confirmed hai?
+‎[05/01/26, 3:31:36 PM] Utkarsh: ‎<attached: 00000846-AUDIO-2026-01-05-15-31-36.opus>
+[05/01/26, 3:42:19 PM] Suvansh Verma: Cool
+[07/01/26, 2:13:17 PM] Suvansh Verma: Quick one regarding the assignment: we received comment from one learner that it’s a challenge to do it as the tools are blocked in our system
+[07/01/26, 2:13:31 PM] Suvansh Verma: Message from John on the assignment part
+‎[12/01/26, 11:38:57 AM] Suvansh Verma: ‎<attached: 00000850-PHOTO-2026-01-12-11-38-57.jpg>
+[12/01/26, 3:49:16 PM] Suvansh Verma: Any update from John on the call?
+[12/01/26, 3:49:26 PM] Suvansh Verma: Shall I share the invite?
+[12/01/26, 3:49:36 PM] Utkarsh: Yes we can go ahead.
+[12/01/26, 3:49:44 PM] Utkarsh: Can you send the Ops MS Account?
+[12/01/26, 3:49:49 PM] Utkarsh: I’ll ask John to give that a try.
+[12/01/26, 3:53:49 PM] Suvansh Verma: Shared it Slack
+[12/01/26, 3:54:27 PM] Utkarsh: Thanks
+[12/01/26, 4:33:10 PM] Suvansh Verma: Need to connect for 30mins for Nucleus
+[12/01/26, 4:33:20 PM] Suvansh Verma: Let me know what time suits
+[12/01/26, 4:33:26 PM] Suvansh Verma: Will share the invite
+[12/01/26, 8:57:34 PM] Suvansh Verma: Bro
+[12/01/26, 8:58:03 PM] Suvansh Verma: John will check the Ops email id waala thing tomorrow morning and confirm
+[12/01/26, 8:58:12 PM] Suvansh Verma: Not having the call today
+[12/01/26, 9:46:57 PM] Utkarsh: Cool bro.
+[13/01/26, 1:35:32 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[13/01/26, 1:35:50 PM] Utkarsh: Calling in 5 bro.
+[13/01/26, 1:35:57 PM] Suvansh Verma: Cool
+[13/01/26, 1:36:02 PM] Suvansh Verma: Spoke to john
+[13/01/26, 1:36:08 PM] Suvansh Verma: Want to update you
+[16/01/26, 10:46:29 AM] Suvansh Verma: Hey bro
+[16/01/26, 10:46:36 AM] Suvansh Verma: Will be 2-3mins late
+[16/01/26, 10:46:52 AM] Utkarsh: Sure bro.
+[16/01/26, 10:46:55 AM] Utkarsh: No worries
+[16/01/26, 11:06:25 AM] Suvansh Verma: I thought the call is at 11 😅
+[16/01/26, 11:06:32 AM] Suvansh Verma: I’ll be on time
+[16/01/26, 1:44:33 PM] Suvansh Verma: ‎Voice call, ‎1 min
+[16/01/26, 1:49:39 PM] Suvansh Verma: If we given them 1 week access, how much will it cost?
+[16/01/26, 1:50:04 PM] Utkarsh: prolly 7-8K
+[16/01/26, 1:50:10 PM] Suvansh Verma: Okay
+[16/01/26, 1:50:30 PM] Utkarsh: Have to check but phr ChatGPT/ Copilot ka paid access we can’t give.
+[16/01/26, 1:50:43 PM] Utkarsh: That will increase the cost by a lot.
+[16/01/26, 1:53:05 PM] Suvansh Verma: Okay
+[16/01/26, 1:53:27 PM] Suvansh Verma: Ek baar calculate kar lete hai before our call
+[16/01/26, 5:03:13 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+‎[18/01/26, 7:55:08 AM] Utkarsh: ‎<attached: 00000885-PHOTO-2026-01-18-07-55-08.jpg>
+[18/01/26, 7:55:16 AM] Utkarsh: Bro ye dekhlena kl.
+[18/01/26, 8:50:04 AM] Suvansh Verma: Done
+[18/01/26, 8:50:09 AM] Suvansh Verma: Shared the invite
+[18/01/26, 8:50:43 AM] Suvansh Verma: Also, I have scheduled everything on Uplevel. Added NP Team folks as well in the cohort.
+[18/01/26, 8:54:28 AM] Suvansh Verma: Who is working on the Aiexplorer id distribution and credentials part?
+[18/01/26, 9:42:13 PM] Utkarsh: Can you pls add Madan and Anshuman to the e& dry run tomorrow
+[18/01/26, 9:42:14 PM] Utkarsh: bapnaa@gmail.com
+[18/01/26, 9:42:14 PM] Utkarsh: madan.rawtani@interviewkickstart.com
+[18/01/26, 9:42:14 PM] Utkarsh: From Ryan
+[18/01/26, 9:42:19 PM] Utkarsh: Tanvinder is.
+[18/01/26, 9:44:45 PM] Suvansh Verma: Cool
+[18/01/26, 9:44:53 PM] Suvansh Verma: Will add them
+[18/01/26, 9:47:43 PM] Suvansh Verma: Added both of them
+[18/01/26, 9:48:59 PM] Utkarsh: Thanks bro.
+[19/01/26, 5:18:33 PM] Utkarsh: Bro
+[19/01/26, 5:18:39 PM] Utkarsh: Have you sent it across
+[19/01/26, 5:18:42 PM] Utkarsh: The mail to everyone
+[19/01/26, 5:47:14 PM] Suvansh Verma: Sent to 3 leaders
+[19/01/26, 7:57:29 PM] Utkarsh: Cool.
+[19/01/26, 7:57:35 PM] Utkarsh: We can send it out to others as well.
+[19/01/26, 7:57:40 PM] Utkarsh: Most likely koi dekhega ni.
+[19/01/26, 7:57:47 PM] Utkarsh: Faiza will have to show them completely.
+[19/01/26, 7:57:52 PM] Suvansh Verma: Already sent it
+[19/01/26, 7:58:00 PM] Utkarsh: Yr pta ye Dry Run kaafi pehle krna tha.
+[19/01/26, 7:58:15 PM] Utkarsh: Have been seriously following up for the last 1 week for a slot.
+[19/01/26, 7:58:16 PM] Suvansh Verma: Haaan, bohot close hai.
+[19/01/26, 7:58:22 PM] Utkarsh: And review with Ryan.
+[19/01/26, 7:58:38 PM] Suvansh Verma: Not your fault. You have been following up everyday.
+[19/01/26, 7:58:50 PM] Utkarsh: And last moment so much reviews, suggestions, and then 2 new people are coming in giving feedback.
+[19/01/26, 7:58:49 PM] Suvansh Verma: I have heard at least 6-7 times last week
+[19/01/26, 7:58:54 PM] Utkarsh: Wahi bhai.
+[19/01/26, 7:59:04 PM] Utkarsh: I have pinged, dm’d done literally everything.
+[19/01/26, 7:59:43 PM] Utkarsh: We could have easily done the 5:15 PM call as well last week.
+[19/01/26, 7:59:59 PM] Utkarsh: We literally added Ryan in Anand’s call last week but then we are discussing everything today.
+[19/01/26, 8:00:18 PM] Utkarsh: We really can’t have so much feedback less than 24 hrs before the actual session yr.
+[19/01/26, 8:00:19 PM] Suvansh Verma: Bohot end moment hai
+[19/01/26, 8:00:31 PM] Utkarsh: Yup.
+[19/01/26, 8:00:45 PM] Utkarsh: We are literally rethinking everything today.
+[19/01/26, 8:00:45 PM] Suvansh Verma: Instructor ke uper bhi pressure aata hai
+[19/01/26, 8:00:49 PM] Utkarsh: Wahi.
+[19/01/26, 8:00:56 PM] Utkarsh: Bhai mai isme ky hi kr skta tha.
+[19/01/26, 8:01:05 PM] Suvansh Verma: Literally session 12 ghante baad mein
+[19/01/26, 8:01:06 PM] Utkarsh: I can’t give feedback which Ryan/ Soham can.
+[19/01/26, 8:01:21 PM] Suvansh Verma: Stress na kar
+[19/01/26, 8:01:31 PM] Utkarsh: I can’t provide that expertise, they will only have to or someone else senior has too.
+[19/01/26, 8:01:43 PM] Suvansh Verma: Abhi iske baad connect karte hai and streamline kar lenge.
+[19/01/26, 8:01:49 PM] Suvansh Verma: Don’t worry
+[19/01/26, 8:01:55 PM] Utkarsh: Madan last week bhi kr skta tha but inko last moment krna h.
+[19/01/26, 8:19:32 PM] Utkarsh: Bro
+[19/01/26, 8:19:35 PM] Utkarsh: Can you check if this works.
+[19/01/26, 8:19:38 PM] Utkarsh: But does CTRL + C work in general on the VM.
+[19/01/26, 8:30:35 PM] Suvansh Verma: Checking
+[19/01/26, 8:30:44 PM] Utkarsh: Sure.
+[19/01/26, 8:30:52 PM] Suvansh Verma: Agent building ab start hoga?
+[19/01/26, 8:32:00 PM] Utkarsh: Ha.
+[19/01/26, 8:33:40 PM] Suvansh Verma: n8n ka link kaha hai?
+[19/01/26, 8:33:49 PM] Utkarsh: https://app.n8n.cloud/login
+[19/01/26, 8:33:54 PM] Utkarsh: This is it.
+[19/01/26, 8:34:02 PM] Suvansh Verma: This will work, right?
+[19/01/26, 8:34:09 PM] Suvansh Verma: Cool
+[19/01/26, 8:34:11 PM] Utkarsh: Ha bro VM pe check kr once.
+[19/01/26, 8:34:23 PM] Utkarsh: Can you check once.
+[19/01/26, 8:34:34 PM] Suvansh Verma: Koi bhi VM use karlu abhi?
+[19/01/26, 8:34:42 PM] Utkarsh: Ha.
+[19/01/26, 8:34:44 PM] Utkarsh: Anything.
+[19/01/26, 8:44:55 PM] Utkarsh: Is it working?
+[19/01/26, 8:46:25 PM] Suvansh Verma: Yes
+[19/01/26, 8:46:35 PM] Utkarsh: Cool.
+[19/01/26, 8:56:26 PM] Suvansh Verma: This is also working for me
+[19/01/26, 8:56:55 PM] Utkarsh: Cool.
+[19/01/26, 8:57:07 PM] Utkarsh: Bhai this works, but Leaders are again not very hands-on people yr.
+[19/01/26, 8:57:19 PM] Utkarsh: We really can’t do this on VMs when we plan to scale it
+[19/01/26, 8:57:26 PM] Utkarsh: Half of the class will go in that only.
+[19/01/26, 8:57:28 PM] Suvansh Verma: Yes, we cannot.
+[19/01/26, 8:57:36 PM] Utkarsh: Kch figure out krna hoga.
+[19/01/26, 8:57:46 PM] Suvansh Verma: Or we need to keep a separate session one day before the first class.
+[19/01/26, 8:58:01 PM] Suvansh Verma: Orientation, set up etc can be done 1 day before.
+[19/01/26, 8:58:52 PM] Utkarsh: Ha.
+[19/01/26, 8:58:57 PM] Utkarsh: Anything but not in the Class.
+[19/01/26, 8:59:08 PM] Suvansh Verma: Yes, woh process hamper karega.
+[19/01/26, 8:59:15 PM] Utkarsh: Ha we will have to take some stand against this.
+[19/01/26, 8:59:23 PM] Utkarsh: This cannot be non-negotiable.
+[19/01/26, 8:59:29 PM] Suvansh Verma: 1 day before is perfectly fine.
+[19/01/26, 8:59:33 PM] Utkarsh: Vrna Clients will always say tk main day me kr lenge.
+[19/01/26, 8:59:35 PM] Suvansh Verma: True true
+[19/01/26, 8:59:38 PM] Utkarsh: Yes
+[19/01/26, 9:21:41 PM] Suvansh Verma: Bhai
+[19/01/26, 9:21:57 PM] Utkarsh: Yes bro.
+[19/01/26, 9:22:17 PM] Suvansh Verma: Sab sahi chal raha hai mere yaha
+[19/01/26, 9:22:28 PM] Utkarsh: I know yr
+[19/01/26, 9:22:30 PM] Suvansh Verma: Very smooth, without any issue.
+[19/01/26, 9:22:32 PM] Utkarsh: Mko ni pta ky h.
+[19/01/26, 9:22:40 PM] Utkarsh: I don’t even want to debate it anymore.
+[19/01/26, 9:22:49 PM] Suvansh Verma: Copy bhi ho raha hai sab
+[19/01/26, 9:22:50 PM] Utkarsh: They will just say Leaders don’t have patience.
+[19/01/26, 9:22:57 PM] Utkarsh: I know bro mera bhi ho rha h.
+[19/01/26, 9:23:04 PM] Utkarsh: I don’t know what to say.
+[19/01/26, 9:23:08 PM] Suvansh Verma: Doc bhi khul raha hai
+[19/01/26, 9:23:19 PM] Utkarsh: I will add them as bookmarks it’s fine yr.
+[19/01/26, 9:23:24 PM] Utkarsh: We just want them to have the best experience.
+[19/01/26, 9:23:34 PM] Suvansh Verma: Haan, woh karde.
+[19/01/26, 9:23:36 PM] Utkarsh: Aaj raat bhr party hoga work ka.
+[19/01/26, 9:23:40 PM] Utkarsh: 😂
+[19/01/26, 9:23:47 PM] Suvansh Verma: Chup ho jayenge
+[19/01/26, 9:23:57 PM] Utkarsh: Can you help in few VMs.
+[19/01/26, 9:24:02 PM] Utkarsh: I will tell you exactly kaise krna h.
+[19/01/26, 9:24:12 PM] Suvansh Verma: Haan, batade kaise karna hai.
+[19/01/26, 9:24:20 PM] Utkarsh: Ha sending you a sample in 5 min.
+[19/01/26, 9:24:39 PM] Suvansh Verma: Let’s distribute work and get done with it.
+[19/01/26, 9:24:50 PM] Utkarsh: Yes bro.
+[19/01/26, 9:24:52 PM] Utkarsh: Ho jayega.
+[19/01/26, 9:25:07 PM] Utkarsh: Hum ek din pehle Dry Run krke zyda tension le rhe h.
+[19/01/26, 9:25:16 PM] Suvansh Verma: Yess
+[19/01/26, 9:25:23 PM] Utkarsh: And I feel folks on the call are trying to over optimize.
+[19/01/26, 9:25:29 PM] Utkarsh: Since they just came in loop.
+[19/01/26, 9:25:33 PM] Utkarsh: But hum kr lenge.
+[19/01/26, 9:25:37 PM] Utkarsh: Sorted rhga kl.
+[19/01/26, 9:25:48 PM] Suvansh Verma: Pehele sessions kare hai humne and sab sahi jayega
+[19/01/26, 9:25:58 PM] Utkarsh: Wahi.
+‎[19/01/26, 9:36:25 PM] Utkarsh: ‎<attached: 00001005-PHOTO-2026-01-19-21-36-25.jpg>
+[19/01/26, 9:36:34 PM] Utkarsh: We have to do this tu 11-20 krle.
+[19/01/26, 9:36:37 PM] Utkarsh: I will do 1-10.
+[19/01/26, 9:36:41 PM] Utkarsh: Let me send you name and links.
+[19/01/26, 9:36:41 PM] Suvansh Verma: Cool
+[19/01/26, 9:38:12 PM] Utkarsh: - Gmail Login - 
+https://mail.google.com/mail/u/0/#inbox
+- Extra AI Expert - https://www.app.expertex.ai/
+- ⁠n8n - 
+https://app.n8n.cloud/login
+- Session 2 Guidebook - 
+https://docs.google.com/document/d/1QsGxZXTfaN0UZgqsyht6o9D_Vl757C29yE-mkwAGbHE/edit?tab=t.0
+- Session 3 Guidebook - https://docs.google.com/document/d/1PzfNCUaj6_n5uH-TtKyzLw0RcnwTwiMET2KFkzHwrBk/edit?tab=t.0
+[19/01/26, 9:38:16 PM] Utkarsh: This bro.
+[19/01/26, 9:38:25 PM] Utkarsh: I’ll get started on my end for the first 10.
+[19/01/26, 9:38:35 PM] Suvansh Verma: Cool
+‎[19/01/26, 9:39:06 PM] Suvansh Verma: ‎<attached: 00001014-PHOTO-2026-01-19-21-39-06.jpg>
+[19/01/26, 9:39:24 PM] Suvansh Verma: Uper add ho gaye hai bookmark (top left)
+[19/01/26, 9:39:46 PM] Utkarsh: Ha anywhere is fine.
+[19/01/26, 9:39:52 PM] Utkarsh: n8n single krde.
+[19/01/26, 9:39:55 PM] Utkarsh: Web store remove krde.
+[19/01/26, 9:40:03 PM] Utkarsh: Ya let Web store be.
+[19/01/26, 9:40:04 PM] Utkarsh: Leave it.
+[19/01/26, 9:40:14 PM] Utkarsh: Bs This + Web store.
+[19/01/26, 9:40:26 PM] Utkarsh: Leave nothing else remove duplicates to avoid confusion.
+[19/01/26, 9:40:28 PM] Suvansh Verma: Ho gaya sort
+[19/01/26, 9:41:14 PM] Utkarsh: Sorted.
+[19/01/26, 9:42:01 PM] Utkarsh: When API Key is asked ye send krdena in Chat.
+- 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
+[19/01/26, 9:43:56 PM] Suvansh Verma: Already share kardi hai maine
+[19/01/26, 10:23:10 PM] Utkarsh: Bro iss Col me Done krdena - Bookmark Added
+[19/01/26, 10:23:20 PM] Utkarsh: Once completed from your end.
+Thanks
+[19/01/26, 10:25:57 PM] Suvansh Verma: Hone waala hai bus
+[19/01/26, 10:26:18 PM] Suvansh Verma: Can you share the link for Anand’s call?
+[19/01/26, 10:32:19 PM] Utkarsh: Yes.
+[19/01/26, 10:32:26 PM] Utkarsh: https://meet.google.com/chk-sdav-ebt?authuser=1
+[19/01/26, 10:41:46 PM] Suvansh Verma: Done for all
+[19/01/26, 10:41:59 PM] Suvansh Verma: 20 waale mein kuch issue as raha hai
+[19/01/26, 10:42:01 PM] Utkarsh: Perfect mera bhi hogya bro.
+[19/01/26, 10:42:07 PM] Suvansh Verma: 19 tak sab done
+[19/01/26, 10:42:14 PM] Utkarsh: unoagenticaijanuser20
+[19/01/26, 10:42:18 PM] Suvansh Verma: Yes
+[19/01/26, 10:42:25 PM] Utkarsh: Ping krta hu Tanvinder ko.
+[19/01/26, 10:42:27 PM] Suvansh Verma: Uske chrome pe kuch khula hua hai
+[19/01/26, 10:42:31 PM] Utkarsh: What is the issue that is happening?
+[19/01/26, 10:42:43 PM] Suvansh Verma: It was being used in the last call
+[19/01/26, 10:43:14 PM] Utkarsh: Ha yes
+[19/01/26, 10:43:17 PM] Suvansh Verma: So n8n khula hua hai and tabs weird act kar rahe hai
+[19/01/26, 11:53:34 PM] Utkarsh: Bro
+[19/01/26, 11:53:38 PM] Utkarsh: Can you join here.
+[19/01/26, 11:53:40 PM] Suvansh Verma: Yes
+[19/01/26, 11:54:10 PM] Utkarsh: Video call link: https://meet.google.com/mrj-xpuj-bvi
+[20/01/26, 11:04:11 AM] Utkarsh: Bro
+[20/01/26, 11:04:17 AM] Utkarsh: ye 3 PM kyu bol rha.
+[20/01/26, 11:04:26 AM] Utkarsh: It will go until 4 😅
+[20/01/26, 11:04:34 AM] Utkarsh: Ek brr ping krde isko.
+[20/01/26, 11:04:35 AM] Suvansh Verma: Pagal hai saala
+[20/01/26, 11:04:36 AM] Utkarsh: Later.
+[20/01/26, 11:04:43 AM] Utkarsh: Wahi na.
+[20/01/26, 11:04:43 AM] Suvansh Verma: Soham ne bhi kal inform kiya tha isko
+[20/01/26, 11:04:55 AM] Utkarsh: Ha I know.
+[20/01/26, 11:05:03 AM] Suvansh Verma: Hey John,
+I feel we should update the invite till 4:30 Dubai time for tomorrow. Considering the orientation, introduction etc, the session will be extended a bit.
+[20/01/26, 11:05:03 AM] Suvansh Verma: Hi Suvansh. Let’s just inform the audience tom as it’s a bit late now. We just have to manage it tomorrow.
+[20/01/26, 11:05:07 AM] Suvansh Verma: Yeh dekh
+[20/01/26, 11:05:20 AM] Utkarsh: Acha ha.
+[20/01/26, 11:05:33 AM] Utkarsh: Tk h isko ping krna when Ryan is doing the Orientation.
+[20/01/26, 11:24:01 AM] Suvansh Verma: Ryan ne bol diya
+[20/01/26, 11:24:09 AM] Suvansh Verma: Let’s see kaise karenge ab
+[20/01/26, 11:29:20 AM] Utkarsh: Ha bro.
+[20/01/26, 11:38:18 AM] Utkarsh: What do we put as email id at the top of the form? Our email address?
+[20/01/26, 11:38:21 AM] Utkarsh: Their own mail id.
+[20/01/26, 11:38:23 AM] Utkarsh: reply krde.
+[20/01/26, 11:40:07 AM] Suvansh Verma: Sorry bro
+[20/01/26, 11:40:15 AM] Suvansh Verma: Groups bana raha tha
+[20/01/26, 11:40:21 AM] Suvansh Verma: Karthika ne kar diya hai
+[20/01/26, 11:40:27 AM] Utkarsh: No worries.
+[20/01/26, 11:40:30 AM] Utkarsh: I think we can also reply.
+[20/01/26, 11:40:36 AM] Utkarsh: mai krdiya krunga chill h.
+[20/01/26, 11:40:37 AM] Suvansh Verma: Yes
+[20/01/26, 1:14:22 PM] Utkarsh: Bro how is the Session going far?
+[20/01/26, 1:15:40 PM] Suvansh Verma: Very gooooos
+[20/01/26, 1:15:46 PM] Utkarsh: Perfect.
+[20/01/26, 3:10:41 PM] Utkarsh: Hey everyone incase you are facing sign-in issues.
+
+Once you land on Extra AI Expert Platform, you can click on Sign in, and then in the next screen Login via Google.
+It will automatically login for you.
+Please let me know incase you are still facing any issues.
+Thanks
+[20/01/26, 3:10:47 PM] Utkarsh: Ye message krde Zoom Chat me.
+[20/01/26, 3:10:58 PM] Utkarsh: Or WhatsApp.
+[20/01/26, 3:16:25 PM] Suvansh Verma: Done
+[20/01/26, 3:36:02 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[20/01/26, 3:36:56 PM] Suvansh Verma: Step 1: Click on the n8n book on Google Chrome and you will land on Sign in to n8n Cloud
+Step 2: Click on Sign In (We have already enabled your uplevel assigned Gmail id)
+Step 3: You will successfully login and will land on the n8n Overview page
+[20/01/26, 3:48:00 PM] Utkarsh: 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
+[20/01/26, 4:19:18 PM] Utkarsh: Bro.
+[20/01/26, 4:19:25 PM] Utkarsh: Email krde isko.
+[20/01/26, 4:19:27 PM] Utkarsh: Calvin.
+[20/01/26, 4:21:29 PM] Suvansh Verma: Done boss
+[20/01/26, 4:21:34 PM] Suvansh Verma: Pehele he kar diya hai
+[20/01/26, 4:21:41 PM] Suvansh Verma: Uske AIexplorer id pe
+[20/01/26, 4:21:42 PM] Utkarsh: Acha perfect.
+[20/01/26, 6:25:33 PM] Suvansh Verma: Hey John,
+For tomorrow’s session, we are expecting Anand’s session to extend by around 15mins.
+
+Renato’s session will be 30 to 35mins and closing ceremony + feedback around 15-20min.
+[20/01/26, 6:25:49 PM] Suvansh Verma: John gave a Thumbs Up to this
+[20/01/26, 6:25:57 PM] Utkarsh: Awesome.
+[20/01/26, 7:54:56 PM] Suvansh Verma: Bro
+[20/01/26, 7:55:35 PM] Suvansh Verma: We’ll have to roll out the VM credentials for Pro Code assignment
+[20/01/26, 7:56:09 PM] Suvansh Verma: Let’s get that done by tomorrow evening or Thursday morning.
+[20/01/26, 7:56:14 PM] Suvansh Verma: John followed up
+[21/01/26, 8:57:21 AM] Utkarsh: Sure I can get it done today.
+[21/01/26, 8:57:33 AM] Utkarsh: Can you share learner list and the duration for which we want to share it?
+[21/01/26, 8:58:04 AM] Suvansh Verma: Sure
+[21/01/26, 8:58:11 AM] Suvansh Verma: Will send it in sometime
+[21/01/26, 8:58:16 AM] Utkarsh: Cool.
+[21/01/26, 8:58:28 AM] Utkarsh: Can we reuse from the Leaders Session
+[21/01/26, 8:58:38 AM] Utkarsh: That is completed so most likely they won’t need anymore na?
+[21/01/26, 8:58:47 AM] Utkarsh: I am referring to the Email IDs.
+[21/01/26, 9:02:10 AM] Suvansh Verma: Usko alag rakh sakte hai?
+[21/01/26, 9:02:32 AM] Utkarsh: New Accounts ban wane pdenge.
+[21/01/26, 9:02:39 AM] Utkarsh: And will have to configure a lot of things.
+[21/01/26, 9:02:45 AM] Suvansh Verma: Hmm
+[21/01/26, 9:02:46 AM] Utkarsh: Thda extra effort jayega that’s all.
+[21/01/26, 9:04:02 AM] Suvansh Verma: Agar separate ho sakta hai toh better hai
+[21/01/26, 9:04:22 AM] Utkarsh: Okay let me see
+[21/01/26, 9:04:29 AM] Suvansh Verma: By any chance agar leaders ko kuch access dena pada toh issue ho jayega
+[21/01/26, 9:04:37 AM] Utkarsh: Ha.
+[21/01/26, 9:04:40 AM] Utkarsh: Tk h no worries.
+[21/01/26, 9:04:47 AM] Suvansh Verma: End moment changes aate he hai John and all ke taraf se
+[21/01/26, 9:04:50 AM] Utkarsh: I have pinged Dheeraj for new Ids .
+[21/01/26, 10:03:50 AM] Utkarsh: https://docs.google.com/presentation/d/1HZ3kYBBA64_ZBr5mrsI75Y4iYVTriKkNe9HAecGuZxE/edit?slide=id.g3bafe793ff3_1_215#slide=id.g3bafe793ff3_1_215
+[21/01/26, 10:03:52 AM] Utkarsh: Bro
+[21/01/26, 10:03:55 AM] Utkarsh: ‎Voice call, ‎34 sec
+[21/01/26, 10:25:21 AM] Utkarsh: Ye
+[21/01/26, 11:12:54 AM] Suvansh Verma: Hey
+[21/01/26, 11:13:08 AM] Suvansh Verma: Do we need to share anything during the session today?
+[21/01/26, 11:13:18 AM] Utkarsh: Wo template I’m guessing.
+[21/01/26, 11:13:23 AM] Utkarsh: Nothing else.
+[21/01/26, 11:13:24 AM] Suvansh Verma: I am assuming we are not making any groups today.
+[21/01/26, 11:13:31 AM] Utkarsh: No bro.
+[21/01/26, 11:13:31 AM] Suvansh Verma: Which template?
+[21/01/26, 11:13:39 AM] Utkarsh: AI Canvas.
+[21/01/26, 11:14:01 AM] Suvansh Verma: Wait
+[21/01/26, 11:14:15 AM] Suvansh Verma: I’ll check and share it with you to cross check once
+[21/01/26, 11:14:17 AM] Utkarsh: https://interviewkickstarthq.slack.com/archives/C09SLFJARU1/p1768896012364189
+[21/01/26, 11:14:24 AM] Utkarsh: Ha this message check krle.
+[21/01/26, 12:38:39 PM] Utkarsh: Bro ye confirm krdena as soon as you can.
+I will need a 1-2 days to sort it out, and set everything up.
+
+I have given Tanvinder headsup but usko atleast 2 days lagega since it is 20 Accounts.
+Thanks
+[21/01/26, 12:39:18 PM] Suvansh Verma: sending
+[21/01/26, 2:52:59 PM] Utkarsh: Sure.
+[21/01/26, 2:53:17 PM] Suvansh Verma: Shared the list sometime back
+[21/01/26, 2:53:24 PM] Utkarsh: Ha saw it bro.
+[21/01/26, 2:53:27 PM] Suvansh Verma: Around 15 or 16 profiles
+[21/01/26, 2:53:31 PM] Utkarsh: For what duration shall we share it?
+[21/01/26, 2:53:36 PM] Suvansh Verma: 1 week
+[21/01/26, 2:53:40 PM] Utkarsh: Cool.
+[21/01/26, 2:53:43 PM] Suvansh Verma: Should be enough
+[21/01/26, 2:53:58 PM] Utkarsh: So we can share the creds from Fri onwards?
+[21/01/26, 2:54:08 PM] Utkarsh: This Fri to next week Sat?
+[21/01/26, 2:54:11 PM] Utkarsh: Does that work?
+[21/01/26, 2:59:49 PM] Suvansh Verma: Yes
+[21/01/26, 3:00:01 PM] Suvansh Verma: Thursday possible hai?
+[21/01/26, 3:01:30 PM] Utkarsh: It will be difficult bro, since Deloitte is also on Friday.
+[21/01/26, 3:01:36 PM] Utkarsh: Let’s keep it Friday itself, will be easier. ‎<This message was edited>
+[21/01/26, 3:11:44 PM] Suvansh Verma: Okay
+[21/01/26, 3:12:05 PM] Suvansh Verma: Friday ko bhej dete hai and next Saturday access hata denge
+[21/01/26, 3:12:10 PM] Utkarsh: Cool bro.
+[21/01/26, 3:12:12 PM] Utkarsh: Done.
+[21/01/26, 5:52:36 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[21/01/26, 6:05:58 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[22/01/26, 11:04:31 AM] Suvansh Verma: ‎Missed group call, ‎3 invited
+[22/01/26, 12:20:07 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[22/01/26, 1:04:18 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+‎[22/01/26, 1:06:55 PM] Utkarsh: ‎<attached: 00001162-PHOTO-2026-01-22-13-06-55.jpg>
+[22/01/26, 5:04:05 PM] Utkarsh: Bro Aashish is running late.
+[22/01/26, 5:04:07 PM] Utkarsh: So we can start.
+[22/01/26, 5:04:12 PM] Utkarsh: Call with Ryan.
+[22/01/26, 5:04:24 PM] Suvansh Verma: Okay
+[22/01/26, 5:29:05 PM] Utkarsh: Can you call Karthika once.
+[22/01/26, 5:29:11 PM] Utkarsh: To join here?
+[22/01/26, 5:35:56 PM] Suvansh Verma: I’ll ask her
+[22/01/26, 6:35:49 PM] Suvansh Verma: ‎Voice call, ‎1 min
+[22/01/26, 6:42:19 PM] Utkarsh: It will be ready by 7:30 PM bro.
+[22/01/26, 6:42:20 PM] Utkarsh: Thanks
+[22/01/26, 6:42:26 PM] Suvansh Verma: Cool
+[22/01/26, 6:42:26 PM] Utkarsh: Incase thda late bhi hota toh fine h.
+[22/01/26, 6:42:32 PM] Utkarsh: Kl call pe 10 min rkha h.
+[22/01/26, 6:42:40 PM] Utkarsh: Toh everything is pre-logged in only.
+[22/01/26, 6:42:42 PM] Utkarsh: So should be fine.
+[22/01/26, 6:42:55 PM] Utkarsh: Will set expectation with Faiza toh give a walkthrough.
+[22/01/26, 6:42:59 PM] Utkarsh: You will join Faiza
+[22/01/26, 6:43:03 PM] Utkarsh: call right?
+[22/01/26, 6:43:05 PM] Suvansh Verma: Cool
+[22/01/26, 6:43:16 PM] Suvansh Verma: Yes, I’ll join for sometime.
+[22/01/26, 6:43:36 PM] Suvansh Verma: Have to step out around 8:15
+[22/01/26, 6:44:03 PM] Utkarsh: Cool bro.
+[22/01/26, 6:44:06 PM] Utkarsh: Wo 7 bje h.
+[22/01/26, 6:44:13 PM] Utkarsh: We will wrap it up in 30 min.
+[22/01/26, 8:38:16 PM] Suvansh Verma: Creds shared
+[22/01/26, 10:23:47 PM] Utkarsh: Perfect.
+[23/01/26, 7:39:35 AM] Utkarsh: Bro
+[23/01/26, 7:39:37 AM] Utkarsh: AI Builder Program (Low Code) | Day 3
+[23/01/26, 7:39:47 AM] Utkarsh: isko and Day 4 ko cancel krde.
+[23/01/26, 7:39:52 AM] Utkarsh: 28th and 29th.
+[23/01/26, 7:39:56 AM] Utkarsh: We will have send new invite.
+[23/01/26, 7:40:04 AM] Utkarsh: Day 1 will start from 28th.
+[23/01/26, 10:25:46 AM] Suvansh Verma: Okay
+[23/01/26, 10:26:03 AM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[23/01/26, 10:26:14 AM] Suvansh Verma: Hey Bro
+[23/01/26, 10:26:35 AM] Suvansh Verma: Hope the VMs will be ready today for Pro Code. John followed up again 10mins backx
+[23/01/26, 12:33:29 PM] Utkarsh: https://cloudlabs.nuvepro.com/company/UpwardandOnward/home
+[23/01/26, 12:37:55 PM] Utkarsh: Yr ek message daal de for everyone to maximise the chrome screen for better experience.
+[23/01/26, 12:38:26 PM] Suvansh Verma: Okay
+[23/01/26, 12:41:51 PM] Utkarsh: She shouldn’t say this bro.
+[23/01/26, 12:45:23 PM] Suvansh Verma: What?
+[23/01/26, 12:45:37 PM] Suvansh Verma: VM doesnt work well waali baat?
+[23/01/26, 12:45:42 PM] Utkarsh: Ha bhai.
+[23/01/26, 12:45:45 PM] Suvansh Verma: Haaan
+[23/01/26, 12:45:47 PM] Utkarsh: Ye sb kyu bolna.
+[23/01/26, 12:45:49 PM] Utkarsh: But tk h.
+[23/01/26, 12:45:50 PM] Suvansh Verma: Pointless hai
+[23/01/26, 12:45:56 PM] Utkarsh: Sometimes she does that.
+[23/01/26, 12:46:01 PM] Suvansh Verma: Haan
+[23/01/26, 12:46:06 PM] Utkarsh: She rambles.
+[23/01/26, 12:46:10 PM] Utkarsh: But tk h going well so far.
+[23/01/26, 1:05:59 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+‎[23/01/26, 3:33:54 PM] Utkarsh: ‎<attached: 00001215-PHOTO-2026-01-23-15-33-54.jpg>
+[23/01/26, 9:06:36 PM] Utkarsh: Hey bro
+[23/01/26, 9:06:38 PM] Utkarsh: Free?
+[23/01/26, 9:07:36 PM] Utkarsh: ‎Voice call, ‎6 min
+[23/01/26, 9:07:41 PM] Utkarsh: https://docs.google.com/spreadsheets/d/1JhB1Lw4Y_4VwYg8hM98HgTL3btWWiUM_/edit?gid=1546258436#gid=1546258436
+[24/01/26, 6:30:16 PM] Suvansh Verma: Hey bro
+[24/01/26, 6:30:43 PM] Suvansh Verma: Is the onboarding form for Low Code ready?
+[25/01/26, 12:12:47 AM] Utkarsh: Hey bro
+[25/01/26, 12:12:52 AM] Utkarsh: I was all day busy with something
+[25/01/26, 12:12:56 AM] Utkarsh: Yes it is ready.
+[25/01/26, 12:13:00 AM] Utkarsh: Last time wala use krna h.
+[25/01/26, 12:13:09 AM] Utkarsh: We can check once with Soham to review, and send it out.
+[25/01/26, 12:13:24 AM] Utkarsh: Give me a call tom morning and we can discuss.
+[26/01/26, 2:32:44 PM] Utkarsh: Bro
+[26/01/26, 2:32:47 PM] Utkarsh: Let’s catchup on this?
+[26/01/26, 2:32:55 PM] Utkarsh: John ke sth call thi avi toh we have to send it out today.
+[26/01/26, 2:35:01 PM] Suvansh Verma: Hey
+[26/01/26, 2:35:05 PM] Suvansh Verma: Sure, we can do it.
+[26/01/26, 3:08:44 PM] Suvansh Verma: Email is ready and onboarding form basic ready kar diya hai
+[26/01/26, 3:08:57 PM] Suvansh Verma: Sending it for review.
+[26/01/26, 3:11:31 PM] Utkarsh: https://interviewkickstarthq.slack.com/archives/C09DM9Q0927/p1763003631169769
+[26/01/26, 4:29:54 PM] Suvansh Verma: Hey bro
+[26/01/26, 4:30:06 PM] Suvansh Verma: Everything is ready from my side.
+[26/01/26, 4:30:34 PM] Suvansh Verma: Sent a draft sometime back. Let me know if we are good to go with the form.
+[26/01/26, 8:03:10 PM] Utkarsh: ‎Voice call, ‎6 min
+[26/01/26, 8:08:17 PM] Utkarsh: https://cloudlabs.nuvepro.com/company/upwardndonward/home
+[27/01/26, 10:49:25 PM] Suvansh Verma: Hey bro ‎<This message was edited>
+[27/01/26, 10:49:55 PM] Suvansh Verma: Just got an email from a Learner. He is facing an error with the SERP Key
+[27/01/26, 10:50:01 PM] Suvansh Verma: Throwing an error
+[27/01/26, 11:07:10 PM] Utkarsh: Let me check.
+[27/01/26, 11:07:21 PM] Utkarsh: Uska email forward krna.
+[27/01/26, 11:07:59 PM] Suvansh Verma: Sent
+[27/01/26, 11:08:32 PM] Utkarsh: Expert ex sign via google krna h.
+[27/01/26, 11:08:40 PM] Utkarsh: Literally guide me likha h 😅
+[27/01/26, 11:09:18 PM] Utkarsh: SERP api ka checking.
+[27/01/26, 11:12:44 PM] Utkarsh: Quick call?
+[27/01/26, 11:12:58 PM] Utkarsh: Bhai someone has dragged the sheet thing I am not sure.
+[27/01/26, 11:13:08 PM] Utkarsh: SERP API sheet pe glt added h for almost everyone
+[27/01/26, 11:13:10 PM] Utkarsh: 42a62f9de3ed93e1a84a19aa1273dc1c90e91025bdc353a2e766708004c6e393
+[27/01/26, 11:13:13 PM] Utkarsh: This is the single key.
+[27/01/26, 11:13:39 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[27/01/26, 11:13:45 PM] Utkarsh: ‎Voice call, ‎6 min
+[27/01/26, 11:13:48 PM] Suvansh Verma: Fucks
+[27/01/26, 11:17:29 PM] Utkarsh: 42a62f9de3ed93e1a84a19aa1273dc1c90e91025bdc353a2e766708004c6e393
+[28/01/26, 11:55:07 AM] Suvansh Verma: Hey bro
+[28/01/26, 11:55:24 AM] Utkarsh: Ha bro.
+[28/01/26, 11:55:26 AM] Suvansh Verma: For Pro Code assignment, we got a mail from a learner. ‎<This message was edited>
+[28/01/26, 11:58:05 AM] Utkarsh: Ky mail?
+[28/01/26, 11:58:08 AM] Utkarsh: Any issues?
+[28/01/26, 11:58:15 AM] Suvansh Verma: Forward kiya hai tujhe
+[28/01/26, 11:58:35 AM] Utkarsh: Acha let me see.
+[28/01/26, 11:59:56 AM] Utkarsh: Bhai Github toh paid h islie ni kra tha humne.
+[28/01/26, 12:00:03 PM] Utkarsh: Isko blank krke bheja tha ky?
+‎[28/01/26, 12:00:22 PM] Utkarsh: Did we send the mail like this? ‎<attached: 00001268-PHOTO-2026-01-28-12-00-22.jpg>
+[28/01/26, 12:00:30 PM] Utkarsh: Or isne purana kch send kra h.
+[28/01/26, 12:01:14 PM] Suvansh Verma: Yeh puraana waala hai. Woh bol raha hai is format mein details do 🤣
+[28/01/26, 12:01:23 PM] Suvansh Verma: Do we need Github for the assignment?
+[28/01/26, 12:01:28 PM] Utkarsh: Not required.
+[28/01/26, 12:01:35 PM] Utkarsh: They can do via Firebase.
+[28/01/26, 12:01:40 PM] Suvansh Verma: Okay
+[28/01/26, 12:01:44 PM] Utkarsh: Also Langmsith, Tavily n all that needed hi ni h.
+[28/01/26, 12:02:56 PM] Utkarsh: We can share this if needed
+[28/01/26, 12:03:01 PM] Utkarsh: Shouldn’t be a problem.
+[28/01/26, 12:03:07 PM] Utkarsh: But other things are not required.
+[28/01/26, 12:04:07 PM] Utkarsh: Let’s discuss this today.
+[28/01/26, 12:09:47 PM] Utkarsh: Bro ask her to give me a minute.
+[28/01/26, 12:09:53 PM] Utkarsh: I’ll go in her lab and check.
+[28/01/26, 12:10:05 PM] Suvansh Verma: Okay
+[28/01/26, 12:11:10 PM] Utkarsh: It should work now.
+[28/01/26, 12:11:17 PM] Utkarsh: Ask her to click on the bookmark.
+[28/01/26, 5:09:28 PM] Utkarsh: Bro
+[28/01/26, 5:09:31 PM] Utkarsh: approve krde.
+‎[28/01/26, 5:09:40 PM] Utkarsh: ‎<attached: 00001287-PHOTO-2026-01-28-17-09-40.jpg>
+[28/01/26, 5:09:46 PM] Utkarsh: Authenticator pe.
+[28/01/26, 5:09:48 PM] Utkarsh: ‎Voice call, ‎1 min
+‎[28/01/26, 5:16:07 PM] Utkarsh: Yaha pe shyd the n8n n other Tools need to come ‎<attached: 00001290-PHOTO-2026-01-28-17-16-07.jpg>
+[28/01/26, 5:16:27 PM] Utkarsh: Ek brr John ko ping krke puchna once regarding the Tool access.
+[28/01/26, 5:19:37 PM] Suvansh Verma: Already bol diya hai
+[28/01/26, 5:19:44 PM] Utkarsh: Cool bro.
+[28/01/26, 5:26:14 PM] Utkarsh: ‎Voice call, ‎2 min
+[28/01/26, 5:26:35 PM] Utkarsh: https://dms-eand-pilot.etisalat.corp.ae/docasst/app
+[28/01/26, 5:29:26 PM] Utkarsh: - VPN Required: Since this appears to be an Etisalat corporate site, you likely need to be connected to the Etisalat VPN (or physically in the office) to access it.
+- Incorrect DNS Servers: You may be using public DNS servers (like Google 8.8.8.8) instead of the internal Etisalat DNS servers that know how to find corp.ae addresses.
+- Typo in URL: Double-check the address dms-eand-pilot.etisalat.corp.ae for any misspellings.
+[28/01/26, 5:29:38 PM] Utkarsh: Most likely first two me se hoga.
+[28/01/26, 7:04:29 PM] Utkarsh: Bro
+[28/01/26, 7:04:34 PM] Utkarsh: free hkr ek brr call krna.
+[28/01/26, 7:08:53 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[29/01/26, 9:35:36 AM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[29/01/26, 10:56:24 AM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[29/01/26, 11:06:19 AM] Utkarsh: ‎Voice call, ‎42 sec
+[29/01/26, 11:12:38 AM] Utkarsh: Fikreab Sisay Kidane
+[29/01/26, 11:12:42 AM] Utkarsh: SEtting up his lab.
+[29/01/26, 11:12:51 AM] Utkarsh: Can you ask him to wait a min before opening again.
+[29/01/26, 11:12:56 AM] Suvansh Verma: Okay
+[29/01/26, 11:14:37 AM] Suvansh Verma: Bol diya
+[29/01/26, 11:14:54 AM] Utkarsh: Sorted he can use now.
+[29/01/26, 11:15:02 AM] Utkarsh: You can update him.
+[29/01/26, 11:21:14 AM] Utkarsh: Avi Sam deck pe h or showing the VM?
+[29/01/26, 11:21:48 AM] Suvansh Verma: Deck
+[29/01/26, 11:22:03 AM] Utkarsh: Cool.
+[29/01/26, 11:22:08 AM] Utkarsh: Doing his VM now.
+[29/01/26, 11:22:14 AM] Utkarsh: Learners’ ke last 10 hogye.
+[29/01/26, 11:22:25 AM] Utkarsh: first 10 me Tanvinder ne bhi mostly krdiya h.
+[29/01/26, 11:22:28 AM] Utkarsh: 2-3 bacha hoga.
+[29/01/26, 11:22:35 AM] Suvansh Verma: Okay
+[29/01/26, 11:24:49 AM] Utkarsh: This is the Link to the VM
+- https://cloudlabs.nuvepro.com/company/upwardndonward/home
+[29/01/26, 11:24:59 AM] Utkarsh: Incase Samwel ko kch confusion ho toh.
+[29/01/26, 11:33:15 AM] Utkarsh: Has this guy joined today?
+[29/01/26, 11:33:15 AM] Suvansh Verma: Okay
+[29/01/26, 11:33:16 AM] Utkarsh: Omar Saad Mohd Quttaineh
+[29/01/26, 11:33:22 AM] Suvansh Verma: Yes
+[29/01/26, 11:33:32 AM] Suvansh Verma: Late kiya but kar liya join
+[29/01/26, 11:34:02 AM] Utkarsh: Cool.
+[29/01/26, 11:34:06 AM] Utkarsh: Usko setup kr rha hu.
+[29/01/26, 11:34:08 AM] Utkarsh: Incase he pings.
+[29/01/26, 11:35:05 AM] Utkarsh: Sam ka hogya.
+[29/01/26, 11:36:50 AM] Suvansh Verma: Okay
+‎[29/01/26, 11:42:46 AM] Utkarsh: ‎<attached: 00001331-PHOTO-2026-01-29-11-42-46.jpg>
+[29/01/26, 11:42:51 AM] Utkarsh: Done for Omar.
+[29/01/26, 11:43:40 AM] Suvansh Verma: Okay
+[29/01/26, 11:53:14 AM] Utkarsh: ‎Voice call, ‎No answer
+[29/01/26, 11:56:14 AM] Utkarsh: Call krna once free.
+[29/01/26, 11:59:09 AM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[29/01/26, 11:59:38 AM] Utkarsh: Can I call you later?
+[29/01/26, 12:05:28 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[29/01/26, 2:00:21 PM] Suvansh Verma: ‎Voice call, ‎1 min
+‎[29/01/26, 2:03:03 PM] Suvansh Verma: ‎<attached: 00001340-PHOTO-2026-01-29-14-03-03.jpg>
+‎[29/01/26, 2:03:03 PM] Suvansh Verma: ‎<attached: 00001341-PHOTO-2026-01-29-14-03-03.jpg>
+‎[29/01/26, 2:03:03 PM] Suvansh Verma: ‎<attached: 00001342-PHOTO-2026-01-29-14-03-03.jpg>
+‎[29/01/26, 2:03:04 PM] Suvansh Verma: ‎<attached: 00001343-PHOTO-2026-01-29-14-03-04.jpg>
+[29/01/26, 2:11:34 PM] Utkarsh: I’ll drop now.
+[29/01/26, 2:11:40 PM] Suvansh Verma: Cool
+[29/01/26, 2:11:43 PM] Utkarsh: Agr kisi ka isolate issue hota h toh btana.
+[29/01/26, 2:11:49 PM] Utkarsh: I will do this on local.
+[29/01/26, 2:11:50 PM] Utkarsh: Thanks
+[29/01/26, 2:13:20 PM] Utkarsh: Navzar ko bol mai backend se krta hu.
+[29/01/26, 2:13:41 PM] Utkarsh: Tell him to give me 5 min.
+[29/01/26, 2:15:47 PM] Utkarsh: ‎Voice call, ‎25 sec
+[29/01/26, 2:19:11 PM] Utkarsh: send this to Navzar.
+[29/01/26, 2:20:05 PM] Utkarsh: - Client ID - 505254260078-a8j6fag8n9nukcrc8a3qf1gp9k9ilddn.apps.googleusercontent.com
+- Client secret - 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
+[29/01/26, 2:20:11 PM] Utkarsh: Ye send krde.
+[29/01/26, 2:22:14 PM] Suvansh Verma: Done
+[29/01/26, 2:29:15 PM] Utkarsh: Now it’s fine I guess
+[29/01/26, 2:29:24 PM] Utkarsh: I will drop now.
+[29/01/26, 2:29:37 PM] Utkarsh: Btana if anything further breaks.
+[29/01/26, 2:29:38 PM] Utkarsh: Thanks
+[29/01/26, 3:31:31 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[29/01/26, 3:41:10 PM] Utkarsh: Bhai when is the next break?
+[29/01/26, 3:41:16 PM] Utkarsh: Can we do a break after this.
+[29/01/26, 3:41:24 PM] Suvansh Verma: Yes, after this.
+[29/01/26, 3:41:29 PM] Utkarsh: Tk h cool.
+[29/01/26, 3:41:32 PM] Utkarsh: Krlenge.
+[29/01/26, 3:43:30 PM] Suvansh Verma: Messaged him
+[29/01/26, 3:58:58 PM] Utkarsh: Bhai usko bol Zoom ka screen tk krne
+[29/01/26, 3:59:03 PM] Utkarsh: 😂
+[29/01/26, 3:59:07 PM] Utkarsh: Mtlb seriously
+[29/01/26, 3:59:11 PM] Utkarsh: Very mahan learners.
+[29/01/26, 3:59:14 PM] Suvansh Verma: 🤣🤣
+[29/01/26, 3:59:18 PM] Utkarsh: inse better Leaders the.
+[29/01/26, 3:59:31 PM] Suvansh Verma: F11 instructions de rahe hau
+[29/01/26, 3:59:40 PM] Suvansh Verma: Break leli hai
+[29/01/26, 3:59:44 PM] Utkarsh: Shi h.
+[29/01/26, 3:59:47 PM] Suvansh Verma: Karde iska theek
+[29/01/26, 3:59:48 PM] Utkarsh: Let’s chat with Sam now.
+[29/01/26, 3:59:50 PM] Utkarsh: Ha.
+[29/01/26, 4:02:08 PM] Utkarsh: Sorted.
+[29/01/26, 4:02:13 PM] Utkarsh: Raat h usko.
+[29/01/26, 4:02:13 PM] Suvansh Verma: Cool
+[29/01/26, 4:02:19 PM] Utkarsh: Bhai bhi neend me hoga thda.
+[29/01/26, 4:02:57 PM] Utkarsh: Thde der ke liye dropping off need to work on something ping krna if anything.
+[29/01/26, 4:03:02 PM] Suvansh Verma: Cool
+[29/01/26, 4:14:16 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[29/01/26, 4:20:42 PM] Utkarsh: pcsk_38x539_UcXgP2dpWVTouEWW3GRh5Atzw4fvxji2B3x7dyLMSHsLRkmcKi3AEKAGS3fxhew
+[29/01/26, 4:24:58 PM] Suvansh Verma: Yeh share karu?
+[29/01/26, 4:25:12 PM] Utkarsh: Give me a min.
+[29/01/26, 4:25:12 PM] Suvansh Verma: Api key ya wait karu
+[29/01/26, 4:25:17 PM] Suvansh Verma: Cool
+[29/01/26, 4:26:22 PM] Utkarsh: Let’s share it.
+[29/01/26, 4:26:30 PM] Suvansh Verma: Okay
+[29/01/26, 4:31:12 PM] Utkarsh: Send this bro
+[29/01/26, 4:31:27 PM] Utkarsh: - Name - v1
+- ⁠Dimension - 1024
+- API Key - pcsk_38x539_UcXgP2dpWVTouEWW3GRh5Atzw4fvxji2B3x7dyLMSHsLRkmcKi3AEKAGS3fxhew
+[29/01/26, 4:31:30 PM] Utkarsh: This should work.
+[29/01/26, 4:32:02 PM] Suvansh Verma: Done
+[29/01/26, 4:32:08 PM] Utkarsh: Cool.
+[29/01/26, 4:35:12 PM] Suvansh Verma: No index showing for this key also
+[29/01/26, 4:35:18 PM] Suvansh Verma: A learner messaged
+[29/01/26, 4:35:45 PM] Utkarsh: pcsk_5fPpDy_ND9hzwDBCi1KR6jSMnLekvWczgCTM899QENcWykxoSUPRohytpofQMXfS3B8ZP5
+[29/01/26, 4:35:49 PM] Utkarsh: Let me test it once.
+[29/01/26, 4:35:53 PM] Suvansh Verma: Haan
+[29/01/26, 4:36:11 PM] Suvansh Verma: Test karle tab share karoonga. Confuse honge aur warna yeh log
+[29/01/26, 4:39:58 PM] Utkarsh: •⁠  ⁠Name - v1 or v2
+•⁠  ⁠⁠Dimension - 1024
+•⁠  ⁠API Key - pcsk_5fPpDy_ND9hzwDBCi1KR6jSMnLekvWczgCTM899QENcWykxoSUPRohytpofQMXfS3B8ZP5
+[29/01/26, 4:40:03 PM] Utkarsh: Test working now.
+[29/01/26, 4:40:05 PM] Utkarsh: Ye send krde.
+[29/01/26, 4:40:21 PM] Utkarsh: Phr se new create krdiya h.
+[29/01/26, 4:40:35 PM] Utkarsh: Just delete the previous message.
+[29/01/26, 4:40:38 PM] Utkarsh: To avoid confusion.
+‎[29/01/26, 4:41:54 PM] Utkarsh: ‎<attached: 00001410-PHOTO-2026-01-29-16-41-54.jpg>
+‎[29/01/26, 4:41:54 PM] Utkarsh: ‎<attached: 00001411-PHOTO-2026-01-29-16-41-54.jpg>
+[29/01/26, 4:41:58 PM] Suvansh Verma: Still nothing
+[29/01/26, 4:42:02 PM] Utkarsh: Bhai ye previous wala use kr rha h shyd.
+[29/01/26, 4:42:04 PM] Utkarsh: It is working .
+[29/01/26, 4:42:55 PM] Suvansh Verma: Wapas bheja hai usko
+[29/01/26, 4:42:56 PM] Suvansh Verma: Let’s see
+[29/01/26, 4:45:28 PM] Utkarsh: Bhai these folks are creating it wrong.
+[29/01/26, 4:45:36 PM] Utkarsh: It is working I tested it 2-3 times.
+[29/01/26, 4:45:54 PM] Suvansh Verma: Unmute karke bol dio ek baaar sab Sam chup hoga
+[29/01/26, 4:46:09 PM] Utkarsh: Ha.
+[29/01/26, 4:46:33 PM] Utkarsh: You need to delete the node, and re-add.
+[29/01/26, 4:46:49 PM] Utkarsh: Make sure you use the new Key you have added rather than the one.
+[29/01/26, 4:47:14 PM] Utkarsh: Let’s complete.
+[29/01/26, 4:47:19 PM] Utkarsh: The Session.
+[29/01/26, 4:49:27 PM] Utkarsh: Bhai ye 10 kadam chl jate h.
+[29/01/26, 4:50:15 PM] Utkarsh: Yahi problem h being a Tech person is so much patience.
+[29/01/26, 5:01:36 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[29/01/26, 5:16:33 PM] Utkarsh: Hey Sam shall we do the Agents part in the next Session on Monday?
+It is a fresh new topic and would serve better in a different class.
+Let us know thoughts.
+Thanks
+[29/01/26, 5:16:37 PM] Utkarsh: I have asked this to Sam.
+[29/01/26, 5:16:42 PM] Utkarsh: Agents pura new topic h.
+[29/01/26, 5:16:48 PM] Utkarsh: It would be better to do next week.
+[29/01/26, 5:16:49 PM] Suvansh Verma: Cool
+[29/01/26, 5:16:53 PM] Utkarsh: Let’s see what he says.
+[29/01/26, 5:16:58 PM] Suvansh Verma: Yes, it will be better.
+[29/01/26, 5:17:11 PM] Utkarsh: Yes.
+[29/01/26, 5:17:12 PM] Suvansh Verma: I’ll launch the poll once he confirms.
+[29/01/26, 5:17:20 PM] Utkarsh: Usko maybe ek brr interrupt krlena.
+[29/01/26, 5:17:26 PM] Utkarsh: Coz wo Chat ni dkhta sometimes.
+[29/01/26, 5:18:14 PM] Utkarsh: Ek brr interrupt krle.
+[29/01/26, 5:18:17 PM] Utkarsh: Thdi der me
+[29/01/26, 5:18:21 PM] Suvansh Verma: Okay
+[29/01/26, 5:18:21 PM] Utkarsh: Vrna he will start.
+[29/01/26, 5:18:24 PM] Utkarsh: Agents.
+[29/01/26, 5:30:50 PM] Utkarsh: We will configure and send all the API Keys to folks, with the Pre-requisite tom.
+[30/01/26, 9:52:44 AM] Utkarsh: Bro
+[30/01/26, 9:52:50 AM] Utkarsh: MS pe Authenticate krde.
+[30/01/26, 9:52:53 AM] Utkarsh: 82
+[30/01/26, 9:52:59 AM] Utkarsh: ‎Voice call, ‎3 min
+‎[30/01/26, 9:54:30 AM] Utkarsh: ‎<attached: 00001449-PHOTO-2026-01-30-09-54-30.jpg>
+[30/01/26, 10:20:57 AM] Utkarsh: Bro it is asking for authentication again.
+[30/01/26, 10:20:58 AM] Utkarsh: 87 ‎<This message was edited>
+[30/01/26, 10:21:21 AM] Utkarsh: ‎Voice call, ‎No answer
+[30/01/26, 10:33:18 AM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[30/01/26, 1:00:54 PM] Utkarsh: 78
+[30/01/26, 1:01:00 PM] Utkarsh: Approve krdo bro.
+[30/01/26, 2:02:11 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[30/01/26, 6:37:03 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[30/01/26, 6:38:38 PM] Suvansh Verma: Bro
+[30/01/26, 6:38:46 PM] Suvansh Verma: VMs extend karwa dio.
+[30/01/26, 6:39:19 PM] Utkarsh: I came out bro.
+[30/01/26, 6:39:25 PM] Utkarsh: Wo group me add krde.
+[30/01/26, 6:39:31 PM] Utkarsh: Tanvinder wle.
+[30/01/26, 6:39:35 PM] Utkarsh: He will get it done.
+[30/01/26, 6:39:41 PM] Utkarsh: Vrna late ho jayega.
+[30/01/26, 6:39:46 PM] Utkarsh: I might come late.
+[30/01/26, 6:49:47 PM] Suvansh Verma: Okay
+[30/01/26, 7:39:15 PM] Utkarsh: Bro
+[30/01/26, 7:39:20 PM] Utkarsh: tera hike letter aa gya?
+[30/01/26, 7:51:05 PM] Suvansh Verma: Haa bhai
+[30/01/26, 7:51:08 PM] Suvansh Verma: Bohot he bikaar bc
+[30/01/26, 7:51:12 PM] Suvansh Verma: Amit ne gaand maardi
+[30/01/26, 7:51:18 PM] Suvansh Verma: 🤣
+[30/01/26, 7:51:22 PM] Utkarsh: Bhai mera bhi same hi h.
+[30/01/26, 7:51:26 PM] Utkarsh: Not so good.
+[30/01/26, 7:51:31 PM] Suvansh Verma: Not even 10%
+[30/01/26, 7:51:48 PM] Suvansh Verma: Inflation bhi nai diya saalo ne
+[30/01/26, 7:52:04 PM] Utkarsh: Yr promotion time bhi 6-7% tha, like Shashi said manage krenge Jan me.
+[30/01/26, 7:52:10 PM] Utkarsh: Seriously it’s a joke bro.
+[30/01/26, 7:52:21 PM] Utkarsh: Ky hi bolu mai.
+[30/01/26, 7:52:28 PM] Suvansh Verma: Haaan
+[30/01/26, 7:52:58 PM] Suvansh Verma: Promotion ke liye apply karna padega, tab dekhenge kitna hoga
+[30/01/26, 7:53:07 PM] Utkarsh: Bhai kch ni hoga.
+[30/01/26, 7:53:16 PM] Utkarsh: Promo me bhi ye log zyda kaha hi krte h.
+[30/01/26, 7:53:33 PM] Utkarsh: Remote ke naam pe honestly making a fool of us 🙃
+[31/01/26, 4:08:39 PM] Utkarsh: Hey bro call krna free hkr.
+[01/02/26, 12:14:13 PM] Suvansh Verma: Hey bro
+[01/02/26, 12:14:19 PM] Suvansh Verma: Sorry, could not connect yesterday.
+[01/02/26, 12:14:46 PM] Suvansh Verma: Injured my back really bad.
+[01/02/26, 12:15:19 PM] Suvansh Verma: On bed rest for a week now
+[01/02/26, 12:15:29 PM] Suvansh Verma: Let me know the email thing of day 3
+[01/02/26, 7:23:49 PM] Suvansh Verma: ‎Voice call, ‎2 min
+[02/02/26, 8:40:55 AM] Utkarsh: Hey bro
+[02/02/26, 8:40:56 AM] Utkarsh: Free?
+[02/02/26, 9:39:36 AM] Suvansh Verma: Hey bro
+[02/02/26, 9:39:37 AM] Suvansh Verma: Give me 10
+[02/02/26, 9:39:39 AM] Suvansh Verma: Physio will get over in 10mins
+[02/02/26, 9:47:54 AM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[02/02/26, 10:12:06 AM] Suvansh Verma: Hey bro
+[02/02/26, 10:12:22 AM] Suvansh Verma: PowerApps access was enabled on my e& id
+[02/02/26, 10:46:55 AM] Utkarsh: Also the ppts are not in the shared doc..? Samwell said they will shared..
+[02/02/26, 10:47:01 AM] Utkarsh: It is present bro.
+[02/02/26, 10:47:15 AM] Utkarsh: Ye bhai ky dekh rha h.
+[02/02/26, 10:47:20 AM] Suvansh Verma: 🤣
+[02/02/26, 10:47:26 AM] Suvansh Verma: Kar diya address
+[02/02/26, 10:47:33 AM] Utkarsh: It is also bookmarked on VM.
+[02/02/26, 10:47:37 AM] Utkarsh: Wo bhi bolde.
+[02/02/26, 10:47:39 AM] Suvansh Verma: Har jagah bheji hai, saale dekhte nai hai
+[02/02/26, 10:47:51 AM] Utkarsh: Wahi.
+[02/02/26, 10:47:58 AM] Utkarsh: Actually calendar block krna hoga.
+[02/02/26, 10:48:01 AM] Utkarsh: For everything.
+[02/02/26, 10:48:08 AM] Utkarsh: Let’s see.
+[02/02/26, 10:52:22 AM] Utkarsh: For day1, 2 I can find it, for day 3, in the shared file..
+
+There are only two pdfs
+
+1. Ai driven Multi agent healthcare..... Pdf (not slide)
+2. Creating your own Twilio account..
+[02/02/26, 10:52:23 AM] Utkarsh: It is update post class.
+[02/02/26, 10:57:56 AM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[02/02/26, 11:06:06 AM] Suvansh Verma: Dear Learners,
+
+We have ensured that the Pinecone API key is already enabled for you. 
+
+It is already added in your n8n account. If you still face any issues, please let us know.
+[02/02/26, 11:06:09 AM] Suvansh Verma: Sending this
+[02/02/26, 11:06:27 AM] Utkarsh: API Key bhi add krde.
+[02/02/26, 11:07:06 AM] Suvansh Verma: They are asking that Sign in blocked. Should I mention that Pinecone login is not required?
+[02/02/26, 11:07:37 AM] Utkarsh: Yes.
+[02/02/26, 11:07:41 AM] Utkarsh: It is not required.
+[02/02/26, 11:07:48 AM] Suvansh Verma: Cool
+[02/02/26, 11:07:52 AM] Utkarsh: Say that we have already created the API Keys for them.
+[02/02/26, 11:07:51 AM] Suvansh Verma: This will help them
+[02/02/26, 11:37:31 AM] Utkarsh: How’s the Session going today bro?
+[02/02/26, 11:37:53 AM] Suvansh Verma: Going good
+[02/02/26, 11:38:02 AM] Suvansh Verma: Interaction sorted hai
+[02/02/26, 11:38:07 AM] Suvansh Verma: Attendance bhi sahi hai
+[02/02/26, 12:02:22 PM] Utkarsh: Badhiya.
+[02/02/26, 1:07:05 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[02/02/26, 1:18:33 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[02/02/26, 5:14:21 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[02/02/26, 6:19:41 PM] Utkarsh: Bro
+[02/02/26, 6:19:47 PM] Utkarsh: Closing ceremony ka send to Anshaj as well
+[02/02/26, 6:19:49 PM] Utkarsh: And inform him.
+[02/02/26, 6:19:52 PM] Suvansh Verma: Yess
+[02/02/26, 6:19:58 PM] Utkarsh: I had asked him already.
+[02/02/26, 6:19:59 PM] Utkarsh: Thanks
+[03/02/26, 1:19:37 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[03/02/26, 1:23:15 PM] Utkarsh: ‎Voice call, ‎2 min
+[03/02/26, 1:29:15 PM] Utkarsh: ‎Voice call, ‎6 min
+‎[03/02/26, 1:33:55 PM] Suvansh Verma: ‎<attached: 00001541-PHOTO-2026-02-03-13-33-55.jpg>
+[03/02/26, 4:49:11 PM] Utkarsh: Bro
+[03/02/26, 4:49:17 PM] Utkarsh: Anshaj ko send kiya tha ky invite?
+[03/02/26, 4:49:30 PM] Suvansh Verma: Yes
+[03/02/26, 4:49:33 PM] Suvansh Verma: Sabko bheja tha
+[03/02/26, 4:49:39 PM] Utkarsh: Cool.
+[03/02/26, 4:49:43 PM] Utkarsh: Let me check with him.
+[03/02/26, 5:09:15 PM] Suvansh Verma: Amazing feedback
+[03/02/26, 5:10:13 PM] Utkarsh: Yes it is really good 🙌🏻
+[03/02/26, 5:12:31 PM] Suvansh Verma: 4 most active learners
+[03/02/26, 5:12:58 PM] Utkarsh: Yes bro.
+[03/02/26, 5:20:14 PM] Utkarsh: Do we need Anshaj further?
+[03/02/26, 5:20:38 PM] Suvansh Verma: Don’t think so
+[03/02/26, 5:20:52 PM] Suvansh Verma: We will be ending the session after this
+[04/02/26, 4:49:11 PM] Utkarsh: Bro
+[04/02/26, 4:49:13 PM] Utkarsh: Approve krde.
+[04/02/26, 4:49:14 PM] Utkarsh: 95
+[04/02/26, 4:49:26 PM] Suvansh Verma: done
+[04/02/26, 4:49:32 PM] Utkarsh: Awesome.
+[04/02/26, 4:49:46 PM] Suvansh Verma: PowerApps access is enabled.
+[04/02/26, 4:50:15 PM] Suvansh Verma: Link: https://make.powerapps.com.rproxy.goskope.com/
+[04/02/26, 4:50:26 PM] Suvansh Verma: try karke dekha, khul jaayega ab.
+‎[04/02/26, 4:50:42 PM] Utkarsh: ‎<attached: 00001563-PHOTO-2026-02-04-16-50-42.jpg>
+[04/02/26, 4:51:28 PM] Suvansh Verma: Yeh kismein aa raha hai?
+[04/02/26, 4:54:43 PM] Utkarsh: Opening the above link.
+[04/02/26, 4:55:32 PM] Suvansh Verma: https://make.powerapps.com/
+[04/02/26, 4:55:37 PM] Suvansh Verma: open this
+‎[04/02/26, 4:56:08 PM] Utkarsh: ‎<attached: 00001568-PHOTO-2026-02-04-16-56-08.jpg>
+[04/02/26, 4:56:28 PM] Utkarsh: ‎Voice call, ‎15 min
+‎[04/02/26, 4:59:04 PM] Suvansh Verma: ‎<attached: 00001570-PHOTO-2026-02-04-16-59-04.jpg>
+[04/02/26, 5:21:17 PM] Utkarsh: ‎Voice call, ‎4 min
+[05/02/26, 2:07:10 PM] Utkarsh: ‎Voice call, ‎3 min
+[05/02/26, 2:07:55 PM] Utkarsh: https://docs.google.com/spreadsheets/d/1-F--sADeQ7Fxsjdc_9_Fkqt3X9A68Y0aHy05B0a9io4/edit?gid=2001238261#gid=2001238261
+[05/02/26, 4:53:11 PM] Suvansh Verma: ‎Voice call, ‎1 min
+[06/02/26, 12:33:25 PM] Utkarsh: - URL: https://cloudlabs.nuvepro.com/company/upwardndonward/home
+- Login ID: winubuntutestid
+- Password: Cloudlabs123$
+
+So here we need to add the creds, view lab, and open the same.
+[09/02/26, 12:07:13 PM] Suvansh Verma: ‎Voice call, ‎6 min
+[09/02/26, 12:57:09 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[09/02/26, 1:00:05 PM] Suvansh Verma: I think tool access will be difficult as we need to be on e& Corporate network to access it.
+[09/02/26, 1:38:51 PM] Utkarsh: Yes bro.
+[09/02/26, 1:38:55 PM] Utkarsh: VPN ka issue hoga.
+[09/02/26, 1:43:47 PM] Utkarsh: ‎Voice call, ‎2 min
+[09/02/26, 10:14:22 PM] Suvansh Verma: Hey bro
+[09/02/26, 10:14:29 PM] Suvansh Verma: Having dinner
+[09/02/26, 10:14:35 PM] Suvansh Verma: Karta hu call
+[09/02/26, 10:21:34 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[11/02/26, 9:21:26 AM] Suvansh Verma: Hey Bro
+[11/02/26, 9:21:38 AM] Suvansh Verma: I am on leave today.
+[11/02/26, 9:23:12 AM] Suvansh Verma: Will inform John that 18th is confirmed for the next cohort so that he can share the final list of participants. ‎<This message was edited>
+[11/02/26, 9:23:58 AM] Suvansh Verma: Also, onboarding form bhi bhejna hai. Is that ready?
+[11/02/26, 10:50:33 AM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[11/02/26, 10:50:46 AM] Utkarsh: Bro on a call.
+[11/02/26, 10:50:49 AM] Utkarsh: I will ping you.
+[11/02/26, 10:50:58 AM] Utkarsh: Onboarding I’ll update and send it across.
+[11/02/26, 10:50:58 AM] Suvansh Verma: Cool
+[11/02/26, 10:54:38 AM] Suvansh Verma: thanks!
+[11/02/26, 10:55:04 AM] Suvansh Verma: for the tools, John mentioned that VPN access cannot be given on personal laptops.
+[11/02/26, 10:55:19 AM] Suvansh Verma: So all tools will be an issue except power automate
+[11/02/26, 11:03:05 AM] Utkarsh: Got it.
+[11/02/26, 11:04:06 AM] Utkarsh: So he most likely has to procure a e& Laptop or something for us?
+[11/02/26, 11:04:17 AM] Utkarsh: Can you check with him if he can get all this over a VM and share it with us
+[11/02/26, 11:04:18 AM] Utkarsh: ?
+[11/02/26, 11:10:19 AM] Suvansh Verma: Asked him the same thing. Waiting for his response.
+[11/02/26, 11:10:47 AM] Utkarsh: https://drive.google.com/file/d/1APv5hkYBaT6-Gn0nHkqSGBJ__RiWUMN9/view?usp=sharing
+[11/02/26, 11:10:52 AM] Utkarsh: https://drive.google.com/file/d/1jwPxhtaSZkUbthFCFb2a_0GRGZc-Fbg4/view?usp=sharing
+[11/02/26, 11:11:00 AM] Utkarsh: The Virtual Lab walkthrough.
+[11/02/26, 11:11:12 AM] Utkarsh: We will have to get it ready through the editing Team.
+[11/02/26, 11:11:17 AM] Utkarsh: Ye kl krlena aap.
+Thanks
+[11/02/26, 11:13:54 AM] Suvansh Verma: Cool, have the VM meeting with Samira tomorrow at 2:45pm
+[11/02/26, 11:14:45 AM] Utkarsh: Acha cool.
+[11/02/26, 11:14:54 AM] Utkarsh: Toh phr unko Friday ko send kr skte h credentials then.
+[11/02/26, 11:14:59 AM] Utkarsh: First thing Friday morning.
+[11/02/26, 11:15:02 AM] Utkarsh: Thanks
+[11/02/26, 11:15:28 AM] Suvansh Verma: Yes
+[11/02/26, 3:29:53 PM] Utkarsh: Hey bro
+[11/02/26, 3:29:57 PM] Utkarsh: Onboarding Form is updated.
+[11/02/26, 3:30:02 PM] Utkarsh: https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=4edc613c073f429281383ee27c6576f2&id=YqA1k8yfTU-edHe-ZTxsAVPOzipCpEtFlbg7Xmw3fihUQVdMNUNZWEdZVUMwUzRQVlgzUTJaQjBORi4u
+[12/02/26, 9:20:24 AM] Suvansh Verma: Hey bro
+[12/02/26, 9:20:31 AM] Suvansh Verma: Good morning!
+[12/02/26, 9:20:47 AM] Suvansh Verma: Did you share this with John?
+[12/02/26, 9:21:09 AM] Utkarsh: I thought you’d be doing 😅
+[12/02/26, 9:21:11 AM] Utkarsh: Krdo avi.
+[12/02/26, 9:21:25 AM] Utkarsh: Also please tell me date is confirmed for 18th.
+[12/02/26, 9:21:32 AM] Utkarsh: We are good from our end.
+[12/02/26, 9:21:39 AM] Suvansh Verma: This is already done
+[12/02/26, 9:21:58 AM] Suvansh Verma: I’ll share the updated onboarding form right away.
+[12/02/26, 9:22:35 AM] Utkarsh: Cool.
+[12/02/26, 9:23:05 AM] Utkarsh: You can ask him to share this with all interested folks.
+[12/02/26, 9:23:10 AM] Utkarsh: For future cohorts also.
+[12/02/26, 9:23:26 AM] Utkarsh: Also it’s important ye form kl tk fill ho jaye.
+[12/02/26, 9:23:37 AM] Utkarsh: So that we can filter if required.
+[12/02/26, 9:23:39 AM] Suvansh Verma: Cool
+[12/02/26, 9:24:05 AM] Suvansh Verma: This is a common form for all cohorts or only low & no code?
+[12/02/26, 12:25:21 PM] Utkarsh: All Cohorts.
+[12/02/26, 12:25:41 PM] Utkarsh: Check this video once and let me know if it looks good.
+[12/02/26, 12:26:06 PM] Utkarsh: Isko Editing Team ke sth logos n all krna hoga.
+[12/02/26, 12:28:48 PM] Suvansh Verma: Cool
+[12/02/26, 12:28:50 PM] Suvansh Verma: Will check
+[12/02/26, 12:28:57 PM] Utkarsh: Cool
+[12/02/26, 1:03:08 PM] Utkarsh: Bro
+[12/02/26, 1:03:14 PM] Suvansh Verma: Yes
+[12/02/26, 1:03:17 PM] Utkarsh: I have to discuss a few important things with Soham today.
+[12/02/26, 1:03:25 PM] Suvansh Verma: Okay
+[12/02/26, 1:03:26 PM] Utkarsh: So I may join the Sameira call a little late.
+[12/02/26, 1:03:31 PM] Suvansh Verma: Maine tujhe optional rakha hai
+[12/02/26, 1:03:33 PM] Suvansh Verma: No stress
+[12/02/26, 1:03:34 PM] Utkarsh: You have the creds right?
+[12/02/26, 1:03:39 PM] Suvansh Verma: I will take it up
+[12/02/26, 1:03:39 PM] Utkarsh: ‎Voice call, ‎3 min
+[12/02/26, 1:06:16 PM] Utkarsh: - upwwindowsuser1	
+- ⁠Pass - MTc3MDI5MjI5Nw==	
+- ⁠https://cloudlabs.nuvepro.com/company/upwardndonward/home
+[13/02/26, 10:56:24 AM] Utkarsh: Bro
+[13/02/26, 10:56:37 AM] Utkarsh: By when are you planning to send the credential?
+[13/02/26, 10:57:27 AM] Suvansh Verma: I was going through the list only
+[13/02/26, 10:57:43 AM] Suvansh Verma: Thodi confusion hai, can we connect?
+[13/02/26, 11:05:00 AM] Utkarsh: 12:30 pe krte h discuss bro.
+[13/02/26, 11:05:04 AM] Utkarsh: Working on something.
+[13/02/26, 11:19:14 AM] Suvansh Verma: Okay
+[13/02/26, 2:00:46 PM] Utkarsh: Personal Access Token.
+[13/02/26, 2:00:48 PM] Utkarsh: - path8XqpgXvqj63yw.1d00ec4574eefe1c11f334b52588efc2be9f6cde06442e8fae5dfc04e0d9c035
+[13/02/26, 2:03:32 PM] Suvansh Verma: This is for Airtable, right?
+[13/02/26, 2:06:01 PM] Utkarsh: Yup.
+[13/02/26, 2:06:19 PM] Utkarsh: Anyways all this will be already configured on n8n.
+[13/02/26, 2:07:34 PM] Suvansh Verma: Cool
+[13/02/26, 2:15:27 PM] Utkarsh: The docs are good from my end.
+[13/02/26, 2:15:30 PM] Utkarsh: Can  send them out.
+[13/02/26, 2:15:34 PM] Utkarsh: Ek brr final edited video send krna.
+[13/02/26, 2:15:59 PM] Suvansh Verma: Lunch karke karta hu
+[13/02/26, 2:16:04 PM] Utkarsh: Cool.
+[13/02/26, 2:16:06 PM] Utkarsh: Aaram se krle.
+[16/02/26, 1:57:41 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[16/02/26, 1:57:59 PM] Suvansh Verma: Bro
+[16/02/26, 1:58:07 PM] Suvansh Verma: Next low code ke dates reconfirm karde
+[16/02/26, 1:58:24 PM] Suvansh Verma: Aashish john se confirmation le raha hai
+[16/02/26, 1:59:10 PM] Utkarsh: 3,5,9,10 March.
+[16/02/26, 1:59:23 PM] Utkarsh: You can tell this.
+[16/02/26, 1:59:43 PM] Utkarsh: Hey @here the Cohort 3 Final Dates for Low Code are:
+3rd, 5th, 9th & 10th March.Tue, Thu, Mon and Tue.Thanks
+[17/02/26, 11:46:13 AM] Utkarsh: ‎Voice call, ‎4 min
+[18/02/26, 9:50:26 AM] Suvansh Verma: Broo?
+[18/02/26, 9:50:32 AM] Suvansh Verma: 🤣
+[18/02/26, 9:50:41 AM] Suvansh Verma: Kaunsa Teams?
+[18/02/26, 9:50:55 AM] Suvansh Verma: Woh e& waala bol raha hai kya?
+[18/02/26, 9:50:58 AM] Utkarsh: Aare MS pe bt kra rha tha na tu.
+[18/02/26, 9:50:59 AM] Utkarsh: Ha bro.
+[18/02/26, 9:51:27 AM] Utkarsh: Usko mention krdete h.
+[18/02/26, 9:51:35 AM] Utkarsh: So that people can reachout to you if needed.
+[18/02/26, 9:51:44 AM] Suvansh Verma: Suvverma@eand.com
+[18/02/26, 9:51:52 AM] Suvansh Verma: Understood
+[18/02/26, 9:52:08 AM] Utkarsh: Cool let me add so if they search you via this on Teams they’ll find you right?
+[18/02/26, 9:54:05 AM] Suvansh Verma: Yes
+[18/02/26, 9:58:04 AM] Utkarsh: Cool.
+[18/02/26, 10:01:17 AM] Utkarsh: WO Onboarding Form ka link update krdena.
+[18/02/26, 10:01:22 AM] Utkarsh: On the Deck.
+[18/02/26, 10:05:33 AM] Suvansh Verma: Cool
+[18/02/26, 10:05:37 AM] Suvansh Verma: QR toh sahi baj
+[18/02/26, 10:05:42 AM] Suvansh Verma: Link update kar doonga
+[18/02/26, 10:12:52 AM] Utkarsh: ‎Voice call, ‎31 sec
+[18/02/26, 10:16:58 AM] Suvansh Verma: ‎Voice call, ‎20 sec
+[18/02/26, 10:22:05 AM] Utkarsh: Avi 19 Green marked accounts h.
+[18/02/26, 10:22:09 AM] Utkarsh: They are all setup and ready to use.
+[18/02/26, 10:22:24 AM] Utkarsh: Usme 2 Opt Out toh usko backup me use krle.
+[18/02/26, 10:22:26 AM] Suvansh Verma: Sorted
+[18/02/26, 10:22:31 AM] Utkarsh: If you need additional just let me know.
+[18/02/26, 10:22:39 AM] Utkarsh: Baaki API Keys are added on n8n Accounts.
+[18/02/26, 10:22:48 AM] Utkarsh: So aaj aise kch issues hone ni chaiye.
+[18/02/26, 10:23:00 AM] Suvansh Verma: Cool
+[18/02/26, 11:31:51 AM] Utkarsh: Bro
+[18/02/26, 11:31:58 AM] Suvansh Verma: Yes
+[18/02/26, 11:32:00 AM] Utkarsh: Content Folder ka access isme bhi krde send - aiexplorer_54@teamupwardandonward.com
+[18/02/26, 11:32:06 AM] Utkarsh: Is the Content folder updated?
+[18/02/26, 11:32:10 AM] Suvansh Verma: Bhai yeh zayada logo ka panga hai
+[18/02/26, 11:32:23 AM] Suvansh Verma: Yes, Day 1 and Day 2 ready hai.
+[18/02/26, 11:32:40 AM] Utkarsh: Cool.
+[18/02/26, 11:32:50 AM] Utkarsh: It’s vetted from Animesh/ Mahima right?
+[18/02/26, 11:32:58 AM] Suvansh Verma: Yes
+[18/02/26, 11:32:59 AM] Utkarsh: Coz MS Content update hua tha.
+[18/02/26, 11:33:05 AM] Utkarsh: ispe access de de.
+[18/02/26, 11:33:10 AM] Utkarsh: Cool.
+[18/02/26, 11:33:14 AM] Suvansh Verma: They shared it last night
+[18/02/26, 11:33:17 AM] Suvansh Verma: Uske baad kiya maine
+[18/02/26, 11:33:28 AM] Utkarsh: Cool.
+[18/02/26, 11:33:33 AM] Suvansh Verma: Check kar
+[18/02/26, 11:33:45 AM] Suvansh Verma: Maine abhi share kiya directly Id pe
+[18/02/26, 11:33:56 AM] Utkarsh: Cool.
+[18/02/26, 11:34:00 AM] Utkarsh: Accessible now.
+[18/02/26, 11:34:02 AM] Utkarsh: Thanks
+[18/02/26, 12:03:03 PM] Utkarsh: Bro
+[18/02/26, 12:03:07 PM] Utkarsh: I am dropping off from the call.
+[18/02/26, 12:03:12 PM] Utkarsh: There are 2 Extra Accounts.
+[18/02/26, 12:03:13 PM] Suvansh Verma: Cool
+[18/02/26, 12:03:26 PM] Utkarsh: 2 More will be done in the next hr by Tanvinder.
+[18/02/26, 12:03:33 PM] Suvansh Verma: Okay
+[18/02/26, 12:03:37 PM] Utkarsh: You can assign them accordingly to the learners.
+[18/02/26, 12:03:43 PM] Suvansh Verma: Additional person dropped off
+[18/02/26, 12:03:45 PM] Utkarsh: Just keep the sheet update with the details.
+Thanks
+[19/02/26, 3:20:45 PM] Utkarsh: Bro
+[19/02/26, 3:20:55 PM] Utkarsh: Expert AI ka Access mil gya h?
+[19/02/26, 3:21:04 PM] Utkarsh: Can you send it to me as well?
+[19/02/26, 3:23:54 PM] Suvansh Verma: Expert AI ka access via AVD mila hai
+[19/02/26, 3:24:06 PM] Utkarsh: Can you send it?
+[19/02/26, 3:24:14 PM] Suvansh Verma: Kal raat ko No Code waale group group pe steps bheje hai
+[19/02/26, 3:24:20 PM] Suvansh Verma: There is a doc
+[19/02/26, 3:24:24 PM] Utkarsh: Also can we get UiPath, DataRobot and others things?
+[19/02/26, 3:24:48 PM] Suvansh Verma: UiPath was not working
+[19/02/26, 3:24:49 PM] Utkarsh: Acha saw it.
+[19/02/26, 3:24:52 PM] Utkarsh: I’ll check.
+[19/02/26, 3:25:04 PM] Utkarsh: Toh ek brr let’s ask John.
+[19/02/26, 3:25:21 PM] Suvansh Verma: Ek baar pehele test karle VM ke through
+[19/02/26, 3:25:27 PM] Suvansh Verma: Uske baad bata denge usko
+[19/02/26, 3:25:47 PM] Suvansh Verma: Let’s check it on 2 different devices and then see it
+[19/02/26, 5:35:41 PM] Suvansh Verma: ‎Voice call, ‎23 min
+[24/02/26, 11:26:56 AM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[24/02/26, 6:18:29 PM] Utkarsh: ‎Voice call, ‎8 min
+‎[24/02/26, 6:30:01 PM] Utkarsh: ‎<attached: 00001752-PHOTO-2026-02-24-18-30-01.jpg>
+‎[24/02/26, 6:30:03 PM] Utkarsh: ‎<attached: 00001753-PHOTO-2026-02-24-18-30-03.jpg>
+[24/02/26, 6:30:09 PM] Utkarsh: DataRobot is working.
+[24/02/26, 6:30:20 PM] Utkarsh: Need to get credentials for the same.
+[24/02/26, 6:30:35 PM] Suvansh Verma: Okay, try to login using the current creds
+[24/02/26, 6:30:40 PM] Suvansh Verma: Should work
+[24/02/26, 6:30:46 PM] Utkarsh: Let me check.
+‎[24/02/26, 6:32:05 PM] Utkarsh: This will be different. ‎<attached: 00001759-PHOTO-2026-02-24-18-32-05.jpg>
+[24/02/26, 6:32:22 PM] Suvansh Verma: Okay
+[24/02/26, 6:32:34 PM] Suvansh Verma: Wahi se John ko message drop karde and SS bhejde
+[24/02/26, 6:32:38 PM] Suvansh Verma: And Samira ko bhi
+[24/02/26, 6:32:42 PM] Utkarsh: Cool.
+[24/02/26, 6:32:46 PM] Suvansh Verma: They will raise a request internally
+[24/02/26, 6:43:46 PM] Utkarsh: Ha mail krne bola h usne.
+[25/02/26, 8:10:30 AM] Utkarsh: Bro
+[25/02/26, 8:10:31 AM] Utkarsh: awake?
+[25/02/26, 8:10:44 AM] Utkarsh: Authenticator pe 30 approve krde please.
+[25/02/26, 8:13:12 AM] Utkarsh: ‎Voice call, ‎No answer
+[25/02/26, 8:55:16 AM] Suvansh Verma: Hey bro
+[25/02/26, 8:55:28 AM] Suvansh Verma: Sorry, missed your call snd message
+[25/02/26, 9:18:21 AM] Utkarsh: Avi phr se try krta hu.
+[25/02/26, 9:18:35 AM] Suvansh Verma: Theek hai
+[25/02/26, 9:20:00 AM] Suvansh Verma: Code
+[25/02/26, 9:20:08 AM] Utkarsh: 70
+[25/02/26, 9:20:25 AM] Suvansh Verma: Done
+[25/02/26, 9:20:41 AM] Suvansh Verma: Another one
+[25/02/26, 9:20:41 AM] Utkarsh: 95
+[25/02/26, 9:20:44 AM] Utkarsh: one more.
+[25/02/26, 11:05:04 AM] Utkarsh: Bro
+[25/02/26, 11:05:08 AM] Utkarsh: wo Audio send krde.
+[25/02/26, 11:05:19 AM] Utkarsh: Of Farhan the one you were referring to.
+‎[25/02/26, 11:10:59 AM] Suvansh Verma: ‎<attached: 00001783-AUDIO-2026-02-25-11-10-59.m4a>
+[25/02/26, 11:11:06 AM] Suvansh Verma: Here you go
+[25/02/26, 11:14:52 AM] Utkarsh: Thanks bro.
+[26/02/26, 2:14:06 PM] Utkarsh: 16
+[26/02/26, 2:14:19 PM] Utkarsh: Approve krde bro.
+[26/02/26, 2:14:24 PM] Utkarsh: Thanks
+[26/02/26, 2:14:30 PM] Suvansh Verma: Done
+[26/02/26, 4:04:18 PM] Suvansh Verma: code batade
+[26/02/26, 4:04:20 PM] Suvansh Verma: will approve
+[26/02/26, 4:04:42 PM] Utkarsh: Ignore kr bro.
+[26/02/26, 4:04:54 PM] Utkarsh: I was checking if I can approve from my MS Authenticator app.
+[26/02/26, 4:04:59 PM] Utkarsh: Wo possible ni ho rha.
+[26/02/26, 4:05:03 PM] Utkarsh: Tujhe hi krna pdega.
+[26/02/26, 4:05:15 PM] Suvansh Verma: Haan, mera number registered hai
+[26/02/26, 4:05:57 PM] Utkarsh: Kch code gya h ky tko?
+[26/02/26, 4:06:11 PM] Suvansh Verma: Code ke request aayi thi
+[26/02/26, 4:06:30 PM] Utkarsh: Ek brr App open krna you might have received a code.
+[26/02/26, 4:06:59 PM] Suvansh Verma: No code
+[26/02/26, 4:07:20 PM] Suvansh Verma: ab code ke request aayi hai
+‎[26/02/26, 4:08:34 PM] Utkarsh: ‎<attached: 00001802-PHOTO-2026-02-26-16-08-34.jpg>
+[26/02/26, 4:09:16 PM] Suvansh Verma: 029178
+[26/02/26, 4:11:15 PM] Utkarsh: Check now.
+[26/02/26, 4:11:20 PM] Utkarsh: Kch new aya h?
+[26/02/26, 4:11:30 PM] Suvansh Verma: Asking for a code
+[26/02/26, 4:12:54 PM] Utkarsh: 2 min wait kr.
+[26/02/26, 4:13:04 PM] Utkarsh: It will come.
+[26/02/26, 4:13:08 PM] Suvansh Verma: Cool
+[26/02/26, 4:14:22 PM] Utkarsh: Aaya?
+[26/02/26, 4:15:11 PM] Suvansh Verma: 078291
+[26/02/26, 4:15:22 PM] Suvansh Verma: Onetime password aaya hai
+‎[26/02/26, 4:17:36 PM] Utkarsh: ‎<attached: 00001813-PHOTO-2026-02-26-16-17-36.jpg>
+[26/02/26, 5:56:39 PM] Suvansh Verma: ‎Voice call, ‎25 sec
+[26/02/26, 5:57:25 PM] Utkarsh: ‎Group call, ‎2 invited
+[27/02/26, 10:35:14 AM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[03/03/26, 12:29:51 PM] Suvansh Verma: Hey bro
+[03/03/26, 12:29:59 PM] Suvansh Verma: Will join after 5-7mins
+[03/03/26, 2:37:35 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[05/03/26, 12:23:16 PM] Utkarsh: 252303
+[05/03/26, 2:22:02 PM] Suvansh Verma: Hey bro
+[05/03/26, 2:22:27 PM] Suvansh Verma: Shayad se 3 baje waali meeting na attend kar pau. Taking mom to the doc for check up
+[06/03/26, 7:47:35 AM] Utkarsh: Sure bro, no worries.
+Please take care.
+[09/03/26, 10:06:04 AM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[09/03/26, 10:50:32 AM] Utkarsh: https://docs.google.com/spreadsheets/d/1JckC1pnsZqxleQJn9spOxvkBm7xVPKb-43963yX8JAw/edit?gid=1180269716#gid=1180269716
+[09/03/26, 10:50:37 AM] Utkarsh: Ye check krle bro ek brr.
+[09/03/26, 10:50:38 AM] Utkarsh: Thanks
+[09/03/26, 2:55:49 PM] Utkarsh: ‎Voice call, ‎No answer
+[09/03/26, 2:58:35 PM] Suvansh Verma: ‎Voice call, ‎4 min
+[09/03/26, 3:08:30 PM] Utkarsh: Bro joining the call?
+[09/03/26, 3:16:38 PM] Suvansh Verma: On a call with e& learner
+[09/03/26, 3:16:48 PM] Suvansh Verma: Will join in 5-7
+[09/03/26, 3:16:53 PM] Suvansh Verma: Assignment issue
+[09/03/26, 3:35:46 PM] Utkarsh: Cool.
+[09/03/26, 3:40:23 PM] Suvansh Verma: Call kario ek baar is call ke baad.
+[09/03/26, 3:40:33 PM] Suvansh Verma: Before sharing anything with Amit
+[09/03/26, 3:42:25 PM] Utkarsh: Cool bro
+[09/03/26, 4:05:43 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[09/03/26, 5:46:27 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[10/03/26, 12:23:54 PM] Suvansh Verma: ‎Voice call, ‎48 sec
+[10/03/26, 5:19:42 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[10/03/26, 5:20:32 PM] Suvansh Verma: Bro
+[10/03/26, 5:20:44 PM] Suvansh Verma: Ek baar woh presentation ka last page dekh lio
+[10/03/26, 5:21:03 PM] Suvansh Verma: I have added everything. If you think something is missing, add kar dio.
+[10/03/26, 5:21:11 PM] Suvansh Verma: Nucleus waali deck
+[11/03/26, 8:51:12 AM] Utkarsh: Sure I saw that looks good.
+[11/03/26, 8:51:25 AM] Utkarsh: Let’s catchup for the Nucleus call post B2B to be bro.
+[11/03/26, 8:51:39 AM] Utkarsh: I have to close a few things 10 AM pe might not be able to join.
+[11/03/26, 9:05:17 AM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[12/03/26, 12:16:33 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[12/03/26, 3:21:48 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[12/03/26, 3:49:31 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[16/03/26, 10:31:52 AM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[16/03/26, 4:38:35 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[16/03/26, 4:39:33 PM] Suvansh Verma: Bro
+[16/03/26, 4:39:45 PM] Suvansh Verma: Ek bar call kario free hoke
+[16/03/26, 5:04:16 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[16/03/26, 5:38:59 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[17/03/26, 12:39:01 PM] Utkarsh: Bro 49 krde approve.
+[17/03/26, 1:43:58 PM] Suvansh Verma: Bro
+[17/03/26, 1:45:15 PM] Suvansh Verma: Total 4 people have reached out from Cohort 2 low code for the assignment submission. Everyone is asking to extend the timeline.
+
+Loop me in the call today so that we can take this up
+[17/03/26, 2:39:27 PM] Suvansh Verma: Hey bro
+[17/03/26, 2:39:37 PM] Suvansh Verma: Ek baar call kar lio free hoke
+[17/03/26, 2:39:57 PM] Utkarsh: I missed this.
+[17/03/26, 2:40:06 PM] Utkarsh: Call chl rhi h avi.
+[17/03/26, 2:40:10 PM] Utkarsh: Aa ja.
+[17/03/26, 2:40:25 PM] Utkarsh: We are mostly discussing Leaders rn.
+[18/03/26, 2:04:28 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[18/03/26, 2:07:09 PM] Utkarsh: ‎Voice call, ‎3 min
+[25/03/26, 11:08:57 AM] Utkarsh: ‎Group call, ‎2 invited
+[25/03/26, 5:02:06 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[25/03/26, 5:02:17 PM] Suvansh Verma: Kuldeep ka number bhejde
+[25/03/26, 5:03:22 PM] Suvansh Verma: Uska Tshirt size chaiye
+‎[25/03/26, 5:08:26 PM] Utkarsh: ‎<attached: 00001874-Kuldeep Singh Sidhu.vcf>
+[25/03/26, 5:08:32 PM] Utkarsh: Ha bro.
+[25/03/26, 6:02:50 PM] Utkarsh: ‎Voice call, ‎11 min
+‎[25/03/26, 6:03:16 PM] Utkarsh: ‎<attached: 00001877-PHOTO-2026-03-25-18-03-16.jpg>
+‎[25/03/26, 6:03:16 PM] Utkarsh: ‎<attached: 00001878-PHOTO-2026-03-25-18-03-16.jpg>
+[26/03/26, 8:02:52 AM] Utkarsh: Bro have you give the t-shirt orders?
+[26/03/26, 8:02:58 AM] Utkarsh: Can you add one for me as well?
+[26/03/26, 8:03:07 AM] Suvansh Verma: Cool
+[26/03/26, 8:03:12 AM] Suvansh Verma: Will add it
+[26/03/26, 8:03:16 AM] Utkarsh: I’m thinking I maybe have to come with all the changes yr.
+[26/03/26, 8:03:20 AM] Utkarsh: Thanks.
+[26/03/26, 8:03:24 AM] Utkarsh: XL h.
+[26/03/26, 8:03:31 AM] Utkarsh: Bt krte h aaram se.
+[26/03/26, 8:31:03 AM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+‎[26/03/26, 8:31:33 AM] Suvansh Verma: ‎<attached: 00001888-PHOTO-2026-03-26-08-31-33.jpg>
+[26/03/26, 2:54:10 PM] Utkarsh: Bro
+[26/03/26, 2:54:23 PM] Utkarsh: Possible date change ka inform krde Kuldeep go over that group.
+[26/03/26, 2:54:41 PM] Utkarsh: Tell him we will confirm by EOD.
+Thanks
+[26/03/26, 2:59:14 PM] Suvansh Verma: Okay
+[27/03/26, 9:42:12 AM] Suvansh Verma: 1. Boiler Maker
+2. ⁠Quinta Cantina
+3. ⁠Ourem
+4. Room One Goa
+5. ⁠Stoned Pig
+[27/03/26, 9:42:35 AM] Suvansh Verma: These places usually pick up after 7-8pm
+[27/03/26, 3:09:23 PM] Utkarsh: Bro ye boiler maker siolim me h?
+[27/03/26, 3:10:18 PM] Suvansh Verma: Yes
+[29/03/26, 2:45:01 PM] Suvansh Verma: Hey bro
+[29/03/26, 2:45:27 PM] Suvansh Verma: Quick check: is tanvinder aware of the tools?
+[29/03/26, 3:45:43 PM] Utkarsh: Call krta hu.
+[29/03/26, 6:54:57 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[29/03/26, 6:55:11 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[29/03/26, 6:55:47 PM] Suvansh Verma: Hey bro
+[30/03/26, 8:45:38 AM] Utkarsh: ‎Voice call, ‎27 sec
+[30/03/26, 10:33:23 AM] Suvansh Verma: Hey
+[30/03/26, 10:33:29 AM] Suvansh Verma: Joining the call?
+[30/03/26, 3:01:44 PM] Suvansh Verma: Hey
+[30/03/26, 3:01:53 PM] Suvansh Verma: Are you joining?
+[30/03/26, 3:02:09 PM] Utkarsh: Running 5 min late bro joining.
+[30/03/26, 3:02:20 PM] Suvansh Verma: Cool
+[30/03/26, 3:09:00 PM] Suvansh Verma: Join asap
+[30/03/26, 3:09:13 PM] Suvansh Verma: Amit ko chaiye tu
+[30/03/26, 3:11:35 PM] Suvansh Verma: https://meet.google.com/qqj-hxxz-eey?authuser=0
+[31/03/26, 10:34:48 AM] Suvansh Verma: Hry
+[31/03/26, 10:34:52 AM] Suvansh Verma: Joining?
+[01/04/26, 11:19:57 AM] Suvansh Verma: Swami to replace kar raha hai kya tu? 😅
+[01/04/26, 12:00:50 PM] Utkarsh: Call krta hu tujhe.
+[02/04/26, 10:45:22 AM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[02/04/26, 1:04:03 PM] Suvansh Verma: ‎Group call, ‎Answered on other device
+[02/04/26, 1:45:28 PM] Utkarsh: Bhai honestly.
+[02/04/26, 1:45:39 PM] Utkarsh: Ye pta ni h ky hi kr rha h.
+[02/04/26, 1:45:47 PM] Utkarsh: 😅
+[03/04/26, 2:39:59 PM] Utkarsh: Bro
+[03/04/26, 2:40:08 PM] Utkarsh: Tanvinder is not available until 8 PM.
+[03/04/26, 2:40:17 PM] Utkarsh: So we can send the VMs to Sandeep prolly after 10 PM.
+[03/04/26, 2:40:23 PM] Utkarsh: Can he test it out on Mon?
+[03/04/26, 2:41:24 PM] Suvansh Verma: ‎Voice call, ‎58 sec
+[05/04/26, 11:03:44 AM] Utkarsh: https://acceler-nucleus-session-deck.vercel.app
+[05/04/26, 11:07:35 AM] Utkarsh: ‎Voice call, ‎2 min
+[06/04/26, 11:32:39 AM] Utkarsh: ‎Voice call, ‎No answer
+[06/04/26, 11:46:14 AM] Suvansh Verma: ‎Voice call, ‎3 min
+[06/04/26, 1:05:29 PM] Utkarsh: ‎Voice call, ‎6 min
+[06/04/26, 1:10:19 PM] Utkarsh: https://docs.google.com/spreadsheets/d/1r4NndBio1K-N3w33FvOjys0zCDoAIycoY4IVUNv-y8Q/edit?gid=2101066045#gid=2101066045
+[06/04/26, 3:25:50 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[06/04/26, 3:26:10 PM] Utkarsh: Will call back shortly.
+[06/04/26, 3:26:11 PM] Suvansh Verma: Aaj tu Delhi kal 😅
+[06/04/26, 3:26:24 PM] Utkarsh: ‎Voice call, ‎1 min
+‎[06/04/26, 4:53:40 PM] Utkarsh: ISko only Masterclass rename krdete h. ‎<attached: 00001937-PHOTO-2026-04-06-16-53-40.jpg>
+[06/04/26, 4:53:54 PM] Utkarsh: Rather than AI Builder everywhere same rkhte h.
+[06/04/26, 4:54:01 PM] Suvansh Verma: Okay
+[06/04/26, 4:54:04 PM] Suvansh Verma: Will do that
+[06/04/26, 4:54:18 PM] Suvansh Verma: Creds ready? Sandeep called. Usko aage bhejne hai.
+[06/04/26, 4:55:09 PM] Utkarsh: Ha ha creds are ready.
+[06/04/26, 4:55:13 PM] Utkarsh: We can take it forward.
+[06/04/26, 4:56:00 PM] Utkarsh: Manual bhi check krke send krdio.
+[06/04/26, 4:56:09 PM] Suvansh Verma: Cool
+[07/04/26, 12:45:13 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[07/04/26, 3:21:58 PM] Suvansh Verma: Do we have a back up OpenAI API key?
+[07/04/26, 3:22:26 PM] Utkarsh: Ha bro ky hua?
+[07/04/26, 3:23:03 PM] Utkarsh: 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
+[07/04/26, 3:23:10 PM] Utkarsh: This should work.
+[07/04/26, 3:23:41 PM] Suvansh Verma: Okay
+[07/04/26, 3:23:49 PM] Suvansh Verma: Ek learner ko issue hai shayad se
+[07/04/26, 3:23:54 PM] Utkarsh: Name?
+[07/04/26, 3:24:10 PM] Suvansh Verma: Test ke baad poochta hu
+[07/04/26, 3:24:14 PM] Utkarsh: Cool.
+[07/04/26, 3:50:55 PM] Suvansh Verma: Yes
+[07/04/26, 3:51:02 PM] Suvansh Verma: Bata kya hua
+[07/04/26, 3:51:09 PM] Utkarsh: All sorted?
+[07/04/26, 3:51:13 PM] Suvansh Verma: Learner ko help kar raha tha
+[07/04/26, 3:51:17 PM] Utkarsh: VM tk haina!
+[07/04/26, 3:51:19 PM] Utkarsh: ?
+[07/04/26, 3:51:25 PM] Suvansh Verma: Yes, 95% logo ka khul gaya hai
+[07/04/26, 3:51:31 PM] Utkarsh: Perfect.
+[07/04/26, 3:51:41 PM] Suvansh Verma: Ek ya do ka connection issue hai
+[07/04/26, 3:51:52 PM] Suvansh Verma: Unka bhi ho jayega sort
+[07/04/26, 3:51:53 PM] Utkarsh: Call krlio if any issues.
+[07/04/26, 3:51:56 PM] Utkarsh: Cool.
+[07/04/26, 3:52:13 PM] Utkarsh: Coordinate krte reh with Shivam as well for questions n all.
+[07/04/26, 3:52:22 PM] Suvansh Verma: Cool cool
+[07/04/26, 3:52:26 PM] Utkarsh: Uday ko bhi bolta hu.
+[07/04/26, 3:52:31 PM] Suvansh Verma: Set up decent hai yaha
+[07/04/26, 3:52:40 PM] Suvansh Verma: Haan, usko bhi brief karde
+[07/04/26, 3:52:45 PM] Utkarsh: Maybe ask Uday toh move around get questions and share with Shivam,
+[07/04/26, 3:53:15 PM] Suvansh Verma: Haan, bolta hu.
+[07/04/26, 4:02:54 PM] Utkarsh: Screen ache se visible h for the learner’s right?
+[07/04/26, 4:03:06 PM] Utkarsh: Can you send a pic or something?
+[07/04/26, 4:09:14 PM] Suvansh Verma: Yes yes
+[07/04/26, 4:09:15 PM] Suvansh Verma: Easily
+[07/04/26, 4:09:32 PM] Suvansh Verma: Set up sahi ek dum 17-18 logo ke liye
+[07/04/26, 4:13:25 PM] Suvansh Verma: In person hota toh bohot sahi ho sakta hai yaha pe.
+[07/04/26, 4:14:19 PM] Utkarsh: Call krna free hkr.
+[07/04/26, 4:14:22 PM] Suvansh Verma: Message ‎<This message was edited>
+[07/04/26, 4:14:46 PM] Utkarsh: Bt krte h after this.
+[07/04/26, 4:45:08 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[07/04/26, 4:58:44 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[07/04/26, 4:59:24 PM] Utkarsh: This.
+[07/04/26, 5:03:27 PM] Utkarsh: Working fine now?
+[07/04/26, 5:03:40 PM] Utkarsh: Soham ko bhi message krdenge to join whenever Ahmed joins.
+[07/04/26, 5:06:41 PM] Suvansh Verma: I think it’s working now
+[07/04/26, 5:09:42 PM] Utkarsh: Cool.
+[07/04/26, 5:10:49 PM] Suvansh Verma: 5:10 Hands on started
+[07/04/26, 5:11:40 PM] Utkarsh: Ha yes.
+[07/04/26, 5:11:48 PM] Utkarsh: Thda aur pehle start kr skta tha.
+[07/04/26, 5:11:54 PM] Suvansh Verma: Yes
+[07/04/26, 5:11:55 PM] Utkarsh: But questions bhut puch rhe h.
+[07/04/26, 5:11:59 PM] Utkarsh: The learners.
+[07/04/26, 5:14:11 PM] Utkarsh: isko mail krde.
+[07/04/26, 5:14:12 PM] Utkarsh: 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
+[07/04/26, 5:14:16 PM] Utkarsh: To AI_explorer.
+[07/04/26, 5:20:07 PM] Utkarsh: Tell Sandeep mail krdiya h.
+[07/04/26, 5:25:54 PM] Suvansh Verma: Done
+[07/04/26, 5:26:04 PM] Utkarsh: Perfect.
+[07/04/26, 5:28:38 PM] Utkarsh: Firefighting hogyi for a min there.
+[07/04/26, 5:28:43 PM] Utkarsh: All good now?
+‎[07/04/26, 5:28:57 PM] Suvansh Verma: ‎<attached: 00002005-PHOTO-2026-04-07-17-28-57.jpg>
+[07/04/26, 5:29:03 PM] Suvansh Verma: Check this
+[07/04/26, 5:29:09 PM] Utkarsh: Run anyway
+[07/04/26, 5:29:13 PM] Utkarsh: Move ahead.
+[07/04/26, 5:29:23 PM] Utkarsh: Wo generally aa jta h sometimes.
+[07/04/26, 5:29:27 PM] Suvansh Verma: Cool
+[07/04/26, 5:40:22 PM] Utkarsh: Bro
+[07/04/26, 5:40:30 PM] Utkarsh: I ran the whole thing and checked again Colab.
+[07/04/26, 5:40:34 PM] Utkarsh: Everything is running fine.
+[07/04/26, 5:42:13 PM] Suvansh Verma: Okay
+[07/04/26, 6:03:31 PM] Utkarsh: Bro how’s the vibe there avi all good?
+[07/04/26, 6:07:22 PM] Suvansh Verma: Mixed vibe hai
+[07/04/26, 6:07:31 PM] Suvansh Verma: Kuch learners engaged hai
+[07/04/26, 6:07:47 PM] Suvansh Verma: Kuch aise he baithe hue hai but they are following. Not asking questions.
+[07/04/26, 6:12:37 PM] Suvansh Verma: Bol diya hai extend hogi class
+[07/04/26, 6:12:56 PM] Suvansh Verma: He is fine if it gets extended by 35-40mins
+[07/04/26, 6:15:00 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[07/04/26, 6:15:53 PM] Utkarsh: Perfect.
+[07/04/26, 6:15:59 PM] Utkarsh: Shivam ko bolde close krne.
+[07/04/26, 6:16:13 PM] Suvansh Verma: Kar diya hai usne
+[07/04/26, 6:16:25 PM] Suvansh Verma: Usne qna ke liye open kiya hai
+[07/04/26, 6:16:46 PM] Utkarsh: Cool
+[07/04/26, 6:28:39 PM] Suvansh Verma: Yeh nai chalega yaha
+[07/04/26, 6:28:54 PM] Utkarsh: I know.
+[07/04/26, 6:29:00 PM] Utkarsh: They are too away from AI.
+[07/04/26, 6:29:08 PM] Utkarsh: They are already overwhelmed.
+[07/04/26, 6:29:22 PM] Utkarsh: Next sessions in person krna better rhga.
+[07/04/26, 6:29:28 PM] Utkarsh: Let’s stick with in-person only.
+[07/04/26, 7:16:19 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[07/04/26, 7:22:24 PM] Utkarsh: Cab me baith kr aaram se call krna.
+[07/04/26, 7:38:46 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[08/04/26, 9:53:35 AM] Utkarsh: Bro
+[08/04/26, 9:53:44 AM] Suvansh Verma: Hey bro
+[08/04/26, 9:53:47 AM] Utkarsh: This Vercel link did we share with participants or Sandeep?
+[08/04/26, 9:53:56 AM] Suvansh Verma: No
+[08/04/26, 9:53:59 AM] Utkarsh: I was thinking avi call ke liye will put all the metrics uspe.
+[08/04/26, 9:54:01 AM] Utkarsh: Cool krta hu.
+[08/04/26, 9:54:07 AM] Utkarsh: We can then present to Soham.
+[08/04/26, 9:54:26 AM] Suvansh Verma: It was not opening on their laptop but VM pe khul raha tha.
+[08/04/26, 9:54:32 AM] Utkarsh: Acha got it.
+[08/04/26, 9:54:36 AM] Utkarsh: Chill h phr toh.
+[08/04/26, 9:54:44 AM] Utkarsh: Feedback is also really good.
+[08/04/26, 9:54:54 AM] Utkarsh: Masterclass history me highest rating h.
+[08/04/26, 9:57:44 AM] Suvansh Verma: Yes, sirf ek bande ke rating ke wajah se thoda down hua
+[08/04/26, 9:57:51 AM] Suvansh Verma: Jisne interaction mein 1 rakha
+[08/04/26, 9:57:59 AM] Utkarsh: Acha name?
+[08/04/26, 9:58:08 AM] Suvansh Verma: Woh banda Sandeep ke saath baitha hua tha poora time.
+[08/04/26, 9:58:19 AM] Utkarsh: Acha got it.
+[08/04/26, 9:58:27 AM] Suvansh Verma: I have marked that in red. Jo sheet share kari hai usmein red marked hai
+[08/04/26, 9:58:50 AM] Utkarsh: I was expecting that this SME will provide the platform to use it and plug it
+[08/04/26, 9:58:56 AM] Utkarsh: Isko n8n pe krna tha 😅
+[08/04/26, 9:59:08 AM] Utkarsh: Bhai class ka pre-req likha h Python, toh n8n kaise hoga.
+[08/04/26, 9:59:14 AM] Utkarsh: Some of them are really something. ‎<This message was edited>
+[08/04/26, 10:02:26 AM] Suvansh Verma: Indian audience bro. Desi log the kal class mein.
+[08/04/26, 10:02:53 AM] Suvansh Verma: Also, bro
+[08/04/26, 10:03:13 AM] Suvansh Verma: I have shared a link with you in the B2B all cohorts group
+[08/04/26, 10:03:24 AM] Suvansh Verma: That has all the e& links that we want them to unblock
+[08/04/26, 10:03:42 AM] Suvansh Verma: Usmein whitelisting waale links add kar sakta hai ya jo pehele bheje the John ko.
+[08/04/26, 10:03:46 AM] Suvansh Verma: Last year mid mein
+[08/04/26, 10:06:24 AM] Utkarsh: Let me check.
+[08/04/26, 10:06:50 AM] Utkarsh: Isme nuvepro wale saare link add krde bro.
+[08/04/26, 10:07:00 AM] Utkarsh: Like the bunch of them we had sent to Nucleus also.
+[08/04/26, 10:07:04 AM] Utkarsh: Baaki we are good.
+[08/04/26, 10:07:17 AM] Suvansh Verma: Okay
+[08/04/26, 10:07:20 AM] Suvansh Verma: I’ll add that
+[08/04/26, 10:07:21 AM] Utkarsh: There was a sheet last year we can check that also once.
+[08/04/26, 10:07:34 AM] Suvansh Verma: Cannot find that
+[08/04/26, 10:07:37 AM] Utkarsh: https://docs.google.com/spreadsheets/d/1Nwn7F1hEYKPwZFIkDE9rMtNTV3ZXVLc_DQj7O0I1f7U/edit?gid=1627487721#gid=1627487721
+[08/04/26, 10:07:42 AM] Suvansh Verma: Warna waha se copy kar deta
+[08/04/26, 10:07:52 AM] Suvansh Verma: Sorted scene
+[08/04/26, 10:07:51 AM] Utkarsh: This was I think Uplevel wala
+‎[08/04/26, 10:12:24 AM] Utkarsh: ‎<attached: 00002076-PHOTO-2026-04-08-10-12-24.jpg>
+[08/04/26, 10:12:26 AM] Utkarsh: Ye tk h?
+[08/04/26, 10:12:58 AM] Suvansh Verma: Perfect hai yeh toh
+[08/04/26, 10:16:46 AM] Utkarsh: Cool bro NPS tk haina?
+[08/04/26, 10:17:05 AM] Suvansh Verma: Yes
+[08/04/26, 10:17:37 AM] Suvansh Verma: You have taken it from the sheet only, right?
+[08/04/26, 10:17:52 AM] Utkarsh: Ha bro.
+[08/04/26, 10:18:44 AM] Utkarsh: NPS sheet me added h ky ?
+[08/04/26, 10:18:47 AM] Utkarsh: I don’t see it.
+[08/04/26, 10:20:27 AM] Suvansh Verma: Rating sheet mein he pehela question hai
+[08/04/26, 10:21:15 AM] Utkarsh: Acha this one - How likely are you to recommend us to a colleague?
+[08/04/26, 10:21:17 AM] Utkarsh: Cool.
+[08/04/26, 10:30:42 AM] Suvansh Verma: Yes
+[08/04/26, 10:30:43 AM] Suvansh Verma: Joining in 2
+[09/04/26, 11:34:38 AM] Suvansh Verma: ‎Voice call, ‎12 min
+[10/04/26, 11:32:46 AM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[28/04/26, 1:24:34 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[28/04/26, 1:25:24 PM] Suvansh Verma: Hey bro
+[28/04/26, 1:25:30 PM] Suvansh Verma: Call me when free
+[28/04/26, 1:25:40 PM] Suvansh Verma: Need to discuss something regarding the tools for e&
+[28/04/26, 1:56:26 PM] Suvansh Verma: Added the details
+[30/04/26, 1:32:03 PM] Suvansh Verma: Bro, aaja call pe.
+[30/04/26, 1:32:39 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[30/04/26, 1:33:08 PM] Utkarsh: Ha bro.
+[30/04/26, 1:33:10 PM] Utkarsh: Aaya.
+[30/04/26, 1:33:38 PM] Suvansh Verma: Their head of cyber security is joining
+[08/05/26, 10:32:38 AM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[08/05/26, 10:43:18 AM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[08/05/26, 10:43:18 AM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[12/05/26, 9:11:29 AM] Suvansh Verma: Hey bro
+[12/05/26, 9:11:34 AM] Suvansh Verma: Good morning!
+[12/05/26, 9:12:15 AM] Suvansh Verma: Ek baar Tanvinder ke saath check karna padega for the VMs. I have messaged on the group. Will have to activate VMs for the assignment completion.
+[12/05/26, 11:04:21 AM] Utkarsh: Yes bro.
+[12/05/26, 4:17:43 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[12/05/26, 4:18:25 PM] Suvansh Verma: Call with John and Samira at 5pm
+[13/05/26, 12:42:50 PM] Suvansh Verma: Calling you back
+[13/05/26, 12:44:15 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[13/05/26, 1:29:24 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[13/05/26, 4:01:35 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[14/05/26, 12:28:22 PM] Suvansh Verma: Hey bro
+[14/05/26, 12:30:56 PM] Utkarsh: Ha bro
+[14/05/26, 12:30:57 PM] Utkarsh: Tell me
+[14/05/26, 12:31:05 PM] Suvansh Verma: Maine tanwinder ko bol diya hai for the creds.
+[14/05/26, 12:31:20 PM] Suvansh Verma: Aaj agar apne ko 4 logo ke bhi mil jayenge toh chalega
+[14/05/26, 12:31:33 PM] Suvansh Verma: Baaki he can give tomorrow as well
+[14/05/26, 1:33:05 PM] Utkarsh: Call krta hu thdi der me.
+[14/05/26, 1:46:43 PM] Suvansh Verma: Cool
+[14/05/26, 4:04:19 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[15/05/26, 11:47:05 AM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[15/05/26, 2:46:17 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[15/05/26, 3:45:55 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[18/05/26, 10:07:43 AM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[18/05/26, 11:25:41 AM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[18/05/26, 11:33:26 AM] Utkarsh: https://acceler-lms.vercel.app/
+[18/05/26, 7:04:01 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[19/05/26, 8:59:02 AM] Utkarsh: Bro
+[19/05/26, 8:59:06 AM] Utkarsh: Free hoga toh call krna.
+[19/05/26, 8:59:50 AM] Suvansh Verma: Hey
+[19/05/26, 9:00:08 AM] Suvansh Verma: Sure, calling you.
+[19/05/26, 9:07:35 AM] Suvansh Verma: ‎Voice call, ‎2 min
+[19/05/26, 12:29:26 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+‎[19/05/26, 12:54:44 PM] Suvansh Verma: ‎<attached: 00002137-PHOTO-2026-05-19-12-54-44.jpg>
+[19/05/26, 12:57:57 PM] Utkarsh: https://docs.google.com/document/d/1_t1jUTmOtDsMFKGL3Fu8XLDU_eWLC7IzYBGAKjqh5QU/edit?tab=t.0
+[19/05/26, 3:00:33 PM] Suvansh Verma: ‎Voice call, ‎Answered on other device
+[19/05/26, 9:21:28 PM] Utkarsh: Ye krdio send as a PDF - https://docs.google.com/document/d/1hzOfxx88k6UysV3yZTJmiwoo0urMgCxUsNAiTnf242E/edit?tab=t.0#heading=h.8d9fxy2ihofk
+[19/05/26, 9:21:45 PM] Utkarsh: https://discord.gg/DAMWebwsG
+[19/05/26, 9:21:48 PM] Utkarsh: Also join krle yaha.
+[19/05/26, 9:22:45 PM] Suvansh Verma: Access dede
+[19/05/26, 9:23:13 PM] Utkarsh: Done:
+[20/05/26, 11:37:28 AM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+[20/05/26, 11:45:49 AM] Utkarsh: Hey bro
+[20/05/26, 11:45:52 AM] Utkarsh: Call krta hu thdi der me.
+[20/05/26, 11:46:10 AM] Suvansh Verma: Cool
+[20/05/26, 11:46:13 AM] Suvansh Verma: Sort ho gaya waise
+[20/05/26, 11:46:17 AM] Suvansh Verma: Spoke to Tanvinder
+[20/05/26, 3:11:55 PM] Suvansh Verma: ‎Missed voice call, ‎Click to call back
+‎[20/05/26, 4:01:31 PM] Suvansh Verma: ‎<attached: 00002152-PHOTO-2026-05-20-16-01-31.jpg>
+‎[20/05/26, 4:01:32 PM] Suvansh Verma: ‎<attached: 00002153-VIDEO-2026-05-20-16-01-32.mp4>

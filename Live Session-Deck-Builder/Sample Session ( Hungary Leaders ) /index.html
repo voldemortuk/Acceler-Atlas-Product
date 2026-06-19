@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Build your AI team — e& PPF Hungary (CETIN × Yettel)</title>
+<style>
+  :root{
+    --bg:#FAF7F1; --bg2:#EEF0FB; --card:#fff; --navy:#2C3F8E; --navy-deep:#0F1632;
+    --cyan:#5BC4D2; --cyan-dk:#2C3F8E; --cyan-soft:#E8F7FA; --ink:#1A2240; --text2:#4B5563;
+    --muted:#6B7280; --border:#E5E7EB; --green:#10B981; --green-l:#ECFDF5; --amber:#B45309;
+    --amber-l:#FFF8ED; --red:#DC2626; --red-l:#FEF2F2;
+    --font:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+    --mono:"SF Mono",Monaco,"Cascadia Code",monospace;
+  }
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+  html{-webkit-font-smoothing:antialiased;}
+  body{background:var(--navy-deep);color:var(--ink);font-family:var(--font);overflow:hidden;height:100vh;width:100vw;}
+  .deck{width:100vw;height:100vh;position:relative;}
+  .slide{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:44px 64px;opacity:0;pointer-events:none;transition:opacity .4s ease;background:var(--bg);overflow:hidden;}
+  .slide.active{opacity:1;pointer-events:auto;}
+  .inner{max-width:1180px;width:100%;}
+
+  .eyebrow{font-size:13.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan-dk);margin-bottom:12px;}
+  .h{font-size:clamp(24px,2.9vw,35px);font-weight:800;letter-spacing:-.015em;line-height:1.18;color:var(--ink);display:flex;align-items:center;gap:13px;flex-wrap:wrap;}
+  .h .accent{color:var(--cyan-dk);}
+  .lead{font-size:18px;line-height:1.6;color:var(--text2);max-width:920px;} .lead b{color:var(--ink);}
+  .shead{margin-bottom:22px;} .shead .h{margin-top:4px;}
+
+  .progress{position:fixed;top:0;left:0;height:3px;background:var(--cyan);z-index:200;transition:width .4s ease;}
+  .counter{position:fixed;top:20px;right:28px;font-size:13px;font-weight:600;color:var(--muted);z-index:100;opacity:0;transition:opacity .4s;}
+  .counter.on{opacity:1;}
+  .zone{position:fixed;top:0;width:11%;height:100%;z-index:50;cursor:pointer;} .zone--prev{left:0;} .zone--next{right:0;}
+  .brand{position:fixed;bottom:16px;right:20px;z-index:100;} .brand img{height:20px;background:#fff;padding:6px 11px;border-radius:8px;box-shadow:0 4px 14px rgba(0,0,0,.14);display:block;}
+  .fs{position:fixed;bottom:16px;left:20px;z-index:100;width:33px;height:33px;border-radius:8px;border:1px solid var(--border);background:rgba(255,255,255,.92);color:var(--navy);font-size:15px;cursor:pointer;}
+  .fs:hover{border-color:var(--cyan);}
+
+  .dark{background:linear-gradient(135deg,#0F1632 0%,#2D3666 100%);}
+  .dark .eyebrow{color:var(--cyan);} .dark .h{color:#fff;} .dark .accent{color:var(--cyan);} .dark .lead{color:rgba(255,255,255,.7);}
+  .deep{background:radial-gradient(ellipse at 30% 30%,#2D3666 0%,#0A0A1A 100%);}
+  .cover{background:radial-gradient(ellipse at 30% 25%,#2D3666 0%,#0A0A1A 100%);text-align:center;}
+  .cover__logos{display:flex;align-items:center;justify-content:center;gap:26px;margin-bottom:30px;}
+  .logoplate{background:#fff;border-radius:13px;padding:12px 20px;box-shadow:0 12px 34px rgba(0,0,0,.28);display:flex;align-items:center;}
+  .logoplate img{height:40px;width:auto;display:block;}
+  .logodiv{width:2px;height:46px;background:rgba(255,255,255,.22);}
+  .badge{display:inline-flex;gap:8px;align-items:center;background:rgba(91,196,210,.14);border:1px solid rgba(91,196,210,.35);color:var(--cyan);padding:9px 22px;border-radius:100px;font-size:14px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:20px;}
+  .cover h1{font-size:clamp(40px,5vw,68px);color:#fff;line-height:1.02;max-width:920px;margin:0 auto 16px;font-weight:800;letter-spacing:-.025em;}
+  .cover h1 .accent{color:var(--cyan);}
+  .cover p{max-width:760px;margin:0 auto 26px;font-size:19px;color:rgba(255,255,255,.62);line-height:1.6;} .cover p b{color:#fff;}
+  .chips{display:flex;gap:13px;justify-content:center;flex-wrap:wrap;}
+  .chip{display:inline-flex;gap:9px;align-items:center;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:100px;padding:11px 21px;font-size:15px;color:rgba(255,255,255,.82);} .chip b{color:#fff;}
+  .foot{margin-top:30px;font-size:13.5px;color:rgba(255,255,255,.4);letter-spacing:.03em;}
+
+  .section{background:linear-gradient(135deg,#0F1632 0%,#2D3666 100%);text-align:center;}
+  .section .num{font-size:15px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan);margin-bottom:18px;}
+  .section h2{font-size:clamp(34px,4.4vw,56px);color:#fff;font-weight:800;letter-spacing:-.02em;line-height:1.1;max-width:820px;margin:0 auto;}
+  .section .sub{margin-top:18px;font-size:20px;color:rgba(255,255,255,.55);max-width:680px;margin-left:auto;margin-right:auto;}
+
+  .stmt{text-align:center;}
+  .stmt .kick{font-size:14px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan);margin-bottom:18px;}
+  .stmt .big{font-size:clamp(34px,4.6vw,60px);font-weight:800;letter-spacing:-.025em;line-height:1.08;color:#fff;max-width:1000px;margin:0 auto;}
+  .stmt .big .accent{color:var(--cyan);}
+  .stmt .sub{margin-top:22px;font-size:21px;color:rgba(255,255,255,.62);max-width:760px;margin-left:auto;margin-right:auto;line-height:1.55;}
+  .cta{display:inline-flex;align-items:center;gap:10px;background:var(--cyan);color:var(--navy-deep);font-weight:800;font-size:18px;text-decoration:none;border-radius:12px;padding:15px 30px;}
+  .cta:hover{background:#7ad3df;}
+
+  .card{background:var(--card);border:1px solid var(--border);border-radius:15px;padding:22px;}
+  .card.top{border-top:4px solid var(--cyan);}
+  .c2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+  .c3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .card .tag{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cyan-dk);margin-bottom:8px;}
+  .card .t{font-size:20px;font-weight:800;color:var(--ink);letter-spacing:-.01em;margin-bottom:8px;display:flex;align-items:center;gap:9px;}
+  .card .d{font-size:15px;line-height:1.55;color:var(--text2);} .card .d b{color:var(--ink);}
+  .card ul{list-style:none;margin-top:9px;display:flex;flex-direction:column;gap:6px;}
+  .card li{font-size:14px;color:var(--ink);padding-left:18px;position:relative;line-height:1.45;}
+  .card li::before{content:'▸';position:absolute;left:0;color:var(--cyan-dk);font-weight:700;}
+
+  .banner{margin-top:18px;background:var(--navy);color:#fff;border-radius:14px;padding:15px 22px;display:flex;gap:14px;align-items:center;font-size:15px;line-height:1.5;} .banner b{color:var(--cyan);} .banner .ic{font-size:20px;}
+
+  .stg{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:#fff;padding:5px 13px;border-radius:100px;}
+  .stg--basic{background:#3B5BA9;} .stg--intermediate{background:var(--amber);} .stg--advanced{background:var(--cyan-dk);} .stg--setup{background:var(--muted);} .stg--next{background:var(--green);}
+
+  /* pipeline / steps */
+  .pipe{display:flex;gap:10px;align-items:stretch;}
+  .pstep{flex:1;background:var(--card);border:1px solid var(--border);border-radius:13px;padding:18px 16px;text-align:center;}
+  .pstep .pi{font-size:26px;margin-bottom:9px;} .pstep .pt{font-size:15px;font-weight:800;color:var(--ink);line-height:1.2;margin-bottom:5px;}
+  .pstep .pd{font-size:12.5px;color:var(--text2);line-height:1.4;}
+  .parrow{align-self:center;color:var(--cyan);font-weight:800;font-size:18px;}
+
+  /* mini stat tiles */
+  .mini{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+  .mcard{background:var(--card);border:1px solid var(--border);border-radius:13px;padding:16px;text-align:center;}
+  .mcard .n{font-size:28px;font-weight:800;color:var(--cyan-dk);} .mcard .l{font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-top:4px;}
+
+  /* instructor intro */
+  .intro{display:grid;grid-template-columns:270px 1fr;gap:46px;align-items:start;}
+  .intro__l{display:flex;flex-direction:column;align-items:center;}
+  .intro__photo{width:196px;height:196px;border-radius:50%;object-fit:cover;border:5px solid #fff;box-shadow:0 12px 34px rgba(15,22,50,.16);background:#fff;}
+  .intro__lab{align-self:flex-start;font-size:11.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);margin:22px 0 9px;}
+  .speclist{list-style:none;align-self:flex-start;display:flex;flex-direction:column;gap:7px;}
+  .speclist li{font-size:13.5px;color:var(--text2);padding-left:15px;position:relative;line-height:1.32;}
+  .speclist li::before{content:'•';position:absolute;left:0;color:var(--cyan-dk);font-weight:800;}
+  .explab{align-self:flex-start;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan-dk);margin:18px 0 10px;}
+  .extiles{align-self:flex-start;display:flex;gap:8px;flex-wrap:wrap;}
+  .extile{min-width:46px;height:44px;padding:0 11px;border-radius:10px;border:1px solid var(--border);background:#fff;box-shadow:0 3px 10px rgba(15,22,50,.06);display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:var(--navy);line-height:1.1;}
+  .extile--feat{border:2px solid var(--cyan);background:var(--cyan-soft);box-shadow:0 6px 16px rgba(91,196,210,.25);}
+  .extile .tcap{font-size:8px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan-dk);margin-top:2px;}
+  .intro__eyebrow{font-size:13px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan-dk);margin-bottom:8px;}
+  .intro__name{font-size:clamp(30px,3.4vw,42px);font-weight:800;color:var(--ink);letter-spacing:-.02em;line-height:1.04;}
+  .intro__role{font-size:17px;color:var(--text2);margin:6px 0 16px;}
+  /* telecom credential callout (Cornerstone-style gradient pill heading) */
+  .telecallout{background:linear-gradient(135deg,var(--cyan-soft) 0%,#F4F6FC 100%);border:1px solid #BFE7EE;border-left:4px solid var(--cyan);border-radius:12px;padding:12px 16px;margin-bottom:14px;}
+  .telepill{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(90deg,var(--navy) 0%,var(--cyan) 100%);color:#fff;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:4px 13px;border-radius:999px;margin-bottom:9px;}
+  .telecallout p{font-size:14px;color:var(--ink);line-height:1.48;} .telecallout p b{color:var(--navy);}
+  .teleul{list-style:none;display:flex;flex-direction:column;gap:6px;}
+  .teleul li{font-size:13.5px;color:var(--ink);line-height:1.4;padding-left:17px;position:relative;}
+  .teleul li::before{content:'›';position:absolute;left:0;color:var(--cyan-dk);font-weight:800;font-size:15px;}
+  .teleul li b{color:var(--navy);}
+  .bsec{margin-bottom:12px;}
+  .bsec h4{font-size:14px;font-weight:800;color:var(--cyan-dk);margin-bottom:6px;}
+  .bsec ul{list-style:none;display:flex;flex-direction:column;gap:5px;}
+  .bsec li{font-size:14px;color:var(--text2);padding-left:16px;position:relative;line-height:1.4;}
+  .bsec li::before{content:'•';position:absolute;left:0;color:var(--muted);font-weight:800;}
+  .bsec li b{color:var(--ink);}
+
+  /* screenshot frame */
+  .shotwrap{display:flex;flex-direction:column;align-items:center;gap:14px;}
+  .shot{width:100%;max-width:980px;border-radius:14px;overflow:hidden;border:1px solid var(--border);box-shadow:0 18px 46px rgba(15,22,50,.14);background:#fff;}
+  .shot__bar{height:34px;background:#1f2433;display:flex;align-items:center;gap:7px;padding:0 14px;}
+  .shot__bar i{width:11px;height:11px;border-radius:50%;display:block;}
+  .shot__bar i:nth-child(1){background:#ff5f57;} .shot__bar i:nth-child(2){background:#febc2e;} .shot__bar i:nth-child(3){background:#28c840;}
+  .shot img{width:100%;display:block;max-height:58vh;object-fit:contain;background:#0b0b14;}
+
+  /* virtual-lab setup (checklist + url card) */
+  .checklist{list-style:none;display:flex;flex-direction:column;gap:9px;}
+  .checklist li{font-size:14px;color:var(--ink);padding-left:30px;position:relative;line-height:1.4;}
+  .checklist li::before{content:'✓';position:absolute;left:0;top:1px;width:20px;height:20px;border-radius:6px;background:var(--cyan-soft);color:var(--cyan-dk);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:12px;border:1px solid #BFE7EE;}
+  .checklist li b{color:var(--navy);}
+  .urlcard{background:var(--cyan-soft);border:1px solid #BFE7EE;border-radius:14px;padding:18px 20px;}
+  .urlcard .lab{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--cyan-dk);margin-bottom:8px;}
+  .urlcard .u{font-family:var(--mono);font-size:13px;color:var(--ink);word-break:break-all;padding:11px 13px;background:#fff;border:1px solid var(--border);border-radius:8px;margin-bottom:12px;}
+  .urlbtn{display:inline-block;padding:10px 20px;background:var(--cyan-dk);color:#fff;font-size:14px;font-weight:800;border-radius:8px;text-decoration:none;}
+  .urlbtn:hover{background:var(--navy-deep);}
+  .allgreen{margin-top:16px;text-align:center;padding:13px;background:var(--green-l);border:1px solid #bbf7d0;border-radius:10px;font-size:15px;color:var(--green);font-weight:800;}
+  /* ecosystem */
+  .eco{display:grid;grid-template-columns:repeat(5,1fr);gap:13px;}
+  .ecard{background:var(--card);border:1px solid var(--border);border-top:4px solid var(--cyan);border-radius:14px;padding:17px 15px;text-align:center;}
+  .ecard .ei{font-size:28px;margin-bottom:9px;} .ecard .en{font-size:15px;font-weight:800;color:var(--ink);line-height:1.15;margin-bottom:6px;} .ecard .ed{font-size:12.5px;color:var(--text2);line-height:1.4;}
+
+  /* chapter rail (stages) */
+  .chmap{display:flex;align-items:stretch;justify-content:center;gap:6px;width:100%;}
+  .chnode{flex:1;display:flex;flex-direction:column;align-items:center;padding:22px 14px;border-radius:14px;background:#fff;border:1.5px solid var(--border);text-align:center;}
+  .chnode .num{width:28px;height:28px;border-radius:8px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;margin-bottom:10px;}
+  .chnode .icon{font-size:30px;margin-bottom:8px;}
+  .chnode .name{font-size:17px;font-weight:800;color:var(--ink);}
+  .chnode .desc{font-size:13px;color:var(--text2);margin-top:5px;line-height:1.4;}
+  .charrow{display:flex;align-items:center;font-size:22px;color:var(--muted);}
+
+  /* pick cards */
+  .pick{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+  .pcard{text-align:left;background:var(--card);border:1px solid var(--border);border-top:4px solid var(--cyan);border-radius:16px;padding:24px 22px;display:flex;flex-direction:column;}
+  .pcard .fn{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan-dk);}
+  .pcard .ag{font-size:24px;font-weight:800;color:var(--ink);line-height:1.12;margin:8px 0 8px;}
+  .pcard .pd{font-size:15px;color:var(--text2);line-height:1.5;flex:1;}
+  .pcard .tags{display:flex;gap:7px;margin-top:14px;flex-wrap:wrap;}
+  .ptag{font-size:11.5px;font-weight:700;color:var(--cyan-dk);background:var(--cyan-soft);border:1px solid #BFE7EE;border-radius:100px;padding:5px 11px;}
+
+  /* diagram frame */
+  .diagram{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:14px 18px;width:100%;height:clamp(330px,50vh,520px);display:flex;align-items:center;justify-content:center;box-shadow:0 12px 34px rgba(15,22,50,.07);}
+  .diagram svg{width:100%;height:100%;max-height:100%;}
+  .anim-svg [data-step]{opacity:0;transform:scale(.94);transform-origin:center;transform-box:fill-box;}
+  .slide.active .anim-svg [data-step]{animation:pop .55s cubic-bezier(.3,.1,.3,1.15) forwards;}
+  .slide.active .anim-svg [data-step="1"]{animation-delay:.15s;} .slide.active .anim-svg [data-step="2"]{animation-delay:.4s;}
+  .slide.active .anim-svg [data-step="3"]{animation-delay:.65s;} .slide.active .anim-svg [data-step="4"]{animation-delay:.9s;}
+  .slide.active .anim-svg [data-step="5"]{animation-delay:1.15s;} .slide.active .anim-svg [data-step="6"]{animation-delay:1.4s;}
+  .slide.active .anim-svg [data-step="7"]{animation-delay:1.65s;}
+  @keyframes pop{to{opacity:1;transform:scale(1);}}
+
+  /* locked steps */
+  .lockbar{display:flex;align-items:center;gap:12px;background:#FFF8ED;border:1px solid #F4D9A8;border-radius:13px;padding:13px 20px;margin-bottom:16px;font-size:14.5px;color:#7a4d09;line-height:1.45;}
+  .lockbar b{color:var(--amber);}
+  .lockbar .lk{font-size:20px;}
+  .lsteps{display:flex;flex-direction:column;gap:11px;}
+  .lstep{display:grid;grid-template-columns:34px 1fr auto;gap:15px;align-items:center;padding:15px 18px;border:1px solid var(--border);border-radius:13px;background:var(--card);position:relative;overflow:hidden;}
+  .lstep .ln{width:30px;height:30px;border-radius:8px;background:var(--muted);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;}
+  .lstep .lmid{min-width:0;}
+  .lstep .lt{font-size:15.5px;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+  .lstep .lg{font-size:13px;color:var(--text2);margin-top:3px;line-height:1.4;}
+  .lstep .lhidden{margin-top:8px;font-family:var(--mono);font-size:11.5px;color:var(--ink);background:var(--bg2);border-radius:7px;padding:7px 10px;filter:blur(4.5px);user-select:none;}
+  .lstep .lk{font-size:20px;color:var(--amber);flex-shrink:0;}
+  .lstep::after{content:'LOCKED';position:absolute;top:11px;right:46px;font-size:9.5px;font-weight:800;letter-spacing:.1em;color:var(--amber);background:#FFF8ED;border:1px solid #F4D9A8;border-radius:100px;padding:2px 9px;}
+
+  /* outbox */
+  .outbox{margin-top:8px;background:var(--green-l);border:1px solid #bbf7d0;border-radius:12px;padding:12px 16px;display:flex;align-items:baseline;gap:12px;}
+  .outbox .l{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--green);white-space:nowrap;}
+  .outbox .x{font-size:14px;font-weight:700;color:var(--ink);line-height:1.35;}
+
+  /* generic two-col with side list */
+  .dgrid{display:grid;grid-template-columns:1fr;gap:14px;}
+
+  .why{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  .wc{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:15px;padding:20px 22px;}
+  .wc .i{font-size:24px;margin-bottom:9px;} .wc .t{font-size:20px;font-weight:800;color:#fff;margin-bottom:6px;} .wc .d{font-size:15px;color:rgba(255,255,255,.62);line-height:1.5;} .wc .d b{color:var(--cyan);}
+
+  .notes{position:fixed;bottom:0;left:0;right:0;background:rgba(14,22,64,.96);backdrop-filter:blur(12px);color:rgba(255,255,255,.86);padding:16px 36px;font-size:15px;line-height:1.6;z-index:300;transform:translateY(100%);transition:transform .3s;max-height:32vh;overflow-y:auto;border-top:2px solid var(--cyan);}
+  .notes.on{transform:translateY(0);} .notes .nl{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);margin-bottom:6px;}
+
+  /* demo time animations */
+  @keyframes demoPulse{0%,100%{transform:scale(1);opacity:.55;}50%{transform:scale(1.12);opacity:.15;}}
+  @keyframes demoBounce{0%,100%{transform:translateY(0);}50%{transform:translateY(-12px);}}
+  @keyframes orbA{0%,100%{transform:translate(0,0) rotate(0deg);}50%{transform:translate(4px,-12px) rotate(12deg);}}
+  @keyframes orbB{0%,100%{transform:translate(0,0) rotate(0deg);}50%{transform:translate(-5px,-10px) rotate(-10deg);}}
+  @keyframes orbC{0%,100%{transform:translate(0,0) rotate(0deg);}50%{transform:translate(3px,-14px) rotate(8deg);}}
+
+  /* bottom nav bar */
+  .nav{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:8px;align-items:center;background:rgba(0,0,0,.55);padding:8px 14px;border-radius:999px;backdrop-filter:blur(10px);z-index:120;}
+  .nav button{background:rgba(255,255,255,.15);border:0;color:#fff;width:30px;height:30px;border-radius:999px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;transition:background .2s;}
+  .nav button:hover{background:rgba(255,255,255,.3);}
+  .nav .count{color:#fff;font-size:12px;padding:0 12px;font-variant-numeric:tabular-nums;font-weight:600;}
+  .nav .dots{display:flex;gap:4px;align-items:center;max-width:45vw;overflow-x:auto;margin:0 4px;}
+  .nav .dots::-webkit-scrollbar{display:none;}
+  .nav .dot{width:6px;height:6px;border-radius:999px;background:rgba(255,255,255,.3);transition:all .3s;cursor:pointer;flex-shrink:0;}
+  .nav .dot.active{background:var(--cyan);width:20px;}
+
+  @media print{ @page{size:1280px 720px;margin:0;} .slide{page-break-after:always;opacity:1!important;pointer-events:auto!important;position:relative!important;} .progress,.brand,.fs,.counter,.zone,.notes{display:none!important;} }
+</style>
+</head>
+<body>
+<div class="deck">
+
+  <!-- 0 · COVER -->
+  <div class="slide cover active" data-notes="Welcome. This is the e& PPF Hungary (CETIN × Yettel) leadership build lab. Today you build your own AI team — agents that work your real week. Open with energy: three steps — set up, build, watch one run on its own.">
+    <div class="inner">
+      <div class="cover__logos">
+        <div class="logoplate"><img src="acceler_logo.png" alt="Acceler"></div>
+      </div>
+      <div class="badge">Copilot Leadership Lab · e& PPF Hungary</div>
+      <h1>Build your<br><span class="accent">AI team.</span></h1>
+      <p>Walk in a leader. Walk out a builder — with a <b>real agent that works your week.</b></p>
+      <div class="chips">
+        <span class="chip">🛠️ <b>Copilot Studio</b> · Virtual Labs</span>
+        <span class="chip">🤖 <b>1 agent</b> · built end-to-end</span>
+        <span class="chip">⏱️ <b>2.5 hours</b></span>
+      </div>
+      <div class="foot">← → navigate · F fullscreen · “.” speaker notes</div>
+    </div>
+  </div>
+
+  <!-- 1 · MADAN INTRO -->
+  <div class="slide" data-notes="Madan introduces himself — 20+ years scaling growth across telecom, travel, fintech and edtech, from 0→1 to India scale. Works at the intersection of growth and engineering — builds GTM systems he can code himself. OYO, Airtel, PhysicsWallah, Paytm, Housing. XLRI, Reforge. Now building AI-powered growth systems and agent-based workflows. Keep it to ~60 seconds — establish credibility, then move.">
+    <div class="inner">
+      <div class="intro">
+        <div class="intro__l">
+          <img class="intro__photo" src="assets/slide02_2.png" alt="Madan Rawtani">
+          <div class="intro__lab">Technical Specializations</div>
+          <ul class="speclist">
+            <li>AI-Powered Growth Systems</li>
+            <li>Multi-Agent Systems &amp; Agentic Workflows</li>
+            <li>Martech Infrastructure &amp; Automation</li>
+            <li>Growth Engineering · 0→1 &amp; 1→10</li>
+            <li>Anthropic Claude · n8n</li>
+          </ul>
+          <div class="explab">Experience</div>
+          <div class="extiles">
+            <span class="extile extile--feat" style="color:#E40000;">Airtel<span class="tcap">Telecom</span></span>
+            <span class="extile" style="color:#0B2A6B;">Paytm</span>
+            <span class="extile" style="color:#EE2E24;">OYO</span>
+            <span class="extile" style="color:#6C4FB6;">PhysicsWallah</span>
+            <span class="extile" style="color:#EF1C74;">Housing.com</span>
+          </div>
+        </div>
+        <div class="intro__r">
+          <div class="intro__eyebrow">Your host today</div>
+          <div class="intro__name">Madan Rawtani</div>
+          <div class="intro__role">AI + Growth + Engineering · ex-Bharti Airtel · Growth @ Acceler</div>
+
+          <div class="bsec">
+            <h4>Career Highlights</h4>
+            <ul>
+              <li>20+ years scaling growth across <b>telecom, travel, fintech &amp; edtech</b> — from 0→1 to India scale</li>
+              <li>Works at the intersection of <b>growth &amp; engineering</b> — builds GTM systems he can code himself</li>
+              <li><b>OYO:</b> grew India app MAU <b>+70%</b>; took referrals from <b>5% → 25%</b> of acquisitions</li>
+            </ul>
+          </div>
+
+          <div class="bsec">
+            <h4>📡 Airtel — Telecom</h4>
+            <ul>
+              <li><b>~6 years in telecom at Bharti Airtel</b> — Marketing Head, Broadband (Delhi NCR, Tamil Nadu &amp; Kerala)</li>
+              <li>Built <b>Airtel MyHome (now Airtel Black)</b> and introduced <b>bundling in India</b>, lifting acquisition <b>+15%</b></li>
+              <li>He's run an <b>operator at scale</b> — your world</li>
+            </ul>
+          </div>
+
+          <div class="bsec">
+            <h4>Recent Work</h4>
+            <ul>
+              <li><b>PhysicsWallah</b> — Business Head: built the referral program, revamped martech, shipped <b>AI content pipelines</b></li>
+              <li><b>Housing.com</b> — Sr Director, Growth: <b>doubled</b> owner-supply MRR on minimal extra spend</li>
+              <li><b>Paytm</b> — VP Growth, Insurance: scaled insurance sales off in-house data exhaust</li>
+            </ul>
+          </div>
+
+          <div class="bsec">
+            <h4>Now — Building with AI</h4>
+            <ul>
+              <li><b>AI-powered growth systems &amp; agent-based workflows</b> — Claude Code, n8n</li>
+              <li><b>LetterHunt</b> — launched to <b>#1 on Product Hunt</b></li>
+              <li><b>XLRI Jamshedpur</b> (PGDBM, Finance) · <b>Reforge</b> alumnus</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2 · HOW THE 90 MIN RUN -->
+  <div class="slide" data-notes="Set expectations. Three steps, and you are in every one. We get everyone set up, then you build your agent end-to-end live on your own account, then we show you one that runs while you sleep.">
+    <div class="inner">
+      <div class="shead"><div class="eyebrow">How the next 2.5 hours run</div><div class="h">Three steps. <span class="accent">You, in every one.</span></div></div>
+      <div class="pipe">
+        <div class="pstep"><div class="pi">🧰</div><div class="pt">Set up</div><div class="pd">Get everyone into the virtual lab and working.</div></div>
+        <div class="parrow">→</div>
+        <div class="pstep"><div class="pi">🤖</div><div class="pt">Build your agent</div><div class="pd">One agent, end-to-end, live on your own account.</div></div>
+        <div class="parrow">→</div>
+        <div class="pstep"><div class="pi">🌙</div><div class="pt">See one run</div><div class="pd">An agent that works while you sleep.</div></div>
+      </div>
+      <div class="banner"><span class="ic">💬</span><div>This works best as a conversation. <b>Ask any time · stuck? just ask · be the builder, not a spectator.</b></div></div>
+    </div>
+  </div>
+
+  <!-- 2b · POP INTO THE CHAT -->
+  <div class="slide" style="background:linear-gradient(135deg,#F4F6FC 0%,#D8DCEF 100%);" data-notes="Quick warm-up before we start — get everyone typing in the chat. Name, role, location. Breaks the ice and tells you who's in the room.">
+    <div class="inner" style="text-align:center;">
+      <p style="font-size:clamp(18px,1.8vw,24px);color:var(--text2);margin-bottom:18px;font-weight:500;">Welcome to today's session! Before we begin,</p>
+      <div style="font-size:clamp(42px,5.4vw,72px);font-weight:800;color:var(--cyan-dk);line-height:1.05;letter-spacing:-.02em;margin-bottom:clamp(30px,4vw,52px);">Pop into the chat:</div>
+      <div style="display:flex;justify-content:center;gap:clamp(14px,2vw,26px);flex-wrap:wrap;">
+        <div style="background:#fff;border-radius:999px;padding:16px 34px;font-size:clamp(17px,1.7vw,23px);color:var(--ink);display:flex;align-items:center;gap:12px;box-shadow:0 6px 18px rgba(15,22,50,.08);font-weight:600;"><span style="font-size:1.2em;">👤</span> Your Name</div>
+        <div style="background:#fff;border-radius:999px;padding:16px 34px;font-size:clamp(17px,1.7vw,23px);color:var(--ink);display:flex;align-items:center;gap:12px;box-shadow:0 6px 18px rgba(15,22,50,.08);font-weight:600;"><span style="font-size:1.2em;">👷</span> Your Role</div>
+        <div style="background:#fff;border-radius:999px;padding:16px 34px;font-size:clamp(17px,1.7vw,23px);color:var(--ink);display:flex;align-items:center;gap:12px;box-shadow:0 6px 18px rgba(15,22,50,.08);font-weight:600;"><span style="font-size:1.2em;">🏠</span> Your Location</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2c · OPTIMISE YOUR EXPERIENCE -->
+  <div class="slide" style="background:linear-gradient(135deg,#F4F6FC 0%,#D8DCEF 100%);" data-notes="Three house rules. Be vocal — talk to me through the session. Be confident — speak up, ask for clarification. Be active — try building it yourself; what you put in is what you get out.">
+    <div class="inner">
+      <div style="font-size:clamp(32px,4vw,52px);font-weight:800;color:var(--ink);margin-bottom:clamp(26px,3.4vw,44px);line-height:1.15;"><span style="color:var(--cyan-dk);font-style:italic;">Optimise</span> your experience</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,1.8vw,24px);">
+        <div style="background:#fff;border-radius:16px;padding:clamp(24px,2.5vw,36px) clamp(20px,2.2vw,28px);box-shadow:0 6px 18px rgba(15,22,50,.06);position:relative;">
+          <div style="font-size:clamp(12px,1vw,14px);color:#94a3b8;margin-bottom:clamp(10px,1.2vw,16px);font-weight:700;">01</div>
+          <div style="position:absolute;top:clamp(24px,2.5vw,36px);right:clamp(20px,2.2vw,28px);width:10px;height:10px;border-radius:50%;background:#F59E0B;"></div>
+          <div style="font-size:clamp(20px,2.2vw,28px);font-weight:800;color:var(--ink);margin-bottom:clamp(8px,1vw,14px);">Be Vocal</div>
+          <div style="font-size:clamp(14px,1.3vw,17px);color:var(--text2);line-height:1.55;">Interact with your instructor throughout the live session.</div>
+        </div>
+        <div style="background:#fff;border-radius:16px;padding:clamp(24px,2.5vw,36px) clamp(20px,2.2vw,28px);box-shadow:0 6px 18px rgba(15,22,50,.06);position:relative;">
+          <div style="font-size:clamp(12px,1vw,14px);color:#94a3b8;margin-bottom:clamp(10px,1.2vw,16px);font-weight:700;">02</div>
+          <div style="position:absolute;top:clamp(24px,2.5vw,36px);right:clamp(20px,2.2vw,28px);width:10px;height:10px;border-radius:50%;background:#5BC4D2;"></div>
+          <div style="font-size:clamp(20px,2.2vw,28px);font-weight:800;color:var(--ink);margin-bottom:clamp(8px,1vw,14px);">Be Confident</div>
+          <div style="font-size:clamp(14px,1.3vw,17px);color:var(--text2);line-height:1.55;">Don't be shy to speak up and get your clarifications!</div>
+        </div>
+        <div style="background:#fff;border-radius:16px;padding:clamp(24px,2.5vw,36px) clamp(20px,2.2vw,28px);box-shadow:0 6px 18px rgba(15,22,50,.06);position:relative;">
+          <div style="font-size:clamp(12px,1vw,14px);color:#94a3b8;margin-bottom:clamp(10px,1.2vw,16px);font-weight:700;">03</div>
+          <div style="position:absolute;top:clamp(24px,2.5vw,36px);right:clamp(20px,2.2vw,28px);width:10px;height:10px;border-radius:50%;background:#2C3F8E;"></div>
+          <div style="font-size:clamp(20px,2.2vw,28px);font-weight:800;color:var(--ink);margin-bottom:clamp(8px,1vw,14px);">Be Active</div>
+          <div style="font-size:clamp(14px,1.3vw,17px);color:var(--text2);line-height:1.55;">Follow along and build it yourself. It's your experience — what you put in is what you'll get out.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 · PHASE 1 DIVIDER -->
+  <div class="slide section" data-notes="Phase 1. Nobody moves on until everybody is in. Five minutes, well spent — get the VM running.">
+    <div class="inner"><div class="num">Phase 1 · Set up</div><h2>First, let's get<br>you set up.</h2><div class="sub">Nobody moves on until everybody is in. Five minutes, well spent.</div></div>
+  </div>
+
+  <!-- 4 · SETUP — VIRTUAL LAB ACCESS & LOGIN -->
+  <div class="slide" data-notes="Get everyone set up before we dive in. Two steps: find your VM details in the Operations email (URL + user ID + password — check spam), then open the browser and sign in. Run the readiness checklist live — VM running, signed in on Edge, tools accessible, Copilot Studio ready. All green? Move forward.">
+    <div class="inner">
+      <div class="shead"><div class="eyebrow">Before we dive in · setup</div><div class="h">Virtual lab <span class="accent">access &amp; login</span></div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start;">
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <div class="card top"><div class="t">1 · Find your VM details</div><div class="d">A <b>VM URL</b> + a <b>user ID and password</b>, in the email from the Operations team. Not there? Check spam, then flag it now and we forward it immediately.</div></div>
+          <div class="card top"><div class="t">2 · Open the browser, log in</div><div class="d">Paste the <b>VM URL</b> into the browser. Sign in with the <b>user ID and password</b> — you're in your own clean Windows lab in the cloud.</div></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:16px;">
+          <div class="urlcard">
+            <div class="lab">Virtual Lab URL</div>
+            <div class="u">https://cloudlabs.nuvepro.com/company/UpwardandOnward/home</div>
+            <a class="urlbtn" href="https://cloudlabs.nuvepro.com/company/UpwardandOnward/home" target="_blank">Open Virtual Lab →</a>
+            <div style="font-size:12px;color:var(--text2);margin-top:10px;">Your exact URL is in the Operations email.</div>
+          </div>
+          <ul class="checklist">
+            <li>Is your <b>Nuvepro VM</b> running?</li>
+            <li>Signed in with your <b>provided credentials</b> on Microsoft Edge?</li>
+            <li>Can you access the <b>tools</b> inside the lab?</li>
+            <li><b>Copilot Studio</b> ready to open inside the VM?</li>
+          </ul>
+        </div>
+      </div>
+      <div class="allgreen">All green? Let's move forward. ✅</div>
+    </div>
+  </div>
+
+  <!-- 5 · VM STEP 1 — SIGN IN -->
+  <div class="slide" data-notes="Step 1 of 5 — the CloudLabs login. Paste your VM URL, enter the Login ID and Password from your email, click Sign in.">
+    <div class="inner">
+      <div class="shead"><div class="eyebrow">Getting into your VM · 1 of 5</div><div class="h">Sign in to <span class="accent">CloudLabs</span></div></div>
+      <div class="shotwrap">
+        <div class="shot"><div class="shot__bar"><i></i><i></i><i></i></div><img src="assets/slide07_1.png" alt="CloudLabs VM login screen"></div>
+      </div>
+      <div class="banner"><span class="ic">🔑</span><div>Paste your <b>VM URL</b>, enter the <b>Login ID &amp; Password</b> from your email, and click <b>Sign in</b>.</div></div>
+    </div>
+  </div>
+
+  <!-- 6 · VM STEP 2 — VIEW LAB -->
+  <div class="slide" data-notes="Step 2 of 5 — you land on My Labs. Click View Lab on the Windows Server-Lab card.">
+    <div class="inner">
+      <div class="shead"><div class="eyebrow">Getting into your VM · 2 of 5</div><div class="h">Open your lab — <span class="accent">View Lab</span></div></div>
+      <div class="shotwrap">
+        <div class="shot"><div class="shot__bar"><i></i><i></i><i></i></div><img src="assets/slide08_1.png" alt="My Labs — click View Lab"></div>
+      </div>
+      <div class="banner"><span class="ic">🧪</span><div>On <b>My Labs</b>, find <b>Windows Server-Lab</b> and click <b>View Lab</b>.</div></div>
+    </div>
+  </div>
+
+  <!-- 7 · VM STEP 3 — START -->
+  <div class="slide" data-notes="Step 3 of 5 — in the Lab Control Panel, click Start. The VM takes a minute or two to boot.">
+    <div class="inner">
+      <div class="shead"><div class="eyebrow">Getting into your VM · 3 of 5</div><div class="h">Start the <span class="accent">VM</span></div></div>
+      <div class="shotwrap">
+        <div class="shot"><div class="shot__bar"><i></i><i></i><i></i></div><img src="assets/slide09_1.png" alt="Lab Control Panel — click Start"></div>
+      </div>
+      <div class="banner"><span class="ic">▶️</span><div>In the <b>Lab Control Panel</b>, click <b>Start</b> — give it a minute or two to boot.</div></div>
+    </div>
+  </div>
+
+  <!-- 8 · VM STEP 4 — WEB DESKTOP -->
+  <div class="slide" data-notes="Step 4 of 5 — once status is Start-Complete, click Web desktop to open the VM in your browser. Access details (username Administrator + password) are on the left if you need them.">
+    <div class="inner">
+      <div class="shead"><div class="eyebrow">Getting into your VM · 4 of 5</div><div class="h">Launch the <span class="accent">Web desktop</span></div></div>
+      <div class="shotwrap">
+        <div class="shot"><div class="shot__bar"><i></i><i></i><i></i></div><img src="assets/slide10_1.png" alt="Lab Control Panel — click Web desktop"></div>
+      </div>
+      <div class="banner"><span class="ic">🖥️</span><div>When status reads <b>Start-Complete</b>, click <b>Web desktop</b>. Login is <b>Administrator</b> + the password under Access Details.</div></div>
+    </div>
+  </div>
+
+  <!-- 9 · VM STEP 5 — DESKTOP -->
+  <div class="slide" data-notes="Step 5 of 5 — you're on the desktop. If the browser asks about clipboard access, click Allow (it lets you paste into the lab). You'll see Edge, Chrome, and the tools pre-installed.">
+    <div class="inner">
+      <div class="shead"><div class="eyebrow">Getting into your VM · 5 of 5</div><div class="h">You're on the <span class="accent">desktop</span></div></div>
+      <div class="shotwrap">
+        <div class="shot"><div class="shot__bar"><i></i><i></i><i></i></div><img src="assets/slide11_1.png" alt="VM desktop with clipboard permission prompt"></div>
+      </div>
+      <div class="banner"><span class="ic">📋</span><div>If it asks to <b>see clipboard text &amp; images</b>, click <b>Allow</b> — that's what lets you paste prompts into the lab.</div></div>
+    </div>
+  </div>
+
+  <!-- 9b · VM — YOUR BROWSER TABS -->
+  <div class="slide" data-notes="You're logged in — now orient them in the browser. Everything they need is already open as tabs at the top: Copilot Studio (where they build), Mail & Calendar (the CEO's inbox & calendar via Work IQ), the data-source tabs (market pulse / meeting prep), Teams chat, and this guide. Switching tabs is how they move between the build tool and their data.">
+    <div class="inner">
+      <div class="shead"><div class="eyebrow">Getting into your VM · your browser</div><div class="h">Everything's already open in <span class="accent">tabs</span></div></div>
+      <div class="shotwrap">
+        <div class="shot"><div class="shot__bar"><i></i><i></i><i></i></div><img src="assets/vm_tabs.png" alt="VM browser with pre-opened tabs"></div>
+      </div>
+      <div class="banner"><span class="ic">🗂️</span><div>Across the top: <b>Copilot Studio</b> (where you build) · <b>Mail</b> &amp; <b>Calendar</b> (the CEO's inbox &amp; calendar) · the <b>data tabs</b> (market pulse / meeting prep) · <b>Teams</b> · and this <b>guide</b>. Click a tab to switch.</div></div>
+    </div>
+  </div>
+
+  <!-- 9c · VM — FIND COPILOT STUDIO -->
+  <div class="slide" data-notes="Point them to the build tool. The 'Home — Microsoft Copilot Studio' tab (copilotstudio.microsoft.com) is where they create the agent. Tell them to keep this guide tab open alongside it and flip between the two.">
+    <div class="inner">
+      <div class="shead"><div class="eyebrow">Getting into your VM · where you build</div><div class="h">Find <span class="accent">Copilot Studio</span></div></div>
+      <div class="shotwrap">
+        <div class="shot"><div class="shot__bar"><i></i><i></i><i></i></div><img src="assets/vm_copilotstudio.png" alt="Copilot Studio tab in the VM browser"></div>
+      </div>
+      <div class="banner"><span class="ic">🛠️</span><div>The <b>Home — Microsoft Copilot Studio</b> tab (copilotstudio.microsoft.com) is where you build your agent — keep this guide open alongside it and flip between the two.</div></div>
+    </div>
+  </div>
+
+  <!-- 12 · COPILOT ECOSYSTEM -->
+  <div class="slide" data-notes="Before we build — the Copilot ecosystem. These are the building blocks. Copilot Studio is where you build. Instructions are the brief. Knowledge is what you ground it on. Work IQ connectors give it your real email, calendar, Teams. Triggers + Power Automate make it run on its own. Don't dwell — name them, then move.">
+    <div class="inner">
+      <div class="shead"><div class="eyebrow">The Microsoft Copilot ecosystem</div><div class="h">The building blocks <span class="accent">you'll use today</span></div></div>
+      <div class="eco">
+        <div class="ecard"><div class="ei">🛠️</div><div class="en">Copilot Studio</div><div class="ed">Where you build, test &amp; publish your agent.</div></div>
+        <div class="ecard"><div class="ei">🧠</div><div class="en">Instructions</div><div class="ed">The agent's brief — who it is and what it must do.</div></div>
+        <div class="ecard"><div class="ei">📚</div><div class="en">Knowledge</div><div class="ed">Your files + the live web — what it's grounded on.</div></div>
+        <div class="ecard"><div class="ei">🔌</div><div class="en">Work IQ</div><div class="ed">Connects your real email, calendar &amp; Teams.</div></div>
+        <div class="ecard"><div class="ei">⚙️</div><div class="en">Triggers + Flow</div><div class="ed">Power Automate — makes it run on a schedule.</div></div>
+      </div>
+      <div class="banner"><span class="ic">🚀</span><div>Same stack, three levels of power — <b>chat → custom agent → autonomous agent</b>. You'll build the middle one and see the top one.</div></div>
+    </div>
+  </div>
+
+  <!-- 13 · THE PATTERN (STAGES) -->
+  <div class="slide" data-notes="Every agent you build follows the same three stages. Basic answers from knowledge. Intermediate acts — emails a brief automatically. Advanced runs on a schedule and reads live context. The further you build, the more it does for you. Same pattern for both use cases.">
+    <div class="inner">
+      <div class="shead"><div class="eyebrow">How every agent is built</div><div class="h">Basic → Intermediate → <span class="accent">Advanced</span></div></div>
+      <div class="chmap">
+        <div class="chnode"><div class="num">1</div><div class="icon">💡</div><div class="name">Basic</div><div class="desc">Answers from its knowledge sources. You ask, it answers.</div></div>
+        <div class="charrow">→</div>
+        <div class="chnode"><div class="num">2</div><div class="icon">📧</div><div class="name">Intermediate</div><div class="desc">It acts — reads live email &amp; auto-emails a formatted brief.</div></div>
+        <div class="charrow">→</div>
+        <div class="chnode"><div class="num">3</div><div class="icon">🕘</div><div class="name">Advanced</div><div class="desc">Runs itself at 9 AM — the brief arrives before you ask.</div></div>
+      </div>
+      <div class="banner"><span class="ic">🧭</span><div>The further you build, the more powerful the output. <b>Same three stages for both agents.</b></div></div>
+    </div>
+  </div>
+
+  <!-- 14 · PHASE 2 DIVIDER -->
+  <div class="slide section" data-notes="Phase 2 — now we build. Two use cases on the table; you pick one and build it end to end. The same pattern builds the rest of your team later.">
+    <div class="inner"><div class="num">Phase 2 · Build</div><h2>Now it's<br>your turn to build.</h2><div class="sub">Pick one use case and build it end to end, in three stages. The same pattern builds the rest of your team later.</div></div>
+  </div>
+
+  <!-- 15 · PICK YOUR USE CASE -->
+  <div class="slide" data-notes="Two recurring problems. Staying current → Market Pulse. Walking in cold → Meeting Prep. Both build in the same three stages and publish to Teams. Pick ONE and build it end to end today.">
+    <div class="inner">
+      <div class="shead"><div class="eyebrow">Pick your use case · build one end-to-end</div><div class="h">Two problems. <span class="accent">Pick one.</span></div></div>
+      <div class="pick">
+        <div class="pcard"><div class="fn">Staying current</div><div class="ag">Yettel Market Pulse</div><div class="pd">Know what moved in your market — competitor moves, regulator signals, your team's own flags — before anyone tells you.</div><div class="tags"><span class="ptag">🌐 Live web</span><span class="ptag">📧 Work IQ</span><span class="ptag">🕘 9 AM daily</span></div></div>
+        <div class="pcard"><div class="fn">Walking in cold</div><div class="ag">Yettel Meeting Prep</div><div class="pd">Walk into any meeting knowing who's in the room, what's open, and how to open — in under 60 seconds, without preparing.</div><div class="tags"><span class="ptag">🗓️ Calendar</span><span class="ptag">📧 Email + Teams</span><span class="ptag">🕘 9 AM daily</span></div></div>
+      </div>
+      <div class="banner"><span class="ic">📣</span><div>Both publish to <b>Microsoft Teams</b> + Microsoft 365 Copilot — build it once, and the whole team can use it.</div></div>
+    </div>
+  </div>
+
+  <!-- 16 · HANDOFF — BUILD LAB -->
+  <div class="slide dark stmt" data-notes="Hand over to the build lab. The next hour is yours — each of you builds your own agent. You're seated in teams to help each other, and a Build Coach is on the floor. Open the Pick-Your-Use-Case deck to begin.">
+    <div class="inner">
+      <div class="kick">Your build guide</div>
+      <div class="big">The next hour is <span class="accent">yours.</span></div>
+      <div class="sub">Each of you builds your own agent.</div>
+      <div style="margin-top:32px;"><a class="cta" href="pick-your-use-case/index.html">Open the build lab &rarr; Pick your use case</a></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="progress" id="progress"></div>
+<div class="counter" id="counter"></div>
+<div class="zone zone--prev" id="zprev"></div>
+<div class="zone zone--next" id="znext"></div>
+<button class="fs" id="fs" title="Fullscreen (F)">⛶</button>
+<div class="brand"><img src="acceler_logo.png" alt="acceler"></div>
+<div class="nav" id="nav"><button id="navPrev" aria-label="Previous">‹</button><div class="dots" id="dots"></div><button id="navNext" aria-label="Next">›</button><span class="count" id="navCount"></span></div>
+<div class="notes" id="notes"><div class="nl">Speaker notes · press “.” to toggle</div><div id="notesC"></div></div>
+
+<script>
+  const slides=[...document.querySelectorAll('.slide')], total=slides.length;
+  let cur=0; const $=id=>document.getElementById(id);
+  const speaker=slides.map(s=>s.dataset.notes||''); let notesOn=false, ctO;
+  function updNotes(){ $('notesC').textContent=speaker[cur]||''; }
+  function progress(){ $('progress').style.width=((cur+1)/total*100)+'%'; const c=$('counter'); c.textContent=(cur+1)+' / '+total; c.classList.add('on'); clearTimeout(ctO); ctO=setTimeout(()=>c.classList.remove('on'),2000); updNotes(); syncNav(); }
+  function goTo(n){ if(n<0||n>=total) return; slides[cur].classList.remove('active'); cur=n; slides[cur].classList.add('active'); progress(); }
+  document.addEventListener('keydown',e=>{
+    if(e.key==='ArrowRight'||e.key==='ArrowDown'||e.key===' '){e.preventDefault();goTo(cur+1);}
+    else if(e.key==='ArrowLeft'||e.key==='ArrowUp'){e.preventDefault();goTo(cur-1);}
+    else if(e.key==='Home')goTo(0); else if(e.key==='End')goTo(total-1);
+    else if(e.key==='.'){ notesOn=!notesOn; $('notes').classList.toggle('on',notesOn); }
+    else if(e.key==='f'||e.key==='F'){ if(!document.fullscreenElement)document.documentElement.requestFullscreen().catch(()=>{}); else document.exitFullscreen(); }
+  });
+  $('zprev').addEventListener('click',()=>goTo(cur-1));
+  $('znext').addEventListener('click',()=>goTo(cur+1));
+  $('fs').addEventListener('click',()=>{ if(!document.fullscreenElement)document.documentElement.requestFullscreen().catch(()=>{}); else document.exitFullscreen(); });
+
+  // bottom nav bar
+  (function(){
+    var dotsEl=document.getElementById('dots');
+    if(dotsEl){
+      slides.forEach(function(s,i){ var d=document.createElement('div'); d.className='dot'; d.addEventListener('click',function(){goTo(i);}); dotsEl.appendChild(d); });
+      var np=document.getElementById('navPrev'), nn=document.getElementById('navNext');
+      if(np) np.addEventListener('click',function(){goTo(cur-1);});
+      if(nn) nn.addEventListener('click',function(){goTo(cur+1);});
+    }
+  })();
+  function syncNav(){ var dotsEl=document.getElementById('dots'); if(!dotsEl) return; var ch=dotsEl.children; for(var i=0;i<ch.length;i++){ ch[i].classList.toggle('active',i===cur); } var nc=document.getElementById('navCount'); if(nc) nc.textContent=(cur+1)+' / '+total; if(ch[cur]) ch[cur].scrollIntoView({inline:'center',block:'nearest'}); }
+
+  let tx=0; document.addEventListener('touchstart',e=>tx=e.touches[0].clientX);
+  document.addEventListener('touchend',e=>{ const dx=tx-e.changedTouches[0].clientX; if(Math.abs(dx)>50) goTo(cur+(dx>0?1:-1)); });
+  const s0=new URLSearchParams(location.search).get('s'); if(s0!==null) goTo(parseInt(s0)); else progress();
+</script>
+</body>
+</html>
