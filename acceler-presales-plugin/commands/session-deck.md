@@ -1,9 +1,9 @@
 ---
-description: "Generate an Acceler live session HTML deck (sister to the PPTX pipeline). Follows the 4-movement arc + 15 slide types from Live_Session_Deck_Skills.md."
+description: "POST-SALES / delivery deck. Generate an Acceler live SESSION HTML deck — the one the instructor presents while running a hands-on session (VM setup, screenshots, build steps). For the pre-sales pitch deck, use /acceler-presales:proposal-deck instead. Follows the 4-movement arc + 15 slide types."
 argument-hint: "<client name + curriculum outline, or 'use last' to use the latest proposal's day data>"
 ---
 
-Generate a live session HTML deck for this brief.
+Generate a live **session / delivery** HTML deck for this brief — the deck an instructor presents *during* a hands-on session. (For the client-facing **pre-sales pitch** deck, use `/acceler-presales:proposal-deck`.)
 
 ## Input
 ```

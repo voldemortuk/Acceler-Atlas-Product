@@ -1,5 +1,5 @@
 ---
-description: "Drive the entire Acceler pre-sales pipeline end-to-end from meeting notes — discovery → similar precedents → proposal → deck → pricing → instructors. Handles reviews and handoffs."
+description: "Drive the entire Acceler pre-sales pipeline end-to-end from meeting notes — discovery → similar precedents → proposal → proposal deck → pricing → instructors. Handles reviews and handoffs."
 argument-hint: "<meeting notes or path to .txt/.md file>"
 ---
 
@@ -50,16 +50,20 @@ Use the proposal skill (`skills/doc-proposal/SKILL.md`). Generate a first-level 
 
 Save to `~/Downloads/1. PowerUp/APR - Pre-Sales Product/Outputs/[Client]_[Programme]_v0.1.md` and offer to also generate a `.docx`.
 
-### Stage 4 — Live Session Deck (HTML)
-Use the live-session-deck skill (`skills/live-session-deck/SKILL.md`). Generate the HTML deck following the 4-movement arc:
-1. **Open** — Cover · Instructor intro · How the session runs · Pop into chat · House rules
-2. **Set up** — Phase divider · Setup split · 5 numbered VM/tool steps · Ecosystem
-3. **Build** — Phase divider · Pattern (Basic→Intermediate→Advanced) · Pick use case · Handoff to lab
-4. **Close** — Statement / handoff
+### Stage 4 — Proposal Deck (pre-sales pitch · HTML)
+This is the **pre-sales** deck — the client-facing pitch that wins the deal. Use the proposal-deck skill (`skills/proposal-deck/SKILL.md`) on the KASE engine (bundled at `skills/proposal-deck/Slide_Library_v2/`, reference at `skills/proposal-deck/reference/eand_AI_Builder/`). Every slide is a `SLIDE_DATA` object naming a template — do not hand-write slide HTML. Mirror the e& AI Builder arc:
 
-Use design tokens: cream `#FAF7F1` bg · navy `#2C3F8E` · cyan `#5BC4D2` · Manrope/Inter font. Speaker notes on every slide via `data-notes`.
+```
+cover → context divider → acceler intro → approach → tracks →
+per-track (overview · journey · pods · artifacts) → delivery divider →
+RFP mapping → delivery model → closing
+```
 
-Save to `~/Downloads/1. PowerUp/APR - Pre-Sales Product/Outputs/[Client]-session-deck/index.html`.
+Fonts: DM Serif Display + DM Sans. Palette sampled from `kase-styles.css` (accent coral `#f86b3c`, dark `#262533`). Served over HTTP at 1280×720. Pull content from the Stage 3 proposal so the doc and deck stay in sync.
+
+Save the web root to `~/Downloads/1. PowerUp/APR - Pre-Sales Product/Outputs/[Client]-proposal-deck/`.
+
+> **Post-sales / delivery deck** (the live hands-on session deck) is a *later* artifact — generate it after the deal closes with `/acceler-presales:session-deck` (`skills/live-session-deck/SKILL.md`, 4-movement arc). Not part of the pre-sales pipeline.
 
 ### Stage 5 — PPTX deck (optional, when client wants editable .pptx)
 If the client explicitly wants a PPTX, follow the pptx-deck skill (`skills/pptx-deck/SKILL.md`):
@@ -110,7 +114,7 @@ PRECEDENT ANCHOR: [client name + why]
 
 OUTPUTS (in ~/Downloads/1. PowerUp/APR - Pre-Sales Product/Outputs/):
   📄 [Client]_[Programme]_v0.1.md          ← proposal doc
-  🎞️ [Client]-session-deck/index.html       ← live session HTML deck
+  🎞️ [Client]-proposal-deck/                 ← pre-sales pitch deck (KASE HTML)
   📊 [Client]_pricing_v0.1.md               ← 3 pricing scenarios
   👥 [Client]_instructors_v0.1.md           ← ranked SME shortlist
   🗺️ [Client]_coverage_v0.1.md              ← RFP coverage (if applicable)

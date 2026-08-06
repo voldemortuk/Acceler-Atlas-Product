@@ -10,7 +10,7 @@ metadata:
 
 **Goal:** ship a polished, on-brand HTML slide deck (1280×720, navigable, presenter-ready) where every slide is a *small data object*, not hand-written HTML — so the whole deck stays visually consistent and is trivial to edit, re-theme, screenshot, and export to PPTX.
 
-**Engine:** lives in `engine/Slide_Library_v2/` next to this file — `kase-render.js` (the renderer + ~80 templates) and `kase-styles.css` (all the styling). **Reusable as-is — copy it into any new deck.** Worked example: the **e& AI Builder** deck (`…/Downloads/1. PowerUp/e&/eand_deck_build/`).
+**Engine:** bundled in `Slide_Library_v2/` next to this file — `kase-render.js` (the renderer + ~80 templates) and `kase-styles.css` (all the styling). **Reusable as-is — copy it into any new deck.** Worked example: the **e& AI Builder** deck, bundled here at `reference/eand_AI_Builder/` (19 slides + `deck.json`).
 
 ---
 
@@ -95,9 +95,9 @@ The renderer dispatches on `KASE_TEMPLATES[SLIDE_DATA.template]`. To find what a
 
 ```bash
 # list every template name
-grep -nE "^  [a-z0-9_]+: function" engine/Slide_Library_v2/kase-render.js
+grep -nE "^  [a-z0-9_]+: function" Slide_Library_v2/kase-render.js
 # read the field-doc comment block + render body for one template
-grep -n "^  champions_timeline" engine/Slide_Library_v2/kase-render.js   # → line N
+grep -n "^  champions_timeline" Slide_Library_v2/kase-render.js   # → line N
 # then read ~16 lines above N (the // Fields: … comment) and ~40 below (the body)
 ```
 Every template has a `// Fields: …` comment above it. The **safest source of truth is a real working slide** that already uses it — copy its `SLIDE_DATA` shape.
@@ -154,7 +154,7 @@ The system had drifted to **28 font-sizes / 15 line-heights / 3 different slide-
 
 ## 6. Build workflow (start to finish)
 
-1. **Scaffold** the web root (§2). Copy `engine/Slide_Library_v2/*` → `deck/Slide_Library_v2/`. Copy brand images → `deck/Images/` (incl. the client logo).
+1. **Scaffold** the web root (§2). Copy `Slide_Library_v2/*` → `deck/Slide_Library_v2/`. Copy brand images → `deck/Images/` (incl. the client logo).
 2. **Viewer** `index.html` — copy from the e& deck; set `const DECK = '/Decks/<your_name>/';`.
 3. **Plan the narrative** (e.g. cover → divider → creds → approach → overview per track → journey → module table → use-cases → mapping → delivery → closing).
 4. **Author each slide** — pick a template, fill `SLIDE_DATA`. Mirror a known-good slide's field shape.

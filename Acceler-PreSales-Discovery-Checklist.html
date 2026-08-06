@@ -60,8 +60,15 @@
   .sec-head h2{font-size:14px;font-weight:700;color:#fff;margin:0}
   .sec-head .cnt{font-size:12px;color:rgba(255,255,255,.6);margin-left:auto}
   .sec.shut .sec-body{display:none}
+  .wtag{font-size:10px;font-weight:700;letter-spacing:.08em;background:rgba(255,255,255,.22);padding:3px 9px;border-radius:100px;color:#fff;flex-shrink:0}
 
   .sec-body{border:1px solid var(--border);border-top:none;border-radius:0 0 8px 8px;overflow:hidden}
+  .weval{display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--card);border-bottom:1px solid var(--border)}
+  .weval-bar{flex:1;height:6px;background:var(--bg2);border-radius:3px;overflow:hidden}
+  .weval-bar-f{height:100%;width:0%;border-radius:3px;transition:width .3s,background .3s}
+  .weval-pct{font-size:13px;font-weight:700;min-width:36px;text-align:right}
+  .weval-verdict{font-size:12px;font-weight:600;white-space:nowrap}
+  .wnote{padding:10px 14px;font-size:12.5px;font-style:italic;color:var(--text2);background:var(--bg2);border-bottom:1px solid var(--border)}
   .row{display:grid;grid-template-columns:38px 1fr auto;align-items:center;border-bottom:1px solid var(--border);transition:background .1s}
   .row:last-child{border-bottom:none}
   .row:nth-child(even){background:var(--bg2)}
@@ -140,12 +147,12 @@
 <div class="start-in">
   <div class="badge">Acceler &middot; Sales Playbook</div>
   <h1>Client Discovery</h1>
-  <p>Run through this before you write a proposal. It takes 15 minutes on a call and saves weeks of back-and-forth.</p>
+  <p>Three waves, one per sales stage. Ask 5 on the first call, go deep at scoping, close the rest before you deliver.</p>
   <div class="start-grid">
-    <div class="start-n"><b>33</b><span>Questions</span></div>
-    <div class="start-n"><b style="color:#f87171">14</b><span>Critical</span></div>
-    <div class="start-n"><b>6</b><span>Sections</span></div>
-    <div class="start-n"><b>~15</b><span>Minutes</span></div>
+    <div class="start-n"><b id="statQ">30</b><span>Questions</span></div>
+    <div class="start-n"><b id="statC" style="color:#f87171">12</b><span>Critical</span></div>
+    <div class="start-n"><b id="statW">3</b><span>Waves</span></div>
+    <div class="start-n"><b>~5</b><span>First Call (min)</span></div>
   </div>
   <div class="form">
     <input class="inp" id="f1" placeholder="Client name">
@@ -163,7 +170,7 @@
   <div class="cl-head">
     <div class="cl-for">Discovery for: <span id="cName" style="color:var(--text)"></span></div>
     <h1>Client Discovery Checklist</h1>
-    <p>Check off as you go. Red dots = must ask. Gold = should ask. Grey = bonus.</p>
+    <p>Wave 1 on the first call &middot; Wave 2 at scoping &middot; Wave 3 before delivery. Red dots = must ask. Gold = should ask. Grey = bonus.</p>
   </div>
 
   <div class="pri-legend">
@@ -177,77 +184,60 @@
     <div class="bar-pct" id="bp">0%</div>
   </div>
 
-  <!-- S1 -->
-  <div class="sec" data-s data-n="Why They're Here" data-c="#2563eb">
-    <div class="sec-head" style="background:var(--blue)" onclick="tog(this)"><h2>Why They're Here</h2><span class="cnt"></span></div>
+  <!-- WAVE 1 -->
+  <div class="sec" data-s data-n="First Call" data-c="#2563eb">
+    <div class="sec-head" style="background:var(--blue)" onclick="tog(this)"><span class="wtag">CALL 1</span><h2>First Call — Qualify</h2><span class="cnt"></span></div>
     <div class="sec-body">
+      <div class="weval"><div class="weval-bar"><div class="weval-bar-f"></div></div><div class="weval-pct">0%</div><div class="weval-verdict">Not started</div></div>
+      <div class="wnote">Ask these casually while you build rapport — this isn't a script. Max 5, and it's fine if you don't land all of them on call one.</div>
       <div class="row" data-p="must"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">What's the actual problem they're trying to solve?<small>Not "we need AI training" — what pain triggered this conversation?</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
-      <div class="row" data-p="must"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">What would "success" look like 3 months from now?<small>Get a number: hours saved, adoption %, people certified, something measurable</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
       <div class="row" data-p="must"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Who decides — and who pays?<small>Buyer, champion, end-users. Are they the same person or different?</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
-      <div class="row" data-p="should"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Have they tried AI training before?<small>If yes — what worked, what flopped? Don't repeat someone else's mistake.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
-      <div class="row" data-p="nice"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Is this a pilot or the full thing?<small>Pilot = smaller scope, prove-it-first energy. Full rollout = bigger deal, longer timeline.</small></div><div class="rpri"><span class="dot dot-m"></span></div></div>
-      <div class="row" data-p="should"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Who's our internal champion? Someone who'll push this forward when we're not in the room.<small>Without a champion, deals stall. Know who this person is by name.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
-    </div>
-  </div>
-
-  <!-- S2 -->
-  <div class="sec" data-s data-n="Who's in the Room" data-c="#D4A24C">
-    <div class="sec-head" style="background:var(--gold)" onclick="tog(this)"><h2>Who's in the Room</h2><span class="cnt"></span></div>
-    <div class="sec-body">
-      <div class="row" data-p="must"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">What do the participants actually do day-to-day?<small>Job titles are useless. "They close monthly books" or "they manage a sales pipeline" — that's what we need.</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
-      <div class="row" data-p="must"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">How many people, how many batches?<small>20 people in 1 cohort is very different from 500 across 10 cohorts.</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
-      <div class="row" data-p="should"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Are they technical or non-technical?<small>Determines whether we pitch AI Enabler (non-tech) or AI Builder (hands-on). Biggest fork in the road.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
-      <div class="row" data-p="should"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Have they used AI at all? Even casually?<small>"Never touched it" vs "dabbling with ChatGPT" vs "already using Copilot daily" — changes Day 1 completely.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
-      <div class="row" data-p="nice"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Is it one function or mixed? (e.g., HR + Finance + Sales in same room)<small>Mixed cohorts need broader examples. Single-function cohorts go deeper.</small></div><div class="rpri"><span class="dot dot-m"></span></div></div>
-    </div>
-  </div>
-
-  <!-- S3 -->
-  <div class="sec" data-s data-n="When & How" data-c="#16a34a">
-    <div class="sec-head" style="background:var(--green)" onclick="tog(this)"><h2>When & How</h2><span class="cnt"></span></div>
-    <div class="sec-body">
+      <div class="row" data-p="must" data-tag="audience"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">How many people, how many batches?<small>20 people in 1 cohort is very different from 500 across 10 cohorts.</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
       <div class="row" data-p="must"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Virtual or in-person? Where are the people?<small>Time zones matter. "7am PST with people in India" is a very different session than "everyone in one room."</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
+      <div class="row" data-p="must" data-tag="money"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">What's the budget range?<small>Don't propose a Ferrari if they're shopping for a Honda. Saves everyone's time.</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
+    </div>
+  </div>
+
+  <!-- WAVE 2 -->
+  <div class="sec shut" data-s data-n="Scoping Call" data-c="#D4A24C">
+    <div class="sec-head" style="background:var(--gold)" onclick="tog(this)"><span class="wtag">SCOPING</span><h2>Scoping Call — Deep Dive</h2><span class="cnt"></span></div>
+    <div class="sec-body">
+      <div class="weval"><div class="weval-bar"><div class="weval-bar-f"></div></div><div class="weval-pct">0%</div><div class="weval-verdict">Not started</div></div>
+      <div class="wnote">This is the real discovery — go deep once you're past the first call and they've agreed to talk specifics.</div>
+      <div class="row" data-p="must"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">What would "success" look like 3 months from now?<small>Get a number: hours saved, adoption %, people certified, something measurable</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
+      <div class="row" data-p="must" data-tag="audience"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">What do the participants actually do day-to-day?<small>Job titles are useless. "They close monthly books" or "they manage a sales pipeline" — that's what we need.</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
+      <div class="row" data-p="should" data-tag="audience"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Are they technical or non-technical?<small>Determines whether we pitch AI Enabler (non-tech) or AI Builder (hands-on). Biggest fork in the road.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
+      <div class="row" data-p="should" data-tag="audience"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Have they used AI at all? Even casually?<small>"Never touched it" vs "dabbling with ChatGPT" vs "already using Copilot daily" — changes Day 1 completely.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
+      <div class="row" data-p="should"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Have they tried AI training before?<small>If yes — what worked, what flopped? Don't repeat someone else's mistake.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
       <div class="row" data-p="must"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">How much time do they have? Half-day, 1 day, 2 days, or more?<small>Don't propose a 3-day programme if they can only spare an afternoon.</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
       <div class="row" data-p="should"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">When do they want to start? Any hard deadline?<small>Fiscal year end, board commitment, upcoming conference — drives urgency.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
-      <div class="row" data-p="nice"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Language? English only, or do they need anything else?</div><div class="rpri"><span class="dot dot-m"></span></div></div>
-      <div class="row" data-p="nice"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Is there an event or moment we can tie this to?<small>A conference, a leadership offsite, a quarterly kickoff — creates natural urgency and visibility.</small></div><div class="rpri"><span class="dot dot-m"></span></div></div>
-    </div>
-  </div>
-
-  <!-- S4 -->
-  <div class="sec" data-s data-n="Tools & Access" data-c="#ea580c">
-    <div class="sec-head" style="background:var(--orange)" onclick="tog(this)"><h2>Tools & Access</h2><span class="cnt"></span></div>
-    <div class="sec-body">
-      <div class="row" data-p="must"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">What AI tools do their people have access to today?<small>ChatGPT? Copilot? Claude? Free tier or enterprise? If they have nothing, we need to plan for that.</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
-      <div class="row" data-p="must"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Is IT going to block anything? Any security restrictions on AI?<small>Some companies block ChatGPT entirely. Some only allow Copilot. Find out BEFORE you design the curriculum.</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
-      <div class="row" data-p="should"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Do we teach on their tools or ours? Who provides licences?<small>If they have Copilot, we teach on Copilot. If they have nothing, we bring ChatGPT.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
-      <div class="row" data-p="should"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Do they need hands-on labs or sandboxes?<small>Builder programmes need labs. Enabler programmes just need a browser + AI tool.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
-      <div class="row" data-p="nice"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Do they have an LMS? (Cornerstone, Docebo, SAP, etc.)<small>Affects content hosting, completion tracking, and whether we use their platform or ours.</small></div><div class="rpri"><span class="dot dot-m"></span></div></div>
-      <div class="row" data-p="nice"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">What chat tool for the cohort? (Slack, Teams, WhatsApp)</div><div class="rpri"><span class="dot dot-m"></span></div></div>
-    </div>
-  </div>
-
-  <!-- S5 -->
-  <div class="sec" data-s data-n="What They Want Built" data-c="#7c3aed">
-    <div class="sec-head" style="background:var(--purple)" onclick="tog(this)"><h2>What They Want Built</h2><span class="cnt"></span></div>
-    <div class="sec-body">
+      <div class="row" data-p="must" data-tag="tools"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">What AI tools do their people have access to today?<small>ChatGPT? Copilot? Claude? Free tier or enterprise? If they have nothing, we need to plan for that.</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
+      <div class="row" data-p="must" data-tag="tools"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Is IT going to block anything? Any security restrictions on AI?<small>Some companies block ChatGPT entirely. Some only allow Copilot. Find out BEFORE you design the curriculum.</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
+      <div class="row" data-p="should" data-tag="tools"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Do we teach on their tools or ours? Who provides licences?<small>If they have Copilot, we teach on Copilot. If they have nothing, we bring ChatGPT.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
+      <div class="row" data-p="should" data-tag="tools"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Do they need hands-on labs or sandboxes?<small>Builder programmes need labs. Enabler programmes just need a browser + AI tool.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
       <div class="row" data-p="must"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">What should participants be able to DO after the programme?<small>Not "understand AI" — what specific task? "Draft a variance report with Copilot" or "Build a no-code agent."</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
       <div class="row" data-p="should"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Should examples and exercises be from their industry?<small>Generic AI examples are fine for awareness. Industry-specific exercises land 10x harder.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
-      <div class="row" data-p="should"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Do they want a final project or capstone?<small>Real business problem (harder to set up, bigger impact) or simulated scenario (faster, still effective)?</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
       <div class="row" data-p="should"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">How do they want to measure it worked?<small>Pre/post quiz scores? Manager feedback? Adoption metrics at 30/60/90 days? Agree now, not after.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
-      <div class="row" data-p="nice"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Any data or content they CAN'T use in exercises?<small>Regulated industries have rules. No client PII, no real financials, no patient data in exercises.</small></div><div class="rpri"><span class="dot dot-m"></span></div></div>
+      <div class="row" data-p="should"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Are they talking to other vendors?<small>If yes, ask what they're comparing. Helps you position.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
+      <div class="row" data-p="must" data-tag="money"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">When do they need to decide? Who approves?<small>If the decision is next week, don't take 3 weeks to send a proposal.</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
     </div>
   </div>
 
-  <!-- S6 -->
-  <div class="sec" data-s data-n="Money & Timeline" data-c="#dc2626">
-    <div class="sec-head" style="background:var(--red)" onclick="tog(this)"><h2>Money & Timeline</h2><span class="cnt"></span></div>
+  <!-- WAVE 3 -->
+  <div class="sec shut" data-s data-n="Before Delivery" data-c="#16a34a">
+    <div class="sec-head" style="background:var(--green)" onclick="tog(this)"><span class="wtag">PRE-DELIVERY</span><h2>Before Delivery — Close the Gaps</h2><span class="cnt"></span></div>
     <div class="sec-body">
-      <div class="row" data-p="must"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">What's the budget range?<small>Don't propose a Ferrari if they're shopping for a Honda. Saves everyone's time.</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
-      <div class="row" data-p="must"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">When do they need to decide? Who approves?<small>If the decision is next week, don't take 3 weeks to send a proposal.</small></div><div class="rpri"><span class="dot dot-r"></span></div></div>
-      <div class="row" data-p="should"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Are they talking to other vendors?<small>If yes, ask what they're comparing. Helps you position.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
+      <div class="weval"><div class="weval-bar"><div class="weval-bar-f"></div></div><div class="weval-pct">0%</div><div class="weval-verdict">Not started</div></div>
+      <div class="wnote">Close these by email or a quick follow-up — doesn't need to be live. Get here before you hand off to curriculum.</div>
+      <div class="row" data-p="should"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Who's our internal champion? Someone who'll push this forward when we're not in the room.<small>Without a champion, deals stall. Know who this person is by name.</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
+      <div class="row" data-p="nice"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Is this a pilot or the full thing?<small>Pilot = smaller scope, prove-it-first energy. Full rollout = bigger deal, longer timeline.</small></div><div class="rpri"><span class="dot dot-m"></span></div></div>
+      <div class="row" data-p="nice" data-tag="audience"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Is it one function or mixed? (e.g., HR + Finance + Sales in same room)<small>Mixed cohorts need broader examples. Single-function cohorts go deeper.</small></div><div class="rpri"><span class="dot dot-m"></span></div></div>
+      <div class="row" data-p="nice"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Is there an event or moment we can tie this to?<small>A conference, a leadership offsite, a quarterly kickoff — creates natural urgency and visibility.</small></div><div class="rpri"><span class="dot dot-m"></span></div></div>
+      <div class="row" data-p="nice"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Do they have an LMS? (Cornerstone, Docebo, SAP, etc.)<small>Affects content hosting, completion tracking, and whether we use their platform or ours.</small></div><div class="rpri"><span class="dot dot-m"></span></div></div>
+      <div class="row" data-p="should"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Do they want a final project or capstone?<small>Real business problem (harder to set up, bigger impact) or simulated scenario (faster, still effective)?</small></div><div class="rpri"><span class="dot dot-g"></span></div></div>
+      <div class="row" data-p="nice"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Any data or content they CAN'T use in exercises?<small>Regulated industries have rules. No client PII, no real financials, no patient data in exercises.</small></div><div class="rpri"><span class="dot dot-m"></span></div></div>
       <div class="row" data-p="nice"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Does procurement / legal need to review? How long does that take?<small>Some companies close in a week. Some take 3 months through procurement. Plan accordingly.</small></div><div class="rpri"><span class="dot dot-m"></span></div></div>
-      <div class="row" data-p="nice"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Do they want certificates? Standard Acceler or co-branded with their logo?<small>Small detail but clients love it. Ask early so design team isn't scrambling at the end.</small></div><div class="rpri"><span class="dot dot-m"></span></div></div>
+      <div class="row" data-p="nice"><div class="rchk"><input type="checkbox" onchange="upd()"></div><div class="rtxt" onclick="ck(this)">Anything else on logistics? (language needs, cohort chat tool, co-branded certificates)<small>Small stuff, but worth closing before design/ops scramble at the end.</small></div><div class="rpri"><span class="dot dot-m"></span></div></div>
     </div>
   </div>
 
@@ -279,8 +269,8 @@
   <div style="font-family:var(--fd);font-size:20px;margin-bottom:12px">Observations</div>
   <div class="alerts" id="ab"></div>
 
-  <!-- Section Breakdown -->
-  <div style="font-family:var(--fd);font-size:20px;margin-bottom:12px">Section Breakdown</div>
+  <!-- Wave Breakdown -->
+  <div style="font-family:var(--fd);font-size:20px;margin-bottom:12px">Wave Breakdown</div>
   <div id="rsb" style="margin-bottom:24px"></div>
 
   <!-- Next Steps -->
@@ -299,6 +289,12 @@
 let CN='',REP='';
 
 function show(id){document.querySelectorAll('.page').forEach(p=>p.classList.remove('on'));document.getElementById(id).classList.add('on');document.getElementById('pb').style.display=id==='P2'?'block':'none';window.scrollTo(0,0)}
+
+function initStats(){
+  document.getElementById('statQ').textContent=document.querySelectorAll('.row').length;
+  document.getElementById('statC').textContent=document.querySelectorAll('.row[data-p="must"]').length;
+  document.getElementById('statW').textContent=document.querySelectorAll('.sec[data-s]').length;
+}
 
 function go(){
   const c=document.getElementById('f1').value.trim();
@@ -325,6 +321,23 @@ function upd(){
   document.querySelectorAll('.sec').forEach(s=>{
     const t=s.querySelectorAll('input').length,d=s.querySelectorAll('input:checked').length;
     const c=s.querySelector('.cnt');if(c)c.textContent=d+'/'+t;
+
+    const barF=s.querySelector('.weval-bar-f');
+    if(!barF) return;
+    const mustRows=s.querySelectorAll('.row[data-p="must"]');
+    const mustD=[...mustRows].filter(r=>r.querySelector('input').checked).length;
+    const mustMissing=mustRows.length-mustD;
+    const wp=t?Math.round(d/t*100):0;
+    let color,verdict;
+    if(d===0){color='var(--muted)';verdict='Not started'}
+    else if(mustMissing>0){color='var(--red)';verdict=mustMissing+' must-ask'+(mustMissing>1?'s':'')+' still open'}
+    else if(d===t){color='var(--green)';verdict='Wave complete'}
+    else{color='var(--gold)';verdict=(t-d)+' optional item'+(t-d>1?'s':'')+' open — ok to move on'}
+    barF.style.width=wp+'%';
+    barF.style.background=color;
+    const pctEl=s.querySelector('.weval-pct'),vEl=s.querySelector('.weval-verdict');
+    pctEl.textContent=wp+'%';pctEl.style.color=color;
+    vEl.textContent=verdict;vEl.style.color=color;
   });
 }
 
@@ -360,24 +373,24 @@ function done(){
   if(mustMiss.length>0) ab.innerHTML+='<div class="al al-r"><div class="al-i">&#9888;</div><div><h3>'+mustMiss.length+' critical question'+(mustMiss.length>1?'s':'')+' missed</h3><p>'+mustMiss.join(' &middot; ')+'</p></div></div>';
   else ab.innerHTML+='<div class="al al-k"><div class="al-i">&#9989;</div><div><h3>All critical questions covered</h3><p>The proposal will be well-scoped. Nice work.</p></div></div>';
 
-  // Section-specific alerts
+  // Tag-based alerts (survive the wave reorg — these cut across waves)
+  const toolsRows=document.querySelectorAll('[data-tag="tools"]'),toolsChk=document.querySelectorAll('[data-tag="tools"] input:checked').length;
+  if(toolsRows.length&&toolsChk<toolsRows.length*.5) ab.innerHTML+='<div class="al al-g"><div class="al-i">&#128295;</div><div><h3>Tools section is thin</h3><p>Without knowing their tool stack, the curriculum will be a guess. Nail this before proposing.</p></div></div>';
+
+  const moneyRows=document.querySelectorAll('[data-tag="money"]'),moneyChk=document.querySelectorAll('[data-tag="money"] input:checked').length;
+  if(moneyRows.length&&moneyChk<2) ab.innerHTML+='<div class="al al-g"><div class="al-i">&#128176;</div><div><h3>Budget & timeline unclear</h3><p>You might propose something they can\'t afford or approve. At minimum, get budget range and decision date.</p></div></div>';
+
+  const audRows=document.querySelectorAll('[data-tag="audience"]'),audChk=document.querySelectorAll('[data-tag="audience"] input:checked').length;
+  if(audRows.length&&audChk===audRows.length) ab.innerHTML+='<div class="al al-k"><div class="al-i">&#127919;</div><div><h3>Audience fully mapped</h3><p>You can build learner personas and tailor every exercise to their roles.</p></div></div>';
+
+  if(pct>=90) ab.innerHTML+='<div class="al al-b"><div class="al-i">&#128640;</div><div><h3>Exceptional discovery ('+pct+'%)</h3><p>This means a highly customised proposal, faster curriculum dev, and smoother delivery.</p></div></div>';
+
+  // Waves
   const sd=[];
   secs.forEach(s=>{const n=s.dataset.n,c=s.dataset.c,t=s.querySelectorAll('input').length,d=s.querySelectorAll('input:checked').length,miss=[];
     s.querySelectorAll('.row').forEach(r=>{if(!r.querySelector('input').checked)miss.push({t:r.querySelector('.rtxt').childNodes[0].textContent.trim(),p:r.dataset.p})});
     sd.push({n,c,t,d,miss})});
 
-  const tools=sd.find(s=>s.n==='Tools & Access');
-  if(tools&&tools.d<tools.t*.5) ab.innerHTML+='<div class="al al-g"><div class="al-i">&#128295;</div><div><h3>Tools section is thin</h3><p>Without knowing their tool stack, the curriculum will be a guess. Nail this before proposing.</p></div></div>';
-
-  const money=sd.find(s=>s.n==='Money & Timeline');
-  if(money&&money.d<2) ab.innerHTML+='<div class="al al-g"><div class="al-i">&#128176;</div><div><h3>Budget & timeline unclear</h3><p>You might propose something they can\'t afford or approve. At minimum, get budget range and decision date.</p></div></div>';
-
-  const who=sd.find(s=>s.n==="Who's in the Room");
-  if(who&&who.d===who.t) ab.innerHTML+='<div class="al al-k"><div class="al-i">&#127919;</div><div><h3>Audience fully mapped</h3><p>You can build learner personas and tailor every exercise to their roles.</p></div></div>';
-
-  if(pct>=90) ab.innerHTML+='<div class="al al-b"><div class="al-i">&#128640;</div><div><h3>Exceptional discovery ('+pct+'%)</h3><p>This means a highly customised proposal, faster curriculum dev, and smoother delivery.</p></div></div>';
-
-  // Sections
   const rsb=document.getElementById('rsb');rsb.innerHTML='';
   sd.forEach(s=>{
     const p=Math.round(s.d/s.t*100);
@@ -390,9 +403,8 @@ function done(){
 
   // Recommended Programme
   const recBox=document.getElementById('recBox');
-  const whoSec=sd.find(s=>s.n==="Who's in the Room");
   let recs=[];
-  if(whoSec&&whoSec.d>=2){
+  if(audChk>=2){
     recs.push({prog:'AI Enabler',fit:'Non-technical teams',desc:'Copilot / ChatGPT for HR, Finance, Sales, Ops. 1-2 days.',color:'var(--blue)'});
     recs.push({prog:'AI Builder',fit:'Hands-on builders',desc:'No-code or pro-code agent building. 2-3 days.',color:'var(--gold)'});
     recs.push({prog:'AI for Leaders',fit:'C-Suite & VPs',desc:'Strategy, governance, ROI. Half-day to 1 day.',color:'var(--green)'});
@@ -405,7 +417,7 @@ function done(){
     rc+='</div>';
     recBox.innerHTML=rc;
   } else {
-    recBox.innerHTML='<div style="padding:14px 18px;background:var(--gold-l);border:1px solid #fde68a;border-radius:10px;font-size:14px;color:var(--gold)"><b>Need more info to recommend a programme.</b> Complete the Audience section first.</div>';
+    recBox.innerHTML='<div style="padding:14px 18px;background:var(--gold-l);border:1px solid #fde68a;border-radius:10px;font-size:14px;color:var(--gold)"><b>Need more info to recommend a programme.</b> Complete the audience questions first.</div>';
   }
 
   // Next Steps
@@ -434,10 +446,11 @@ function done(){
 function reset(){
   document.querySelectorAll('.row input').forEach(cb=>{cb.checked=false});
   document.querySelectorAll('.row').forEach(r=>r.classList.remove('done'));
-  document.getElementById('f1').value='';document.getElementById('f2').value='';
+  document.getElementById('f1').value='';document.getElementById('f2').value='';document.getElementById('f3').value='';
   show('P1');
 }
 
+initStats();
 upd();
 </script>
 </body>

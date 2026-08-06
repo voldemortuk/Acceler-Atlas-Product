@@ -8,7 +8,7 @@ import os, re, json, zipfile, subprocess, hashlib
 from xml.etree import ElementTree as ET
 
 ROOT = "/Users/voldemort/Downloads/1. PowerUp"
-OUT  = os.path.join(ROOT, "_kg")
+OUT  = "/Users/voldemort/Downloads/1. PowerUp/APR - Pre-Sales Product/Knowledge Graph/_kg"
 TXT  = os.path.join(OUT, "text")
 os.makedirs(TXT, exist_ok=True)
 

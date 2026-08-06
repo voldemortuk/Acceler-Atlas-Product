@@ -30,14 +30,18 @@ If inputs are missing, ask for the key ones (geography · days × hrs/day · bat
 
 - **India clients = INR (₹) only.** Never USD. Never mix.
 - **US / Middle East / Other = USD ($) only.** Never INR.
-- FX ≈ ₹84 / $ (for internal conversion only — never quoted to client).
+- **FX: ALWAYS pull the live USD→INR rate online before quoting — never hardcode.** ≈ ₹94.5/$ as of Jun 2026 (re-check; ₹84 is stale). Internal conversion only — never quoted to client.
 
-## Output (markdown)
+## Output — primary deliverable is an Excel sheet (.xlsx)
+
+**Always produce an Excel workbook as the deliverable, not a markdown file.** Build it with `openpyxl` following the costing-sheet pattern in `skills/pricing/SKILL.md` §9 (NAVY headers · CYAN sub-heads · ORANGE total band · **YELLOW editable assumption cells** · GREEN free/provisioning band · `showGridLines=False`). The sheet must be **formula-driven** off the yellow assumption cells (batch, live hrs, rates, FX, VM-days/buffer, tools, assignment count, overhead %, margin %) so the user can re-price by editing one cell. Scenario A / A′ (alt batch) / B (repeat) / C (Elevate, if any) each get their own block; end with per-learner & per-pax-per-day, a Tool/VM provisioning block, and a Notes block.
+
+Then show the same numbers inline in chat as a quick markdown summary (the structure below) so the user sees the result without opening the file — but the **file you save is the .xlsx**.
 
 ```
 # [Client] · Pricing — [Geography] · [LiveHrs] live hrs · [Batch] learners
 
-**Currency:** [INR (₹) / USD ($)]  ·  **Margin:** [%]  ·  **Overhead:** [%]  ·  **FX:** ₹84/$ (internal)
+**Currency:** [INR (₹) / USD ($)]  ·  **Margin:** [%]  ·  **Overhead:** [%]  ·  **FX:** ₹[live rate]/$ (internal, live-checked [date])
 
 ## Observed bands from comparable deals (KG anchor)
 - [Client X] · [programme] · [pricing band]
@@ -50,9 +54,9 @@ If inputs are missing, ask for the key ones (geography · days × hrs/day · bat
 | Instructor — Prep & Review | 2 × live × rate | … |
 | Instructor — SME Dry Run | live × rate | … |
 | Instructor — Live Delivery | live × rate | … |
-| TA — Assignment Review | ₹500 × assignments × batch | … |
+| TA — Assignment Review *(optional — drop if not grading)* | ₹500 × assignments × batch | … |
 | TA — Live Assistance | ₹1,000 × live | … |
-| Infra — VMs | ₹500 × batch × days (or 0 if client provisions) | … |
+| Infra — VMs + Tools | (₹500 × batch × VM-days) + tools; VM-days = days + 3–4 buffer (or 0 if client provisions) | … |
 | **BASE COST** |  | **…** |
 | Overheads (X%) |  | … |
 | **TOTAL COST** |  | **…** |
@@ -74,9 +78,9 @@ Rates in INR · India only · taxes excluded · tools excluded (client provision
 - [Rate, why; curriculum state; first-time vs repeat reasoning; KG-anchored sanity check]
 ```
 
-Save to:
+Save the **Excel workbook** (primary deliverable) to:
 ```
-~/Downloads/1. PowerUp/APR - Pre-Sales Product/Outputs/[Client]_pricing_v0.1.md
+~/Downloads/1. PowerUp/APR - Pre-Sales Product/Outputs/[Client]_pricing_v0.1.xlsx
 ```
 
-Offer to export as XLSX (using openpyxl) or as a CSV the user can drop into Google Sheets.
+Optionally also drop a markdown companion (`[Client]_pricing_v0.1.md`) alongside it if the user wants a readable text version — but the xlsx is the default output. Offer a CSV export only if the user asks for Google Sheets.

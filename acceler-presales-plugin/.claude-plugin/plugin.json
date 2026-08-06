@@ -1,7 +1,7 @@
 {
   "name": "acceler-presales",
-  "version": "0.1.0",
-  "description": "Acceler B2B Pre-Sales orchestrator — discovery → similar precedents → proposal doc → live session deck → pricing → instructors. Powered by the Acceler Knowledge Graph (61 clients · 1,072 historical files · 773 instructors).",
+  "version": "0.5.0",
+  "description": "Acceler B2B Pre-Sales orchestrator — discovery → similar precedents → proposal doc → proposal deck (pre-sales pitch) → session deck (delivery) → session recap (post-delivery) → pricing → instructors. Powered by the Acceler Knowledge Graph (61 clients · 1,072 historical files · 773 instructors).",
   "author": {
     "name": "Utkarsh Raj",
     "email": "utkarsh@interviewkickstart.com"

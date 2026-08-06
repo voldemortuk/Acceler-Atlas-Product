@@ -44,12 +44,13 @@ Then derive **Per-learner** = Pricing ÷ batch size, and **Per-pax-per-day** for
 - **Prep & Review** = **live hours × 2 × rate** for a **first-time / never-delivered SME**. **Reduce toward 1×** when reusing the same SME / repeat delivery. (Nucleus first-time prep = 2×24×$55; repeat = 1×24×$55.)
 
 **③ TA Support**
-- **Assignment Review** = **₹500 × number of assignments × number of learners** (≈ 1 assignment per session).
+- **Assignment Review** *(OPTIONAL)* = **₹500 × number of assignments × number of learners** (≈ 1 assignment per session). **This line is optional — keep it for proper sanity, but we usually release the solution rather than grade. Drop it (or set assignments = 0) when the cohort won't have graded assignments.**
 - **Live Assistance** = **₹1,000 / hour × live hours** (TA present throughout).
 
-**④ Infra (VMs + Tools)** — see §4–5. Often the **client provisions this** (then $0 in the fee).
-- **VMs (Nuvepro)** = **₹500 / learner / day** × learners × program-days. *(e.g. 10 days × ₹500 = ₹5,000/learner; ×10 learners = ₹50,000.)* Raw Nuvepro ≈ ₹350/day/learner + ₹8,000 one-time VM build + SME accounts.
-- **AI Tools** = per the **tool-costing sheet** (§5). Optimize with free versions first. Template fallback ≈ **$80–100/learner** (4–5 tools × ~$20/account).
+**④ Infra (VMs + Tools)** — **always one combined "Infra — VMs + Tools" line** in the sheet (don't drop Tools). Sometimes the **client provisions this** (then $0 in the fee).
+- **VMs (Nuvepro)** = **₹500 / learner / VM-day** × learners × **VM-days**. Raw Nuvepro ≈ ₹350/day/learner + ₹8,000 one-time VM build + SME accounts.
+  - **VM-days ≠ program-days.** VMs must stay up across the gaps between sessions: ~1 day before Day 1, ~2–3 days between sessions (sessions run ~2–3/week), and ~1 day after. **Rule of thumb: VM-days = program-days + 3–4 buffer days** (e.g. 5-day program → ~8–9 VM-days). This is *not* "double the duration" — it tracks the real calendar spread. Call the buffer out to the user; a longer always-on window is their call.
+- **AI Tools** = per the **tool-costing sheet** (§5), **bundled into the Infra line**. Optimize with free versions first. Template fallback ≈ **$80–100/learner** (4–5 tools × ~$20/account); ~$20/learner for an incidental single-tool window. **Client-provisioned tools (e.g. Claude Code seats the client buys) are excluded** — note them separately, don't fold into the fee.
 
 **⑤ Overheads** — Edelweiss model loads **~100%** (TOTAL COST = 2 × BASE). *(Confirm overhead % per deal; the B2B template uses a lower load.)*
 
@@ -69,8 +70,8 @@ Then derive **Per-learner** = Pricing ÷ batch size, and **Per-pax-per-day** for
 
 - **Edelweiss applied a blended ₹5,225/hr (~$62)** for Prep, Dry Run and Live alike (single India rate).
 - **TA:** ₹500 / assignment / learner · ₹1,000 / live-hour.
-- **VM:** ₹500 / learner / day.
-- FX: examples ≈ **₹84/$** (validate current rate per quote).
+- **VM:** ₹500 / learner / VM-day (see §2④ for the VM-days window rule).
+- FX: **ALWAYS pull the live USD→INR rate online before quoting — never hardcode.** ≈ **₹94.5/$** as of Jun 2026 (Investing.com 94.49 / Wise 94.39). The ₹84 in the worked examples below is historical; do not reuse it for new quotes. Internal conversion only — never quoted to the client.
 
 ### Live-hours calc
 Live hours = **(program days × in-session hrs/day) + technical-coaching hours**.
@@ -98,6 +99,8 @@ Live hours = **(program days × in-session hrs/day) + technical-coaching hours**
 - **PAID:** OpenAI/Anthropic APIs (usage), GitHub Copilot ($19/seat/mo), Tabnine, CodeWhisperer, LangSmith (paid tier), Azure/AWS (usage), Docker Business, Pinecone, Cursor.
 - **FREE / $0:** LangChain·LangGraph·CrewAI·AutoGen·MCP/A2A·FAISS·Chroma·SPLADE·HNSW·RRF·Hugging Face (local models)·LoRA/QLoRA/PEFT·Python·FastAPI·Streamlit·Gradio·VS Code.
 - **Rules of thumb:** LLM API is the dominant variable ($/participant/day; ~$0 with local HF models). Per-seat coding tools = one short window. **Cloud is per-team, not per-learner**, serverless/auto-pause, ~$0 net with free credits. Always include an **on-prem / open-model ~$0 scenario**.
+- **VM-days window:** cost VMs over **program-days + 3–4 buffer days**, not just in-session days — the environment stays up across the gaps between sessions (1 before, 2–3 between, 1 after; sessions run ~2–3/week). Surface the buffer to the user as their call.
+- **Bundle Tools into the Infra line** with VMs (one "Infra — VMs + Tools" row). Client-provisioned tools (seats the client buys, e.g. Claude Code) are excluded from the fee and noted separately.
 - **Edelweiss tool costing (cohort 20):** Copilot $380 + LLM API $1,400 + Azure $75 ≈ **$1,855 (~₹1.56 L)**; on-prem/open-model → ~$380. File `Edelweiss_Tool_Costing_Sheet.xlsx`.
 - **Template fallback (per-learner):** Tools ~₹15,744 + VM ~₹7,000 = **₹22,744/learner** (pre-optimization; e.g. 14 learners = ₹318,416). Optimize tools down with free versions.
 
@@ -147,7 +150,7 @@ Rates in **INR**, India deliveries only, exclusive of taxes · **Tool costs excl
 ---
 
 ## 9. Costing-sheet build pattern (openpyxl)
-Palette: NAVY `1B2A6B` headers · CYAN `27B4E6` sub-heads · ORANGE `F86B3C` total band · YELLOW `FFF6D6` editable cells · GREEN `0A4F2F` free band. Layout: Title → Assumptions (yellow) → cost-stack line items (formula-driven) → Base/Overhead/Margin/Pricing → per-learner & per-pax-per-day → Tool/VM provisioning block → Notes. `showGridLines=False`.
+**The pricing deliverable is always an Excel workbook (.xlsx), not a markdown file** — build it with openpyxl, save under `…/Outputs/[Client]_pricing_v0.1.xlsx`, and keep it **formula-driven off the yellow assumption cells** so the user re-prices by editing one cell. A markdown summary is only a companion shown in chat. Palette: NAVY `1B2A6B` headers · CYAN `27B4E6` sub-heads · ORANGE `F86B3C` total band · YELLOW `FFF6D6` editable cells · GREEN `0A4F2F` free band. Layout: Title → Assumptions (yellow) → cost-stack line items (formula-driven) → Base/Overhead/Margin/Pricing → per-learner & per-pax-per-day → Tool/VM provisioning block → Notes. `showGridLines=False`.
 
 ---
 
@@ -156,7 +159,9 @@ Palette: NAVY `1B2A6B` headers · CYAN `27B4E6` sub-heads · ORANGE `F86B3C` tot
 - [ ] Curriculum $0 if internal (+20–30% only if niche)
 - [ ] First-time vs repeat applied (kill dry-run & halve prep on repeat)
 - [ ] Correct rate (India $55 / US $110 / special $350–450); live-hours include coaching
-- [ ] TA = ₹500/assignment/learner + ₹1,000/live-hr · VM = ₹500/learner/day
+- [ ] **FX pulled live** (do not hardcode ₹84; ≈ ₹94.5 Jun 2026) — internal only
+- [ ] TA Assignment Review treated as **optional** (drop if not grading); TA Live = ₹1,000/live-hr
+- [ ] **Infra = VMs + Tools** in one line · VM-days = program-days + 3–4 buffer (call out to user) · client-provisioned seats excluded
 - [ ] Overheads + Margin (25–40%) applied; Pricing rounded
 - [ ] Per-learner & per-pax-per-day derived
 - [ ] Tool/VM provisioning costed separately (optimize free; on-prem scenario)

@@ -12,15 +12,29 @@ $ARGUMENTS
 
 ## How to query
 
-1. Read `knowledge/instr_candidates.json` — the indexed pool (773 instructors with LinkedIn URLs, roles, topics).
-2. Cross-reference `knowledge/graph.json` for:
-   - `expert-in` edges (instructor → topic)
-   - `proposed-for` edges (instructor → past clients)
-3. Filter by:
-   - **Topic match** (primary) — instructor's `expert-in` topics overlap with the brief's domain
+1. Read `knowledge/graph.json` — the real instructor pool lives here as `instructor` nodes (773), each with `label`, `role`, `expertise`, `topics`, `clients`, `linkedin`, `count`. (`instr_candidates.json` is only a file index, not the instructor pool.)
+2. Use the edges:
+   - `proposed-for` (instructor → client/file) — real delivery/engagement footprint
+   - topic membership via each instructor's `topics` array (the `expert-in` edge runs topic → instructor)
+3. Read `knowledge/instructor_delivery_flags.json` — human override of who is actually staffable (the KG cannot know this).
+4. Filter by:
+   - **Topic match** (primary) — instructor's `topics` overlap the brief's domain
    - **Geography** (if specified) — bias toward instructors with relevant past engagement
    - **Tier** (if specified) — FAANG+ / Standard / Tier-1 India / Special
    - **Availability** — deprioritise anyone already heavily engaged with this client (via `proposed-for`)
+
+## Pre-sales vs post-sales (ALWAYS apply)
+
+The KG ranks on topic + credibility; it cannot tell you who Acceler can actually hire. Two different jobs:
+
+- **Pre-sales shortlist (proposal credibility):** marquee names that win the pitch. Marquee external keynote/author names are fine here.
+- **Post-sales shortlist (DELIVERABLE):** only SMEs we can actually staff. **Exclude every name in `instructor_delivery_flags.json → pre_sales_only`** (currently Cassie Kozyrkov, Michelle K. Lee, Eric Siegel). Rank the rest by a **deliverability heuristic**:
+  - **+ active IK instructor** (role/expertise mentions "Instructor @ IK" / teaching / bootcamp) — most reliable
+  - **+ dense real `proposed-for` footprint** (more past engagements = more staffable)
+  - **+ in-house IK staff** (e.g. Head of Curriculum) = guaranteed
+  - **− pure external marquee** with little/no `proposed-for` = treat as pre-sales only
+
+**Default behaviour:** if the brief implies real delivery (words like *deliver, run, staff, who will teach, hire, post-sales, top N SMEs*), lead with the **Post-Sales (deliverable)** list and offer the pre-sales marquee names separately. If it's clearly only for a proposal, lead with pre-sales. When unsure, show **both** lists, clearly labelled. Never silently promote a `pre_sales_only` name into a deliverable list.
 
 ## Tier reference
 
@@ -38,20 +52,24 @@ $ARGUMENTS
 
 **Recommended tier for this brief:** [Tier] — [why]
 
-## Top matches from the knowledge base
+## Post-Sales — Deliverable shortlist (who we can actually staff)
+[Lead with this when the brief implies delivery. pre_sales_only names are EXCLUDED here.]
 
 ### 1 · [Name]
-- **Role:** [from instr_candidates.json]
+- **Role:** [from graph.json]
 - **LinkedIn:** [URL]
-- **Topic match:** [topics they're expert in that overlap the brief]
-- **Past delivery:** [previous Acceler engagements if any from proposed-for edges]
+- **Topic match:** [topics overlapping the brief]
+- **Deliverability:** [active IK instructor / in-house / N past proposed-for engagements]
+- **Past delivery:** [clients from proposed-for edges]
 - **Why they fit:** [1 line]
 
 ### 2 · [Name]
 [same shape]
+…(Top 5)
 
-### 3 · [Name]
-[same shape]
+## Pre-Sales — Proposal-credibility names (marquee; confirm before promising delivery)
+[List marquee names incl. any pre_sales_only ones, each tagged. Use to win the pitch, not to staff.]
+- **[Name]** — [role] — ⚠ *pre-sales only: [reason from flags file]* / or *deliverable too*
 
 ## If no strong match (10% edge case)
 

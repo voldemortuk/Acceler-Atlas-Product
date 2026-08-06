@@ -1,5 +1,7 @@
 # **Acceler Proposal | Instructor Pool**
 
+> **Pre-sales vs post-sales (read before staffing):** this roster includes **marquee names used for proposal credibility** that we cannot always staff for delivery. For *who will actually teach*, apply the deliverability filter in the `/instructors` command and the overrides in `knowledge/instructor_delivery_flags.json`. **Currently pre-sales only (do NOT promise for delivery): Cassie Kozyrkov, Michelle K. Lee, Eric Siegel.** Deliverable AI-for-Leaders anchors: Omkar Deshpande (in-house), Anand Rao, Sasidhar Kasturi, Felix Wong, Faiza Ghazanfar, Neil Daswani.
+
 We take pride in the depth and caliber of our instructor pool, which includes over **700+** **seasoned professionals** from diverse industries and technical backgrounds. 
 
 Our instructors aren't just educators—they’re industry leaders, including current and former engineers, product managers, and data scientists from top-tier tech companies like **Google, Amazon, Meta, and other FAANG organizations** who consistently receive an average feedback rating of **4.8+ across multiple courses**, reflecting their exceptional expertise.

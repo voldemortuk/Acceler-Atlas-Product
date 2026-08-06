@@ -67,6 +67,7 @@ ln -sf "$WORK/Doc Proposal Builder/Doc_Proposal_Skills.md" "$PLUG/skills/doc-pro
 ln -sf "$WORK/Pricing/Pricing_Skills.md" "$PLUG/skills/pricing/SKILL.md"
 ln -sf "$WORK/Requirement to Session Mapping Builder /Session_Mapping_Skills.md" "$PLUG/skills/requirement-mapping/SKILL.md"
 ln -sf "$WORK/Live Session-Deck-Builder/Live_Session_Deck_Skills.md" "$PLUG/skills/live-session-deck/SKILL.md"
+ln -sf "$WORK/Deck Proposal Builder /HTML-Deck-Builder/HTML_Deck_Skills.md" "$PLUG/skills/proposal-deck/SKILL.md"
 ln -sf "$WORK/Deck Proposal Builder /HTML-to-PPTX Converter/HTML_to_PPTX_Skills.md" "$PLUG/skills/pptx-deck/SKILL.md"
 ln -sf "$WORK/Mini-UT Context/context.md" "$PLUG/skills/mini-ut-context/SKILL.md"
 ln -sf "$WORK/Mini-UT Context/utkarsh_context.md" "$PLUG/skills/mini-ut-context/utkarsh_context.md"
@@ -86,7 +87,8 @@ You can now run any of these slash commands in Claude Code:
   /acceler:discovery       Score a brief against 33 questions
   /acceler:similar         Find closest precedents in the KG
   /acceler:proposal        Draft the program document
-  /acceler:deck            Generate live session HTML deck
+  /acceler:proposal-deck   Generate pre-sales pitch deck (KASE HTML)
+  /acceler:session-deck    Generate post-sales live delivery deck (HTML)
   /acceler:pricing         Compute 3 pricing scenarios
   /acceler:instructors     Rank SMEs from the indexed pool
   /acceler:coverage        Build RFP coverage matrix

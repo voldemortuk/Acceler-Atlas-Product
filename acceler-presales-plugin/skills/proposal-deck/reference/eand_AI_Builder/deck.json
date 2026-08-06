@@ -1,0 +1,25 @@
+{
+  "name": "eand_AI_Builder",
+  "created": "2026-06-08",
+  "slides": [
+    "01-cover.html",
+    "02-divider-context.html",
+    "03-acceler-intro.html",
+    "04-approach.html",
+    "05-two-tracks.html",
+    "06-divider-nocode.html",
+    "07-nocode-overview.html",
+    "08-nocode-journey.html",
+    "09-nocode-pods.html",
+    "10-nocode-artifacts.html",
+    "11-divider-lowcode.html",
+    "12-lowcode-overview.html",
+    "13-lowcode-journey.html",
+    "14-lowcode-pods.html",
+    "15-lowcode-artifacts.html",
+    "16-divider-delivery.html",
+    "17-rfp-mapping.html",
+    "18-delivery-model.html",
+    "19-closing.html"
+  ]
+}

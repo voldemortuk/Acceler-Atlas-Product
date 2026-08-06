@@ -23,6 +23,10 @@ Outputs/
 acceler-presales-plugin/knowledge/
 
 # Python bytecode + KG build cache
+__pycache__/
+*.pyc
+.venv/
+venv/
 Knowledge Graph/_kg/__pycache__/
 Knowledge Graph/_kg/out/
 Knowledge Graph/_kg/text/
