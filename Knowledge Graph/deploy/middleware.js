@@ -255,13 +255,15 @@ async function handleCallback(request, env) {
   const url = new URL(request.url);
   const code = url.searchParams.get('code');
   const state = url.searchParams.get('state') || '';
-  const stateCookie = getCookie(request, STATE_COOKIE) || '';
+  const cookieToken = getCookie(request, STATE_COOKIE) || '';
+  const [stateToken, returnPath] = state.split('|');
 
-  // CSRF check: the state we get back must match the one we handed out.
-  if (!code || !state || state !== stateCookie) {
+  // CSRF check: only the anti-forgery token has to match the cookie -- the
+  // return path travels in the state param itself (see the login branch
+  // below for why), so it must NOT be part of this comparison.
+  if (!code || !stateToken || stateToken !== cookieToken) {
     return new Response('Sign-in failed (state mismatch). Go back and try again.', { status: 400 });
   }
-  const [, returnPath] = state.split('|');
 
   const tokenResp = await fetch('https://oauth2.googleapis.com/token', {
     method: 'POST',
@@ -337,19 +339,26 @@ export default async function middleware(request) {
   // Not signed in -- serve the branded login screen. The state cookie is set
   // here (not just on redirect) since this page's button IS the redirect.
   //
-  // Reuse a still-valid pending state instead of minting a fresh one on every
-  // request: matcher '/(.*)' gates ALL requests, not just the page navigation,
-  // so a near-simultaneous second request to this origin (a browser's
-  // automatic favicon fetch, a corporate link-scanner/prefetcher, a duplicate
-  // tab) used to mint its own token and silently overwrite the cookie behind
-  // the link the user actually clicked -- Google would then echo back the
-  // *original* state, it wouldn't match the *clobbered* cookie, and sign-in
-  // failed with a false "state mismatch" even though the user did nothing
-  // wrong. Minting idempotently closes that race at the source.
-  const existingState = getCookie(request, STATE_COOKIE);
-  const state = existingState || `${randomToken(12)}|${url.pathname}`;
+  // The cookie holds ONLY the anti-CSRF token, never the return path, and
+  // the token is reused if one is already pending instead of minting a
+  // fresh one on every request: matcher '/(.*)' gates ALL requests, not just
+  // the page navigation, so a near-simultaneous second request to this
+  // origin (a browser's automatic favicon fetch, a corporate
+  // link-scanner/prefetcher, a duplicate tab) used to mint its own token and
+  // silently overwrite the cookie behind the link the user actually clicked
+  // -- Google would then echo back the *original* state, it wouldn't match
+  // the *clobbered* cookie, and sign-in failed with a false "state
+  // mismatch" even though the user did nothing wrong. Reusing the token
+  // closes that race. The return path is always THIS request's own
+  // url.pathname, computed fresh every time and never taken from the
+  // cookie/reused token -- otherwise whichever request happened to mint the
+  // cookie first (e.g. an old favicon fetch) would permanently hijack the
+  // post-login redirect destination for every later request that reuses
+  // its token, until the cookie expires.
+  const token = getCookie(request, STATE_COOKIE) || randomToken(12);
+  const state = `${token}|${url.pathname}`;
   const googleUrl = googleAuthorizeUrl(env, url.origin, state);
   const resp = loginPage(googleUrl, LOGO_DATA_URI);
-  resp.headers.append('Set-Cookie', `${STATE_COOKIE}=${state}; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=600`);
+  resp.headers.append('Set-Cookie', `${STATE_COOKIE}=${token}; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=600`);
   return resp;
 }
