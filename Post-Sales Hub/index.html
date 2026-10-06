@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Acceler Atlas Delivery, Documentation Hub</title>
+<style>
+:root{
+  --bg:#FAFAFC; --bg2:#F1F4FB; --card:#FFFFFF;
+  --navy:#1B2A6B; --navy-deep:#0E1640; --navy2:#2A3B8F;
+  --cyan:#27B4E6; --cyan-dark:#1690C2; --cyan-soft:#E8F7FD;
+  --ink:#14193A; --text2:#4B5568; --muted:#7C86A6; --border:#E4E8F2;
+  --green:#0A8754; --green-l:#EAFBF3; --amber:#B45309; --amber-l:#FFF8ED;
+  --red:#DC2626; --red-l:#FEF2F2;
+  --font:'DM Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --mono:'JetBrains Mono',Menlo,Consolas,monospace;
+  --radius:14px;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+
+/* ================= COVER ================= */
+.cover{position:relative;min-height:94vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background:radial-gradient(ellipse 900px 600px at 24% 18%,#28377E 0%,#0E1640 52%,#080B24 100%);
+  overflow:hidden;text-align:center;padding:110px 24px 70px;color:#fff;}
+.cover::before{content:"";position:absolute;inset:0;
+  background-image:radial-gradient(rgba(255,255,255,.06) 1px,transparent 1px);
+  background-size:26px 26px;opacity:.5;pointer-events:none;}
+.cover__glow{position:absolute;border-radius:50%;filter:blur(90px);opacity:.35;pointer-events:none;}
+.cover__glow.g1{width:520px;height:520px;background:#27B4E6;top:-160px;right:-120px;}
+.cover__glow.g2{width:420px;height:420px;background:#4C5FD8;bottom:-140px;left:-100px;}
+.cover__inner{position:relative;z-index:2;max-width:880px;display:flex;flex-direction:column;align-items:center;}
+.cover__logo{display:flex;align-items:center;gap:12px;margin-bottom:30px;}
+.cover__logo img{height:34px;background:#fff;padding:8px 14px;border-radius:10px;box-shadow:0 10px 26px rgba(0,0,0,.3);}
+.badge{display:inline-flex;align-items:center;gap:8px;background:var(--cyan-soft);border:1px solid rgba(39,180,230,.35);color:var(--cyan-dark);padding:7px 16px;border-radius:100px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;}
+.badge.dark{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.16);color:#BFD8F5;margin-bottom:22px;}
+.cover__title{font-size:clamp(42px,7.2vw,80px);font-weight:800;letter-spacing:-.03em;line-height:1.02;color:#fff;}
+.cover__title .accent{color:var(--cyan);}
+.cover__sub{margin-top:20px;font-size:17.5px;line-height:1.65;color:rgba(255,255,255,.68);max-width:600px;}
+.cover__chips{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:32px;}
+.chip{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:100px;padding:9px 18px;font-size:13px;color:rgba(255,255,255,.78);}
+.chip b{color:#fff;font-weight:800;}
+.cover__cta{display:flex;gap:14px;margin-top:38px;flex-wrap:wrap;justify-content:center;}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:100px;font-size:14.5px;font-weight:700;transition:all .18s;}
+.btn--primary{background:var(--cyan);color:#062033;}
+.btn--primary:hover{background:#4CC6EE;transform:translateY(-2px);box-shadow:0 10px 24px rgba(39,180,230,.35);}
+.btn--ghost{border:1px solid rgba(255,255,255,.28);color:#fff;}
+.btn--ghost:hover{background:rgba(255,255,255,.08);}
+.cover__scroll{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px;color:rgba(255,255,255,.45);font-size:11px;letter-spacing:.08em;text-transform:uppercase;z-index:2;}
+.cover__scroll .chev{font-size:18px;animation:bounce 1.8s infinite;}
+@keyframes bounce{0%,100%{transform:translateY(0);}50%{transform:translateY(7px);}}
+
+/* ---------- cover atlas icon (living glimpse of the KG) ---------- */
+.cover__atlas-bg{position:absolute;top:48%;left:50%;transform:translate(-50%,-50%);width:min(680px,82vmin);height:min(680px,82vmin);z-index:1;pointer-events:none;opacity:.14;}
+.cover__atlas-bg svg{width:100%;height:100%;overflow:visible;}
+.atlas-orbit{fill:none;stroke:rgba(255,255,255,.2);stroke-width:1.2;stroke-dasharray:1.5 7;}
+.atlas-orbit-grp{transform-box:fill-box;transform-origin:center;animation:atlasSpin 46s linear infinite;}
+.atlas-sat{fill:#fff;}
+.atlas-ring{fill:none;stroke:rgba(255,255,255,.28);stroke-width:1.6;}
+.atlas-globe{transform-box:fill-box;transform-origin:center;animation:atlasSpin 90s linear infinite;}
+.atlas-arc{fill:none;stroke:rgba(39,180,230,.85);stroke-width:2.2;stroke-linecap:round;stroke-dasharray:1.5 7;animation:atlasFlow 3.5s linear infinite;}
+.atlas-pin-glow{fill:var(--cyan);opacity:.4;transform-box:fill-box;transform-origin:center;animation:atlasPulse 2.8s ease-in-out infinite;}
+.atlas-pin{fill:#fff;}
+@keyframes atlasSpin{to{transform:rotate(360deg);}}
+@keyframes atlasFlow{to{stroke-dashoffset:-17;}}
+@keyframes atlasPulse{0%,100%{opacity:.75;transform:scale(1);}50%{opacity:1;transform:scale(1.35);}}
+.brand__atlas{width:27px;height:27px;flex:0 0 auto;display:flex;}
+.brand__atlas svg{width:100%;height:100%;overflow:visible;}
+.micon-ring{fill:none;stroke:rgba(255,255,255,.4);stroke-width:2;}
+.micon-globe{transform-box:fill-box;transform-origin:center;animation:atlasSpin 70s linear infinite;}
+.micon-pin{fill:#fff;}
+
+/* ---------- top bar ---------- */
+.topbar{position:sticky;top:0;z-index:200;background:rgba(250,250,252,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);}
+.topbar__inner{max-width:1320px;margin:0 auto;padding:14px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px;}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:17px;letter-spacing:-.01em;color:var(--navy);}
+.brand img{height:26px;width:auto;}
+.brand small{display:block;font-weight:600;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--cyan-dark);margin-top:1px;}
+.topnav{display:flex;gap:2px;}
+.topnav a{font-size:13px;font-weight:600;color:var(--text2);padding:8px 12px;border-radius:100px;transition:all .15s;white-space:nowrap;}
+.topnav a:hover{background:var(--cyan-soft);color:var(--navy);}
+.topnav a.active{background:var(--navy);color:#fff;}
+@media (max-width:1080px){.topnav{display:none;}}
+
+/* ---------- layout ---------- */
+.wrap{max-width:1320px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:220px minmax(0,1fr);gap:48px;}
+@media (max-width:980px){.wrap{grid-template-columns:1fr;}}
+.side{position:sticky;top:70px;align-self:start;padding:36px 0;display:flex;flex-direction:column;gap:2px;max-height:calc(100vh - 90px);overflow-y:auto;}
+@media (max-width:980px){.side{display:none;}}
+.side a{font-size:13px;font-weight:600;color:var(--muted);padding:8px 12px;border-left:2px solid transparent;transition:all .15s;}
+.side a:hover{color:var(--navy);}
+.side a.active{color:var(--navy);border-left-color:var(--cyan);background:var(--cyan-soft);border-radius:0 8px 8px 0;}
+.side .stepno{display:inline-block;width:18px;color:var(--cyan-dark);font-family:var(--mono);font-size:11px;}
+
+main{min-width:0;padding:0 0 80px;}
+section{padding-top:64px;scroll-margin-top:80px;}
+section:first-of-type{padding-top:48px;}
+
+/* ---------- reveal-on-scroll ---------- */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .55s ease, transform .55s ease;}
+.reveal.in{opacity:1;transform:none;}
+
+/* ---------- hero (overview) ---------- */
+.hero p.lead{font-size:16px;line-height:1.65;color:var(--text2);max-width:720px;}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:26px;}
+@media (max-width:900px){.stats{grid-template-columns:repeat(2,1fr);}}
+.stat{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px 14px;text-align:center;}
+.stat b{display:block;font-size:24px;font-weight:800;color:var(--navy);}
+.stat span{font-size:11.5px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.03em;}
+
+.jumpgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px;}
+@media (max-width:640px){.jumpgrid{grid-template-columns:1fr 1fr;}}
+.jumpcard{background:var(--card);border:1px solid var(--border);border-top:3px solid var(--cyan);border-radius:12px;padding:18px 16px;transition:transform .15s,box-shadow .15s;}
+.jumpcard:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(27,42,107,.09);}
+.jumpcard .n{font-family:var(--mono);font-size:11px;color:var(--cyan-dark);font-weight:700;}
+.jumpcard .t{font-size:14.5px;font-weight:800;color:var(--ink);margin:6px 0 5px;letter-spacing:-.01em;}
+.jumpcard .d{font-size:12px;color:var(--text2);line-height:1.45;}
+
+.downloads{display:flex;gap:14px;margin-top:26px;flex-wrap:wrap;}
+.dlcard{display:flex;align-items:center;gap:12px;background:var(--navy-deep);color:#fff;border-radius:12px;padding:13px 20px;font-size:13.5px;font-weight:700;transition:background .15s;}
+.dlcard:hover{background:var(--navy);}
+.dlcard .ic{font-size:18px;}
+.dlcard small{display:block;font-weight:500;color:rgba(255,255,255,.55);font-size:11px;margin-top:1px;}
+
+/* ---------- section heads ---------- */
+.shead{margin-bottom:26px;}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan-dark);margin-bottom:8px;}
+.shead h2{font-size:clamp(24px,3vw,32px);font-weight:800;letter-spacing:-.02em;color:var(--navy);}
+.shead p{margin-top:10px;font-size:15px;color:var(--text2);max-width:760px;line-height:1.6;}
+
+/* ---------- cards / grids ---------- */
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:22px;}
+.c2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.c3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+@media (max-width:760px){.c2,.c3{grid-template-columns:1fr;}}
+
+/* ---------- architecture diagram ---------- */
+.archgrid{display:grid;grid-template-columns:1fr auto 1fr;gap:18px;align-items:stretch;margin:8px 0 28px;}
+@media (max-width:760px){.archgrid{grid-template-columns:1fr;}.archgrid .archarrow{transform:rotate(90deg);margin:4px auto;}}
+.archbox{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px;}
+.archbox.dark{background:var(--navy-deep);color:#fff;border-color:var(--navy-deep);}
+.archbox .al{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--cyan-dark);margin-bottom:6px;}
+.archbox.dark .al{color:var(--cyan);}
+.archbox .at{font-size:18px;font-weight:800;margin-bottom:12px;color:var(--ink);}
+.archbox.dark .at{color:#fff;}
+.archbox ul{list-style:none;display:flex;flex-direction:column;gap:8px;}
+.archbox li{font-size:13px;line-height:1.5;color:var(--text2);position:relative;padding-left:16px;}
+.archbox.dark li{color:rgba(255,255,255,.72);}
+.archbox li::before{content:"▸";color:var(--cyan-dark);position:absolute;left:0;top:0;}
+.archbox.dark li::before{color:var(--cyan);}
+.archarrow{display:flex;align-items:center;justify-content:center;font-size:26px;color:var(--cyan);font-weight:800;}
+
+/* ---------- timeline compare ---------- */
+.tlwrap{display:flex;flex-direction:column;gap:16px;margin:18px 0 30px;}
+.tlrow{display:grid;grid-template-columns:130px 1fr;gap:16px;align-items:center;}
+@media (max-width:640px){.tlrow{grid-template-columns:1fr;}}
+.tlrow .tll{font-size:12.5px;font-weight:800;color:var(--ink);}
+.tlrow .tll span{display:block;font-size:11px;font-weight:600;color:var(--muted);margin-top:2px;}
+.tlbar{height:40px;border-radius:10px;display:flex;overflow:hidden;font-size:11px;font-weight:700;color:#fff;}
+.tlbar .seg{display:flex;align-items:center;justify-content:center;padding:0 6px;border-right:1px solid rgba(255,255,255,.25);white-space:nowrap;overflow:hidden;}
+.tlbar.before .seg{background:var(--muted);}
+.tlbar.before .seg:nth-child(1){background:#8891B5;flex:1.4;}
+.tlbar.before .seg:nth-child(2){background:#7883AD;flex:1;}
+.tlbar.before .seg:nth-child(3){background:#6C77A0;flex:.8;}
+.tlbar.before .seg:nth-child(4){background:#606B96;flex:2;}
+.tlbar.before .seg:nth-child(5){background:#54608C;flex:1.2;}
+.tlbar.after{background:linear-gradient(90deg,var(--cyan-dark),var(--cyan));}
+.tlbar.after .seg{flex:1;border-right:none;}
+
+/* ---------- pipeline ---------- */
+.pipe{display:flex;gap:10px;align-items:stretch;flex-wrap:wrap;}
+.pipe .pstep{flex:1;min-width:130px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px 12px;text-align:center;}
+.pipe .pstep .pi{font-size:20px;margin-bottom:6px;}
+.pipe .pstep .pt{font-size:11.8px;font-weight:800;color:var(--ink);font-family:var(--mono);margin-bottom:4px;}
+.pipe .pstep .pd{font-size:11px;color:var(--text2);line-height:1.4;}
+.pipe .parrow{align-self:center;color:var(--cyan);font-weight:800;font-size:15px;}
+@media (max-width:900px){.pipe{flex-direction:column;} .pipe .parrow{transform:rotate(90deg);}}
+
+/* ---------- step walkthrough ---------- */
+.step{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:28px;align-items:center;padding:28px 0;border-top:1px solid var(--border);}
+.step:first-child{border-top:none;}
+@media (max-width:860px){.step{grid-template-columns:1fr;}}
+.step__num{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:8px;background:var(--navy);color:#fff;font-size:12.5px;font-weight:800;font-family:var(--mono);flex-shrink:0;}
+.step__title{display:flex;align-items:center;gap:11px;font-size:16.5px;font-weight:800;color:var(--ink);margin-bottom:8px;}
+.step__body{font-size:13.6px;color:var(--text2);line-height:1.6;}
+.step__body b{color:var(--navy);}
+.step__body code{background:var(--bg2);padding:1px 6px;border-radius:5px;font-family:var(--mono);font-size:12px;color:var(--navy);}
+
+/* ---------- terminal / screenshot mock ---------- */
+.mock{border-radius:12px;overflow:hidden;border:1px solid var(--border);box-shadow:0 14px 32px rgba(14,22,64,.12);background:#fff;}
+.mock__bar{height:32px;background:#1c2340;display:flex;align-items:center;gap:7px;padding:0 13px;}
+.mock__bar i{width:10px;height:10px;border-radius:50%;display:block;}
+.mock__bar i:nth-child(1){background:#ff5f57;} .mock__bar i:nth-child(2){background:#febc2e;} .mock__bar i:nth-child(3){background:#28c840;}
+.mock__bar span{margin-left:8px;font-size:11px;color:rgba(255,255,255,.4);font-family:var(--mono);}
+.term{background:var(--navy-deep);color:#D7E3F4;font-family:var(--mono);font-size:12.5px;line-height:1.85;padding:16px 18px;white-space:pre-wrap;word-break:break-word;}
+.term .p{color:#7FD8F0;} .term .c{color:#9AE6B4;} .term .m{color:#8C9AC7;}
+.term .ok{color:#6EE7B7;} .term .warn{color:#FBBF6B;}
+
+.ui-mock{background:#F3F5FA;font-family:var(--font);}
+.ui-mock .row{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--border);}
+.ui-mock .row:last-child{border-bottom:none;}
+.ui-mock .row .name{font-size:13px;font-weight:700;color:var(--ink);}
+.ui-mock .row .sub{font-size:11px;color:var(--muted);margin-top:2px;}
+.pill{font-size:10.5px;font-weight:700;padding:4px 10px;border-radius:100px;}
+.pill.on{background:var(--green-l);color:var(--green);}
+.pill.src{background:var(--cyan-soft);color:var(--cyan-dark);}
+
+/* marketplace browse mockup */
+.mp-mock{background:#fff;padding:4px 0;}
+.mp-item{display:flex;align-items:center;gap:13px;padding:13px 16px;border-bottom:1px solid var(--border);}
+.mp-item:last-child{border-bottom:none;}
+.mp-item .mp-ic{width:36px;height:36px;border-radius:9px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0;}
+.mp-item .mp-t{font-size:12.8px;font-weight:700;color:var(--ink);}
+.mp-item .mp-d{font-size:11px;color:var(--muted);margin-top:1px;}
+.mp-item .mp-btn{margin-left:auto;font-size:11px;font-weight:700;padding:6px 13px;border-radius:8px;background:var(--cyan-soft);color:var(--cyan-dark);flex-shrink:0;}
+.mp-item .mp-btn.installed{background:var(--green-l);color:var(--green);}
+
+/* github PR mockup */
+.ghpr{background:#fff;padding:18px 20px;font-family:var(--font);}
+.ghpr__title{font-size:14.5px;font-weight:700;color:var(--ink);line-height:1.4;}
+.ghpr__title .num{color:var(--muted);font-weight:500;}
+.ghpr__meta{font-size:12px;color:var(--text2);margin-top:7px;line-height:1.6;}
+.ghpr__meta code{background:var(--bg2);padding:1px 6px;border-radius:5px;font-family:var(--mono);font-size:11px;}
+.ghpr__state{display:inline-flex;align-items:center;gap:5px;background:#1a7f37;color:#fff;font-size:11px;font-weight:700;padding:3px 9px;border-radius:100px;}
+.ghpr__stats{display:flex;gap:14px;margin-top:12px;font-family:var(--mono);font-size:12px;font-weight:700;}
+.ghpr__stats .add{color:#1a7f37;} .ghpr__stats .del{color:#cf222e;} .ghpr__stats .files{color:var(--muted);font-weight:500;font-family:var(--font);}
+.ghpr__checks{margin-top:12px;display:flex;flex-direction:column;gap:6px;}
+.ghpr__check{font-size:12px;color:var(--text2);display:flex;align-items:center;gap:7px;}
+.ghpr__check.ok::before{content:"✓";color:#1a7f37;font-weight:800;}
+.ghpr__merge{margin-top:14px;background:#8250df;color:#fff;border:none;padding:9px 18px;border-radius:8px;font-size:12.5px;font-weight:700;font-family:var(--font);}
+
+/* github settings mockup */
+.ghset{background:#fff;padding:6px 0;}
+.ghrow{display:flex;align-items:center;gap:12px;padding:11px 18px;border-bottom:1px solid var(--border);}
+.ghrow:last-child{border-bottom:none;}
+.ghavatar{width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,var(--cyan),var(--navy));flex-shrink:0;}
+.ghrow .gn{font-size:12.5px;font-weight:700;color:var(--ink);}
+.ghrow .gr{font-size:10.5px;color:var(--muted);margin-top:1px;}
+.ghrow .grole{margin-left:auto;font-size:11px;font-weight:700;color:var(--cyan-dark);background:var(--cyan-soft);padding:4px 10px;border-radius:7px;}
+
+/* graph node visualization mockup */
+.graphviz{background:var(--navy-deep);position:relative;height:280px;overflow:hidden;}
+.graphviz svg{position:absolute;inset:0;width:100%;height:100%;}
+.gnode{position:absolute;display:flex;align-items:center;gap:6px;font-size:10.5px;font-weight:700;color:#fff;transform:translate(-50%,-50%);}
+.gnode .dot{width:11px;height:11px;border-radius:50%;box-shadow:0 0 12px currentColor;}
+.gnode.account .dot{background:#F4A742;color:#F4A742;} .gnode.account{color:#F4C98A;}
+.gnode.program .dot{background:#27B4E6;color:#27B4E6;} .gnode.program{color:#8FDCF3;}
+.gnode.topic .dot{background:#6EE7B7;color:#6EE7B7;} .gnode.topic{color:#A9F2D6;}
+.gnode.instructor .dot{background:#C4A6F7;color:#C4A6F7;} .gnode.instructor{color:#DCC9FB;}
+.glegend{display:flex;gap:16px;flex-wrap:wrap;padding:12px 16px;background:#0A0F30;border-top:1px solid rgba(255,255,255,.08);}
+.glegend .gl{display:flex;align-items:center;gap:6px;font-size:11px;color:rgba(255,255,255,.7);}
+.glegend .gl .dot{width:8px;height:8px;border-radius:50%;}
+
+/* ---------- real screenshot ---------- */
+.realshot{position:relative;border-radius:12px;overflow:hidden;border:1px solid var(--border);box-shadow:0 14px 32px rgba(14,22,64,.14);}
+.realshot img{width:100%;display:block;}
+.realshot__badge{position:absolute;top:12px;right:12px;z-index:2;background:var(--green);color:#fff;font-size:11px;font-weight:800;padding:6px 12px;border-radius:100px;box-shadow:0 6px 14px rgba(10,135,84,.35);}
+
+/* ---------- live KG embed ---------- */
+.kgembed{border-radius:16px;overflow:hidden;border:1px solid var(--border);box-shadow:0 14px 32px rgba(14,22,64,.14);background:var(--navy-deep);margin:16px 0 8px;}
+.kgtabs{display:flex;gap:4px;background:#0A0F30;padding:8px;}
+.kgtab{flex:1;padding:12px 14px;border-radius:9px;font-size:12.8px;font-weight:700;color:rgba(255,255,255,.55);background:transparent;border:none;cursor:pointer;font-family:var(--font);transition:all .15s;text-align:left;}
+.kgtab span{display:block;font-size:10.5px;font-weight:600;color:rgba(255,255,255,.35);margin-top:2px;}
+.kgtab:hover{background:rgba(255,255,255,.05);}
+.kgtab.active{background:var(--navy);color:#fff;}
+.kgtab.active span{color:var(--cyan);}
+.kgpane{display:none;}
+.kgpane.active{display:block;}
+.kgpane__bar{display:flex;justify-content:space-between;align-items:center;padding:9px 16px;background:#0A0F30;font-family:var(--mono);font-size:11px;color:rgba(255,255,255,.45);}
+.kgpane__bar a{color:var(--cyan);font-weight:600;}
+.kgpane img{width:100%;height:580px;object-fit:cover;object-position:top center;display:block;background:#0A0F30;}
+@media (max-width:760px){.kgpane img{height:340px;}}
+.kgpane__cta{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;background:#0A0F30;border-top:1px solid rgba(255,255,255,.08);flex-wrap:wrap;}
+.kgpane__cta p{font-size:12px;color:rgba(255,255,255,.55);line-height:1.5;max-width:520px;}
+.kgpane__cta .btn{white-space:nowrap;}
+
+/* ---------- code block (standalone) ---------- */
+.codeblock{background:var(--navy-deep);border-radius:12px;padding:18px 20px;font-family:var(--mono);font-size:12.8px;line-height:1.75;color:#D7E3F4;overflow-x:auto;white-space:pre-wrap;word-break:break-word;}
+.codeblock .c{color:#8C9AC7;}
+.codeblock .g{color:#6EE7B7;}
+
+/* ---------- table ---------- */
+.tbl{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--border);border-radius:12px;overflow:hidden;font-size:13px;}
+.tbl th{background:var(--navy);color:#fff;text-align:left;padding:11px 14px;font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;}
+.tbl td{padding:11px 14px;border-top:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.tbl tr:nth-child(even) td{background:var(--bg2);}
+.tbl td b, .tbl td strong{color:var(--ink);}
+.tbl code{background:var(--bg2);padding:1px 6px;border-radius:5px;font-family:var(--mono);font-size:11.5px;color:var(--navy);}
+.tblwrap{overflow-x:auto;border-radius:12px;}
+
+/* ---------- sample output cards ---------- */
+.samplegrid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:8px;}
+@media (max-width:760px){.samplegrid{grid-template-columns:1fr;}}
+.samplecard{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;}
+.samplecard .stag{display:inline-flex;align-items:center;gap:6px;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:100px;margin-bottom:10px;}
+.samplecard .stag.pre{background:var(--cyan-soft);color:var(--cyan-dark);}
+.samplecard .stag.post{background:#F1EAFB;color:#6D28D9;}
+.samplecard h4{font-size:15px;font-weight:800;color:var(--ink);margin-bottom:6px;}
+.samplecard p{font-size:12.8px;color:var(--text2);line-height:1.55;margin-bottom:12px;}
+.samplecard .slinks{display:flex;flex-direction:column;gap:6px;}
+.samplecard .slinks a{display:flex;align-items:center;gap:6px;font-size:12.5px;font-weight:700;color:var(--navy);background:var(--bg2);padding:8px 12px;border-radius:8px;transition:background .15s;}
+.samplecard .slinks a:hover{background:var(--cyan-soft);}
+.samplecard .slinks a::before{content:"↗";color:var(--cyan-dark);flex-shrink:0;}
+.samplecard.pending{opacity:.62;}
+.samplecard.pending .slinks .waiting{font-size:12px;color:var(--muted);font-style:italic;padding:8px 12px;background:var(--bg2);border-radius:8px;}
+
+/* ---------- callouts ---------- */
+.callout{border-radius:12px;padding:16px 18px;font-size:13.5px;line-height:1.6;display:flex;gap:12px;align-items:flex-start;margin:18px 0;}
+.callout .ic{font-size:17px;flex-shrink:0;}
+.callout.info{background:var(--cyan-soft);color:var(--navy);border:1px solid rgba(39,180,230,.3);}
+.callout.warn{background:var(--amber-l);color:#7A3D00;border:1px solid rgba(180,83,9,.25);}
+.callout.good{background:var(--green-l);color:#065F46;border:1px solid rgba(10,135,84,.25);}
+.callout b{font-weight:800;}
+
+/* ---------- checklist ---------- */
+.checklist{list-style:none;display:flex;flex-direction:column;gap:9px;margin-top:6px;}
+.checklist li{position:relative;padding-left:30px;font-size:13.5px;color:var(--text2);line-height:1.55;}
+.checklist li::before{content:"✓";position:absolute;left:0;top:1px;width:20px;height:20px;border-radius:6px;background:var(--green-l);color:var(--green);font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;}
+.checklist li b{color:var(--ink);}
+
+/* ---------- numbered list ---------- */
+.numlist{display:flex;flex-direction:column;gap:14px;margin-top:8px;}
+.numlist li{list-style:none;display:grid;grid-template-columns:28px 1fr;gap:12px;align-items:start;}
+.numlist li .nb{width:26px;height:26px;border-radius:8px;background:var(--cyan-soft);color:var(--cyan-dark);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;font-family:var(--mono);}
+.numlist li .nt{font-size:13.7px;color:var(--text2);line-height:1.6;}
+.numlist li .nt b{color:var(--ink);}
+
+/* ---------- FAQ ---------- */
+.faq{display:flex;flex-direction:column;gap:10px;}
+.faq details{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px 18px;}
+.faq summary{list-style:none;cursor:pointer;font-size:14px;font-weight:700;color:var(--ink);display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary .qtitle{flex:1;min-width:0;}
+.faq summary .qchev{color:var(--cyan-dark);font-size:13px;transition:transform .2s;flex-shrink:0;}
+.faq details[open] summary .qchev{transform:rotate(180deg);}
+.faq .a{font-size:13.3px;color:var(--text2);line-height:1.65;margin-top:11px;padding-top:11px;border-top:1px solid var(--border);}
+.faq .a code{background:var(--bg2);padding:1px 6px;border-radius:5px;font-family:var(--mono);font-size:12px;color:var(--navy);}
+
+/* ---------- footer ---------- */
+footer{background:var(--navy-deep);color:rgba(255,255,255,.65);padding:44px 32px;margin-top:60px;}
+footer .finner{max-width:1320px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
+footer .fl{font-size:12.5px;line-height:1.7;}
+footer .fl b{color:#fff;}
+footer .fl--credit{display:flex;align-items:center;flex-wrap:wrap;gap:5px;}
+footer .fl .claude-mark{width:13px;height:13px;flex:0 0 auto;color:#D97757;vertical-align:-2px;}
+
+hr.div{border:none;border-top:1px solid var(--border);margin:26px 0;}
+p.body{font-size:13.8px;color:var(--text2);line-height:1.65;margin:10px 0;}
+p.body b{color:var(--ink);}
+h3.sub{font-size:16px;font-weight:800;color:var(--navy);margin:26px 0 10px;}
+</style>
+<style>
+/* additions for the Delivery hub */
+.pipe .pstep .pt{word-break:break-word;}
+.tbl td code{display:inline-block;margin-top:2px;}
+.samplecard .realshot{box-shadow:0 8px 20px rgba(14,22,64,.10);}
+.faq summary .pill{flex-shrink:0;}
+.faq .a b{color:var(--ink);}
+.faq .a{line-height:1.8;}
+.topnav a{padding:8px 10px;}
+</style>
+</head>
+<body>
+
+<!-- ================= COVER ================= -->
+<section class="cover">
+  <div class="cover__glow g1"></div>
+  <div class="cover__glow g2"></div>
+  <div class="cover__atlas-bg" aria-hidden="true">
+    <svg viewBox="0 0 220 220">
+      <defs>
+        <radialGradient id="sphereGrad" cx="38%" cy="32%" r="75%">
+          <stop offset="0%" stop-color="#5FD4F2"/><stop offset="42%" stop-color="#1F8FC4"/><stop offset="100%" stop-color="#12234F"/>
+        </radialGradient>
+      </defs>
+      <g class="atlas-orbit-grp">
+        <ellipse class="atlas-orbit" cx="110" cy="110" rx="104" ry="104"/>
+        <circle class="atlas-sat" cx="214" cy="110" r="3.4"/><circle class="atlas-sat" cx="6" cy="110" r="2.6"/>
+      </g>
+      <circle cx="110" cy="110" r="72" fill="url(#sphereGrad)"/>
+      <g class="atlas-globe">
+        <circle class="atlas-ring" cx="110" cy="110" r="72"/>
+        <ellipse class="atlas-ring" cx="110" cy="110" rx="72" ry="26"/>
+        <ellipse class="atlas-ring" cx="110" cy="110" rx="72" ry="50"/>
+        <ellipse class="atlas-ring" cx="110" cy="110" rx="26" ry="72"/>
+      </g>
+      <path class="atlas-arc" d="M96,58 Q168,78 158,140" fill="none"/>
+      <path class="atlas-arc" d="M158,140 Q110,190 62,148" fill="none"/>
+      <circle class="atlas-pin-glow" cx="96" cy="58" r="11"/><circle class="atlas-pin" cx="96" cy="58" r="4.5"/>
+      <circle class="atlas-pin-glow" cx="158" cy="140" r="11" style="animation-delay:.9s"/><circle class="atlas-pin" cx="158" cy="140" r="4.5"/>
+      <circle class="atlas-pin-glow" cx="62" cy="148" r="11" style="animation-delay:1.8s"/><circle class="atlas-pin" cx="62" cy="148" r="4.5"/>
+    </svg>
+  </div>
+  <div class="cover__inner">
+    <div class="cover__logo"><img src="img/acceler-logo-dark.svg" alt="Acceler"></div>
+    <div class="badge dark">📚 Documentation Hub · Delivery v0.4.9</div>
+    <h1 class="cover__title">Acceler Atlas <span class="accent">Delivery</span></h1>
+    <p class="cover__sub"><b style="color:#fff;">The post-sales plugin: from a signed deal to a delivered program.</b>
+    It builds the lesson plan, quizzes, demos, class decks and recaps, checks each one with its own reviewer,
+    and waits for a person to approve every fix. How it works, how to install it, and what comes next, all on this page.</p>
+    <div class="cover__chips">
+      <div class="chip"><b>16</b>&nbsp;pipeline stages</div>
+            <div class="chip"><b>15</b>&nbsp;reviewers</div>
+      <div class="chip"><b>3</b>&nbsp;ways to run each step</div>
+      <div class="chip"><b>20/20</b>&nbsp;reviewer tests passed</div>
+    </div>
+    <div class="cover__cta">
+      <a href="#setup" class="btn btn--primary">Get started →</a>
+      <a href="#start" class="btn btn--ghost">I need to make something</a>
+      <a href="#whats-next" class="btn btn--ghost">🛣️ What's next</a>
+    </div>
+  </div>
+  <a href="#overview" class="cover__scroll"><span>Scroll to explore</span><div class="chev">⌄</div></a>
+</section>
+
+<div class="topbar">
+  <div class="topbar__inner">
+    <div class="brand"><img src="img/acceler-logo-dark.svg" alt="Acceler"><div><span>Atlas · Delivery</span><small>Acceler Post-Sales OS</small></div></div>
+    <nav class="topnav" id="topnav">
+      <a href="#overview">Overview</a>
+      <a href="#start">Start Here</a>
+      <a href="#pipeline">All Stages</a>
+      <a href="#modes">3 Ways</a>
+      <a href="#review">Review</a>
+      <a href="#outputs">What You Get</a>
+      <a href="#setup">Setup</a>
+      <a href="#saving">Saving</a>
+      <a href="#faq">FAQ</a>
+      <a href="#whats-next">What's Next</a>
+    </nav>
+  </div>
+</div>
+
+<div class="wrap">
+  <aside class="side" id="sidenav">
+    <a href="#overview"><span class="stepno">00</span> Overview</a>
+    <a href="#start"><span class="stepno">01</span> Start Here: What Do You Need to Make?</a>
+    <a href="#fit"><span class="stepno">02</span> From Pre-Sales to Post-Sales</a>
+    <a href="#pipeline"><span class="stepno">03</span> Every Stage Explained</a>
+    <a href="#modes"><span class="stepno">04</span> Three Ways to Run a Step</a>
+    <a href="#review"><span class="stepno">05</span> Review and Approving Fixes</a>
+    <a href="#outputs"><span class="stepno">06</span> What You Get, and How to Use It</a>
+    <a href="#samples"><span class="stepno">07</span> Sample Outputs</a>
+    <a href="#setup"><span class="stepno">08</span> Setup &amp; Update</a>
+    <a href="#saving"><span class="stepno">09</span> Saving &amp; Handover</a>
+    <a href="#faq"><span class="stepno">10</span> FAQ &amp; Troubleshooting</a>
+    <a href="#glossary"><span class="stepno">11</span> Words Used on This Page</a>
+    <a href="#whats-next"><span class="stepno">12</span> What's Next</a>
+  </aside>
+
+  <main>
+
+  <!-- ============ 00 OVERVIEW ============ -->
+  <section id="overview">
+    <div class="hero reveal">
+      <div class="eyebrow">00 · Overview</div>
+      <p class="lead">The <b>acceler-post-sales</b> Claude Code plugin picks up where pre-sales stops. Once a deal
+      is signed, it turns what we already know about the client into everything a program needs: the onboarding
+      form, the lesson plan, quizzes, demos, class decks, orientation and closing decks, assignments, and the
+      recap and impact report after each session.</p>
+      <p class="lead" style="margin-top:12px;font-size:13.5px;color:var(--muted);">Two ideas run through all of it.
+      <b>First, nothing ships unchecked:</b> every artifact goes to its own AI reviewer, and a person approves each
+      fix before it is applied. <b>Second, every step works on its own:</b> you can run the whole pipeline for a new
+      client, adapt one real past deck for a different client, or make a small change to something that already exists.</p>
+
+      <div class="stats">
+        <div class="stat"><b>16</b><span>Pipeline Stages</span></div>
+        <div class="stat"><b>3</b><span>Ways to Run a Step</span></div>
+        <div class="stat"><b>15</b><span>Reviewer Agents</span></div>
+        <div class="stat"><b>20/20</b><span>Reviewer Tests Passed</span></div>
+        <div class="stat"><b>0.4.9</b><span>Current Version</span></div>
+      </div>
+
+      <div class="callout info" style="margin-top:22px;"><span class="ic">🏷️</span><div><b>Two labels you will see on every stage.</b>
+      <b>Tested</b> means it has been run on a real program and compared with what we actually delivered.
+      <b>Built</b> means it is ready to use and has not yet been run on a real program.</div></div>
+
+      <div class="card" style="margin-top:6px;border-top:3px solid var(--cyan);">
+        <div style="font-weight:800;color:var(--navy);font-size:15px;margin-bottom:8px;">🆕 What's in this version</div>
+        <ul class="checklist" style="margin:0;">
+          <li><b>The whole delivery pipeline, one command per stage.</b> From discovery facts to the impact report, each with a matching reviewer.</li>
+          <li><b>Three ways to run any step.</b> Full build, adapt from a real past artifact, or a quick tweak. The plugin works out which one you mean from what you hand it.</li>
+          <li><b>A start-up check before anything is built.</b> It says which mode it is in, looks at what already exists for the client (on your laptop, then in Drive), and asks at most 3 to 5 questions.</li>
+          <li><b>Session decks that match our real class decks.</b> Built on the real e&amp; template: same backgrounds, layouts and type sizes.</li>
+          <li><b>Reviews that respect what you asked for.</b> A deliberately short deck is not failed for slides nobody requested.</li>
+          <li><b>Every reviewer has been tested.</b> 20 test samples, each with a known problem planted in it, and all 20 were caught correctly.</li>
+        </ul>
+      </div>
+
+      <div class="jumpgrid">
+        <a class="jumpcard" href="#start"><div class="n">01</div><div class="t">I need to make a deck, demo or quiz</div><div class="d">Step-by-step recipes: what you need, what to type, what you get.</div></a>
+        <a class="jumpcard" href="#setup"><div class="n">08</div><div class="t">I am setting up for the first time</div><div class="d">Both plugins, about 10 minutes, in Claude Desktop.</div></a>
+        <a class="jumpcard" href="#pipeline"><div class="n">03</div><div class="t">I want to know what each stage does</div><div class="d">All 16 stages, who runs each, and what it needs first.</div></a>
+      </div>
+    </div>
+  </section>
+
+<!-- ============ 01 START HERE ============ -->
+  <section id="start">
+    <div class="shead reveal">
+      <div class="eyebrow">01 · Start Here</div>
+      <h2>What do you need to make?</h2>
+      <p>If you build slides, demos and quizzes, this is your section. Pick the job, follow the recipe. Each one tells you
+      what you need first, exactly what to type, what comes back, and where the file goes.</p>
+    </div>
+
+    <div class="tblwrap reveal">
+    <table class="tbl">
+      <tr><th style="width:30%">Who usually does what</th><th>Stages</th><th style="width:34%">What this means for you</th></tr>
+      <tr><td><b>If you are planning the program</b></td><td>Discovery facts, onboarding form, deep research, lesson plan, instructor roster</td><td>By the time you start, a <b>lesson plan</b> for the client normally exists. If it does not, you can still work from a past deck, see recipe 3.</td></tr>
+      <tr><td><b>If you are building the content</b></td><td>Demo guides, slide plans, session decks, quizzes</td><td>The five recipes below.</td></tr>
+      <tr><td><b>If you are covering for someone</b></td><td>Any stage</td><td>Every stage is explained in <a href="#pipeline" style="text-decoration:underline;">Every stage explained</a>, with what it needs and what to type.</td></tr>
+    </table>
+    </div>
+
+    <div class="callout info reveal"><span class="ic">📁</span><div><b>The two Drive folders.</b>
+    <a href="https://drive.google.com/drive/folders/1tUMBGWfAKPzKA4hndaDjBe9hOHzMhza2" target="_blank" rel="noopener" style="text-decoration:underline;">B2B AI Programs</a> is for what learners and clients see: decks, demos, recaps.
+    <a href="https://drive.google.com/drive/folders/1XTJNdwNfv5irwS4ezjRbTDU6NONwfw4Y" target="_blank" rel="noopener" style="text-decoration:underline;">PostSalesPluginOutput</a> is for working files: lesson plans, slide plans, quizzes, run notes.
+    Each recipe below says which folder its file belongs in. More in <a href="#saving" style="text-decoration:underline;">Saving and Drive</a>.</div></div>
+
+    <div class="callout info reveal"><span class="ic">💡</span><div><b>Two things that are the same for every recipe.</b>
+    <b>One:</b> always pick the command from the menu (type <code>/acceler-post-sales:</code> and choose), then type or paste the rest in plain English. Say the <b>client name</b> and the <b>day number</b>.
+    <b>Two:</b> the plugin starts by telling you which mode it is in and what it found for that client, and may ask up to 3 to 5 short questions. Answer them, and it builds.</div></div>
+
+    <div class="card reveal" style="margin-top:16px;">
+      <div class="step__title" style="margin-bottom:12px;"><span class="step__num">1</span> Build a demo guide from a demo you ran</div>
+      <div class="c2" style="gap:22px;align-items:start;">
+        <div>
+          <p class="body" style="margin:0 0 8px;"><b>You need:</b> The lesson plan for that day. Your <b>screenshots</b> of the demo, in order: paste them into Claude, or put them in one folder and name the folder. A few plain lines on what happened at each step. Rough notes are fine.</p>
+          <p class="body" style="margin:0 0 8px;"><b>You get:</b> A step-by-step guide learners can follow, as a web page, with your screenshots placed at the right steps and copy buttons on every prompt and code block. One guide per demo. If a day has two demos, run this twice.</p>
+          <p class="body" style="margin:0 0 8px;"><b>Saved on your laptop:</b> <code>demo/day-1-demo-1/</code> in the client's outputs folder<br><b>Belongs in Drive:</b> <b>B2B AI Programs</b>, under the day's Live Class / Demo folder</p>
+          <p class="body" style="margin:0;"><b>Time:</b> Not measured yet. The review after it adds a few minutes.</p>
+          <p class="body" style="margin:8px 0 0;">The plugin never invents a screenshot. If a step needs one you did not give, it says so. It also checks no password is visible in any screenshot.</p>
+        </div>
+        <div class="mock">
+          <div class="mock__bar"><i></i><i></i><i></i><span>type this</span></div>
+          <div class="term"><span class="m">&gt;</span> <span class="p">/acceler-post-sales:demo-generation</span> Ferguson, Day 1,
+the product spec agent demo. My screenshots are in the
+folder "Day 1 demo screenshots", in order.
+Steps: 1) opened n8n and added the trigger
+2) connected the sheet 3) added the OpenAI node ...</div>
+        </div>
+      </div>
+    </div>
+    <div class="card reveal" style="margin-top:16px;">
+      <div class="step__title" style="margin-bottom:12px;"><span class="step__num">2</span> Build a day's class deck from the lesson plan</div>
+      <div class="c2" style="gap:22px;align-items:start;">
+        <div>
+          <p class="body" style="margin:0 0 8px;"><b>You need:</b> The lesson plan, and that day's demo guide and quiz if they exist (the deck links to the demo and shows the quiz questions). Two commands, in this order.</p>
+          <p class="body" style="margin:0 0 8px;"><b>You get:</b> First a <b>slide plan</b>: what each teaching slide will say and show, for you to read and correct. Then the <b>deck</b>, built from that plan in our class-deck template: cover, instructor, timing, agenda, teaching slides, demo link, quiz, thank you. The deck reviewer runs on its own afterwards and asks which fixes to apply.</p>
+          <p class="body" style="margin:0 0 8px;"><b>Saved on your laptop:</b> <code>slide-content-plan-day-1.md</code> and <code>session-deck/day-1/index.html</code><br><b>Belongs in Drive:</b> the deck goes to <b>B2B AI Programs</b>, the slide plan to <b>PostSalesPluginOutput</b></p>
+          <p class="body" style="margin:0;"><b>Time:</b> Not measured yet for a full day. Plan for it to run while you do something else.</p>
+          <p class="body" style="margin:8px 0 0;">Why two steps: deciding the content first is what keeps the deck from turning into walls of text. Fix the plan, not the deck.</p>
+        </div>
+        <div class="mock">
+          <div class="mock__bar"><i></i><i></i><i></i><span>type this</span></div>
+          <div class="term"><span class="m">&gt;</span> <span class="p">/acceler-post-sales:slide-content-planning</span> Ferguson 1
+
+<span class="c"># read the plan it writes, then:</span>
+
+<span class="m">&gt;</span> <span class="p">/acceler-post-sales:session-deck</span> Ferguson, Day 1</div>
+        </div>
+      </div>
+    </div>
+    <div class="card reveal" style="margin-top:16px;">
+      <div class="step__title" style="margin-bottom:12px;"><span class="step__num">3</span> Adapt a past deck for a new client</div>
+      <div class="c2" style="gap:22px;align-items:start;">
+        <div>
+          <p class="body" style="margin:0 0 8px;"><b>You need:</b> The past deck, in any of these forms: a <b>Google Slides link</b>, a <b>PowerPoint file</b>, or a <b>PDF</b>. A few lines about the new client: who the learners are, which tools, the use case, which day. No lesson plan needed.</p>
+          <p class="body" style="margin:0 0 8px;"><b>You get:</b> It replies "Mode: Adapt", writes a short <b>brief</b> of what it understood and shows it to you, builds the deck in our template with the new client's examples, then runs the full review. At the end it <b>lists what it could not carry over</b> from the old deck, usually diagrams and screenshots.</p>
+          <p class="body" style="margin:0 0 8px;"><b>Saved on your laptop:</b> <code>session-deck/day-1/index.html</code><br><b>Belongs in Drive:</b> <b>B2B AI Programs</b></p>
+          <p class="body" style="margin:0;"><b>Time:</b> About 9 minutes for a 7-slide deck in a real run, including the review.</p>
+          <p class="body" style="margin:8px 0 0;">The old deck gives the <b>content</b>. Our template gives the <b>look</b>. You get a new deck, your old file is not edited. If the old deck has important diagrams, give the PDF or PowerPoint, a Slides link brings text only. More in <a href="#modes" style="text-decoration:underline;">Three ways to run a step</a>.</p>
+        </div>
+        <div class="mock">
+          <div class="mock__bar"><i></i><i></i><i></i><span>type this</span></div>
+          <div class="term"><span class="m">&gt;</span> <span class="p">/acceler-post-sales:session-deck</span> Use this deck as the
+reference: [Slides link, or path to the .pptx or .pdf].
+Build the Day 1 deck for Ferguson: 10 AI/ML engineers,
+Python, use case is product spec automation.
+Keep the same structure, change the examples.</div>
+        </div>
+      </div>
+    </div>
+    <div class="card reveal" style="margin-top:16px;">
+      <div class="step__title" style="margin-bottom:12px;"><span class="step__num">4</span> Make a quiz</div>
+      <div class="c2" style="gap:22px;align-items:start;">
+        <div>
+          <p class="body" style="margin:0 0 8px;"><b>You need:</b> The lesson plan. Say which kind: the <b>pre-test</b>, the <b>post-test</b>, or the <b>quiz for a given day</b>. They are three different files.</p>
+          <p class="body" style="margin:0 0 8px;"><b>You get:</b> Questions that each test one objective from the lesson plan, with an explanation of why the right answer is right and why each wrong one is wrong. Pre-test and post-test come as 10 questions plus 2 written ones unless you ask for different numbers. The quiz reviewer runs afterwards.</p>
+          <p class="body" style="margin:0 0 8px;"><b>Saved on your laptop:</b> <code>mcq/day-1-in-session.docx</code> (or <code>pre-test.docx</code>, <code>post-test.docx</code>)<br><b>Belongs in Drive:</b> <b>PostSalesPluginOutput</b>. Ask for a Google Form if you want one made.</p>
+          <p class="body" style="margin:0;"><b>Time:</b> Not measured yet.</p>
+          <p class="body" style="margin:8px 0 0;">Make the day's quiz <b>before</b> the slide plan, so the deck can place each question right after the concept it tests.</p>
+        </div>
+        <div class="mock">
+          <div class="mock__bar"><i></i><i></i><i></i><span>type this</span></div>
+          <div class="term"><span class="m">&gt;</span> <span class="p">/acceler-post-sales:mcq-generation</span> Ferguson,
+in-session quiz for Day 1
+
+<span class="c"># or: "pre-test", "post-test",
+# or "Day 2 quiz, 8 questions" to set the count</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="card reveal" style="margin-top:16px;">
+      <div class="step__title" style="margin-bottom:12px;"><span class="step__num">5</span> Change something in a deck, demo or quiz that already exists</div>
+      <div class="c2" style="gap:22px;align-items:start;">
+        <div>
+          <p class="body" style="margin:0 0 8px;"><b>You need:</b> The file, and exactly what to change.</p>
+          <p class="body" style="margin:0 0 8px;"><b>You get:</b> It replies "Mode: Tweak", changes only what you asked, and confirms the change landed and nothing else moved. It also tells you if your change left something else out of step, for example a cover that now names a different instructor than slide 2.</p>
+          <p class="body" style="margin:0 0 8px;"><b>Saved on your laptop:</b> a copy next to the original, the original is left alone<br><b>Belongs in Drive:</b> replace the file in the same Drive folder</p>
+          <p class="body" style="margin:0;"><b>Time:</b> About a minute.</p>
+          <p class="body" style="margin:8px 0 0;">A tweak gets a quick check, not the full reviewer. If you want the full review as well, run <code>deck-review</code>, <code>code-demo-review</code> or <code>mcq-review</code> on the file afterwards.</p>
+        </div>
+        <div class="mock">
+          <div class="mock__bar"><i></i><i></i><i></i><span>type this</span></div>
+          <div class="term"><span class="m">&gt;</span> <span class="p">/acceler-post-sales:session-deck</span> In the Ferguson
+Day 1 deck, change the instructor on the cover to
+Anshaj Khare and add "Cohort 3" under the title.
+Save it as a copy.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout good reveal"><span class="ic">🧭</span><div><b>The order for one day, when you build everything:</b>
+    demo guide and the day's quiz first, then the slide plan, then the deck. The deck needs to know what the demo builds and which questions to show.</div></div>
+
+    <h3 class="sub reveal">When the result is not good enough</h3>
+    <ol class="numlist reveal">
+      <li><span class="nb">1</span><span class="nt"><b>Say what is wrong, in the same chat.</b> "Slide 9 is too wordy, cut it to three bullets" works. Small changes are a tweak.</span></li>
+      <li><span class="nb">2</span><span class="nt"><b>If the same problem keeps coming back,</b> tell Utkarsh or Tanmaya, with the client, the day, the command you ran, and what was wrong. Your fix only changes your own file. They add the repeat problem to the plugin as a rule, and after the next update it stops for everyone. Each run also saves a short note of what was fixed, see <a href="#run-note" style="text-decoration:underline;">the run note</a>.</span></li>
+      <li><span class="nb">3</span><span class="nt"><b>If the reviewer flagged something that is actually fine,</b> tell it to ignore that finding, see <a href="#review" style="text-decoration:underline;">Approving fixes</a>. The finding is dropped from that review and your reason is saved in the run note.</span></li>
+    </ol>
+  </section>
+
+  <!-- ============ 01 FIT ============ -->
+  <section id="fit">
+    <div class="shead reveal">
+      <div class="eyebrow">02 · From Pre-Sales to Post-Sales</div>
+      <h2>Pre-sales wins the deal. Post-sales delivers it.</h2>
+      <p>They are two plugins in the same repo, built to work as a pair. Both read from the same Knowledge Graph,
+      so what we deliver matches what we sold, and nobody has to ask the client the same question twice.</p>
+    </div>
+
+    <div class="archgrid reveal">
+      <div class="archbox">
+        <div class="al">Before the deal closes</div>
+        <div class="at">Acceler Atlas (pre-sales)</div>
+        <ul>
+          <li>Scores the client brief against the discovery checklist</li>
+          <li>Finds similar past deals</li>
+          <li>Drafts the proposal and the pitch deck</li>
+          <li>Works out pricing</li>
+          <li>Suggests instructors</li>
+        </ul>
+      </div>
+      <div class="archarrow">→</div>
+      <div class="archbox dark">
+        <div class="al">After the deal closes</div>
+        <div class="at">Acceler Atlas · Delivery (post-sales)</div>
+        <ul>
+          <li>Reads the discovery facts and the proposal, instead of asking again</li>
+          <li>Builds the onboarding form, lesson plan and instructor roster</li>
+          <li>Builds quizzes, demos and the class decks for each day</li>
+          <li>Builds orientation, closing, assignments and the setup guide</li>
+          <li>Builds the learner recap and stakeholder impact report after each session</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="c2 reveal">
+      <div class="card">
+        <div style="font-weight:800;color:var(--navy);font-size:15px;margin-bottom:8px;">What carries over</div>
+        <p class="body" style="margin:0;">The discovery facts (who the audience is, what success looks like, tools,
+        timeline) and the proposal (what was promised, how many days, how many hours a day). Post-sales saves these
+        as a <b>Discovery Facts Sheet</b> and every later stage checks its work against it.</p>
+      </div>
+      <div class="card">
+        <div style="font-weight:800;color:var(--navy);font-size:15px;margin-bottom:8px;">Why install both</div>
+        <p class="body" style="margin:0;">The Knowledge Graph (past deals, programs, instructors) ships with
+        pre-sales, and two post-sales steps use pre-sales tools directly: the <b>discovery check</b> at the very
+        start and <b>finding the right instructor</b> for each day. So the rule is simple: always install both.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 02 PIPELINE ============ -->
+  <!-- ============ 03 PIPELINE ============ -->
+  <section id="pipeline">
+    <div class="shead reveal">
+      <div class="eyebrow">03 · Every Stage Explained</div>
+      <h2>Sixteen stages, and what each one needs</h2>
+      <p>This is the whole pipeline, so anyone can run any stage if the usual person is away. Click a stage to open it.
+      Each one says what it does, what must exist first, what to type, and where the result goes.</p>
+    </div>
+
+    <h3 class="sub reveal" style="margin-top:0;">The order, in one picture</h3>
+    <div class="pipe reveal">
+      <div class="pstep" style="border-top:3px solid var(--navy);"><div class="pi">🧾</div><div class="pt">A · Understand</div><div class="pd">Discovery facts → onboarding form → deep research</div></div>
+      <div class="parrow">→</div>
+      <div class="pstep" style="border-top:3px solid var(--navy);"><div class="pi">🗓️</div><div class="pt">B · Plan</div><div class="pd">Lesson plan → instructor roster</div></div>
+      <div class="parrow">→</div>
+      <div class="pstep" style="border-top:3px solid var(--cyan);"><div class="pi">🖥️</div><div class="pt">C · Build, for each day</div><div class="pd">Demo guide and quiz → slide plan → deck</div></div>
+      <div class="parrow">→</div>
+      <div class="pstep" style="border-top:3px solid var(--green);"><div class="pi">📊</div><div class="pt">D · After each session</div><div class="pd">Learner recap, impact report</div></div>
+    </div>
+    <div class="pipe reveal" style="margin-top:10px;">
+      <div class="pstep" style="border-top:3px solid var(--amber);"><div class="pi">📎</div><div class="pt">E · Once per program, any time after the lesson plan</div><div class="pd">Orientation deck (before Day 1) · setup guide (before Day 1) · assignment and project (when the plan calls for them) · closing deck (before the last day)</div></div>
+    </div>
+
+    <div class="c2 reveal" style="margin-top:18px;">
+      <div class="card">
+        <div style="font-weight:800;color:var(--navy);font-size:15px;margin-bottom:8px;">What "in order" really means</div>
+        <ul class="checklist" style="margin:0;">
+          <li><b>A full program for a new client</b> runs A, then B, then C for each day. Each stage reads what the one before it produced.</li>
+          <li><b>Group C repeats for every day.</b> Day 1, then Day 2, and so on. Always say the day number.</li>
+          <li><b>You can skip what a program does not need.</b> A one-day masterclass may only need a deck, a quiz and a recap.</li>
+          <li><b>You can start in the middle.</b> With a past deck to adapt, you do not need A or B at all. The plugin writes a short brief in their place.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div style="font-weight:800;color:var(--navy);font-size:15px;margin-bottom:8px;">What must exist before you build...</div>
+        <div class="tblwrap"><table class="tbl" style="font-size:12.5px;">
+          <tr><th>To build</th><th>You need</th></tr>
+          <tr><td><b>A demo guide</b></td><td>The lesson plan, your screenshots</td></tr>
+          <tr><td><b>A quiz</b></td><td>The lesson plan</td></tr>
+          <tr><td><b>A slide plan</b></td><td>The lesson plan, that day's demo guide, the day's quiz if there is one</td></tr>
+          <tr><td><b>A deck, fresh</b></td><td>That day's slide plan</td></tr>
+          <tr><td><b>A deck, adapted</b></td><td>Only a past deck and a few lines about the new client</td></tr>
+        </table></div>
+      </div>
+    </div>
+
+    <p class="body reveal" style="margin-top:20px;"><span class="pill on">Tested</span> means the stage was run on a real program and reviewed.
+    <span class="pill src">Built</span> means it is in the plugin and next in testing. "Type" shows the command and an example of what to say after it.</p>
+
+    <h3 class="sub reveal">A · Understand the client</h3>
+    <div class="faq reveal">
+<details><summary><span class="qtitle">Discovery checklist &nbsp;<span style="font-weight:500;color:var(--muted);font-size:12.5px;">Planning</span></span><span class="pill on">Tested</span><span class="qchev" style="margin-left:10px;">▾</span></summary>
+        <div class="a"><b>What it does:</b> Scores what we know about the client against the 33-question discovery checklist, and saves a <b>Discovery Facts Sheet</b>: who the learners are, what success looks like 3 months on, tools, constraints, and which branding to use.<br>
+        <b>Needs first:</b> The proposal and discovery call notes. Nothing from this plugin.<br>
+        <b>Type:</b> <code>/acceler-post-sales:discovery-checklist</code> <i>Ferguson. The proposal and call notes are in the Ferguson folder.</i><br>
+        <b>You get:</b> A score, a verdict, and the Facts Sheet that every later stage checks against. Below 50% it stops the pipeline until the gaps are filled.<br>
+        <b>Belongs in Drive:</b> <b>PostSalesPluginOutput</b> (working file)<br>
+        <b>Real example:</b> e&amp; Low Code: it separated a real business outcome from the proposal's "success metrics", which only measured the training itself.</div></details><details><summary><span class="qtitle">Onboarding form &nbsp;<span style="font-weight:500;color:var(--muted);font-size:12.5px;">Planning</span></span><span class="pill on">Tested</span><span class="qchev" style="margin-left:10px;">▾</span></summary>
+        <div class="a"><b>What it does:</b> Builds the form learners fill in before the program, tied to what the program is meant to achieve.<br>
+        <b>Needs first:</b> The Facts Sheet.<br>
+        <b>Type:</b> <code>/acceler-post-sales:onboarding-form-generation</code> <i>Ferguson</i><br>
+        <b>You get:</b> The form as a Word file. Ask for a Google Form and it makes one.<br>
+        <b>Belongs in Drive:</b> <b>PostSalesPluginOutput</b> (working file)<br>
+        <b>Real example:</b> e&amp;: a form that asks each learner what they want from the program, not only their tools and skill ratings.</div></details><details><summary><span class="qtitle">Deep research &nbsp;<span style="font-weight:500;color:var(--muted);font-size:12.5px;">Planning</span></span><span class="pill on">Tested</span><span class="qchev" style="margin-left:10px;">▾</span></summary>
+        <div class="a"><b>What it does:</b> Pulls everything we know into one brief: the Facts Sheet, proposal, onboarding answers, call transcripts, and the closest past programs.<br>
+        <b>Needs first:</b> The Facts Sheet, the proposal, the onboarding responses.<br>
+        <b>Type:</b> <code>/acceler-post-sales:deep-research</code> <i>Ferguson</i><br>
+        <b>You get:</b> One research brief. A person reads and approves it, there is no separate reviewer for this stage.<br>
+        <b>Belongs in Drive:</b> <b>PostSalesPluginOutput</b> (working file)<br>
+        <b>Real example:</b> e&amp;: it found that the real past program ran two demos on Day 1, a warm-up and a main build, which shaped the lesson plan.</div></details>
+    </div>
+    <h3 class="sub reveal">B · Plan the program</h3>
+    <div class="faq reveal">
+<details><summary><span class="qtitle">Lesson plan &nbsp;<span style="font-weight:500;color:var(--muted);font-size:12.5px;">Planning</span></span><span class="pill on">Tested</span><span class="qchev" style="margin-left:10px;">▾</span></summary>
+        <div class="a"><b>What it does:</b> The internal, minute-by-minute plan: topic, objective, time, flow, demo and tools, one tab per day. It checks that each day adds up to the hours in the proposal.<br>
+        <b>Needs first:</b> The research brief and the proposal's day-by-day section.<br>
+        <b>Type:</b> <code>/acceler-post-sales:lesson-plan-generation</code> <i>Ferguson</i><br>
+        <b>You get:</b> An Excel file, one tab per day. Everything in group C is built from it.<br>
+        <b>Belongs in Drive:</b> <b>PostSalesPluginOutput</b> (working file)<br>
+        <b>Real example:</b> Ferguson: a 4-day plan adapted from the e&amp; Pro Code plan, 5 hours a day. One tab per day, plus an overview, 12 open questions to settle with the client, and the sources it used.</div></details><details><summary><span class="qtitle">Instructor roster &nbsp;<span style="font-weight:500;color:var(--muted);font-size:12.5px;">Planning</span></span><span class="pill on">Tested</span><span class="qchev" style="margin-left:10px;">▾</span></summary>
+        <div class="a"><b>What it does:</b> Suggests an instructor for each day from the Knowledge Graph, matched to that day's topics.<br>
+        <b>Needs first:</b> The approved lesson plan. The pre-sales plugin must be installed.<br>
+        <b>Type:</b> <code>/acceler-post-sales:instructor-finalization</code> <i>Ferguson</i><br>
+        <b>You get:</b> A day-by-day roster. Every name is marked "Proposed" until a person confirms it.<br>
+        <b>Belongs in Drive:</b> <b>PostSalesPluginOutput</b> (working file)<br>
+        <b>Real example:</b> e&amp;: Day 1 proposed an instructor who had already taught the same content to an earlier e&amp; cohort.</div></details>
+    </div>
+    <h3 class="sub reveal">C · Build each day's content</h3>
+    <div class="faq reveal">
+<details><summary><span class="qtitle">Demo guide &nbsp;<span style="font-weight:500;color:var(--muted);font-size:12.5px;">Building</span></span><span class="pill on">Tested</span><span class="qchev" style="margin-left:10px;">▾</span></summary>
+        <div class="a"><b>What it does:</b> Writes the step-by-step hands-on guide learners follow, around your real screenshots. One guide per demo.<br>
+        <b>Needs first:</b> The lesson plan. Your screenshots in order, and a few lines on each step.<br>
+        <b>Type:</b> <code>/acceler-post-sales:demo-generation</code> <i>Ferguson, Day 1, the product spec agent demo. Screenshots are in the folder "Day 1 demo screenshots".</i><br>
+        <b>You get:</b> A web page guide with screenshots and copy buttons. For a code demo, the code is actually run first.<br>
+        <b>Belongs in Drive:</b> <b>B2B AI Programs</b> (learners see it)<br>
+        <b>Real example:</b> e&amp; Day 1: two guides, a warm-up prompting exercise and an n8n agent build with 24 real screenshots. It worked out which screenshots belonged to which demo.</div></details><details><summary><span class="qtitle">Quizzes &nbsp;<span style="font-weight:500;color:var(--muted);font-size:12.5px;">Building</span></span><span class="pill on">Tested</span><span class="qchev" style="margin-left:10px;">▾</span></summary>
+        <div class="a"><b>What it does:</b> Makes one quiz at a time: the pre-test, the post-test, or the quiz for one day.<br>
+        <b>Needs first:</b> The lesson plan.<br>
+        <b>Type:</b> <code>/acceler-post-sales:mcq-generation</code> <i>Ferguson, in-session quiz for Day 1</i><br>
+        <b>You get:</b> A Word file with questions, the answer key, and an explanation for every option.<br>
+        <b>Belongs in Drive:</b> <b>PostSalesPluginOutput</b> (working file). The questions reach learners through the deck or a form.<br>
+        <b>Real example:</b> e&amp;: a pre-test and post-test of 10 questions plus 2 written ones, and four daily quizzes of 6 questions each.</div></details><details><summary><span class="qtitle">Slide plan &nbsp;<span style="font-weight:500;color:var(--muted);font-size:12.5px;">Building</span></span><span class="pill on">Tested</span><span class="qchev" style="margin-left:10px;">▾</span></summary>
+        <div class="a"><b>What it does:</b> Decides what goes on each teaching slide before the deck is built: the real example, the real comparison, the real prompt text.<br>
+        <b>Needs first:</b> The lesson plan, that day's demo guide, and the day's quiz if there is one.<br>
+        <b>Type:</b> <code>/acceler-post-sales:slide-content-planning</code> <i>Ferguson 1</i> (client, then day number)<br>
+        <b>You get:</b> A plan you can read and correct in a few minutes. The deck is built from it.<br>
+        <b>Belongs in Drive:</b> <b>PostSalesPluginOutput</b> (working file)<br>
+        <b>Real example:</b> e&amp; Day 1: a plan that places each quiz question right after the concept it tests.</div></details><details><summary><span class="qtitle">Session deck &nbsp;<span style="font-weight:500;color:var(--muted);font-size:12.5px;">Building</span></span><span class="pill on">Tested</span><span class="qchev" style="margin-left:10px;">▾</span></summary>
+        <div class="a"><b>What it does:</b> Builds the deck the instructor presents, in our class-deck template.<br>
+        <b>Needs first:</b> That day's slide plan. Or, to adapt, only a past deck.<br>
+        <b>Type:</b> <code>/acceler-post-sales:session-deck</code> <i>Ferguson, Day 1</i><br>
+        <b>You get:</b> A web page deck: cover, instructor, timing, agenda, teaching slides, demo link, quiz, thank you. Then the deck reviewer's findings.<br>
+        <b>Belongs in Drive:</b> <b>B2B AI Programs</b> (learners see it)<br>
+        <b>Real example:</b> e&amp; Day 1: 54 slides. Ferguson: a 7-slide opening deck adapted from the e&amp; deck in about 9 minutes.</div></details>
+    </div>
+    <h3 class="sub reveal">D · After each session</h3>
+    <div class="faq reveal">
+<details><summary><span class="qtitle">Learner recap &nbsp;<span style="font-weight:500;color:var(--muted);font-size:12.5px;">After each session</span></span><span class="pill src">Built</span><span class="qchev" style="margin-left:10px;">▾</span></summary>
+        <div class="a"><b>What it does:</b> The page a learner reads after each day: what was covered, the quiz or discussion, a cheat sheet, labs, resources.<br>
+        <b>Needs first:</b> What actually happened that day: the deck, the instructor's notes, the chat. It asks for these and does not guess.<br>
+        <b>Type:</b> <code>/acceler-post-sales:session-recap</code> <i>Ferguson, Day 1 of 4. The deck and chat export are in the Day 1 folder.</i><br>
+        <b>You get:</b> A web page for learners.<br>
+        <b>Belongs in Drive:</b> <b>B2B AI Programs</b> (learners see it)<br>
+        <b>Real example:</b> The real LVT learner recaps are the model.</div></details><details><summary><span class="qtitle">Impact report &nbsp;<span style="font-weight:500;color:var(--muted);font-size:12.5px;">After each session</span></span><span class="pill src">Built</span><span class="qchev" style="margin-left:10px;">▾</span></summary>
+        <div class="a"><b>What it does:</b> The report for the client's sponsor after each day: attendance, engagement, notes per learner, action items.<br>
+        <b>Needs first:</b> The feedback export, the chat log, the transcript. Every quote has to be real.<br>
+        <b>Type:</b> <code>/acceler-post-sales:session-impact-report</code> <i>Ferguson, Day 1. Feedback export and chat log attached.</i><br>
+        <b>You get:</b> A web page report, plus a short summary file.<br>
+        <b>Belongs in Drive:</b> <b>B2B AI Programs</b> (learners see it)<br>
+        <b>Real example:</b> The real LVT impact report is the model.</div></details>
+    </div>
+    <h3 class="sub reveal">E · Once per program</h3>
+    <div class="faq reveal">
+<details><summary><span class="qtitle">Orientation deck &nbsp;<span style="font-weight:500;color:var(--muted);font-size:12.5px;">Planning or building</span></span><span class="pill on">Tested</span><span class="qchev" style="margin-left:10px;">▾</span></summary>
+        <div class="a"><b>What it does:</b> Copies a real past Orientation deck and changes only what is specific to this client: dates, schedule, curriculum, instructors.<br>
+        <b>Needs first:</b> A real past Orientation deck as a PowerPoint file, and the lesson plan. Needs Python on the laptop.<br>
+        <b>Type:</b> <code>/acceler-post-sales:orientation-generation</code> <i>Ferguson. Use the e&amp; Low Code orientation deck as the base.</i><br>
+        <b>You get:</b> A real, editable PowerPoint file. A PDF only after you approve it.<br>
+        <b>Belongs in Drive:</b> <b>B2B AI Programs</b> (learners see it)<br>
+        <b>Real example:</b> e&amp;: built from the real e&amp; Low Code orientation deck, with Acceler branding swapped in.</div></details><details><summary><span class="qtitle">Closing deck &nbsp;<span style="font-weight:500;color:var(--muted);font-size:12.5px;">Planning or building</span></span><span class="pill src">Built</span><span class="qchev" style="margin-left:10px;">▾</span></summary>
+        <div class="a"><b>What it does:</b> Same approach as Orientation, for the wrap-up: key takeaways from what was really taught, next steps, the feedback link, the post-test.<br>
+        <b>Needs first:</b> A real past Closing deck as a PowerPoint file, and the lesson plan. Needs Python on the laptop.<br>
+        <b>Type:</b> <code>/acceler-post-sales:closing-ceremony-generation</code> <i>Ferguson. Use the e&amp; Low Code closing deck as the base.</i><br>
+        <b>You get:</b> An editable PowerPoint file.<br>
+        <b>Belongs in Drive:</b> <b>B2B AI Programs</b> (learners see it)<br>
+        <b>Real example:</b> The real e&amp; Closing deck is the model.</div></details><details><summary><span class="qtitle">Setup guide &nbsp;<span style="font-weight:500;color:var(--muted);font-size:12.5px;">Building</span></span><span class="pill src">Built</span><span class="qchev" style="margin-left:10px;">▾</span></summary>
+        <div class="a"><b>What it does:</b> The guide learners use to get into the lab and tools before Day 1.<br>
+        <b>Needs first:</b> The lesson plan, and the list of tools.<br>
+        <b>Type:</b> <code>/acceler-post-sales:hands-on-guide-generation</code> <i>Ferguson</i><br>
+        <b>You get:</b> A setup guide. It never contains a real password, only where to find one.<br>
+        <b>Belongs in Drive:</b> <b>B2B AI Programs</b> (learners see it)<br>
+        <b>Real example:</b> Our real VM and tools setup guides are the model.</div></details><details><summary><span class="qtitle">Assignment &nbsp;<span style="font-weight:500;color:var(--muted);font-size:12.5px;">Building</span></span><span class="pill src">Built</span><span class="qchev" style="margin-left:10px;">▾</span></summary>
+        <div class="a"><b>What it does:</b> One open-ended, graded assignment for a session, with a weighted rubric.<br>
+        <b>Needs first:</b> The lesson plan.<br>
+        <b>Type:</b> <code>/acceler-post-sales:assignment-generation</code> <i>Ferguson, Day 2</i><br>
+        <b>You get:</b> A Word file. If learners get a starter file, it says clearly what is given and what is graded.<br>
+        <b>Belongs in Drive:</b> <b>B2B AI Programs</b> (learners see it)<br>
+        <b>Real example:</b> The real e&amp; Low Code capstone template is the model.</div></details><details><summary><span class="qtitle">Project &nbsp;<span style="font-weight:500;color:var(--muted);font-size:12.5px;">Building</span></span><span class="pill src">Built</span><span class="qchev" style="margin-left:10px;">▾</span></summary>
+        <div class="a"><b>What it does:</b> A capstone with several milestones.<br>
+        <b>Needs first:</b> The lesson plan.<br>
+        <b>Type:</b> <code>/acceler-post-sales:project-generation</code> <i>Ferguson</i><br>
+        <b>You get:</b> A project guide and grading rubric. Where a safety rule matters, the rubric checks the safeguard really blocked a bad attempt, not only that the end result looks right.<br>
+        <b>Belongs in Drive:</b> <b>B2B AI Programs</b> (learners see it)<br>
+        <b>Real example:</b> The real LVT "Stale Order Alerts" project is the model.</div></details>
+    </div>
+
+    <div class="callout info reveal"><span class="ic">💡</span><div><b>Two more commands sit outside the main flow:</b>
+    <code>dry-run-feedback</code> turns notes from a dry run into fixes, and <code>pick-use-case</code> builds a "pick your use case" page for build labs.</div></div>
+  </section>
+
+  <!-- ============ 03 MODES ============ -->
+  <section id="modes">
+    <div class="shead reveal">
+      <div class="eyebrow">04 · Three Ways to Run a Step</div>
+      <h2>Full build, adapt, or tweak</h2>
+      <p>Real requests are rarely "build everything from scratch". Most are "make this one like that one" or
+      "just fix this". You do not pick a mode: the plugin works it out from what you hand it, and tells you in its first line.</p>
+    </div>
+
+    <div class="c3 reveal">
+      <div class="card" style="border-top:3px solid var(--navy);">
+        <div style="font-size:22px;margin-bottom:6px;">🏗️</div>
+        <div style="font-weight:800;font-size:15px;margin-bottom:6px;color:var(--ink);">Full build</div>
+        <p class="body" style="font-size:12.8px;margin:0 0 8px;"><b>When:</b> a new client, nothing exists yet.</p>
+        <p class="body" style="font-size:12.8px;margin:0 0 8px;"><b>How:</b> built from this client's own facts, following the pipeline in order.</p>
+        <p class="body" style="font-size:12.8px;margin:0;"><b>Check:</b> full review by the matching reviewer, then your approval on each fix.</p>
+      </div>
+      <div class="card" style="border-top:3px solid var(--cyan);">
+        <div style="font-size:22px;margin-bottom:6px;">♻️</div>
+        <div style="font-weight:800;font-size:15px;margin-bottom:6px;color:var(--ink);">Adapt</div>
+        <p class="body" style="font-size:12.8px;margin:0 0 8px;"><b>When:</b> "here is the e&amp; deck, make it for Ferguson."</p>
+        <p class="body" style="font-size:12.8px;margin:0 0 8px;"><b>How:</b> keeps the proven template and structure, swaps in the new client's use case and examples.</p>
+        <p class="body" style="font-size:12.8px;margin:0;"><b>Check:</b> the same full review. Changing a deck for a new client is exactly where mistakes creep in.</p>
+      </div>
+      <div class="card" style="border-top:3px solid var(--amber);">
+        <div style="font-size:22px;margin-bottom:6px;">✏️</div>
+        <div style="font-weight:800;font-size:15px;margin-bottom:6px;color:var(--ink);">Tweak</div>
+        <p class="body" style="font-size:12.8px;margin:0 0 8px;"><b>When:</b> "change the instructor on the cover", "add one slide".</p>
+        <p class="body" style="font-size:12.8px;margin:0 0 8px;"><b>How:</b> changes only what you asked, keeps the original safe.</p>
+        <p class="body" style="font-size:12.8px;margin:0;"><b>Check:</b> a quick check that the change landed and nothing else moved. About a minute.</p>
+      </div>
+    </div>
+
+    <h3 class="sub reveal">The start-up check, before anything is built</h3>
+    <ol class="numlist reveal">
+      <li><span class="nb">1</span><span class="nt"><b>It names the mode</b> in one line, so you can see what it understood.</span></li>
+      <li><span class="nb">2</span><span class="nt"><b>It looks at what already exists</b> for this client: first on your laptop, then in the client's Drive folders if nothing is found locally.</span></li>
+      <li><span class="nb">3</span><span class="nt"><b>It deals with what is missing.</b> In a full pipeline run it stops and offers a choice: run the missing stage, or carry on with a short brief. When adapting, or building one artifact on its own, it writes a short <b>light brief</b> (facts, scope, objectives, assumptions) and shows it to you first.</span></li>
+      <li><span class="nb">4</span><span class="nt"><b>It asks only what it cannot work out,</b> at most 3 to 5 questions. Everything else it assumes and flags clearly.</span></li>
+    </ol>
+
+    <h3 class="sub reveal">Handing over a past deck: which form?</h3>
+    <p class="body reveal">All three work as a starting point. We tested each on a real deck. They do not give the plugin the same things.</p>
+    <div class="tblwrap reveal">
+    <table class="tbl">
+      <tr><th style="width:22%">You hand over</th><th>What the plugin gets</th><th style="width:34%">What it misses</th></tr>
+      <tr><td><b>A Google Slides link</b></td><td>All the text, slide by slide.</td><td>Pictures, diagrams and layout. Speaker notes did not come through in testing. Needs Google Drive connected.</td></tr>
+      <tr><td><b>A PowerPoint file</b></td><td>All the text, the speaker notes, and the pictures as files.</td><td>Nothing important.</td></tr>
+      <tr><td><b>A PDF</b></td><td>The text, and it can <b>see</b> each slide, so it understands diagrams, screenshots and layout.</td><td>It cannot lift the pictures out as separate image files.</td></tr>
+    </table>
+    </div>
+    <ul class="checklist reveal" style="margin-top:14px;">
+      <li><b>The old deck gives the content. Our template gives the look.</b> You get a new deck in the class-deck template. Your Slides or PowerPoint file is not edited.</li>
+      <li><b>Pictures do not come across on their own.</b> At the end, the plugin lists every diagram and screenshot it could not carry over, slide by slide, so you can add them back.</li>
+      <li><b>If the old deck has important diagrams,</b> hand over the PDF or the PowerPoint, not the Slides link.</li>
+      <li><b>The exception:</b> Orientation and Closing decks really are edits of a PowerPoint file, and stay editable.</li>
+    </ul>
+
+    <h3 class="sub reveal">A real adapt run: the e&amp; deck, rebuilt for Ferguson</h3>
+    <div class="step reveal">
+      <div>
+        <div class="step__title"><span class="step__num">1</span> One instruction, no mention of review</div>
+        <div class="step__body">The request pointed at the e&amp; Day 1 deck and described the new client in a few lines.
+        The plugin answered with <b>"Mode: Adapt"</b> and said a full review would follow.</div>
+      </div>
+      <div class="mock">
+        <div class="mock__bar"><i></i><i></i><i></i><span>claude</span></div>
+        <div class="term"><span class="m">&gt;</span> <span class="p">/acceler-post-sales:session-deck</span> Use the e&amp; Day 1 deck as the
+reference. Build a short Day 1 opening deck for Ferguson:
+10 AI/ML engineers, Python, build-first, deployed on Azure...
+
+<span class="ok">Mode: Adapt.</span> The e&amp; Day 1 deck is the starting point,
+rebuilt for Ferguson. That means a full review after the build.</div>
+      </div>
+    </div>
+    <div class="step reveal">
+      <div>
+        <div class="step__title"><span class="step__num">2</span> Same template, the new client's content</div>
+        <div class="step__body">It kept the real class-deck look and replaced the telecom examples with ones from
+        <b>Ferguson's own sample spreadsheet</b>. It also corrected a mistake from an earlier draft, where Azure
+        deployment had been placed on the wrong day.</div>
+      </div>
+      <div class="realshot"><span class="realshot__badge">Real output</span><img src="img/ferguson-fewshot.jpg" alt="Ferguson deck, few-shot prompting slide"></div>
+    </div>
+    <div class="step reveal">
+      <div>
+        <div class="step__title"><span class="step__num">3</span> The reviewer ran on its own, then asked</div>
+        <div class="step__body">The deck reviewer came back with four real findings, for example the demo slide asking
+        learners to use four prompt patterns when the deck only teaches two. It then asked which fixes to apply.
+        <b>Nothing changed until a person said yes.</b></div>
+      </div>
+      <div class="mock">
+        <div class="mock__bar"><i></i><i></i><i></i><span>claude</span></div>
+        <div class="term"><span class="warn">Review findings that need your decision:</span>
+1. The demo asks for more than the deck teaches.
+2. The demo overlaps later sessions.
+3. The image-column wording is slightly off.
+4. Small inconsistencies in session names.
+
+<span class="p">Should I apply 1 to 4 with the narrowed demo,
+or add the two extra slides instead?</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 REVIEW ============ -->
+  <section id="review">
+    <div class="shead reveal">
+      <div class="eyebrow">05 · Review and Approving Fixes</div>
+      <h2>Checked, fixed with your approval, and learned from</h2>
+      <p>The agent that builds something never marks its own work. A separate reviewer checks it against written
+      rules, a person approves each fix, a separate fixer applies only what was approved, and when the same mistake keeps
+      coming back, Utkarsh or Tanmaya add it to the plugin as a rule.</p>
+    </div>
+
+    <div class="pipe reveal">
+      <div class="pstep"><div class="pi">1️⃣</div><div class="pt">Generate</div><div class="pd">Built from real client facts and past content</div></div>
+      <div class="parrow">→</div>
+      <div class="pstep"><div class="pi">2️⃣</div><div class="pt">Review</div><div class="pd">Its own reviewer checks it. Reviewers cannot edit.</div></div>
+      <div class="parrow">→</div>
+      <div class="pstep"><div class="pi">3️⃣</div><div class="pt">You approve</div><div class="pd">Nothing changes without a person signing off</div></div>
+      <div class="parrow">→</div>
+      <div class="pstep"><div class="pi">4️⃣</div><div class="pt">Fix</div><div class="pd">Only the approved changes, then re-checked. Two rounds at most.</div></div>
+      <div class="parrow">→</div>
+      <div class="pstep"><div class="pi">5️⃣</div><div class="pt">Learn</div><div class="pd">A run note is saved. Repeat mistakes are added as rules.</div></div>
+    </div>
+
+    <div class="c2 reveal" style="margin-top:20px;">
+      <div class="card">
+        <div style="font-weight:800;color:var(--navy);font-size:15px;margin-bottom:8px;">The 15 reviewers</div>
+        <p class="body" style="margin:0 0 8px;">One for each kind of artifact: discovery, onboarding form, lesson plan, quiz,
+        demo, session deck, orientation, closing, assignment, project, setup guide, learner recap and impact report.
+        Two more look at a whole session together: <b>coherence</b> (do the deck, demo and quiz agree with each other?)
+        and <b>audience fit</b> (is it pitched at the level this cohort actually reported?).</p>
+        <p class="body" style="margin:0;">A sixteenth agent, the <b>fixer</b>, is the only one allowed to edit, and only after you approve.
+        It may never weaken a learning objective or a review rule to make a finding go away.</p>
+      </div>
+      <div class="card">
+        <div style="font-weight:800;color:var(--navy);font-size:15px;margin-bottom:8px;">Things the loop has already caught</div>
+        <ul class="checklist" style="margin:0;">
+          <li><b>Quizzes:</b> five recurring question-writing mistakes are now permanent rules.</li>
+          <li><b>Decks:</b> a demo button linking to a guide that did not exist yet.</li>
+          <li><b>Orientation:</b> a leftover duplicate slide copied over from the source deck.</li>
+          <li><b>Lesson plan:</b> a day that added up to more hours than the proposal promised.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="sub reveal">Approving fixes: what you actually type</h3>
+    <p class="body reveal">When the reviewer finishes, it lists its findings with a number each and asks what to do. You answer in plain words. Nothing is changed until you do.</p>
+    <div class="tblwrap reveal">
+    <table class="tbl">
+      <tr><th style="width:26%">You want to</th><th style="width:30%">Type something like</th><th>What happens</th></tr>
+      <tr><td><b>Accept some fixes</b></td><td><code>apply 1 and 3</code></td><td>Only those are applied, then the reviewer checks them again. You can accept all, some, or none.</td></tr>
+      <tr><td><b>Understand a finding first</b></td><td><code>explain 2</code></td><td>The reviewer shows its reasoning and the evidence, before you decide.</td></tr>
+      <tr><td><b>Ignore one that is fine as it is</b></td><td><code>resolve 4, that wording is what the client uses</code></td><td>The finding is dropped from this review. Your reason is saved in the run note.</td></tr>
+      <tr><td><b>Fix it yourself instead</b></td><td>Edit the file, then <code>re-review</code></td><td>Only the affected check runs again on your edited file.</td></tr>
+    </table>
+    </div>
+    <div class="callout info reveal" id="run-note"><span class="ic">📝</span><div><b>The run note: how a fix on your laptop reaches everyone.</b>
+    Animesh builds a deck. The reviewer says the demo button on slide 7 goes nowhere. He says yes, and it is fixed <b>in his deck</b>. The plugin itself has not changed, so Navdeep could hit the same thing next week.<br>
+    So at the end of every run the plugin adds a few lines to <code>run-notes.md</code> in the client's folder: what the reviewer found, what you changed by hand, what you told it to ignore, and what could not be carried over from an old deck.<br>
+    Upload it to <b>PostSalesPluginOutput</b> with your other working files. Utkarsh and Tanmaya read these notes and turn repeat problems into rules in the next update. Nobody else needs to change the plugin. <b>In v2 this happens on its own.</b></div></div>
+    <div class="callout info reveal"><span class="ic">⏱️</span><div><b>Two rounds at most.</b> If a fix still does not pass after two tries, the reviewer stops and marks the item "Request Changes" for a person to sort out. It does not keep trying. A few findings skip the loop and come straight to you, for example a quote in a report that cannot be traced to a real learner.</div></div>
+
+    <h3 class="sub reveal">Run a reviewer on its own</h3>
+    <p class="body reveal">Every reviewer is also a command, for a quick check right after one thing is made:
+    <code style="background:var(--bg2);padding:1px 6px;border-radius:5px;font-family:var(--mono);font-size:12px;color:var(--navy);">deck-review</code>,
+    <code style="background:var(--bg2);padding:1px 6px;border-radius:5px;font-family:var(--mono);font-size:12px;color:var(--navy);">mcq-review</code>,
+    <code style="background:var(--bg2);padding:1px 6px;border-radius:5px;font-family:var(--mono);font-size:12px;color:var(--navy);">lesson-plan-review</code> and so on.
+    Before a whole session goes to a client, run
+    <code style="background:var(--bg2);padding:1px 6px;border-radius:5px;font-family:var(--mono);font-size:12px;color:var(--navy);">content-review</code>,
+    which runs the per-type reviewers and then the coherence and audience-fit checks across the bundle.</p>
+
+    <div class="callout good reveal"><span class="ic">✅</span><div><b>The reviewers are tested too.</b> There are 20 test
+    cases, each a sample with a known problem planted in it (or a correct sample that must not be flagged). All 20
+    were run on version 0.4.5 and passed. Today they are run by hand; running them automatically is on the
+    <a href="#whats-next" style="text-decoration:underline;">what's next</a> list.</div></div>
+  </section>
+
+<!-- ============ 06 OUTPUTS ============ -->
+  <section id="outputs">
+    <div class="shead reveal">
+      <div class="eyebrow">06 · What You Get, and How to Use It</div>
+      <h2>Formats, presenting, editing, exporting</h2>
+      <p>If you are used to building in Google Slides, read this part. Some outputs are not the file type you might expect.</p>
+    </div>
+
+    <div class="tblwrap reveal">
+    <table class="tbl">
+      <tr><th style="width:18%">Output</th><th style="width:17%">Comes as</th><th>How to open and use it</th><th style="width:28%">How to change it</th></tr>
+      <tr><td><b>Session deck</b></td><td>A web page (<code>index.html</code>)</td><td>Double-click to open in a browser. Arrow keys move between slides, <b>F</b> goes full screen, the <b>full stop key</b> shows speaker notes. Share your browser window in Zoom to present.</td><td>Ask the plugin for a tweak. That is the normal way.</td></tr>
+      <tr><td><b>Demo guide</b></td><td>A web page</td><td>Open in a browser. Learners follow it step by step and copy prompts with one click.</td><td>Ask for a tweak.</td></tr>
+      <tr><td><b>Quizzes</b></td><td>Word</td><td>Open in Word or Google Docs. Ask the plugin to make a Google Form from it.</td><td>Edit directly, or ask for a tweak.</td></tr>
+      <tr><td><b>Lesson plan</b></td><td>Excel</td><td>One tab per day.</td><td>Edit directly, or ask for a tweak.</td></tr>
+      <tr><td><b>Orientation and Closing decks</b></td><td>PowerPoint</td><td>A normal, editable file. Opens in PowerPoint or Google Slides.</td><td>Edit directly.</td></tr>
+      <tr><td><b>Recap and impact report</b></td><td>Web pages</td><td>Open in a browser, or share as a link once published.</td><td>Ask for a tweak.</td></tr>
+    </table>
+    </div>
+
+    <div class="callout warn reveal"><span class="ic">⚠️</span><div><b>The session deck is not a Google Slides file.</b>
+    It is a web page built on our real class-deck template. You can ask for a PowerPoint copy, and you will get one, but in that copy
+    <b>each slide is a picture</b>: it looks exactly right and the text cannot be edited. So make your changes through the plugin first,
+    and export at the end if someone needs a PowerPoint.</div></div>
+
+    <div class="c2 reveal">
+      <div class="card">
+        <div style="font-weight:800;color:var(--navy);font-size:15px;margin-bottom:8px;">What you still add by hand</div>
+        <ul class="checklist" style="margin:0;">
+          <li><b>The instructor's photo.</b> Give the plugin a photo, or use an old PowerPoint deck as the reference and it takes the photo from there. A Slides link or a PDF cannot supply it. With no photo, the deck shows initials.</li>
+          <li><b>Diagrams and screenshots from an old deck.</b> The plugin lists what it could not carry over.</li>
+          <li><b>Real links:</b> the Zoom link, the lab link, the feedback form.</li>
+          <li><b>Confirmed facts:</b> session timings and the instructor's name, if they were not confirmed when the deck was built. The deck marks these as placeholders.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div style="font-weight:800;color:var(--navy);font-size:15px;margin-bottom:8px;">Look and branding</div>
+        <ul class="checklist" style="margin:0;">
+          <li><b>Class decks</b> use our real class-deck template: the same backgrounds, layouts and text sizes as the decks we deliver today.</li>
+          <li><b>Acceler branding is the default.</b> PowerUp is used only when someone asks for it. It is asked once per client, not every time.</li>
+          <li><b>A different template</b> is possible if you hand over a deck in that look and say so. It is not chosen for you.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 05 SAMPLES ============ -->
+  <section id="samples">
+    <div class="shead reveal">
+      <div class="eyebrow">07 · Sample Outputs</div>
+      <h2>What actually comes out the other end</h2>
+      <p>Real outputs from real runs, not mockups. The screenshots below are from the e&amp; AI Builder (Low Code)
+      test run and the Ferguson adapt run. Live links will be added here once the sample pages are published.</p>
+    </div>
+
+    <div class="samplegrid reveal">
+      <div class="samplecard">
+        <span class="stag post">Session deck · full build</span>
+        <h4>e&amp; AI Builder (Low Code), Day 1</h4>
+        <p>54 slides in the real e&amp; class-deck template, built from the lesson plan and slide content plan, then reviewed.</p>
+        <div class="realshot" style="margin-bottom:10px;"><img src="img/eand-day1-cover.jpg" alt="e& Day 1 deck cover"></div>
+        <div class="slinks"><span class="waiting" style="font-size:12px;color:var(--muted);font-style:italic;padding:8px 12px;background:var(--bg2);border-radius:8px;">Live link coming once published</span></div>
+      </div>
+      <div class="samplecard">
+        <span class="stag post">Session deck · concept slide</span>
+        <h4>Teaching slides with real components</h4>
+        <p>A "weak versus right" card from the prompt engineering section. The content was decided in the slide plan, the deck only renders it.</p>
+        <div class="realshot" style="margin-bottom:10px;"><img src="img/eand-day1-fewshot.jpg" alt="e& Day 1 few-shot prompting slide"></div>
+        <div class="slinks"><span class="waiting" style="font-size:12px;color:var(--muted);font-style:italic;padding:8px 12px;background:var(--bg2);border-radius:8px;">Live link coming once published</span></div>
+      </div>
+      <div class="samplecard">
+        <span class="stag post">Session deck · demo slide</span>
+        <h4>Demo hand-off, matching the real layout</h4>
+        <p>What the demo builds, key objectives and success criteria on the left, the link to the learner's demo guide on the laptop.</p>
+        <div class="realshot" style="margin-bottom:10px;"><img src="img/eand-day1-demo.jpg" alt="e& Day 1 demo slide"></div>
+        <div class="slinks"><span class="waiting" style="font-size:12px;color:var(--muted);font-style:italic;padding:8px 12px;background:var(--bg2);border-radius:8px;">Live link coming once published</span></div>
+      </div>
+      <div class="samplecard">
+        <span class="stag post">Session deck · adapt</span>
+        <h4>Ferguson, adapted from the e&amp; deck</h4>
+        <p>A 7-slide Day 1 opening deck for a new client, in the same template, using Ferguson's own product data. Built and reviewed in about 9 minutes.</p>
+        <div class="realshot" style="margin-bottom:10px;"><img src="img/ferguson-cover.jpg" alt="Ferguson deck cover"></div>
+        <div class="slinks"><span class="waiting" style="font-size:12px;color:var(--muted);font-style:italic;padding:8px 12px;background:var(--bg2);border-radius:8px;">Live link coming once published</span></div>
+      </div>
+    </div>
+
+    <h3 class="sub reveal" style="margin-top:32px;">Also produced in the e&amp; test run</h3>
+    <div class="tblwrap reveal">
+    <table class="tbl">
+      <tr><th>Output</th><th>What it is</th><th>Format</th></tr>
+      <tr><td><b>Discovery Facts Sheet</b></td><td>Audience, success measure, tools, constraints, branding</td><td>Markdown</td></tr>
+      <tr><td><b>Onboarding form</b></td><td>The learner form, tied to the program's goal</td><td>Word</td></tr>
+      <tr><td><b>Deep research brief</b></td><td>Everything known about the client and the closest past programs</td><td>Markdown</td></tr>
+      <tr><td><b>Lesson plan</b></td><td>Four day tabs, minute-level</td><td>Excel</td></tr>
+      <tr><td><b>Instructor roster</b></td><td>A proposed instructor for each day</td><td>Markdown</td></tr>
+      <tr><td><b>Pre-test and post-test</b></td><td>10 questions plus 2 written ones each, with explanations</td><td>Word</td></tr>
+      <tr><td><b>Four daily quizzes</b></td><td>6 questions each, placed in the deck after the concept they test</td><td>Word</td></tr>
+      <tr><td><b>Two Day 1 demo guides</b></td><td>Warm-up prompting exercise, and the n8n agent build with 24 real screenshots</td><td>Web page</td></tr>
+      <tr><td><b>Orientation deck</b></td><td>Edited from the real e&amp; orientation deck</td><td>PowerPoint</td></tr>
+    </table>
+    </div>
+  </section>
+
+  <!-- ============ 06 SETUP ============ -->
+  <!-- ============ 08 SETUP ============ -->
+  <section id="setup">
+    <div class="shead reveal">
+      <div class="eyebrow">08 · Setup &amp; Update</div>
+      <h2>Get it running in about 10 minutes</h2>
+      <p>You do this once. After that you only update when a new version ships. These steps use the Claude Desktop app.
+      If you prefer a terminal, the same commands work there.</p>
+    </div>
+
+    <h3 class="sub reveal" style="margin-top:0;">Before you start</h3>
+    <div class="tblwrap reveal">
+    <table class="tbl">
+      <tr><th style="width:26%">You need</th><th>Why</th><th style="width:22%">Needed for</th></tr>
+      <tr><td><b>Claude Desktop</b>, signed in</td><td>It runs the plugin. Use the <b>&lt;/&gt; Code</b> view inside it.</td><td>Everything</td></tr>
+      <tr><td><b>Git</b> installed</td><td>Claude uses it to fetch the plugin from GitHub.</td><td>Installing and updating</td></tr>
+      <tr><td><b>Google Drive connected</b> in Claude</td><td>So the plugin can read a Slides link you give it, and find work a colleague already uploaded.</td><td>Adapting from Slides, handovers</td></tr>
+      <tr><td><b>Python</b></td><td>Used to edit PowerPoint files.</td><td>Only Orientation and Closing decks, and PowerPoint exports</td></tr>
+      <tr><td><b>A work folder</b></td><td>Any folder on your laptop where you keep your B2B work. Your outputs will appear inside it.</td><td>Everything</td></tr>
+    </table>
+    </div>
+
+    <div class="callout info reveal"><span class="ic">💡</span><div><b>Always install both plugins.</b> Post-sales
+    uses the Knowledge Graph and two tools that live in pre-sales (the discovery check and the instructor search).</div></div>
+
+    <div class="callout info reveal"><span class="ic">🔗</span><div><b>Where the plugin lives.</b>
+    Both plugins are in one GitHub repo: <a href="https://github.com/voldemortuk/acceler-presales-plugin" target="_blank" rel="noopener" style="text-decoration:underline;">voldemortuk/acceler-presales-plugin</a>.
+    The post-sales part is the <a href="https://github.com/voldemortuk/acceler-presales-plugin/tree/master/post-sales" target="_blank" rel="noopener" style="text-decoration:underline;">post-sales folder</a>,
+    and every version is listed in the <a href="https://github.com/voldemortuk/acceler-presales-plugin/blob/master/CHANGELOG.md" target="_blank" rel="noopener" style="text-decoration:underline;">changelog</a>.
+    You do not need to open the repo to use the plugin, the three lines in step 2 fetch it for you.</div></div>
+
+    <div class="step reveal">
+      <div>
+        <div class="step__title"><span class="step__num">1</span> Open Claude Desktop in the Code view, in your work folder</div>
+        <div class="step__body">Click the <b>&lt;/&gt;</b> icon at the top left. Click <b>+ New</b>. Click the small
+        <b>folder icon</b> near the box where you type, and choose your work folder. The Chat and Cowork views do not show the plugin commands the same way.</div>
+      </div>
+      <div class="mock ui-mock">
+        <div class="mock__bar"><i></i><i></i><i></i><span>Claude Desktop</span></div>
+        <div class="row"><div><div class="name">&lt;/&gt; Code view</div><div class="sub">top left, next to the chat icon</div></div><span class="pill src">click</span></div>
+        <div class="row"><div><div class="name">+ New</div><div class="sub">starts a fresh session</div></div><span class="pill src">click</span></div>
+        <div class="row"><div><div class="name">Folder icon → your work folder</div><div class="sub">where your outputs will be saved</div></div><span class="pill on">choose</span></div>
+      </div>
+    </div>
+
+    <div class="step reveal">
+      <div>
+        <div class="step__title"><span class="step__num">2</span> Add the source and install both plugins</div>
+        <div class="step__body">Type these three lines, one at a time. The first adds the source (Claude calls it a
+        marketplace). The next two install the plugins. They appear in the plugin list as <b>Acceler Atlas</b> and <b>Acceler Atlas · Delivery</b>.</div>
+      </div>
+      <div class="mock">
+        <div class="mock__bar"><i></i><i></i><i></i><span>type these</span></div>
+        <div class="term"><span class="p">/plugin marketplace add voldemortuk/acceler-presales-plugin</span>
+
+<span class="p">/plugin install acceler-presales@acceler-local</span>
+
+<span class="p">/plugin install acceler-post-sales@acceler-local</span></div>
+      </div>
+    </div>
+
+    <div class="step reveal">
+      <div>
+        <div class="step__title"><span class="step__num">3</span> Restart Claude, then check it worked</div>
+        <div class="step__body">Close Claude Desktop fully and open it again. In a new Code session, type
+        <code>/acceler-post-sales:</code> and a list of commands should appear. If it does, you are ready.
+        Go to <a href="#start" style="text-decoration:underline;">Start here</a> and pick your job.</div>
+      </div>
+      <div class="mock">
+        <div class="mock__bar"><i></i><i></i><i></i><span>what you should see</span></div>
+        <div class="term"><span class="m">/acceler-post-sales:</span>
+  <span class="p">session-deck</span>
+  <span class="p">demo-generation</span>
+  <span class="p">mcq-generation</span>
+  <span class="p">slide-content-planning</span>
+  <span class="p">deck-review</span>
+  <span class="c">... and more</span></div>
+      </div>
+    </div>
+
+    <div class="step reveal">
+      <div>
+        <div class="step__title"><span class="step__num">4</span> Update when a new version ships</div>
+        <div class="step__body">Type the update line, then type <code>/plugin</code>, open the installed list and update both plugins.
+        Then <b>restart Claude</b>. This step matters: Claude runs the copy saved on your laptop, not the newest one on GitHub.
+        If you skip it, you keep running old rules and nothing tells you. The current version is <b>0.4.9</b>.</div>
+      </div>
+      <div class="mock">
+        <div class="mock__bar"><i></i><i></i><i></i><span>type these</span></div>
+        <div class="term"><span class="p">/plugin marketplace update acceler-local</span>
+
+<span class="p">/plugin</span>   <span class="c"># update both, then restart Claude</span></div>
+      </div>
+    </div>
+
+    <h3 class="sub reveal">Good habits while you work</h3>
+    <ol class="numlist reveal">
+      <li><span class="nb">1</span><span class="nt"><b>Pick the command from the menu,</b> so it turns into a blue label, then type or paste the rest. If you paste the whole line in one go, Claude treats it as pasted text and asks you to confirm first.</span></li>
+      <li><span class="nb">2</span><span class="nt"><b>Click the small arrow</b> at the end of any step Claude shows, to open it and see what was done, including the reviewer's work.</span></li>
+      <li><span class="nb">3</span><span class="nt"><b>If Claude keeps saying it "cannot determine the safety" of an action,</b> press Shift+Tab to switch to the mode where it asks you before each step.</span></li>
+    </ol>
+  </section>
+
+  <!-- ============ 07 SAVING ============ -->
+  <section id="saving">
+    <div class="shead reveal">
+      <div class="eyebrow">09 · Saving &amp; Handover</div>
+      <h2>Where files go, and how someone else picks up your work</h2>
+      <p>Outputs are saved on your laptop first. Drive is where they are shared. In this version, uploading to
+      Drive happens when a person does it or asks the plugin to. Automatic upload is planned for the next version.</p>
+    </div>
+
+    <div class="c2 reveal">
+      <div class="card">
+        <div style="font-weight:800;color:var(--navy);font-size:15px;margin-bottom:8px;">On your laptop</div>
+        <p class="body" style="margin:0 0 8px;">Everything goes into a folder called <b>Post-Sales Outputs</b> inside the work folder you opened Claude in, one folder per client. The plugin tells you the full path each time it saves.</p>
+        <div class="codeblock" style="font-size:12px;">Post-Sales Outputs/[Client]/
+  lesson-plan.xlsx
+  mcq/day-1-in-session.docx
+  demo/day-1-demo-1/
+  slide-content-plan-day-1.md
+  session-deck/day-1/index.html</div>
+        <p class="body" style="margin:8px 0 0;">These files exist only on the laptop that made them, until someone puts them in Drive. (On a laptop that also holds a full copy of the plugin's code, they go to <code style="font-family:var(--mono);font-size:12px;">post-sales/Outputs/[Client]/</code> inside that copy instead.)</p>
+      </div>
+      <div class="card">
+        <div style="font-weight:800;color:var(--navy);font-size:15px;margin-bottom:8px;">In Google Drive</div>
+        <div class="tblwrap"><table class="tbl" style="font-size:12.5px;">
+          <tr><th>Folder</th><th>What goes there</th></tr>
+          <tr><td><b><a href="https://drive.google.com/drive/folders/1tUMBGWfAKPzKA4hndaDjBe9hOHzMhza2" target="_blank" rel="noopener" style="text-decoration:underline;">B2B AI Programs</a></b></td><td>What learners and clients see: decks, demos, orientation, closing, recaps</td></tr>
+          <tr><td><b><a href="https://drive.google.com/drive/folders/1XTJNdwNfv5irwS4ezjRbTDU6NONwfw4Y" target="_blank" rel="noopener" style="text-decoration:underline;">PostSalesPluginOutput</a></b></td><td>Working files: Facts Sheet, deep research, lesson plan, roster, slide plans, quizzes, run notes</td></tr>
+        </table></div>
+        <p class="body" style="margin:8px 0 0;">The two are kept apart on purpose. The Knowledge Graph reads <b>B2B AI Programs</b> as real delivered content, so a half-finished working file must never land there.</p>
+      </div>
+    </div>
+
+    <h3 class="sub reveal">Today (v1) and next (v2)</h3>
+    <div class="tblwrap reveal">
+    <table class="tbl">
+      <tr><th style="width:26%"></th><th>Today, v1</th><th>Next, v2</th></tr>
+      <tr><td><b>Uploading to Drive</b></td><td>Each run ends with a list of the files it made and the Drive folder each belongs in. You upload them, or tell the plugin "push the Day 1 deck and demo to Drive" and it does.</td><td>Files upload on their own the moment they are made.</td></tr>
+      <tr><td><b>Picking up someone else's work</b></td><td>If your laptop has nothing for that client, the plugin looks in the client's Drive folders, tells you what it found and when it was last changed, and asks before using it.</td><td>Laptops and Drive stay in step automatically.</td></tr>
+      <tr><td><b>What you must remember</b></td><td>Upload your files, or ask the plugin to, <b>before</b> you hand over or go on leave. The plugin can only find what is in Drive.</td><td>Nothing to remember.</td></tr>
+    </table>
+    </div>
+
+    <div class="callout info reveal"><span class="ic">🤝</span><div><b>A handover, step by step.</b> You build the
+    lesson plan and upload it to PostSalesPluginOutput. A colleague runs the next command on their own laptop.
+    The plugin finds nothing locally, checks Drive, and says "I found this client's lesson plan and deep research,
+    last changed yesterday, shall I use them?" They say yes, and carry on from where you stopped.</div></div>
+  </section>
+
+  <!-- ============ 08 FAQ ============ -->
+  <section id="faq">
+    <div class="shead reveal">
+      <div class="eyebrow">10 · FAQ &amp; Troubleshooting</div>
+      <h2>Common snags, and what they actually mean</h2>
+    </div>
+    <div class="faq reveal">
+      <details><summary><span class="qtitle">The plugin is behaving the old way, even though it was updated</span><span class="qchev">▾</span></summary>
+        <div class="a">You are almost certainly running an old installed copy. Claude runs the copy saved on your machine when you installed, not the latest on GitHub. Run <code>/plugin marketplace update acceler-local</code>, update both plugins, and restart Claude Code or Claude Desktop. This has happened to us: one laptop ran a two-week-old copy and none of the newer rules were in effect.</div></details>
+      <details><summary><span class="qtitle">I typed a command but the reviewer never ran</span><span class="qchev">▾</span></summary>
+        <div class="a">Three things to check. First, was it a <b>tweak</b>? Small edits get a quick check, not the full reviewer, by design. Second, did the command show as a blue label? If the whole line was pasted, the command may not have been recognised. Third, are you on the latest version? Older copies were missing the automatic hand-off to the reviewer.</div></details>
+      <details><summary><span class="qtitle">Claude asked me to confirm before doing what I pasted</span><span class="qchev">▾</span></summary>
+        <div class="a">That is a safety feature in Claude Desktop. A large block of pasted text with nothing typed around it is treated as something to check first. Pick the command from the menu, then paste the rest, and it runs straight away.</div></details>
+      <details><summary><span class="qtitle">My files were saved in an unexpected folder</span><span class="qchev">▾</span></summary>
+        <div class="a">Outputs go to <code>Post-Sales Outputs/[Client]/</code> inside the folder you opened Claude in, and the plugin prints the full path when it saves. If they landed somewhere else, you are probably on an old version: update both plugins and restart Claude. Versions before 0.4.4 could save into a client's own folder.</div></details>
+      <details><summary><span class="qtitle">The reviewer failed my short deck for missing slides</span><span class="qchev">▾</span></summary>
+        <div class="a">From version 0.4.5, a deck you deliberately asked to be short is reviewed against what you asked for. Anything outside that is listed once as "out of scope, needed before delivery", and does not count against the deck.</div></details>
+      <details><summary><span class="qtitle">It stopped and said an earlier stage is missing</span><span class="qchev">▾</span></summary>
+        <div class="a">In a full pipeline run, each stage needs the one before it. The plugin will offer two choices: run the missing stage, or carry on with a short brief. If the earlier work was done by someone else, it is probably in Drive: the plugin checks there when your laptop has nothing for that client.</div></details>
+      <details><summary><span class="qtitle">"Auto mode cannot determine the safety of..." keeps appearing</span><span class="qchev">▾</span></summary>
+        <div class="a">That message comes from Claude itself, not from the plugin. The automatic safety check is temporarily unavailable. Press Shift+Tab to switch to a mode where Claude asks you before each action, and carry on.</div></details>
+      <details><summary><span class="qtitle">Can I get the deck as Google Slides?</span><span class="qchev">▾</span></summary>
+        <div class="a">Not as an editable Slides file. The class deck is a web page. You can ask for a PowerPoint copy, where each slide is a picture, and open that in Google Slides. Make your changes through the plugin first, then export. Orientation and Closing decks are the exception: they are real, editable PowerPoint files.</div></details>
+      <details><summary><span class="qtitle">The pictures from my old deck are missing in the new one</span><span class="qchev">▾</span></summary>
+        <div class="a">That is expected. An old deck gives the plugin its content, and pictures do not come across on their own. Look at the end of the run: the plugin lists every diagram and screenshot it could not carry over. Add them back by handing over the image files, or give the old deck as a PDF or PowerPoint next time instead of a Slides link.</div></details>
+      <details><summary><span class="qtitle">The reviewer flagged something that is fine</span><span class="qchev">▾</span></summary>
+        <div class="a">Type <code>resolve</code> and the finding's number, with a short reason. The finding is dropped from this review and your reason is saved in the run note. If the same wrong flag keeps showing up, tell Utkarsh or Tanmaya, the rule itself may need changing.</div></details>
+      <details><summary><span class="qtitle">Can I install only the post-sales plugin?</span><span class="qchev">▾</span></summary>
+        <div class="a">Install both. Post-sales relies on the Knowledge Graph and two tools that ship with pre-sales.</div></details>
+      <details><summary><span class="qtitle">Do I have to run all sixteen stages?</span><span class="qchev">▾</span></summary>
+        <div class="a">No. Build only what the engagement needs, and run any single step on its own. See <a href="#modes" style="text-decoration:underline;">Three ways to run a step</a>.</div></details>
+    </div>
+  </section>
+
+  <!-- ============ 11 GLOSSARY ============ -->
+  <section id="glossary">
+    <div class="shead reveal">
+      <div class="eyebrow">11 · Words Used on This Page</div>
+      <h2>A short glossary</h2>
+    </div>
+    <div class="tblwrap reveal">
+    <table class="tbl">
+      <tr><th style="width:24%">Word</th><th>What it means here</th></tr>
+      <tr><td><b>Plugin</b></td><td>An add-on for Claude that gives it our commands, rules and reviewers.</td></tr>
+      <tr><td><b>Command</b></td><td>What you type to start a job. It begins with <code>/acceler-post-sales:</code>.</td></tr>
+      <tr><td><b>Stage</b></td><td>One step of the pipeline, for example "lesson plan" or "session deck". Each has one command.</td></tr>
+      <tr><td><b>Mode</b></td><td>How a step is being run: full build, adapt, or tweak. The plugin works it out and tells you.</td></tr>
+      <tr><td><b>Discovery Facts Sheet</b></td><td>A one-page record of what we know about the client: learners, the goal, tools, constraints, branding.</td></tr>
+      <tr><td><b>Deep research</b></td><td>One brief that pulls together everything known about the client and the closest past programs.</td></tr>
+      <tr><td><b>Lesson plan</b></td><td>The internal, minute-by-minute plan for each day. Not shown to learners.</td></tr>
+      <tr><td><b>Slide plan</b></td><td>A list of what each teaching slide will say and show, written before the deck is built.</td></tr>
+      <tr><td><b>Light brief</b></td><td>A short note the plugin writes when there is no lesson plan to work from: what it understood, the scope you asked for, and what it assumed.</td></tr>
+      <tr><td><b>Reviewer</b></td><td>A separate AI checker for one kind of output. It can find problems and suggest fixes. It cannot change your file.</td></tr>
+      <tr><td><b>Finding</b></td><td>One problem a reviewer reports, with the evidence and a suggested fix.</td></tr>
+      <tr><td><b>Fixer</b></td><td>The only part allowed to edit a file, and only for fixes you approved.</td></tr>
+      <tr><td><b>Knowledge Graph</b></td><td>Our searchable map of past deals, programs, instructors and content. It comes with the pre-sales plugin.</td></tr>
+      <tr><td><b>Marketplace</b></td><td>Claude's word for the place a plugin is installed from. Ours is the GitHub source you add in setup.</td></tr>
+    </table>
+    </div>
+  </section>
+
+  <!-- ============ 09 WHATS NEXT ============ -->
+  <section id="whats-next">
+    <div class="shead reveal">
+      <div class="eyebrow">12 · What's Next</div>
+      <h2>What shipped, and what's next</h2>
+      <p>Version 1 is about getting every stage built, checked and usable on its own. Version 2 is about the system
+      running more of itself, and more people being able to improve it safely.</p>
+    </div>
+
+    <h3 class="sub reveal" style="margin-top:0;">In this version</h3>
+    <div class="c2 reveal">
+      <div class="card">
+        <div style="font-size:22px;margin-bottom:8px;">✅</div>
+        <div style="font-weight:800;color:var(--navy);font-size:15px;margin-bottom:6px;">Shipped · The full delivery pipeline</div>
+        <p class="body" style="margin:0;">Sixteen stages, each with its own reviewer and a human-approved fix loop, usable as one flow or one step at a time.</p>
+      </div>
+      <div class="card">
+        <div style="font-size:22px;margin-bottom:8px;">🧪</div>
+        <div style="font-weight:800;color:var(--navy);font-size:15px;margin-bottom:6px;">Next · One full program, start to finish</div>
+        <p class="body" style="margin:0;">Ten stages are tested on e&amp; Low Code Day 1 and on a Ferguson adapt run. Next, the whole pipeline is run once on a real past program, from discovery facts to the impact report, and each step is compared with what was actually delivered.</p>
+      </div>
+    </div>
+
+    <h3 class="sub reveal">Next version (v2)</h3>
+    <div class="c2 reveal">
+      <div class="card">
+        <div style="font-size:22px;margin-bottom:8px;">🔁</div>
+        <div style="font-weight:800;color:var(--navy);font-size:15px;margin-bottom:6px;">An automatic test loop</div>
+        <p class="body" style="margin:0;">Today the reviewer test cases are run by hand. Next, they run on their own after every change: findings make the test cases stronger, the fixes go back into <b>both</b> the skill that builds and the skill that reviews, and the loop repeats without anyone driving it.</p>
+      </div>
+      <div class="card">
+        <div style="font-size:22px;margin-bottom:8px;">🧠</div>
+        <div style="font-weight:800;color:var(--navy);font-size:15px;margin-bottom:6px;">A shared memory</div>
+        <p class="body" style="margin:0;">One place that records every test run and every improvement made to a skill, visible to the whole team. Today an improvement lives on one person's laptop until it is pushed.</p>
+      </div>
+      <div class="card">
+        <div style="font-size:22px;margin-bottom:8px;">🤖</div>
+        <div style="font-weight:800;color:var(--navy);font-size:15px;margin-bottom:6px;">Self-running demos</div>
+        <p class="body" style="margin:0;">Today a person performs the demo and hands over screenshots. Next, the agent runs the demo itself on a local machine, logs in, builds it, and captures its own screenshots.</p>
+      </div>
+      <div class="card">
+        <div style="font-size:22px;margin-bottom:8px;">🧑‍🤝‍🧑</div>
+        <div style="font-weight:800;color:var(--navy);font-size:15px;margin-bottom:6px;">Safe contributions from more people</div>
+        <p class="body" style="margin:0;">A clear way to propose and review changes, a named stable version, and an automatic check that one person's change does not break something else. Also a path for good B2C improvements to flow back into B2B.</p>
+      </div>
+      <div class="card">
+        <div style="font-size:22px;margin-bottom:8px;">☁️</div>
+        <div style="font-weight:800;color:var(--navy);font-size:15px;margin-bottom:6px;">Automatic saving to Drive</div>
+        <p class="body" style="margin:0;">Files upload the moment they are made, to the right folder, and every laptop stays in step with Drive. No remembering to upload before a handover.</p>
+      </div>
+      <div class="card">
+        <div style="font-size:22px;margin-bottom:8px;">🗺️</div>
+        <div style="font-weight:800;color:var(--navy);font-size:15px;margin-bottom:6px;">A sharper Curriculum Graph</div>
+        <p class="body" style="margin:0;">Every program and module carrying its real file link, and large decks no longer skipped, so deep research can find real past content on its own.</p>
+      </div>
+      <div class="card">
+        <div style="font-size:22px;margin-bottom:8px;">🔗</div>
+        <div style="font-weight:800;color:var(--navy);font-size:15px;margin-bottom:6px;">Decks and demos shared as links</div>
+        <p class="body" style="margin:0;">Hosted as web pages that open in a browser, instead of files passed around.</p>
+      </div>
+      <div class="card">
+        <div style="font-size:22px;margin-bottom:8px;">➕</div>
+        <div style="font-weight:800;color:var(--navy);font-size:15px;margin-bottom:6px;">Also planned</div>
+        <p class="body" style="margin:0;">Microsoft Forms alongside Google Forms. One "do everything" command for the whole pipeline. Test cases for the building skills, not only the reviewers. Running in web sessions.</p>
+      </div>
+    </div>
+  </section>
+
+  </main>
+</div>
+
+<footer>
+  <div class="finner">
+    <div class="fl"><b>Acceler Atlas · Delivery</b> v0.4.9</div>
+    <div class="fl fl--credit"><span>Maintained by <b>Utkarsh Raj</b> and <b>Tanmaya Kharyal</b></span><span>·</span><span>Built with <svg class="claude-mark" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 L14.2 9.4 L21.5 12 L14.2 14.6 L12 22 L9.8 14.6 L2.5 12 L9.8 9.4 Z"/></svg> Claude Code</span></div>
+  </div>
+</footer>
+
+<script>
+const links = document.querySelectorAll('.side a, .topnav a');
+const sections = Array.from(document.querySelectorAll('main section'));
+const map = {};
+links.forEach(l => { const id = l.getAttribute('href').slice(1); (map[id] ||= []).push(l); });
+const navObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      links.forEach(l => l.classList.remove('active'));
+      (map[e.target.id] || []).forEach(l => l.classList.add('active'));
+    }
+  });
+}, { rootMargin: '-20% 0px -70% 0px' });
+sections.forEach(s => navObs.observe(s));
+
+const revealEls = document.querySelectorAll('.reveal');
+const revealObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); revealObs.unobserve(e.target); } });
+}, { threshold: 0.08, rootMargin: '0px 0px -60px 0px' });
+revealEls.forEach(el => revealObs.observe(el));
+setTimeout(() => revealEls.forEach(el => el.classList.add('in')), 1500);
+</script>
+
+</body>
+</html>
